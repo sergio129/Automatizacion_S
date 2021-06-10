@@ -1,0 +1,32 @@
+co/konecta/sura/certificate/runners/StateManagementRunner.java
+ co.konecta.sura.certificate.runners.StateManagementRunner
+co/konecta/sura/certificate/stepsdefinitions/SuraClimbingStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.SuraClimbingStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/CreateCaseStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.CreateCaseStepsDefinitions
+co/konecta/sura/certificate/runners/DocumentationCNMRunner.java
+ co.konecta.sura.certificate.runners.DocumentationCNMRunner
+co/konecta/sura/certificate/runners/LoginRunner.java
+ co.konecta.sura.certificate.runners.LoginRunner
+co/konecta/sura/certificate/runners/CreateCaseRunner.java
+ co.konecta.sura.certificate.runners.CreateCaseRunner
+co/konecta/sura/certificate/runners/SupplierManagementRunner.java
+ co.konecta.sura.certificate.runners.SupplierManagementRunner
+co/konecta/sura/certificate/stepsdefinitions/AdvancedSearchStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.AdvancedSearchStepsDefinitions
+co/konecta/sura/certificate/runners/SuraClimbingRunner.java
+ co.konecta.sura.certificate.runners.SuraClimbingRunner
+co/konecta/sura/certificate/stepsdefinitions/SupplierManagementStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.SupplierManagementStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/SupplierMonitoringStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.SupplierMonitoringStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/StateManagementStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.StateManagementStepsDefinitions
+co/konecta/sura/certificate/runners/AdvancedSearchRunner.java
+ co.konecta.sura.certificate.runners.AdvancedSearchRunner
+co/konecta/sura/certificate/runners/SupplierMonitoringRunner.java
+ co.konecta.sura.certificate.runners.SupplierMonitoringRunner
+co/konecta/sura/certificate/stepsdefinitions/LoginStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.LoginStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/DocumentationCNMStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.DocumentationCNMStepsDefinitions

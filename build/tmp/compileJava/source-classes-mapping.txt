@@ -1,0 +1,38 @@
+co/konecta/sura/certificate/task/SupplierMonitoringTask.java
+ co.konecta.sura.certificate.task.SupplierMonitoringTask
+co/konecta/sura/certificate/userinterface/SupplierManagementPage.java
+ co.konecta.sura.certificate.userinterface.SupplierManagementPage
+co/konecta/sura/certificate/utils/SaraPage.java
+ co.konecta.sura.certificate.utils.SaraPage
+co/konecta/sura/certificate/task/LoginTask.java
+ co.konecta.sura.certificate.task.LoginTask
+co/konecta/sura/certificate/task/SuraClimbingTask.java
+ co.konecta.sura.certificate.task.SuraClimbingTask
+co/konecta/sura/certificate/task/StateManagementTask.java
+ co.konecta.sura.certificate.task.StateManagementTask
+co/konecta/sura/certificate/userinterface/AdvancedSearchPage.java
+ co.konecta.sura.certificate.userinterface.AdvancedSearchPage
+co/konecta/sura/certificate/userinterface/CreateCasePage.java
+ co.konecta.sura.certificate.userinterface.CreateCasePage
+co/konecta/sura/certificate/userinterface/StateManagementPage.java
+ co.konecta.sura.certificate.userinterface.StateManagementPage
+co/konecta/sura/certificate/questions/TheModal.java
+ co.konecta.sura.certificate.questions.TheModal
+co/konecta/sura/certificate/userinterface/LoginPage.java
+ co.konecta.sura.certificate.userinterface.LoginPage
+co/konecta/sura/certificate/task/CreateCaseTask.java
+ co.konecta.sura.certificate.task.CreateCaseTask
+co/konecta/sura/certificate/task/AdvancedSearchTask.java
+ co.konecta.sura.certificate.task.AdvancedSearchTask
+co/konecta/sura/certificate/userinterface/SuraClimbingPage.java
+ co.konecta.sura.certificate.userinterface.SuraClimbingPage
+co/konecta/sura/certificate/userinterface/HomePage.java
+ co.konecta.sura.certificate.userinterface.HomePage
+co/konecta/sura/certificate/task/SupplierManagementTask.java
+ co.konecta.sura.certificate.task.SupplierManagementTask
+co/konecta/sura/certificate/userinterface/SupplierMonitoringPage.java
+ co.konecta.sura.certificate.userinterface.SupplierMonitoringPage
+co/konecta/sura/certificate/userinterface/DocumentationCNMPage.java
+ co.konecta.sura.certificate.userinterface.DocumentationCNMPage
+co/konecta/sura/certificate/task/DocumentationCNMTask.java
+ co.konecta.sura.certificate.task.DocumentationCNMTask
