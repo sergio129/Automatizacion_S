@@ -13,8 +13,8 @@ Feature: Page sub-module sura climbing
     Then I view the modal save sura climbing with <modalmessage>
 
     Examples:
-      |  user         | password   |numberCase        |managementtype                 |managementperson           |responsetype      |generatescomplaint       |   observations                        |modalmessage                          |
-      |yaira.acevedo  | YMAe8807*  |202106104435443   |Guardianes de la vida          | Sebastian Ossa Taborda    |Adulto mayor      |No                       | pruebas automaticas escalamiento sura |Registro guardado correctamente       |
+      | user         | password       | numberCase      | managementtype        | managementperson       | responsetype | generatescomplaint | observations                          | modalmessage                    |
+      | Sergio.Anaya | Colombia_2024* | 202106104435443 | Guardianes de la vida | Sebastian Ossa Taborda | Adulto mayor | No                 | pruebas automaticas escalamiento sura | Registro guardado correctamente |
 
 
   @TestSuraClimbingEdition

@@ -1,7 +1,8 @@
 package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
 import co.konecta.sura.certificate.task.parameterization.ListsParameterizationTask;
-import co.konecta.sura.certificate.userinterface.cases.login.HomePage;
+import co.konecta.sura.certificate.userinterface.home.HomePage;
+import co.konecta.sura.certificate.userinterface.parameterization.ListsParameterizationPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -14,7 +15,8 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.cases.login.HomePage.*;
+
+import static co.konecta.sura.certificate.userinterface.home.HomePage.*;
 import static co.konecta.sura.certificate.userinterface.parameterization.ListsParameterizationPage.*;
 
 public class ListsParameterizationStepsDefinitions {
@@ -36,9 +38,15 @@ public class ListsParameterizationStepsDefinitions {
     @And("^I entering lists parameterization$")
     public void iEnteringListsParameterization() throws InterruptedException {
         Thread.sleep(5000);
-        actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
-        actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.OPTION_LIST_PARAMETERIZATION));
+        actor.attemptsTo(Click.on(ListsParameterizationPage.BUTTON_INITIAL_TAB));
+        actor.attemptsTo(Click.on(ListsParameterizationPage.BUTTON_PARAMETRIZACION));
+        Thread.sleep(3000);
+
+     //actor.attemptsTo(Click.on(ListsParameterizationPage.BUTTON_SCROLL));
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("javascript:window.scrollBy(152,71)");
+        //Thread.sleep(5000);
+        actor.attemptsTo(Click.on(ListsParameterizationPage.OPTION_LIST_PARAMETERIZATION));
     }
 
     @And("^I select button create lists parameterization$")

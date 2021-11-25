@@ -2,7 +2,7 @@ package co.konecta.sura.certificate.stepsdefinitions.cases;
 
 import co.konecta.sura.certificate.questions.TheModal;
 import co.konecta.sura.certificate.task.cases.login.LoginTask;
-import co.konecta.sura.certificate.userinterface.cases.login.HomePage;
+import co.konecta.sura.certificate.userinterface.home.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

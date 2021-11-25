@@ -3,7 +3,7 @@ package co.konecta.sura.certificate.stepsdefinitions.cases;
 import co.konecta.sura.certificate.task.cases.listenending.Ending;
 import co.konecta.sura.certificate.task.cases.listenending.EndingModel;
 import co.konecta.sura.certificate.userinterface.cases.listenending.EndingPage;
-import co.konecta.sura.certificate.userinterface.cases.login.HomePage;
+import co.konecta.sura.certificate.userinterface.home.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -15,7 +15,7 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.cases.login.HomePage.MODAL_VALIDATION;
+import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
 
 public class EndingStepsDefinitions {
 

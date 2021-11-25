@@ -1,7 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
 import co.konecta.sura.certificate.task.parameterization.AssignmentTask;
-import co.konecta.sura.certificate.userinterface.cases.login.HomePage;
+import co.konecta.sura.certificate.userinterface.home.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -13,7 +13,7 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.cases.login.HomePage.MODAL_VALIDATION;
+import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.userinterface.parameterization.AssignmentPage.*;
 
 public class AssignmentStepsDefinitions {
@@ -37,19 +37,22 @@ public class AssignmentStepsDefinitions {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.OPTION_ASSIGNMENT_PARAMETERIZATION)
-        );
+        actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
+        actor.attemptsTo(Click.on(HomePage.OPTION_ASSIGNMENT_PARAMETERIZATION));
+
+
     }
 
     @And("^I select button create assignment$")
     public void iSelectButtonCreateAssignment() {
         actor.attemptsTo(Click.on(BUTTON_CREATE_ASSIGNMENT));
+
     }
 
+
     @And("^I select button edition assignment$")
-    public void iSelectButtonEditionAssignment() {
-        actor.attemptsTo(Click.on(BUTTON_EDIT_ASSIGNMENT));
-    }
+    public void iSelectButtonEditionAssignment() {actor.attemptsTo(Click.on(BUTTON_EDIT_ASSIGNMENT));
+   }
 
     @And("^I type information in the assignment with the role (.*) and the user (.*) and the line (.*) and the service (.*) and the department (.*)$")
     public void iTypeInformationInTheAssignmentWithTheRoleAndTheUserAndTheLineAndTheServiceAndTheDepartment(String roleAssignment, String userAssignment, String lineAssignment, String serviceAssignment, String departmentAssignment) {

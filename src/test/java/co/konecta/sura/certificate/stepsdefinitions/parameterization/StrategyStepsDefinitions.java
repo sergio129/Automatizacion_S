@@ -1,7 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
 import co.konecta.sura.certificate.task.parameterization.StrategyTask;
-import co.konecta.sura.certificate.userinterface.cases.login.HomePage;
+import co.konecta.sura.certificate.userinterface.home.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -16,10 +16,13 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.cases.login.HomePage.MODAL_VALIDATION;
+import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.userinterface.parameterization.StrategyPage.*;
 
+
+
 public class StrategyStepsDefinitions {
+
 
     @Managed(driver = "chrome")
     WebDriver driver;
@@ -34,20 +37,28 @@ public class StrategyStepsDefinitions {
     @Given("^I edition a strategy parameterization$")
     public void iEditionAStrategyParameterization() {
 
+
     }
+
 
     @And("^I entering strategy parameterization$")
     public void iEnteringStrategyParameterization() throws InterruptedException {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.OPTION_STRATEGY_PARAMETERIZATION)
-        );
+        actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
+        Thread.sleep(2000);
+        actor.attemptsTo(Click.on(HomePage.OPTION_STRATEGY_PARAMETERIZATION));
+        Thread.sleep(3000);
+      // actor.attemptsTo(Click.on(StrategyPage.INPUT_SEARCH_STRATEGY_NAME));
+
     }
 
     @And("^I type information in the contingency strategy with the name contingency search (.*) and the description (.*)$")
     public void iTypeInformationInTheContingencyStrategyWithTheDescription(String nameContingencySearch,String contingencyDescription) {
-                actor.attemptsTo( Enter.theValue(nameContingencySearch).into(INPUT_SEARCH_STRATEGY_NAME),
+
+        actor.attemptsTo( Enter.theValue(nameContingencySearch).into(INPUT_SEARCH_STRATEGY_NAME),
+
                 Click.on(BUTTON_EDIT_CONTINGENCY_STRATEGY),
                 StrategyTask.withInformationStrategy(contingencyDescription));
 

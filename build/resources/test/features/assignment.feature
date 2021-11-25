@@ -14,8 +14,8 @@ Feature: Assignment parameterization
     Then I view the modal save assignment parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | roleassignment | userassignment      | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
-      | yaira.acevedo | YMAe1710* | Admin Backlog  | Yaira Manuela Admin | Autos          | Grua              | Antioquia            | Registro guardado correctamente |
+      | user         | password       | roleassignment | userassignment          | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
+      | sergio.anaya | Colombia_2024* | Admin Backlog  | Sergio Luis Anaya Admin | Autos          | Grua              | Antioquia            | Registro guardado correctamente |
 
 
   @TestAssignmentParameterizationEdition
@@ -27,8 +27,8 @@ Feature: Assignment parameterization
     Then I view the modal save assignment parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | roleassignment | userassignment      | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
-      | yaira.acevedo | YMAe1710* | Admin Backlog  | Yaira Manuela Admin | Autos          | Audiencia         | Atlantico            | Registro guardado correctamente |
+      | user         | password       | roleassignment | userassignment      | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
+      | Sergio.anaya | Colombia_2024* | Admin Backlog  | Yaira Manuela Admin | Autos          | Audiencia         | Atlantico            | Registro guardado correctamente |
 
 
   @TestAssignmentParameterizationDelete
@@ -39,7 +39,7 @@ Feature: Assignment parameterization
 
     Examples:
       | user          | password   | modalmessage                   |
-      | yaira.acevedo | YMAe1710*  |registro eliminado correctamente|
+      | yaira.acevedo |            |registro eliminado correctamente|
 
 
   @TestAssignmentRequiredFields
@@ -51,4 +51,4 @@ Feature: Assignment parameterization
 
     Examples:
       | user          | password   | modalmessage                     |
-      | yaira.acevedo | YMAe1710*  |Todos los campos son obligatorios |
+      | yaira.acevedo |            |Todos los campos son obligatorios |

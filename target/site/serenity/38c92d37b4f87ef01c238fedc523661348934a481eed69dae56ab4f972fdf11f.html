@@ -65,7 +65,7 @@
     <div id="topbanner">
         <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
         <div id="projectname-banner" style="float:right">
-            <span class="projectname"></span>
+            <span class="projectname">Serenity and Cucumber Quick Start</span>
         </div>
     </div>
 </div>
@@ -98,7 +98,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-05-2021 10:38</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 24-11-2021 14:16</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -124,6 +124,13 @@ I need to create documentation CNM
 
                         </td>
                         <td valign="top">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;"
+                                                                      href="7e4b42a1b2335f7b0b4ac43577adf062e8d699b4dff27c657af9f1e230b0a036.html">Testdocumentationcnmcompletewithcomplaint
+                                    (tag)</a>
+                                </span>
+                            </p>
                         </td>
                     </tr>
                 </table>
@@ -132,9 +139,9 @@ I need to create documentation CNM
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
-                                <span class="error-color">
+                                <span class="success-color">
                                     Successful documentation CNM submodule with filed complaint
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -195,7 +202,7 @@ I need to create documentation CNM
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario">Given I am entry in the application documentation with user &lt;user&gt; and password &lt;password&gt;<br>And I am entry for documentation CNM and set number case &lt;numberCase&gt;<br>When set information with complaint management person &lt;managementperson&gt; and generates complaint &lt;generatescomplaint&gt; and observation &lt;observation&gt; and filed complaint &lt;filedcomplaint&gt;<br>Then user view the modal save documentation CNM with &lt;modalmessage&gt;</div>
+        <div class="scenario">When I entering in the application with user &lt;user&gt; and password &lt;password&gt;<br>And I entering the advanced search and type case number &lt;numberCase&gt;<br>And I type information complaint in the fields management person &lt;managementpersondocumentation&gt; and generates complaint &lt;generatescomplaintdocumentation&gt; and observation &lt;observationdocumentation&gt; and filed complaint &lt;filedcomplaint&gt;<br>Then I view the modal save documentation CNM with &lt;modalmessage&gt;</div>
 
     </div>
 
@@ -216,38 +223,38 @@ I need to create documentation CNM
                         <th>User</th>
                         <th>Password</th>
                         <th>Numbercase</th>
-                        <th>Managementperson</th>
-                        <th>Generatescomplaint</th>
-                        <th>Observation</th>
+                        <th>Managementpersondocumentation</th>
+                        <th>Generatescomplaintdocumentation</th>
+                        <th>Observationdocumentation</th>
                         <th>Filedcomplaint</th>
                         <th>Modalmessage</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-ERROR"><a href="#0">1</a></td>
-                            <td class="test-ERROR"><a
-                                    href="#0">yaira.acevedo</a>
+                        <td class="test-SUCCESS"><a href="#0">1</a></td>
+                            <td class="test-SUCCESS"><a
+                                    href="#0">Sergio.Anaya</a>
                             </td>
-                            <td class="test-ERROR"><a
-                                    href="#0">YMAe8807**</a>
+                            <td class="test-SUCCESS"><a
+                                    href="#0">Colombia_2024*</a>
                             </td>
-                            <td class="test-ERROR"><a
+                            <td class="test-SUCCESS"><a
                                     href="#0">202104149600102</a>
                             </td>
-                            <td class="test-ERROR"><a
+                            <td class="test-SUCCESS"><a
                                     href="#0">Administrativo Aya</a>
                             </td>
-                            <td class="test-ERROR"><a
-                                    href="#0">No</a>
+                            <td class="test-SUCCESS"><a
+                                    href="#0">Si</a>
                             </td>
-                            <td class="test-ERROR"><a
+                            <td class="test-SUCCESS"><a
                                     href="#0">pruebas automaticas creacion documentacion CNM</a>
                             </td>
-                            <td class="test-ERROR"><a
+                            <td class="test-SUCCESS"><a
                                     href="#0">15242411</a>
                             </td>
-                            <td class="test-ERROR"><a
+                            <td class="test-SUCCESS"><a
                                     href="#0">Registro guardado correctamente</a>
                             </td>
                     </tr>
@@ -272,12 +279,12 @@ I need to create documentation CNM
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 error-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -286,31 +293,31 @@ I need to create documentation CNM
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                             <span class="top-level-step">
-                                Example #1: {user=yaira.acevedo, password=YMAe8807**, numberCase=202104149600102, managementperson=Administrativo Aya, generatescomplaint=No, observation=pruebas automaticas creacion documentacion CNM, filedcomplaint=15242411, modalmessage=Registro guardado correctamente}
+                                Example #1: {user=Sergio.Anaya, password=Colombia_2024*, numberCase=202104149600102, managementpersondocumentation=Administrativo Aya, generatescomplaintdocumentation=Si, observationdocumentation=pruebas automaticas creacion documentacion CNM, filedcomplaint=15242411, modalmessage=Registro guardado correctamente}
                             </span>
                             </a>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="ERROR-text">
+                        <td width="160" class="SUCCESS-text">
                                 <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=0">
-                                    <img src="558eda78c47a7c331a6ea66d2957c2bd3e559b3a69cb1106b2197b2d0b719eb8.png"
-                                         href="558eda78c47a7c331a6ea66d2957c2bd3e559b3a69cb1106b2197b2d0b719eb8.png"
+                                    <img src="60093d0f1f3dce63cddee04c4715b20f02fa4bbe6087c7838fa40fa34862ee94.png"
+                                         href="60093d0f1f3dce63cddee04c4715b20f02fa4bbe6087c7838fa40fa34862ee94.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
                                 <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=0">
-                                    <img src="99beca0f95c520c06054844974a95f50997ff35bcf8b6d5b70a77b4b48e60856.png"
-                                         href="99beca0f95c520c06054844974a95f50997ff35bcf8b6d5b70a77b4b48e60856.png"
+                                    <img src="6f726db073a0b84f4d6e477aeb09da8606a8ee8f35dc73902f8766279392f02d.png"
+                                         href="6f726db073a0b84f4d6e477aeb09da8606a8ee8f35dc73902f8766279392f02d.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">270.48s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">29.19s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -320,35 +327,56 @@ I need to create documentation CNM
                     <td width="50" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-step">
-                                Given I am entry in the application documentation with user yaira.acevedo and password YMAe8807**
+                            <span class="nested-group-step">
+                                Given I create a documentation CNM for a case
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=0">
-                                    <img src="558eda78c47a7c331a6ea66d2957c2bd3e559b3a69cb1106b2197b2d0b719eb8.png"
-                                         href="558eda78c47a7c331a6ea66d2957c2bd3e559b3a69cb1106b2197b2d0b719eb8.png"
+
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.12s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">
+                                When I entering in the application with user Sergio.Anaya and password Colombia_2024*
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=1">
+                                    <img src="60093d0f1f3dce63cddee04c4715b20f02fa4bbe6087c7838fa40fa34862ee94.png"
+                                         href="60093d0f1f3dce63cddee04c4715b20f02fa4bbe6087c7838fa40fa34862ee94.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=0">
-                                    <img src="ed6266fa31276583ce4ff9b1bc9b3d20c1a0574c79af1ac219ecc7a0ebf9f414.png"
-                                         href="ed6266fa31276583ce4ff9b1bc9b3d20c1a0574c79af1ac219ecc7a0ebf9f414.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=1">
+                                    <img src="ed57b6ee6c497ed0bbac466ecf7150e4b516057a836ca6da202f48c34f8d32ce.png"
+                                         href="ed57b6ee6c497ed0bbac466ecf7150e4b516057a836ca6da202f48c34f8d32ce.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">10.89s</span></td>
+                    <td width="100"><span class="nested-step">6.62s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -367,15 +395,15 @@ I need to create documentation CNM
                     </td>
                         <td width="160" class="SUCCESS-text">
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=1">
-                                    <img src="558eda78c47a7c331a6ea66d2957c2bd3e559b3a69cb1106b2197b2d0b719eb8.png"
-                                         href="558eda78c47a7c331a6ea66d2957c2bd3e559b3a69cb1106b2197b2d0b719eb8.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=2">
+                                    <img src="60093d0f1f3dce63cddee04c4715b20f02fa4bbe6087c7838fa40fa34862ee94.png"
+                                         href="60093d0f1f3dce63cddee04c4715b20f02fa4bbe6087c7838fa40fa34862ee94.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">9.7s</span></td>
+                    <td width="100"><span class="nested-group-step">5.39s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -393,23 +421,23 @@ I need to create documentation CNM
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=2">
-                                    <img src="558eda78c47a7c331a6ea66d2957c2bd3e559b3a69cb1106b2197b2d0b719eb8.png"
-                                         href="558eda78c47a7c331a6ea66d2957c2bd3e559b3a69cb1106b2197b2d0b719eb8.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=3">
+                                    <img src="60093d0f1f3dce63cddee04c4715b20f02fa4bbe6087c7838fa40fa34862ee94.png"
+                                         href="60093d0f1f3dce63cddee04c4715b20f02fa4bbe6087c7838fa40fa34862ee94.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=2">
-                                    <img src="ed6266fa31276583ce4ff9b1bc9b3d20c1a0574c79af1ac219ecc7a0ebf9f414.png"
-                                         href="ed6266fa31276583ce4ff9b1bc9b3d20c1a0574c79af1ac219ecc7a0ebf9f414.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=3">
+                                    <img src="ed57b6ee6c497ed0bbac466ecf7150e4b516057a836ca6da202f48c34f8d32ce.png"
+                                         href="ed57b6ee6c497ed0bbac466ecf7150e4b516057a836ca6da202f48c34f8d32ce.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">1.17s</span></td>
+                    <td width="100"><span class="nested-step">1.09s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -420,30 +448,30 @@ I need to create documentation CNM
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Usuario enters 'yaira.acevedo' into This the input user
+                                Usuario clicks on This the input survey
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=4">
-                                    <img src="558eda78c47a7c331a6ea66d2957c2bd3e559b3a69cb1106b2197b2d0b719eb8.png"
-                                         href="558eda78c47a7c331a6ea66d2957c2bd3e559b3a69cb1106b2197b2d0b719eb8.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=5">
+                                    <img src="60093d0f1f3dce63cddee04c4715b20f02fa4bbe6087c7838fa40fa34862ee94.png"
+                                         href="60093d0f1f3dce63cddee04c4715b20f02fa4bbe6087c7838fa40fa34862ee94.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=4">
-                                    <img src="964380146a1721612e319f66b54452d272c77696f7c837ade3a61f6f660f4d5f.png"
-                                         href="964380146a1721612e319f66b54452d272c77696f7c837ade3a61f6f660f4d5f.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=5">
+                                    <img src="a4b072bf1d2458939e421561b8af64e312df923985ede56f3bc8bdb28a58574d.png"
+                                         href="a4b072bf1d2458939e421561b8af64e312df923985ede56f3bc8bdb28a58574d.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.58s</span></td>
+                    <td width="100"><span class="nested-group-step">0.34s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -454,30 +482,64 @@ I need to create documentation CNM
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Usuario enters 'YMAe8807**' into This the input password
+                                Usuario enters 'Sergio.Anaya' into This the input user
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=6">
-                                    <img src="964380146a1721612e319f66b54452d272c77696f7c837ade3a61f6f660f4d5f.png"
-                                         href="964380146a1721612e319f66b54452d272c77696f7c837ade3a61f6f660f4d5f.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=7">
+                                    <img src="a4b072bf1d2458939e421561b8af64e312df923985ede56f3bc8bdb28a58574d.png"
+                                         href="a4b072bf1d2458939e421561b8af64e312df923985ede56f3bc8bdb28a58574d.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=6">
-                                    <img src="ed6266fa31276583ce4ff9b1bc9b3d20c1a0574c79af1ac219ecc7a0ebf9f414.png"
-                                         href="ed6266fa31276583ce4ff9b1bc9b3d20c1a0574c79af1ac219ecc7a0ebf9f414.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=7">
+                                    <img src="a65a4562a7fc63de28f8961cb294203423d6cb2d86b50dad9764272896168bda.png"
+                                         href="a65a4562a7fc63de28f8961cb294203423d6cb2d86b50dad9764272896168bda.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.58s</span></td>
+                    <td width="100"><span class="nested-group-step">0.32s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        
+                            <span style="margin-left: 80px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">
+                                Usuario enters 'Colombia_2024*' into This the input password
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=9">
+                                    <img src="a65a4562a7fc63de28f8961cb294203423d6cb2d86b50dad9764272896168bda.png"
+                                         href="a65a4562a7fc63de28f8961cb294203423d6cb2d86b50dad9764272896168bda.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=9">
+                                    <img src="ed57b6ee6c497ed0bbac466ecf7150e4b516057a836ca6da202f48c34f8d32ce.png"
+                                         href="ed57b6ee6c497ed0bbac466ecf7150e4b516057a836ca6da202f48c34f8d32ce.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.34s</span></td>
                 </tr>
 
 
@@ -490,30 +552,30 @@ I need to create documentation CNM
                     <td>
                         <div class="step-description">
                             <span class="nested-step">
-                                And I am entry for documentation CNM and set number case 202104149600102
+                                And I entering the advanced search and type case number 202104149600102
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=8">
-                                    <img src="ed6266fa31276583ce4ff9b1bc9b3d20c1a0574c79af1ac219ecc7a0ebf9f414.png"
-                                         href="ed6266fa31276583ce4ff9b1bc9b3d20c1a0574c79af1ac219ecc7a0ebf9f414.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=11">
+                                    <img src="ed57b6ee6c497ed0bbac466ecf7150e4b516057a836ca6da202f48c34f8d32ce.png"
+                                         href="ed57b6ee6c497ed0bbac466ecf7150e4b516057a836ca6da202f48c34f8d32ce.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=8">
-                                    <img src="a4dcec9ae358a2034b894bfa00cdf65fda8fed1f532a6525eb05b4da9b39d94c.png"
-                                         href="a4dcec9ae358a2034b894bfa00cdf65fda8fed1f532a6525eb05b4da9b39d94c.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=11">
+                                    <img src="130f1cd48d0886bda45a1f6f60cedc3e7f0ba0f9d931e0a2741be9ab53d59d11.png"
+                                         href="130f1cd48d0886bda45a1f6f60cedc3e7f0ba0f9d931e0a2741be9ab53d59d11.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">164.98s</span></td>
+                    <td width="100"><span class="nested-step">16.02s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -531,23 +593,23 @@ I need to create documentation CNM
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=10">
-                                    <img src="86f5fd91b28c8710148fce1805deadc3f8a24a8408e1841a2d7f75afd1f1001f.png"
-                                         href="86f5fd91b28c8710148fce1805deadc3f8a24a8408e1841a2d7f75afd1f1001f.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=13">
+                                    <img src="956f50c5df538413d7cad0f01b8d7b584c6ba5bac6dcbb55e0aaf9ee541ca188.png"
+                                         href="956f50c5df538413d7cad0f01b8d7b584c6ba5bac6dcbb55e0aaf9ee541ca188.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=10">
-                                    <img src="da3557b345b64b849a6259af350ba323f33b47fbd7aa2d8d1ab0828e0c653087.png"
-                                         href="da3557b345b64b849a6259af350ba323f33b47fbd7aa2d8d1ab0828e0c653087.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=13">
+                                    <img src="62e58eed7fe7a62cabae3d16efc104de491bad51a62f5e30c7cfd268514b934f.png"
+                                         href="62e58eed7fe7a62cabae3d16efc104de491bad51a62f5e30c7cfd268514b934f.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">4.25s</span></td>
+                    <td width="100"><span class="nested-group-step">0.4s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -558,132 +620,30 @@ I need to create documentation CNM
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Usuario clicks on This the input security code
+                                Usuario clicks on This the button menu case
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=12">
-                                    <img src="0c3d29abb3221209f15a35dcbf9da1a931000ff46219cdf3e20ee6d4060a5db5.png"
-                                         href="0c3d29abb3221209f15a35dcbf9da1a931000ff46219cdf3e20ee6d4060a5db5.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=15">
+                                    <img src="62e58eed7fe7a62cabae3d16efc104de491bad51a62f5e30c7cfd268514b934f.png"
+                                         href="62e58eed7fe7a62cabae3d16efc104de491bad51a62f5e30c7cfd268514b934f.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=12">
-                                    <img src="c967f3e890f9d373ba12237aa2cb3b15b36a2847f06ab9c5a90be356362e7578.png"
-                                         href="c967f3e890f9d373ba12237aa2cb3b15b36a2847f06ab9c5a90be356362e7578.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=15">
+                                    <img src="0a83406bc187e756a662acea93e83d6d34ea934586290b1608069b7d96175848.png"
+                                         href="0a83406bc187e756a662acea93e83d6d34ea934586290b1608069b7d96175848.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">7.43s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="50" class="step-icon">
-                        
-                            <span style="margin-left: 60px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on This the input click case
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                        <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=14">
-                                    <img src="a46370f02aa4f8974452661b0b122a47a88b0a37c77d1f27ae34460f8be21a6b.png"
-                                         href="a46370f02aa4f8974452661b0b122a47a88b0a37c77d1f27ae34460f8be21a6b.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                                <i class="fas fa-arrow-right"></i>
-
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=14">
-                                    <img src="28592663de6eab2cf110ba853f8b95ce4610dc02e5dd53c289db4947e65dd342.png"
-                                         href="28592663de6eab2cf110ba853f8b95ce4610dc02e5dd53c289db4947e65dd342.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">5.15s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="50" class="step-icon">
-                        
-                            <span style="margin-left: 60px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario clicks on This the button clear filters
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                        <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=16">
-                                    <img src="db79dc0a8511eeac137a55a9aec1bfbc8e5392d02e106fe646a66b69e5b7eb8f.png"
-                                         href="db79dc0a8511eeac137a55a9aec1bfbc8e5392d02e106fe646a66b69e5b7eb8f.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                                <i class="fas fa-arrow-right"></i>
-
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=16">
-                                    <img src="281257d98000dd6e27dc1eec57b169c883829e11c9d325a40c74e5d753544e62.png"
-                                         href="281257d98000dd6e27dc1eec57b169c883829e11c9d325a40c74e5d753544e62.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">3.54s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="50" class="step-icon">
-                        
-                            <span style="margin-left: 60px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Usuario enters '202104149600102' into This the input case
-                            </span>
-                            <span class="evidence">
-                            </span>
-                        </div>
-                    </td>
-                        <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=18">
-                                    <img src="3811a8d449218e913e9fed016ee5557c555e62147b8a3602c033f3d0a53f9286.png"
-                                         href="3811a8d449218e913e9fed016ee5557c555e62147b8a3602c033f3d0a53f9286.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                                <i class="fas fa-arrow-right"></i>
-
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=18">
-                                    <img src="cb635faac5f9916e065209e35be2420ac441458f779700d5731ba221f4c6ea8d.png"
-                                         href="cb635faac5f9916e065209e35be2420ac441458f779700d5731ba221f4c6ea8d.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">3.49s</span></td>
+                    <td width="100"><span class="nested-group-step">0.25s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -701,23 +661,125 @@ I need to create documentation CNM
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=20">
-                                    <img src="2fbe32e2d7199723f82d89e3e741979fa40d40baa6040552461cdde0e55c00ca.png"
-                                         href="2fbe32e2d7199723f82d89e3e741979fa40d40baa6040552461cdde0e55c00ca.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=17">
+                                    <img src="0a83406bc187e756a662acea93e83d6d34ea934586290b1608069b7d96175848.png"
+                                         href="0a83406bc187e756a662acea93e83d6d34ea934586290b1608069b7d96175848.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=20">
-                                    <img src="7476d691fb4d9db7f1e0a820baae376c3ae462283c6c9a235769c8743fc7bc96.png"
-                                         href="7476d691fb4d9db7f1e0a820baae376c3ae462283c6c9a235769c8743fc7bc96.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=17">
+                                    <img src="4439c228038da5b215117545d601cba8e2b47d333cfff4f441bd323418281f88.png"
+                                         href="4439c228038da5b215117545d601cba8e2b47d333cfff4f441bd323418281f88.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">2.77s</span></td>
+                    <td width="100"><span class="nested-group-step">0.45s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">
+                                Usuario clicks on This the button clear filters
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=19">
+                                    <img src="e341c0b2ea7231cf895c37374738e8e971d1c7af88eb42e2d95c443bc1da0887.png"
+                                         href="e341c0b2ea7231cf895c37374738e8e971d1c7af88eb42e2d95c443bc1da0887.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=19">
+                                    <img src="9ad7244c5667660322c248ae2d72ff526961ae002a651df7865cb4e698102025.png"
+                                         href="9ad7244c5667660322c248ae2d72ff526961ae002a651df7865cb4e698102025.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.41s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">
+                                Usuario enters '202104149600102' into This the input case
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=21">
+                                    <img src="9ad7244c5667660322c248ae2d72ff526961ae002a651df7865cb4e698102025.png"
+                                         href="9ad7244c5667660322c248ae2d72ff526961ae002a651df7865cb4e698102025.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=21">
+                                    <img src="b4d09f2f819db388440f95ce47b6e390f06a3d6fd0bfb337607d4a5226a8db0c.png"
+                                         href="b4d09f2f819db388440f95ce47b6e390f06a3d6fd0bfb337607d4a5226a8db0c.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.45s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">
+                                Usuario clicks on This the button search case
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=23">
+                                    <img src="b4d09f2f819db388440f95ce47b6e390f06a3d6fd0bfb337607d4a5226a8db0c.png"
+                                         href="b4d09f2f819db388440f95ce47b6e390f06a3d6fd0bfb337607d4a5226a8db0c.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
+
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=23">
+                                    <img src="1307c3d5efceb7ac57584626473673e5992a539f8b1fa0d68f865a20b1453f3a.png"
+                                         href="1307c3d5efceb7ac57584626473673e5992a539f8b1fa0d68f865a20b1453f3a.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.23s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -735,23 +797,23 @@ I need to create documentation CNM
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=22">
-                                    <img src="3104792229d2a168e8bbcec31684a2b4929a3159d00574e7e9dcfb1236463e17.png"
-                                         href="3104792229d2a168e8bbcec31684a2b4929a3159d00574e7e9dcfb1236463e17.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=25">
+                                    <img src="1307c3d5efceb7ac57584626473673e5992a539f8b1fa0d68f865a20b1453f3a.png"
+                                         href="1307c3d5efceb7ac57584626473673e5992a539f8b1fa0d68f865a20b1453f3a.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=22">
-                                    <img src="059b20755e1e7da321f2c2c808871bde6958934602fa70f2daa3e8cef503024b.png"
-                                         href="059b20755e1e7da321f2c2c808871bde6958934602fa70f2daa3e8cef503024b.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=25">
+                                    <img src="d6fc0b40f5d24db72c563a761af827ac2118ea495dcb240276691484535ddc02.png"
+                                         href="d6fc0b40f5d24db72c563a761af827ac2118ea495dcb240276691484535ddc02.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">3.52s</span></td>
+                    <td width="100"><span class="nested-group-step">0.68s</span></td>
                 </tr>
 
                 <tr class="test-SUCCESS">
@@ -763,30 +825,30 @@ I need to create documentation CNM
                     <td>
                         <div class="step-description">
                             <span class="nested-step">
-                                When set information with complaint management person Administrativo Aya and generates complaint No and observation pruebas automaticas creacion documentacion CNM and filed complaint 15242411
+                                And I type information complaint in the fields management person Administrativo Aya and generates complaint Si and observation pruebas automaticas creacion documentacion CNM and filed complaint 15242411
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=24">
-                                    <img src="a4dcec9ae358a2034b894bfa00cdf65fda8fed1f532a6525eb05b4da9b39d94c.png"
-                                         href="a4dcec9ae358a2034b894bfa00cdf65fda8fed1f532a6525eb05b4da9b39d94c.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=27">
+                                    <img src="130f1cd48d0886bda45a1f6f60cedc3e7f0ba0f9d931e0a2741be9ab53d59d11.png"
+                                         href="130f1cd48d0886bda45a1f6f60cedc3e7f0ba0f9d931e0a2741be9ab53d59d11.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=24">
-                                    <img src="5998269c47cfb400b2c1ca8c3419780b99465721d1620427b38396d8da39de2e.png"
-                                         href="5998269c47cfb400b2c1ca8c3419780b99465721d1620427b38396d8da39de2e.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=27">
+                                    <img src="6f726db073a0b84f4d6e477aeb09da8606a8ee8f35dc73902f8766279392f02d.png"
+                                         href="6f726db073a0b84f4d6e477aeb09da8606a8ee8f35dc73902f8766279392f02d.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">86.71s</span></td>
+                    <td width="100"><span class="nested-step">6.25s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -804,23 +866,23 @@ I need to create documentation CNM
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=26">
-                                    <img src="a4dcec9ae358a2034b894bfa00cdf65fda8fed1f532a6525eb05b4da9b39d94c.png"
-                                         href="a4dcec9ae358a2034b894bfa00cdf65fda8fed1f532a6525eb05b4da9b39d94c.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=29">
+                                    <img src="130f1cd48d0886bda45a1f6f60cedc3e7f0ba0f9d931e0a2741be9ab53d59d11.png"
+                                         href="130f1cd48d0886bda45a1f6f60cedc3e7f0ba0f9d931e0a2741be9ab53d59d11.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=26">
-                                    <img src="57d7019d305c8088b8299ab01f8f0441fa12d454fbc8a48fa24951a339c67a6f.png"
-                                         href="57d7019d305c8088b8299ab01f8f0441fa12d454fbc8a48fa24951a339c67a6f.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=29">
+                                    <img src="5cc21860f8a0d30f02e456775de7fcb17fbed940dc22bebb24387d1dfe6c4d0a.png"
+                                         href="5cc21860f8a0d30f02e456775de7fcb17fbed940dc22bebb24387d1dfe6c4d0a.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">5.06s</span></td>
+                    <td width="100"><span class="nested-group-step">0.33s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -838,23 +900,23 @@ I need to create documentation CNM
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=28">
-                                    <img src="56ec8a25693a6cc6f47be36367db416dc80a1e823f2e0fe4d85fd77b75caae37.png"
-                                         href="56ec8a25693a6cc6f47be36367db416dc80a1e823f2e0fe4d85fd77b75caae37.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=31">
+                                    <img src="1f96ae855f646f9846c127a6021cafeb34b27a686061d7b1b08833b866cfb5e4.png"
+                                         href="1f96ae855f646f9846c127a6021cafeb34b27a686061d7b1b08833b866cfb5e4.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=28">
-                                    <img src="b192ba000355f4e15c545cb3aff5f7500ea34984cc64017611738d96c1749d87.png"
-                                         href="b192ba000355f4e15c545cb3aff5f7500ea34984cc64017611738d96c1749d87.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=31">
+                                    <img src="4ee8832bef1e0ad91daad36e8b3c73304e7813fc1955ed8c888eb15ee605ee46.png"
+                                         href="4ee8832bef1e0ad91daad36e8b3c73304e7813fc1955ed8c888eb15ee605ee46.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">21.17s</span></td>
+                    <td width="100"><span class="nested-step">2.11s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -872,23 +934,23 @@ I need to create documentation CNM
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=30">
-                                    <img src="56ec8a25693a6cc6f47be36367db416dc80a1e823f2e0fe4d85fd77b75caae37.png"
-                                         href="56ec8a25693a6cc6f47be36367db416dc80a1e823f2e0fe4d85fd77b75caae37.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=33">
+                                    <img src="1f96ae855f646f9846c127a6021cafeb34b27a686061d7b1b08833b866cfb5e4.png"
+                                         href="1f96ae855f646f9846c127a6021cafeb34b27a686061d7b1b08833b866cfb5e4.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=30">
-                                    <img src="8fc33fde448ceccb4a72d84e737a7a0aafbc6de71a327c9432799bedc471a122.png"
-                                         href="8fc33fde448ceccb4a72d84e737a7a0aafbc6de71a327c9432799bedc471a122.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=33">
+                                    <img src="9912bc1c007b15c4943ff856c2ed0d004dbcce12320b153037f4cbfcbdcdc323.png"
+                                         href="9912bc1c007b15c4943ff856c2ed0d004dbcce12320b153037f4cbfcbdcdc323.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">5.39s</span></td>
+                    <td width="100"><span class="nested-group-step">0.31s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -906,23 +968,23 @@ I need to create documentation CNM
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=32">
-                                    <img src="8fc33fde448ceccb4a72d84e737a7a0aafbc6de71a327c9432799bedc471a122.png"
-                                         href="8fc33fde448ceccb4a72d84e737a7a0aafbc6de71a327c9432799bedc471a122.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=35">
+                                    <img src="9912bc1c007b15c4943ff856c2ed0d004dbcce12320b153037f4cbfcbdcdc323.png"
+                                         href="9912bc1c007b15c4943ff856c2ed0d004dbcce12320b153037f4cbfcbdcdc323.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=32">
-                                    <img src="029ee9c90ab9066ab3643aa549ed7249b3c15ac0f2150da9f2346ae7069297fc.png"
-                                         href="029ee9c90ab9066ab3643aa549ed7249b3c15ac0f2150da9f2346ae7069297fc.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=35">
+                                    <img src="91f2c0eb44d688cfeb9a1aae9677227fc994ada32155554ba18485ad2662a2b7.png"
+                                         href="91f2c0eb44d688cfeb9a1aae9677227fc994ada32155554ba18485ad2662a2b7.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">3.21s</span></td>
+                    <td width="100"><span class="nested-group-step">0.47s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -940,23 +1002,23 @@ I need to create documentation CNM
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=34">
-                                    <img src="029ee9c90ab9066ab3643aa549ed7249b3c15ac0f2150da9f2346ae7069297fc.png"
-                                         href="029ee9c90ab9066ab3643aa549ed7249b3c15ac0f2150da9f2346ae7069297fc.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=37">
+                                    <img src="91f2c0eb44d688cfeb9a1aae9677227fc994ada32155554ba18485ad2662a2b7.png"
+                                         href="91f2c0eb44d688cfeb9a1aae9677227fc994ada32155554ba18485ad2662a2b7.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=34">
-                                    <img src="fe505d89174a5a27a85c35a02b6b20942a1d22178158af289bf44cf92b852cc7.png"
-                                         href="fe505d89174a5a27a85c35a02b6b20942a1d22178158af289bf44cf92b852cc7.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=37">
+                                    <img src="edf0a04ddabb280deed2b2e56e4e1163783c305354f689429660b8c1cecd7632.png"
+                                         href="edf0a04ddabb280deed2b2e56e4e1163783c305354f689429660b8c1cecd7632.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">3.06s</span></td>
+                    <td width="100"><span class="nested-group-step">0.26s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -967,30 +1029,30 @@ I need to create documentation CNM
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Usuario enters 'No' into This the input search generates complaint documentation
+                                Usuario enters 'Si' into This the input search generates complaint documentation
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=36">
-                                    <img src="fe505d89174a5a27a85c35a02b6b20942a1d22178158af289bf44cf92b852cc7.png"
-                                         href="fe505d89174a5a27a85c35a02b6b20942a1d22178158af289bf44cf92b852cc7.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=39">
+                                    <img src="edf0a04ddabb280deed2b2e56e4e1163783c305354f689429660b8c1cecd7632.png"
+                                         href="edf0a04ddabb280deed2b2e56e4e1163783c305354f689429660b8c1cecd7632.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=36">
-                                    <img src="000b24832f85a4682f276d891977dfb2974549349b48b630c7c3d3c5731bea3b.png"
-                                         href="000b24832f85a4682f276d891977dfb2974549349b48b630c7c3d3c5731bea3b.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=39">
+                                    <img src="a322f5a98cd7cdedbe58a59dac876d13c33039b544a4dff3422d0f99cac77bd6.png"
+                                         href="a322f5a98cd7cdedbe58a59dac876d13c33039b544a4dff3422d0f99cac77bd6.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">3.12s</span></td>
+                    <td width="100"><span class="nested-group-step">0.36s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -1008,23 +1070,23 @@ I need to create documentation CNM
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=38">
-                                    <img src="000b24832f85a4682f276d891977dfb2974549349b48b630c7c3d3c5731bea3b.png"
-                                         href="000b24832f85a4682f276d891977dfb2974549349b48b630c7c3d3c5731bea3b.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=41">
+                                    <img src="a322f5a98cd7cdedbe58a59dac876d13c33039b544a4dff3422d0f99cac77bd6.png"
+                                         href="a322f5a98cd7cdedbe58a59dac876d13c33039b544a4dff3422d0f99cac77bd6.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=38">
-                                    <img src="b192ba000355f4e15c545cb3aff5f7500ea34984cc64017611738d96c1749d87.png"
-                                         href="b192ba000355f4e15c545cb3aff5f7500ea34984cc64017611738d96c1749d87.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=41">
+                                    <img src="4ee8832bef1e0ad91daad36e8b3c73304e7813fc1955ed8c888eb15ee605ee46.png"
+                                         href="4ee8832bef1e0ad91daad36e8b3c73304e7813fc1955ed8c888eb15ee605ee46.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">3.59s</span></td>
+                    <td width="100"><span class="nested-group-step">0.58s</span></td>
                 </tr>
 
                 <tr class="test-SUCCESS">
@@ -1043,23 +1105,23 @@ I need to create documentation CNM
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=40">
-                                    <img src="625a42b6aadf12c25f6932d200641ebfe80be823c1e1a7880bc2a05ae6295180.png"
-                                         href="625a42b6aadf12c25f6932d200641ebfe80be823c1e1a7880bc2a05ae6295180.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=43">
+                                    <img src="4ee8832bef1e0ad91daad36e8b3c73304e7813fc1955ed8c888eb15ee605ee46.png"
+                                         href="4ee8832bef1e0ad91daad36e8b3c73304e7813fc1955ed8c888eb15ee605ee46.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=40">
-                                    <img src="f33227ce8757f7c5d604a2a11bb716acbf603d2cfb04760815b0f334f907b17b.png"
-                                         href="f33227ce8757f7c5d604a2a11bb716acbf603d2cfb04760815b0f334f907b17b.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=43">
+                                    <img src="320990aaa2c126f64fe157164070f0a3c0827820de487f28453f1c3e08937461.png"
+                                         href="320990aaa2c126f64fe157164070f0a3c0827820de487f28453f1c3e08937461.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">6.08s</span></td>
+                    <td width="100"><span class="nested-group-step">0.36s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
@@ -1077,105 +1139,60 @@ I need to create documentation CNM
                         </div>
                     </td>
                         <td width="160" class="SUCCESS-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=42">
-                                    <img src="de869013dea5237244e3dc62aa1573e1a407b3efddfffb6cb9bf1fdda8da4d45.png"
-                                         href="de869013dea5237244e3dc62aa1573e1a407b3efddfffb6cb9bf1fdda8da4d45.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=45">
+                                    <img src="320990aaa2c126f64fe157164070f0a3c0827820de487f28453f1c3e08937461.png"
+                                         href="320990aaa2c126f64fe157164070f0a3c0827820de487f28453f1c3e08937461.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                                 <i class="fas fa-arrow-right"></i>
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=42">
-                                    <img src="afc051e2af2afa9a6fc960197a8e1da4f3df594c7520fd30e94e36ff861b3e3c.png"
-                                         href="afc051e2af2afa9a6fc960197a8e1da4f3df594c7520fd30e94e36ff861b3e3c.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=45">
+                                    <img src="00b003fb32ce25bd9419b3472ada7e8161f1ac166cb99de9ff8f745f359f7948.png"
+                                         href="00b003fb32ce25bd9419b3472ada7e8161f1ac166cb99de9ff8f745f359f7948.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.05s</span></td>
+                    <td width="100"><span class="nested-group-step">0.3s</span></td>
                 </tr>
 
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="50" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Then user view the modal save documentation CNM with Registro guardado correctamente
+                                Then I view the modal save documentation CNM with Registro guardado correctamente
                             </span>
                             <span class="evidence">
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="ERROR-text">
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=44">
-                                    <img src="5998269c47cfb400b2c1ca8c3419780b99465721d1620427b38396d8da39de2e.png"
-                                         href="5998269c47cfb400b2c1ca8c3419780b99465721d1620427b38396d8da39de2e.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                                <i class="fas fa-arrow-right"></i>
+                        <td width="160" class="SUCCESS-text">
 
-                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=44">
-                                    <img src="99beca0f95c520c06054844974a95f50997ff35bcf8b6d5b70a77b4b48e60856.png"
-                                         href="99beca0f95c520c06054844974a95f50997ff35bcf8b6d5b70a77b4b48e60856.png"
+                                <a href="38c92d37b4f87ef01c238fedc523661348934a481eed69dae56ab4f972fdf11f_screenshots.html#screenshots?screenshot=47">
+                                    <img src="6f726db073a0b84f4d6e477aeb09da8606a8ee8f35dc73902f8766279392f02d.png"
+                                         href="6f726db073a0b84f4d6e477aeb09da8606a8ee8f35dc73902f8766279392f02d.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="nested-group-step">ERROR</span></td>
-                    <td width="100"><span class="nested-group-step">2.6s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.04s</span></td>
                 </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-
-
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#toast\-container&quot;}<br>  (Session info: chrome=78.0.3904.108)<br>For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: &#39;3.141.59&#39;, revision: &#39;e82be7d358&#39;, time: &#39;2018-11-14T08:17:03&#39;<br>System info: host: &#39;ANMEUCCI07M&#39;, ip: &#39;172.102.215.89&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_251&#39;<br>Driver info: org.openqa.selenium.chrome.ChromeDriver<br>Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\yaira.acevedo\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:56065}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br>Session ID: eb59b39c4a36a4d038420d95ab9c3453<br>*** Element info: {Using=id, value=toast-container}</span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-25""
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-25">
-            <div class="card">
-                <div class="card-header">
-                    <h4>org.openqa.selenium.NoSuchElementException </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>co.konecta.sura.certificate.stepsdefinitions.DocumentationCNMStepsDefinitions.userViewTheModalSaveDocumentationCNMWith(DocumentationCNMStepsDefinitions.java:88)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-                    </td>
-                    </tr>
 
                     </table>
                     </td>
                     <tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td colspan="3"></td>
-                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>270.49s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>34.15s</em></span></td>
                 </tr>
 
             </table>

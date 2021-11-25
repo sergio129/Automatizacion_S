@@ -4,7 +4,7 @@ import co.konecta.sura.certificate.task.cases.casetask.Case;
 import co.konecta.sura.certificate.task.cases.casetask.CaseModel;
 import co.konecta.sura.certificate.task.cases.login.LoginTask;
 import co.konecta.sura.certificate.userinterface.cases.advancedsearch.AdvancedSearchPage;
-import co.konecta.sura.certificate.userinterface.cases.login.HomePage;
+import co.konecta.sura.certificate.userinterface.home.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -22,7 +22,7 @@ import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.userinterface.cases.advancedsearch.AdvancedSearchPage.INPUT_CASE;
 import static co.konecta.sura.certificate.userinterface.cases.cases.CasePage.BUTTON_SAVE_CASE;
-import static co.konecta.sura.certificate.userinterface.cases.login.HomePage.MODAL_VALIDATION;
+import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
 
 public class CaseStepsDefinitions {
 

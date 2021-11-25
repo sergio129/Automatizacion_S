@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.userinterface.cases.login.HomePage.*;
+import static co.konecta.sura.certificate.userinterface.home.HomePage.*;
 import static co.konecta.sura.certificate.userinterface.cases.suppliermanagement.SupplierManagementPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 

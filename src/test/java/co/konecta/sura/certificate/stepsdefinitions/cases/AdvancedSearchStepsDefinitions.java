@@ -2,7 +2,7 @@ package co.konecta.sura.certificate.stepsdefinitions.cases;
 
 import co.konecta.sura.certificate.task.cases.advancedsearch.AdvancedSearchTask;
 import co.konecta.sura.certificate.userinterface.cases.advancedsearch.AdvancedSearchPage;
-import co.konecta.sura.certificate.userinterface.cases.login.HomePage;
+import co.konecta.sura.certificate.userinterface.home.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;

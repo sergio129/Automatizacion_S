@@ -15,8 +15,8 @@ Feature: Control boards parameterization
     Then I view the modal save control boards with <modalmessage>
 
     Examples:
-      | user          | password   | boardname             | fieldsshow1 |fieldsshow2      | fieldsshow3 | fieldsshow4  | fieldsshow5|casestatus | statusservice | departmentrequest | service          | specialservice | assigneduser        | modalmessage                    |
-      | yaira.acevedo | YMAe1710*  | Tablero pruebas casos | Expediente  |Estado expediente|Asignado a   | Departamento |Proveedor   |Pendiente  | Programado    | Antioquia         | Abogado En Sitio | Noo            | Yaira Manuela Admin | Registro guardado correctamente |
+      | user         | password       | boardname                    | fieldsshow1 | fieldsshow2       | fieldsshow3 | fieldsshow4  | fieldsshow5 | casestatus | statusservice | departmentrequest | service          | specialservice | assigneduser        | modalmessage                    |
+      | Sergio.anaya | Colombia_2024* | Tablero Casos Automatizacion | Expediente  | Estado expediente | Asignado a  | Departamento | Proveedor   | Pendiente  | Programado    | Antioquia         | Abogado En Sitio | Noo            | Yaira Manuela Admin | Registro guardado correctamente |
 
 
   @TestControlBoardsTaskMonitoring

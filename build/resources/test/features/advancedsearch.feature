@@ -13,8 +13,8 @@ I need to perform an advanced search
     Then I view the case found
 
     Examples:
-      |  user         | password   |numberCase      | licensePlate  |securityCode   | clickCase |  assignedTo           |department  |municipality |line      |caseClosureStatus            |class                      |caseStatus                 |serviceStatus                |service   | typeService |specialService   |customerType |supplier                       |
-      |yaira.acevedo  | YMAe8807*  |2020031428606   |    EHL563     | 28606         | No        |Yaira Manuela Admin    |Antioquia   |Itagui       |Autos     |Pendiente                    |Coordinacion tradicional   | Pendiente por finalizar   |Concluido                    |Grua      | Guardianes1 |Noo              |Intermedio   |24 H CAR SERVICE SAS MEDELLIN  |
+      | user         | password       | numberCase       | licensePlate | securityCode | clickCase | assignedTo        | department | municipality | line | caseClosureStatus | class                    | caseStatus | serviceStatus | service          | typeService | specialService | customerType | supplier         |
+      | Sergio.anaya | Colombia_2024* | 2021091712145443 | SFG74R       | 2145443      | No        | Sergio Luis Anaya | Cordoba    | Monteria     | ARL  | Finalizado        | Coordinacion tradicional | Finalizado | Finalizado    | Emergencia Salud |             | Noo            | Intermedio   | PROVEEDOR PRUEBA |
 
   @TestAdvancedSearchOptional
   Scenario Outline: Successful advanced search case optional
@@ -24,5 +24,5 @@ I need to perform an advanced search
     Then I view the case found
 
     Examples:
-      |  user         | password   |numberCase      | licensePlate  |department  |line         |service                   |
-      |yaira.acevedo  | YMAe8807*  |202104062454881 | xxxx          |Antioquia   |Autos        |Abogado En Sitio          |
+      | user         | password       | numberCase       | licensePlate | department | line | service          |
+      | sergio.anaya | Colombia_2024* | 2021091712145443 | SFG74R       | Monteria   | ARL  | Emergencia Salud |

@@ -13,8 +13,8 @@ Feature: Strategy parameterization
     Then I view the modal save strategy parameterization with <modalmessage>
 
   Examples:
-    | user          | password  | description          | namecontingencysearch  |modalmessage                    |
-    | yaira.acevedo | YMAe1710* | pruebas contingencia | Contingencia           |Registro guardado correctamente |
+    | user         | password       | description | namecontingencysearch | modalmessage                    |
+    | sergio.anaya | Colombia_2023* | Prueba      | Contingencia          | Registro guardado correctamente |
 
 
   @TestCoordinationStrategyParameterizationEdition
@@ -25,8 +25,8 @@ Feature: Strategy parameterization
     Then I view the modal save strategy parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | description    | timeassignment | firstexpiration | secondexpiration | modalmessage                    |
-      | yaira.acevedo | YMAe1710* | prueba edicion | 5              | 15              | 22               | Registro guardado correctamente |
+      | user         | password       | description    | timeassignment | firstexpiration | secondexpiration | modalmessage                    |
+      | Sergio.anaya | Colombia_2023* | prueba edicion | 5              | 15              | 22               | Registro guardado correctamente |
 
 
   @TestMonitoringStrategyParameterizationEdition

@@ -15,8 +15,8 @@ Feature: Lists parameterization
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
-      | user          | password   | roles | modules            | lists           | options1      | options2      | modalmessage                      |
-      | yaira.acevedo | YMAe8807** | Admin | Escalamientos sura | Tipo de gestion | Opción Prueba | Banca seguros | Registros guardados correctamente |
+      | user         | password       | roles | modules            | lists           | options1      | options2      | modalmessage                      |
+      | sergio.anaya | Colombia_2022* | Admin | Escalamientos sura | Tipo de gestion | Opción Prueba | Banca seguros | Registros guardados correctamente |
 
 
   @TestListParameterizationWithOption
@@ -29,8 +29,8 @@ Feature: Lists parameterization
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
-      | user          | password   | roles | modules            | lists           | options1      | options2      | optionname      |ideasycase     |modalmessage                      |
-      | yaira.acevedo | YMAe8807** | Admin | Escalamientos sura | Tipo de gestion | Opción Prueba | Banca seguros | prueba opcion   |12134          | Registros guardados correctamente |
+      | user         | password       | roles | modules            | lists           | options1      | options2      | optionname    | ideasycase | modalmessage                      |
+      | sergio.anaya | Colombia_2022* | Admin | Escalamientos sura | Tipo de gestion | Opción Prueba | Banca seguros | prueba opcion | 12134      | Registros guardados correctamente |
 
 
   @TestListParameterizationEdition
@@ -42,8 +42,8 @@ Feature: Lists parameterization
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
-      | user          | password   | roles     | modules            | lists              | options1      | options2    | modalmessage                      |
-      | yaira.acevedo | YMAe8807** | Rol Front | Documentación CNM  | Persona de gestión | Monitoreo     | CNM         | Registros guardados correctamente |
+      | user         | password       | roles     | modules           | lists              | options1  | options2 | modalmessage                      |
+      | sergio.anaya | Colombia_2022* | Rol Front | Documentación CNM | Persona de gestión | Monitoreo | CNM      | Registros guardados correctamente |
 
 
   @TestControlBoardsParameterizationRequiredFields
@@ -53,5 +53,5 @@ Feature: Lists parameterization
     And I no type information lists parameterization
     Then I view the modal save lists parameterization with <modalmessage>
     Examples:
-      | user          | password   | modalmessage                     |
-      | yaira.acevedo | YMAe8807** |Todos los campos son obligatorios |
+      | user         | password       | modalmessage                      |
+      | sergio.anaya | Colombia_2022* | Todos los campos son obligatorios |

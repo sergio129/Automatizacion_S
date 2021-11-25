@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/advancedsearch.feature",
-        tags = {"@TestAdvancedSearchOptional"},
+        tags = "@TestAdvancedSearchComplete",
         snippets = SnippetType.CAMELCASE,
         monochrome = true
 

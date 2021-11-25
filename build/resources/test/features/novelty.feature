@@ -17,8 +17,8 @@ Feature: Novelty
     Then I view the modal save novelty with <message>
 
     Examples:
-      | user             | password    | numberCase     | whoreportsnewsmanagements | causenoveltynewsmanagement |complaintnewsmanagement |observationnewsmanagement      |message                        |
-      |yaira.acevedo     | YMAe8807*   |202106104435443 | Acompañamiento Emocional  | Abogado Virtual            |No                      |observacion novedades pruebas  |Registro guardado correctamente|
+      | user         | password       | numberCase      | whoreportsnewsmanagements | causenoveltynewsmanagement | complaintnewsmanagement | observationnewsmanagement     | message                         |
+      | Sergio.Anaya | Colombia_2024* | 202106104435443 | Acompañamiento Emocional  | Abogado Virtual            | No                      | observacion novedades pruebas | Registro guardado correctamente |
 
   @TestNoveltyEdition
   Scenario Outline: Successful novelty edition

@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/novelty.feature",
         snippets = SnippetType.CAMELCASE,
-        tags = {"@TestNoveltyRequiredFields"},
+        tags = {"@TestNoveltyComplete"},
         monochrome = true
 
 )

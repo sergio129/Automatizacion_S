@@ -18,8 +18,8 @@ Feature: Monitoring
     Then I view the modal save task monitoring <modalmessage>
 
     Examples:
-      |  user            | password     |numberCase           |name             | type                               | date        | expiredhour       | userMonitoring      | modalmessage                     |
-      |yaira.acevedo     | YMAe8807**   |202121312837234      | Prueba          |Monitoreo finalizacion del servicio | 2021-05-31  | 09:19am           | Yesenia             | Registro guardado correctamente  |
+      | user         | password       | numberCase      | name   | type                                | date       | expiredhour | userMonitoring | modalmessage                    |
+      | Sergio.anaya | Colombia_2024* | 202121312837234 | Prueba | Monitoreo finalizacion del servicio | 2021-05-31 | 09:19am     | Yesenia        | Registro guardado correctamente |
 
   @TestTaskMonitoringEdition
   Scenario Outline: Successful task monitoring edition

@@ -24,8 +24,8 @@ Feature: Page create case
     Then I view the modal save case with <message>
 
     Examples:
-      |  user            | password    |numberCase       | applicantName  |    phone1   | licensePlate |serviceAddress  | serviceLocation |department |municipality |clickCase|line |service| message                          | addressdetail|
-      |yaira.acevedo     | YMAe1710*   |202121344537243  |    pruebas     | 1312314     | GTRE34E      |pruebas         | pruebas         |Antioquia  |Medellin     |No       |Autos|Grua   | Registro guardado correctamente  | xxx          |
+      | user         | password       | numberCase      | applicantName          | phone1  | licensePlate | serviceAddress | serviceLocation | department | municipality | clickCase | line  | service | message                         | addressdetail |
+      | sergio.anaya | Colombia_2024* | 202121344537244 | Pruebas Automatizacion | 1312314 | GTRE34E      | pruebas        | pruebas         | Antioquia  | Medellin     | No        | Autos | Grua    | Registro guardado correctamente | xxx           |
 
   @TestCaseEdition
   Scenario Outline: Successful case edition

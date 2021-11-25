@@ -13,8 +13,8 @@ Feature: Page submodule supplier monitoring
     Then I view the modal save supplier monitoring with <modalmessage>
 
     Examples:
-      | user          | password    | numberCase      | monitoringwith | timeofservice        | responsetomonitoring | generatescomplaint | adviserobservation                  | supplierobservation                             | modalmessage                      |
-      |yaira.acevedo  | YMAe8807*   |202105030000007  |Asegurado       |Monitoreo preventivo  |Acepte                |No                  |pruebas automaticas asesor creacion  |pruebas automaticas monitoreo proveedor creacion | Registro guardado correctamente   |
+      | user         | password       | numberCase      | monitoringwith | timeofservice        | responsetomonitoring | generatescomplaint | adviserobservation                  | supplierobservation                              | modalmessage                    |
+      | Sergio.Anaya | Colombia_2024* | 202105030000007 | Asegurado      | Monitoreo preventivo | Acepte               | No                 | pruebas automaticas asesor creacion | pruebas automaticas monitoreo proveedor creacion | Registro guardado correctamente |
 
 
   @TestSupplierMonitoringEdition
