@@ -12,9 +12,9 @@ Feature: Strategy parameterization
     And I type information in the contingency strategy with the name contingency search <namecontingencysearch> and the description <description>
     Then I view the modal save strategy parameterization with <modalmessage>
 
-  Examples:
-    | user         | password       | description | namecontingencysearch | modalmessage                    |
-    | sergio.anaya | Colombia_2023* | Prueba      | Contingencia          | Registro guardado correctamente |
+    Examples:
+      | user         | password       | description | namecontingencysearch | modalmessage                    |
+      | sergio.anaya | Colombia_2024* | Prueba      | Contingencia          | Registro guardado correctamente |
 
 
   @TestCoordinationStrategyParameterizationEdition
@@ -26,7 +26,7 @@ Feature: Strategy parameterization
 
     Examples:
       | user         | password       | description    | timeassignment | firstexpiration | secondexpiration | modalmessage                    |
-      | Sergio.anaya | Colombia_2023* | prueba edicion | 5              | 15              | 22               | Registro guardado correctamente |
+      | Sergio.anaya | Colombia_2024* | prueba edicion | 5              | 15              | 22               | Registro guardado correctamente |
 
 
   @TestMonitoringStrategyParameterizationEdition
@@ -49,8 +49,8 @@ Feature: Strategy parameterization
     Then I view the modal save strategy parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | description               | modalmessage                    |
-      | yaira.acevedo | YMAe1710* | pruebas tareas estrategia | Registro guardado correctamente |
+      | user         | password       | description               | modalmessage                    |
+      | Sergio.anaya | Colombia_2024* | pruebas tareas estrategia | Registro guardado correctamente |
 
 
   @TestServicesStrategyParameterizationEdition
@@ -69,9 +69,9 @@ Feature: Strategy parameterization
   Scenario Outline: Notification strategy parameterization successful edition
     When I entering in the application with user <user> and password <password>
     And I entering strategy parameterization
-    And I type information in the notification strategy with the description <description> and the notification message <notificationmessage> and the notification time <notificationtime>
+    And I type information in the notification strategy with the name contingency search <namecontingencysearch2> and the description <description> and the notification message <notificationmessage> and the notification time <notificationtime>
     Then I view the modal save strategy parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | description                     | notificationmessage | notificationtime | modalmessage                     |
-      | yaira.acevedo | YMAe1710* | pruebas notificacion estrategia | Notificacion prueba | 8000             |  Registro guardado correctamente |
+      | user         | password       | description                                              | namecontingencysearch2 | notificationmessage | notificationtime | modalmessage                    |
+      | sergio.anaya | Colombia_2024* | {"status":true,"message":"Notificacion 3","time":"6000"} | notificacion           | Notificacion prueba | 8000             | Registro guardado correctamente |

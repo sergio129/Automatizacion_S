@@ -120,8 +120,8 @@ public class StrategyStepsDefinitions {
         );
     }
 
-    @And("^I type information in the notification strategy with the description (.*) and the notification message (.*) and the notification time (.*)$")
-    public void iTypeInformationInTheNotificationStrategyWithTheDescriptionAndTheNotificationMessageAndTheNotificationTime(String contingencyDescription, String notificationMessage, String notificationTime) {
+    @And("^I type information in the notification strategy with the name contingency search (.*) and the description (.*) and the notification message (.*) and the notification time (.*)$")
+    public void iTypeInformationInTheNotificationStrategyWithTheDescriptionAndTheNotificationMessageAndTheNotificationTime(String nameContingencySearch2, String contingencyDescription, String notificationMessage, String notificationTime) {
         actor.attemptsTo(Click.on(BUTTON_EDIT_NOTIFICATION_STRATEGY),
                 StrategyTask.withInformationStrategy(contingencyDescription),
                 Click.on(INPUT_NOTIFICATION_MESSAGE_STATUS),

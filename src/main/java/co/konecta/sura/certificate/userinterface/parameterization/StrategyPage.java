@@ -28,9 +28,9 @@ public class StrategyPage {
     public static final Target BUTTON_EDIT_CONTINGENCY_STRATEGY = Target.the("This the button edit contingency strategy").located(By.id("btnEditStrategy"));
     public static final Target BUTTON_EDIT_COORDINATION_STRATEGY = Target.the("This the button edit coordination strategy").located(By.id(""));
     public static final Target BUTTON_EDIT_MONITORING_STRATEGY = Target.the("This the button edit monitoring strategy").located(By.id(""));
-    public static final Target BUTTON_EDIT_TASK_STRATEGY = Target.the("This the button edit task strategy").located(By.id(""));
+    public static final Target BUTTON_EDIT_TASK_STRATEGY = Target.the("This the button edit task strategy").located(By.id("btnEditStrategy"));
     public static final Target BUTTON_EDIT_SERVICES_STRATEGY = Target.the("This the button edit services strategy").located(By.id(""));
-    public static final Target BUTTON_EDIT_NOTIFICATION_STRATEGY = Target.the("This the button edit notification strategy").located(By.id(""));
+    public static final Target BUTTON_EDIT_NOTIFICATION_STRATEGY = Target.the("This the button edit notification strategy").located(By.id("btnEditStrategy"));
     public static final Target BUTTON_SAVE_STRATEGY = Target.the("This the button save strategy").located(By.id("btnEditSaveStrategy"));
     public static final Target BUTTON_CANCEL_STRATEGY = Target.the("This the button cancel strategy").located(By.id(""));
 

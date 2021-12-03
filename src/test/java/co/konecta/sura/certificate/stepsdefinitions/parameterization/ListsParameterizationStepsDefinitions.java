@@ -41,6 +41,7 @@ public class ListsParameterizationStepsDefinitions {
         actor.attemptsTo(Click.on(ListsParameterizationPage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(ListsParameterizationPage.BUTTON_PARAMETRIZACION));
         Thread.sleep(3000);
+        actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
 
      //actor.attemptsTo(Click.on(ListsParameterizationPage.BUTTON_SCROLL));
         //JavascriptExecutor js = (JavascriptExecutor) driver;
