@@ -42,8 +42,8 @@ Feature: Lists parameterization
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
-      | user         | password       | roles     | modules           | lists              | options1  | options2 | modalmessage                      |
-      | sergio.anaya | Colombia_2022* | Rol Front | Documentación CNM | Persona de gestión | Monitoreo | CNM      | Registros guardados correctamente |
+      | user         | password       | roles         | modules            | lists              | options1  | options2 | modalmessage                      |
+      | sergio.anaya | Colombia_2024* | prueba angela | Escalamientos sura | Persona de gestión | Monitoreo | CNM      | Registros guardados correctamente |
 
 
   @TestControlBoardsParameterizationRequiredFields
