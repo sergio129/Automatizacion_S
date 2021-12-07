@@ -3,8 +3,8 @@
   <properties/>
   <system-out><![CDATA[
 1 Scenarios (1 passed)
-6 Steps (6 passed)
-0m34,252s
+5 Steps (5 passed)
+0m25,542s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -33,8 +33,8 @@
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: Lists parameterization successful edition
--------------------------------------------------------------------(lists-parameterization;lists-parameterization-successful-edition)
+TEST STARTED: Lists parameterization required fields
+-------------------------------------------------------------------(lists-parameterization;lists-parameterization-required-fields)
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
@@ -43,7 +43,7 @@ TEST STARTED: Lists parameterization successful edition
  (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
         /_/                                                                
 
-TEST PASSED: Lists parameterization successful edition
+TEST PASSED: Lists parameterization required fields
 ----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>

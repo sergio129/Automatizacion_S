@@ -53,5 +53,5 @@ Feature: Lists parameterization
     And I no type information lists parameterization
     Then I view the modal save lists parameterization with <modalmessage>
     Examples:
-      | user         | password       | modalmessage                      |
-      | sergio.anaya | Colombia_2022* | Todos los campos son obligatorios |
+      | user         | password       | modalmessage                    |
+      | sergio.anaya | Colombia_2024* | Todos los campos son requeridos |
