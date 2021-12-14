@@ -29,8 +29,8 @@ Feature: Lists parameterization
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
-      | user         | password       | roles | modules            | lists           | options1      | options2      | optionname    | ideasycase | modalmessage                      |
-      | sergio.anaya | Colombia_2022* | Admin | Escalamientos sura | Tipo de gestion | Opción Prueba | Banca seguros | prueba opcion | 12134      | Registros guardados correctamente |
+      | user         | password       | roles | modules            | lists           | options1 | options2      | optionname    | ideasycase | modalmessage                      |
+      | sergio.anaya | Colombia_2024* | Admin | Escalamientos sura | Tipo de gestión | Prueba   | Banca seguros | prueba opcion | 12134      | Registros guardados correctamente |
 
 
   @TestListParameterizationEdition

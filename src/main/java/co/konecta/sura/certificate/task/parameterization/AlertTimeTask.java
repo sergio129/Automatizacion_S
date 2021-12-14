@@ -24,7 +24,8 @@ public class AlertTimeTask implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(INPUT_LINE_ALERT_TIME),
-                Hit.the(Keys.ENTER).into(INPUT_LINE_ALERT_TIME),
+
+                Hit.the(Keys.SPACE).into(INPUT_LINE_ALERT_TIME),
                 Hit.the(Keys.ESCAPE).into(INPUT_LINE_ALERT_TIME),
                 Click.on(INPUT_SERVICE_ALERT_TIME),
                 Enter.theValue(serviceAlertTime).into(INPUT_SEARCH_SERVICE_ALERT_TIME).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),

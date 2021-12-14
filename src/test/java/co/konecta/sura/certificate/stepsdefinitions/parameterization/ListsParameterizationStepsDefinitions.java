@@ -43,10 +43,7 @@ public class ListsParameterizationStepsDefinitions {
         Thread.sleep(3000);
         actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
 
-     //actor.attemptsTo(Click.on(ListsParameterizationPage.BUTTON_SCROLL));
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-        //js.executeScript("javascript:window.scrollBy(152,71)");
-        //Thread.sleep(5000);
+
         actor.attemptsTo(Click.on(ListsParameterizationPage.OPTION_LIST_PARAMETERIZATION));
     }
 
@@ -62,7 +59,9 @@ public class ListsParameterizationStepsDefinitions {
 
     @And("^I type information in the lists parameterization with the roles (.*) and modules (.*) and lists (.*) and options1(.*) and options2(.*)$")
     public void iTypeInformationInTheListsParameterizationWithTheRolesAndModulesAndListsAndOptionsAndOptions(String rolesLists, String modulesLists, String lists, String optionsLists1,String optionsLists2) {
-        actor.attemptsTo(ListsParameterizationTask.withInformationListParameterization(rolesLists, modulesLists,lists, optionsLists1, optionsLists2));
+        actor.attemptsTo(ListsParameterizationTask.withInformationListParameterization(rolesLists, modulesLists,lists, optionsLists1, optionsLists2)
+                //Click.on(BUTTON_SAVE_LISTS)
+        );
     }
 
     @And("^I create new list option with option name (.*) and id easycase (.*)$")

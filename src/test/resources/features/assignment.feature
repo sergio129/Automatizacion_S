@@ -14,8 +14,8 @@ Feature: Assignment parameterization
     Then I view the modal save assignment parameterization with <modalmessage>
 
     Examples:
-      | user         | password       | roleassignment | userassignment          | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
-      | sergio.anaya | Colombia_2024* | Admin Backlog  | Sergio Luis Anaya Admin | Autos          | Grua              | Antioquia            | Registro guardado correctamente |
+      | user         | password       | roleassignment | userassignment    | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
+      | sergio.anaya | Colombia_2024* | Admin Backlog  | Sergio Luis Anaya | Autos          | Grua              | Antioquia            | Registro guardado correctamente |
 
 
   @TestAssignmentParameterizationEdition

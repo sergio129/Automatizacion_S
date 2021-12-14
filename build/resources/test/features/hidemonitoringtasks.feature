@@ -14,8 +14,8 @@ Feature: Hide monitoring tasks parameterization
     Then I view the modal save hide monitoring tasks parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | linetasks | servicetasks     | tasktype             | modalmessage                    |
-      | yaira.acevedo | YMAe1710* | Autos     | Abogado en sitio | Monitoreo preventivo | Registro guardado correctamente |
+      | user         | password       | linetasks | servicetasks     | tasktype             | modalmessage                    |
+      | sergio.anaya | Colombia_2024* | Autos     | Abogado en sitio | Monitoreo preventivo | Registro guardado correctamente |
 
   @TestHideMonitoringTasksParameterizationEdition
   Scenario Outline: Hide monitoring tasks parameterization successful edition

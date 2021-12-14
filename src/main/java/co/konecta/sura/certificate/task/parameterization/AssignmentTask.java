@@ -34,7 +34,7 @@ public class AssignmentTask implements Task {
                 Click.on(INPUT_ROLE_ASSIGNMENT),
                 Enter.theValue(roleAssignment).into(INPUT_SEARCH_ROLE_ASSIGNMENT).thenHit(Keys.ENTER),
                 Click.on(INPUT_USER_ASSIGNMENT),
-                Enter.theValue(userAssignment).into(INPUT_SEARCH_USER_ASSIGNMENT).thenHit(Keys.ENTER),
+                Enter.theValue(userAssignment).into(INPUT_SEARCH_USER_ASSIGNMENT).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(INPUT_LINE_ASSIGNMENT),
                 Enter.theValue(lineAssignment).into(INPUT_SEARCH_LINE_ASSIGNMENT).thenHit(Keys.ENTER),
                 Click.on(INPUT_SERVICE_ASSIGNMENT),

@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/listsparameterization.feature",
         snippets = SnippetType.CAMELCASE,
-        tags = {"@TestControlBoardsParameterizationRequiredFields"},
+        tags = {"@TestListParameterizationWithOption"},
         monochrome = true
 
 )

@@ -38,8 +38,8 @@ public class ListsParameterizationTask implements Task {
                 Click.on(INPUT_OPTIONS_LISTS),
                 Enter.theValue(optionsLists1).into(INPUT_SEARCH_OPTIONS).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(INPUT_OPTIONS_LISTS),
-                Enter.theValue(optionsLists2).into(INPUT_SEARCH_OPTIONS).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
-                Click.on(BUTTON_SAVE_LISTS)
+                Enter.theValue(optionsLists2).into(INPUT_SEARCH_OPTIONS).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE)
+               // Click.on(BUTTON_SAVE_LISTS)
                 );
 
     }
