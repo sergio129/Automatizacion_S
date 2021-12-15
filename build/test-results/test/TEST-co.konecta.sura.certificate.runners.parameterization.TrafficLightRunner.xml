@@ -3,8 +3,8 @@
   <properties/>
   <system-out><![CDATA[
 1 Scenarios (1 passed)
-6 Steps (6 passed)
-0m31,786s
+7 Steps (7 passed)
+0m45,314s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -33,8 +33,8 @@
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: Successful traffic light parameterization
--------------------------------------------------------------------(traffic-light-parameterization;successful-traffic-light-parameterization)
+TEST STARTED: Traffic light parameterization successful edition
+-------------------------------------------------------------------(traffic-light-parameterization;traffic-light-parameterization-successful-edition)
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
@@ -43,7 +43,7 @@ TEST STARTED: Successful traffic light parameterization
  (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
         /_/                                                                
 
-TEST PASSED: Successful traffic light parameterization
+TEST PASSED: Traffic light parameterization successful edition
 ----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>

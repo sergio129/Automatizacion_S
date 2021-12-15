@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/trafficlight.feature",
         snippets = SnippetType.CAMELCASE,
-        tags = {"@TestTrafficLightParameterization"},
+        tags = {"@TestTrafficLightParameterizationEdition"},
         monochrome = true
 
 )

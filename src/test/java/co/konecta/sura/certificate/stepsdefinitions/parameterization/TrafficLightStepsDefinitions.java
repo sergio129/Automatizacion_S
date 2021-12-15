@@ -9,8 +9,10 @@ import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
@@ -48,8 +50,18 @@ public class TrafficLightStepsDefinitions {
         actor.attemptsTo(Click.on(BUTTON_CREATE_TRAFFIC_LIGHT));
     }
 
+    @And("^I type search in the traffic light parameterization with the roles (.*)$")
+    public void iSearchEditionTrafficLightParameterization(String roleTrafficLight) throws InterruptedException {
+        Thread.sleep(5000);
+        actor.attemptsTo(
+                Click.on((INPUT_ROLE_TRAFFIC_LIGHT2)),
+                Enter.theValue(roleTrafficLight).into(INPUT_SEARCH_ROLE_TRAFFIC_LIGHT2).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Click.on(BUTTON_BUSCAR_TRAFFIC_LIGHT));
+    }
+
     @And("^I select button edition traffic light parameterization$")
-    public void iSelectButtonEditionTrafficLightParameterization() {
+    public void iSelectButtonEditionTrafficLightParameterization() throws InterruptedException {
+        Thread.sleep(5000);
         actor.attemptsTo(Click.on(BUTTON_EDIT_TRAFFIC_LIGHT));
     }
 
