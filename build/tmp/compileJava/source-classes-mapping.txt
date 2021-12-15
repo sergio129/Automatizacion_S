@@ -122,11 +122,11 @@ co/konecta/sura/certificate/task/pendientes/SupplierManagementTask.java
  co.konecta.sura.certificate.task.pendientes.SupplierManagementTask
 co/konecta/sura/certificate/userinterface/home/HomePage.java
  co.konecta.sura.certificate.userinterface.home.HomePage
-co/konecta/sura/certificate/userinterface/parameterization/HideMonitoringTasksPage.java
- co.konecta.sura.certificate.userinterface.parameterization.HideMonitoringTasksPage
-co/konecta/sura/certificate/questions/TheModal.java
- co.konecta.sura.certificate.questions.TheModal
 co/konecta/sura/certificate/task/cases/suppliermanagement/SupplierManagementTask.java
  co.konecta.sura.certificate.task.cases.suppliermanagement.SupplierManagementTask
+co/konecta/sura/certificate/questions/TheModal.java
+ co.konecta.sura.certificate.questions.TheModal
+co/konecta/sura/certificate/userinterface/parameterization/HideMonitoringTasksPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.HideMonitoringTasksPage
 co/konecta/sura/certificate/task/parameterization/HideMonitoringTasksTask.java
  co.konecta.sura.certificate.task.parameterization.HideMonitoringTasksTask

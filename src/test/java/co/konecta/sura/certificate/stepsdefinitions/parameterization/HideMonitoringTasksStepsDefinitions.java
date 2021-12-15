@@ -12,6 +12,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
@@ -49,16 +50,17 @@ public class HideMonitoringTasksStepsDefinitions {
     }
 
 
-    @And("^I type filters with the line (.*) and the service (.*) and the task type (.*) and select button edition hide monitoring tasks$")
-    public void iTypeFiltersWithTheLineAndTheServiceAndTheTaskTypeAndSelectButtonEditionHideMonitoringTasks(String lineFilter, String serviceFilter, String taskTypeFilter) {
+    @And("^I type filters with the line (.*) and the service (.*) and the task type (.*) and select button search hide monitoring task parameterization and select button edition hide monitoring tasks$")
+    public void iTypeFiltersWithTheLineAndTheServiceAndTheTaskTypeAndSelectButtonEditionHideMonitoringTasks(String lineFilter, String serviceFilter, String taskTypeFilter) throws InterruptedException {
         actor.attemptsTo(Click.on(INPUT_FILTER_LINE_HIDE_TASK),
-                Enter.theValue(lineFilter).into(INPUT_SEARCH_FILTER_LINE_HIDE_TASK),
+                Enter.theValue(lineFilter).into(INPUT_SEARCH_FILTER_LINE_HIDE_TASK).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(INPUT_FILTER_SERVICE_HIDE_TASK),
-                Enter.theValue(serviceFilter).into(INPUT_SEARCH_FILTER_SERVICE_HIDE_TASK),
+                Enter.theValue(serviceFilter).into(INPUT_SEARCH_FILTER_SERVICE_HIDE_TASK).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(INPUT_FILTER_TYPE_HIDE_TASK),
-                Enter.theValue(serviceFilter).into(INPUT_SEARCH_FILTER_TYPE_HIDE_TASK),
-                Click.on(BUTTON_SEARCH_HIDE_TASK),
-                Click.on(BUTTON_EDIT_HIDE_TASK));
+                Enter.theValue(taskTypeFilter).into(INPUT_SEARCH_FILTER_TYPE_HIDE_TASK).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Click.on(BUTTON_SEARCH_HIDE_TASK));
+                Thread.sleep(5000);
+                actor.attemptsTo(Click.on(BUTTON_EDIT_HIDE_TASK));
     }
 
     @And("^I select button delete hide monitoring tasks$")

@@ -98,7 +98,7 @@ co/konecta/sura/certificate/stepsdefinitions/pendientes/AdvancedSearchStepsDefin
  co.konecta.sura.certificate.stepsdefinitions.pendientes.AdvancedSearchStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/StateManagementStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.StateManagementStepsDefinitions
-co/konecta/sura/certificate/runners/parameterization/HideMonitoringTasksRunner.java
- co.konecta.sura.certificate.runners.parameterization.HideMonitoringTasksRunner
 co/konecta/sura/certificate/stepsdefinitions/parameterization/HideMonitoringTasksStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.HideMonitoringTasksStepsDefinitions
+co/konecta/sura/certificate/runners/parameterization/HideMonitoringTasksRunner.java
+ co.konecta.sura.certificate.runners.parameterization.HideMonitoringTasksRunner
