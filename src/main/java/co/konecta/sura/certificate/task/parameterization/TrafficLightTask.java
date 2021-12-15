@@ -52,13 +52,13 @@ public class TrafficLightTask implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(INPUT_ROLE_TRAFFIC_LIGHT),
-                Enter.theValue(roleTrafficLight).into(INPUT_SEARCH_ROLE_TRAFFIC_LIGHT).thenHit(Keys.ENTER),
+                Enter.theValue(roleTrafficLight).into(INPUT_SEARCH_ROLE_TRAFFIC_LIGHT).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(INPUT_SERVICE_STATUS_TRAFFIC),
-                Enter.theValue(serviceStatusTraffic).into(INPUT_SEARCH_SERVICE_STATUS_TRAFFIC).thenHit(Keys.ENTER),
+                Enter.theValue(serviceStatusTraffic).into(INPUT_SEARCH_SERVICE_STATUS_TRAFFIC).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(INPUT_LINE_TRAFFIC_LIGHT),
-                Enter.theValue(lineTrafficLight).into(INPUT_SEARCH_LINE_TRAFFIC_LIGHT).thenHit(Keys.ENTER),
+                Enter.theValue(lineTrafficLight).into(INPUT_SEARCH_LINE_TRAFFIC_LIGHT).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(INPUT_SERVICE_TRAFFIC_LIGHT),
-                Enter.theValue(serviceTrafficLight).into(INPUT_SEARCH_SERVICE_TRAFFIC_LIGHT).thenHit(Keys.ENTER),
+                Enter.theValue(serviceTrafficLight).into(INPUT_SEARCH_SERVICE_TRAFFIC_LIGHT).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Enter.theValue(from1TrafficLight).into(INPUT_FROM_1),
                 Enter.theValue(until1TrafficLight).into(INPUT_UNTIL_1),
                 Enter.theValue(from2TrafficLight).into(INPUT_FROM_2),

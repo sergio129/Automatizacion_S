@@ -39,6 +39,7 @@ public class TrafficLightStepsDefinitions {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
+        actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
         actor.attemptsTo(Click.on(HomePage.OPTION_TRAFFIC_LIGHT_PARAMETERIZATION));
     }
 

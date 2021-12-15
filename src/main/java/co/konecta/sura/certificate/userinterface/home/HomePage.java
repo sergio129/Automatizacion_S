@@ -21,7 +21,7 @@ public class HomePage extends PageObject {
     public static final Target OPTION_ASSIGNMENT_PARAMETERIZATION = Target.the("This the button assignment parameterization").located(By.id("moWizzardParameterization"));
     public static final Target OPTION_ALERT_TIME_PARAMETERIZATION = Target.the("This the button alert time parameterization").located(By.id("moAlertTimes"));
     public static final Target OPTION_HIDE_MONITORING_TASKS_PARAMETERIZATION = Target.the("This the button hide monitoring tasks parameterization").located(By.id("moHideMonitoringTask"));
-    public static final Target OPTION_TRAFFIC_LIGHT_PARAMETERIZATION = Target.the("This the button traffic light parameterization").located(By.id(""));
+    public static final Target OPTION_TRAFFIC_LIGHT_PARAMETERIZATION = Target.the("This the button traffic light parameterization").located(By.id("moTrafficLightParameterization"));
     public static final Target MODULE_EXPANSION_GENERAL = Target.the("This the expansion module general").located(By.id("moduleGeneral"));
     public static final Target MODAL_VALIDATION = Target.the("This the toast validation").located(By.id("toast-container"));
     public static final Target STATUS_CASE_VALIDATION = Target.the("This the input status case validation").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav-content/div/app-show-cases/mat-accordion/mat-expansion-panel[1]/div/div/div/div[5]/h6");

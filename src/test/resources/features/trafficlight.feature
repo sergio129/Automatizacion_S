@@ -14,8 +14,8 @@ Feature: Traffic light parameterization
     Then I view the modal save traffic light parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | rolestraffic | servicestatus | line  | service             | from1 | until1 | from2 | until2 | from3 | until3 | from4 | until4 | from5 | until5 | from6 | until6 | modalmessage                    |
-      | yaira.acevedo | YMAe8807* | Admin        | programado    | Autos | Abogado preliminar  | 01    | 10     | 11    | 30     | 31    | 50     | 51    | 75     | 76    | 81     | 82    | 90     | Registro guardado correctamente |
+      | user         | password       | rolestraffic       | servicestatus | line  | service            | from1 | until1 | from2 | until2 | from3 | until3 | from4 | until4 | from5 | until5 | from6 | until6 | modalmessage                    |
+      | Sergio.anaya | Colombia_2024* | Backoffice Reporte | programado    | Autos | Abogado preliminar | 01    | 10     | 11    | 30     | 31    | 50     | 51    | 75     | 76    | 81     | 82    | 90     | Registro guardado correctamente |
 
 
   @TestTrafficLightParameterizationEdition
@@ -27,8 +27,8 @@ Feature: Traffic light parameterization
     Then I view the modal save traffic light parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | rolestraffic | servicestatus | line  | service             | from1 | until1 | from2 | until2 | from3 | until3 | from4 | until4 | from5 | until5 | from6 | until6 | modalmessage                    |
-      | yaira.acevedo | YMAe8807* | Admin        | programado    | Autos | Abogado preliminar  | 05    | 15     | 16    | 32     | 33    | 55     | 56    | 68     |  69   | 81     | 82    | 90     | Registro guardado correctamente |
+      | user          | password  | rolestraffic       | servicestatus | line  | service            | from1 | until1 | from2 | until2 | from3 | until3 | from4 | until4 | from5 | until5 | from6 | until6 | modalmessage                    |
+      | yaira.acevedo | YMAe8807* | Backoffice Reporte | programado    | Autos | Abogado preliminar | 05    | 15     | 16    | 32     | 33    | 55     | 56    | 68     | 69    | 81     | 82    | 90     | Registro guardado correctamente |
 
 
   @TestTrafficLightParameterizationDelete
@@ -39,8 +39,8 @@ Feature: Traffic light parameterization
     Then I view the modal save control boards with <modalmessage>
 
     Examples:
-      | user          | password   | modalmessage                   |
-      | yaira.acevedo | YMAe8807*  |registro eliminado correctamente|
+      | user          | password  | modalmessage                     |
+      | yaira.acevedo | YMAe8807* | registro eliminado correctamente |
 
 
   @TestTrafficLightParameterizationRequiredFields
@@ -51,5 +51,5 @@ Feature: Traffic light parameterization
     Then I view the modal save traffic light parameterization with <modalmessage>
 
     Examples:
-      | user          | password   | modalmessage                     |
-      | yaira.acevedo | YMAe8807*  |Todos los campos son obligatorios |
+      | user          | password  | modalmessage                      |
+      | yaira.acevedo | YMAe8807* | Todos los campos son obligatorios |
