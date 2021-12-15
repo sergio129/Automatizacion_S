@@ -26,8 +26,8 @@ Feature: Hide monitoring tasks parameterization
     Then I view the modal save hide monitoring tasks parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | linesearch | servicesearch    | tasktypesearch       | linetasks | servicetasks | tasktype           | modalmessage                    |
-      | yaira.acevedo | YMAe1710* | Autos      | Abogado en sitio | Monitoreo preventivo | Renting   | Grua         | Monitoreo en Sitio | Registro guardado correctamente |
+      | user         | password       | linesearch | servicesearch    | tasktypesearch       | linetasks | servicetasks | tasktype           | modalmessage                    |
+      | sergio.anaya | Colombia_2024* | Autos      | Abogado en sitio | Monitoreo preventivo | Renting   | Grua         | Monitoreo en Sitio | Registro guardado correctamente |
 
 
   @TestHideMonitoringTasksParameterizationDelete
@@ -44,10 +44,11 @@ Feature: Hide monitoring tasks parameterization
   @TestHideMonitoringTasksRequiredFields
   Scenario Outline: Hide monitoring tasks parameterization required fields
     When I entering in the application with user <user> and password <password>
+    And I entering hide monitoring tasks parameterization
     And I select button create hide monitoring tasks
     And I no type information hide monitoring tasks
     Then I view the modal save hide monitoring tasks parameterization with <modalmessage>
 
     Examples:
-      | user          | password   | modalmessage                     |
-      | yaira.acevedo | YMAe1710*  |Todos los campos son obligatorios |
+      | user         | password       | modalmessage                      |
+      | sergio.anaya | Colombia_2024* | Todos los campos son obligatorios |

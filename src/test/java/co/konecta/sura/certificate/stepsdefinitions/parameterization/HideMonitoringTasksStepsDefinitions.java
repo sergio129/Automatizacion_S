@@ -74,7 +74,6 @@ public class HideMonitoringTasksStepsDefinitions {
 
     @And("^I no type information hide monitoring tasks$")
     public void iNoTypeInformationHideMonitoringTasks() throws InterruptedException {
-        actor.attemptsTo(Click.on(BUTTON_CREATE_HIDE_TASK));
         Thread.sleep(1000);
         actor.attemptsTo(Click.on(BUTTON_SAVE_HIDE_TASK));
         Thread.sleep(1000);
