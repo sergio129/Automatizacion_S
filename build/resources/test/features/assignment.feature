@@ -34,21 +34,24 @@ Feature: Assignment parameterization
   @TestAssignmentParameterizationDelete
   Scenario Outline: Assignment parameterization successful delete
     When I entering in the application with user <user> and password <password>
+    And I entering assignment parameterization
+    And I type search in the assignment parameterization with the user <userassignment>
     And I select button delete assignment
     Then I view the modal save assignment parameterization with <modalmessage>
 
     Examples:
-      | user          | password   | modalmessage                   |
-      | yaira.acevedo |            |registro eliminado correctamente|
+      | user         | password       | userassignment    | modalmessage                     |
+      | sergio.anaya | Colombia_2024* | Sergio Luis Anaya | Registro eliminado correctamente |
 
 
   @TestAssignmentRequiredFields
   Scenario Outline: Assignment parameterization required fields
     When I entering in the application with user <user> and password <password>
+    And I entering assignment parameterization
     And I select button create assignment
     And I no type information assignment
     Then I view the modal save assignment parameterization with <modalmessage>
 
     Examples:
-      | user          | password   | modalmessage                     |
-      | yaira.acevedo |            |Todos los campos son obligatorios |
+      | user         | password       | modalmessage                      |
+      | Sergio.anaya | Colombia_2024* | Todos los campos son obligatorios |

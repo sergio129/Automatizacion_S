@@ -32,8 +32,8 @@ co/konecta/sura/certificate/userinterface/cases/suppliermanagement/SupplierManag
  co.konecta.sura.certificate.userinterface.cases.suppliermanagement.SupplierManagementPage
 co/konecta/sura/certificate/task/parameterization/AlertRecipientsTask.java
  co.konecta.sura.certificate.task.parameterization.AlertRecipientsTask
-co/konecta/sura/certificate/task/parameterization/AssignmentTask.java
- co.konecta.sura.certificate.task.parameterization.AssignmentTask
+co/konecta/sura/certificate/task/parameterization/TrafficLightTask.java
+ co.konecta.sura.certificate.task.parameterization.TrafficLightTask
 co/konecta/sura/certificate/task/cases/casetask/CaseModel.java
  co.konecta.sura.certificate.task.cases.casetask.CaseModel
 co/konecta/sura/certificate/userinterface/cases/suraclimbing/SuraClimbingPage.java
@@ -60,8 +60,8 @@ co/konecta/sura/certificate/userinterface/list/listPage.java
  co.konecta.sura.certificate.userinterface.list.listPage
 co/konecta/sura/certificate/userinterface/parameterization/HideMonitoringTasksPage.java
  co.konecta.sura.certificate.userinterface.parameterization.HideMonitoringTasksPage
-co/konecta/sura/certificate/userinterface/parameterization/AssignmentPage.java
- co.konecta.sura.certificate.userinterface.parameterization.AssignmentPage
+co/konecta/sura/certificate/userinterface/parameterization/TrafficLightPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.TrafficLightPage
 co/konecta/sura/certificate/task/parameterization/ListsParameterizationTask.java
  co.konecta.sura.certificate.task.parameterization.ListsParameterizationTask
 co/konecta/sura/certificate/userinterface/cases/statemanagement/StateManagementPage.java
@@ -126,7 +126,7 @@ co/konecta/sura/certificate/task/cases/suppliermanagement/SupplierManagementTask
  co.konecta.sura.certificate.task.cases.suppliermanagement.SupplierManagementTask
 co/konecta/sura/certificate/questions/TheModal.java
  co.konecta.sura.certificate.questions.TheModal
-co/konecta/sura/certificate/userinterface/parameterization/TrafficLightPage.java
- co.konecta.sura.certificate.userinterface.parameterization.TrafficLightPage
-co/konecta/sura/certificate/task/parameterization/TrafficLightTask.java
- co.konecta.sura.certificate.task.parameterization.TrafficLightTask
+co/konecta/sura/certificate/userinterface/parameterization/AssignmentPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.AssignmentPage
+co/konecta/sura/certificate/task/parameterization/AssignmentTask.java
+ co.konecta.sura.certificate.task.parameterization.AssignmentTask

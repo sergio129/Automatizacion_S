@@ -22,8 +22,8 @@ co/konecta/sura/certificate/runners/parameterization/ControlBoardsParameterizati
  co.konecta.sura.certificate.runners.parameterization.ControlBoardsParameterizationRunner
 co/konecta/sura/certificate/stepsdefinitions/pendientes/SupplierMonitoringStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.pendientes.SupplierMonitoringStepsDefinitions
-co/konecta/sura/certificate/runners/parameterization/AssignmentRunner.java
- co.konecta.sura.certificate.runners.parameterization.AssignmentRunner
+co/konecta/sura/certificate/runners/parameterization/TrafficLightRunner.java
+ co.konecta.sura.certificate.runners.parameterization.TrafficLightRunner
 co/konecta/sura/certificate/runners/parameterization/ListsParameterizationRunner.java
  co.konecta.sura.certificate.runners.parameterization.ListsParameterizationRunner
 co/konecta/sura/certificate/runners/parameterization/AlertTimeRunner.java
@@ -82,8 +82,8 @@ co/konecta/sura/certificate/stepsdefinitions/cases/SupplierMonitoringStepsDefini
  co.konecta.sura.certificate.stepsdefinitions.cases.SupplierMonitoringStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/AdvancedSearchStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.AdvancedSearchStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/parameterization/AssignmentStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.parameterization.AssignmentStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/parameterization/TrafficLightStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.parameterization.TrafficLightStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/SuraClimbingStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.SuraClimbingStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/parameterization/CaseClosureStepsDefinitions.java
@@ -98,7 +98,7 @@ co/konecta/sura/certificate/stepsdefinitions/cases/EndingStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.EndingStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/SupplierManagementStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.SupplierManagementStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/parameterization/TrafficLightStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.parameterization.TrafficLightStepsDefinitions
-co/konecta/sura/certificate/runners/parameterization/TrafficLightRunner.java
- co.konecta.sura.certificate.runners.parameterization.TrafficLightRunner
+co/konecta/sura/certificate/runners/parameterization/AssignmentRunner.java
+ co.konecta.sura.certificate.runners.parameterization.AssignmentRunner
+co/konecta/sura/certificate/stepsdefinitions/parameterization/AssignmentStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.parameterization.AssignmentStepsDefinitions

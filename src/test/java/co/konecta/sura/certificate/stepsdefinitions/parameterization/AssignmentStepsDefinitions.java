@@ -9,8 +9,10 @@ import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
@@ -58,6 +60,14 @@ public class AssignmentStepsDefinitions {
     public void iTypeInformationInTheAssignmentWithTheRoleAndTheUserAndTheLineAndTheServiceAndTheDepartment(String roleAssignment, String userAssignment, String lineAssignment, String serviceAssignment, String departmentAssignment) {
         actor.attemptsTo(AssignmentTask.withInformationAssignment(roleAssignment, userAssignment, lineAssignment, serviceAssignment, departmentAssignment));
     }
+    @And("^I type search in the assignment parameterization with the user (.*)$")
+    public void iDeleteTrafficLightParameterization(String User) throws InterruptedException {
+        Thread.sleep(2000);
+        actor.attemptsTo(
+                Click.on((INPUT_USER_ASSIGNMENT_INICIO)),
+                Enter.theValue(User).into(INPUT_SEARCH_ROLE_ASSIGNMENT_INICIO).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Click.on(BUTTON_SEARCH));
+    }
 
     @And("^I select button delete assignment$")
     public void iSelectButtonDeleteAssignment() {
@@ -67,8 +77,7 @@ public class AssignmentStepsDefinitions {
 
     @And("^I no type information assignment$")
     public void iNoTypeInformationAssignment() throws InterruptedException {
-        actor.attemptsTo(Click.on(BUTTON_CREATE_ASSIGNMENT));
-        Thread.sleep(1000);
+
         actor.attemptsTo(Click.on(BUTTON_SAVE_ASSIGNMENT));
         Thread.sleep(1000);
     }
@@ -77,6 +86,7 @@ public class AssignmentStepsDefinitions {
     public void iViewTheModalSaveAssignmentParameterizationWithe(String message) throws InterruptedException {
         Thread.sleep(2000);
         actor.attemptsTo(
+
                 Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
     }
 

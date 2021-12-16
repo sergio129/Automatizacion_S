@@ -26,7 +26,6 @@ public class AssignmentTask implements Task {
         this.departmentAssignment = departmentAssignment;
     }
 
-
     @Override
     public <T extends Actor> void performAs(T actor) {
 
@@ -36,13 +35,17 @@ public class AssignmentTask implements Task {
                 Click.on(INPUT_USER_ASSIGNMENT),
                 Enter.theValue(userAssignment).into(INPUT_SEARCH_USER_ASSIGNMENT).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(INPUT_LINE_ASSIGNMENT),
-                Enter.theValue(lineAssignment).into(INPUT_SEARCH_LINE_ASSIGNMENT).thenHit(Keys.ENTER),
+                Enter.theValue(lineAssignment).into(INPUT_SEARCH_LINE_ASSIGNMENT),
+                Click.on(BUTTON_SELECT),//Se Usa para Mapear la posicion del Elemento.
+               Hit.the(Keys.TAB).into(BUTTON_SELECT));
+        actor.attemptsTo(
                 Click.on(INPUT_SERVICE_ASSIGNMENT),
-                Enter.theValue(serviceAssignment).into(INPUT_SEARCH_SERVICE_ASSIGNMENT).thenHit(Keys.ENTER),
+                Enter.theValue(serviceAssignment).into(INPUT_SEARCH_SERVICE_ASSIGNMENT).thenHit(Keys.ENTER).thenHit(Keys.TAB),
                 Click.on(INPUT_DEPARTMENT_ASSIGNMENT),
-                Enter.theValue(departmentAssignment).into(INPUT_SEARCH_DEPARTMENT_ASSIGNMENT).thenHit(Keys.ENTER),
+                Enter.theValue(departmentAssignment).into(INPUT_SEARCH_DEPARTMENT_ASSIGNMENT).thenHit(Keys.ENTER).thenHit(Keys.TAB),
                 Click.on(INPUT_COORDINATION_MANAGER),
-                Hit.the(Keys.ENTER).into(INPUT_COORDINATION_MANAGER),
+               // Hit.the(Keys.ENTER).into(INPUT_COORDINATION_MANAGER),
+                Click.on(LIST_COORDINATION_MANAGER),
                 Click.on(BUTTON_SAVE_ASSIGNMENT)
         );
     }
