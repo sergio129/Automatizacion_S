@@ -35,21 +35,23 @@ Feature: Alert recipients parameterization
   @TestAlertParameterizationDelete
   Scenario Outline: Alert recipients parameterization successful delete
     When I entering in the application with user <user> and password <password>
+    And I entering alert recipients parameterization
     And I search name alert <namealert> and select button delete alert recipients
     Then I view the modal save alert recipients parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | namealert       | modalmessage                     |
-      | yaira.acevedo | YMAe8807* | Pruebas alertaa | registro eliminado correctamente |
+      | user         | password       | namealert       | modalmessage                     |
+      | sergio.anaya | Colombia_2024* | Pruebas alertaa | Registro eliminado correctamente |
 
 
   @TesAlertRequiredFields
   Scenario Outline:Alert recipients parameterization required fields
     When I entering in the application with user <user> and password <password>
+    And I entering alert recipients parameterization
     And I select button create alert recipients
     And I no type information alert recipients
     Then I view the modal save alert recipients parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | modalmessage                      |
-      | yaira.acevedo | YMAe1710* | Todos los campos son obligatorios |
+      | user         | password       | modalmessage                         |
+      | sergio.anaya | Colombia_2024* | Los campos marcados son obligatorios |

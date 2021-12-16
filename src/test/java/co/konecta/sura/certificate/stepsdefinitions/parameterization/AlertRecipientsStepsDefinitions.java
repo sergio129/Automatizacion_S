@@ -77,8 +77,6 @@ public class AlertRecipientsStepsDefinitions {
 
     @And("^I no type information alert recipients$")
     public void iNoTypeInformationAlertRecipients() throws InterruptedException {
-        actor.attemptsTo(Click.on(BUTTON_CREATE_ALERT_PARAMETERIZATION));
-        Thread.sleep(1000);
         actor.attemptsTo(Click.on(BUTTON_SAVE_ALERT_PARAMETERIZATION));
         Thread.sleep(1000);
     }
