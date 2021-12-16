@@ -98,7 +98,7 @@ co/konecta/sura/certificate/stepsdefinitions/cases/EndingStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.EndingStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/SupplierManagementStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.SupplierManagementStepsDefinitions
-co/konecta/sura/certificate/runners/parameterization/TrafficLightRunner.java
- co.konecta.sura.certificate.runners.parameterization.TrafficLightRunner
 co/konecta/sura/certificate/stepsdefinitions/parameterization/TrafficLightStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.TrafficLightStepsDefinitions
+co/konecta/sura/certificate/runners/parameterization/TrafficLightRunner.java
+ co.konecta.sura.certificate.runners.parameterization.TrafficLightRunner

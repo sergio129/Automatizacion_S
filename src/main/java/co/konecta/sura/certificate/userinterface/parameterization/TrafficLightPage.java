@@ -27,8 +27,8 @@ public class TrafficLightPage {
     public static final Target INPUT_UNTIL_6 = Target.the("This the input until 6 traffic light parameterization").located(By.id("fieldColor6Until"));
     public static final Target BUTTON_CREATE_TRAFFIC_LIGHT = Target.the("This the button create traffic light parameterization").located(By.id("btnAddTrafficLightRoles"));
     public static final Target BUTTON_EDIT_TRAFFIC_LIGHT = Target.the("This the button edit traffic light parameterization").located(By.id("btnEditTrafficLightRoles"));
-    public static final Target BUTTON_DELETE_TRAFFIC_LIGHT = Target.the("This the button delete traffic light parameterization").located(By.id(""));
-    public static final Target OPTION_YES_TRAFFIC_LIGHT = Target.the("This the button yes traffic light parameterization").located(By.id(""));
+    public static final Target BUTTON_DELETE_TRAFFIC_LIGHT = Target.the("This the button delete traffic light parameterization").located(By.id("btnDeleteTrafficLightRoles"));
+    public static final Target OPTION_YES_DELETE_TRAFFIC_LIGHT = Target.the("This the button yes traffic light parameterization").located(By.id("sweetalertConfirmButton"));
     public static final Target BUTTON_SAVE_TRAFFIC_LIGHT = Target.the("This the button save traffic light parameterization").located(By.id("btnSaveTrafficLight"));
     public static final Target BUTTON_CANCEL_TRAFFIC_LIGHT = Target.the("This the button cancel traffic light parameterization").located(By.id(""));
     public static final Target INPUT_ROLE_TRAFFIC_LIGHT2 = Target.the("This the input search roles traffic light parameterization").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav-content/div/app-list-parametrization/div[1]/div/mat-card/mat-card-content/div/div[1]/mat-form-field/div/div[1]/div/mat-select/div/div[1]/span");

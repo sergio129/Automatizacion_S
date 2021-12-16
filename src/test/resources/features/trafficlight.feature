@@ -36,12 +36,13 @@ Feature: Traffic light parameterization
   Scenario Outline: Control boards closure case parameterization successful delete
     When I entering in the application with user <user> and password <password>
     And I entering traffic light parameterization
+    And I type search in the traffic light parameterization with the roles <rolestraffic>
     And I select button delete traffic light parameterization
     Then I view the modal save control boards with <modalmessage>
 
     Examples:
-      | user          | password  | modalmessage                     |
-      | yaira.acevedo | YMAe8807* | registro eliminado correctamente |
+      | user         | password       | rolestraffic       | modalmessage                     |
+      | sergio.anaya | Colombia_2024* | Backoffice Reporte | Registro eliminado correctamente |
 
 
   @TestTrafficLightParameterizationRequiredFields
@@ -52,5 +53,5 @@ Feature: Traffic light parameterization
     Then I view the modal save traffic light parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | modalmessage                      |
-      | yaira.acevedo | YMAe8807* | Todos los campos son obligatorios |
+      | user         | password       | modalmessage                      |
+      | Sergio.anaya | Colombia_2024* | Todos los campos son obligatorios |

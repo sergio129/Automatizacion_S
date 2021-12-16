@@ -52,7 +52,7 @@ public class TrafficLightStepsDefinitions {
 
     @And("^I type search in the traffic light parameterization with the roles (.*)$")
     public void iSearchEditionTrafficLightParameterization(String roleTrafficLight) throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         actor.attemptsTo(
                 Click.on((INPUT_ROLE_TRAFFIC_LIGHT2)),
                 Enter.theValue(roleTrafficLight).into(INPUT_SEARCH_ROLE_TRAFFIC_LIGHT2).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
@@ -61,13 +61,15 @@ public class TrafficLightStepsDefinitions {
 
     @And("^I select button edition traffic light parameterization$")
     public void iSelectButtonEditionTrafficLightParameterization() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         actor.attemptsTo(Click.on(BUTTON_EDIT_TRAFFIC_LIGHT));
     }
 
     @And("^I select button delete traffic light parameterization$")
     public void iSelectButtonDeleteTrafficLightParameterization() {
-        actor.attemptsTo(Click.on(BUTTON_DELETE_TRAFFIC_LIGHT));
+        actor.attemptsTo(
+                Click.on(BUTTON_DELETE_TRAFFIC_LIGHT),
+                Click.on(OPTION_YES_DELETE_TRAFFIC_LIGHT));
     }
 
     @And("^I type information in the traffic light parameterization with the roles (.*) and service status (.*) and line (.*) and service (.*) and from1 (.*) and until1 (.*) and from2 (.*) and until2 (.*) and from3 (.*) and until3 (.*) and from4 (.*) and until4 (.*) and from5 (.*) and until5 (.*) and from6 (.*) and until6 (.*)$")
