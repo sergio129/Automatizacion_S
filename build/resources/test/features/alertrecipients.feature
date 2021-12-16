@@ -22,13 +22,14 @@ Feature: Alert recipients parameterization
   Scenario Outline: Alert recipients parameterization successful edition
     When I entering in the application with user <user> and password <password>
     And I entering alert recipients parameterization
+    And I select button search alert recipients<namealert>
     And I select button edition alert recipients
     And I type information in the alert with the name <namealert> and the line <linealert> and the service <servicealert> and the department <departmentalert> and the municipality <municipalityalert> and the email <emailalert>
     Then I view the modal save alert recipients parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | namealert       | linealert           | servicealert      | departmentalert | municipalityalert | emailalert         | modalmessage                    |
-      | yaira.acevedo | YMAe8807* | Pruebas alertaa | Conductor elegido   | Conductor Elegido | Boyaca          | Tunja             | pruebasa@gmail.com | Registro guardado correctamente |
+      | user         | password       | namealert       | linealert         | servicealert      | departmentalert | municipalityalert | emailalert         | modalmessage                    |
+      | sergio.anaya | Colombia_2024* | Pruebas alertaa | Conductor elegido | Conductor Elegido | Boyaca          | Tunja             | pruebasa@gmail.com | Registro guardado correctamente |
 
 
   @TestAlertParameterizationDelete
@@ -38,8 +39,8 @@ Feature: Alert recipients parameterization
     Then I view the modal save alert recipients parameterization with <modalmessage>
 
     Examples:
-      | user          | password   |namealert        | modalmessage                    |
-      | yaira.acevedo | YMAe8807*  |Pruebas alertaa  | registro eliminado correctamente|
+      | user          | password  | namealert       | modalmessage                     |
+      | yaira.acevedo | YMAe8807* | Pruebas alertaa | registro eliminado correctamente |
 
 
   @TesAlertRequiredFields
@@ -50,5 +51,5 @@ Feature: Alert recipients parameterization
     Then I view the modal save alert recipients parameterization with <modalmessage>
 
     Examples:
-      | user          | password   | modalmessage                     |
-      | yaira.acevedo | YMAe1710*  |Todos los campos son obligatorios |
+      | user          | password  | modalmessage                      |
+      | yaira.acevedo | YMAe1710* | Todos los campos son obligatorios |

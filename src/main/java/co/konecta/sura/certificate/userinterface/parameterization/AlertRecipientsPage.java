@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 public class AlertRecipientsPage {
 
     public static final Target INPUT_NAME_ALERT = Target.the("This the input alert name").located(By.id("createNameAlertRecipients"));
-    public static final Target INPUT_SEARCH_NAME_ALERT = Target.the("This the input search alert name").located(By.id(""));
+    public static final Target INPUT_SEARCH_NAME_ALERT = Target.the("This the input search alert name").located(By.id("NameAlertRecipients"));
     public static final Target INPUT_LINE_ALERT = Target.the("This the input line alert").located(By.id("mat-select-value-11"));
     public static final Target INPUT_SEARCH_LINE_ALERT = Target.the("This the input search line alert").located(By.id("inputCreateAlertRecipientsServiceLineSearch"));
     public static final Target INPUT_SERVICE_ALERT = Target.the("This the input service alert").located(By.id("mat-select-value-13"));
@@ -17,10 +17,10 @@ public class AlertRecipientsPage {
     public static final Target INPUT_SEARCH_MUNICIPALITY_ALERT = Target.the("This the input search municipality alert").located(By.id("inputCreateAlertRecipientsSelectMunicipalitySearch"));
     public static final Target INPUT_EMAIL_ALERT = Target.the("This the input email alert").located(By.id("correoAlertRecipients"));
     public static final Target BUTTON_CREATE_ALERT_PARAMETERIZATION = Target.the("This the button create alert parameterization").located(By.id("btnCreateAlertRecipients"));
-    public static final Target BUTTON_EDIT_ALERT_PARAMETERIZATION = Target.the("This the button edit alert parameterization").located(By.id(""));
+    public static final Target BUTTON_EDIT_ALERT_PARAMETERIZATION = Target.the("This the button edit alert parameterization").located(By.id("btnEditAlertRecipients"));
     public static final Target BUTTON_DELETE_ALERT_PARAMETERIZATION = Target.the("This the button delete alert parameterization").located(By.id(""));
-    public static final Target BUTTON_SEARCH_ALERT_PARAMETERIZATION = Target.the("This the button search alert parameterization").located(By.id(""));
-    public static final Target CHECKBOX_DELETE_ALERT_PARAMETERIZATION = Target.the("This the checkbox delete alert parameterization").located(By.id(""));
+    public static final Target BUTTON_SEARCH_ALERT_PARAMETERIZATION = Target.the("This the button search alert parameterization").located(By.id("btnSearchAlertRecipients"));
+    public static final Target CHECKBOX_DELETE_ALERT_PARAMETERIZATION = Target.the("This the checkbox delete alert parameterization").located(By.id("checkboxAllSelectAlertRecipients"));
     public static final Target OPTION_DELETE_ALERT_PARAMETERIZATION = Target.the("This the option delete alert parameterization").located(By.id(""));
     public static final Target OPTION_YES_ALERT_PARAMETERIZATION = Target.the("This the button yes alert parameterization").located(By.id(""));
     public static final Target BUTTON_SAVE_ALERT_PARAMETERIZATION = Target.the("This the button save alert parameterization").located(By.id("btnSaveFormAlertRecipients"));

@@ -40,14 +40,22 @@ public class AlertRecipientsStepsDefinitions {
         actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
         actor.attemptsTo(Click.on(HomePage.OPTION_ALERT_PARAMETERIZATION));
     }
+    @And("^I select button search alert recipients(.*)$")
+    public void iSearchButtonCreateAlertRecipients(String nameAlert) {
+        actor.attemptsTo(
+                Enter.theValue(nameAlert).into(INPUT_SEARCH_NAME_ALERT),
+                Click.on(BUTTON_SEARCH_ALERT_PARAMETERIZATION));
+    }
 
     @And("^I select button create alert recipients$")
     public void iSelectButtonCreateAlertRecipients() {
-        actor.attemptsTo(Click.on(BUTTON_CREATE_ALERT_PARAMETERIZATION));
+        actor.attemptsTo(
+                Click.on(BUTTON_CREATE_ALERT_PARAMETERIZATION));
     }
 
     @And("^I select button edition alert recipients$")
     public void iSelectButtonEditionAlertRecipients() {
+
         actor.attemptsTo(Click.on(BUTTON_EDIT_ALERT_PARAMETERIZATION));
     }
 
