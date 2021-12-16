@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.konecta.sura.certificate.runners.parameterization.AssignmentRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="ANKCRM38M" time="0.0">
+<testsuite name="co.konecta.sura.certificate.runners.parameterization.AlertRecipientsRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="ANKCRM38M" time="0.0">
   <properties/>
   <system-out><![CDATA[
 1 Scenarios (1 passed)
 6 Steps (6 passed)
-0m22,139s
+0m21,181s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -24,7 +24,7 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Assignment parameterization
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Alert recipients parameterization
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
@@ -33,8 +33,8 @@
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: Assignment parameterization required fields
--------------------------------------------------------------------(assignment-parameterization;assignment-parameterization-required-fields)
+TEST STARTED: Successful alert recipients parameterization
+-------------------------------------------------------------------(alert-recipients-parameterization;successful-alert-recipients-parameterization)
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
@@ -43,7 +43,7 @@ TEST STARTED: Assignment parameterization required fields
  (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
         /_/                                                                
 
-TEST PASSED: Assignment parameterization required fields
+TEST PASSED: Successful alert recipients parameterization
 ----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>

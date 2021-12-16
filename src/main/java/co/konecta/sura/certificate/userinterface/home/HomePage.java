@@ -15,7 +15,7 @@ public class HomePage extends PageObject {
     public static final Target OPTION_MENU_PARAMETERIZATION = Target.the("This the button menu parameterization").located(By.id("moParameterization"));
     public static final Target OPTION_SEARCH_CASE = Target.the("This the button search case").located(By.id("moCasesList"));
     public static final Target OPTION_CONTROL_BOARDS_PARAMETERIZATION = Target.the("This the button control boards parameterization").located(By.id(""));
-    public static final Target OPTION_ALERT_PARAMETERIZATION = Target.the("This the button alert parameterization").located(By.id(""));
+    public static final Target OPTION_ALERT_PARAMETERIZATION = Target.the("This the button alert parameterization").located(By.id("moAlertRecipients"));
     public static final Target OPTION_CASE_CLOSURE_PARAMETERIZATION = Target.the("This the button case closure parameterization").located(By.id(""));
     public static final Target OPTION_STRATEGY_PARAMETERIZATION = Target.the("This the button strategy parameterization").located(By.id("moStrategy"));
     public static final Target OPTION_ASSIGNMENT_PARAMETERIZATION = Target.the("This the button assignment parameterization").located(By.id("moWizzardParameterization"));

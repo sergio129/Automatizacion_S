@@ -14,8 +14,8 @@ Feature: Alert recipients parameterization
     Then I view the modal save alert recipients parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | namealert       | linealert | servicealert       | departmentalert | municipalityalert | emailalert        | modalmessage                    |
-      | yaira.acevedo | YMAe8807* | Pruebas alertaa | Autos     | Abogado Preliminar | Antioquia       | Belen             | pruebas@gmail.com | Registro guardado correctamente |
+      | user         | password       | namealert       | linealert | servicealert       | departmentalert | municipalityalert | emailalert                    | modalmessage                    |
+      | Sergio.anaya | Colombia_2024* | Pruebas alertaa | Autos     | Abogado Preliminar | Antioquia       | Belen             | sergio.anaya@grupokonecta.com | Registro guardado correctamente |
 
 
   @TestAlertParameterizationEdition

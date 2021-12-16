@@ -37,6 +37,7 @@ public class AlertRecipientsStepsDefinitions {
     public void iEnteringAlertRecipientsParameterization() {
         actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
+        actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
         actor.attemptsTo(Click.on(HomePage.OPTION_ALERT_PARAMETERIZATION));
     }
 
