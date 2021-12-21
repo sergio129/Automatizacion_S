@@ -163,6 +163,10 @@
                             <goal>verify</goal>
                         </goals>
                     </execution>
+                    <execution>
+                        <id>serenity-reports</id>
+                        <phase>post-integration-test</phase>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>

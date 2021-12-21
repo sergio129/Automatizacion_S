@@ -60,8 +60,8 @@ co/konecta/sura/certificate/stepsdefinitions/cases/DocumentationCNMStepsDefiniti
  co.konecta.sura.certificate.stepsdefinitions.cases.DocumentationCNMStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/TaskMonitoringStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.TaskMonitoringStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/parameterization/AlertTimeStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.parameterization.AlertTimeStepsDefinitions
+co/konecta/sura/certificate/runners/parameterization/AlertRecipientsRunner.java
+ co.konecta.sura.certificate.runners.parameterization.AlertRecipientsRunner
 co/konecta/sura/certificate/stepsdefinitions/cases/AdvancedSearchStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.AdvancedSearchStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/NoveltyStepsDefinitions.java
@@ -98,7 +98,7 @@ co/konecta/sura/certificate/stepsdefinitions/pendientes/AdvancedSearchStepsDefin
  co.konecta.sura.certificate.stepsdefinitions.pendientes.AdvancedSearchStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/StateManagementStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.StateManagementStepsDefinitions
-co/konecta/sura/certificate/runners/parameterization/AlertRecipientsRunner.java
- co.konecta.sura.certificate.runners.parameterization.AlertRecipientsRunner
 co/konecta/sura/certificate/stepsdefinitions/parameterization/AlertRecipientsStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.AlertRecipientsStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/parameterization/AlertTimeStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.parameterization.AlertTimeStepsDefinitions

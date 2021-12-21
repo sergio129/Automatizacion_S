@@ -60,7 +60,7 @@ public class AlertTimeStepsDefinitions {
 
     @And("^I type information in the alert time with the service (.*) and the time (.*)$")
     public void iTypeInformationInTheAlertTimeWithTheServiceAndTheTime(String serviceAlertTime, String time) {
-        actor.attemptsTo(AlertTimeTask.withInformationAlertTime(serviceAlertTime, time));
+        actor.attemptsTo(AlertTimeTask.withInformationAlertTime( serviceAlertTime, time));
     }
 
     @Then("^I view the modal save alert time parameterization with (.*)$")

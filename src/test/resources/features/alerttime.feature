@@ -15,7 +15,7 @@ Feature: Alert time parameterization
 
     Examples:
       | user         | password       | servicealert | time | modalmessage                    |
-      | Sergio.anaya | Colombia_2024* | Cerrajero    | 32   | Registro guardado correctamente |
+      | Sergio.anaya | Colombia_2025* | Plomero      | 32   | Registro guardado correctamente |
 
 
   @TestAlertTimeParameterizationEdition
@@ -28,7 +28,7 @@ Feature: Alert time parameterization
 
     Examples:
       | user         | password       | servicealert | time | modalmessage                    |
-      | Sergio.anaya | Colombia_2024* | Cerrajero    | 25   | Registro guardado correctamente |
+      | Sergio.anaya | Colombia_2025* | Cerrajero    | 25   | Registro guardado correctamente |
 
 
   @TestAlertTimeParameterizationDelete
@@ -38,6 +38,6 @@ Feature: Alert time parameterization
     Then I view the modal save alert time parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | modalmessage                   |
-      | yaira.acevedo | YMAe8807* |registro eliminado correctamente|
+      | user          | password  | modalmessage                     |
+      | yaira.acevedo | YMAe8807* | registro eliminado correctamente |
 
