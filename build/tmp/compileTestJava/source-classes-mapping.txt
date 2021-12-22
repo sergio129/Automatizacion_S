@@ -102,7 +102,7 @@ co/konecta/sura/certificate/stepsdefinitions/parameterization/ListsParameterizat
  co.konecta.sura.certificate.stepsdefinitions.parameterization.ListsParameterizationStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/parameterization/AlertTimeStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.AlertTimeStepsDefinitions
-co/konecta/sura/certificate/runners/parameterization/StrategyRunner.java
- co.konecta.sura.certificate.runners.parameterization.StrategyRunner
 co/konecta/sura/certificate/stepsdefinitions/parameterization/StrategyStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.StrategyStepsDefinitions
+co/konecta/sura/certificate/runners/parameterization/StrategyRunner.java
+ co.konecta.sura.certificate.runners.parameterization.StrategyRunner

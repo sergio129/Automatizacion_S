@@ -42,41 +42,5 @@ Feature: Strategy parameterization
     Then I view the modal save strategy parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | namecontingencysearch                      | description                                                                | preventivetime | timemonitoringsite | timemonitoringcompletion | modalmessage                    |
-      | yaira.acevedo | YMAe1710* | Estrategia de monitoreo servicios click si | {"status":"true","preventive_time":"2","site_time":"0","ending_time":"10"} | 2              | 0                  | 10                       | Registro guardado correctamente |
-
-
-  @TestTaskMonitoringStrategyParameterizationEdition
-  Scenario Outline: Task monitoring strategy parameterization successful edition
-    When I entering in the application with user <user> and password <password>
-    And I entering strategy parameterization
-    And I type information in the task monitoring strategy with the description <description>
-    Then I view the modal save strategy parameterization with <modalmessage>
-
-    Examples:
-      | user         | password       | description               | modalmessage                    |
-      | Sergio.anaya | Colombia_2024* | pruebas tareas estrategia | Registro guardado correctamente |
-
-
-  @TestServicesStrategyParameterizationEdition
-  Scenario Outline: Services strategy parameterization successful edition
-    When I entering in the application with user <user> and password <password>
-    And I entering strategy parameterization
-    And I type information in the services strategy with the description <description> and the services <service>
-    Then I view the modal save strategy parameterization with <modalmessage>
-
-    Examples:
-      | user          | password  | description               | service              | modalmessage                    |
-      | yaira.acevedo | YMAe1710* | pruebas tareas estrategia | Abogado en sitio arl | Registro guardado correctamente |
-
-
-  @TestNotificationStrategyParameterizationEdition
-  Scenario Outline: Notification strategy parameterization successful edition
-    When I entering in the application with user <user> and password <password>
-    And I entering strategy parameterization
-    And I type information in the notification strategy with the name contingency search <namecontingencysearch2> and the description <description> and the notification message <notificationmessage> and the notification time <notificationtime>
-    Then I view the modal save strategy parameterization with <modalmessage>
-
-    Examples:
-      | user         | password       | description                                              | namecontingencysearch2 | notificationmessage | notificationtime | modalmessage                    |
-      | sergio.anaya | Colombia_2024* | {"status":true,"message":"Notificacion 3","time":"6000"} | notificacion           | Notificacion prueba | 8000             | Registro guardado correctamente |
+      | user         | password       | namecontingencysearch                      | description                                                                | preventivetime | timemonitoringsite | timemonitoringcompletion | modalmessage                    |
+      | sergio.anaya | Colombia_2025* | Estrategia de monitoreo servicios click si | {"status":"true","preventive_time":"2","site_time":"0","ending_time":"10"} | 2              | 0                  | 10                       | Registro guardado correctamente |
