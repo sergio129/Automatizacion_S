@@ -12,8 +12,8 @@ co/konecta/sura/certificate/task/cases/taskmonitoring/TaskMonitoringModel.java
  co.konecta.sura.certificate.task.cases.taskmonitoring.TaskMonitoringModel
 co/konecta/sura/certificate/userinterface/parameterization/AssignmentPage.java
  co.konecta.sura.certificate.userinterface.parameterization.AssignmentPage
-co/konecta/sura/certificate/userinterface/parameterization/StrategyPage.java
- co.konecta.sura.certificate.userinterface.parameterization.StrategyPage
+co/konecta/sura/certificate/task/parameterization/AlertTimeTask.java
+ co.konecta.sura.certificate.task.parameterization.AlertTimeTask
 co/konecta/sura/certificate/userinterface/home/ControlBoardsPage.java
  co.konecta.sura.certificate.userinterface.home.ControlBoardsPage
 co/konecta/sura/certificate/task/cases/casetask/Case.java
@@ -80,8 +80,8 @@ co/konecta/sura/certificate/task/cases/statemanagement/StateManagementTask.java
  co.konecta.sura.certificate.task.cases.statemanagement.StateManagementTask
 co/konecta/sura/certificate/userinterface/pendientes/LoginPage.java
  co.konecta.sura.certificate.userinterface.pendientes.LoginPage
-co/konecta/sura/certificate/task/parameterization/StrategyTask.java
- co.konecta.sura.certificate.task.parameterization.StrategyTask
+co/konecta/sura/certificate/userinterface/parameterization/AlertTimePage.java
+ co.konecta.sura.certificate.userinterface.parameterization.AlertTimePage
 co/konecta/sura/certificate/userinterface/parameterization/ListsParameterizationPage.java
  co.konecta.sura.certificate.userinterface.parameterization.ListsParameterizationPage
 co/konecta/sura/certificate/task/pendientes/AdvancedSearchTask.java
@@ -126,11 +126,11 @@ co/konecta/sura/certificate/questions/TheModal.java
  co.konecta.sura.certificate.questions.TheModal
 co/konecta/sura/certificate/task/cases/suppliermanagement/SupplierManagementTask.java
  co.konecta.sura.certificate.task.cases.suppliermanagement.SupplierManagementTask
-co/konecta/sura/certificate/userinterface/parameterization/AlertTimePage.java
- co.konecta.sura.certificate.userinterface.parameterization.AlertTimePage
-co/konecta/sura/certificate/task/parameterization/AlertTimeTask.java
- co.konecta.sura.certificate.task.parameterization.AlertTimeTask
-co/konecta/sura/certificate/userinterface/parameterization/PushNotificationsPage.java
- co.konecta.sura.certificate.userinterface.parameterization.PushNotificationsPage
 co/konecta/sura/certificate/task/parameterization/PushNotificationsTask.java
  co.konecta.sura.certificate.task.parameterization.PushNotificationsTask
+co/konecta/sura/certificate/userinterface/parameterization/PushNotificationsPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.PushNotificationsPage
+co/konecta/sura/certificate/userinterface/parameterization/StrategyPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.StrategyPage
+co/konecta/sura/certificate/task/parameterization/StrategyTask.java
+ co.konecta.sura.certificate.task.parameterization.StrategyTask

@@ -34,10 +34,11 @@ Feature: Alert time parameterization
   @TestAlertTimeParameterizationDelete
   Scenario Outline: Alert time parameterization successful delete
     When I entering in the application with user <user> and password <password>
+    And I entering alert time parameterization
     And I select button delete alert time
     Then I view the modal save alert time parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | modalmessage                     |
-      | yaira.acevedo | YMAe8807* | registro eliminado correctamente |
+      | user         | password       | modalmessage                     |
+      | Sergio.anaya | Colombia_2025* | Registro eliminado correctamente |
 

@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/alerttime.feature",
         snippets = SnippetType.CAMELCASE,
-        tags = {"@TestAlertTimeParameterization"},
+        tags = {"@TestAlertTimeParameterizationDelete"},
         monochrome = true
 
 )

@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/strategy.feature",
         snippets = SnippetType.CAMELCASE,
-        tags = {"@TestNotificationStrategyParameterizationEdition"},
+        tags = {"@TestMonitoringStrategyParameterizationEdition"},
         monochrome = true
 
 )

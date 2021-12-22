@@ -10,23 +10,26 @@ Feature: Strategy parameterization
     When I entering in the application with user <user> and password <password>
     And I entering strategy parameterization
     And I type information in the contingency strategy with the name contingency search <namecontingencysearch> and the description <description>
+    And I save button strategy parameterization
     Then I view the modal save strategy parameterization with <modalmessage>
 
     Examples:
       | user         | password       | description | namecontingencysearch | modalmessage                    |
-      | sergio.anaya | Colombia_2024* | Prueba      | Contingencia          | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2025* | Prueba      | Contingencia          | Registro guardado correctamente |
 
 
   @TestCoordinationStrategyParameterizationEdition
   Scenario Outline: Coordination strategy parameterization successful edition
     When I entering in the application with user <user> and password <password>
     And I entering strategy parameterization
+    And I entering search strategy parameterization <namecontingencysearch>
     And I type information in the coordination strategy with the description <description> and the time assignment <timeassignment> and the first expiration <firstexpiration> and the second expiration <secondexpiration>
+    And I save button strategy parameterization
     Then I view the modal save strategy parameterization with <modalmessage>
 
     Examples:
-      | user         | password       | description    | timeassignment | firstexpiration | secondexpiration | modalmessage                    |
-      | Sergio.anaya | Colombia_2024* | prueba edicion | 5              | 15              | 22               | Registro guardado correctamente |
+      | user         | password       | namecontingencysearch                 | description                                                              | timeassignment | firstexpiration | secondexpiration | modalmessage                    |
+      | Sergio.anaya | Colombia_2025* | Estrategia de coordinación automática | {"status":"true","pqr_time":"2","one_end_date":"11","two_end_date":"20"} | 2              | 11              | 20               | Registro guardado correctamente |
 
 
   @TestMonitoringStrategyParameterizationEdition

@@ -14,7 +14,7 @@ public class AlertTimePage {
     public static final Target BUTTON_DELETE_ALERT_TIME = Target.the("This the button delete alert time parameterization").located(By.id("btnDeletedTimeAlert"));
     public static final Target BUTTON_SAVE_ALERT_TIME = Target.the("This the button save alert time parameterization").located(By.id("btnSaveFormTimeAlert"));
     public static final Target BUTTON_CANCEL_ALERT_TIME = Target.the("This the button cancel alert time parameterization").located(By.id(""));
-    public static final Target OPTION_YES_ALERT_TIME = Target.the("This the button yes alert time parameterization").located(By.id(""));
+    public static final Target OPTION_YES_ALERT_TIME = Target.the("This the button yes alert time parameterization").located(By.id("sweetalertConfirmButton"));
     public static final Target OPTION_LINE = Target.the("This the button option line parameterization").locatedBy("/html/body/div[3]/div[4]/div/div/div/mat-option[1]");
 
 

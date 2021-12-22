@@ -20,7 +20,6 @@ import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALI
 import static co.konecta.sura.certificate.userinterface.parameterization.StrategyPage.*;
 
 
-
 public class StrategyStepsDefinitions {
 
 
@@ -30,7 +29,7 @@ public class StrategyStepsDefinitions {
     private final HomePage homePage = new HomePage();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         actor.can(BrowseTheWeb.with(driver));
     }
 
@@ -50,26 +49,39 @@ public class StrategyStepsDefinitions {
         Thread.sleep(2000);
         actor.attemptsTo(Click.on(HomePage.OPTION_STRATEGY_PARAMETERIZATION));
         Thread.sleep(3000);
-      // actor.attemptsTo(Click.on(StrategyPage.INPUT_SEARCH_STRATEGY_NAME));
 
     }
 
     @And("^I type information in the contingency strategy with the name contingency search (.*) and the description (.*)$")
-    public void iTypeInformationInTheContingencyStrategyWithTheDescription(String nameContingencySearch,String contingencyDescription) {
+    public void iTypeInformationInTheContingencyStrategyWithTheDescription(String nameContingencySearch, String contingencyDescription) throws InterruptedException {
 
-        actor.attemptsTo( Enter.theValue(nameContingencySearch).into(INPUT_SEARCH_STRATEGY_NAME),
-
+        actor.attemptsTo(
+                Enter.theValue(nameContingencySearch).into(INPUT_SEARCH_STRATEGY_NAME),
+                Click.on(BUTTON_SEARCH_STRATEGY));
+        Thread.sleep(3000);
+        actor.attemptsTo(
                 Click.on(BUTTON_EDIT_CONTINGENCY_STRATEGY),
                 StrategyTask.withInformationStrategy(contingencyDescription));
+
+    }
+    @And("^I entering search strategy parameterization (.*)$")
+    public void IEnteringSearchStrategyParameterization(String nameContingencySearch) throws InterruptedException {
+        actor.attemptsTo(
+                Enter.theValue(nameContingencySearch).into(INPUT_SEARCH_STRATEGY_NAME),
+                Click.on(BUTTON_SEARCH_STRATEGY));
+        Thread.sleep(3000);
+        actor.attemptsTo(
+                Click.on(BUTTON_EDIT_CONTINGENCY_STRATEGY));
 
     }
 
     @And("^I type information in the coordination strategy with the description (.*) and the time assignment (.*) and the first expiration (.*) and the second expiration (.*)$")
     public void iTypeInformationInTheCoordinationStrategyWithTheDescriptionAndTheTimeAssignmentAndTheFirstExpirationAndTheSecondExpiration(String contingencyDescription, String timeAssignment, String firstExpiration, String secondExpiration) {
-        actor.attemptsTo(Click.on(BUTTON_EDIT_COORDINATION_STRATEGY),
+        actor.attemptsTo(
+
                 StrategyTask.withInformationStrategy(contingencyDescription),
-                Click.on(INPUT_COORDINATION_STRATEGY),
-                Hit.the(Keys.ENTER).into(INPUT_COORDINATION_STRATEGY),
+               // Click.on(INPUT_COORDINATION_STRATEGY),
+                //Hit.the(Keys.ARROW_UP).into(INPUT_COORDINATION_STRATEGY),
                 Enter.theValue(timeAssignment).into(INPUT_TIME_ASSIGNMENT),
                 Enter.theValue(firstExpiration).into(INPUT_FIRST_EXPIRATION_TIME),
                 Enter.theValue(secondExpiration).into(INPUT_SECOND_EXPIRATION_TIME),
@@ -79,14 +91,14 @@ public class StrategyStepsDefinitions {
 
     @And("^I type information in the monitoring strategy with the description (.*) and the preventive time (.*) and the time monitoring site (.*) and the time monitoring completion (.*)$")
     public void iTypeInformationInTheMonitoringStrategyWithTheDescriptionAndThePreventiveTimeAndTheTimeMonitoringSiteAndTheTimeMonitoringCompletion(String contingencyDescription, String preventiveTime, String timeMonitoringSite, String timeMonitoringCompletion) {
-        actor.attemptsTo(Click.on(BUTTON_EDIT_MONITORING_STRATEGY),
+        actor.attemptsTo(
+                //Click.on(BUTTON_EDIT_MONITORING_STRATEGY),
                 StrategyTask.withInformationStrategy(contingencyDescription),
-                Click.on(INPUT_MONITORING_STRATEGY),
-                Hit.the(Keys.ENTER).into(INPUT_MONITORING_STRATEGY),
+                //Click.on(INPUT_MONITORING_STRATEGY),
+                //Hit.the(Keys.ENTER).into(INPUT_MONITORING_STRATEGY),
                 Enter.theValue(preventiveTime).into(INPUT_PREVENTIVE_MONITORING_TIME_),
                 Enter.theValue(timeMonitoringSite).into(INPUT_TIME_MONITORING_SITE),
-                Enter.theValue(timeMonitoringCompletion).into(INPUT_TIME_MONITORING_COMPLETION),
-                Click.on(BUTTON_SAVE_STRATEGY)
+                Enter.theValue(timeMonitoringCompletion).into(INPUT_TIME_MONITORING_COMPLETION)
         );
 
     }
@@ -131,6 +143,10 @@ public class StrategyStepsDefinitions {
                 Click.on(BUTTON_SAVE_STRATEGY)
         );
 
+    }
+    @And("^I save button strategy parameterization$")
+    public void ISaveButtonStrategyParameterization(){
+        actor.attemptsTo(Click.on(BUTTON_SAVE_STRATEGY));
     }
 
     @Then("^I view the modal save strategy parameterization with (.*)$")
