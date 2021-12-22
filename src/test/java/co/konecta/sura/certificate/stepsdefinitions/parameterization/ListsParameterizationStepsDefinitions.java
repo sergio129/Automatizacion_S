@@ -27,7 +27,7 @@ public class ListsParameterizationStepsDefinitions {
     private final HomePage homePage = new HomePage();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         actor.can(BrowseTheWeb.with(driver));
     }
 
@@ -58,8 +58,8 @@ public class ListsParameterizationStepsDefinitions {
     }
 
     @And("^I type information in the lists parameterization with the roles (.*) and modules (.*) and lists (.*) and options1(.*) and options2(.*)$")
-    public void iTypeInformationInTheListsParameterizationWithTheRolesAndModulesAndListsAndOptionsAndOptions(String rolesLists, String modulesLists, String lists, String optionsLists1,String optionsLists2) {
-        actor.attemptsTo(ListsParameterizationTask.withInformationListParameterization(rolesLists, modulesLists,lists, optionsLists1, optionsLists2)
+    public void iTypeInformationInTheListsParameterizationWithTheRolesAndModulesAndListsAndOptionsAndOptions(String rolesLists, String modulesLists, String lists, String optionsLists1, String optionsLists2) {
+        actor.attemptsTo(ListsParameterizationTask.withInformationListParameterization(rolesLists, modulesLists, lists, optionsLists1, optionsLists2)
                 //Click.on(BUTTON_SAVE_LISTS)
         );
     }

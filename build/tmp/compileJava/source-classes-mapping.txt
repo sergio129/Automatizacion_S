@@ -130,3 +130,7 @@ co/konecta/sura/certificate/userinterface/parameterization/AlertTimePage.java
  co.konecta.sura.certificate.userinterface.parameterization.AlertTimePage
 co/konecta/sura/certificate/task/parameterization/AlertTimeTask.java
  co.konecta.sura.certificate.task.parameterization.AlertTimeTask
+co/konecta/sura/certificate/userinterface/parameterization/PushNotificationsPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.PushNotificationsPage
+co/konecta/sura/certificate/task/parameterization/PushNotificationsTask.java
+ co.konecta.sura.certificate.task.parameterization.PushNotificationsTask

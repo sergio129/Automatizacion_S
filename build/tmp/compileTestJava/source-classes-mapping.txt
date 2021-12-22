@@ -78,8 +78,8 @@ co/konecta/sura/certificate/stepsdefinitions/cases/LoginStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.LoginStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/home/ControlBoardsStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.home.ControlBoardsStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/parameterization/ListsParameterizationStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.parameterization.ListsParameterizationStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/parameterization/AlertRecipientsStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.parameterization.AlertRecipientsStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/FullFlowCaseStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.FullFlowCaseStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/parameterization/ControlBoardsParameterizationStepsDefinitions.java
@@ -98,7 +98,11 @@ co/konecta/sura/certificate/stepsdefinitions/pendientes/AdvancedSearchStepsDefin
  co.konecta.sura.certificate.stepsdefinitions.pendientes.AdvancedSearchStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/StateManagementStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.StateManagementStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/parameterization/AlertRecipientsStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.parameterization.AlertRecipientsStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/parameterization/ListsParameterizationStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.parameterization.ListsParameterizationStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/parameterization/AlertTimeStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.AlertTimeStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/parameterization/PushnotificationsStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.parameterization.PushnotificationsStepsDefinitions
+co/konecta/sura/certificate/runners/parameterization/PushNotificationRunner.java
+ co.konecta.sura.certificate.runners.parameterization.PushNotificationRunner
