@@ -35,7 +35,7 @@ Feature: Strategy parameterization
   @TestMonitoringStrategyParameterizationEdition
   Scenario Outline: Monitoring strategy parameterization successful edition
     When I entering in the application with user <user> and password <password>
-    And I entering strategy parameterization
+    And I entering push notifications
     And I entering search strategy parameterization <namecontingencysearch>
     And I type information in the monitoring strategy with the description <description> and the preventive time <preventivetime> and the time monitoring site <timemonitoringsite> and the time monitoring completion <timemonitoringcompletion>
     And I save button strategy parameterization

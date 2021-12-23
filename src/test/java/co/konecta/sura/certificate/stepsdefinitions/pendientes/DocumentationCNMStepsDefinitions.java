@@ -2,8 +2,8 @@ package co.konecta.sura.certificate.stepsdefinitions.pendientes;
 
 import co.konecta.sura.certificate.task.pendientes.DocumentationCNMTask;
 import co.konecta.sura.certificate.task.pendientes.LoginTask;
-import co.konecta.sura.certificate.userinterface.pendientes.AdvancedSearchPage;
 import co.konecta.sura.certificate.userinterface.HomePage;
+import co.konecta.sura.certificate.userinterface.pendientes.AdvancedSearchPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -18,9 +18,9 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
+import static co.konecta.sura.certificate.userinterface.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.userinterface.pendientes.AdvancedSearchPage.*;
 import static co.konecta.sura.certificate.userinterface.pendientes.DocumentationCNMPage.*;
-import static co.konecta.sura.certificate.userinterface.HomePage.MODAL_VALIDATION;
 public class DocumentationCNMStepsDefinitions {
 
     @Managed(driver = "chrome")

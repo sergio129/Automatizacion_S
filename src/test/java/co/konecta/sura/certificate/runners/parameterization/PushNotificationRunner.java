@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/pushnotifications.feature",
         snippets = SnippetType.CAMELCASE,
-        tags = {"@TestPushNotificationsFields"},
+        tags = {"@TestPushNotifications"},
         monochrome = true
 )
 public class PushNotificationRunner {

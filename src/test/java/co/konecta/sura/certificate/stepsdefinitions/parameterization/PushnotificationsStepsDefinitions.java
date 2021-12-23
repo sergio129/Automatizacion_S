@@ -1,7 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
 import co.konecta.sura.certificate.task.parameterization.PushNotificationsTask;
-import co.konecta.sura.certificate.userinterface.HomePage;
+import co.konecta.sura.certificate.userinterface.home.HomePage;
 import co.konecta.sura.certificate.userinterface.parameterization.ListsParameterizationPage;
 import co.konecta.sura.certificate.userinterface.parameterization.PushNotificationsPage;
 import cucumber.api.java.Before;
@@ -17,7 +17,8 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.HomePage.*;
+
+import static co.konecta.sura.certificate.userinterface.home.HomePage.*;
 import static co.konecta.sura.certificate.userinterface.parameterization.PushNotificationsPage.*;
 
 public class PushnotificationsStepsDefinitions {
