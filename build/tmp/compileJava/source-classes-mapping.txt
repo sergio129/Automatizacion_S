@@ -18,16 +18,20 @@ co/konecta/sura/certificate/userinterface/home/ControlBoardsPage.java
  co.konecta.sura.certificate.userinterface.home.ControlBoardsPage
 co/konecta/sura/certificate/task/cases/casetask/Case.java
  co.konecta.sura.certificate.task.cases.casetask.Case
-co/konecta/sura/certificate/task/pendientes/DocumentationCNMTask.java
- co.konecta.sura.certificate.task.pendientes.DocumentationCNMTask
+co/konecta/sura/certificate/task/parameterization/BouquetsTask.java
+ co.konecta.sura.certificate.task.parameterization.BouquetsTask
 co/konecta/sura/certificate/task/home/ControlBoardsTask.java
  co.konecta.sura.certificate.task.home.ControlBoardsTask
+co/konecta/sura/certificate/task/pendientes/DocumentationCNMTask.java
+ co.konecta.sura.certificate.task.pendientes.DocumentationCNMTask
 co/konecta/sura/certificate/task/parameterization/TrafficLightTask.java
  co.konecta.sura.certificate.task.parameterization.TrafficLightTask
 co/konecta/sura/certificate/userinterface/pendientes/AdvancedSearchPage.java
  co.konecta.sura.certificate.userinterface.pendientes.AdvancedSearchPage
 co/konecta/sura/certificate/userinterface/parameterization/ControlBoardsParameterizationPage.java
  co.konecta.sura.certificate.userinterface.parameterization.ControlBoardsParameterizationPage
+co/konecta/sura/certificate/userinterface/cases/cases/CasePage.java
+ co.konecta.sura.certificate.userinterface.cases.cases.CasePage
 co/konecta/sura/certificate/task/parameterization/AlertRecipientsTask.java
  co.konecta.sura.certificate.task.parameterization.AlertRecipientsTask
 co/konecta/sura/certificate/userinterface/pendientes/SupplierManagementPage.java
@@ -54,8 +58,8 @@ co/konecta/sura/certificate/task/cases/suppliermanagement/SupplierManagementTask
  co.konecta.sura.certificate.task.cases.suppliermanagement.SupplierManagementTask
 co/konecta/sura/certificate/task/parameterization/PushNotificationsTask.java
  co.konecta.sura.certificate.task.parameterization.PushNotificationsTask
-co/konecta/sura/certificate/userinterface/cases/cases/CasePage.java
- co.konecta.sura.certificate.userinterface.cases.cases.CasePage
+co/konecta/sura/certificate/userinterface/parameterization/BouquetsPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.BouquetsPage
 co/konecta/sura/certificate/userinterface/parameterization/CaseClosurePage.java
  co.konecta.sura.certificate.userinterface.parameterization.CaseClosurePage
 co/konecta/sura/certificate/userinterface/cases/login/LoginPage.java
@@ -134,7 +138,7 @@ co/konecta/sura/certificate/task/cases/suraclimbing/SuraClimbingTask.java
  co.konecta.sura.certificate.task.cases.suraclimbing.SuraClimbingTask
 co/konecta/sura/certificate/task/pendientes/AdvancedSearchTask.java
  co.konecta.sura.certificate.task.pendientes.AdvancedSearchTask
-co/konecta/sura/certificate/userinterface/parameterization/BouquetsPage.java
- co.konecta.sura.certificate.userinterface.parameterization.BouquetsPage
-co/konecta/sura/certificate/task/parameterization/BouquetsTask.java
- co.konecta.sura.certificate.task.parameterization.BouquetsTask
+co/konecta/sura/certificate/task/parameterization/DialingCodesParameterizationTask.java
+ co.konecta.sura.certificate.task.parameterization.DialingCodesParameterizationTask
+co/konecta/sura/certificate/userinterface/parameterization/DialingCodesParameterizationPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.DialingCodesParameterizationPage
