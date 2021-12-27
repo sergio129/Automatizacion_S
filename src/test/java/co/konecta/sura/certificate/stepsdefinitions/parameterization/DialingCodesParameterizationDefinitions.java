@@ -60,14 +60,15 @@ public class DialingCodesParameterizationDefinitions {
     public void ISelectButtonSearchAndEditDialingCodesParameterization(String department, String municipality) throws InterruptedException {
         actor.attemptsTo(
                 Click.on(INPUT_DEPARTMENT_DEALING_HOME),
-                Enter.theValue(department).into(INPUT_SEARCH_DEPARTMENT_DEALING_HOME));
-        Thread.sleep(5000);
-                Click.on(BUTTON_SELECT_DEPARTMENT_DEALING_HOME);
-                actor.attemptsTo(Click.on(INPUT_MUNICIPALITY_DEALING_HOME),
+                Enter.theValue(department).into(INPUT_SEARCH_DEPARTMENT_DEALING_HOME),
+                Click.on(BUTTON_SELECT_DEPARTMENT_DEALING_HOME));
+        Thread.sleep(3000);
+        actor.attemptsTo(
+
+                Click.on(INPUT_MUNICIPALITY_DEALING_HOME),
                 Enter.theValue(municipality).into(INPUT_SEARCH_MUNICIPALITY_DEALING_HOME).thenHit(Keys.ENTER),
                 Click.on(BUTTON_SEARCH_DEALING),
                 Click.on(BUTTON_EDIT_DEALING)
-
         );
 
     }

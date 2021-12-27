@@ -13,8 +13,8 @@ Feature: Dialing codes parameterization
     And I Write information in dialing codes parameterization<department> and <municipality> and <indicative>
     Then I view the modal save dialing codes parameterization <modalmessage>
     Examples:
-      | user         | password       | department | municipality | indicative | modalmessage                    |
-      | sergio.anaya | Colombia_2025* | Cordoba    | Lorica       | +65        | Registro guardado correctamente |
+      | user         | password       | department | municipality  | indicative | modalmessage                    |
+      | sergio.anaya | Colombia_2025* | Vichada    | Santa Barbara | +65        | Registro guardado correctamente |
 
   @TestDialingCodesParameterizationEdit
   Scenario Outline: Successful Edit dialing codes parameterization
@@ -24,6 +24,6 @@ Feature: Dialing codes parameterization
     And I Write information in dialing codes parameterization<department> and <municipality> and <indicative>
     Then I view the modal save dialing codes parameterization <modalmessage>
     Examples:
-      | user         | password       | department | municipality | indicative | modalmessage                    |
-      | sergio.anaya | Colombia_2025* | Vichada    | Lorica       | +78        | Registro guardado correctamente |
+      | user         | password       | department | municipality  | indicative | modalmessage                    |
+      | sergio.anaya | Colombia_2025* | Vichada    | Santa Barbara | +78        | Registro guardado correctamente |
 
