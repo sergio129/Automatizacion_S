@@ -89,6 +89,7 @@ public class DialingCodesParameterizationDefinitions {
     public void IViewTheModalSaveBouquetsParameterization(String message) throws InterruptedException {
         Thread.sleep(2000);
         actor.attemptsTo(
+                Click.on(BUTTON_SAVE_DEALING),
                 Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
     }
 

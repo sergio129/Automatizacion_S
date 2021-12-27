@@ -28,6 +28,14 @@ public class HomePage extends PageObject {
     public static final Target STATUS_CASE_VALIDATION = Target.the("This the input status case validation").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav-content/div/app-show-cases/mat-accordion/mat-expansion-panel[1]/div/div/div/div[5]/h6");
     public static final Target SCROLL_PARAMETERIZATION = Target.the("This controls the Scrooll").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]/div[3]");
     public static final Target OPTION_DIALING_CODES_PARAMETERIZATION = Target.the("This the Dialing codes parameterization").located(By.id("moListIndicative"));
+    public static final Target OPTION_EXIT_CODES_PARAMETERIZATION = Target.the("This the exit codes parameterization").located(By.id("moListExitCode"));
+    public static final Target SCROLL2_PARAMETERIZATION = Target.the("This controls 2 the Scrooll").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]/div[3]");
+    public static final Target OPTION_INTEGRATION = Target.the("This the integration").located(By.id("moIntegration"));
+    public static final Target OPTION_HIGH_CONTACT_TIMES_INTEGRATION = Target.the("This the high contact times").located(By.id("moHighTimeManagement"));
+
+
+
+
 
 
 }

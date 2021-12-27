@@ -1,11 +1,11 @@
 co/konecta/sura/certificate/runners/cases/TaskMonitoringRunner.java
  co.konecta.sura.certificate.runners.cases.TaskMonitoringRunner
+co/konecta/sura/certificate/runners/parameterization/DialingcodesParameterizationRunner.java
+ co.konecta.sura.certificate.runners.parameterization.DialingcodesParameterizationRunner
 co/konecta/sura/certificate/runners/cases/AdvancedSearchRunner.java
  co.konecta.sura.certificate.runners.cases.AdvancedSearchRunner
-co/konecta/sura/certificate/runners/parameterization/PushNotificationRunner.java
- co.konecta.sura.certificate.runners.parameterization.PushNotificationRunner
-co/konecta/sura/certificate/runners/parameterization/TrafficLightRunner.java
- co.konecta.sura.certificate.runners.parameterization.TrafficLightRunner
+co/konecta/sura/certificate/stepsdefinitions/pendientes/SupplierManagementStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.pendientes.SupplierManagementStepsDefinitions
 co/konecta/sura/certificate/runners/cases/SupplierMonitoringRunner.java
  co.konecta.sura.certificate.runners.cases.SupplierMonitoringRunner
 co/konecta/sura/certificate/runners/cases/LoginRunner.java
@@ -18,6 +18,8 @@ co/konecta/sura/certificate/stepsdefinitions/pendientes/SupplierMonitoringStepsD
  co.konecta.sura.certificate.stepsdefinitions.pendientes.SupplierMonitoringStepsDefinitions
 co/konecta/sura/certificate/runners/parameterization/CaseClosureRunner.java
  co.konecta.sura.certificate.runners.parameterization.CaseClosureRunner
+co/konecta/sura/certificate/runners/parameterization/ExitCodeParameterizationRunner.java
+ co.konecta.sura.certificate.runners.parameterization.ExitCodeParameterizationRunner
 co/konecta/sura/certificate/runners/cases/SupplierManagementRunner.java
  co.konecta.sura.certificate.runners.cases.SupplierManagementRunner
 co/konecta/sura/certificate/runners/parameterization/StrategyRunner.java
@@ -38,8 +40,8 @@ co/konecta/sura/certificate/runners/cases/SuraClimbingRunner.java
  co.konecta.sura.certificate.runners.cases.SuraClimbingRunner
 co/konecta/sura/certificate/runners/cases/DocumentationCNMRunner.java
  co.konecta.sura.certificate.runners.cases.DocumentationCNMRunner
-co/konecta/sura/certificate/runners/cases/NoveltyRunner.java
- co.konecta.sura.certificate.runners.cases.NoveltyRunner
+co/konecta/sura/certificate/stepsdefinitions/pendientes/DocumentationCNMStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.pendientes.DocumentationCNMStepsDefinitions
 co/konecta/sura/certificate/runners/parameterization/BouquetsRunner.java
  co.konecta.sura.certificate.runners.parameterization.BouquetsRunner
 co/konecta/sura/certificate/runners/parameterization/AlertTimeRunner.java
@@ -52,12 +54,16 @@ co/konecta/sura/certificate/runners/cases/FullFlowCaseRunner.java
  co.konecta.sura.certificate.runners.cases.FullFlowCaseRunner
 co/konecta/sura/certificate/runners/listas/listRunner.java
  co.konecta.sura.certificate.runners.listas.listRunner
+co/konecta/sura/certificate/runners/parameterization/TrafficLightRunner.java
+ co.konecta.sura.certificate.runners.parameterization.TrafficLightRunner
+co/konecta/sura/certificate/runners/cases/NoveltyRunner.java
+ co.konecta.sura.certificate.runners.cases.NoveltyRunner
 co/konecta/sura/certificate/runners/cases/CaseRunner.java
  co.konecta.sura.certificate.runners.cases.CaseRunner
-co/konecta/sura/certificate/stepsdefinitions/pendientes/SupplierManagementStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.pendientes.SupplierManagementStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/pendientes/DocumentationCNMStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.pendientes.DocumentationCNMStepsDefinitions
+co/konecta/sura/certificate/runners/parameterization/PushNotificationRunner.java
+ co.konecta.sura.certificate.runners.parameterization.PushNotificationRunner
+co/konecta/sura/certificate/runners/integration/HighContactTimesIntegrationRunner.java
+ co.konecta.sura.certificate.runners.integration.HighContactTimesIntegrationRunner
 co/konecta/sura/certificate/stepsdefinitions/parameterization/StrategyStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.StrategyStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/DocumentationCNMStepsDefinitions.java
@@ -70,6 +76,8 @@ co/konecta/sura/certificate/stepsdefinitions/cases/NoveltyStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.NoveltyStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/parameterization/HideMonitoringTasksStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.HideMonitoringTasksStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/parameterization/ExitcodeParameterizationStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.parameterization.ExitcodeParameterizationStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/parameterization/PushnotificationsStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.PushnotificationsStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/home/ControlBoardsStepsDefinitions.java
@@ -80,8 +88,8 @@ co/konecta/sura/certificate/stepsdefinitions/cases/FullFlowCaseStepsDefinitions.
  co.konecta.sura.certificate.stepsdefinitions.cases.FullFlowCaseStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/parameterization/ControlBoardsParameterizationStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.ControlBoardsParameterizationStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/parameterization/TrafficLightStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.parameterization.TrafficLightStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/parameterization/DialingCodesParameterizationDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.parameterization.DialingCodesParameterizationDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/CaseStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.CaseStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/parameterization/AlertRecipientsStepsDefinitions.java
@@ -106,11 +114,11 @@ co/konecta/sura/certificate/stepsdefinitions/listas/listStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.listas.listStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/EndingStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.EndingStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/cases/StateManagementStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.cases.StateManagementStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/SupplierManagementStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.SupplierManagementStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/parameterization/DialingCodesParameterizationDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.parameterization.DialingCodesParameterizationDefinitions
-co/konecta/sura/certificate/runners/parameterization/DialingcodesParameterizationRunner.java
- co.konecta.sura.certificate.runners.parameterization.DialingcodesParameterizationRunner
+co/konecta/sura/certificate/stepsdefinitions/cases/StateManagementStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.cases.StateManagementStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/parameterization/TrafficLightStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.parameterization.TrafficLightStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/integration/HighContactTimesIntegrationStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.integration.HighContactTimesIntegrationStepsDefinitions

@@ -1,6 +1,7 @@
 Feature: Dialing codes parameterization
   As a user
   I need to create or edition of delete dialing codes parameterization
+  //PARAMETRIZACION INDICATIVO
 
   Background:
     Given I create or edition of delete dialing codes parameterization
@@ -29,7 +30,7 @@ Feature: Dialing codes parameterization
       | sergio.anaya | Colombia_2025* | Vichada    | Santa Barbara | +78        | Registro guardado correctamente |
 
   @TestDialingCodesParameterizationDelete
-  Scenario Outline: Successful Edit dialing codes parameterization
+  Scenario Outline: Successful delete dialing codes parameterization
     When I entering in the application with user <user> and password <password>
     And I enter dialing codes parameterization
     And I select button search dialing codes parameterization<department> and <municipality>
@@ -39,3 +40,12 @@ Feature: Dialing codes parameterization
       | user         | password       | department | municipality  | modalmessage                     |  |
       | sergio.anaya | Colombia_2025* | Vichada    | Santa Barbara | Registro eliminado correctamente |  |
 
+  @TestDialingCodesParameterizationFields
+  Scenario Outline: Successful valid fields dialing codes parameterization
+    When I entering in the application with user <user> and password <password>
+    And I enter dialing codes parameterization
+    And I select button create dialing codes parameterization
+    Then I view the modal save dialing codes parameterization <modalmessage>
+    Examples:
+      | user         | password       | modalmessage                         |  |  |  |
+      | sergio.anaya | Colombia_2025* | Los campos marcados son obligatorios |  |  |  |

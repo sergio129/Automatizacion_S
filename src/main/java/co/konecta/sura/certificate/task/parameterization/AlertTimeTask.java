@@ -14,7 +14,7 @@ public class AlertTimeTask implements Task {
     String serviceAlertTime;
     String time;
 
-    public AlertTimeTask(  String serviceAlertTime, String time) {
+    public AlertTimeTask(String serviceAlertTime, String time) {
         this.serviceAlertTime = serviceAlertTime;
 
         this.time = time;
@@ -35,7 +35,7 @@ public class AlertTimeTask implements Task {
     }
 
 
-    public static AlertTimeTask withInformationAlertTime (String serviceAlertTime, String time){
+    public static AlertTimeTask withInformationAlertTime(String serviceAlertTime, String time) {
         return instrumented(AlertTimeTask.class, serviceAlertTime, time);
     }
 
