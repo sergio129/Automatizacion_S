@@ -21,7 +21,9 @@ public class DialingCodesParameterizationPage {
     public static final Target INPUT_SEARCH_MUNICIPALITY_DEALING_HOME = Target.the("This the  input search municipality dialing home parameterization").located(By.id("inputMunicipalityIndicativeSearch"));
     public static final Target BUTTON_SEARCH_DEALING = Target.the("This the button SEARCH dealing parameterization").located(By.id("btnSearchIndicative"));
     public static final Target BUTTON_EDIT_DEALING = Target.the("This the button edit dealing parameterization").located(By.id("btnEditIndicative"));
+
     public static final Target BUTTON_DELETE_DEALING = Target.the("This the button delete dealing parameterization").located(By.id("btnDeletedIndicative"));
+    public static final Target OPTION_YES_DEALING = Target.the("This the option yes dealing parameterization").located(By.id("sweetalertConfirmButton"));
 
 
 

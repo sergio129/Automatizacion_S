@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/dialingcodesparameterization.feature",
         snippets = SnippetType.CAMELCASE,
-        tags = {"@TestDialingCodesParameterizationEdit"},
+        tags = {"@TestDialingCodesParameterizationEdit,@TestDialingCodesParameterizationDelete"},
         monochrome = true
 )
 public class DialingcodesParameterizationRunner {

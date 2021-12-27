@@ -56,21 +56,33 @@ public class DialingCodesParameterizationDefinitions {
         actor.attemptsTo(DialingCodesParameterizationTask.WriteInformationDialingCodesParameterizationTask(department, municipality, indicative));
     }
 
-    @And("^I select button search and edit dialing codes parameterization(.*) and (.*)$")
-    public void ISelectButtonSearchAndEditDialingCodesParameterization(String department, String municipality) throws InterruptedException {
+    @And("^I select button search dialing codes parameterization(.*) and (.*)$")
+    public void ISelectButtonSearchDialingCodesParameterization(String department, String municipality) throws InterruptedException {
         actor.attemptsTo(
                 Click.on(INPUT_DEPARTMENT_DEALING_HOME),
                 Enter.theValue(department).into(INPUT_SEARCH_DEPARTMENT_DEALING_HOME),
                 Click.on(BUTTON_SELECT_DEPARTMENT_DEALING_HOME));
         Thread.sleep(3000);
         actor.attemptsTo(
-
                 Click.on(INPUT_MUNICIPALITY_DEALING_HOME),
                 Enter.theValue(municipality).into(INPUT_SEARCH_MUNICIPALITY_DEALING_HOME).thenHit(Keys.ENTER),
-                Click.on(BUTTON_SEARCH_DEALING),
-                Click.on(BUTTON_EDIT_DEALING)
+                Click.on(BUTTON_SEARCH_DEALING)
+
         );
 
+    }
+
+    @And("^I select button edit dialing codes parameterization$")
+    public void ISelectButtonEditDialinngCodesParameterization() throws InterruptedException {
+        actor.attemptsTo(Click.on(BUTTON_EDIT_DEALING));
+    }
+
+    @And("^I select button delete dialing codes parameterization$")
+    public void ISelectButtonDeleteDialingCodesParameterization() throws InterruptedException {
+        actor.attemptsTo(Click.on(BUTTON_DELETE_DEALING),
+                Click.on(OPTION_YES_DEALING)
+        );
+        Thread.sleep(500);
     }
 
     @Then("^I view the modal save dialing codes parameterization (.*)$")
