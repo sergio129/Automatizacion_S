@@ -11,7 +11,7 @@ Feature: High Contact Times Integration
     When I entering in the application with user <user> and password <password>
     And I enter high contact times integration
     And we make a filter<line>, we search and manage<management>
-    Then I view the modal save high contact times integration <modalmessage>
+    Then I view the modal save high contact times integration<modalmessage>
     Examples:
       | user         | password       | line  | management  | modalmessage                    |
       | Sergio.anaya | Colombia_2025* | Autos | Sin novedad | Registro guardado correctamente |
