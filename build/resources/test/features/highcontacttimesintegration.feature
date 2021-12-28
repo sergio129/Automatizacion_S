@@ -13,5 +13,5 @@ Feature: High Contact Times Integration
     And we make a filter<line>, we search and manage<management>
     Then I view the modal save high contact times integration<modalmessage>
     Examples:
-      | user         | password       | line  | management  | modalmessage                    |
-      | Sergio.anaya | Colombia_2025* | Autos | Sin novedad | Registro guardado correctamente |
+      | user         | password       | line                | management  | modalmessage                    |
+      | Sergio.anaya | Colombia_2025* | Emergencia en salud | Sin novedad | Registro guardado correctamente |

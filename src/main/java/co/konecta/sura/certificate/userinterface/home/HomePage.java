@@ -32,6 +32,8 @@ public class HomePage extends PageObject {
     public static final Target SCROLL2_PARAMETERIZATION = Target.the("This controls 2 the Scrooll").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]/div[3]");
     public static final Target OPTION_INTEGRATION = Target.the("This the integration").located(By.id("moIntegration"));
     public static final Target OPTION_HIGH_CONTACT_TIMES_INTEGRATION = Target.the("This the high contact times").located(By.id("moHighTimeManagement"));
+    public static final Target OPTION_CALL_REASONS_PARAMETERIZATION = Target.the("This the option call reasons parameterization").located(By.id("moCallReason"));
+
 
 
 

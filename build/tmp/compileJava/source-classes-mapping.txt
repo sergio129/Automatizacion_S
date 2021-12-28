@@ -134,15 +134,15 @@ co/konecta/sura/certificate/userinterface/pendientes/SuraClimbingPage.java
  co.konecta.sura.certificate.userinterface.pendientes.SuraClimbingPage
 co/konecta/sura/certificate/task/pendientes/AdvancedSearchTask.java
  co.konecta.sura.certificate.task.pendientes.AdvancedSearchTask
-co/konecta/sura/certificate/userinterface/home/HomePage.java
- co.konecta.sura.certificate.userinterface.home.HomePage
+co/konecta/sura/certificate/task/integration/HighContactTimeIntegrationTask.java
+ co.konecta.sura.certificate.task.integration.HighContactTimeIntegrationTask
 co/konecta/sura/certificate/task/parameterization/AlertTimeTask.java
  co.konecta.sura.certificate.task.parameterization.AlertTimeTask
+co/konecta/sura/certificate/userinterface/integration/HighContactTimesIntegrationPage.java
+ co.konecta.sura.certificate.userinterface.integration.HighContactTimesIntegrationPage
+co/konecta/sura/certificate/userinterface/home/HomePage.java
+ co.konecta.sura.certificate.userinterface.home.HomePage
 co/konecta/sura/certificate/questions/TheModal.java
  co.konecta.sura.certificate.questions.TheModal
 co/konecta/sura/certificate/task/cases/suppliermanagement/SupplierManagementTask.java
  co.konecta.sura.certificate.task.cases.suppliermanagement.SupplierManagementTask
-co/konecta/sura/certificate/userinterface/integration/HighContactTimesIntegrationPage.java
- co.konecta.sura.certificate.userinterface.integration.HighContactTimesIntegrationPage
-co/konecta/sura/certificate/task/integration/HighContactTimeIntegrationTask.java
- co.konecta.sura.certificate.task.integration.HighContactTimeIntegrationTask
