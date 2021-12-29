@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
+import co.konecta.sura.certificate.task.parameterization.CallReasonsTask.FollowupToaServiceTask;
 import co.konecta.sura.certificate.task.parameterization.CallReasonsTask.ServiceRequestTask;
 import co.konecta.sura.certificate.userinterface.home.HomePage;
 import co.konecta.sura.certificate.userinterface.parameterization.CallReasonsParameterizationPage;
@@ -42,19 +43,34 @@ public class CallReasonsParameterizationStepsDefinitions {
                 Click.on(HomePage.SCROLL_PARAMETERIZATION),
                 Click.on(HomePage.OPTION_CALL_REASONS_PARAMETERIZATION));
     }
+
     @And("^I select button create call reasons parameterization$")
-    public void ISelectButtonCreateCallReasonsParameterization(){
+    public void ISelectButtonCreateCallReasonsParameterization() {
         actor.attemptsTo(Click.on(CallReasonsParameterizationPage.BUTTON_CREATE_CALL_REASONS));
     }
-    @And("^I write information in call reasons parameterization and (.*) and (.*)$")
-    public void IWriteInformationInCallReasonsParameterization(String name, String line){
-actor.attemptsTo(ServiceRequestTask.writeInformationServiceRequest(name,line));
+
+    @And("^I write information in call reasons Service Request parameterization and (.*) and (.*)$")
+    public void IWriteInformationInCallReasonsParameterizationServiceRequest(String name, String line) {
+        actor.attemptsTo(ServiceRequestTask.writeInformationServiceRequest(name, line));
 
     }
+
+    @And("^I write information in call reasons Follow up To a Service parameterization and (.*) and (.*) and (.*)$")
+    public void IWriteInformationInCallReasonsParameterizationFollowupToaService(String name, String line, String option) {
+        actor.attemptsTo(FollowupToaServiceTask.writeInformationFollowupToaService(name, line, option));
+    }
+
+    @And("^I Select check catastrophic event$")
+    public void ISelectCheckCatastrophicEvent() throws InterruptedException {
+        Thread.sleep(300);
+        actor.attemptsTo(Click.on(CallReasonsParameterizationPage.CHECK_CATASTROPHIC_EVENT));
+    }
+
     @And("^I Select button save call reasons parameterization$")
-    public void ISelectButtonSaveCallReasonsParameterization(){
+    public void ISelectButtonSaveCallReasonsParameterization() {
         actor.attemptsTo(Click.on(CallReasonsParameterizationPage.BUTTON_SAVE_CALL_REASONS));
     }
+
     @Then("^I view the modal save call reasons parameterization (.*)$")
     public void IViewTheModalSaveCallReasonsParameterization(String message) throws InterruptedException {
         Thread.sleep(2000);

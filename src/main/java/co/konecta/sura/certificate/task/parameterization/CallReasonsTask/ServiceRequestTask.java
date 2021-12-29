@@ -25,11 +25,12 @@ public class ServiceRequestTask implements Task {
                 Click.on(INPUT_SELECT_TYPE_CALL_REASONS),
                 Click.on(SELECT_SERVICE_REQUEST_CALL_REASONS),
                 Click.on(INPUT_LINE_CALL_REASONS),
-                Enter.theValue(line).into(INPUT_SEARCH_LINE_CALL_REASONS).thenHit(Keys.ESCAPE),
+                Enter.theValue(line).into(INPUT_SEARCH_LINE_CALL_REASONS).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Click.on(INPUT_SELECT_VALIDATION_CALL_REASONS),
                 Click.on(SELECT_VALIDATION_CALL_REASONS),
-                Click.on(BUTTON_AMOUNT_CALL_REASONS)
+                Click.on(BUTTON_AMOUNT_CALL_REASONS),
+                Click.on(OPTION_YES_SELECT_VALIDATION_CALL_REASONS)
         );
-
     }
 
     public static ServiceRequestTask writeInformationServiceRequest(String name, String line) {

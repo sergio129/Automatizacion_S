@@ -146,6 +146,8 @@ co/konecta/sura/certificate/questions/TheModal.java
  co.konecta.sura.certificate.questions.TheModal
 co/konecta/sura/certificate/task/cases/suppliermanagement/SupplierManagementTask.java
  co.konecta.sura.certificate.task.cases.suppliermanagement.SupplierManagementTask
+co/konecta/sura/certificate/task/parameterization/CallReasonsTask/FollowupToaServiceTask.java
+ co.konecta.sura.certificate.task.parameterization.CallReasonsTask.FollowupToaServiceTask
 co/konecta/sura/certificate/task/parameterization/CallReasonsTask/ServiceRequestTask.java
  co.konecta.sura.certificate.task.parameterization.CallReasonsTask.ServiceRequestTask
 co/konecta/sura/certificate/userinterface/parameterization/CallReasonsParameterizationPage.java
