@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/callreasonsparameterization.feature",
         snippets = SnippetType.CAMELCASE,
-        tags = {"@TestCallCreateFollowupToaServiceNotCatastrophicEvent"},
+        tags = {"@TestCallCreateServiceRequestCatastrophicEvent"},
         monochrome = true
 )
 public class CallReasonsParameterizationRunner {

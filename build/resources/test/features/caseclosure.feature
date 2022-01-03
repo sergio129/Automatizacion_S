@@ -14,8 +14,8 @@ Feature: Case closure parameterization
     Then I view the modal save case closure parameterization with <modalmessage>
 
     Examples:
-      | user         | password       | lineclosure | serviceclosure | fieldclosure | modalmessage                           |
-      | sergio.anaya | Colombia_2024* | Autos       | Grua           | Categoría Vh | Parametrización agregada correctamente |
+      | user         | password       | lineclosure | serviceclosure   | fieldclosure | modalmessage                           |
+      | sergio.anaya | Colombia_2025* | Autos       | Abogado en sitio | Mesa sala    | Parametrización agregada correctamente |
 
 
   @TestCaseClosureParameterizationEdition
@@ -28,7 +28,7 @@ Feature: Case closure parameterization
 
     Examples:
       | user          | password  | lineclosure | serviceclosure | fieldclosure | modalmessage                           |
-      | yaira.acevedo | YMAe1710* |Autos         | Grua           | Zona roja    | Parametrización agregada correctamente |
+      | yaira.acevedo | YMAe1710* | Autos       | Grua           | Zona roja    | Parametrización agregada correctamente |
 
 
   @TestCaseClosureParameterizationDelete
@@ -50,5 +50,5 @@ Feature: Case closure parameterization
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
-      | user          | password   | modalmessage                     |
-      | yaira.acevedo | YMAe1710*  |Todos los campos son obligatorios |
+      | user          | password  | modalmessage                      |
+      | yaira.acevedo | YMAe1710* | Todos los campos son obligatorios |

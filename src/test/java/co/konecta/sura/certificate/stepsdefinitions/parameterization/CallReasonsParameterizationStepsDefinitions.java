@@ -1,6 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
 import co.konecta.sura.certificate.task.parameterization.CallReasonsTask.FollowupToaServiceTask;
+import co.konecta.sura.certificate.task.parameterization.CallReasonsTask.GeneralInformationTask;
 import co.konecta.sura.certificate.task.parameterization.CallReasonsTask.ServiceRequestTask;
 import co.konecta.sura.certificate.userinterface.home.HomePage;
 import co.konecta.sura.certificate.userinterface.parameterization.CallReasonsParameterizationPage;
@@ -59,6 +60,10 @@ public class CallReasonsParameterizationStepsDefinitions {
     public void IWriteInformationInCallReasonsParameterizationFollowupToaService(String name, String line, String option) {
         actor.attemptsTo(FollowupToaServiceTask.writeInformationFollowupToaService(name, line, option));
     }
+    @And("^I write information in call reasons general information parameterization and (.*) and (.*) and (.*)$")
+    public void IWriteInformationCallReasonsGeneralInformationParameterization(String name, String line, String finalmanagement) {
+        actor.attemptsTo(GeneralInformationTask.whiteGeneralInformation(name, line, finalmanagement));
+    }
 
     @And("^I Select check catastrophic event$")
     public void ISelectCheckCatastrophicEvent() throws InterruptedException {
@@ -74,7 +79,8 @@ public class CallReasonsParameterizationStepsDefinitions {
     @Then("^I view the modal save call reasons parameterization (.*)$")
     public void IViewTheModalSaveCallReasonsParameterization(String message) throws InterruptedException {
         Thread.sleep(2000);
-        actor.attemptsTo(
+         actor.attemptsTo(
                 Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
     }
+
 }
