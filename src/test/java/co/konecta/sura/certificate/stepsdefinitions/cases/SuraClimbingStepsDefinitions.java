@@ -41,7 +41,7 @@ public class SuraClimbingStepsDefinitions {
 
     @And("^I type information in the fields management type (.*) and management person (.*) and response type (.*) and generates complaint (.*) and observations (.*)$")
     public void iTypeInformationInTheFieldsManagementTypeAndManagementPersonAndResponseTypeAndGeneratesComplaintAndObservations(String managementType, String managementPerson, String responseType, String generatesComplaint, String observations) throws InterruptedException {
-            actor.attemptsTo(WaitUntil.the(BUTTON_CREATE_CLIMBING, isVisible()).forNoMoreThan(10).milliseconds(),
+            actor.attemptsTo(WaitUntil.the(BUTTON_CREATE_CLIMBING, isVisible()).forNoMoreThan(50).milliseconds(),
                     Click.on(BUTTON_CREATE_CLIMBING));
             Thread.sleep(2000);
             actor.attemptsTo(SuraClimbingTask.withInformationSuraClimbing(managementType, managementPerson, responseType, generatesComplaint, observations));

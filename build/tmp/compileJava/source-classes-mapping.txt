@@ -8,8 +8,8 @@ co/konecta/sura/certificate/task/parameterization/AssignmentTask.java
  co.konecta.sura.certificate.task.parameterization.AssignmentTask
 co/konecta/sura/certificate/task/cases/taskmonitoring/TaskMonitoringModel.java
  co.konecta.sura.certificate.task.cases.taskmonitoring.TaskMonitoringModel
-co/konecta/sura/certificate/task/cases/suraclimbing/SuraClimbingTask.java
- co.konecta.sura.certificate.task.cases.suraclimbing.SuraClimbingTask
+co/konecta/sura/certificate/task/parameterization/CaseClosureTask.java
+ co.konecta.sura.certificate.task.parameterization.CaseClosureTask
 co/konecta/sura/certificate/task/parameterization/ListsParameterizationTask.java
  co.konecta.sura.certificate.task.parameterization.ListsParameterizationTask
 co/konecta/sura/certificate/userinterface/parameterization/AlertRecipientsPage.java
@@ -38,8 +38,8 @@ co/konecta/sura/certificate/userinterface/HomePage.java
  co.konecta.sura.certificate.userinterface.HomePage
 co/konecta/sura/certificate/task/cases/casetask/CaseModel.java
  co.konecta.sura.certificate.task.cases.casetask.CaseModel
-co/konecta/sura/certificate/userinterface/cases/suraclimbing/SuraClimbingPage.java
- co.konecta.sura.certificate.userinterface.cases.suraclimbing.SuraClimbingPage
+co/konecta/sura/certificate/userinterface/parameterization/CaseClosurePage.java
+ co.konecta.sura.certificate.userinterface.parameterization.CaseClosurePage
 co/konecta/sura/certificate/userinterface/cases/listenending/EndingPage.java
  co.konecta.sura.certificate.userinterface.cases.listenending.EndingPage
 co/konecta/sura/certificate/userinterface/cases/advancedsearch/AdvancedSearchPage.java
@@ -94,8 +94,8 @@ co/konecta/sura/certificate/task/cases/login/LoginTask.java
  co.konecta.sura.certificate.task.cases.login.LoginTask
 co/konecta/sura/certificate/task/cases/suppliermonitoring/SupplierMonitoringTask.java
  co.konecta.sura.certificate.task.cases.suppliermonitoring.SupplierMonitoringTask
-co/konecta/sura/certificate/task/cases/statemanagement/StateManagementTask.java
- co.konecta.sura.certificate.task.cases.statemanagement.StateManagementTask
+co/konecta/sura/certificate/task/cases/suraclimbing/SuraClimbingTask.java
+ co.konecta.sura.certificate.task.cases.suraclimbing.SuraClimbingTask
 co/konecta/sura/certificate/userinterface/parameterization/ListsParameterizationPage.java
  co.konecta.sura.certificate.userinterface.parameterization.ListsParameterizationPage
 co/konecta/sura/certificate/userinterface/parameterization/AlertTimePage.java
@@ -150,7 +150,7 @@ co/konecta/sura/certificate/task/parameterization/CallReasonsTask/FollowupToaSer
  co.konecta.sura.certificate.task.parameterization.CallReasonsTask.FollowupToaServiceTask
 co/konecta/sura/certificate/userinterface/home/HomePage.java
  co.konecta.sura.certificate.userinterface.home.HomePage
-co/konecta/sura/certificate/task/parameterization/CaseClosureTask.java
- co.konecta.sura.certificate.task.parameterization.CaseClosureTask
-co/konecta/sura/certificate/userinterface/parameterization/CaseClosurePage.java
- co.konecta.sura.certificate.userinterface.parameterization.CaseClosurePage
+co/konecta/sura/certificate/userinterface/cases/suraclimbing/SuraClimbingPage.java
+ co.konecta.sura.certificate.userinterface.cases.suraclimbing.SuraClimbingPage
+co/konecta/sura/certificate/task/cases/statemanagement/StateManagementTask.java
+ co.konecta.sura.certificate.task.cases.statemanagement.StateManagementTask

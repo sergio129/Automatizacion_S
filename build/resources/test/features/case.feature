@@ -25,7 +25,7 @@ Feature: Page create case
 
     Examples:
       | user         | password       | numberCase      | applicantName          | phone1  | licensePlate | serviceAddress | serviceLocation | department | municipality | clickCase | line  | service | message                         | addressdetail |
-      | sergio.anaya | Colombia_2024* | 202121344537244 | Pruebas Automatizacion | 1312314 | GTRE34E      | pruebas        | pruebas         | Antioquia  | Medellin     | No        | Autos | Grua    | Registro guardado correctamente | xxx           |
+      | sergio.anaya | Colombia_2025* | 202121344537249 | Pruebas Automatizacion | 1312314 | GTRE34E      | pruebas        | pruebas         | Antioquia  | Medellin     | No        | Autos | Grua    | Registro guardado correctamente | xxx           |
 
   @TestCaseEdition
   Scenario Outline: Successful case edition

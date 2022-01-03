@@ -50,5 +50,5 @@ Feature: Case closure parameterization
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
-      | user          | password  | modalmessage                      |
-      | yaira.acevedo | YMAe1710* | Todos los campos son obligatorios |
+      | user         | password       | modalmessage                      |
+      | sergio.anaya | Colombia_2025* | Todos los campos son obligatorios |

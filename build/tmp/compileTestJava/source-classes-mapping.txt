@@ -16,8 +16,8 @@ co/konecta/sura/certificate/runners/home/ControlBoardsRunner.java
  co.konecta.sura.certificate.runners.home.ControlBoardsRunner
 co/konecta/sura/certificate/stepsdefinitions/pendientes/SupplierMonitoringStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.pendientes.SupplierMonitoringStepsDefinitions
-co/konecta/sura/certificate/runners/parameterization/CaseClosureRunner.java
- co.konecta.sura.certificate.runners.parameterization.CaseClosureRunner
+co/konecta/sura/certificate/stepsdefinitions/parameterization/CaseClosureStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.parameterization.CaseClosureStepsDefinitions
 co/konecta/sura/certificate/runners/parameterization/ExitCodeParameterizationRunner.java
  co.konecta.sura.certificate.runners.parameterization.ExitCodeParameterizationRunner
 co/konecta/sura/certificate/runners/cases/SupplierManagementRunner.java
@@ -106,8 +106,8 @@ co/konecta/sura/certificate/stepsdefinitions/cases/AdvancedSearchStepsDefinition
  co.konecta.sura.certificate.stepsdefinitions.cases.AdvancedSearchStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/parameterization/AssignmentStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.AssignmentStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/cases/SuraClimbingStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.cases.SuraClimbingStepsDefinitions
+co/konecta/sura/certificate/runners/parameterization/CaseClosureRunner.java
+ co.konecta.sura.certificate.runners.parameterization.CaseClosureRunner
 co/konecta/sura/certificate/stepsdefinitions/parameterization/TrafficLightStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.TrafficLightStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/LoginStepsDefinitions.java
@@ -124,5 +124,5 @@ co/konecta/sura/certificate/stepsdefinitions/cases/StateManagementStepsDefinitio
  co.konecta.sura.certificate.stepsdefinitions.cases.StateManagementStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/integration/HighContactTimesIntegrationStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.integration.HighContactTimesIntegrationStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/parameterization/CaseClosureStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.parameterization.CaseClosureStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/cases/SuraClimbingStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.cases.SuraClimbingStepsDefinitions

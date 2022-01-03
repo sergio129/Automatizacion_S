@@ -24,7 +24,7 @@ public class StateManagementTask implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(INPUT_STATUS_NAME),
-                WaitUntil.the(INPUT_SEARCH_ADD_STATUS, isVisible()).forNoMoreThan(10).milliseconds(),
+                WaitUntil.the(INPUT_SEARCH_ADD_STATUS, isVisible()).forNoMoreThan(50).milliseconds(),
                 Enter.theValue(stateName).into(INPUT_SEARCH_ADD_STATUS).thenHit(Keys.ARROW_DOWN).thenHit(Keys.ENTER)
         );
     }
