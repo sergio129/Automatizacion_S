@@ -68,8 +68,8 @@ co/konecta/sura/certificate/stepsdefinitions/parameterization/StrategyStepsDefin
  co.konecta.sura.certificate.stepsdefinitions.parameterization.StrategyStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/parameterization/AlertTimeStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.AlertTimeStepsDefinitions
-co/konecta/sura/certificate/runners/cases/NoveltyRunner.java
- co.konecta.sura.certificate.runners.cases.NoveltyRunner
+co/konecta/sura/certificate/runners/LoginRunner.java
+ co.konecta.sura.certificate.runners.LoginRunner
 co/konecta/sura/certificate/stepsdefinitions/parameterization/HideMonitoringTasksStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.HideMonitoringTasksStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/parameterization/ExitcodeParameterizationStepsDefinitions.java
@@ -108,7 +108,5 @@ co/konecta/sura/certificate/runners/cases/SupplierManagementRunner.java
  co.konecta.sura.certificate.runners.cases.SupplierManagementRunner
 co/konecta/sura/certificate/runners/integration/HighContactTimesIntegrationRunner.java
  co.konecta.sura.certificate.runners.integration.HighContactTimesIntegrationRunner
-co/konecta/sura/certificate/runners/LoginRunner.java
- co.konecta.sura.certificate.runners.LoginRunner
 co/konecta/sura/certificate/runners/PrincipalRunner.java
  co.konecta.sura.certificate.runners.PrincipalRunner
