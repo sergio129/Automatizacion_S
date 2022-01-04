@@ -25,7 +25,7 @@ Feature: Page create case
 
     Examples:
       | user         | password       | numberCase      | applicantName          | phone1  | licensePlate | serviceAddress | serviceLocation | department | municipality | clickCase | line  | service | message                         | addressdetail |
-      | sergio.anaya | Colombia_2025* | 202121344537249 | Pruebas Automatizacion | 1312314 | GTRE34E      | pruebas        | pruebas         | Antioquia  | Medellin     | No        | Autos | Grua    | Registro guardado correctamente | xxx           |
+      | sergio.anaya | Colombia_2025* | 202121344537260 | Pruebas Automatizacion | 1312314 | GTRE34E      | pruebas        | pruebas         | Antioquia  | Medellin     | No        | Autos | Grua    | Registro guardado correctamente | xxx           |
 
   @TestCaseEdition
   Scenario Outline: Successful case edition
@@ -45,8 +45,8 @@ Feature: Page create case
     Then I view the modal save case with <message>
 
     Examples:
-      |  user            | password    |numberCase       | applicantName    |    phone1  | licensePlate  |serviceAddress   | serviceLocation   |department|municipality|clickCase|line |service           | addressdetail   |message                           |
-      |yaira.acevedo     | YMAe8807*   |202106227652468  |    pruebas uno   | 1312314    | GTRE34Emmm    |pruebas uno      | pruebas  uno      |Antioquia  | Itagui    |No       |Autos|Abogado en sitio  | xxx uno         |Registro guardado correctamente   |
+      | user         | password       | numberCase      | applicantName | phone1  | licensePlate | serviceAddress | serviceLocation | department | municipality | clickCase | line  | service          | addressdetail | message                         |
+      | Sergio.anaya | Colombia_2025* | 202121344537260 | pruebas uno   | 1312314 | GTRE34Emmm   | pruebas uno    | pruebas  uno    | Antioquia  | Itagui       | No        | Autos | Abogado en sitio | xxx uno       | Registro guardado correctamente |
 
 
   @TestCaseRequiredFields
@@ -56,5 +56,5 @@ Feature: Page create case
     Then I view the modal save case with <message>
 
     Examples:
-      | user             | password     | message                          |
-      |yaira.acevedo     | YMAe8807*    | Todos los campos son obligatorios |
+      | user         | password       | message                           |
+      | Sergio.anaya | Colombia_2025* | Todos los campos son obligatorios |

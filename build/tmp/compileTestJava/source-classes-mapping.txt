@@ -106,21 +106,15 @@ co/konecta/sura/certificate/stepsdefinitions/cases/SuraClimbingStepsDefinitions.
  co.konecta.sura.certificate.stepsdefinitions.cases.SuraClimbingStepsDefinitions
 co/konecta/sura/certificate/runners/cases/SupplierManagementRunner.java
  co.konecta.sura.certificate.runners.cases.SupplierManagementRunner
-co/konecta/sura/certificate/runners/parameterization/AlertRecipientsRunner.java
- co.konecta.sura.certificate.runners.parameterization.AlertRecipientsRunner
-co/konecta/sura/certificate/runners/cases/AdvancedSearchRunner.java
- co.konecta.sura.certificate.runners.cases.AdvancedSearchRunner
-co/konecta/sura/certificate/runners/cases/CaseRunner.java
- co.konecta.sura.certificate.runners.cases.CaseRunner
+co/konecta/sura/certificate/runners/integration/HighContactTimesIntegrationRunner.java
+ co.konecta.sura.certificate.runners.integration.HighContactTimesIntegrationRunner
+co/konecta/sura/certificate/stepsdefinitions/cases/EndingStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.cases.EndingStepsDefinitions
+co/konecta/sura/certificate/runners/parameterization/PushNotificationRunner.java
+ co.konecta.sura.certificate.runners.parameterization.PushNotificationRunner
 co/konecta/sura/certificate/runners/parameterization/TrafficLightRunner.java
  co.konecta.sura.certificate.runners.parameterization.TrafficLightRunner
 co/konecta/sura/certificate/stepsdefinitions/pendientes/SupplierManagementStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.pendientes.SupplierManagementStepsDefinitions
-co/konecta/sura/certificate/runners/parameterization/PushNotificationRunner.java
- co.konecta.sura.certificate.runners.parameterization.PushNotificationRunner
-co/konecta/sura/certificate/stepsdefinitions/cases/EndingStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.cases.EndingStepsDefinitions
-co/konecta/sura/certificate/runners/integration/HighContactTimesIntegrationRunner.java
- co.konecta.sura.certificate.runners.integration.HighContactTimesIntegrationRunner
 co/konecta/sura/certificate/runners/PrincipalRunner.java
  co.konecta.sura.certificate.runners.PrincipalRunner
