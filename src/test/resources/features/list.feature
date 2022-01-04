@@ -16,4 +16,4 @@ Feature: Lists parameterization
 
     Examples:
       | user         | password       | roles | options1            |  |  |  |  |
-      | sergio.anaya | Colombia_2023* | Admin | Afectación Personas |  |  |  |  |
+      | sergio.anaya | Colombia_2025* | Admin | Afectación Personas |  |  |  |  |

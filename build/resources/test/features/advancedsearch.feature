@@ -1,6 +1,6 @@
 Feature: Page advanced search case
-As a user
-I need to perform an advanced search
+  As a user
+  I need to perform an advanced search
 
   Background:
     Given I performed a full or optional advanced search for a case
@@ -13,8 +13,8 @@ I need to perform an advanced search
     Then I view the case found
 
     Examples:
-      | user         | password       | numberCase       | licensePlate | securityCode | clickCase | assignedTo        | department | municipality | line | caseClosureStatus | class                    | caseStatus | serviceStatus | service          | typeService | specialService | customerType | supplier         |
-      | Sergio.anaya | Colombia_2024* | 2021091712145443 | SFG74R       | 2145443      | No        | Sergio Luis Anaya | Cordoba    | Monteria     | ARL  | Finalizado        | Coordinacion tradicional | Finalizado | Finalizado    | Emergencia Salud |             | Noo            | Intermedio   | PROVEEDOR PRUEBA |
+      | user         | password       | numberCase       | licensePlate | securityCode | clickCase | assignedTo        | department | municipality | line  | caseClosureStatus | class                    | caseStatus              | serviceStatus | service          | typeService | specialService | customerType | supplier         |
+      | Sergio.anaya | Colombia_2025* | 2021060944354508 | SFG74R       | 4354508      | No        | Sergio Luis Anaya | Putumayo   | San pedro    | Autos | Concluido         | Coordinacion tradicional | Pendiente por finalizar | Finalizado    | Emergencia Salud |             | Noo            | Intermedio   | 24 H CAR SERVICE SAS MEDELLIN |
 
   @TestAdvancedSearchOptional
   Scenario Outline: Successful advanced search case optional
@@ -24,5 +24,5 @@ I need to perform an advanced search
     Then I view the case found
 
     Examples:
-      | user         | password       | numberCase       | licensePlate | department | line | service          |
-      | sergio.anaya | Colombia_2024* | 2021091712145443 | SFG74R       | Monteria   | ARL  | Emergencia Salud |
+      | user         | password       | numberCase       | licensePlate | department | line  | service          |
+      | sergio.anaya | Colombia_2025* | 2021060944354508 | SFG74R       | Putumayo   | Autos | Emergencia Salud |

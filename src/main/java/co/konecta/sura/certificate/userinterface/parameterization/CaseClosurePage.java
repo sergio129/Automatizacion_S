@@ -23,6 +23,12 @@ public class CaseClosurePage {
     public static final Target OPTION_YES_CLOSURE_PARAMETERIZATION = Target.the("This the button yes case closure parameterization").located(By.id(""));
     public static final Target BUTTON_SAVE_CLOSURE = Target.the("This the button save closure parameterization").located(By.id("btnSaveFormClosingFile"));
     public static final Target BUTTON_CANCEL_CLOSURE_PARAMETERIZATION = Target.the("This the button cancel closure parameterization").located(By.id(""));
+    public static final Target INPUT_LINE_CLOSURE_HOME = Target.the("This the input line home closure parameterization").located(By.id("mat-select-value-1"));
+    public static final Target INPUT_SEARCH_LINE_CLOSURE_HOME = Target.the("This the input search line home closure parameterization").located(By.id("inputLineClosingFile"));
+    public static final Target INPUT_SERVICE_CLOSURE_HOME = Target.the("This the input service home closure parameterization").located(By.id("mat-select-value-3"));
+    public static final Target INPUT_SEARCH_SERVICE_CLOSURE_HOME = Target.the("This the input search home service closure parameterization").located(By.id("inputServiceClosingFile"));
+    public static final Target BUTTON_SEARCH_CLOSURE_HOME = Target.the("This the button search home closure parameterization").located(By.id("btnSearchClosingFile"));
+
 
 
 }

@@ -15,7 +15,7 @@ Feature: Alert recipients parameterization
 
     Examples:
       | user         | password       | namealert       | linealert | servicealert       | departmentalert | municipalityalert | emailalert                    | modalmessage                    |
-      | Sergio.anaya | Colombia_2024* | Pruebas alertaa | Autos     | Abogado Preliminar | Antioquia       | Belen             | sergio.anaya@grupokonecta.com | Registro guardado correctamente |
+      | Sergio.anaya | Colombia_2025* | Pruebas alertaa | Autos     | Abogado Preliminar | Antioquia       | Belen             | sergio.anaya@grupokonecta.com | Registro guardado correctamente |
 
 
   @TestAlertParameterizationEdition
@@ -29,7 +29,7 @@ Feature: Alert recipients parameterization
 
     Examples:
       | user         | password       | namealert       | linealert         | servicealert      | departmentalert | municipalityalert | emailalert         | modalmessage                    |
-      | sergio.anaya | Colombia_2024* | Pruebas alertaa | Conductor elegido | Conductor Elegido | Boyaca          | Tunja             | pruebasa@gmail.com | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2025* | Pruebas alertaa | Conductor elegido | Conductor Elegido | Boyaca          | Tunja             | pruebasa@gmail.com | Registro guardado correctamente |
 
 
   @TestAlertParameterizationDelete
@@ -41,7 +41,7 @@ Feature: Alert recipients parameterization
 
     Examples:
       | user         | password       | namealert       | modalmessage                     |
-      | sergio.anaya | Colombia_2024* | Pruebas alertaa | Registro eliminado correctamente |
+      | sergio.anaya | Colombia_2025* | Pruebas alertaa | Registro eliminado correctamente |
 
 
   @TesAlertRequiredFields
@@ -54,4 +54,4 @@ Feature: Alert recipients parameterization
 
     Examples:
       | user         | password       | modalmessage                         |
-      | sergio.anaya | Colombia_2024* | Los campos marcados son obligatorios |
+      | sergio.anaya | Colombia_2025* | Los campos marcados son obligatorios |

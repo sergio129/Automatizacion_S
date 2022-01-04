@@ -9,8 +9,10 @@ import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
@@ -24,7 +26,7 @@ public class CaseClosureStepsDefinitions {
     private final HomePage homePage = new HomePage();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         actor.can(BrowseTheWeb.with(driver));
     }
 
@@ -47,9 +49,24 @@ public class CaseClosureStepsDefinitions {
         actor.attemptsTo(Click.on(BUTTON_CREATE_CLOSURE));
     }
 
+    @And("^We make a filter by line (.*) and service (.*)$")
+    public void weMakeFilterByLineService(String lineclosure, String serviceclosure) throws InterruptedException {
+        Thread.sleep(5000);
+        actor.attemptsTo(
+                Click.on(INPUT_LINE_CLOSURE_HOME),
+                Enter.theValue(lineclosure).into(INPUT_SEARCH_LINE_CLOSURE_HOME).thenHit(Keys.ENTER).thenHit(Keys.SPACE),
+                Click.on(INPUT_SERVICE_CLOSURE_HOME),
+                Enter.theValue(serviceclosure).into(INPUT_SEARCH_SERVICE_CLOSURE_HOME).thenHit(Keys.ENTER).thenHit(Keys.SPACE),
+                Click.on(BUTTON_SEARCH_CLOSURE_HOME)
+        );
+
+    }
     @And("^I select button edition case closure parameterization$")
+
     public void iSelectButtonEditionCaseClosureParameterization() {
-        actor.attemptsTo(Click.on(BUTTON_EDIT_CLOSURE));
+        actor.attemptsTo(
+                Click.on(BUTTON_EDIT_CLOSURE)
+        );
     }
 
     @And("^I select button delete case closure parameterization$")
@@ -60,7 +77,7 @@ public class CaseClosureStepsDefinitions {
 
     @And("^I type information in the case closure parameterization with the line (.*) and service (.*) and field (.*)$")
     public void iTypeInformationInTheCaseClosureParameterizationWithTheLineAndServiceAndField(String lineClosure, String serviceClosure, String fieldClosure) {
-        actor.attemptsTo(CaseClosureTask.withInformationClosureParameterization(lineClosure,serviceClosure,fieldClosure));
+        actor.attemptsTo(CaseClosureTask.withInformationClosureParameterization(lineClosure, serviceClosure, fieldClosure));
     }
 
     @And("^I no type information case closure parameterization$")
