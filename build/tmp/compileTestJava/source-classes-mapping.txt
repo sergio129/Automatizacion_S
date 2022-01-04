@@ -80,8 +80,8 @@ co/konecta/sura/certificate/runners/listas/listRunner.java
  co.konecta.sura.certificate.runners.listas.listRunner
 co/konecta/sura/certificate/stepsdefinitions/pendientes/DocumentationCNMStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.pendientes.DocumentationCNMStepsDefinitions
-co/konecta/sura/certificate/runners/cases/DocumentationCNMRunner.java
- co.konecta.sura.certificate.runners.cases.DocumentationCNMRunner
+co/konecta/sura/certificate/stepsdefinitions/pendientes/SupplierManagementStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.pendientes.SupplierManagementStepsDefinitions
 co/konecta/sura/certificate/runners/cases/SuraClimbingRunner.java
  co.konecta.sura.certificate.runners.cases.SuraClimbingRunner
 co/konecta/sura/certificate/stepsdefinitions/home/ControlBoardsStepsDefinitions.java
@@ -114,7 +114,5 @@ co/konecta/sura/certificate/runners/parameterization/PushNotificationRunner.java
  co.konecta.sura.certificate.runners.parameterization.PushNotificationRunner
 co/konecta/sura/certificate/runners/parameterization/TrafficLightRunner.java
  co.konecta.sura.certificate.runners.parameterization.TrafficLightRunner
-co/konecta/sura/certificate/stepsdefinitions/pendientes/SupplierManagementStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.pendientes.SupplierManagementStepsDefinitions
 co/konecta/sura/certificate/runners/PrincipalRunner.java
  co.konecta.sura.certificate.runners.PrincipalRunner

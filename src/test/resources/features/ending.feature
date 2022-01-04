@@ -17,7 +17,7 @@ Feature: Ending
 
     Examples:
       | user         | password       | numbercase      | endingwith | typeresponse | observationending            | message                         |
-      | sergio.anaya | Colombia_2024* | 202106104435443 | Proveedor  | SMS          | prueba creacion finalizacion | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2025* | 202106104435443 | Proveedor  | SMS          | prueba creacion finalizacion | Registro guardado correctamente |
 
   @TestEndingEdition
   Scenario Outline: Successful ending edition
@@ -31,7 +31,7 @@ Feature: Ending
 
     Examples:
       | user         | password       | numbercase      | endingwith | typeresponse      | observationending           | message                         |
-      | Sergio.Anaya | Colombia_2024* | 202106104435443 | proveedor  | Llamada más tarde | prueba edicion finalizacion | Registro guardado correctamente |
+      | Sergio.Anaya | Colombia_2025* | 202106104435443 | proveedor  | Llamada más tarde | prueba edicion finalizacion | Registro guardado correctamente |
 
   @TestEndingRequiredFields
   Scenario Outline: Ending submodule required fields
@@ -42,7 +42,7 @@ Feature: Ending
 
     Examples:
       | user         | password       | numbercase      | message                           |
-      | sergio.anaya | Colombia_2024* | 202106104435443 | Todos los campos son obligatorios |
+      | sergio.anaya | Colombia_2025* | 202106104435443 | Todos los campos son obligatorios |
 
 
 

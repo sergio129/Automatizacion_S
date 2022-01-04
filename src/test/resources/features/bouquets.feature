@@ -14,6 +14,6 @@ Feature: Bouquets parameterization
     And I write information in bouquets parameterization and save <bouquets>
     Then I view the modal save  bouquets parameterization <modalmessage>
     Examples:
-      | user         | password       | bouquets                | modalmessage                       |  |
-      | Sergio.anaya | Colombia_2025* | Pruebas Automatizacion9 | Registros guardados correctamente. |  |
-      | Sergio.anaya | Colombia_2025* | Pruebas Automatizacion9 | El ramo ya existe.                 |  |
+      | user         | password       | bouquets                 | modalmessage                       |  |
+      | Sergio.anaya | Colombia_2025* | Pruebas Automatizacion10 | Registros guardados correctamente. |  |
+      | Sergio.anaya | Colombia_2025* | Pruebas Automatizacion10  | El ramo ya existe.                 |  |
