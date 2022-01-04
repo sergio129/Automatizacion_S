@@ -1,4 +1,4 @@
-package co.konecta.sura.certificate.runners.cases;
+package co.konecta.sura.certificate.runners;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
