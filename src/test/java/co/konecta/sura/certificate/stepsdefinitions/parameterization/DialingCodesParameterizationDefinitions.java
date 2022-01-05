@@ -77,6 +77,11 @@ public class DialingCodesParameterizationDefinitions {
         actor.attemptsTo(Click.on(BUTTON_EDIT_DEALING));
     }
 
+    @And("^I select button Save dialing codes parameterization$")
+    public void ISelectButtonSaveDialinngCodesParameterization() throws InterruptedException {
+        actor.attemptsTo(Click.on(BUTTON_SAVE_DEALING));
+    }
+
     @And("^I select button delete dialing codes parameterization$")
     public void ISelectButtonDeleteDialingCodesParameterization() throws InterruptedException {
         actor.attemptsTo(Click.on(BUTTON_DELETE_DEALING),
@@ -89,7 +94,6 @@ public class DialingCodesParameterizationDefinitions {
     public void IViewTheModalSaveBouquetsParameterization(String message) throws InterruptedException {
         Thread.sleep(2000);
         actor.attemptsTo(
-                Click.on(BUTTON_SAVE_DEALING),
                 Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
     }
 

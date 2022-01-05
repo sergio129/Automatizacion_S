@@ -36,8 +36,8 @@ co/konecta/sura/certificate/stepsdefinitions/cases/SupplierMonitoringStepsDefini
  co.konecta.sura.certificate.stepsdefinitions.cases.SupplierMonitoringStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/AdvancedSearchStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.cases.AdvancedSearchStepsDefinitions
-co/konecta/sura/certificate/runners/cases/StateManagementRunner.java
- co.konecta.sura.certificate.runners.cases.StateManagementRunner
+co/konecta/sura/certificate/runners/integration/HighContactTimesIntegrationRunner.java
+ co.konecta.sura.certificate.runners.integration.HighContactTimesIntegrationRunner
 co/konecta/sura/certificate/stepsdefinitions/parameterization/AssignmentStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.AssignmentStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/cases/StateManagementStepsDefinitions.java
@@ -106,7 +106,5 @@ co/konecta/sura/certificate/stepsdefinitions/cases/SuraClimbingStepsDefinitions.
  co.konecta.sura.certificate.stepsdefinitions.cases.SuraClimbingStepsDefinitions
 co/konecta/sura/certificate/runners/cases/SupplierManagementRunner.java
  co.konecta.sura.certificate.runners.cases.SupplierManagementRunner
-co/konecta/sura/certificate/runners/integration/HighContactTimesIntegrationRunner.java
- co.konecta.sura.certificate.runners.integration.HighContactTimesIntegrationRunner
 co/konecta/sura/certificate/runners/PrincipalRunner.java
  co.konecta.sura.certificate.runners.PrincipalRunner
