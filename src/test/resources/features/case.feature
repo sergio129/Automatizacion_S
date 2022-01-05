@@ -45,8 +45,8 @@ Feature: Page create case
     Then I view the modal save case with <message>
 
     Examples:
-      | user         | password       | numberCase      | applicantName | phone1  | licensePlate | serviceAddress | serviceLocation | department | municipality | clickCase | line  | service          | addressdetail | message                         |
-      | Sergio.anaya | Colombia_2025* | 202121344537260 | pruebas uno   | 1312314 | GTRE34Emmm   | pruebas uno    | pruebas  uno    | Antioquia  | Itagui       | No        | Autos | Abogado en sitio | xxx uno       | Registro guardado correctamente |
+      | user         | password       | numberCase       | applicantName | phone1  | licensePlate | serviceAddress | serviceLocation | department | municipality | clickCase | line  | service          | addressdetail | message                         |
+      | Sergio.anaya | Colombia_2025* | A202121344537290 | pruebas uno   | 1312314 | GTRE34Emmm   | pruebas uno    | pruebas  uno    | Antioquia  | Itagui       | No        | Autos | Abogado en sitio | xxx uno       | Registro guardado correctamente |
 
 
   @TestCaseRequiredFields

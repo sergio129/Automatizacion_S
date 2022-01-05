@@ -38,7 +38,9 @@ public class FullFlowCaseStepsDefinitions {
     public void iViewTheInformationSave(String statuscase) throws InterruptedException {
         Thread.sleep(3000);
         actor.attemptsTo(Click.on(MODULE_EXPANSION_GENERAL));
+        Thread.sleep(3000);
         actor.attemptsTo(
+
                 Ensure.that(STATUS_CASE_VALIDATION).text().isEqualTo(statuscase));
     }
 }

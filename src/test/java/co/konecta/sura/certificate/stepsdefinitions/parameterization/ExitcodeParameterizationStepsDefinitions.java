@@ -9,9 +9,11 @@ import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.userinterface.HomePage.BUTTON_INITIAL_TAB;
@@ -59,6 +61,21 @@ public class ExitcodeParameterizationStepsDefinitions {
                 ExitCodeParameterizationTask.withInformationExitCode(line,code)
         );
     }
+    @And("^I select button search exit code parameterization (.*)$")
+    public void ISelectButtonSearchExitCodeParameterization(String line){
+        actor.attemptsTo(
+                Click.on(INPUT_LINE_EXIT_CODE_HOME),
+                Enter.theValue(line).into(INPUT_SEARCH_LINE_EXIT_CODE_HOME).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Click.on(BUTTON_SEARCH_EXIT_CODE_HOME)
+        );
+    }
+    @And("^I select button edit exit code parameterization$")
+    public void ISelectButtonEditExitCodeParameterization(){
+        actor.attemptsTo(Click.on(BUTTON_EDIT_EXIT_CODE_HOME));
+    }
+
+
+
     @Then("^I view the modal save exit codes parameterization (.*)$")
     public void IViewTheModalSaveExitCodesParameterization(String message) throws InterruptedException {
         Thread.sleep(4000);
