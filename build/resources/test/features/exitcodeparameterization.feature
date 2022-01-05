@@ -11,8 +11,7 @@ Feature: Exit code parameterization
     And I enter exit code parameterization
     And I select button create exit code parameterization
     And I write information in exit code parameterization<line> and <exitcode>
-    And I select button save exit code parameterization
-    Then I view the modal save dialing codes parameterization <modalmessage>
+    Then I view the modal save exit codes parameterization <modalmessage>
     Examples:
       | user         | password       | line             | exitcode | modalmessage                    |
       | sergio.anaya | Colombia_2025* | Emergencia salud | 5486669  | Registro guardado correctamente |

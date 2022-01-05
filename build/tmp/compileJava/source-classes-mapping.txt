@@ -154,3 +154,7 @@ co/konecta/sura/certificate/task/parameterization/CaseClosureTask.java
  co.konecta.sura.certificate.task.parameterization.CaseClosureTask
 co/konecta/sura/certificate/userinterface/parameterization/CaseClosurePage.java
  co.konecta.sura.certificate.userinterface.parameterization.CaseClosurePage
+co/konecta/sura/certificate/userinterface/parameterization/ExitCodeParameterizationPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.ExitCodeParameterizationPage
+co/konecta/sura/certificate/task/parameterization/ExitCodeParameterizationTask.java
+ co.konecta.sura.certificate.task.parameterization.ExitCodeParameterizationTask
