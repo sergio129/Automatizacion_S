@@ -1,9 +1,9 @@
 package co.konecta.sura.certificate.stepsdefinitions.cases;
 
-import co.konecta.sura.certificate.task.cases.novelty.Novelty;
-import co.konecta.sura.certificate.task.cases.novelty.NoveltyModel;
+import co.konecta.sura.certificate.task.cases.Novedades.Novedades;
+import co.konecta.sura.certificate.task.cases.Novedades.NoveltyModel;
 import co.konecta.sura.certificate.userinterface.home.HomePage;
-import co.konecta.sura.certificate.userinterface.cases.novelty.NoveltyPage;
+import co.konecta.sura.certificate.userinterface.cases.Novedades.NovedadesPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -38,13 +38,13 @@ public class NoveltyStepsDefinitions {
     @And("^I select button create novelty$")
     public void iSelectButtonCreateNovelty() throws InterruptedException {
         Thread.sleep(1000);
-        actor.attemptsTo(Click.on(NoveltyPage.BUTTON_CREATE_MANAGEMENTS));
+        actor.attemptsTo(Click.on(NovedadesPage.BUTTON_CREATE_MANAGEMENTS));
     }
 
     @And("^I select button edition novelty$")
     public void iSelectButtonEditionNovelty() {
-        actor.attemptsTo(Click.on(NoveltyPage.MODULE_EXPANSION_MANAGEMENTS));
-        actor.attemptsTo(Click.on(NoveltyPage.BUTTON_EDIT_MANAGEMENTS));
+        actor.attemptsTo(Click.on(NovedadesPage.MODULE_EXPANSION_MANAGEMENTS));
+        actor.attemptsTo(Click.on(NovedadesPage.BUTTON_EDIT_MANAGEMENTS));
     }
 
     @And("^I type information in the field who reports (.*)$")
@@ -65,14 +65,14 @@ public class NoveltyStepsDefinitions {
     @And("^I type information in the field novelty observation (.*)$")
     public void iTypeInformationInTheFieldNoveltyObservation(String observationnovelty) throws Exception {
         this.novelModel.setObservationnovelty(observationnovelty);
-        actor.attemptsTo(Novelty.whitDataNovelty(novelModel));
+        actor.attemptsTo(Novedades.whitDataNovelty(novelModel));
     }
 
     @And("^I no type information novelty$")
     public void iNoTypeInformationNovelty() throws InterruptedException {
-        actor.attemptsTo(Click.on(NoveltyPage.BUTTON_CREATE_MANAGEMENTS));
+        actor.attemptsTo(Click.on(NovedadesPage.BUTTON_CREATE_MANAGEMENTS));
         Thread.sleep(500);
-        actor.attemptsTo(Click.on(NoveltyPage.BUTTON_SAVE_MANAGEMENTS));
+        actor.attemptsTo(Click.on(NovedadesPage.BUTTON_SAVE_MANAGEMENTS));
         Thread.sleep(1000);
     }
 

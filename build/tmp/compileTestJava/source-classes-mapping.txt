@@ -94,7 +94,7 @@ co/konecta/sura/certificate/stepsdefinitions/parameterization/SemaforosStepsDefi
  co.konecta.sura.certificate.stepsdefinitions.parameterization.SemaforosStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/parameterization/NotificacionesPushStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.NotificacionesPushStepsDefinitions
-co/konecta/sura/certificate/runners/PrincipalRunner.java
- co.konecta.sura.certificate.runners.PrincipalRunner
 co/konecta/sura/certificate/stepsdefinitions/parameterization/RamosStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.parameterization.RamosStepsDefinitions
+co/konecta/sura/certificate/runners/PrincipalRunner.java
+ co.konecta.sura.certificate.runners.PrincipalRunner
