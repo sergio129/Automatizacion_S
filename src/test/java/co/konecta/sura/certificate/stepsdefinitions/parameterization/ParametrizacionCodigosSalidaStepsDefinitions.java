@@ -77,7 +77,21 @@ public class ParametrizacionCodigosSalidaStepsDefinitions {
         actor.attemptsTo(Click.on(BUTTON_EDIT_EXIT_CODE_HOME));
     }
 
+    @And("^Selecionamos boton de eliminar codigos de salida$")
+    public void SelecionamosBotonEliminarCodigosSalida(){
+        actor.attemptsTo(
+                Click.on(BUTTON_DELETE_EXIT_CODE_HOME),
+                Click.on(OPTION_YES_DELETE_EXIT_CODE_HOME)
 
+        );
+    }
+
+    @And("^Selecionamos el boton guardar$")
+    public void SelecionamosElBotonGuardar(){
+        actor.attemptsTo(
+                Click.on(BUTTON_SAVE_EXIT_CODE)
+        );
+    }
 
     @Then("^Se visualiza mensaje de la modal parametrizacion codigos de salida (.*)$")
     public void IViewTheModalSaveExitCodesParameterization(String message) throws InterruptedException {

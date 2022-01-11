@@ -80,8 +80,8 @@ co/konecta/sura/certificate/task/parameterization/AlertTimeTask.java
  co.konecta.sura.certificate.task.parameterization.AlertTimeTask
 co/konecta/sura/certificate/task/pendientes/SupplierManagementTask.java
  co.konecta.sura.certificate.task.pendientes.SupplierManagementTask
-co/konecta/sura/certificate/task/parameterization/ExitCodeParameterizationTask.java
- co.konecta.sura.certificate.task.parameterization.ExitCodeParameterizationTask
+co/konecta/sura/certificate/task/integration/HighContactTimeIntegrationTask.java
+ co.konecta.sura.certificate.task.integration.HighContactTimeIntegrationTask
 co/konecta/sura/certificate/userinterface/cases/statemanagement/StateManagementPage.java
  co.konecta.sura.certificate.userinterface.cases.statemanagement.StateManagementPage
 co/konecta/sura/certificate/userinterface/pendientes/LoginPage.java
@@ -156,5 +156,5 @@ co/konecta/sura/certificate/userinterface/cases/cases/CasePage.java
  co.konecta.sura.certificate.userinterface.cases.cases.CasePage
 co/konecta/sura/certificate/userinterface/integration/HighContactTimesIntegrationPage.java
  co.konecta.sura.certificate.userinterface.integration.HighContactTimesIntegrationPage
-co/konecta/sura/certificate/task/integration/HighContactTimeIntegrationTask.java
- co.konecta.sura.certificate.task.integration.HighContactTimeIntegrationTask
+co/konecta/sura/certificate/task/parameterization/ExitCodeParameterizationTask.java
+ co.konecta.sura.certificate.task.parameterization.ExitCodeParameterizationTask

@@ -11,6 +11,7 @@ Feature: Codigos de Salida Parametrizacion
     And Entramos a parametrizacion codigos de salida
     And Selecionamos el boton creacion codigos de salida
     And Escribimos la informacion de codigos de salida<line> y <exitcode>
+    And Selecionamos el boton guardar
     Then Se visualiza mensaje de la modal parametrizacion codigos de salida <modalmessage>
     Examples:
       | usuario      | contrasena     | line             | exitcode | modalmessage                    |
@@ -18,12 +19,37 @@ Feature: Codigos de Salida Parametrizacion
 
   @TestEdicionCodigosdeSalida
   Scenario Outline: Edicion Parametrizacion Codigos de salida
-    When I entering in the application with user <user> and password <password>
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a parametrizacion codigos de salida
     And Selecionamos el boton buscar codigos de salida <line>
     And Selecionamos boton de editar codigos de salida
     And Escribimos la informacion de codigos de salida<line> y <exitcode>
+    And Selecionamos el boton guardar
     Then Se visualiza mensaje de la modal parametrizacion codigos de salida <modalmessage>
     Examples:
-      | user         | password       | line             | exitcode | modalmessage                    |
+      | usuario      | contrasena     | line             | exitcode | modalmessage                    |
       | sergio.anaya | Colombia_2025* | Emergencia salud | 5486669  | Registro guardado correctamente |
+
+  @TestEminarCodigodeSalida
+  Scenario Outline: Edicion Parametrizacion Codigos de salida
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    And Entramos a parametrizacion codigos de salida
+
+    And Selecionamos boton de eliminar codigos de salida
+    Then Se visualiza mensaje de la modal parametrizacion codigos de salida <modalmessage>
+    Examples:
+      | usuario      | contrasena     | line             | modalmessage                     |  |
+      | sergio.anaya | Colombia_2025* | Emergencia salud | Registro eliminado correctamente |  |
+
+
+  @TestvalidaciondeCampos
+  Scenario Outline: Validacion de campos de codigos de salida
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    And Entramos a parametrizacion codigos de salida
+    And Selecionamos el boton creacion codigos de salida
+    And Selecionamos el boton guardar
+    Then Se visualiza mensaje de la modal parametrizacion codigos de salida <modalmessage>
+    Examples:
+      | usuario      | contrasena     | modalmessage                      |
+      | sergio.anaya | Colombia_2025* | Todos los campos son obligatorios |
+

@@ -23,8 +23,8 @@ public class ExitCodeParameterizationTask implements Task {
         actor.attemptsTo(
                 Click.on(INPUT_LINE_EXIT_CODE),
                 Enter.theValue(line).into(INPUT_SEARCH_LINE_EXIT_CODE).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
-                Enter.theValue(code).into(EXIT_CODE),
-                Click.on(BUTTON_SAVE_EXIT_CODE)
+                Enter.theValue(code).into(EXIT_CODE)
+
         );
 
     }
