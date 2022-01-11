@@ -6,17 +6,18 @@ Feature: Lists parameterization
     Given I create or edition a lists parameterization
 
 
-  @TestListParameterization
-  Scenario Outline: Successful lists parameterization
+  @TestCreacionParametrizacionLista
+  Scenario Outline: Creacion Parametrizacion de lista
     When I entering in the application with user <user> and password <password>
     And I entering lists parameterization
     And I select button create lists parameterization
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
+    And Selecionamos el boton guardar lista
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
       | user         | password       | roles         | modules            | lists           | options1 | options2 | modalmessage                      |
-      | sergio.anaya | Colombia_2024* | prueba angela | Escalamientos sura | Tipo de gestión | Prueba   | GDI      | Registros guardados correctamente |
+      | sergio.anaya | Colombia_2025* | prueba angela | Escalamientos sura | Tipo de gestión | Prueba   | GDI      | Registros guardados correctamente |
 
 
   @TestListParameterizationWithOption

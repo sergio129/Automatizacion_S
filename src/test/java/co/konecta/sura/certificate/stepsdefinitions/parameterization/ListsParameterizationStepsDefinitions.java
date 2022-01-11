@@ -79,6 +79,12 @@ public class ListsParameterizationStepsDefinitions {
         actor.attemptsTo(Click.on(BUTTON_SAVE_LISTS));
         Thread.sleep(1000);
     }
+    @And("^Selecionamos el boton guardar lista$")
+    public void SelecionamosBotonGuardarLista() throws InterruptedException {
+        actor.attemptsTo(Click.on(BUTTON_SAVE_LISTS));
+        Thread.sleep(1000);
+    }
+
 
     @Then("^I view the modal save lists parameterization with (.*)$")
     public void iViewTheModalSaveListsParameterizationWith(String message) throws InterruptedException {
