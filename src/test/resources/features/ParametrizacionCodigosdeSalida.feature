@@ -5,7 +5,7 @@ Feature: Codigos de Salida Parametrizacion
   Background:
     Given Creo, edito y elimino codigos de salida parametrizacion
 
-  @TestCreacionCodigodeSalida
+  @TestCreacionCodigoSalida
   Scenario Outline: Creacion Exitosa de Codigos de Salida
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a parametrizacion codigos de salida
@@ -17,7 +17,7 @@ Feature: Codigos de Salida Parametrizacion
       | usuario      | contrasena     | line             | exitcode | modalmessage                    |
       | sergio.anaya | Colombia_2025* | Emergencia salud | 5486669  | Registro guardado correctamente |
 
-  @TestEdicionCodigosdeSalida
+  @TestEdicionCodigoSalida
   Scenario Outline: Edicion Parametrizacion Codigos de salida
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a parametrizacion codigos de salida
@@ -30,8 +30,8 @@ Feature: Codigos de Salida Parametrizacion
       | usuario      | contrasena     | line             | exitcode | modalmessage                    |
       | sergio.anaya | Colombia_2025* | Emergencia salud | 5486669  | Registro guardado correctamente |
 
-  @TestEminarCodigodeSalida
-  Scenario Outline: Edicion Parametrizacion Codigos de salida
+  @TestEminarCodigoSalida
+  Scenario Outline: Eliminacion Parametrizacion Codigos de salida
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a parametrizacion codigos de salida
 
