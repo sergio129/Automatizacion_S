@@ -3,7 +3,7 @@ package co.konecta.sura.certificate.questions;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
+import static co.konecta.sura.certificate.userinterface.Inicio.HomePage.MODAL_VALIDATION;
 
 
 public class TheModal  implements Question<Boolean> {

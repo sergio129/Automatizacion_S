@@ -1,8 +1,8 @@
 package co.konecta.sura.certificate.stepsdefinitions.listas;
 
 import co.konecta.sura.certificate.task.listas.ListTask;
-import co.konecta.sura.certificate.userinterface.home.HomePage;
-import co.konecta.sura.certificate.userinterface.list.listPage;
+import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
+import co.konecta.sura.certificate.userinterface.Listas.listPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;

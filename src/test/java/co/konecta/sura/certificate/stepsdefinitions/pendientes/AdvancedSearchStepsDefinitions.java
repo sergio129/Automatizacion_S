@@ -2,8 +2,8 @@ package co.konecta.sura.certificate.stepsdefinitions.pendientes;
 
 import co.konecta.sura.certificate.task.pendientes.AdvancedSearchTask;
 import co.konecta.sura.certificate.task.pendientes.LoginTask;
-import co.konecta.sura.certificate.userinterface.cases.advancedsearch.AdvancedSearchPage;
-import co.konecta.sura.certificate.userinterface.home.HomePage;
+import co.konecta.sura.certificate.userinterface.Casos.advancedsearch.AdvancedSearchPage;
+import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

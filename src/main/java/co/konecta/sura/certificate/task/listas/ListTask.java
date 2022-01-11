@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.userinterface.list.listPage.*;
+import static co.konecta.sura.certificate.userinterface.Listas.listPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 

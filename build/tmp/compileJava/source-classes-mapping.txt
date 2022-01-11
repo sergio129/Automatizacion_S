@@ -22,16 +22,16 @@ co/konecta/sura/certificate/userinterface/integration/HighContactTimesIntegratio
  co.konecta.sura.certificate.userinterface.integration.HighContactTimesIntegrationPage
 co/konecta/sura/certificate/task/home/ControlBoardsTask.java
  co.konecta.sura.certificate.task.home.ControlBoardsTask
-co/konecta/sura/certificate/task/parameterization/DialingCodesParameterizationTask.java
- co.konecta.sura.certificate.task.parameterization.DialingCodesParameterizationTask
+co/konecta/sura/certificate/userinterface/parameterization/DestinatariosAlertaPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.DestinatariosAlertaPage
 co/konecta/sura/certificate/task/cases/suraclimbing/SuraClimbingTask.java
  co.konecta.sura.certificate.task.cases.suraclimbing.SuraClimbingTask
 co/konecta/sura/certificate/userinterface/pendientes/AdvancedSearchPage.java
  co.konecta.sura.certificate.userinterface.pendientes.AdvancedSearchPage
 co/konecta/sura/certificate/userinterface/parameterization/ControlBoardsParameterizationPage.java
  co.konecta.sura.certificate.userinterface.parameterization.ControlBoardsParameterizationPage
-co/konecta/sura/certificate/userinterface/parameterization/DialingCodesParameterizationPage.java
- co.konecta.sura.certificate.userinterface.parameterization.DialingCodesParameterizationPage
+co/konecta/sura/certificate/task/cases/Novedades/NoveltyModel.java
+ co.konecta.sura.certificate.task.cases.Novedades.NoveltyModel
 co/konecta/sura/certificate/userinterface/cases/cases/CasePage.java
  co.konecta.sura.certificate.userinterface.cases.cases.CasePage
 co/konecta/sura/certificate/userinterface/pendientes/SupplierManagementPage.java
@@ -76,8 +76,8 @@ co/konecta/sura/certificate/task/parameterization/CallReasonsTask/ServiceRequest
  co.konecta.sura.certificate.task.parameterization.CallReasonsTask.ServiceRequestTask
 co/konecta/sura/certificate/userinterface/home/HomePage.java
  co.konecta.sura.certificate.userinterface.home.HomePage
-co/konecta/sura/certificate/task/parameterization/AlertTimeTask.java
- co.konecta.sura.certificate.task.parameterization.AlertTimeTask
+co/konecta/sura/certificate/userinterface/parameterization/NotificacionesPushPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.NotificacionesPushPage
 co/konecta/sura/certificate/task/pendientes/SupplierManagementTask.java
  co.konecta.sura.certificate.task.pendientes.SupplierManagementTask
 co/konecta/sura/certificate/task/integration/HighContactTimeIntegrationTask.java
@@ -106,8 +106,8 @@ co/konecta/sura/certificate/task/cases/statemanagement/StateManagementTask.java
  co.konecta.sura.certificate.task.cases.statemanagement.StateManagementTask
 co/konecta/sura/certificate/task/cases/Novedades/Novedades.java
  co.konecta.sura.certificate.task.cases.Novedades.Novedades
-co/konecta/sura/certificate/userinterface/parameterization/AlertTimePage.java
- co.konecta.sura.certificate.userinterface.parameterization.AlertTimePage
+co/konecta/sura/certificate/task/parameterization/NotificacionesPushTask.java
+ co.konecta.sura.certificate.task.parameterization.NotificacionesPushTask
 co/konecta/sura/certificate/userinterface/parameterization/AssignmentPage.java
  co.konecta.sura.certificate.userinterface.parameterization.AssignmentPage
 co/konecta/sura/certificate/task/cases/documentationcnm/DocumentationCNMTask.java
@@ -120,8 +120,8 @@ co/konecta/sura/certificate/task/parameterization/HideMonitoringTasksTask.java
  co.konecta.sura.certificate.task.parameterization.HideMonitoringTasksTask
 co/konecta/sura/certificate/task/cases/listenending/EndingModel.java
  co.konecta.sura.certificate.task.cases.listenending.EndingModel
-co/konecta/sura/certificate/task/listas/ListTask.java
- co.konecta.sura.certificate.task.listas.ListTask
+co/konecta/sura/certificate/userinterface/parameterization/EstrategiaPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.EstrategiaPage
 co/konecta/sura/certificate/task/parameterization/RamosTask.java
  co.konecta.sura.certificate.task.parameterization.RamosTask
 co/konecta/sura/certificate/userinterface/HomePage.java
@@ -144,17 +144,17 @@ co/konecta/sura/certificate/task/parameterization/DestinatariosAlertaTask.java
  co.konecta.sura.certificate.task.parameterization.DestinatariosAlertaTask
 co/konecta/sura/certificate/userinterface/parameterization/SemaforosPage.java
  co.konecta.sura.certificate.userinterface.parameterization.SemaforosPage
-co/konecta/sura/certificate/userinterface/parameterization/DestinatariosAlertaPage.java
- co.konecta.sura.certificate.userinterface.parameterization.DestinatariosAlertaPage
-co/konecta/sura/certificate/userinterface/parameterization/EstrategiaPage.java
- co.konecta.sura.certificate.userinterface.parameterization.EstrategiaPage
-co/konecta/sura/certificate/userinterface/parameterization/NotificacionesPushPage.java
- co.konecta.sura.certificate.userinterface.parameterization.NotificacionesPushPage
-co/konecta/sura/certificate/task/parameterization/NotificacionesPushTask.java
- co.konecta.sura.certificate.task.parameterization.NotificacionesPushTask
-co/konecta/sura/certificate/task/cases/Novedades/NoveltyModel.java
- co.konecta.sura.certificate.task.cases.Novedades.NoveltyModel
-co/konecta/sura/certificate/userinterface/parameterization/ListsParameterizationPage.java
- co.konecta.sura.certificate.userinterface.parameterization.ListsParameterizationPage
+co/konecta/sura/certificate/task/parameterization/IndicativosdeMarcacionTask.java
+ co.konecta.sura.certificate.task.parameterization.IndicativosdeMarcacionTask
+co/konecta/sura/certificate/userinterface/parameterization/IndicativosdeMarcacionPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.IndicativosdeMarcacionPage
+co/konecta/sura/certificate/userinterface/parameterization/ListasPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.ListasPage
+co/konecta/sura/certificate/userinterface/parameterization/TiemposdeAlertaPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.TiemposdeAlertaPage
+co/konecta/sura/certificate/task/parameterization/AlertTimeTask.java
+ co.konecta.sura.certificate.task.parameterization.AlertTimeTask
+co/konecta/sura/certificate/task/listas/ListTask.java
+ co.konecta.sura.certificate.task.listas.ListTask
 co/konecta/sura/certificate/task/parameterization/ListsParameterizationTask.java
  co.konecta.sura.certificate.task.parameterization.ListsParameterizationTask
