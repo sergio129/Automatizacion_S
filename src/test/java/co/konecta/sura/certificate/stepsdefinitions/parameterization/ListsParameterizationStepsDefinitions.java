@@ -57,17 +57,21 @@ public class ListsParameterizationStepsDefinitions {
         actor.attemptsTo(Click.on(BUTTON_EDIT_LISTS));
     }
 
-    @And("^I type information in the lists parameterization with the roles (.*) and modules (.*) and lists (.*) and options1(.*) and options2(.*)$")
+    @And("^I type information in the lists parameterization with the roles (.*) and modules (.*) and lists (.*) and options1 (.*) and options2 (.*)$")
     public void iTypeInformationInTheListsParameterizationWithTheRolesAndModulesAndListsAndOptionsAndOptions(String rolesLists, String modulesLists, String lists, String optionsLists1, String optionsLists2) {
         actor.attemptsTo(ListsParameterizationTask.withInformationListParameterization(rolesLists, modulesLists, lists, optionsLists1, optionsLists2)
-                //Click.on(BUTTON_SAVE_LISTS)
+
         );
     }
 
     @And("^I create new list option with option name (.*) and id easycase (.*)$")
-    public void iCreateNewListOptionWithOptionNameAndIdEasycase(String optionName, String idEasyCase) {
-        actor.attemptsTo(Click.on(BUTTON_CREATE_OPTION_LISTS),
-                Enter.theValue(optionName).into(INPUT_OPTION_NAME),
+    public void iCreateNewListOptionWithOptionNameAndIdEasycase(String optionName, String idEasyCase) throws InterruptedException {
+        Thread.sleep(5000);
+        actor.attemptsTo(
+                Click.on(BUTTON_CREATE_OPTION_LISTS));
+        Thread.sleep(5000);
+
+               actor.attemptsTo( Enter.theValue(optionName).into(INPUT_OPTION_NAME),
                 Enter.theValue(idEasyCase).into(INPUT_OPTION_ID_EASYCASE),
                 Click.on(BUTTON_SAVE_OPTION_LISTS));
     }

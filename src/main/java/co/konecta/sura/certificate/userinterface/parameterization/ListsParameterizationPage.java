@@ -19,7 +19,7 @@ public class ListsParameterizationPage {
     public static final Target INPUT_OPTION_NAME = Target.the("This the input option name").located(By.id("inputAddOptionName"));
     public static final Target INPUT_OPTION_ID_EASYCASE = Target.the("This the input option id easycase").located(By.id("inputAddOptionIdEasyCase"));
     public static final Target BUTTON_CREATE_LISTS = Target.the("This the button create lists").located(By.id("addListParameterizacion"));
-    public static final Target BUTTON_CREATE_OPTION_LISTS = Target.the("This the button create option lists").located(By.id("addOptionListParametrization"));
+    public static final Target BUTTON_CREATE_OPTION_LISTS = Target.the("boton para crear opciones").located(By.id("addOptionListParametrization"));
     public static final Target BUTTON_EDIT_LISTS = Target.the("This the button edit lists").located(By.id("btnEditListParameterizacion"));
     public static final Target BUTTON_SAVE_LISTS = Target.the("This the button save lists").located(By.id("btnSaveAddListParametrization"));
     public static final Target BUTTON_SAVE_OPTION_LISTS = Target.the("This the button save option lists").located(By.id("btnSaveAddOptionForm"));

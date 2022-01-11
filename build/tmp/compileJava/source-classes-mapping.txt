@@ -104,8 +104,8 @@ co/konecta/sura/certificate/task/cases/suppliermonitoring/SupplierMonitoringTask
  co.konecta.sura.certificate.task.cases.suppliermonitoring.SupplierMonitoringTask
 co/konecta/sura/certificate/task/cases/statemanagement/StateManagementTask.java
  co.konecta.sura.certificate.task.cases.statemanagement.StateManagementTask
-co/konecta/sura/certificate/userinterface/parameterization/ListsParameterizationPage.java
- co.konecta.sura.certificate.userinterface.parameterization.ListsParameterizationPage
+co/konecta/sura/certificate/task/cases/Novedades/Novedades.java
+ co.konecta.sura.certificate.task.cases.Novedades.Novedades
 co/konecta/sura/certificate/userinterface/parameterization/AlertTimePage.java
  co.konecta.sura.certificate.userinterface.parameterization.AlertTimePage
 co/konecta/sura/certificate/userinterface/parameterization/AssignmentPage.java
@@ -154,7 +154,7 @@ co/konecta/sura/certificate/task/parameterization/NotificacionesPushTask.java
  co.konecta.sura.certificate.task.parameterization.NotificacionesPushTask
 co/konecta/sura/certificate/task/cases/Novedades/NoveltyModel.java
  co.konecta.sura.certificate.task.cases.Novedades.NoveltyModel
-co/konecta/sura/certificate/task/cases/Novedades/Novedades.java
- co.konecta.sura.certificate.task.cases.Novedades.Novedades
+co/konecta/sura/certificate/userinterface/parameterization/ListsParameterizationPage.java
+ co.konecta.sura.certificate.userinterface.parameterization.ListsParameterizationPage
 co/konecta/sura/certificate/task/parameterization/ListsParameterizationTask.java
  co.konecta.sura.certificate.task.parameterization.ListsParameterizationTask

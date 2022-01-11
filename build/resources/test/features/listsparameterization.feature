@@ -7,7 +7,7 @@ Feature: Lists parameterization
 
 
   @TestCreacionParametrizacionLista
-  Scenario Outline: Successful lists parameterization
+  Scenario Outline: Creacion Parametrizacion de lista
     When I entering in the application with user <user> and password <password>
     And I entering lists parameterization
     And I select button create lists parameterization
@@ -16,11 +16,11 @@ Feature: Lists parameterization
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
-      | user         | password       | roles         | modules            | lists           | options1 | options2 | modalmessage                      |
-      | sergio.anaya | Colombia_2025* | prueba angela | Escalamientos sura | Tipo de gestión | Prueba   | GDI      | Registros guardados correctamente |
+      | user         | password       | roles         | modules            | lists           | options1        | options2     | modalmessage                      |
+      | sergio.anaya | Colombia_2025* | prueba angela | Escalamientos sura | Tipo de gestión | GDA Integracion | Prueba Kevin | Registros guardados correctamente |
 
 
-  @TestListParameterizationWithOption
+  @TestCreacionParametrizacionListaOpciones
   Scenario Outline: Successful lists parameterization with option
     When I entering in the application with user <user> and password <password>
     And I entering lists parameterization
@@ -30,8 +30,8 @@ Feature: Lists parameterization
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
-      | user         | password       | roles | modules            | lists           | options1 | options2      | optionname    | ideasycase | modalmessage                      |
-      | sergio.anaya | Colombia_2024* | Admin | Escalamientos sura | Tipo de gestión | Prueba   | Banca seguros | prueba opcion | 12134      | Registros guardados correctamente |
+      | user         | password       | roles         | modules            | lists           | options1 | options2 | optionname    | ideasycase | modalmessage                      |
+      | sergio.anaya | Colombia_2025* | prueba angela | Escalamientos sura | Tipo de gestión | prueba   | GDI      | prueba opcion | 12134      | Registros guardados correctamente |
 
 
   @TestListParameterizationEdition
@@ -40,11 +40,12 @@ Feature: Lists parameterization
     And I entering lists parameterization
     And I select button edition lists parameterization
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
+    And Selecionamos el boton guardar lista
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
       | user         | password       | roles         | modules            | lists              | options1  | options2 | modalmessage                      |
-      | sergio.anaya | Colombia_2024* | prueba angela | Escalamientos sura | Persona de gestión | Monitoreo | CNM      | Registros guardados correctamente |
+      | sergio.anaya | Colombia_2025* | prueba angela | Escalamientos sura | Persona de gestión | Monitoreo | CNM      | Registros guardados correctamente |
 
 
   @TestControlBoardsParameterizationRequiredFields
