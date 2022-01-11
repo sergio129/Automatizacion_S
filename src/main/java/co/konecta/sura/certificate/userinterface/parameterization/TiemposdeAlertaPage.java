@@ -3,7 +3,7 @@ package co.konecta.sura.certificate.userinterface.parameterization;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class AlertTimePage {
+public class TiemposdeAlertaPage {
 
     public static final Target INPUT_LINE_ALERT_TIME = Target.the("This the input alert time parameterization").located(By.id("mat-select-value-7"));
     public static final Target INPUT_SERVICE_ALERT_TIME = Target.the("This the input service alert time parameterization").located(By.id("mat-select-value-9"));

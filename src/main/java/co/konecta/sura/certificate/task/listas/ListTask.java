@@ -2,14 +2,11 @@ package co.konecta.sura.certificate.task.listas;
 
 
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
-import net.serenitybdd.screenplay.Task;
+
 import static co.konecta.sura.certificate.userinterface.list.listPage.*;
-import static co.konecta.sura.certificate.userinterface.parameterization.ListsParameterizationPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 

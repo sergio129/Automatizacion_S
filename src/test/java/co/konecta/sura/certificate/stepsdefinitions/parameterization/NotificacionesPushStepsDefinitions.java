@@ -2,7 +2,7 @@ package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
 import co.konecta.sura.certificate.task.parameterization.NotificacionesPushTask;
 import co.konecta.sura.certificate.userinterface.home.HomePage;
-import co.konecta.sura.certificate.userinterface.parameterization.ListsParameterizationPage;
+import co.konecta.sura.certificate.userinterface.parameterization.ListasPage;
 import co.konecta.sura.certificate.userinterface.parameterization.NotificacionesPushPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -40,8 +40,8 @@ public class NotificacionesPushStepsDefinitions {
     @And("^I entering push notifications$")
     public void IEnteringPushNotifications() throws InterruptedException {
         Thread.sleep(5000);
-        actor.attemptsTo(Click.on(ListsParameterizationPage.BUTTON_INITIAL_TAB));
-        actor.attemptsTo(Click.on(ListsParameterizationPage.BUTTON_PARAMETRIZACION));
+        actor.attemptsTo(Click.on(ListasPage.BUTTON_INITIAL_TAB));
+        actor.attemptsTo(Click.on(ListasPage.BUTTON_PARAMETRIZACION));
         Thread.sleep(3000);
         actor.attemptsTo(Click.on(co.konecta.sura.certificate.userinterface.home.HomePage.SCROLL_PARAMETERIZATION));
         actor.attemptsTo(Click.on(NotificacionesPushPage.OPTION_PUSH_NOTIFICATIONS));

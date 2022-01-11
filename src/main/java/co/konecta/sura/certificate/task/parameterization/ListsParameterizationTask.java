@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.userinterface.parameterization.ListsParameterizationPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.ListasPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class ListsParameterizationTask implements Task {

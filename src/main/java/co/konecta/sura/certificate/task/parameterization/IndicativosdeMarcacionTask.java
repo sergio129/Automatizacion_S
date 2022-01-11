@@ -6,15 +6,15 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.userinterface.parameterization.DialingCodesParameterizationPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.IndicativosdeMarcacionPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class DialingCodesParameterizationTask implements Task {
+public class IndicativosdeMarcacionTask implements Task {
     String department;
     String municipality;
     String indicative;
 
-    public DialingCodesParameterizationTask(String department, String municipality, String indicative) {
+    public IndicativosdeMarcacionTask(String department, String municipality, String indicative) {
         this.department = department;
         this.municipality = municipality;
         this.indicative = indicative;
@@ -33,7 +33,7 @@ public class DialingCodesParameterizationTask implements Task {
 
     }
 
-    public static DialingCodesParameterizationTask WriteInformationDialingCodesParameterizationTask(String department, String municipality, String indicative) {
-        return instrumented(DialingCodesParameterizationTask.class, department, municipality, indicative);
+    public static IndicativosdeMarcacionTask WriteInformationDialingCodesParameterizationTask(String department, String municipality, String indicative) {
+        return instrumented(IndicativosdeMarcacionTask.class, department, municipality, indicative);
     }
 }

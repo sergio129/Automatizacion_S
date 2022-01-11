@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.userinterface.parameterization.AlertTimePage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.TiemposdeAlertaPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class AlertTimeTask implements Task {

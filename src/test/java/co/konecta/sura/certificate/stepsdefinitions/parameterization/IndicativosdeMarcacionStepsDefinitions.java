@@ -1,6 +1,6 @@
 package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
-import co.konecta.sura.certificate.task.parameterization.DialingCodesParameterizationTask;
+import co.konecta.sura.certificate.task.parameterization.IndicativosdeMarcacionTask;
 import co.konecta.sura.certificate.userinterface.home.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -17,9 +17,9 @@ import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.userinterface.HomePage.BUTTON_INITIAL_TAB;
 import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
-import static co.konecta.sura.certificate.userinterface.parameterization.DialingCodesParameterizationPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.IndicativosdeMarcacionPage.*;
 
-public class DialingCodesParameterizationDefinitions {
+public class IndicativosdeMarcacionStepsDefinitions {
     @Managed(driver = "chrome")
     WebDriver driver;
     private final Actor actor = Actor.named("Usuario");
@@ -53,7 +53,7 @@ public class DialingCodesParameterizationDefinitions {
 
     @And("^I Write information in dialing codes parameterization(.*) and (.*) and (.*)$")
     public void IWriteInformationInDialingCodesParameterization(String department, String municipality, String indicative) {
-        actor.attemptsTo(DialingCodesParameterizationTask.WriteInformationDialingCodesParameterizationTask(department, municipality, indicative));
+        actor.attemptsTo(IndicativosdeMarcacionTask.WriteInformationDialingCodesParameterizationTask(department, municipality, indicative));
     }
 
     @And("^I select button search dialing codes parameterization(.*) and (.*)$")

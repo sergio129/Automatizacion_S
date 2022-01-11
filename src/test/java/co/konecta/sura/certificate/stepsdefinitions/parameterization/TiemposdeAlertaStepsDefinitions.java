@@ -14,10 +14,10 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
-import static co.konecta.sura.certificate.userinterface.parameterization.AlertTimePage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.TiemposdeAlertaPage.*;
 
 
-public class AlertTimeStepsDefinitions {
+public class TiemposdeAlertaStepsDefinitions {
 
     @Managed(driver = "chrome")
     WebDriver driver;

@@ -3,7 +3,7 @@ package co.konecta.sura.certificate.userinterface.parameterization;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class DialingCodesParameterizationPage {
+public class IndicativosdeMarcacionPage {
 
     public static final Target BUTTON_CREATE_DIALING = Target.the("This the  button create dialing parameterization").located(By.id("btnCreateIndicative"));
     public static final Target INPUT_DEPARTMENT_DEALING = Target.the("This the  input department dialing parameterization").located(By.id("mat-select-value-7"));

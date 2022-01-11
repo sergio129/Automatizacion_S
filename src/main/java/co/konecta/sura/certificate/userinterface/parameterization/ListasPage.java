@@ -3,7 +3,7 @@ package co.konecta.sura.certificate.userinterface.parameterization;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class ListsParameterizationPage {
+public class ListasPage {
     public static final Target BUTTON_INITIAL_TAB = Target.the("This the input inicial tab").located(By.id("globalMenu"));//Lo traje de HomePage
     public static final Target BUTTON_PARAMETRIZACION = Target.the("This the input inicial tab").located(By.id("moParameterization"));//
     public static final Target BUTTON_SCROLL = Target.the("This the input inicial tab").located(By.id("snav"));//
