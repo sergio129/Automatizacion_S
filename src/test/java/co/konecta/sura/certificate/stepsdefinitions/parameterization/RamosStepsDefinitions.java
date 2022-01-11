@@ -12,9 +12,11 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+
 import static co.konecta.sura.certificate.userinterface.HomePage.BUTTON_INITIAL_TAB;
 import static co.konecta.sura.certificate.userinterface.home.HomePage.*;
 import static co.konecta.sura.certificate.userinterface.parameterization.RamosPage.*;
+
 public class RamosStepsDefinitions {
     @Managed(driver = "chrome")
     WebDriver driver;
@@ -33,9 +35,10 @@ public class RamosStepsDefinitions {
     @And("^I enter bouquets parameterization$")
     public void IEnterBouquetsParameterization() throws InterruptedException {
         Thread.sleep(5000);
-        actor.attemptsTo(Click.on(BUTTON_INITIAL_TAB));
-        actor.attemptsTo(Click.on(OPTION_MENU_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.OPTION_BOUQUETS_PARAMETERIZATION));
+        actor.attemptsTo(Click.on(BUTTON_INITIAL_TAB),
+                Click.on(OPTION_MENU_PARAMETERIZATION),
+                Click.on(HomePage.SCROLL_PARAMETERIZATION),
+                Click.on(HomePage.OPTION_BOUQUETS_PARAMETERIZATION));
     }
 
     @And("^I select button create bouquets parameterization$")
@@ -56,7 +59,6 @@ public class RamosStepsDefinitions {
         actor.attemptsTo(
                 Ensure.that(MODAL_VALIDATION).text().contains(message));
     }
-
 
 
 }
