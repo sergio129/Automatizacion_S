@@ -1,6 +1,6 @@
 package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
-import co.konecta.sura.certificate.task.parameterization.ExitCodeParameterizationTask;
+import co.konecta.sura.certificate.task.parameterization.CodigosdeSalidaTask;
 import co.konecta.sura.certificate.userinterface.home.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -18,9 +18,9 @@ import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.userinterface.HomePage.BUTTON_INITIAL_TAB;
 import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
-import static co.konecta.sura.certificate.userinterface.parameterization.ExitCodeParameterizationPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.CodigosdeSalidaPage.*;
 
-public class ParametrizacionCodigosSalidaStepsDefinitions {
+public class CodigosSalidaStepsDefinitions {
 
     @Managed(driver = "chrome")
     WebDriver driver;
@@ -58,7 +58,7 @@ public class ParametrizacionCodigosSalidaStepsDefinitions {
     @And("^Escribimos la informacion de codigos de salida(.*) y (.*)$")
     public void IWriteInformationInExitCodeParameterization(String line, String code){
         actor.attemptsTo(
-                ExitCodeParameterizationTask.withInformationExitCode(line,code)
+                CodigosdeSalidaTask.withInformationExitCode(line,code)
         );
     }
     @And("^Selecionamos el boton buscar codigos de salida (.*)$")

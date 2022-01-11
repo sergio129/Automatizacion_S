@@ -1,6 +1,6 @@
 package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
-import co.konecta.sura.certificate.task.parameterization.BouquetsTask;
+import co.konecta.sura.certificate.task.parameterization.RamosTask;
 import co.konecta.sura.certificate.userinterface.home.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -14,8 +14,8 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 import static co.konecta.sura.certificate.userinterface.HomePage.BUTTON_INITIAL_TAB;
 import static co.konecta.sura.certificate.userinterface.home.HomePage.*;
-import static co.konecta.sura.certificate.userinterface.parameterization.BouquetsPage.*;
-public class BouquetsStepsDefinitions {
+import static co.konecta.sura.certificate.userinterface.parameterization.RamosPage.*;
+public class RamosStepsDefinitions {
     @Managed(driver = "chrome")
     WebDriver driver;
     private final Actor actor = Actor.named("Usuario");
@@ -45,7 +45,7 @@ public class BouquetsStepsDefinitions {
 
     @And("^I write information in bouquets parameterization and save(.*)$")
     public void WriteInformationInBouquetsParameterization(String branch) {
-        actor.attemptsTo(BouquetsTask.whthBouquetsTaskParameterization(branch));
+        actor.attemptsTo(RamosTask.whthBouquetsTaskParameterization(branch));
 
     }
 

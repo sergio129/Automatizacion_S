@@ -3,7 +3,7 @@ package co.konecta.sura.certificate.userinterface.parameterization;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class StrategyPage {
+public class EstrategiaPage {
 
     public static final Target INPUT_CONTINGENCY = Target.the("This the input contingency").located(By.id("nameEditStrategy"));
     public static final Target INPUT_CONTINGENCY_DESCRIPTION = Target.the("This the input contingency description").located(By.id("descriptionEditStrategy"));

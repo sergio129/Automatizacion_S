@@ -6,11 +6,11 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.userinterface.parameterization.TrafficLightPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.SemaforosPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 
-public class TrafficLightTask implements Task {
+public class SemaforosTask implements Task {
 
     String roleTrafficLight;
     String serviceStatusTraffic;
@@ -29,7 +29,7 @@ public class TrafficLightTask implements Task {
     String from6TrafficLight;
     String until6TrafficLight;
 
-    public TrafficLightTask(String roleTrafficLight, String serviceStatusTraffic, String lineTrafficLight, String serviceTrafficLight, String from1TrafficLight, String until1TrafficLight, String from2TrafficLight, String until2TrafficLight, String from3TrafficLight, String until3TrafficLight, String from4TrafficLight, String until4TrafficLight, String from5TrafficLight, String until5TrafficLight, String from6TrafficLight, String until6TrafficLight) {
+    public SemaforosTask(String roleTrafficLight, String serviceStatusTraffic, String lineTrafficLight, String serviceTrafficLight, String from1TrafficLight, String until1TrafficLight, String from2TrafficLight, String until2TrafficLight, String from3TrafficLight, String until3TrafficLight, String from4TrafficLight, String until4TrafficLight, String from5TrafficLight, String until5TrafficLight, String from6TrafficLight, String until6TrafficLight) {
         this.roleTrafficLight = roleTrafficLight;
         this.serviceStatusTraffic = serviceStatusTraffic;
         this.lineTrafficLight = lineTrafficLight;
@@ -75,7 +75,7 @@ public class TrafficLightTask implements Task {
                 );
     }
 
-    public static TrafficLightTask withInformationTrafficLight (String roleTrafficLight, String serviceStatusTraffic, String lineTrafficLight, String serviceTrafficLight, String from1TrafficLight, String until1TrafficLight, String from2TrafficLight, String until2TrafficLight, String from3TrafficLight, String until3TrafficLight, String from4TrafficLight, String until4TrafficLight, String from5TrafficLight, String until5TrafficLight, String from6TrafficLight, String until6TrafficLight){
-        return instrumented(TrafficLightTask.class, roleTrafficLight,serviceStatusTraffic, lineTrafficLight, serviceTrafficLight, from1TrafficLight, until1TrafficLight, from2TrafficLight, until2TrafficLight, from3TrafficLight, until3TrafficLight, from4TrafficLight, until4TrafficLight, from5TrafficLight, until5TrafficLight, from6TrafficLight, until6TrafficLight);
+    public static SemaforosTask withInformationTrafficLight (String roleTrafficLight, String serviceStatusTraffic, String lineTrafficLight, String serviceTrafficLight, String from1TrafficLight, String until1TrafficLight, String from2TrafficLight, String until2TrafficLight, String from3TrafficLight, String until3TrafficLight, String from4TrafficLight, String until4TrafficLight, String from5TrafficLight, String until5TrafficLight, String from6TrafficLight, String until6TrafficLight){
+        return instrumented(SemaforosTask.class, roleTrafficLight,serviceStatusTraffic, lineTrafficLight, serviceTrafficLight, from1TrafficLight, until1TrafficLight, from2TrafficLight, until2TrafficLight, from3TrafficLight, until3TrafficLight, from4TrafficLight, until4TrafficLight, from5TrafficLight, until5TrafficLight, from6TrafficLight, until6TrafficLight);
     }
 }

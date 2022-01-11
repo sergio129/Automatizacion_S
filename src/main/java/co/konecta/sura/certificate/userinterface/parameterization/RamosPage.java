@@ -3,7 +3,7 @@ package co.konecta.sura.certificate.userinterface.parameterization;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class BouquetsPage {
+public class RamosPage {
 
     public static final Target BUTTON_CREATE_BOUQUETS = Target.the("This the  button create bouquets parameterization").located(By.id("addBranch"));
     public static final Target INPUT_LINE_BOUQUETS = Target.the("This the  input line bouquets parameterization").located(By.id("mat-select-value-3"));

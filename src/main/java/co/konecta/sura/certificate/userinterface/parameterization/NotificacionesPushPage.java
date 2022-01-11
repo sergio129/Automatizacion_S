@@ -3,7 +3,7 @@ package co.konecta.sura.certificate.userinterface.parameterization;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class PushNotificationsPage {
+public class NotificacionesPushPage {
     //Push Notification Creation
     public static final Target OPTION_PUSH_NOTIFICATIONS = Target.the("We select the parameterization push notifications option").located(By.id("moPushNotifications"));
     public static final Target BUTTON_CREATE_PUSH_NOTIFICATIONS = Target.the("This the button parameterization push notifications option").located(By.id("btnCreatePushNotification"));

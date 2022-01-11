@@ -3,7 +3,7 @@ package co.konecta.sura.certificate.userinterface.parameterization;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class AlertRecipientsPage {
+public class DestinatariosAlertaPage {
 
     public static final Target INPUT_NAME_ALERT = Target.the("This the input alert name").located(By.id("createNameAlertRecipients"));
     public static final Target INPUT_SEARCH_NAME_ALERT = Target.the("This the input search alert name").located(By.id("NameAlertRecipients"));

@@ -7,14 +7,14 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.userinterface.parameterization.StrategyPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.EstrategiaPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class StrategyTask implements Task {
+public class EstrategiaTask implements Task {
 
     public String contingencyDescription;
 
-    public StrategyTask(String contingencyDescription) {
+    public EstrategiaTask(String contingencyDescription) {
         this.contingencyDescription = contingencyDescription;
     }
 
@@ -31,8 +31,8 @@ public class StrategyTask implements Task {
 
     }
 
-    public static StrategyTask withInformationStrategy( String contingencyDescription){
-        return instrumented(StrategyTask.class, contingencyDescription);
+    public static EstrategiaTask withInformationStrategy(String contingencyDescription){
+        return instrumented(EstrategiaTask.class, contingencyDescription);
     }
 
 }

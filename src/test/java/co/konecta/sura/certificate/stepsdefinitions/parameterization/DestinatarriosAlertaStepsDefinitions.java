@@ -1,6 +1,6 @@
 package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
-import co.konecta.sura.certificate.task.parameterization.AlertRecipientsTask;
+import co.konecta.sura.certificate.task.parameterization.DestinatariosAlertaTask;
 import co.konecta.sura.certificate.userinterface.home.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -15,9 +15,9 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
-import static co.konecta.sura.certificate.userinterface.parameterization.AlertRecipientsPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.DestinatariosAlertaPage.*;
 
-public class AlertRecipientsStepsDefinitions {
+public class DestinatarriosAlertaStepsDefinitions {
 
     @Managed(driver = "chrome")
     WebDriver driver;
@@ -61,7 +61,7 @@ public class AlertRecipientsStepsDefinitions {
 
     @And("^I type information in the alert with the name (.*) and the line (.*) and the service (.*) and the department (.*) and the municipality (.*) and the email (.*)$")
     public void iTypeInformationInTheAlertWithTheNameAndTheLineAndTheServiceAndTheDepartmentAndTheMunicipalityAndTheEmail(String nameAlert, String lineAlert, String serviceAlert, String departmentAlert, String municipalityAlert, String emailAlert) {
-        actor.attemptsTo(AlertRecipientsTask.withInformationAlertParameterization(nameAlert, lineAlert, serviceAlert, departmentAlert, municipalityAlert, emailAlert));
+        actor.attemptsTo(DestinatariosAlertaTask.withInformationAlertParameterization(nameAlert, lineAlert, serviceAlert, departmentAlert, municipalityAlert, emailAlert));
     }
 
     @And("^I search name alert (.*) and select button delete alert recipients$")

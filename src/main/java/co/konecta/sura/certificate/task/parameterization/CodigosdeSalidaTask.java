@@ -6,14 +6,14 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.userinterface.parameterization.ExitCodeParameterizationPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.CodigosdeSalidaPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class ExitCodeParameterizationTask implements Task {
+public class CodigosdeSalidaTask implements Task {
     String line;
     String code;
 
-    public ExitCodeParameterizationTask(String line, String code) {
+    public CodigosdeSalidaTask(String line, String code) {
         this.line = line;
         this.code = code;
     }
@@ -29,7 +29,7 @@ public class ExitCodeParameterizationTask implements Task {
 
     }
 
-    public static ExitCodeParameterizationTask withInformationExitCode(String line, String code) {
-        return instrumented(ExitCodeParameterizationTask.class, line, code);
+    public static CodigosdeSalidaTask withInformationExitCode(String line, String code) {
+        return instrumented(CodigosdeSalidaTask.class, line, code);
     }
 }

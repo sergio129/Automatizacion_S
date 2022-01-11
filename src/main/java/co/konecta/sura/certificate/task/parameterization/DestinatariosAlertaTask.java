@@ -7,11 +7,11 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.userinterface.parameterization.AlertRecipientsPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.DestinatariosAlertaPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 
-public class AlertRecipientsTask implements Task {
+public class DestinatariosAlertaTask implements Task {
 
     public String nameAlert;
     public String lineAlert;
@@ -20,7 +20,7 @@ public class AlertRecipientsTask implements Task {
     public String municipalityAlert;
     public String emailAlert;
 
-    public AlertRecipientsTask(String nameAlert, String lineAlert, String serviceAlert, String departmentAlert, String municipalityAlert, String emailAlert) {
+    public DestinatariosAlertaTask(String nameAlert, String lineAlert, String serviceAlert, String departmentAlert, String municipalityAlert, String emailAlert) {
         this.nameAlert = nameAlert;
         this.lineAlert = lineAlert;
         this.serviceAlert = serviceAlert;
@@ -53,7 +53,7 @@ public class AlertRecipientsTask implements Task {
         );
     }
 
-    public static AlertRecipientsTask withInformationAlertParameterization(String nameAlert, String lineAlert, String serviceAlert, String departmentAlert, String municipalityAlert, String emailAlert) {
-        return instrumented(AlertRecipientsTask.class, nameAlert, lineAlert, serviceAlert, departmentAlert, municipalityAlert, emailAlert);
+    public static DestinatariosAlertaTask withInformationAlertParameterization(String nameAlert, String lineAlert, String serviceAlert, String departmentAlert, String municipalityAlert, String emailAlert) {
+        return instrumented(DestinatariosAlertaTask.class, nameAlert, lineAlert, serviceAlert, departmentAlert, municipalityAlert, emailAlert);
     }
 }

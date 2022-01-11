@@ -1,9 +1,9 @@
 package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
-import co.konecta.sura.certificate.task.parameterization.PushNotificationsTask;
+import co.konecta.sura.certificate.task.parameterization.NotificacionesPushTask;
 import co.konecta.sura.certificate.userinterface.home.HomePage;
 import co.konecta.sura.certificate.userinterface.parameterization.ListsParameterizationPage;
-import co.konecta.sura.certificate.userinterface.parameterization.PushNotificationsPage;
+import co.konecta.sura.certificate.userinterface.parameterization.NotificacionesPushPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -19,9 +19,9 @@ import org.openqa.selenium.WebDriver;
 
 
 import static co.konecta.sura.certificate.userinterface.home.HomePage.*;
-import static co.konecta.sura.certificate.userinterface.parameterization.PushNotificationsPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.NotificacionesPushPage.*;
 
-public class PushnotificationsStepsDefinitions {
+public class NotificacionesPushStepsDefinitions {
 
     @Managed(driver = "chrome")
     WebDriver driver;
@@ -44,7 +44,7 @@ public class PushnotificationsStepsDefinitions {
         actor.attemptsTo(Click.on(ListsParameterizationPage.BUTTON_PARAMETRIZACION));
         Thread.sleep(3000);
         actor.attemptsTo(Click.on(co.konecta.sura.certificate.userinterface.home.HomePage.SCROLL_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(PushNotificationsPage.OPTION_PUSH_NOTIFICATIONS));
+        actor.attemptsTo(Click.on(NotificacionesPushPage.OPTION_PUSH_NOTIFICATIONS));
         Thread.sleep(3000);
 
     }
@@ -61,7 +61,7 @@ public class PushnotificationsStepsDefinitions {
 
     @And("^I write information in the push notifications of the following fields (.*)and(.*)and(.*)and(.*)and(.*)and(.*)and(.*)and(.*)$")
     public void IWriteInformationPushNotifications(String line, String service, String servicestatus, String roles, String timetomoment1, String timetomoment2, String appointmenttime1, String appointmenttime2) {
-        actor.attemptsTo(PushNotificationsTask.withPushNotificationParameterization(line, service, servicestatus, roles, timetomoment1, timetomoment2, appointmenttime1, appointmenttime2));
+        actor.attemptsTo(NotificacionesPushTask.withPushNotificationParameterization(line, service, servicestatus, roles, timetomoment1, timetomoment2, appointmenttime1, appointmenttime2));
 
     }
 

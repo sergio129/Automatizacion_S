@@ -6,14 +6,14 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.userinterface.parameterization.BouquetsPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.RamosPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class BouquetsTask implements Task {
+public class RamosTask implements Task {
 
     public String branch;
 
-    public BouquetsTask(String branch) {
+    public RamosTask(String branch) {
 
         this.branch = branch;
     }
@@ -31,8 +31,8 @@ public class BouquetsTask implements Task {
 
     }
 
-    public static BouquetsTask whthBouquetsTaskParameterization(String branch) {
-        return instrumented(BouquetsTask.class,branch);
+    public static RamosTask whthBouquetsTaskParameterization(String branch) {
+        return instrumented(RamosTask.class,branch);
     }
 
 }

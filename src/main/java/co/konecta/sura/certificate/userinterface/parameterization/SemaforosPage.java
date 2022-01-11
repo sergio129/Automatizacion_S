@@ -3,7 +3,7 @@ package co.konecta.sura.certificate.userinterface.parameterization;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class TrafficLightPage {
+public class SemaforosPage {
 
     public static final Target INPUT_ROLE_TRAFFIC_LIGHT = Target.the("This the input role traffic light parameterization").located(By.id("mat-select-value-3"));
     public static final Target INPUT_SEARCH_ROLE_TRAFFIC_LIGHT = Target.the("This the input search role traffic light parameterization").located(By.id("inputListTrafficLightRolesSearch"));

@@ -6,10 +6,10 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.userinterface.parameterization.PushNotificationsPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.NotificacionesPushPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class PushNotificationsTask implements Task {
+public class NotificacionesPushTask implements Task {
     public String line;
     public String service;
     public String servicestatus;
@@ -19,7 +19,7 @@ public class PushNotificationsTask implements Task {
     public String appointmenttime1;
     public String appointmenttime2;
 
-    public PushNotificationsTask(String line, String service, String servicestatus, String roles, String timetomoment1, String timetomoment2, String appointmenttime1, String appointmenttime2) {
+    public NotificacionesPushTask(String line, String service, String servicestatus, String roles, String timetomoment1, String timetomoment2, String appointmenttime1, String appointmenttime2) {
         this.line = line;
         this.service = service;
         this.servicestatus = servicestatus;
@@ -53,7 +53,7 @@ public class PushNotificationsTask implements Task {
     }
 
 
-    public static PushNotificationsTask withPushNotificationParameterization(String line, String service, String servicestatus, String roles, String timetomoment1, String timetomoment2, String appointmenttime1, String appointmenttime2) {
-        return instrumented(PushNotificationsTask.class, line, service, servicestatus, roles, timetomoment1, timetomoment2, appointmenttime1, appointmenttime2);
+    public static NotificacionesPushTask withPushNotificationParameterization(String line, String service, String servicestatus, String roles, String timetomoment1, String timetomoment2, String appointmenttime1, String appointmenttime2) {
+        return instrumented(NotificacionesPushTask.class, line, service, servicestatus, roles, timetomoment1, timetomoment2, appointmenttime1, appointmenttime2);
     }
 }

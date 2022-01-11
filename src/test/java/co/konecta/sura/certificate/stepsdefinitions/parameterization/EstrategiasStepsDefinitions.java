@@ -1,6 +1,6 @@
 package co.konecta.sura.certificate.stepsdefinitions.parameterization;
 
-import co.konecta.sura.certificate.task.parameterization.StrategyTask;
+import co.konecta.sura.certificate.task.parameterization.EstrategiaTask;
 import co.konecta.sura.certificate.userinterface.home.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -17,10 +17,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.userinterface.home.HomePage.MODAL_VALIDATION;
-import static co.konecta.sura.certificate.userinterface.parameterization.StrategyPage.*;
+import static co.konecta.sura.certificate.userinterface.parameterization.EstrategiaPage.*;
 
 
-public class StrategyStepsDefinitions {
+public class EstrategiasStepsDefinitions {
 
 
     @Managed(driver = "chrome")
@@ -61,7 +61,7 @@ public class StrategyStepsDefinitions {
         Thread.sleep(3000);
         actor.attemptsTo(
                 Click.on(BUTTON_EDIT_CONTINGENCY_STRATEGY),
-                StrategyTask.withInformationStrategy(contingencyDescription));
+                EstrategiaTask.withInformationStrategy(contingencyDescription));
 
     }
     @And("^I entering search strategy parameterization (.*)$")
@@ -79,7 +79,7 @@ public class StrategyStepsDefinitions {
     public void iTypeInformationInTheCoordinationStrategyWithTheDescriptionAndTheTimeAssignmentAndTheFirstExpirationAndTheSecondExpiration(String contingencyDescription, String timeAssignment, String firstExpiration, String secondExpiration) {
         actor.attemptsTo(
 
-                StrategyTask.withInformationStrategy(contingencyDescription),
+                EstrategiaTask.withInformationStrategy(contingencyDescription),
                // Click.on(INPUT_COORDINATION_STRATEGY),
                 //Hit.the(Keys.ARROW_UP).into(INPUT_COORDINATION_STRATEGY),
                 Enter.theValue(timeAssignment).into(INPUT_TIME_ASSIGNMENT),
@@ -93,7 +93,7 @@ public class StrategyStepsDefinitions {
     public void iTypeInformationInTheMonitoringStrategyWithTheDescriptionAndThePreventiveTimeAndTheTimeMonitoringSiteAndTheTimeMonitoringCompletion(String contingencyDescription, String preventiveTime, String timeMonitoringSite, String timeMonitoringCompletion) {
         actor.attemptsTo(
                 //Click.on(BUTTON_EDIT_MONITORING_STRATEGY),
-                StrategyTask.withInformationStrategy(contingencyDescription),
+                EstrategiaTask.withInformationStrategy(contingencyDescription),
                 //Click.on(INPUT_MONITORING_STRATEGY),
                 //Hit.the(Keys.ENTER).into(INPUT_MONITORING_STRATEGY),
                 Enter.theValue(preventiveTime).into(INPUT_PREVENTIVE_MONITORING_TIME_),
@@ -106,7 +106,7 @@ public class StrategyStepsDefinitions {
     @And("^I type information in the task monitoring strategy with the description (.*)$")
     public void iTypeInformationInTheTaskMonitoringStrategyWithTheDescriptionAndTheTaskMonitoring(String contingencyDescription) {
         actor.attemptsTo(Click.on(BUTTON_EDIT_TASK_STRATEGY),
-                StrategyTask.withInformationStrategy(contingencyDescription),
+                EstrategiaTask.withInformationStrategy(contingencyDescription),
                 Click.on(INPUT_MONITORING_TASK),
                 Hit.the(Keys.ARROW_DOWN).into(INPUT_MONITORING_TASK),
                 Hit.the(Keys.ENTER).into(INPUT_MONITORING_TASK),
@@ -125,7 +125,7 @@ public class StrategyStepsDefinitions {
     @And("^I type information in the services strategy with the description (.*) and the services (.*)$")
     public void iTypeInformationInTheServicesStrategyWithTheDescriptionAndTheServices(String contingencyDescription, String service) {
         actor.attemptsTo(Click.on(BUTTON_EDIT_SERVICES_STRATEGY),
-                StrategyTask.withInformationStrategy(contingencyDescription),
+                EstrategiaTask.withInformationStrategy(contingencyDescription),
                 Click.on(INPUT_SERVICES_STRATEGY),
                 Enter.theValue(service).into(INPUT_SEARCH_SERVICES_STRATEGY).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(BUTTON_SAVE_STRATEGY)
@@ -135,7 +135,7 @@ public class StrategyStepsDefinitions {
     @And("^I type information in the notification strategy with the name contingency search (.*) and the description (.*) and the notification message (.*) and the notification time (.*)$")
     public void iTypeInformationInTheNotificationStrategyWithTheDescriptionAndTheNotificationMessageAndTheNotificationTime(String nameContingencySearch2, String contingencyDescription, String notificationMessage, String notificationTime) {
         actor.attemptsTo(Click.on(BUTTON_EDIT_NOTIFICATION_STRATEGY),
-                StrategyTask.withInformationStrategy(contingencyDescription),
+                EstrategiaTask.withInformationStrategy(contingencyDescription),
                 Click.on(INPUT_NOTIFICATION_MESSAGE_STATUS),
                 Hit.the(Keys.ENTER).into(INPUT_NOTIFICATION_MESSAGE_STATUS),
                 Enter.theValue(notificationMessage).into(INPUT_NOTIFICATION_MESSAGE),
