@@ -1,17 +1,16 @@
-Feature: High Contact Times Integration
-  Tiempos altos de contacto
-  As a ser
-  I need to management the high contact time integration
+Feature: Tiempos altos de Contacto
+
+  Necesito Gestionar los tiempos altos de contacto
 
   Background:
-    Given I management the high contact time integration
+    Given Gestion de tiempos altos de contacto
 
-  @TestHighContactTimesIntegrationManagement
-  Scenario Outline: Successful management the high contact time integration
-    When I entering in the application with user <user> and password <password>
-    And I enter high contact times integration
-    And we make a filter<line>, we search and manage<management>
-    Then I view the modal save high contact times integration<modalmessage>
+  @TestGestionTiemposAltosdeContacto
+  Scenario Outline: Gestion de expedientes con tiempos altos de contacto
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    And Entro a integracion tiempos altos de contacto
+    And Hacemos un filtro por <linea>y<servicio>y<municipio>y<familia> y buscamos<gestion>
+    Then Veo mensaje de gestion exitosa de tiempos altos de contacto<mensajemodal>
     Examples:
-      | user         | password       | line                | management  | modalmessage                    |
-      | Sergio.anaya | Colombia_2025* | Emergencia en salud | Sin novedad | Registro guardado correctamente |
+      | usuario      | contrasena     | linea | servicio         | municipio | familia  | gestion     | mensajemodal                    |
+      | Sergio.anaya | Colombia_2025* | Autos | Abogado en sitio | Medellin  | ABOGADOS | Sin novedad | Registro guardado correctamente |

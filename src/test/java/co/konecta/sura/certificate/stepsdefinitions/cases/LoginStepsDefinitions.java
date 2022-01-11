@@ -36,6 +36,12 @@ public class LoginStepsDefinitions {
         actor.attemptsTo(LoginTask.whitCredentials(user,password));
     }
 
+    @When("^Ingresamos a la aplicacion con usuario(.*) y contraseña(.*)$")
+    public void IngresamosUsuarioContrasena(String user, String password) {
+        actor.wasAbleTo(Open.browserOn(homePage));
+        actor.attemptsTo(LoginTask.whitCredentials(user,password));
+    }
+
     @Then("^I view the message (.*)$")
     public void userViewInTheInput(String messageModal) {
         actor.should(

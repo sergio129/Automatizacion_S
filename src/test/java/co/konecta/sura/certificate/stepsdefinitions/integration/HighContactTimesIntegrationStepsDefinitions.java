@@ -27,11 +27,11 @@ public class HighContactTimesIntegrationStepsDefinitions {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("^I management the high contact time integration$")
+    @Given("^Gestion de tiempos altos de contacto$")
     public void IManagementTheHighContactTimeIntegration() {
     }
 
-    @And("^I enter high contact times integration$")
+    @And("^Entro a integracion tiempos altos de contacto$")
     public void IEnterHighContactTimesIntegration() {
         actor.attemptsTo(
                 Click.on(HomePage.BUTTON_INITIAL_TAB),
@@ -39,12 +39,12 @@ public class HighContactTimesIntegrationStepsDefinitions {
                 Click.on(HomePage.OPTION_HIGH_CONTACT_TIMES_INTEGRATION)
         );
     }
-    @And("^we make a filter(.*), we search and manage(.*)$")
-    public void weMakeAFilterWeSearchAndManage(String line, String management){
-        actor.attemptsTo(HighContactTimeIntegrationTask.writeInformationHighContact(line,management));
+    @And("^Hacemos un filtro por (.*)y(.*)y(.*)y(.*) y buscamos(.*)$")
+    public void weMakeAFilterWeSearchAndManage(String line, String management, String servicio, String municipio, String familia){
+        actor.attemptsTo(HighContactTimeIntegrationTask.writeInformationHighContact(line,management,servicio,municipio,familia));
 
     }
-    @Then("^I view the modal save high contact times integration(.*)$")
+    @Then("Veo mensaje de gestion exitosa de tiempos altos de contacto(.*)$")
     public void iViewTheModalSaveHideMonitoringTasksParameterizationWith(String message) throws InterruptedException {
         Thread.sleep(2000);
         actor.attemptsTo(

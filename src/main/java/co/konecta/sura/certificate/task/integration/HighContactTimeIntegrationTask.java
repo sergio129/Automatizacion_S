@@ -14,10 +14,17 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisi
 public class HighContactTimeIntegrationTask implements Task {
     String line;
     String management;
+    String servicio;
+    String municipio;
+    String familia;
 
-    public HighContactTimeIntegrationTask(String line, String management) {
+
+    public HighContactTimeIntegrationTask(String line, String management, String servicio, String municipio, String familia) {
         this.line = line;
         this.management = management;
+        this.servicio = servicio;
+        this.municipio = municipio;
+        this.familia = familia;
     }
 
     @Override
@@ -25,6 +32,13 @@ public class HighContactTimeIntegrationTask implements Task {
         actor.attemptsTo(
                 Click.on(INPUT_LINE_INTEGRATION),
                 Enter.theValue(line).into(INPUT_SEARCH_LINE).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Click.on(SELECCION_CAMPO_SERVICIO),
+                Enter.theValue(servicio).into(BUSCAR_SERVICIO).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Click.on(SELECCION_CAMPO_MUNICIPIO),
+                WaitUntil.the(BUSCAR_MUNICIPIO, isVisible()).forNoMoreThan(5).seconds(),
+                Enter.theValue(municipio).into(BUSCAR_MUNICIPIO).thenHit(Keys.ENTER).thenHit(Keys.SPACE),
+                Click.on(SELECCION_CAMPO_FAMILIA),
+                Enter.theValue(familia).into(BUSCAR_FAMILIA).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(BUTTON_SEARCH_INTEGRATION),
                 WaitUntil.the(BUTTON_ACTIONS_INTEGRATION, isVisible()).forNoMoreThan(500).milliseconds(),
                 Click.on(BUTTON_ACTIONS_INTEGRATION),
@@ -35,7 +49,8 @@ public class HighContactTimeIntegrationTask implements Task {
         );
 
     }
-    public static HighContactTimeIntegrationTask writeInformationHighContact(String line, String management){
-        return instrumented(HighContactTimeIntegrationTask.class,line,management);
+
+    public static HighContactTimeIntegrationTask writeInformationHighContact(String line, String management, String servicio, String municipio, String familia) {
+        return instrumented(HighContactTimeIntegrationTask.class, line, management, servicio,municipio,familia);
     }
 }

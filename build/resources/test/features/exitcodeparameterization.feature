@@ -17,7 +17,7 @@ Feature: Exit code parameterization
       | sergio.anaya | Colombia_2025* | Emergencia salud | 5486669  | Registro guardado correctamente |
 
   @TestExitCodeParameterizationEdit
-  Scenario Outline: Successful create exit code parameterization
+  Scenario Outline: Successful edit exit code parameterization
     When I entering in the application with user <user> and password <password>
     And I enter exit code parameterization
     And I select button search exit code parameterization <line>

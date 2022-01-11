@@ -11,7 +11,7 @@ public class ExitCodeParameterizationPage {
     public static final Target BUTTON_SAVE_EXIT_CODE = Target.the("This the button save exit code parameterization").located(By.id("btnSaveFormCodeSearch"));
 
     public static final Target INPUT_LINE_EXIT_CODE_HOME = Target.the("This the input line exit code  home parameterization").located(By.id("mat-select-value-1"));
-    public static final Target INPUT_SEARCH_LINE_EXIT_CODE_HOME = Target.the("This the input search line exit code home parameterization").locatedBy("/html/body/div[4]/div[2]/div/div/div/mat-option[1]/span/ngx-mat-select-search/div/input");
+    public static final Target INPUT_SEARCH_LINE_EXIT_CODE_HOME = Target.the("This the input search line exit code home parameterization").located(By.id("inputLineExitCodeSearch"));
     public static final Target BUTTON_SEARCH_EXIT_CODE_HOME = Target.the("This the button search home exit code parameterization").located(By.id("btnEditCodeSearch"));
 
 

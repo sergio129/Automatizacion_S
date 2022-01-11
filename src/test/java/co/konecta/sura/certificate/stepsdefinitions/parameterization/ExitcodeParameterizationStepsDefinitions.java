@@ -32,7 +32,7 @@ public class ExitcodeParameterizationStepsDefinitions {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("^I create, edit and delete exit code parameterization$")
+    @Given("^Creo, edito y elimino codigos de salida parametrizacion$")
     public void ICreateEditDeleteExitCodeParameterization() {
     }
 
@@ -62,9 +62,12 @@ public class ExitcodeParameterizationStepsDefinitions {
         );
     }
     @And("^I select button search exit code parameterization (.*)$")
-    public void ISelectButtonSearchExitCodeParameterization(String line){
+    public void ISelectButtonSearchExitCodeParameterization(String line) throws InterruptedException {
         actor.attemptsTo(
-                Click.on(INPUT_LINE_EXIT_CODE_HOME),
+                Click.on(INPUT_LINE_EXIT_CODE_HOME));
+        Thread.sleep(5000);
+               actor.attemptsTo(
+                       Click.on(INPUT_SEARCH_LINE_EXIT_CODE_HOME),
                 Enter.theValue(line).into(INPUT_SEARCH_LINE_EXIT_CODE_HOME).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(BUTTON_SEARCH_EXIT_CODE_HOME)
         );
