@@ -6,7 +6,7 @@ Feature: Control boards parameterization
     Given I create, edition or delete a control boards
 
 
-  @TestControlBoardsCases
+  @TestCreacionTablerodeControl
   Scenario Outline: Successful control boards cases
     When I entering in the application with user <user> and password <password>
     And I select button create control boards

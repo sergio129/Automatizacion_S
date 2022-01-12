@@ -1,13 +1,12 @@
-Feature: Dialing codes parameterization
-  As a user
-  I need to create or edition of delete dialing codes parameterization
-  //PARAMETRIZACION INDICATIVO
+Feature: Parametrizacion Indicativos de Marcacion
+  El usuario
+  Crea, edita y elimina indicativos de marcacion
 
   Background:
     Given I create or edition of delete dialing codes parameterization
 
-  @TestDialingCodesParameterizationCreate
-  Scenario Outline: Successful create dialing codes parameterization
+  @TestCreacionIndicativosdeMarcacion
+  Scenario Outline: Creacion Exitosa de indicativos de marcacion
     When I entering in the application with user <user> and password <password>
     And I enter dialing codes parameterization
     And I select button create dialing codes parameterization

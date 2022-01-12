@@ -32,7 +32,7 @@ public class RamosTask implements Task {
     }
 
     public static RamosTask whthBouquetsTaskParameterization(String branch) {
-        return instrumented(RamosTask.class,branch);
+        return instrumented(RamosTask.class, branch);
     }
 
 }
