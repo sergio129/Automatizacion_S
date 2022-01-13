@@ -17,6 +17,21 @@ public class ListasAdministrarPage {
     public static final Target BOTON_GUARDAR_LISTAS = Target.the("boton para guardar lista administrar").located(By.id("btnCreateList"));
 
 
+    public static final Target SELECCION_CAMPO_LISTAS_INICIO = Target.the("selecionamos el campo de seleccion de listas ").located(By.id("mat-select-value-1"));
+    public static final Target BUSCAR_LISTAS_INICIO = Target.the("Buscamos la lista creada").located(By.id("inputListsSearchFilterSearch"));
+    public static final Target BOTON_AGREGAR_OPCION_INICIO = Target.the("Boton para agregar nueva opcion").located(By.id("btnAddListOptions"));
+    public static final Target NOMBRE_NUEVA_OPCION_INICIO = Target.the("Escribimos nombre de la nueva opcion").located(By.id("inputAddOptionName"));
+    public static final Target IDCASE_OPCION_INICIO = Target.the("Escribimos el id case").located(By.id("inputAddOptionIdEasyCase"));
+    public static final Target BOTON_GUARDAR_OPCION_INICIO = Target.the("Boton para guardar  nueva opcion").located(By.id("btnSaveAddOptionForm"));
+
+
+
+
+
+
+
+
+
 
 
 
