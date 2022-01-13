@@ -158,7 +158,7 @@ co/konecta/sura/certificate/userinterface/Parametrizacion/TablerosdeControlPage.
  co.konecta.sura.certificate.userinterface.Parametrizacion.TablerosdeControlPage
 co/konecta/sura/certificate/task/Parametrizacion/RamosTask.java
  co.konecta.sura.certificate.task.Parametrizacion.RamosTask
-co/konecta/sura/certificate/task/Parametrizacion/PrefijosTask.java
- co.konecta.sura.certificate.task.Parametrizacion.PrefijosTask
 co/konecta/sura/certificate/userinterface/Parametrizacion/PrefijosPage.java
  co.konecta.sura.certificate.userinterface.Parametrizacion.PrefijosPage
+co/konecta/sura/certificate/task/Parametrizacion/PrefijosTask.java
+ co.konecta.sura.certificate.task.Parametrizacion.PrefijosTask

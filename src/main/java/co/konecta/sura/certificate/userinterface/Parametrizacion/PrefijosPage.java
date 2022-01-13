@@ -22,6 +22,8 @@ public class PrefijosPage {
     public static final Target SELECIONAMOS_LINEA_INICIO = Target.the("Damos click en la linea encontrada al inicio").locatedBy("/html/body/div[3]/div[2]/div/div/div/mat-option[2]");
     public static final Target SELECCION_CAMPO_SERVICIO_INICIO = Target.the("Buscamos la linea al inicio").located(By.id("mat-select-value-3"));
     public static final Target BUSCAMOS_SERVICIO_INICIO = Target.the("Buscamos el servicio al inicio").located(By.id("inputServicePrefixParameterization"));
+    public static final Target SELECCIONAR_SERVICIO_INICIO = Target.the("selecionamos el servicio").locatedBy("/html/body/div[3]/div[2]/div/div/div/mat-option[2]");
+
     public static final Target SELECCION_CAMPO_PREFIJOS_INICIO = Target.the("Selecionamos el campo prefijos al inicio").located(By.id("inputPrefixesParameterization"));
 
 

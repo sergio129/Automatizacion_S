@@ -9,6 +9,7 @@ import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
@@ -16,8 +17,7 @@ import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.userinterface.HomePage.BUTTON_INITIAL_TAB;
 import static co.konecta.sura.certificate.userinterface.Inicio.HomePage.MODAL_VALIDATION;
-import static co.konecta.sura.certificate.userinterface.Parametrizacion.PrefijosPage.BOTON_CREAR_PREFIJOS;
-import static co.konecta.sura.certificate.userinterface.Parametrizacion.PrefijosPage.BOTON_GUARDAR_PREFIJOS;
+import static co.konecta.sura.certificate.userinterface.Parametrizacion.PrefijosPage.*;
 
 
 public class PrefijosStepsDefinitions {
@@ -62,6 +62,33 @@ public class PrefijosStepsDefinitions {
     @And("^Selecionamos el boton guardar prefijos$")
     public void SelecionamosBotonGuardarPrefijos() {
         actor.attemptsTo(Click.on(BOTON_GUARDAR_PREFIJOS));
+    }
+
+    @And("^Se filtra por linea(.*), Servicio(.*), prefijos(.*) y Buscamos$")
+    public void SeFiltraLineaServicioPrefijosyBuscamos(String linea, String servicio, String prefijos) throws InterruptedException {
+        actor.attemptsTo(
+                Click.on(SELECCION_CAMPO_LINEA_INICIO),
+                Enter.theValue(linea).into(BUSCAMOS_LINEA_INICIO),
+                Click.on(SELECIONAMOS_LINEA_INICIO),
+                Click.on(SELECCION_CAMPO_SERVICIO_INICIO),
+                Enter.theValue(servicio).into(BUSCAMOS_SERVICIO_INICIO),
+                Click.on(SELECCIONAR_SERVICIO_INICIO),
+                Enter.theValue(prefijos).into(SELECCION_CAMPO_PREFIJOS_INICIO),
+                Click.on(BOTON_BUSCAR_PREFIJOS)
+
+        );
+        Thread.sleep(500);
+
+    }
+    @And("^Selecionamos el boton editar prefijos$")
+    public void SelecionamosBotonEditarPrefijos(){
+        actor.attemptsTo(Click.on(BOTON_EDITAR_PREFIJOS));
+    }
+
+    @And("^Selecionamos el boton eliminar prefijos$")
+    public void SelecionamosBotonEliminarPrefijos(){
+        actor.attemptsTo(Click.on(BOTON_ELIMINAR_PREFIJOS),
+                Click.on(OPCION_SI_ELIMINAR_PREFIJOS));
     }
 
     @Then("^Se visualiza mensaje de la modal parametrizacion prefijos (.*)$")
