@@ -40,8 +40,8 @@ public class HighContactTimesIntegrationStepsDefinitions {
         );
     }
     @And("^Hacemos un filtro por (.*)y(.*)y(.*)y(.*) y buscamos(.*)$")
-    public void weMakeAFilterWeSearchAndManage(String line, String management, String servicio, String municipio, String familia){
-        actor.attemptsTo(HighContactTimeIntegrationTask.writeInformationHighContact(line,management,servicio,municipio,familia));
+    public void weMakeAFilterWeSearchAndManage(String line,String servicio, String municipio, String familia,String management ){
+        actor.attemptsTo(HighContactTimeIntegrationTask.writeInformationHighContact(line,servicio,municipio,familia,management));
 
     }
     @Then("Veo mensaje de gestion exitosa de tiempos altos de contacto(.*)$")

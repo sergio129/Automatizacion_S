@@ -10,9 +10,8 @@ import org.junit.runner.RunWith;
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/",
         snippets = SnippetType.CAMELCASE,
-        tags = {"@TestCrearListasAdministrarConOpcion"},
+        tags = {"@TestGestionTiemposAltosdeContacto"},
         monochrome = true
-
 )
 
 public class PrincipalRunner {

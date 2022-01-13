@@ -66,11 +66,11 @@ co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/RamosStepsDefinitio
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.RamosStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/SuraClimbingStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.SuraClimbingStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Integracion/HighContactTimesIntegrationStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Integracion.HighContactTimesIntegrationStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/listas/AdministrarStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.listas.AdministrarStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/TablerosdecontrolStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.TablerosdecontrolStepsDefinitions
 co/konecta/sura/certificate/runners/PrincipalRunner.java
  co.konecta.sura.certificate.runners.PrincipalRunner
-co/konecta/sura/certificate/stepsdefinitions/listas/AdministrarStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.listas.AdministrarStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Integracion/HighContactTimesIntegrationStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Integracion.HighContactTimesIntegrationStepsDefinitions

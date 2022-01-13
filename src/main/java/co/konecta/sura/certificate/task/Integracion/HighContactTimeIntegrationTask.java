@@ -19,12 +19,12 @@ public class HighContactTimeIntegrationTask implements Task {
     String familia;
 
 
-    public HighContactTimeIntegrationTask(String line, String management, String servicio, String municipio, String familia) {
+    public HighContactTimeIntegrationTask(String line, String servicio, String municipio, String familia, String management) {
         this.line = line;
-        this.management = management;
         this.servicio = servicio;
         this.municipio = municipio;
         this.familia = familia;
+        this.management = management;
     }
 
     @Override
@@ -36,7 +36,7 @@ public class HighContactTimeIntegrationTask implements Task {
                 Enter.theValue(servicio).into(BUSCAR_SERVICIO).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(SELECCION_CAMPO_MUNICIPIO),
                 WaitUntil.the(BUSCAR_MUNICIPIO, isVisible()).forNoMoreThan(5).seconds(),
-                Enter.theValue(municipio).into(BUSCAR_MUNICIPIO).thenHit(Keys.ENTER).thenHit(Keys.SPACE),
+                Enter.theValue(municipio).into(BUSCAR_MUNICIPIO).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(SELECCION_CAMPO_FAMILIA),
                 Enter.theValue(familia).into(BUSCAR_FAMILIA).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(BUTTON_SEARCH_INTEGRATION),
@@ -51,6 +51,6 @@ public class HighContactTimeIntegrationTask implements Task {
     }
 
     public static HighContactTimeIntegrationTask writeInformationHighContact(String line, String management, String servicio, String municipio, String familia) {
-        return instrumented(HighContactTimeIntegrationTask.class, line, management, servicio,municipio,familia);
+        return instrumented(HighContactTimeIntegrationTask.class, line, management, servicio, municipio, familia);
     }
 }
