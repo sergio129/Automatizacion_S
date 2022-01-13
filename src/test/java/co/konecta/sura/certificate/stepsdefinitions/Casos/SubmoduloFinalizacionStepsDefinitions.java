@@ -1,9 +1,9 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
-import co.konecta.sura.certificate.task.Casos.listenending.Ending;
-import co.konecta.sura.certificate.task.Casos.listenending.EndingModel;
-import co.konecta.sura.certificate.userinterface.Casos.listenending.EndingPage;
-import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Casos.listenending.Ending;
+import co.konecta.sura.certificate.Tareas.Casos.listenending.EndingModel;
+import co.konecta.sura.certificate.Interfaces.Casos.listenending.EndingPage;
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -15,7 +15,7 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.Inicio.HomePage.MODAL_VALIDATION;
+import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 
 public class SubmoduloFinalizacionStepsDefinitions {
 

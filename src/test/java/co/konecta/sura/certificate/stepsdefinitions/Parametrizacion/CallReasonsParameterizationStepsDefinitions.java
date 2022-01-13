@@ -1,10 +1,10 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
-import co.konecta.sura.certificate.task.Parametrizacion.CallReasonsTask.FollowupToaServiceTask;
-import co.konecta.sura.certificate.task.Parametrizacion.CallReasonsTask.GeneralInformationTask;
-import co.konecta.sura.certificate.task.Parametrizacion.CallReasonsTask.ServiceRequestTask;
-import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
-import co.konecta.sura.certificate.userinterface.Parametrizacion.CallReasonsParameterizationPage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.FollowupToaServiceTask;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.GeneralInformationTask;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.ServiceRequestTask;
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Interfaces.Parametrizacion.CallReasonsParameterizationPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -16,9 +16,9 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.HomePage.BUTTON_INITIAL_TAB;
-import static co.konecta.sura.certificate.userinterface.Inicio.HomePage.MODAL_VALIDATION;
-import static co.konecta.sura.certificate.userinterface.Inicio.HomePage.OPTION_MENU_PARAMETERIZATION;
+import static co.konecta.sura.certificate.Interfaces.HomePage.BUTTON_INITIAL_TAB;
+import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
+import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.OPTION_MENU_PARAMETERIZATION;
 
 public class CallReasonsParameterizationStepsDefinitions {
     @Managed(driver = "chrome")

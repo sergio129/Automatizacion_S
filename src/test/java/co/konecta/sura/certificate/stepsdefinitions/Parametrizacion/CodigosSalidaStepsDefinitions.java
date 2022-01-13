@@ -1,7 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
-import co.konecta.sura.certificate.task.Parametrizacion.CodigosdeSalidaTask;
-import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.CodigosdeSalidaTask;
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -16,9 +16,9 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.HomePage.BUTTON_INITIAL_TAB;
-import static co.konecta.sura.certificate.userinterface.Inicio.HomePage.MODAL_VALIDATION;
-import static co.konecta.sura.certificate.userinterface.Parametrizacion.CodigosdeSalidaPage.*;
+import static co.konecta.sura.certificate.Interfaces.HomePage.BUTTON_INITIAL_TAB;
+import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.CodigosdeSalidaPage.*;
 
 public class CodigosSalidaStepsDefinitions {
 
@@ -42,12 +42,7 @@ public class CodigosSalidaStepsDefinitions {
         actor.attemptsTo(
                 Click.on(BUTTON_INITIAL_TAB),
                 Click.on(HomePage.OPTION_MENU_PARAMETERIZATION),
-                //Click.on(HomePage.SCROLL_PARAMETERIZATION),
                 MoveMouse.to(HomePage.OPTION_EXIT_CODES_PARAMETERIZATION).andThen(actions -> actions.click()));
-
-                //Click.on(HomePage.OPTION_EXIT_CODES_PARAMETERIZATION));
-
-
     }
     @And("^Selecionamos el boton creacion codigos de salida$")
     public void ISelectButtonCreateExitCodeParameterization(){
@@ -65,7 +60,6 @@ public class CodigosSalidaStepsDefinitions {
     public void ISelectButtonSearchExitCodeParameterization(String line) throws InterruptedException {
         actor.attemptsTo(
                 Click.on(INPUT_LINE_EXIT_CODE_HOME));
-        Thread.sleep(5000);
                actor.attemptsTo(
                        Click.on(INPUT_SEARCH_LINE_EXIT_CODE_HOME),
                 Enter.theValue(line).into(INPUT_SEARCH_LINE_EXIT_CODE_HOME).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
@@ -73,8 +67,11 @@ public class CodigosSalidaStepsDefinitions {
         );
     }
     @And("^Selecionamos boton de editar codigos de salida$")
-    public void ISelectButtonEditExitCodeParameterization(){
-        actor.attemptsTo(Click.on(BUTTON_EDIT_EXIT_CODE_HOME));
+    public void ISelectButtonEditExitCodeParameterization() throws InterruptedException {
+        Thread.sleep(3000);
+        actor.attemptsTo(
+                Click.on(BUTTON_EDIT_EXIT_CODE_HOME));
+
     }
 
     @And("^Selecionamos boton de eliminar codigos de salida$")
@@ -86,7 +83,7 @@ public class CodigosSalidaStepsDefinitions {
         );
     }
 
-    @And("^Selecionamos el boton guardar$")
+    @And("^Selecionamos el boton guardar codigo de salida$")
     public void SelecionamosElBotonGuardar(){
         actor.attemptsTo(
                 Click.on(BUTTON_SAVE_EXIT_CODE)

@@ -1,7 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
-import co.konecta.sura.certificate.task.Casos.documentationcnm.DocumentationCNMTask;
-import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Casos.documentationcnm.DocumentationCNMTask;
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -14,8 +14,8 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.Casos.documentationcnm.DocumentationCNMPage.*;
-import static co.konecta.sura.certificate.userinterface.Inicio.HomePage.MODAL_VALIDATION;
+import static co.konecta.sura.certificate.Interfaces.Casos.documentationcnm.DocumentationCNMPage.*;
+import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 public class DocumentationCNMStepsDefinitions {
 
     @Managed(driver = "chrome")

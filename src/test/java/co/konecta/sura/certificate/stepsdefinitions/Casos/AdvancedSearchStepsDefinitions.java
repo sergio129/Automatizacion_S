@@ -1,8 +1,8 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
-import co.konecta.sura.certificate.task.Casos.advancedsearch.AdvancedSearchTask;
-import co.konecta.sura.certificate.userinterface.Casos.advancedsearch.AdvancedSearchPage;
-import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Casos.advancedsearch.AdvancedSearchTask;
+import co.konecta.sura.certificate.Interfaces.Casos.advancedsearch.AdvancedSearchPage;
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -16,7 +16,7 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.Casos.advancedsearch.AdvancedSearchPage.*;
+import static co.konecta.sura.certificate.Interfaces.Casos.advancedsearch.AdvancedSearchPage.*;
 
 public class AdvancedSearchStepsDefinitions {
 

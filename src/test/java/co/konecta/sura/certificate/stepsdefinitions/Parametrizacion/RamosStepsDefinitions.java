@@ -1,7 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
-import co.konecta.sura.certificate.task.Parametrizacion.RamosTask;
-import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.RamosTask;
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -13,9 +13,9 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.HomePage.BUTTON_INITIAL_TAB;
-import static co.konecta.sura.certificate.userinterface.Inicio.HomePage.*;
-import static co.konecta.sura.certificate.userinterface.Parametrizacion.RamosPage.*;
+import static co.konecta.sura.certificate.Interfaces.HomePage.BUTTON_INITIAL_TAB;
+import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.*;
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.RamosPage.*;
 
 public class RamosStepsDefinitions {
     @Managed(driver = "chrome")

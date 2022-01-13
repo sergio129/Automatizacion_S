@@ -1,9 +1,9 @@
 package co.konecta.sura.certificate.stepsdefinitions.pendientes;
 
-import co.konecta.sura.certificate.task.pendientes.LoginTask;
-import co.konecta.sura.certificate.task.pendientes.SupplierMonitoringTask;
-import co.konecta.sura.certificate.userinterface.HomePage;
-import co.konecta.sura.certificate.userinterface.pendientes.AdvancedSearchPage;
+import co.konecta.sura.certificate.Tareas.pendientes.LoginTask;
+import co.konecta.sura.certificate.Tareas.pendientes.SupplierMonitoringTask;
+import co.konecta.sura.certificate.Interfaces.HomePage;
+import co.konecta.sura.certificate.Interfaces.pendientes.AdvancedSearchPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -19,9 +19,9 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.HomePage.MODAL_VALIDATION;
-import static co.konecta.sura.certificate.userinterface.pendientes.AdvancedSearchPage.*;
-import static co.konecta.sura.certificate.userinterface.pendientes.SupplierMonitoringPage.*;
+import static co.konecta.sura.certificate.Interfaces.HomePage.MODAL_VALIDATION;
+import static co.konecta.sura.certificate.Interfaces.pendientes.AdvancedSearchPage.*;
+import static co.konecta.sura.certificate.Interfaces.pendientes.SupplierMonitoringPage.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class SupplierMonitoringStepsDefinitions {

@@ -1,9 +1,9 @@
 package co.konecta.sura.certificate.stepsdefinitions.pendientes;
 
-import co.konecta.sura.certificate.task.pendientes.AdvancedSearchTask;
-import co.konecta.sura.certificate.task.pendientes.LoginTask;
-import co.konecta.sura.certificate.userinterface.Casos.advancedsearch.AdvancedSearchPage;
-import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.pendientes.AdvancedSearchTask;
+import co.konecta.sura.certificate.Tareas.pendientes.LoginTask;
+import co.konecta.sura.certificate.Interfaces.Casos.advancedsearch.AdvancedSearchPage;
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -18,8 +18,8 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.pendientes.AdvancedSearchPage.*;
-import static co.konecta.sura.certificate.userinterface.pendientes.AdvancedSearchPage.INPUT_SEARCH_DEPARTMENT;
+import static co.konecta.sura.certificate.Interfaces.pendientes.AdvancedSearchPage.*;
+import static co.konecta.sura.certificate.Interfaces.pendientes.AdvancedSearchPage.INPUT_SEARCH_DEPARTMENT;
 
 public class AdvancedSearchStepsDefinitions {
 
@@ -43,7 +43,7 @@ public class AdvancedSearchStepsDefinitions {
     @Given("^I am entry the advanced search case$")
     public void iAmEntryTheAdvancedSearchCase() throws Exception {
             actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
-            actor.attemptsTo(Click.on(co.konecta.sura.certificate.userinterface.HomePage.OPTIONS_MENU_CASE));
+            actor.attemptsTo(Click.on(co.konecta.sura.certificate.Interfaces.HomePage.OPTIONS_MENU_CASE));
             actor.attemptsTo(Click.on(HomePage.OPTION_SEARCH_CASE));
             actor.attemptsTo(Click.on(AdvancedSearchPage.BUTTON_CLEAR_FILTERS));
             actor.attemptsTo(Click.on(AdvancedSearchPage.BUTTON_ADVANCED_SEARCH));

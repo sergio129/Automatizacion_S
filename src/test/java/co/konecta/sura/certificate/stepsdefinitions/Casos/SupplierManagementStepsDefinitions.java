@@ -1,7 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
-import co.konecta.sura.certificate.task.Casos.suppliermanagement.SupplierManagementTask;
-import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask;
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -16,8 +16,8 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.Inicio.HomePage.MODAL_VALIDATION;
-import static co.konecta.sura.certificate.userinterface.Casos.suppliermanagement.SupplierManagementPage.*;
+import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
+import static co.konecta.sura.certificate.Interfaces.Casos.suppliermanagement.SupplierManagementPage.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class SupplierManagementStepsDefinitions {

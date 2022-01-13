@@ -1,8 +1,8 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
-import co.konecta.sura.certificate.task.Parametrizacion.ListsParameterizationTask;
-import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
-import co.konecta.sura.certificate.userinterface.Parametrizacion.ListasPage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.ListsParameterizationTask;
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Interfaces.Parametrizacion.ListasPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -16,8 +16,8 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
 
-import static co.konecta.sura.certificate.userinterface.Inicio.HomePage.*;
-import static co.konecta.sura.certificate.userinterface.Parametrizacion.ListasPage.*;
+import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.*;
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.ListasPage.*;
 
 public class ListasStepsDefinitions {
 

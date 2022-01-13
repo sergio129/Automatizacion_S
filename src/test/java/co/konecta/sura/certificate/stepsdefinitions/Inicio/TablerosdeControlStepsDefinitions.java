@@ -1,7 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Inicio;
 
-import co.konecta.sura.certificate.task.Inicio.TablerosdeControlTask;
-import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Inicio.TablerosdeControlTask;
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -16,8 +16,8 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.userinterface.Inicio.HomePage.MODAL_VALIDATION;
-import static co.konecta.sura.certificate.userinterface.Inicio.ControlBoardsPage.*;
+import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
+import static co.konecta.sura.certificate.Interfaces.Inicio.ControlBoardsPage.*;
 
 public class TablerosdeControlStepsDefinitions {
 

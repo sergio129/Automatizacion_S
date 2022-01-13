@@ -1,9 +1,9 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
-import co.konecta.sura.certificate.task.Parametrizacion.NotificacionesPushTask;
-import co.konecta.sura.certificate.userinterface.Inicio.HomePage;
-import co.konecta.sura.certificate.userinterface.Parametrizacion.ListasPage;
-import co.konecta.sura.certificate.userinterface.Parametrizacion.NotificacionesPushPage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.NotificacionesPushTask;
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Interfaces.Parametrizacion.ListasPage;
+import co.konecta.sura.certificate.Interfaces.Parametrizacion.NotificacionesPushPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -18,8 +18,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 
-import static co.konecta.sura.certificate.userinterface.Inicio.HomePage.*;
-import static co.konecta.sura.certificate.userinterface.Parametrizacion.NotificacionesPushPage.*;
+import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.*;
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.NotificacionesPushPage.*;
 
 public class NotificacionesPushStepsDefinitions {
 
@@ -43,7 +43,7 @@ public class NotificacionesPushStepsDefinitions {
         actor.attemptsTo(Click.on(ListasPage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(ListasPage.BUTTON_PARAMETRIZACION));
         Thread.sleep(3000);
-        actor.attemptsTo(Click.on(co.konecta.sura.certificate.userinterface.Inicio.HomePage.SCROLL_PARAMETERIZATION));
+        actor.attemptsTo(Click.on(co.konecta.sura.certificate.Interfaces.Inicio.HomePage.SCROLL_PARAMETERIZATION));
         actor.attemptsTo(Click.on(NotificacionesPushPage.OPTION_PUSH_NOTIFICATIONS));
         Thread.sleep(3000);
 
