@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.userinterface.Integracion.HighContactTimesIntegrationPage.*;
+import static co.konecta.sura.certificate.userinterface.Integracion.TiemposAltosDeContactoPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
