@@ -36,8 +36,8 @@ public class DestinatariosAlertaTask implements Task {
                 Enter.theValue(nameAlert).into(INPUT_NAME_ALERT),
                 Click.on(INPUT_LINE_ALERT),
                 Enter.theValue(lineAlert).into(INPUT_SEARCH_LINE_ALERT),
-                Click.on(BUTTON_SELECT_ALERT_PARAMETERIZATION),
-                Hit.the(Keys.TAB).into(BUTTON_SELECT_ALERT_PARAMETERIZATION)
+                Click.on(BOTON_SELECCIONAR_LINEA_DESTINATARIO_ALERTA),
+                Hit.the(Keys.ESCAPE).into(INPUT_SEARCH_LINE_ALERT)
         );
         actor.attemptsTo(
                 Click.on(INPUT_SERVICE_ALERT),
@@ -45,7 +45,7 @@ public class DestinatariosAlertaTask implements Task {
                 Click.on(INPUT_DEPARTMENT_ALERT),
                 Enter.theValue(departmentAlert).into(INPUT_SEARCH_DEPARTMENT_ALERT),
                 Click.on(OPTION_SELECT_DEPARTMENT_PARAMETERIZATION),
-                Hit.the(Keys.TAB).into(OPTION_SELECT_DEPARTMENT_PARAMETERIZATION),
+                Hit.the(Keys.ESCAPE).into(INPUT_SEARCH_DEPARTMENT_ALERT),
                 Click.on(INPUT_MUNICIPALITY_ALERT),
                 Enter.theValue(municipalityAlert).into(INPUT_SEARCH_MUNICIPALITY_ALERT).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Enter.theValue(emailAlert).into(INPUT_EMAIL_ALERT),

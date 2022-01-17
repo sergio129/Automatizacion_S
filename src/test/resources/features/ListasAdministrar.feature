@@ -16,7 +16,7 @@ Feature: Listas Administrar
     Then Se visualiza mensaje de la modal listas administrar <modalmensaje>
     Examples:
       | usuario      | contrasena     | nombrelista         | nombreopcion | idcase    | modalmensaje                    |
-      | Sergio.anaya | Colombia_2025* | Prueba_Automatizada | Prueba       | Prueba123 | Registro guardado correctamente |
+      | Sergio.anaya | Colombia_2026* | Prueba_Automatizada | Prueba       | Prueba123 | Registro guardado correctamente |
 
   @TestCrearListasAdministrarConOpcion
   Scenario Outline: Creacion Exitosa de listas con opcion
@@ -29,4 +29,4 @@ Feature: Listas Administrar
     Then Se visualiza mensaje de la modal listas administrar <modalmensaje>
     Examples:
       | usuario      | contrasena     | nombrelista         | nombreopcion | idcase    | opcionnueva              | modalmensaje                    |
-      | Sergio.anaya | Colombia_2025* | PruebaAutomatizada5 | Prueba       | Prueba123 | nuevaPruebaAutomatizada5 | Registro guardado correctamente |
+      | Sergio.anaya | Colombia_2026* | PruebaAutomatizada7 | Prueba       | Prueba123 | nuevaPruebaAutomatizada7 | Registro guardado correctamente |

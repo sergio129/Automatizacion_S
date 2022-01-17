@@ -2,8 +2,8 @@ co/konecta/sura/certificate/utils/SaraPage.java
  co.konecta.sura.certificate.utils.SaraPage
 co/konecta/sura/certificate/Interfaces/Parametrizacion/NotificacionesPushPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.NotificacionesPushPage
-co/konecta/sura/certificate/Tareas/Parametrizacion/DestinatariosAlertaTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.DestinatariosAlertaTask
+co/konecta/sura/certificate/Tareas/Parametrizacion/CodigosdeSalidaTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.CodigosdeSalidaTask
 co/konecta/sura/certificate/Tareas/Parametrizacion/IndicativosdeMarcacionTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.IndicativosdeMarcacionTask
 co/konecta/sura/certificate/Interfaces/Casos/suraclimbing/SuraClimbingPage.java
@@ -22,16 +22,16 @@ co/konecta/sura/certificate/Interfaces/Casos/advancedsearch/AdvancedSearchPage.j
  co.konecta.sura.certificate.Interfaces.Casos.advancedsearch.AdvancedSearchPage
 co/konecta/sura/certificate/Interfaces/Casos/taskmonitoring/TaskMonitoringPage.java
  co.konecta.sura.certificate.Interfaces.Casos.taskmonitoring.TaskMonitoringPage
-co/konecta/sura/certificate/Interfaces/Inicio/HomePage.java
- co.konecta.sura.certificate.Interfaces.Inicio.HomePage
+co/konecta/sura/certificate/Interfaces/HomePage.java
+ co.konecta.sura.certificate.Interfaces.HomePage
 co/konecta/sura/certificate/Interfaces/Casos/login/LoginPage.java
  co.konecta.sura.certificate.Interfaces.Casos.login.LoginPage
 co/konecta/sura/certificate/Interfaces/pendientes/LoginPage.java
  co.konecta.sura.certificate.Interfaces.pendientes.LoginPage
 co/konecta/sura/certificate/Tareas/pendientes/SupplierMonitoringTask.java
  co.konecta.sura.certificate.Tareas.pendientes.SupplierMonitoringTask
-co/konecta/sura/certificate/Interfaces/Parametrizacion/DestinatariosAlertaPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.DestinatariosAlertaPage
+co/konecta/sura/certificate/Interfaces/Parametrizacion/CodigosdeSalidaPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.CodigosdeSalidaPage
 co/konecta/sura/certificate/Interfaces/pendientes/StateManagementPage.java
  co.konecta.sura.certificate.Interfaces.pendientes.StateManagementPage
 co/konecta/sura/certificate/Interfaces/Casos/cases/CasePage.java
@@ -44,8 +44,8 @@ co/konecta/sura/certificate/Interfaces/Casos/documentationcnm/DocumentationCNMPa
  co.konecta.sura.certificate.Interfaces.Casos.documentationcnm.DocumentationCNMPage
 co/konecta/sura/certificate/Tareas/Casos/documentationcnm/DocumentationCNMTask.java
  co.konecta.sura.certificate.Tareas.Casos.documentationcnm.DocumentationCNMTask
-co/konecta/sura/certificate/Tareas/listas/ListasAdministrarTask.java
- co.konecta.sura.certificate.Tareas.listas.ListasAdministrarTask
+co/konecta/sura/certificate/Tareas/Casos/suppliermanagement/SupplierManagementTask.java
+ co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask
 co/konecta/sura/certificate/Tareas/Parametrizacion/CallReasonsTask/ServiceRequestTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.ServiceRequestTask
 co/konecta/sura/certificate/Tareas/Casos/casetask/Case.java
@@ -62,22 +62,22 @@ co/konecta/sura/certificate/Tareas/Casos/suppliermonitoring/SupplierMonitoringTa
  co.konecta.sura.certificate.Tareas.Casos.suppliermonitoring.SupplierMonitoringTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/CaseClosurePage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.CaseClosurePage
-co/konecta/sura/certificate/Tareas/Casos/suppliermanagement/SupplierManagementTask.java
- co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask
+co/konecta/sura/certificate/Tareas/listas/ListasAdministrarTask.java
+ co.konecta.sura.certificate.Tareas.listas.ListasAdministrarTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/RamosPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.RamosPage
 co/konecta/sura/certificate/Tareas/Casos/casetask/CaseModel.java
  co.konecta.sura.certificate.Tareas.Casos.casetask.CaseModel
 co/konecta/sura/certificate/Interfaces/Casos/listenending/EndingPage.java
  co.konecta.sura.certificate.Interfaces.Casos.listenending.EndingPage
-co/konecta/sura/certificate/questions/TheModal.java
- co.konecta.sura.certificate.questions.TheModal
+co/konecta/sura/certificate/Tareas/pendientes/LoginTask.java
+ co.konecta.sura.certificate.Tareas.pendientes.LoginTask
 co/konecta/sura/certificate/Tareas/Casos/taskmonitoring/TaskMonitoring.java
  co.konecta.sura.certificate.Tareas.Casos.taskmonitoring.TaskMonitoring
 co/konecta/sura/certificate/Tareas/Parametrizacion/CaseClosureTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.CaseClosureTask
-co/konecta/sura/certificate/Interfaces/HomePage.java
- co.konecta.sura.certificate.Interfaces.HomePage
+co/konecta/sura/certificate/Interfaces/Listas/ListasAdministrarPage.java
+ co.konecta.sura.certificate.Interfaces.Listas.ListasAdministrarPage
 co/konecta/sura/certificate/Interfaces/Integracion/TiemposAltosDeContactoPage.java
  co.konecta.sura.certificate.Interfaces.Integracion.TiemposAltosDeContactoPage
 co/konecta/sura/certificate/Interfaces/pendientes/SuraClimbingPage.java
@@ -120,8 +120,8 @@ co/konecta/sura/certificate/Tareas/Parametrizacion/CallReasonsTask/FollowupToaSe
  co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.FollowupToaServiceTask
 co/konecta/sura/certificate/Tareas/pendientes/StateManagementTask.java
  co.konecta.sura.certificate.Tareas.pendientes.StateManagementTask
-co/konecta/sura/certificate/Interfaces/Listas/ListasAdministrarPage.java
- co.konecta.sura.certificate.Interfaces.Listas.ListasAdministrarPage
+co/konecta/sura/certificate/questions/TheModal.java
+ co.konecta.sura.certificate.questions.TheModal
 co/konecta/sura/certificate/Tareas/Casos/login/LoginTask.java
  co.konecta.sura.certificate.Tareas.Casos.login.LoginTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/AssignmentPage.java
@@ -156,9 +156,9 @@ co/konecta/sura/certificate/Tareas/Casos/statemanagement/StateManagementTask.jav
  co.konecta.sura.certificate.Tareas.Casos.statemanagement.StateManagementTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/PrefijosPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.PrefijosPage
-co/konecta/sura/certificate/Tareas/pendientes/LoginTask.java
- co.konecta.sura.certificate.Tareas.pendientes.LoginTask
-co/konecta/sura/certificate/Interfaces/Parametrizacion/CodigosdeSalidaPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.CodigosdeSalidaPage
-co/konecta/sura/certificate/Tareas/Parametrizacion/CodigosdeSalidaTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.CodigosdeSalidaTask
+co/konecta/sura/certificate/Interfaces/Inicio/HomePage.java
+ co.konecta.sura.certificate.Interfaces.Inicio.HomePage
+co/konecta/sura/certificate/Tareas/Parametrizacion/DestinatariosAlertaTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.DestinatariosAlertaTask
+co/konecta/sura/certificate/Interfaces/Parametrizacion/DestinatariosAlertaPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.DestinatariosAlertaPage

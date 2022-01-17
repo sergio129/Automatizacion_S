@@ -5,8 +5,8 @@ Feature: Alert recipients parameterization
   Background:
     Given I create, edition or delete a alert recipients parameterization
 
-  @TestAlertParameterization
-  Scenario Outline: Successful alert recipients parameterization
+  @TestCreacionDestinarioAlerta
+  Scenario Outline: Creacion exitosa de destinatarios de Alerta
     When I entering in the application with user <user> and password <password>
     And I entering alert recipients parameterization
     And I select button create alert recipients
@@ -15,7 +15,7 @@ Feature: Alert recipients parameterization
 
     Examples:
       | user         | password       | namealert       | linealert | servicealert       | departmentalert | municipalityalert | emailalert                    | modalmessage                    |
-      | Sergio.anaya | Colombia_2025* | Pruebas alertaa | Autos     | Abogado Preliminar | Antioquia       | Belen             | sergio.anaya@grupokonecta.com | Registro guardado correctamente |
+      | Sergio.anaya | Colombia_2026* | Pruebas alertaa | Autos     | Abogado Preliminar | Antioquia       | Belen             | sergio.anaya@grupokonecta.com | Registro guardado correctamente |
 
 
   @TestAlertParameterizationEdition
@@ -29,10 +29,10 @@ Feature: Alert recipients parameterization
 
     Examples:
       | user         | password       | namealert       | linealert         | servicealert      | departmentalert | municipalityalert | emailalert         | modalmessage                    |
-      | sergio.anaya | Colombia_2025* | Pruebas alertaa | Conductor elegido | Conductor Elegido | Boyaca          | Tunja             | pruebasa@gmail.com | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | Pruebas alertaa | Conductor elegido | Conductor Elegido | Boyaca          | Tunja             | pruebasa@gmail.com | Registro guardado correctamente |
 
 
-  @TestAlertParameterizationDelete
+  @TestEliminarDestinatarioAlerta
   Scenario Outline: Alert recipients parameterization successful delete
     When I entering in the application with user <user> and password <password>
     And I entering alert recipients parameterization
@@ -41,10 +41,10 @@ Feature: Alert recipients parameterization
 
     Examples:
       | user         | password       | namealert       | modalmessage                     |
-      | sergio.anaya | Colombia_2025* | Pruebas alertaa | Registro eliminado correctamente |
+      | sergio.anaya | Colombia_2026* | Pruebas alertaa | Registro eliminado correctamente |
 
 
-  @TesAlertRequiredFields
+  @TestValidacionDeCamposDestinatariosAlerta
   Scenario Outline:Alert recipients parameterization required fields
     When I entering in the application with user <user> and password <password>
     And I entering alert recipients parameterization
@@ -54,4 +54,4 @@ Feature: Alert recipients parameterization
 
     Examples:
       | user         | password       | modalmessage                         |
-      | sergio.anaya | Colombia_2025* | Los campos marcados son obligatorios |
+      | sergio.anaya | Colombia_2026* | Los campos marcados son obligatorios |

@@ -75,7 +75,8 @@ public class CodigosSalidaStepsDefinitions {
     }
 
     @And("^Selecionamos boton de eliminar codigos de salida$")
-    public void SelecionamosBotonEliminarCodigosSalida(){
+    public void SelecionamosBotonEliminarCodigosSalida() throws InterruptedException {
+        Thread.sleep(3000);
         actor.attemptsTo(
                 Click.on(BUTTON_DELETE_EXIT_CODE_HOME),
                 Click.on(OPTION_YES_DELETE_EXIT_CODE_HOME)

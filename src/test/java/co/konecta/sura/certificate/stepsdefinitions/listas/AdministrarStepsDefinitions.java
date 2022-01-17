@@ -1,7 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.listas;
 
-import co.konecta.sura.certificate.Tareas.listas.ListasAdministrarTask;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.listas.ListasAdministrarTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -54,18 +54,19 @@ public class AdministrarStepsDefinitions {
     }
 
 
-
     @And("^Escribimos la informacion de listas administrar Nombre de lista(.*), nombre opcion(.*), id case(.*)$")
     public void EscribimosInformacionListasAdministrar(String nombrelista, String nombreopcion, String idcase) {
-        actor.attemptsTo(ListasAdministrarTask.EscribimosInformacionListasAdministrar(nombrelista,nombreopcion,idcase));
+        actor.attemptsTo(ListasAdministrarTask.EscribimosInformacionListasAdministrar(nombrelista, nombreopcion, idcase));
 
     }
+
     @And("^Selecionamos el boton guardar listas administrar$")
     public void SelecionamosBotonGuardarListasAdministrar() throws InterruptedException {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(BOTON_GUARDAR_LISTAS));
 
     }
+
     @And("^Buscamos(.*) y creamos la opcion(.*) y (.*) lista administar$")
     public void BuscamoCreamosOpcionListaAdministar(String nombrelista, String opcionnueva, String idcase) throws InterruptedException {
         Thread.sleep(5000);
@@ -81,11 +82,18 @@ public class AdministrarStepsDefinitions {
     }
 
 
-
     @Then("^Se visualiza mensaje de la modal listas administrar (.*)$")
     public void SeVisualizaMensajeModalListasAdministrar(String message) throws InterruptedException {
         Thread.sleep(4000);
-        actor.attemptsTo(
-                Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
+       actor.attemptsTo(
+
+             Ensure.that(MODAL_VALIDATION).text().isEqualTo(message)
+
+
+
+
+        );
+
+
     }
 }

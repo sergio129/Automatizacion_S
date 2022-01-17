@@ -17,7 +17,7 @@ import org.openqa.selenium.WebDriver;
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.DestinatariosAlertaPage.*;
 
-public class DestinatarriosAlertaStepsDefinitions {
+public class DestinatariosAlertaStepsDefinitions {
 
     @Managed(driver = "chrome")
     WebDriver driver;

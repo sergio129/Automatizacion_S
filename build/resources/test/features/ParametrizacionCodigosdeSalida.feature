@@ -15,7 +15,7 @@ Feature: Codigos de Salida Parametrizacion
     Then Se visualiza mensaje de la modal parametrizacion codigos de salida <modalmessage>
     Examples:
       | usuario      | contrasena     | line             | exitcode | modalmessage                    |
-      | sergio.anaya | Colombia_2025* | Emergencia salud | 5486669  | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | Emergencia salud | 5486669  | Registro guardado correctamente |
 
   @TestEdicionCodigoSalida
   Scenario Outline: Edicion Parametrizacion Codigos de salida
@@ -28,9 +28,9 @@ Feature: Codigos de Salida Parametrizacion
     Then Se visualiza mensaje de la modal parametrizacion codigos de salida <modalmessage>
     Examples:
       | usuario      | contrasena     | line    | exitcode | modalmessage                    |
-      | sergio.anaya | Colombia_2025* | Hogares | 5486669  | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | Hogares | 5486669  | Registro guardado correctamente |
 
-  @TestEminarCodigoSalida
+  @TestEliminarCodigoSalida
   Scenario Outline: Eliminacion Parametrizacion Codigos de salida
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a parametrizacion codigos de salida
@@ -39,7 +39,7 @@ Feature: Codigos de Salida Parametrizacion
     Then Se visualiza mensaje de la modal parametrizacion codigos de salida <modalmessage>
     Examples:
       | usuario      | contrasena     | line             | modalmessage                     |  |
-      | sergio.anaya | Colombia_2025* | Emergencia salud | Registro eliminado correctamente |  |
+      | sergio.anaya | Colombia_2026* | Emergencia salud | Registro eliminado correctamente |  |
 
 
   @TestvalidaciondeCampos
@@ -51,5 +51,5 @@ Feature: Codigos de Salida Parametrizacion
     Then Se visualiza mensaje de la modal parametrizacion codigos de salida <modalmessage>
     Examples:
       | usuario      | contrasena     | modalmessage                      |
-      | sergio.anaya | Colombia_2025* | Todos los campos son obligatorios |
+      | sergio.anaya | Colombia_2026* | Todos los campos son obligatorios |
 
