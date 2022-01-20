@@ -5,8 +5,8 @@ Feature: Traffic light parameterization
   Background:
     Given I create or edition a traffic light parameterization
 
-  @TestTrafficLightParameterization
-  Scenario Outline: Successful traffic light parameterization
+  @TestCreacionParametrizacionDeSemaforos
+  Scenario Outline: Crecion Exitosa de parametrizacion de semaforos
     When I entering in the application with user <user> and password <password>
     And I entering traffic light parameterization
     And I select button create traffic light parameterization
@@ -14,12 +14,12 @@ Feature: Traffic light parameterization
     Then I view the modal save traffic light parameterization with <modalmessage>
 
     Examples:
-      | user         | password       | rolestraffic       | servicestatus | line  | service            | from1 | until1 | from2 | until2 | from3 | until3 | from4 | until4 | from5 | until5 | from6 | until6 | modalmessage                    |
-      | Sergio.anaya | Colombia_2024* | Backoffice Reporte | programado    | Autos | Abogado preliminar | 01    | 10     | 11    | 30     | 31    | 50     | 51    | 75     | 76    | 81     | 82    | 90     | Registro guardado correctamente |
+      | user         | password       | rolestraffic            | servicestatus | line  | service            | from1 | until1 | from2 | until2 | from3 | until3 | from4 | until4 | from5 | until5 | from6 | until6 | modalmessage                    |
+      | Sergio.anaya | Colombia_2026* | Backoffice de Monitoreo | programado    | Autos | Abogado preliminar | 01    | 10     | 11    | 30     | 31    | 50     | 51    | 75     | 76    | 81     | 82    | 90     | Registro guardado correctamente |
 
 
-  @TestTrafficLightParameterizationEdition
-  Scenario Outline: Traffic light parameterization successful edition
+  @TestEdicionParametrizacionDeSemaforos
+  Scenario Outline: Edicion Exitosa de parametrizacion de semaforos
     When I entering in the application with user <user> and password <password>
     And I entering traffic light parameterization
     And I type search in the traffic light parameterization with the roles <rolestraffic>
@@ -28,11 +28,11 @@ Feature: Traffic light parameterization
     Then I view the modal save traffic light parameterization with <modalmessage>
 
     Examples:
-      | user         | password       | rolestraffic       | servicestatus | line    | service      | from1 | until1 | from2 | until2 | from3 | until3 | from4 | until4 | from5 | until5 | from6 | until6 | modalmessage                    |
-      | sergio.anaya | Colombia_2024* | Backoffice Reporte | En sitio      | Hogares | Cerrajero Ho | 05    | 15     | 16    | 32     | 33    | 55     | 56    | 68     | 69    | 81     | 82    | 90     | Registro guardado correctamente |
+      | user         | password       | rolestraffic            | servicestatus | line    | service      | from1 | until1 | from2 | until2 | from3 | until3 | from4 | until4 | from5 | until5 | from6 | until6 | modalmessage                    |
+      | sergio.anaya | Colombia_2026* | Backoffice de Monitoreo | En sitio      | Hogares | Cerrajero Ho | 05    | 15     | 16    | 32     | 33    | 55     | 56    | 68     | 69    | 81     | 82    | 90     | Registro guardado correctamente |
 
 
-  @TestTrafficLightParameterizationDelete
+  @TestEliminacionParametrizacionDeSemaforos
   Scenario Outline: Control boards closure case parameterization successful delete
     When I entering in the application with user <user> and password <password>
     And I entering traffic light parameterization
@@ -41,8 +41,8 @@ Feature: Traffic light parameterization
     Then I view the modal save control boards with <modalmessage>
 
     Examples:
-      | user         | password       | rolestraffic       | modalmessage                     |
-      | sergio.anaya | Colombia_2024* | Backoffice Reporte | Registro eliminado correctamente |
+      | user         | password       | rolestraffic            | modalmessage                     |
+      | sergio.anaya | Colombia_2026* | Backoffice de Monitoreo | Registro eliminado correctamente |
 
 
   @TestTrafficLightParameterizationRequiredFields
@@ -54,4 +54,4 @@ Feature: Traffic light parameterization
 
     Examples:
       | user         | password       | modalmessage                      |
-      | Sergio.anaya | Colombia_2024* | Todos los campos son obligatorios |
+      | Sergio.anaya | Colombia_2026* | Todos los campos son obligatorios |

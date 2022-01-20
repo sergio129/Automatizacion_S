@@ -86,14 +86,14 @@ co/konecta/sura/certificate/Interfaces/pendientes/AdvancedSearchPage.java
  co.konecta.sura.certificate.Interfaces.pendientes.AdvancedSearchPage
 co/konecta/sura/certificate/Interfaces/Casos/suppliermanagement/SupplierManagementPage.java
  co.konecta.sura.certificate.Interfaces.Casos.suppliermanagement.SupplierManagementPage
-co/konecta/sura/certificate/Interfaces/Parametrizacion/SemaforosPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.SemaforosPage
+co/konecta/sura/certificate/Tareas/Parametrizacion/RamosTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.RamosTask
 co/konecta/sura/certificate/Tareas/Parametrizacion/IndicativosdeMarcacionTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.IndicativosdeMarcacionTask
 co/konecta/sura/certificate/Tareas/pendientes/SupplierManagementTask.java
  co.konecta.sura.certificate.Tareas.pendientes.SupplierManagementTask
-co/konecta/sura/certificate/Tareas/Parametrizacion/SemaforosTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.SemaforosTask
+co/konecta/sura/certificate/Interfaces/Parametrizacion/RamosPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.RamosPage
 co/konecta/sura/certificate/Interfaces/Parametrizacion/IndicativosdeMarcacionPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.IndicativosdeMarcacionPage
 co/konecta/sura/certificate/Interfaces/Parametrizacion/TiemposdeAlertaPage.java
@@ -158,7 +158,7 @@ co/konecta/sura/certificate/Interfaces/Parametrizacion/NotificacionesPushPage.ja
  co.konecta.sura.certificate.Interfaces.Parametrizacion.NotificacionesPushPage
 co/konecta/sura/certificate/Interfaces/Inicio/HomePage.java
  co.konecta.sura.certificate.Interfaces.Inicio.HomePage
-co/konecta/sura/certificate/Interfaces/Parametrizacion/RamosPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.RamosPage
-co/konecta/sura/certificate/Tareas/Parametrizacion/RamosTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.RamosTask
+co/konecta/sura/certificate/Interfaces/Parametrizacion/SemaforosPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.SemaforosPage
+co/konecta/sura/certificate/Tareas/Parametrizacion/SemaforosTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.SemaforosTask
