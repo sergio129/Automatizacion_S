@@ -45,7 +45,7 @@ Feature: Traffic light parameterization
       | sergio.anaya | Colombia_2026* | Backoffice de Monitoreo | Registro eliminado correctamente |
 
 
-  @TestTrafficLightParameterizationRequiredFields
+  @TestValidacionDeCampos
   Scenario Outline: Traffic light parameterization required fields
     When I entering in the application with user <user> and password <password>
     And I entering traffic light parameterization

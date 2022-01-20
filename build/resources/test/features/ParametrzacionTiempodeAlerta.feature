@@ -15,10 +15,10 @@ Feature: Alert time parameterization
 
     Examples:
       | user         | password       | servicealert | time | modalmessage                    |
-      | Sergio.anaya | Colombia_2025* | Plomero      | 32   | Registro guardado correctamente |
+      | Sergio.anaya | Colombia_2026* | Policia      | 32   | Registro guardado correctamente |
 
 
-  @TestAlertTimeParameterizationEdition
+  @TestEdicionTiemposDeAlerta
   Scenario Outline: Alert time parameterization successful edition
     When I entering in the application with user <user> and password <password>
     And I entering alert time parameterization
@@ -28,7 +28,7 @@ Feature: Alert time parameterization
 
     Examples:
       | user         | password       | servicealert | time | modalmessage                    |
-      | Sergio.anaya | Colombia_2025* | Cerrajero    | 25   | Registro guardado correctamente |
+      | Sergio.anaya | Colombia_2026* | Policia      | 25   | Registro guardado correctamente |
 
 
   @TestAlertTimeParameterizationDelete
@@ -40,5 +40,5 @@ Feature: Alert time parameterization
 
     Examples:
       | user         | password       | modalmessage                     |
-      | Sergio.anaya | Colombia_2025* | Registro eliminado correctamente |
+      | Sergio.anaya | Colombia_2026* | Registro eliminado correctamente |
 

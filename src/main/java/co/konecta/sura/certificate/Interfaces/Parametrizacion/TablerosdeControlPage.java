@@ -32,7 +32,7 @@ public class TablerosdeControlPage {
     public static final Target INPUT_ASSIGNED_USER_FILTER_BOARDS_PARAMETERIZATION = Target.the("This the input assigned user filter boards parameterization").located(By.id("controlPanelAssignedCtrl"));
     public static final Target INPUT_SEARCH_ASSIGNED_USER_FILTER_BOARDS_PARAMETERIZATION = Target.the("This the input search assigned user filter boards parameterization").located(By.id("inputControlPanelAssignedCtrlSearch"));
     public static final Target INPUT_CLOSURE_STATUS_FILTER_BOARDS_PARAMETERIZATION = Target.the("This the input closure status filter boards parameterization").located(By.id("stateClosingCaseCtrlFilter"));
-    public static final Target BUTTON_CREATE_CONTROL_BOARDS_PARAMETERIZATION = Target.the("This the button create control board parameterization").located(By.id("createControlPanelParameterization"));
+    public static final Target BUTTON_CREATE_CONTROL_BOARDS_PARAMETERIZATION = Target.the("Boton creacion Parametrizacion tablero de control").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav-content/div/app-list-parameterization/mat-card/mat-card-content/div[1]/button/span/mat-icon");
     public static final Target BUTTON_EDIT_CONTROL_BOARDS_PARAMETERIZATION = Target.the("This the button edit control board parameterization").located(By.id("editControlPanelParameterization"));
     public static final Target BUTTON_DELETE_CONTROL_BOARDS_PARAMETERIZATION = Target.the("This the button delete control board parameterization").located(By.id("deleteControlPanelParameterization"));
     public static final Target OPTION_YES_CONTROL_BOARDS_PARAMETERIZATION = Target.the("This the button yes control board parameterization").located(By.id(""));

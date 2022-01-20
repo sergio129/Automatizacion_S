@@ -6,7 +6,7 @@ Feature: Control boards parameterization
     Given I create, edition or delete a control boards parameterization
 
 
-  @TestControlBoardsCasesParameterization
+  @TestCreacionExitosaParametrizacionTablerosDeControl
   Scenario Outline: Successful control boards cases parameterization
     When I entering in the application with user <user> and password <password>
     And I entering control boards parameterization
@@ -16,8 +16,8 @@ Feature: Control boards parameterization
     Then I view the modal save control boards with <modalmessage>
 
     Examples:
-      | user          | password   | boardname             | fieldsshow | casestatus | statusservice | departmentrequest | service          | specialservice | modalmessage                    |
-      | yaira.acevedo | YMAe8807** | Tablero pruebas casos | fieldsshow | Pendiente  | Programado    | Antioquia         | Abogado En Sitio | Noo            | Registro guardado correctamente |
+      | user         | password       | boardname             | fieldsshow | casestatus | statusservice | departmentrequest | service          | specialservice | modalmessage                    |
+      | sergio.anaya | Colombia_2026* | Tablero pruebas casos | fieldsshow | Pendiente  | Programado    | Antioquia         | Abogado En Sitio | Noo            | Registro guardado correctamente |
 
 
   @TestControlBoardsTaskMonitoringParameterization
@@ -30,8 +30,8 @@ Feature: Control boards parameterization
     Then I view the modal save control boards with <modalmessage>
 
     Examples:
-      | user          | password   | boardname              | fieldsshow | supplier                      | monitoringtype     | assigneduser        | modalmessage                    |
-      | yaira.acevedo | YMAe8807** | Tablero pruebas tareas | fieldsshow | 24 H CAR SERVICE SAS MEDELLIN | Monitoreo en Sitio | Yaira Manuela Admin | Registro guardado correctamente |
+      | user         | password       | boardname              | fieldsshow | supplier                      | monitoringtype     | assigneduser        | modalmessage                    |
+      | sergio.anaya | Colombia_2026* | Tablero pruebas tareas | fieldsshow | 24 H CAR SERVICE SAS MEDELLIN | Monitoreo en Sitio | Yaira Manuela Admin | Registro guardado correctamente |
 
 
   @TestControlBoardsClosureCaseParameterization
@@ -44,8 +44,8 @@ Feature: Control boards parameterization
     Then I view the modal save control boards with <modalmessage>
 
     Examples:
-      | user          | password   | boardname                             | fieldsshow | service             | supplier                          | specialservice | assigneduser         | modalmessage                    |
-      | yaira.acevedo | YMAe8807** | Tablero pruebas cierre de expediente  | fieldsshow |Abogado En Sitio Arl | 1A ELEGIDOS Y SOLUCIONES SAS CALI | Noo            | Angela Prueba Prueba | Registro guardado correctamente |
+      | user         | password       | boardname                            | fieldsshow | service              | supplier                          | specialservice | assigneduser         | modalmessage                    |
+      | sergio.anaya | Colombia_2026* | Tablero pruebas cierre de expediente | fieldsshow | Abogado En Sitio Arl | 1A ELEGIDOS Y SOLUCIONES SAS CALI | Noo            | Angela Prueba Prueba | Registro guardado correctamente |
 
 
   @TestControlBoardsCasesParameterizationEdition
@@ -58,8 +58,8 @@ Feature: Control boards parameterization
     Then I view the modal save control boards with <modalmessage>
 
     Examples:
-      | user          | password   | boardname             | fieldsshow | casestatus | statusservice | departmentrequest | service          | specialservice | modalmessage                    |
-      | yaira.acevedo | YMAe8807** | Tablero pruebas casos | fieldsshow | Pendiente  | Programado    | Antioquia         | Abogado En Sitio | Noo            | Registro guardado correctamente |
+      | user         | password       | boardname             | fieldsshow | casestatus | statusservice | departmentrequest | service          | specialservice | modalmessage                    |
+      | sergio.anaya | Colombia_2026* | Tablero pruebas casos | fieldsshow | Pendiente  | Programado    | Antioquia         | Abogado En Sitio | Noo            | Registro guardado correctamente |
 
 
   @TestControlBoardsTaskMonitoringParameterizationEdition
@@ -72,8 +72,8 @@ Feature: Control boards parameterization
     Then I view the modal save control boards with <modalmessage>
 
     Examples:
-      | user          | password   | boardname              | fieldsshow | supplier                      | monitoringtype     | assigneduser        | modalmessage                    |
-      | yaira.acevedo | YMAe8807** | Tablero pruebas tareas | fieldsshow | 24 H CAR SERVICE SAS MEDELLIN | Monitoreo en Sitio | Yaira Manuela Admin | Registro guardado correctamente |
+      | user         | password       | boardname              | fieldsshow | supplier                      | monitoringtype     | assigneduser        | modalmessage                    |
+      | sergio.anaya | Colombia_2026* | Tablero pruebas tareas | fieldsshow | 24 H CAR SERVICE SAS MEDELLIN | Monitoreo en Sitio | Yaira Manuela Admin | Registro guardado correctamente |
 
 
   @TestControlBoardsClosureCaseParameterizationEdition
@@ -86,8 +86,8 @@ Feature: Control boards parameterization
     Then I view the modal save control boards with <modalmessage>
 
     Examples:
-      | user          | password   | boardname                             | fieldsshow | service             | supplier                          | specialservice | assigneduser         | modalmessage                    |
-      | yaira.acevedo | YMAe8807** | Tablero pruebas cierre de expediente  | fieldsshow |Abogado En Sitio Arl | 1A ELEGIDOS Y SOLUCIONES SAS CALI | Noo            | Angela Prueba Prueba | Registro guardado correctamente |
+      | user         | password       | boardname                            | fieldsshow | service              | supplier                          | specialservice | assigneduser         | modalmessage                    |
+      | sergio.anaya | Colombia_2026* | Tablero pruebas cierre de expediente | fieldsshow | Abogado En Sitio Arl | 1A ELEGIDOS Y SOLUCIONES SAS CALI | Noo            | Angela Prueba Prueba | Registro guardado correctamente |
 
 
   @TestControlBoardsParameterizationDelete
@@ -98,8 +98,8 @@ Feature: Control boards parameterization
     Then I view the modal save control boards with <modalmessage>
 
     Examples:
-      | user          | password   | modalmessage                   |
-      | yaira.acevedo | YMAe8807** |registro eliminado correctamente|
+      | user         | password       | modalmessage                     |
+      | sergio.anaya | Colombia_2026* | registro eliminado correctamente |
 
 
   @TestControlBoardsParameterizationRequiredFields
@@ -111,5 +111,5 @@ Feature: Control boards parameterization
     Then I view the modal save control boards parameterization with <modalmessage>
 
     Examples:
-      | user          | password   | modalmessage                     |
-      | yaira.acevedo | YMAe8807** |Todos los campos son obligatorios |
+      | user         | password       | modalmessage                      |
+      | sergio.anaya | Colombia_2026* | Todos los campos son obligatorios |
