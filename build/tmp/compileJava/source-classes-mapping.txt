@@ -16,8 +16,8 @@ co/konecta/sura/certificate/Tareas/pendientes/AdvancedSearchTask.java
  co.konecta.sura.certificate.Tareas.pendientes.AdvancedSearchTask
 co/konecta/sura/certificate/Tareas/Casos/advancedsearch/AdvancedSearchTask.java
  co.konecta.sura.certificate.Tareas.Casos.advancedsearch.AdvancedSearchTask
-co/konecta/sura/certificate/Tareas/Parametrizacion/AssignmentTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.AssignmentTask
+co/konecta/sura/certificate/Interfaces/Inicio/HomePage.java
+ co.konecta.sura.certificate.Interfaces.Inicio.HomePage
 co/konecta/sura/certificate/Interfaces/Casos/advancedsearch/AdvancedSearchPage.java
  co.konecta.sura.certificate.Interfaces.Casos.advancedsearch.AdvancedSearchPage
 co/konecta/sura/certificate/Interfaces/Casos/taskmonitoring/TaskMonitoringPage.java
@@ -124,8 +124,8 @@ co/konecta/sura/certificate/Interfaces/Parametrizacion/SemaforosPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.SemaforosPage
 co/konecta/sura/certificate/Tareas/Casos/login/LoginTask.java
  co.konecta.sura.certificate.Tareas.Casos.login.LoginTask
-co/konecta/sura/certificate/Interfaces/Parametrizacion/AssignmentPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.AssignmentPage
+co/konecta/sura/certificate/Interfaces/Parametrizacion/TiemposdeAlertaPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.TiemposdeAlertaPage
 co/konecta/sura/certificate/Tareas/pendientes/SuraClimbingTask.java
  co.konecta.sura.certificate.Tareas.pendientes.SuraClimbingTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/HideMonitoringTasksPage.java
@@ -156,9 +156,9 @@ co/konecta/sura/certificate/Tareas/Casos/statemanagement/StateManagementTask.jav
  co.konecta.sura.certificate.Tareas.Casos.statemanagement.StateManagementTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/NotificacionesPushPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.NotificacionesPushPage
-co/konecta/sura/certificate/Interfaces/Inicio/HomePage.java
- co.konecta.sura.certificate.Interfaces.Inicio.HomePage
-co/konecta/sura/certificate/Interfaces/Parametrizacion/TiemposdeAlertaPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.TiemposdeAlertaPage
-co/konecta/sura/certificate/Tareas/Parametrizacion/AlertTimeTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.AlertTimeTask
+co/konecta/sura/certificate/Tareas/Parametrizacion/AsignacionTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask
+co/konecta/sura/certificate/Interfaces/Parametrizacion/AsignacionPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.AsignacionPage
+co/konecta/sura/certificate/Tareas/Parametrizacion/TiemposDeAlertaTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.TiemposDeAlertaTask

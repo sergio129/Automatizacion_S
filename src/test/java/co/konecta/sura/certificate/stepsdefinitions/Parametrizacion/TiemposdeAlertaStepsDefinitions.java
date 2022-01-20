@@ -1,6 +1,6 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
-import co.konecta.sura.certificate.Tareas.Parametrizacion.AlertTimeTask;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.TiemposDeAlertaTask;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -60,7 +60,7 @@ public class TiemposdeAlertaStepsDefinitions {
 
     @And("^I type information in the alert time with the service (.*) and the time (.*)$")
     public void iTypeInformationInTheAlertTimeWithTheServiceAndTheTime(String serviceAlertTime, String time) {
-        actor.attemptsTo(AlertTimeTask.withInformationAlertTime(serviceAlertTime, time));
+        actor.attemptsTo(TiemposDeAlertaTask.withInformationAlertTime(serviceAlertTime, time));
     }
 
     @Then("^I view the modal save alert time parameterization with (.*)$")

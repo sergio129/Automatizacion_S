@@ -10,8 +10,8 @@ co/konecta/sura/certificate/stepsdefinitions/pendientes/StateManagementStepsDefi
  co.konecta.sura.certificate.stepsdefinitions.pendientes.StateManagementStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/pendientes/SupplierManagementStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.pendientes.SupplierManagementStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/AssignmentStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AssignmentStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/TablerosdecontrolStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.TablerosdecontrolStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/DestinatariosAlertaStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.DestinatariosAlertaStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/NotificacionesPushStepsDefinitions.java
@@ -68,9 +68,9 @@ co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/RamosStepsDefinitio
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.RamosStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/SuraClimbingStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.SuraClimbingStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/TablerosdecontrolStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.TablerosdecontrolStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/TiemposdeAlertaStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.TiemposdeAlertaStepsDefinitions
 co/konecta/sura/certificate/runners/PrincipalRunner.java
  co.konecta.sura.certificate.runners.PrincipalRunner
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/AsignacionStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions

@@ -1,4 +1,4 @@
-Feature: Strategy parameterization
+Feature: Parametrizacion Estrategias
   As a user
   I need to edition a strategy parameterization
 
@@ -15,7 +15,7 @@ Feature: Strategy parameterization
 
     Examples:
       | user         | password       | description | namecontingencysearch | modalmessage                    |
-      | sergio.anaya | Colombia_2025* | Prueba      | Contingencia          | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | Prueba      | Contingencia          | Registro guardado correctamente |
 
 
   @TestCoordinationStrategyParameterizationEdition
@@ -29,7 +29,7 @@ Feature: Strategy parameterization
 
     Examples:
       | user         | password       | namecontingencysearch                 | description                                                              | timeassignment | firstexpiration | secondexpiration | modalmessage                    |
-      | Sergio.anaya | Colombia_2025* | Estrategia de coordinación automática | {"status":"true","pqr_time":"2","one_end_date":"11","two_end_date":"20"} | 2              | 11              | 20               | Registro guardado correctamente |
+      | Sergio.anaya | Colombia_2026* | Estrategia de coordinación automática | {"status":"true","pqr_time":"2","one_end_date":"11","two_end_date":"20"} | 2              | 11              | 20               | Registro guardado correctamente |
 
 
   @TestMonitoringStrategyParameterizationEdition
@@ -43,4 +43,4 @@ Feature: Strategy parameterization
 
     Examples:
       | user         | password       | namecontingencysearch                      | description                                                                | preventivetime | timemonitoringsite | timemonitoringcompletion | modalmessage                    |
-      | sergio.anaya | Colombia_2025* | Estrategia de monitoreo servicios click si | {"status":"true","preventive_time":"2","site_time":"0","ending_time":"10"} | 2              | 0                  | 10                       | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | Estrategia de monitoreo servicios click si | {"status":"true","preventive_time":"2","site_time":"0","ending_time":"10"} | 2              | 0                  | 10                       | Registro guardado correctamente |
