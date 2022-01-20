@@ -63,12 +63,16 @@ public class ListasStepsDefinitions {
 
         );
     }
+    @And("^Selecionamos boton crear opcion parametrizacion listas$")
+    public void SelecionamosBotonParametrizacionListas(){
+        actor.attemptsTo(
+                Click.on(BUTTON_CREATE_OPTION_LISTS));
+
+    }
 
     @And("^I create new list option with option name (.*) and id easycase (.*)$")
     public void iCreateNewListOptionWithOptionNameAndIdEasycase(String optionName, String idEasyCase) throws InterruptedException {
-        Thread.sleep(5000);
-        actor.attemptsTo(
-                Click.on(BUTTON_CREATE_OPTION_LISTS));
+
         Thread.sleep(5000);
 
                actor.attemptsTo( Enter.theValue(optionName).into(INPUT_OPTION_NAME),

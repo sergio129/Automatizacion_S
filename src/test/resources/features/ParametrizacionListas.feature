@@ -8,7 +8,7 @@ Feature: Lists parameterization
 
   @TestCreacionParametrizacionLista
   Scenario Outline: Creacion Parametrizacion de lista
-    When I entering in the application with user <user> and password <password>
+    When Ingresamos a la aplicacion con usuario<user> y contraseña<password>
     And I entering lists parameterization
     And I select button create lists parameterization
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
@@ -16,8 +16,8 @@ Feature: Lists parameterization
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
-      | user         | password       | roles         | modules            | lists           | options1        | options2     | modalmessage                      |
-      | sergio.anaya | Colombia_2025* | prueba angela | Escalamientos sura | Tipo de gestión | GDA Integracion | Prueba Kevin | Registros guardados correctamente |
+      | user         | password       | roles            | modules            | lists           | options1        | options2      | modalmessage                      |
+      | sergio.anaya | Colombia_2026* | Emergencia salud | Escalamientos sura | Tipo de gestión | GDA Integracion | GDA Monitoreo | Registros guardados correctamente |
 
 
   @TestCreacionParametrizacionListaOpciones
@@ -26,15 +26,16 @@ Feature: Lists parameterization
     And I entering lists parameterization
     And I select button create lists parameterization
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
+    And Selecionamos boton crear opcion parametrizacion listas
     And I create new list option with option name <optionname> and id easycase <ideasycase>
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
-      | user         | password       | roles         | modules            | lists           | options1 | options2 | optionname    | ideasycase | modalmessage                      |
-      | sergio.anaya | Colombia_2025* | prueba angela | Escalamientos sura | Tipo de gestión | prueba   | GDI      | prueba opcion | 12134      | Registros guardados correctamente |
+      | user         | password       | roles            | modules            | lists           | options1        | options2      | optionname    | ideasycase | modalmessage                      |
+      | sergio.anaya | Colombia_2026* | Emergencia salud | Escalamientos sura | Tipo de gestión | GDA Integracion | GDA Monitoreo | prueba opcion | 12134      | Registros guardados correctamente |
 
 
-  @TestListParameterizationEdition
+  @TestEdicionParametrizacionListas
   Scenario Outline: Lists parameterization successful edition
     When I entering in the application with user <user> and password <password>
     And I entering lists parameterization
@@ -44,11 +45,11 @@ Feature: Lists parameterization
     Then I view the modal save lists parameterization with <modalmessage>
 
     Examples:
-      | user         | password       | roles         | modules            | lists              | options1  | options2 | modalmessage                      |
-      | sergio.anaya | Colombia_2025* | prueba angela | Escalamientos sura | Persona de gestión | Monitoreo | CNM      | Registros guardados correctamente |
+      | user         | password       | roles            | modules            | lists              | options1        | options2      | modalmessage                      |
+      | sergio.anaya | Colombia_2026* | Emergencia salud | Escalamientos sura | Persona de gestión | GDA Integracion | GDA Monitoreo | Registros guardados correctamente |
 
 
-  @TestControlBoardsParameterizationRequiredFields
+  @TestValidaciondeCamposParametrizacionListas
   Scenario Outline: Lists parameterization required fields
     When I entering in the application with user <user> and password <password>
     And I entering lists parameterization
@@ -56,4 +57,4 @@ Feature: Lists parameterization
     Then I view the modal save lists parameterization with <modalmessage>
     Examples:
       | user         | password       | modalmessage                    |
-      | sergio.anaya | Colombia_2024* | Todos los campos son requeridos |
+      | sergio.anaya | Colombia_2026* | Todos los campos son requeridos |

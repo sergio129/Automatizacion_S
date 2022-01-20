@@ -5,7 +5,7 @@ Feature: Parametrizacion Indicativos de Marcacion
   Background:
     Given I create or edition of delete dialing codes parameterization
 
-  @TestCreacionIndicativosdeMarcacion
+  @TestCreacionIndicativosDeMarcacion
   Scenario Outline: Creacion Exitosa de indicativos de marcacion
     When I entering in the application with user <user> and password <password>
     And I enter dialing codes parameterization
@@ -14,7 +14,7 @@ Feature: Parametrizacion Indicativos de Marcacion
     Then I view the modal save dialing codes parameterization <modalmessage>
     Examples:
       | user         | password       | department | municipality  | indicative | modalmessage                    |
-      | sergio.anaya | Colombia_2025* | Vichada    | Santa Barbara | +65        | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | Vichada    | Santa Barbara | +65        | Registro guardado correctamente |
 
   @TestDialingCodesParameterizationEdit
   Scenario Outline: Successful Edit dialing codes parameterization
@@ -26,7 +26,7 @@ Feature: Parametrizacion Indicativos de Marcacion
     Then I view the modal save dialing codes parameterization <modalmessage>
     Examples:
       | user         | password       | department | municipality  | indicative | modalmessage                    |
-      | sergio.anaya | Colombia_2025* | Vichada    | Santa Barbara | +78        | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | Vichada    | Santa Barbara | +78        | Registro guardado correctamente |
 
   @TestDialingCodesParameterizationDelete
   Scenario Outline: Successful delete dialing codes parameterization
@@ -37,7 +37,7 @@ Feature: Parametrizacion Indicativos de Marcacion
     Then I view the modal save dialing codes parameterization <modalmessage>
     Examples:
       | user         | password       | department | municipality  | modalmessage                     |  |
-      | sergio.anaya | Colombia_2025* | Vichada    | Santa Barbara | Registro eliminado correctamente |  |
+      | sergio.anaya | Colombia_2026* | Vichada    | Santa Barbara | Registro eliminado correctamente |  |
 
   @TestDialingCodesParameterizationFields
   Scenario Outline: Successful valid fields dialing codes parameterization
@@ -47,4 +47,4 @@ Feature: Parametrizacion Indicativos de Marcacion
     Then I view the modal save dialing codes parameterization <modalmessage>
     Examples:
       | user         | password       | modalmessage                         |  |  |  |
-      | sergio.anaya | Colombia_2025* | Los campos marcados son obligatorios |  |  |  |
+      | sergio.anaya | Colombia_2026* | Los campos marcados son obligatorios |  |  |  |
