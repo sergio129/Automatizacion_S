@@ -14,7 +14,7 @@ Feature: Parametrizacion Prefijos
     Then Se visualiza mensaje de la modal parametrizacion prefijos <modalmensaje>
     Examples:
       | usuario      | contrasena     | linea | servicio | prefijos | modalmensaje                    |
-      | sergio.anaya | Colombia_2025* | Hogar | Plomero  | 908      | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | Hogar | Plomero  | 908      | Registro guardado correctamente |
 
   @TestEditarPrefijos
   Scenario Outline: Edicion Exitosa de Prefijos
@@ -27,7 +27,7 @@ Feature: Parametrizacion Prefijos
     Then Se visualiza mensaje de la modal parametrizacion prefijos <modalmensaje>
     Examples:
       | usuario      | contrasena     | linea | servicio | prefijos | modalmensaje                    |
-      | sergio.anaya | Colombia_2025* | Hogar | Plomero  | 908      | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | Hogar | Plomero  | 908      | Registro guardado correctamente |
 
   @TestEliminarPrefijos
   Scenario Outline: Eliminacion Exitosa de Prefijos
@@ -38,7 +38,7 @@ Feature: Parametrizacion Prefijos
     Then Se visualiza mensaje de la modal parametrizacion prefijos <modalmensaje>
     Examples:
       | usuario      | contrasena     | linea | servicio | prefijos | modalmensaje                     |
-      | sergio.anaya | Colombia_2025* | Hogar | Plomero  | 908      | Registro eliminado correctamente |
+      | sergio.anaya | Colombia_2026* | Hogar | Plomero  | 908      | Registro eliminado correctamente |
 
   @TestValidacionDeCampos
   Scenario Outline: Validacion de Campos Parametrizacion prefijos
@@ -49,4 +49,4 @@ Feature: Parametrizacion Prefijos
     Then Se visualiza mensaje de la modal parametrizacion prefijos <modalmensaje>
     Examples:
       | usuario      | contrasena     | modalmensaje                      |
-      | sergio.anaya | Colombia_2025* | Todos los campos son obligatorios |
+      | sergio.anaya | Colombia_2026* | Todos los campos son obligatorios |

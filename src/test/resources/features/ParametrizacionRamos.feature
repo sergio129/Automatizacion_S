@@ -1,4 +1,4 @@
-Feature: Bouquets parameterization
+Feature: Parametrizacion de Ramos
 
   As a user
   I need to create bouquets parameterization

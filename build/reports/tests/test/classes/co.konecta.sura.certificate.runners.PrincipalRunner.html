@@ -87,11 +87,11 @@
 <span class="code">
 <pre>
 Failed scenarios:
-src/test/resources/features/ParametrizacionTablerosdeControl.feature:115 # Control boards parameterization required fields
+src/test/resources/features/ParametrizacionPrefijos.feature:17 # Creacion Exitosa de Prefijos
 
-2 Scenarios (1 failed, 1 passed)
-11 Steps (1 failed, 3 skipped, 7 passed)
-1m0,889s
+1 Scenarios (1 failed)
+7 Steps (1 failed, 2 skipped, 4 passed)
+0m28,479s
 
 net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1145)
@@ -111,9 +111,23 @@ net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expect
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
-	at co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.TablerosdecontrolStepsDefinitions.iEnteringControlBoardsMenu(TablerosdecontrolStepsDefinitions.java:41)
-	at ?.I entering control boards parameterization(src/test/resources/features/ParametrizacionTablerosdeControl.feature:108)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.id: globalMenu to be enabled (tried for 5 second(s) with 100 milliseconds interval)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask.performAs(PrefijosTask.java:24)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask$$EnhancerByCGLIB$$e261f5b9.CGLIB$performAs$0(&lt;generated&gt;)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask$$EnhancerByCGLIB$$e261f5b9$$FastClassByCGLIB$$ebea935.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask$$EnhancerByCGLIB$$e261f5b9.performAs(&lt;generated&gt;)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
+	at co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.PrefijosStepsDefinitions.EscribimosInformacionLineaServicioPrefijos(PrefijosStepsDefinitions.java:58)
+	at ?.Escribimos la informacion de prefijos lineaHogar, servicioPlomero, prefijos908(src/test/resources/features/ParametrizacionPrefijos.feature:12)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: /html/body/div[2]/div[4]/div/div/div/mat-option[2]/span to be enabled (tried for 5 second(s) with 100 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1142)
@@ -133,7 +147,21 @@ Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: wait
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
-	at co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.TablerosdecontrolStepsDefinitions.iEnteringControlBoardsMenu(TablerosdecontrolStepsDefinitions.java:41)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask.performAs(PrefijosTask.java:24)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask$$EnhancerByCGLIB$$e261f5b9.CGLIB$performAs$0(&lt;generated&gt;)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask$$EnhancerByCGLIB$$e261f5b9$$FastClassByCGLIB$$ebea935.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask$$EnhancerByCGLIB$$e261f5b9.performAs(&lt;generated&gt;)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
+	at co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.PrefijosStepsDefinitions.EscribimosInformacionLineaServicioPrefijos(PrefijosStepsDefinitions.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -196,15 +224,15 @@ Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: wait
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#globalMenu&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div[4]/div/div/div/mat-option[2]/span&quot;}
   (Session info: chrome=92.0.4515.131)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ANKCRM38M', ip: '172.20.5.24', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\SERGIO~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e60be4c5d573bafb80e3db977074b17b
-*** Element info: {Using=id, value=globalMenu}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\SERGIO~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 01205f539542d08de17e90ab3023194f
+*** Element info: {Using=xpath, value=/html/body/div[2]/div[4]/div/div/div/mat-option[2]/span}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -216,8 +244,8 @@ Session ID: e60be4c5d573bafb80e3db977074b17b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
 	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
@@ -225,7 +253,7 @@ Session ID: e60be4c5d573bafb80e3db977074b17b
 	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
 	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 80 more
+	... 94 more
 
 </pre>
 </span>
@@ -288,28 +316,8 @@ Session ID: e60be4c5d573bafb80e3db977074b17b
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: Lists parameterization required fields
--------------------------------------------------------------------(lists-parameterization;lists-parameterization-required-fields)
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
-
-TEST PASSED: Lists parameterization required fields
-----------------------------------------------------------------------------
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Control boards parameterization required fields
--------------------------------------------------------------------(control-boards-parameterization;control-boards-parameterization-required-fields)
+TEST STARTED: Creacion Exitosa de Prefijos
+-------------------------------------------------------------------(parametrizacion-prefijos;creacion-exitosa-de-prefijos)
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
@@ -318,10 +326,10 @@ TEST STARTED: Control boards parameterization required fields
  (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
           \_\                                                            
 
-TEST FAILED: Control boards parameterization required fields
+TEST FAILED: Creacion Exitosa de Prefijos
 --------------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Usuario clicks on This the input inicial tab
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected enabled element was not enabledBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'ANKCRM38M', ip: '172.20.5.24', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_301'Driver info: driver.version: unknown
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Usuario clicks on Damos click en la linea encontrada
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected enabled element was not enabled
 </pre>
 </span>
 </div>
@@ -333,7 +341,7 @@ TEST FAILED: Control boards parameterization required fields
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.7</a> at 20/01/2022 11:37:08 AM</p>
+<a href="http://www.gradle.org">Gradle 6.7</a> at 20/01/2022 02:01:05 PM</p>
 </div>
 </div>
 </body>

@@ -35,7 +35,7 @@ Feature: Lists parameterization
       | sergio.anaya | Colombia_2026* | Emergencia salud | Escalamientos sura | Tipo de gestión | GDA Integracion | GDA Monitoreo | prueba opcion | 12134      | Registros guardados correctamente |
 
 
-  @TestListParameterizationEdition
+  @TestEdicionParametrizacionListas
   Scenario Outline: Lists parameterization successful edition
     When I entering in the application with user <user> and password <password>
     And I entering lists parameterization
@@ -49,7 +49,7 @@ Feature: Lists parameterization
       | sergio.anaya | Colombia_2026* | Emergencia salud | Escalamientos sura | Persona de gestión | GDA Integracion | GDA Monitoreo | Registros guardados correctamente |
 
 
-  @TestControlBoardsParameterizationRequiredFields
+  @TestValidaciondeCamposParametrizacionListas
   Scenario Outline: Lists parameterization required fields
     When I entering in the application with user <user> and password <password>
     And I entering lists parameterization
