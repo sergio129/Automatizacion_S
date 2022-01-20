@@ -64,8 +64,8 @@ co/konecta/sura/certificate/Interfaces/Parametrizacion/CaseClosurePage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.CaseClosurePage
 co/konecta/sura/certificate/Tareas/listas/ListasAdministrarTask.java
  co.konecta.sura.certificate.Tareas.listas.ListasAdministrarTask
-co/konecta/sura/certificate/Interfaces/Parametrizacion/RamosPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.RamosPage
+co/konecta/sura/certificate/Interfaces/Parametrizacion/PrefijosPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.PrefijosPage
 co/konecta/sura/certificate/Tareas/Casos/casetask/CaseModel.java
  co.konecta.sura.certificate.Tareas.Casos.casetask.CaseModel
 co/konecta/sura/certificate/Interfaces/Casos/listenending/EndingPage.java
@@ -98,8 +98,8 @@ co/konecta/sura/certificate/Interfaces/Parametrizacion/IndicativosdeMarcacionPag
  co.konecta.sura.certificate.Interfaces.Parametrizacion.IndicativosdeMarcacionPage
 co/konecta/sura/certificate/Interfaces/Parametrizacion/TiemposdeAlertaPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.TiemposdeAlertaPage
-co/konecta/sura/certificate/Tareas/Parametrizacion/RamosTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.RamosTask
+co/konecta/sura/certificate/Tareas/Parametrizacion/PrefijosTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask
 co/konecta/sura/certificate/Interfaces/Casos/statemanagement/StateManagementPage.java
  co.konecta.sura.certificate.Interfaces.Casos.statemanagement.StateManagementPage
 co/konecta/sura/certificate/Tareas/Casos/listenending/EndingModel.java
@@ -158,7 +158,7 @@ co/konecta/sura/certificate/Interfaces/Parametrizacion/NotificacionesPushPage.ja
  co.konecta.sura.certificate.Interfaces.Parametrizacion.NotificacionesPushPage
 co/konecta/sura/certificate/Interfaces/Inicio/HomePage.java
  co.konecta.sura.certificate.Interfaces.Inicio.HomePage
-co/konecta/sura/certificate/Tareas/Parametrizacion/PrefijosTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask
-co/konecta/sura/certificate/Interfaces/Parametrizacion/PrefijosPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.PrefijosPage
+co/konecta/sura/certificate/Interfaces/Parametrizacion/RamosPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.RamosPage
+co/konecta/sura/certificate/Tareas/Parametrizacion/RamosTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.RamosTask

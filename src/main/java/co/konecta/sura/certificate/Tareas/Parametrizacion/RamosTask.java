@@ -23,6 +23,7 @@ public class RamosTask implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(INPUT_LINE_BOUQUETS),
+
                 Click.on(INPUT_SEARCH_LINE_BOUQUETS));
         actor.attemptsTo(
                 Enter.theValue(branch).into(WHITE_BRANCH_BOUQUETS).thenHit(Keys.ENTER),

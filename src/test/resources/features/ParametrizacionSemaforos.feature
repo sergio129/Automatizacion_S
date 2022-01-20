@@ -5,7 +5,7 @@ Feature: Traffic light parameterization
   Background:
     Given I create or edition a traffic light parameterization
 
-  @TestTrafficLightParameterization
+  @TestCreacionParametrizacionDeSemaforos
   Scenario Outline: Successful traffic light parameterization
     When I entering in the application with user <user> and password <password>
     And I entering traffic light parameterization
