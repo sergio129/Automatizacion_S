@@ -17,7 +17,7 @@ public class HomePage extends PageObject {
     public static final Target OPTION_CONTROL_BOARDS_PARAMETERIZATION = Target.the("This the button control boards parameterization").located(By.id("moControlPanelParameterization"));
     public static final Target OPTION_ALERT_PARAMETERIZATION = Target.the("This the button alert parameterization").located(By.id("moAlertRecipients"));
     public static final Target OPTION_CASE_CLOSURE_PARAMETERIZATION = Target.the("This the button case closure parameterization").located(By.id("moCloseCasesParameterization"));
-    public static final Target OPTION_STRATEGY_PARAMETERIZATION = Target.the("This the button strategy parameterization").located(By.id("moStrategy"));
+    public static final Target OPTION_STRATEGY_PARAMETERIZATION = Target.the("This the button strategy parameterization").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]/div[1]/app-sidebar/mat-nav-list/mat-list-item[6]/div/mat-nav-list/mat-list-item[15]/div/a");
     public static final Target OPTION_ASSIGNMENT_PARAMETERIZATION = Target.the("This the button assignment parameterization").located(By.id("moWizzardParameterization"));
     public static final Target OPTION_ALERT_TIME_PARAMETERIZATION = Target.the("This the button alert time parameterization").located(By.id("moAlertTimes"));
     public static final Target OPTION_HIDE_MONITORING_TASKS_PARAMETERIZATION = Target.the("This the button hide monitoring tasks parameterization").located(By.id("moHideMonitoringTask"));

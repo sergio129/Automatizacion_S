@@ -5,7 +5,7 @@ Feature: Assignment parameterization
   Background:
     Given I create, edition or delete a assignment parameterization
 
-  @TestAssignmentParameterization
+  @TestCreacionParametrizacionAsignacion
   Scenario Outline: Successful assignment parameterization
     When I entering in the application with user <user> and password <password>
     And I entering assignment parameterization
@@ -15,7 +15,7 @@ Feature: Assignment parameterization
 
     Examples:
       | user         | password       | roleassignment | userassignment    | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
-      | sergio.anaya | Colombia_2024* | Admin Backlog  | Sergio Luis Anaya | Autos          | Grua              | Antioquia            | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | Admin Backlog  | Sergio Luis Anaya | Autos          | Grua              | Antioquia            | Registro guardado correctamente |
 
 
   @TestAssignmentParameterizationEdition
@@ -28,7 +28,7 @@ Feature: Assignment parameterization
 
     Examples:
       | user         | password       | roleassignment | userassignment      | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
-      | Sergio.anaya | Colombia_2024* | Admin Backlog  | Yaira Manuela Admin | Autos          | Audiencia         | Atlantico            | Registro guardado correctamente |
+      | Sergio.anaya | Colombia_2026* | Admin Backlog  | Yaira Manuela Admin | Autos          | Audiencia         | Atlantico            | Registro guardado correctamente |
 
 
   @TestAssignmentParameterizationDelete
@@ -41,7 +41,7 @@ Feature: Assignment parameterization
 
     Examples:
       | user         | password       | userassignment    | modalmessage                     |
-      | sergio.anaya | Colombia_2024* | Sergio Luis Anaya | Registro eliminado correctamente |
+      | sergio.anaya | Colombia_2026* | Sergio Luis Anaya | Registro eliminado correctamente |
 
 
   @TestAssignmentRequiredFields
@@ -54,4 +54,4 @@ Feature: Assignment parameterization
 
     Examples:
       | user         | password       | modalmessage                      |
-      | Sergio.anaya | Colombia_2024* | Todos los campos son obligatorios |
+      | Sergio.anaya | Colombia_2026* | Todos los campos son obligatorios |

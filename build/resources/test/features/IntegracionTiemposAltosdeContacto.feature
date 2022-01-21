@@ -12,5 +12,5 @@ Feature: Tiempos altos de Contacto
     And Hacemos un filtro por <linea>y<servicio>y<municipio>y<familia> y buscamos<gestion>
     Then Veo mensaje de gestion exitosa de tiempos altos de contacto<mensajemodal>
     Examples:
-      | usuario      | contrasena     | linea | servicio         | municipio   | familia   | gestion     | mensajemodal                    |
-      | Sergio.anaya | Colombia_2025* | Autos | Abogado en sitio | Bogota D.C. | CORRIENTE | Sin novedad | Registro guardado correctamente |
+      | usuario      | contrasena     | linea   | servicio          | municipio | familia      | gestion     | mensajemodal                    |
+      | Sergio.anaya | Colombia_2026* | Renting | Paso De Corriente | Caucasia  | Carro-Taller | Sin novedad | Registro guardado correctamente |

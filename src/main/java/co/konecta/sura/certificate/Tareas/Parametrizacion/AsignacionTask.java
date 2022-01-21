@@ -36,7 +36,8 @@ public class AsignacionTask implements Task {
                 Enter.theValue(userAssignment).into(INPUT_SEARCH_USER_ASSIGNMENT).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(INPUT_LINE_ASSIGNMENT),
                 Enter.theValue(lineAssignment).into(INPUT_SEARCH_LINE_ASSIGNMENT),
-                Click.on(BUTTON_SELECT),//Se Usa para Mapear la posicion del Elemento.
+               // Ensure.that(BUTTON_SELECT).isDisplayed(),
+               Click.on(BUTTON_SELECT),//Se Usa para Mapear la posicion del Elemento.
                Hit.the(Keys.TAB).into(BUTTON_SELECT));
         actor.attemptsTo(
                 Click.on(INPUT_SERVICE_ASSIGNMENT),

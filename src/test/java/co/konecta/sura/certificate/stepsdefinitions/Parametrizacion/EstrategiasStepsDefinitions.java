@@ -1,7 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
-import co.konecta.sura.certificate.Tareas.Parametrizacion.EstrategiaTask;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.EstrategiaTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -45,9 +45,10 @@ public class EstrategiasStepsDefinitions {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
+       actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
         Thread.sleep(2000);
-        actor.attemptsTo(Click.on(HomePage.OPTION_STRATEGY_PARAMETERIZATION));
+        //MoveMouse.to(HomePage.OPTION_STRATEGY_PARAMETERIZATION).andThen(actions -> actions.click());
+       actor.attemptsTo(Click.on(HomePage.OPTION_STRATEGY_PARAMETERIZATION));
         Thread.sleep(3000);
 
     }

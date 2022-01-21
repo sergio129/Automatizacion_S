@@ -9,6 +9,7 @@ import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
@@ -36,7 +37,8 @@ public class TiemposAltosdeContactoStepsDefinitions {
         actor.attemptsTo(
                 Click.on(HomePage.BUTTON_INITIAL_TAB),
                 Click.on(HomePage.OPTION_INTEGRATION),
-                Click.on(HomePage.OPTION_HIGH_CONTACT_TIMES_INTEGRATION)
+                MoveMouse.to(HomePage.OPTION_HIGH_CONTACT_TIMES_INTEGRATION).andThen(actions -> actions.click())
+                //Click.on(HomePage.OPTION_HIGH_CONTACT_TIMES_INTEGRATION)
         );
     }
     @And("^Hacemos un filtro por (.*)y(.*)y(.*)y(.*) y buscamos(.*)$")

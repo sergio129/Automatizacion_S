@@ -31,11 +31,11 @@ tasks.withType(JavaCompile) {
 sourceCompatibility = 1.8
 
 dependencies {
-    compile 'net.serenity-bdd:serenity-core:1.9.9'
-    compile 'net.serenity-bdd:serenity-junit:1.9.9'
-    compile 'net.serenity-bdd:serenity-cucumber:1.9.5'
-    compile 'net.serenity-bdd:serenity-screenplay:1.9.9'
-    compile 'net.serenity-bdd:serenity-screenplay-webdriver:1.9.9'
+    testImplementation 'net.serenity-bdd:serenity-core:1.9.9'
+    testImplementation 'net.serenity-bdd:serenity-junit:1.9.9'
+    testImplementation 'net.serenity-bdd:serenity-cucumber:1.9.5'
+    testImplementation 'net.serenity-bdd:serenity-screenplay:1.9.9'
+    testImplementation 'net.serenity-bdd:serenity-screenplay-webdriver:1.9.9'
 
     implementation 'net.serenity-bdd:serenity-ensure:2.0.49'
 
