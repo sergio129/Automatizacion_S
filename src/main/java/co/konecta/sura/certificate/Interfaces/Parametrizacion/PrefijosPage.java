@@ -19,7 +19,7 @@ public class PrefijosPage {
 
     public static final Target SELECCION_CAMPO_LINEA_INICIO = Target.the("selecionamos el campo linea al inicio").located(By.id("selectLinePrefixParameterization"));
     public static final Target BUSCAMOS_LINEA_INICIO= Target.the("Buscamos la linea al inicio").located(By.id("inputLinePrefixParameterization"));
-    public static final Target SELECIONAMOS_LINEA_INICIO = Target.the("Damos click en la linea encontrada al inicio").locatedBy("/html/body/div[3]/div[2]/div/div/div/mat-option[2]");
+    public static final Target SELECIONAMOS_LINEA_INICIO = Target.the("Damos click en la linea encontrada al inicio").located(By.cssSelector("[class='mat-option ng-star-inserted mat-active']"));
     public static final Target SELECCION_CAMPO_SERVICIO_INICIO = Target.the("Buscamos la linea al inicio").located(By.id("selectServicePrefixParameterization"));
     public static final Target BUSCAMOS_SERVICIO_INICIO = Target.the("Buscamos el servicio al inicio").located(By.id("inputServicePrefixParameterization"));
     public static final Target SELECCIONAR_SERVICIO_INICIO = Target.the("selecionamos el servicio").locatedBy("/html/body/div[3]/div[2]/div/div/div/mat-option[2]");

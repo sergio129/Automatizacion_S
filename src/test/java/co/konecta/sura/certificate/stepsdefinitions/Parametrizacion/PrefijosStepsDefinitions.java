@@ -13,6 +13,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.Interfaces.HomePage.BUTTON_INITIAL_TAB;
@@ -71,8 +72,8 @@ public class PrefijosStepsDefinitions {
                 Enter.theValue(linea).into(BUSCAMOS_LINEA_INICIO),
                 Click.on(SELECIONAMOS_LINEA_INICIO),
                 Click.on(SELECCION_CAMPO_SERVICIO_INICIO),
-                Enter.theValue(servicio).into(BUSCAMOS_SERVICIO_INICIO),
-                Click.on(SELECCIONAR_SERVICIO_INICIO),
+                Enter.theValue(servicio).into(BUSCAMOS_SERVICIO_INICIO).thenHit(Keys.ENTER),
+                //Click.on(SELECCIONAR_SERVICIO_INICIO),
                 Enter.theValue(prefijos).into(SELECCION_CAMPO_PREFIJOS_INICIO),
                 Click.on(BOTON_BUSCAR_PREFIJOS)
 

@@ -158,7 +158,9 @@ co/konecta/sura/certificate/Tareas/Integracion/TiemposAltosdeContactoTask.java
  co.konecta.sura.certificate.Tareas.Integracion.TiemposAltosdeContactoTask
 co/konecta/sura/certificate/Tareas/pendientes/LoginTask.java
  co.konecta.sura.certificate.Tareas.pendientes.LoginTask
-co/konecta/sura/certificate/Interfaces/Parametrizacion/PrefijosPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.PrefijosPage
 co/konecta/sura/certificate/Tareas/Parametrizacion/PrefijosTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask
+co/konecta/sura/certificate/Interfaces/Parametrizacion/PrefijosPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.PrefijosPage
+co/konecta/sura/certificate/Interfaces/Casos/SubModuloGestionSalud/SubModuloGestionSaludPage.java
+ co.konecta.sura.certificate.Interfaces.Casos.SubModuloGestionSalud.SubModuloGestionSaludPage

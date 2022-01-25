@@ -48,5 +48,7 @@ public class SuraClimbingTask implements Task {
         public static SuraClimbingTask withInformationSuraClimbing (String managementType, String managementPerson, String responseType, String generatesComplaint, String observations){
             return instrumented(SuraClimbingTask.class, managementType, managementPerson, responseType, generatesComplaint, observations);
         }
+
+
     }
 

@@ -14,7 +14,7 @@ Feature: Parametrizacion Prefijos
     Then Se visualiza mensaje de la modal parametrizacion prefijos <modalmensaje>
     Examples:
       | usuario      | contrasena     | linea | servicio | prefijos | modalmensaje                    |
-      | sergio.anaya | Colombia_2026* | Hogar | Plomero  | 908      | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | Autos | Grua     | 908      | Registro guardado correctamente |
 
   @TestEditarPrefijos
   Scenario Outline: Edicion Exitosa de Prefijos
@@ -27,7 +27,7 @@ Feature: Parametrizacion Prefijos
     Then Se visualiza mensaje de la modal parametrizacion prefijos <modalmensaje>
     Examples:
       | usuario      | contrasena     | linea | servicio | prefijos | modalmensaje                    |
-      | sergio.anaya | Colombia_2026* | Hogar | Plomero  | 908      | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | Autos | Grua     | 908      | Registro guardado correctamente |
 
   @TestEliminarPrefijos
   Scenario Outline: Eliminacion Exitosa de Prefijos
