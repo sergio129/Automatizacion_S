@@ -36,6 +36,7 @@ dependencies {
     testImplementation 'net.serenity-bdd:serenity-cucumber:1.9.5'
     testImplementation 'net.serenity-bdd:serenity-screenplay:1.9.9'
     testImplementation 'net.serenity-bdd:serenity-screenplay-webdriver:1.9.9'
+    testImplementation 'net.serenity-bdd:serenity-screenplay:$serenityVersion'
 
     implementation 'net.serenity-bdd:serenity-ensure:2.0.49'
 
@@ -45,6 +46,12 @@ dependencies {
     testCompile 'net.serenity-bdd:serenity-screenplay-webdriver:${serenity.version}'
     // https://mvnrepository.com/artifact/org.hamcrest/java-hamcrest
     testImplementation group: 'org.hamcrest', name: 'java-hamcrest', version: '2.0.0.0'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.22'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+
 
 }
 

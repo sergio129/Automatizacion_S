@@ -1,6 +1,8 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Casos.SubModuloGestionSalud.GestionSaludComunTask;
+import co.konecta.sura.certificate.Tareas.Casos.SubModuloGestionSalud.GestionSaludEmergenciaSi;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -9,7 +11,9 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
-import static co.konecta.sura.certificate.Interfaces.Casos.SubModuloGestionSalud.SubModuloGestionSaludPage.*;
+
+import static co.konecta.sura.certificate.Interfaces.Casos.SubModuloGestionSalud.SubModuloGestionSaludPage.BOTON_CREAR_EMERGENCIA_SALUD;
+import static co.konecta.sura.certificate.Interfaces.Casos.SubModuloGestionSalud.SubModuloGestionSaludPage.EXPANSION_MODULO_GESTION_SALUD;
 
 public class SubModuloGestionSaludStepsDefinitions {
 
@@ -34,6 +38,15 @@ public class SubModuloGestionSaludStepsDefinitions {
         );
         Thread.sleep(3000);
     }
+    @And("^Escribimos datos comunes emergencia Salud(.*),(.*),(.*),(.*)$")
+    public void EscribimosInformacionEmergenciaSalud(String CanalIngreso, String TipoDocumento, String NumeroDocumento, String TieneEmergencia){
+        actor.attemptsTo(GestionSaludComunTask.TareaComunEscribirDatosEmergenciaSalud(CanalIngreso, TipoDocumento, NumeroDocumento, TieneEmergencia));
 
+    }
+    @And("^Escribimos la informacion de Emergencia salud:Si (.*),(.*),(.*),(.*),(.*),(.*),(.*)$")
+    public void EscribimosInformacionEmergenciaSaludSi(String TipoEmergencia, String ServicioPrestado, String NombreAcompanante, String Parentesco, String Telefono, String PrestadorServicio, String Observaciones){
+        actor.attemptsTo(GestionSaludEmergenciaSi.EscribirEmergenciaSi(TipoEmergencia,ServicioPrestado,NombreAcompanante,Parentesco,Telefono,PrestadorServicio,Observaciones));
+
+    }
 
 }

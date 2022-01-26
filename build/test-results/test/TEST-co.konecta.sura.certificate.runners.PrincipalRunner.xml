@@ -3,18 +3,11 @@
   <properties/>
   <system-out><![CDATA[
 1 Scenarios (1 undefined)
-7 Steps (3 undefined, 4 passed)
-0m37,253s
+8 Steps (2 undefined, 6 passed)
+0m55,997s
 
 
 You can implement missing steps with the snippets below:
-
-@When("^Escribimos la informacion de Emergencia salud: Ingreso #(\\d+) Emergencia,Cédula de Ciudadanía,(\\d+),Si,Emergencia por enfermedad,Hola Doctor,Pruebas automa,Novio\\(a\\),(\\d+),Santa Rita,pruebas Automatizacion$")
-public void escribimosLaInformacionDeEmergenciaSaludIngresoEmergenciaCédulaDeCiudadaníaSiEmergenciaPorEnfermedadHolaDoctorPruebasAutomaNovioASantaRitaPruebasAutomatizacion(int arg1, int arg2, int arg3) throws Exception {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
 
 @When("^Selecionamos el boton guardar Emergencia salud$")
 public void selecionamosElBotonGuardarEmergenciaSalud() throws Exception {
@@ -22,8 +15,9 @@ public void selecionamosElBotonGuardarEmergenciaSalud() throws Exception {
     throw new PendingException();
 }
 
-@Then("^Then Se visualiza mensaje de la Then Se visualiza mensaje de la modal Gestion Salud Registro guardado correctamente$")
-public void thenSeVisualizaMensajeDeLaThenSeVisualizaMensajeDeLaModalGestionSaludRegistroGuardadoCorrectamente() throws Exception {
+
+@Then("^Se visualiza mensaje de la Then Se visualiza mensaje de la modal Gestion Salud Registro guardado correctamente$")
+public void seVisualizaMensajeDeLaThenSeVisualizaMensajeDeLaModalGestionSaludRegistroGuardadoCorrectamente() throws Exception {
     // Write code here that turns the phrase above into concrete actions
     throw new PendingException();
 }
@@ -85,8 +79,8 @@ public void thenSeVisualizaMensajeDeLaThenSeVisualizaMensajeDeLaModalGestionSalu
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: Successful novelty creation
--------------------------------------------------------------------(submodulo-gestion-salud;successful-novelty-creation)
+TEST STARTED: Registro Exitoso Gestion Salud
+-------------------------------------------------------------------(submodulo-gestion-salud;registro-exitoso-gestion-salud)
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
           __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
  _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
@@ -95,7 +89,7 @@ TEST STARTED: Successful novelty creation
 (_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
                                                                                 
 
-TEST PENDING: Successful novelty creation
+TEST PENDING: Registro Exitoso Gestion Salud
 ---------------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>
