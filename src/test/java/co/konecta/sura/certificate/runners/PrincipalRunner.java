@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/",
         snippets = SnippetType.CAMELCASE,
-        tags = {"@TestEmergenciaNoDificultadSi,@TestEmergenciaSi,@TestEmergenciaNoDificultaNo"},
+        tags = {"@TestEmergenciaSi,@TestEdicionEmergenciaSi,@TestEmergenciaNoDificultaNo,@TestEdicionEmergenciaNoDificultaNo,@TestEmergenciaNoDificultadSi,@TestEdicionEmergenciaNoDificultadSi"},
         monochrome = true
 )
 

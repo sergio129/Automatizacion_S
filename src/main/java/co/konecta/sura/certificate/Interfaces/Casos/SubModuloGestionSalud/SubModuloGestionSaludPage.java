@@ -26,6 +26,8 @@ public class SubModuloGestionSaludPage {
     public static final Target BUSCAR_PRESTADOR_SERVICIO = Target.the("buscamos parentesco Emergencia Salud").located(By.cssSelector("[class='mat-select-search-input mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored']"));
     public static final Target OBSERVACIONES = Target.the("Escribimos observaciones Emergencia Salud").located(By.id("observation"));
     public static final Target BOTON_GUARDAR_EMERGENCIA_SALUD = Target.the("Boton guardar Emergencia Salud").located(By.id("saveButton"));
+    public static final Target BOTON_EDITAR_EMERGENCIA_SALUD = Target.the("Boton editar Emergencia Salud").located(By.id("addEdit"));
+
     //Campos Tiene Emergencia NO
     public static final Target DIFICULTAD_ATENCION_SALUD = Target.the("Campo dificulta atencion salud Emergencia Salud").located(By.id("difficultyInHealthCare"));
     public static final Target BUSCAR_DIFICULTAD_ATENCION_SALUD = Target.the("buscamos dificulta atencion salud Emergencia Salud").located(By.cssSelector("[class='mat-select-search-input mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored']"));

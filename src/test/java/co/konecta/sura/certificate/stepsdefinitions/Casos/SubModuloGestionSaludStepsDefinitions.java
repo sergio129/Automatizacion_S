@@ -44,6 +44,15 @@ public class SubModuloGestionSaludStepsDefinitions {
         Thread.sleep(3000);
     }
 
+    @And("^Click en editar registro emergencia salud$")
+    public void ClickEditarRegistroEmergenciaSalud() throws InterruptedException {
+        actor.attemptsTo(
+                Click.on(EXPANSION_MODULO_GESTION_SALUD),
+                Click.on(BOTON_EDITAR_EMERGENCIA_SALUD)
+        );
+        Thread.sleep(3000);
+    }
+
     @And("^Escribimos datos comunes emergencia Salud(.*),(.*),(.*),(.*)$")
     public void EscribimosInformacionEmergenciaSalud(String CanalIngreso, String TipoDocumento, String NumeroDocumento, String TieneEmergencia) {
         actor.attemptsTo(GestionSaludComunTask.TareaComunEscribirDatosEmergenciaSalud(CanalIngreso, TipoDocumento, NumeroDocumento, TieneEmergencia));
