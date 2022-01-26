@@ -168,3 +168,7 @@ co/konecta/sura/certificate/Tareas/Parametrizacion/NotificacionesPushTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.NotificacionesPushTask
 co/konecta/sura/certificate/Tareas/Casos/SubModuloGestionSalud/GestionSaludEmergenciaSi.java
  co.konecta.sura.certificate.Tareas.Casos.SubModuloGestionSalud.GestionSaludEmergenciaSi
+co/konecta/sura/certificate/Tareas/Casos/SubModuloGestionSalud/GestionSaludEmegenciaNoDificultadNo.java
+ co.konecta.sura.certificate.Tareas.Casos.SubModuloGestionSalud.GestionSaludEmegenciaNoDificultadNo
+co/konecta/sura/certificate/Tareas/Casos/SubModuloGestionSalud/GestionSaludEmergenciaNoDificultadSi.java
+ co.konecta.sura.certificate.Tareas.Casos.SubModuloGestionSalud.GestionSaludEmergenciaNoDificultadSi

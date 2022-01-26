@@ -86,25 +86,9 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>
-1 Scenarios (1 undefined)
-8 Steps (2 undefined, 6 passed)
-0m55,997s
-
-
-You can implement missing steps with the snippets below:
-
-@When(&quot;^Selecionamos el boton guardar Emergencia salud$&quot;)
-public void selecionamosElBotonGuardarEmergenciaSalud() throws Exception {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-
-@Then(&quot;^Se visualiza mensaje de la Then Se visualiza mensaje de la modal Gestion Salud Registro guardado correctamente$&quot;)
-public void seVisualizaMensajeDeLaThenSeVisualizaMensajeDeLaModalGestionSaludRegistroGuardadoCorrectamente() throws Exception {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
+3 Scenarios (3 passed)
+24 Steps (24 passed)
+2m3,817s
 
 </pre>
 </span>
@@ -112,7 +96,8 @@ public void seVisualizaMensajeDeLaThenSeVisualizaMensajeDeLaModalGestionSaludReg
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+<pre>WARNING: Found tags option '@TestEmergenciaNoDificultadSi,@TestEmergenciaSi,@TestEmergenciaNoDificultaNo'. Support for '@tag1,@tag2' will be removed from the next release of Cucumber-JVM. Please use '@tag or @tag2' instead
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -171,15 +156,45 @@ public void seVisualizaMensajeDeLaThenSeVisualizaMensajeDeLaModalGestionSaludReg
 TEST STARTED: Registro Exitoso Gestion Salud
 -------------------------------------------------------------------(submodulo-gestion-salud;registro-exitoso-gestion-salud)
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
- _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
-(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
- |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
-(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
-                                                                                
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST PENDING: Registro Exitoso Gestion Salud
----------------------------------------------------------------------------------
+TEST PASSED: Registro Exitoso Gestion Salud
+----------------------------------------------------------------------------
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Registro Exitoso de Emergecnaia No sin dificultada
+-------------------------------------------------------------------(submodulo-gestion-salud;registro-exitoso-de-emergecnaia-no-sin-dificultada)
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Registro Exitoso de Emergecnaia No sin dificultada
+----------------------------------------------------------------------------
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Registro Exitoso de Emergecnaia No sin dificultada
+----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -191,7 +206,7 @@ TEST PENDING: Registro Exitoso Gestion Salud
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.7</a> at 26/01/2022 03:39:53 PM</p>
+<a href="http://www.gradle.org">Gradle 6.7</a> at 26/01/2022 04:44:20 PM</p>
 </div>
 </div>
 </body>
