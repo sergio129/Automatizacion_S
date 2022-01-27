@@ -90,4 +90,4 @@ Feature: SubModulo Gestion Salud
 
     Examples:
       | usuario      | contrasena     | NumeroCaso      | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | AtencionSalud | Atencion         | Observaciones          | mensaje                         |
-      | sergio.anaya | Colombia_2026* | 202201209999999 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | No              | si            | Vacunación Covid | pruebas Automatizacion | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | 202201170012710 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | No              | si            | Vacunación Covid | pruebas Automatizacion | Registro guardado correctamente |

@@ -72,8 +72,8 @@ co/konecta/sura/certificate/Tareas/Casos/taskmonitoring/TaskMonitoring.java
  co.konecta.sura.certificate.Tareas.Casos.taskmonitoring.TaskMonitoring
 co/konecta/sura/certificate/Tareas/Parametrizacion/CaseClosureTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.CaseClosureTask
-co/konecta/sura/certificate/Interfaces/HomePage.java
- co.konecta.sura.certificate.Interfaces.HomePage
+co/konecta/sura/certificate/Interfaces/Casos/SubModuloGestionSalud/SubModuloGestionSaludPage.java
+ co.konecta.sura.certificate.Interfaces.Casos.SubModuloGestionSalud.SubModuloGestionSaludPage
 co/konecta/sura/certificate/Interfaces/Integracion/TiemposAltosDeContactoPage.java
  co.konecta.sura.certificate.Interfaces.Integracion.TiemposAltosDeContactoPage
 co/konecta/sura/certificate/Interfaces/pendientes/SuraClimbingPage.java
@@ -170,5 +170,5 @@ co/konecta/sura/certificate/Tareas/Casos/SubModuloGestionSalud/GestionSaludComun
  co.konecta.sura.certificate.Tareas.Casos.SubModuloGestionSalud.GestionSaludComunTask
 co/konecta/sura/certificate/Tareas/Casos/SubModuloGestionSalud/GestionSaludEmergenciaSi.java
  co.konecta.sura.certificate.Tareas.Casos.SubModuloGestionSalud.GestionSaludEmergenciaSi
-co/konecta/sura/certificate/Interfaces/Casos/SubModuloGestionSalud/SubModuloGestionSaludPage.java
- co.konecta.sura.certificate.Interfaces.Casos.SubModuloGestionSalud.SubModuloGestionSaludPage
+co/konecta/sura/certificate/Interfaces/HomePage.java
+ co.konecta.sura.certificate.Interfaces.HomePage
