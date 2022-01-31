@@ -76,6 +76,19 @@ public class StateManagementStepsDefinitions {
 
     }
 
+
+    @And("^Hacemos Cambio de Estado (.*)$")
+    public void HacemosCambioDeEstado(String stateName) throws InterruptedException {
+        Thread.sleep(5000);
+        actor.attemptsTo(Click.on(BUTTON_OPEN_MODAL),
+                Click.on(BUTTON_ADD_STATUS));
+        Thread.sleep(2000);
+        actor.attemptsTo(StateManagementTask.withInformationStateManagement(stateName));
+        actor.attemptsTo(Click.on(BUTTON_SAVE_STATUS));
+        Thread.sleep(3000);
+
+    }
+
     @Then("^I view the modal save management status with (.*)$")
     public void iViewTheModalSaveManagementStatus(String messageModal) {
         actor.attemptsTo(

@@ -81,7 +81,7 @@ public class SubModuloGestionSaludStepsDefinitions {
     public void SelecionamosBotonGuardarEmergenciaSalud() {
         actor.attemptsTo(Click.on(BOTON_GUARDAR_EMERGENCIA_SALUD));
     }
-    @Then("^Se visualiza mensaje de la Then Se visualiza mensaje de la modal Gestion Salud (.*)$")
+    @Then("^Se visualiza mensaje de la modal Gestion Salud (.*)$")
     public void iViewTheModalSaveWith(String message) throws Exception {
         Thread.sleep(2000);
         actor.attemptsTo(
