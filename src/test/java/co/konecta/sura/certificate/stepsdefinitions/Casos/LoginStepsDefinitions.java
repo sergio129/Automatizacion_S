@@ -10,9 +10,11 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
+import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
+import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class LoginStepsDefinitions {
@@ -48,7 +50,14 @@ public class LoginStepsDefinitions {
                 seeThat(TheModal.isVisible(messageModal)
                 )
         );
+    }
+        @Then("^Se visualiza mensaje de la modal(.*)$")
+        public void SeVisualizaMensajeDeLaModal(String mensaje) throws Exception {
+            Thread.sleep(2000);
+            actor.attemptsTo(
+                    Ensure.that(MODAL_VALIDATION).text().isEqualTo(mensaje));
+        }
 
 
     }
-}
+
