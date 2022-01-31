@@ -18,6 +18,13 @@ public class ListarRolesPage {
     public static final Target OPCION_SI_ELIMINAR_ROL = Target.the("Opcion Si Eliminar rol").located(By.id("sweetalertConfirmButton"));
     public static final Target BUSCAR_ROL_INICIO = Target.the("Buscar rol por nombre/Habilidad inicio ").located(By.id("inputSearchListRoles"));
 
+    public static final Target CAMPO_ASIGNAR_USUARIO = Target.the("Campo asignar rol").located(By.id("selectAssignedUsersToRolListRoles"));
+    public static final Target BUSCAR_ASIGNAR_USUARIO = Target.the("buscar Asociar usuario lista rol").located(By.id("selectAssignedUsersToRolListRoles"));
+
+    public static final Target BOTON_GUARDAR_ASOCIAR_USUARIO = Target.the("Boton guardar lista rol").located(By.id("btnSaveFormAssignedUsersToRolListRoles"));
+
+
+
 
 
 
