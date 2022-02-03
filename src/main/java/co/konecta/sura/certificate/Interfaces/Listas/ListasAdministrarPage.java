@@ -15,14 +15,19 @@ public class ListasAdministrarPage {
     public static final Target ID_CASE_OPCION = Target.the("Se escribe el id case de la opcion").locatedBy("/html/body/div[4]/div[2]/div/mat-dialog-container/app-add-list/div[1]/div/ng2-smart-table/table/thead/tr[3]/td[2]/ng2-smart-table-cell/table-cell-edit-mode/div/table-cell-default-editor/div/input-editor/input");
     public static final Target CHECK_AGREGAR_OPCION = Target.the("check para agregar la opcion").locatedBy("/html/body/div[4]/div[2]/div/mat-dialog-container/app-add-list/div[1]/div/ng2-smart-table/table/thead/tr[3]/td[3]/ng2-st-actions/a[1]/i");
     public static final Target BOTON_GUARDAR_LISTAS = Target.the("boton para guardar lista administrar").located(By.id("btnCreateList"));
-
-
     public static final Target SELECCION_CAMPO_LISTAS_INICIO = Target.the("selecionamos el campo de seleccion de listas ").located(By.id("selectLists"));
     public static final Target BUSCAR_LISTAS_INICIO = Target.the("Buscamos la lista creada").located(By.id("inputListsSearchFilterSearch"));
     public static final Target BOTON_AGREGAR_OPCION_INICIO = Target.the("Boton para agregar nueva opcion").located(By.id("btnAddListOptions"));
     public static final Target NOMBRE_NUEVA_OPCION_INICIO = Target.the("Escribimos nombre de la nueva opcion").located(By.id("inputAddOptionName"));
     public static final Target IDCASE_OPCION_INICIO = Target.the("Escribimos el id case").located(By.id("inputAddOptionIdEasyCase"));
     public static final Target BOTON_GUARDAR_OPCION_INICIO = Target.the("Boton para guardar  nueva opcion").located(By.id("btnSaveAddOptionForm"));
+    public static final Target BUSCAR_OPCION_LISTAS_INICIO = Target.the("Buscamos la opcion de lista creada ").located(By.id("searchAddListOptions"));
+    public static final Target BOTON_EDITAR_OPCION_LISTA = Target.the("Boton para editar opcion de lista").located(By.id("editListOptions"));
+    public static final Target NOMBRE_OPCION_EDIT = Target.the("Se escribe el nombre de la opcion").located(By.id("nameOptionListEdit"));
+    public static final Target POSICION_OPCION_EDIT = Target.the("Se escribe el posicion de la opcion").located(By.id("positionListEdit"));
+    public static final Target EASYCASE_OPCION_EDIT = Target.the("Se escribe el easycase de la opcion").located(By.id("easyCaseIdListEdit"));
+    public static final Target BOTON_GUARDAR_OPCION_EDIT = Target.the("boton para guardar las opciones editadas de administrar listas").located(By.id("btnSaveListEdit"));
+    public static final Target BOTON_ACTIVAR_DESACTIVAR_OPCION = Target.the("boton para activar o desactivar opcion de administrar listas").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav-content/div/app-list/div/div/mat-card/mat-card-content/div[3]/mat-table/mat-row[1]/mat-cell[2]/mat-slide-toggle/label/div/div");
 
 
 

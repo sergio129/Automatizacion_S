@@ -42,8 +42,8 @@ co/konecta/sura/certificate/Interfaces/Casos/documentationcnm/DocumentationCNMPa
  co.konecta.sura.certificate.Interfaces.Casos.documentationcnm.DocumentationCNMPage
 co/konecta/sura/certificate/Tareas/Casos/documentationcnm/DocumentationCNMTask.java
  co.konecta.sura.certificate.Tareas.Casos.documentationcnm.DocumentationCNMTask
-co/konecta/sura/certificate/Tareas/listas/ListasAdministrarTask.java
- co.konecta.sura.certificate.Tareas.listas.ListasAdministrarTask
+co/konecta/sura/certificate/Tareas/Roles/ListarRolesTask.java
+ co.konecta.sura.certificate.Tareas.Roles.ListarRolesTask
 co/konecta/sura/certificate/Tareas/Parametrizacion/CallReasonsTask/ServiceRequestTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.ServiceRequestTask
 co/konecta/sura/certificate/Tareas/Casos/casetask/Case.java
@@ -120,8 +120,8 @@ co/konecta/sura/certificate/Tareas/Parametrizacion/CallReasonsTask/FollowupToaSe
  co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.FollowupToaServiceTask
 co/konecta/sura/certificate/Tareas/pendientes/StateManagementTask.java
  co.konecta.sura.certificate.Tareas.pendientes.StateManagementTask
-co/konecta/sura/certificate/Interfaces/Listas/ListasAdministrarPage.java
- co.konecta.sura.certificate.Interfaces.Listas.ListasAdministrarPage
+co/konecta/sura/certificate/Interfaces/Roles/ListarRolesPage.java
+ co.konecta.sura.certificate.Interfaces.Roles.ListarRolesPage
 co/konecta/sura/certificate/Tareas/Parametrizacion/AsignacionTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask
 co/konecta/sura/certificate/Tareas/Parametrizacion/CodigosdeSalidaTask.java
@@ -172,7 +172,9 @@ co/konecta/sura/certificate/Tareas/Casos/suppliermanagement/SupplierManagementTa
  co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask
 co/konecta/sura/certificate/questions/TheModal.java
  co.konecta.sura.certificate.questions.TheModal
-co/konecta/sura/certificate/Interfaces/Roles/ListarRolesPage.java
- co.konecta.sura.certificate.Interfaces.Roles.ListarRolesPage
-co/konecta/sura/certificate/Tareas/Roles/ListarRolesTask.java
- co.konecta.sura.certificate.Tareas.Roles.ListarRolesTask
+co/konecta/sura/certificate/Interfaces/Listas/ListasAdministrarPage.java
+ co.konecta.sura.certificate.Interfaces.Listas.ListasAdministrarPage
+co/konecta/sura/certificate/Tareas/listas/ListaAdministrarEdicionTask.java
+ co.konecta.sura.certificate.Tareas.listas.ListaAdministrarEdicionTask
+co/konecta/sura/certificate/Tareas/listas/ListasAdministrarTask.java
+ co.konecta.sura.certificate.Tareas.listas.ListasAdministrarTask

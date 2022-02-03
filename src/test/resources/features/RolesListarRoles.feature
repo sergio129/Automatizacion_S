@@ -13,8 +13,8 @@ Feature: Creacion, Edicion, Asociacion y Eliminar lista de Roles
     #And Guardamos informacion SubModulo Cierre Expediente
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
-      | usuario      | contrasena     | NombreRol              | HabilidadRol | EasyCase  | mensaje                         |
-      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion | pruebas      | Rol Front | Registro guardado correctamente |
+      | usuario      | contrasena     | NombreRol              | HabilidadRol | EasyCase      | mensaje                         |
+      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion | pruebas      | Admin Backlog | Registro guardado correctamente |
 
   @TestEdicionListaRoles
   Scenario Outline: Edicion Exitosa de Rol
@@ -41,12 +41,23 @@ Feature: Creacion, Edicion, Asociacion y Eliminar lista de Roles
       | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion2 | Registro eliminado correctamente |
 
   @TestAsociarUsuarioRol
-  Scenario Outline: Edicion Exitosa de Rol
+  Scenario Outline: Asociacion Exitosa de Usuario Rol
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a Roles Lista roles
     And Buscamos Lista Rol<BuscarRol>
     And Asociamos Usuario Lista Rol<Asignado>
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
-      | usuario      | contrasena     | BuscarRol               | Asignado          | mensaje                          |
-      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion2 | Sergio Luis Anaya | Registro eliminado correctamente |
+      | usuario      | contrasena     | BuscarRol              | Asignado          | mensaje                         |
+      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion | Sergio Luis Anaya | Registro guardado correctamente |
+
+  @TestAsociarMenuRol
+  Scenario Outline: Asociacion Exitosa de Usuario Rol
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    And Entramos a Roles Lista roles
+    And Buscamos Lista Rol<BuscarRol>
+    And Asociamos Menu Rol<AdminTareas>
+    Then Se visualiza mensaje de la modal<mensaje>
+    Examples:
+      | usuario      | contrasena     | BuscarRol              | AdminTareas   |
+      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion | Visualizacion |
