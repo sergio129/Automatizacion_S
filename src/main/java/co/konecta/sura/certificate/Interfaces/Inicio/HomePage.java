@@ -37,6 +37,8 @@ public class HomePage extends PageObject {
 
     public static final Target ROLES = Target.the("Menu Roles").located(By.id("moRoles"));
     public static final Target OPCION_LISTAR_ROLES = Target.the("Opcion listar roles").located(By.id("moRolesList"));
+    public static final Target OPCION_ASOCIAR_LISTAS = Target.the("opcion para entrar al menu de asociar listas ").located(By.id("moListRelations"));
+
 
 
 
