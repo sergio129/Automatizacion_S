@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="El usuario puede Crear asociacion de listas, Editar y Eliminar" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-04T18:14:49" hostname="ANKCRM38M" time="27.23">
+<testsuite name="El usuario puede Crear asociacion de listas, Editar y Eliminar" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-04T19:01:52" hostname="ANKCRM38M" time="22.494">
   <properties/>
-  <testcase name="Creacion Exitosa de asociacion de listas" classname="El usuario puede Crear asociacion de listas, Editar y Eliminar" time="27.23"/>
+  <testcase name="Validacio de campos Exitosa de asociacion de listas" classname="El usuario puede Crear asociacion de listas, Editar y Eliminar" time="22.494"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[feb 04, 2022 1:14:49 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[feb 04, 2022 2:01:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-extensions-file-a..., --incognito, --disable-infobars, --disable-gpu, --enable-automation, --test-type], extensions: []}, platform: ANY, version: }
-Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 7346
+Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 34131
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-feb 04, 2022 1:14:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+feb 04, 2022 2:01:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
@@ -21,7 +21,7 @@ INFORMACIÓN: Detected dialect: W3C
  (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
         /_/                                                                
 
-TEST PASSED: Creacion Exitosa de asociacion de listas
+TEST PASSED: Validacio de campos Exitosa de asociacion de listas
 ----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>

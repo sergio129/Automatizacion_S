@@ -1,7 +1,7 @@
 co/konecta/sura/certificate/stepsdefinitions/pendientes/SupplierMonitoringStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.pendientes.SupplierMonitoringStepsDefinitions
-co/konecta/sura/certificate/runners/PrincipalRunner.java
- co.konecta.sura.certificate.runners.PrincipalRunner
+co/konecta/sura/certificate/stepsdefinitions/Roles/RolesListarRolesStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Roles.RolesListarRolesStepsDefinitions
 co/konecta/sura/certificate/runners/LoginRunner.java
  co.konecta.sura.certificate.runners.LoginRunner
 co/konecta/sura/certificate/stepsdefinitions/pendientes/SupplierManagementStepsDefinitions.java
@@ -76,7 +76,7 @@ co/konecta/sura/certificate/stepsdefinitions/Casos/FullFlowCaseStepsDefinitions.
  co.konecta.sura.certificate.stepsdefinitions.Casos.FullFlowCaseStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/EstrategiasStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.EstrategiasStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Roles/RolesListarRolesStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Roles.RolesListarRolesStepsDefinitions
+co/konecta/sura/certificate/runners/PrincipalRunner.java
+ co.konecta.sura.certificate.runners.PrincipalRunner
 co/konecta/sura/certificate/stepsdefinitions/listas/ListasAsociarListaStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.listas.ListasAsociarListaStepsDefinitions
