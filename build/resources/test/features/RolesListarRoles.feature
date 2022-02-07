@@ -48,16 +48,16 @@ Feature: Creacion, Edicion, Asociacion y Eliminar lista de Roles
     And Asociamos Usuario Lista Rol<Asignado>
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
-      | usuario      | contrasena     | BuscarRol              | Asignado          | mensaje                         |
-      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion | Sergio Luis Anaya | Registro guardado correctamente |
+      | usuario      | contrasena     | BuscarRol     | Asignado          | mensaje                         |
+      | Sergio.anaya | Colombia_2026* | Admin Backlog | Sergio Luis Anaya | Registro guardado correctamente |
 
   @TestAsociarMenuRol
   Scenario Outline: Asociacion Exitosa de Usuario Rol
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a Roles Lista roles
     And Buscamos Lista Rol<BuscarRol>
-    And Asociamos Menu Rol<AdminTareas>
+    And Asociamos Menu Rol
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
-      | usuario      | contrasena     | BuscarRol              | AdminTareas   |
-      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion | Visualizacion |
+      | usuario      | contrasena     | BuscarRol              | mensaje                         |
+      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion | Registro guardado correctamente |

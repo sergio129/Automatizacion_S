@@ -1,6 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Roles;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Roles.ListaRolesAsociarMenuRolTask;
 import co.konecta.sura.certificate.Tareas.Roles.ListarRolesTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -9,7 +10,6 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Hit;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -88,37 +88,19 @@ public class RolesListarRolesStepsDefinitions {
                 Click.on(BOTON_ASOCIAR_USUARIOS_ROL),
                 Click.on(CAMPO_ASIGNAR_USUARIO),
                 Enter.theValue(Asignado).into(BUSCAR_ASIGNAR_USUARIO).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+
+
                 Click.on(BOTON_GUARDAR_ASOCIAR_USUARIO)
         );
 
     }
 
-    @And("^Asociamos Menu Rol(.*)$")
-    public void asociamosMenuRolAdminTareas(String AdminTareas) throws InterruptedException {
-        actor.attemptsTo(Click.on(BOTON_ASOCIAR_MENU_ROL));
-        Thread.sleep(5000);
-        actor.attemptsTo(
-                Click.on(PERMISOS_LISTAS),
-                //Click.on(SELECCIONAR_ADMINISTRAR_TAREAS),
-                //Hit.the(Keys.ENTER).into(SELECCIONAR_ADMINISTRAR_TAREAS),
-                Click.on(SELECCIONAR_ADMINISTRAR_TAREAS),
-                Hit.the(Keys.ESCAPE).into(SELECCIONAR_ADMINISTRAR_TAREAS),
-                Hit.the(Keys.TAB).into(PERMISOS_LISTAS),
+    @And("^Asociamos Menu Rol$")
+    public void asociamosMenuRolAdminTareas() throws InterruptedException {
+        actor.attemptsTo(ListaRolesAsociarMenuRolTask.SeleccionarListas());
 
 
-                Click.on(PERMISOS_LISTAS),
-                Click.on(SELECCIONAR_CASOS_BUSCAR),
-                //Hit.the(Keys.ESCAPE).into(SELECCIONAR_CASOS_BUSCAR),
-                Hit.the(Keys.TAB).into(PERMISOS_LISTAS),
 
-                Click.on(PERMISOS_LISTAS),
-                Click.on(SELECCIONAR_USUARIO_REGISTRADO),
-                Hit.the(Keys.ESCAPE).into(SELECCIONAR_USUARIO_REGISTRADO),
-                Hit.the(Keys.TAB).into(PERMISOS_LISTAS)
-
-        );
-        //ListasRoles.selectByVisibleText(AdminTareas);
-        Thread.sleep(10000);
 
 
     }

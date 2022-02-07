@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -9,7 +10,7 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.AsignacionPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class AsignacionTask implements Task {
 
     String roleAssignment;
@@ -17,14 +18,6 @@ public class AsignacionTask implements Task {
     String lineAssignment;
     String serviceAssignment;
     String departmentAssignment;
-
-    public AsignacionTask(String roleAssignment, String userAssignment, String lineAssignment, String serviceAssignment, String departmentAssignment) {
-        this.roleAssignment = roleAssignment;
-        this.userAssignment = userAssignment;
-        this.lineAssignment = lineAssignment;
-        this.serviceAssignment = serviceAssignment;
-        this.departmentAssignment = departmentAssignment;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

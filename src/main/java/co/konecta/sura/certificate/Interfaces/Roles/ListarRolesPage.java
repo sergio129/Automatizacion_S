@@ -22,11 +22,21 @@ public class ListarRolesPage {
     public static final Target BUSCAR_ASIGNAR_USUARIO = Target.the("buscar Asociar usuario lista rol").located(By.id("inputAssignedUsersToRolListRoles"));
 
     public static final Target BOTON_GUARDAR_ASOCIAR_USUARIO = Target.the("Boton guardar lista rol").located(By.id("btnSaveFormAssignedUsersToRolListRoles"));
-    public static final Target PERMISOS_LISTAS = Target.the("Campos Permisos Administrar Tareas").located(By.id("AssociateMenuOptionsListRoles"));
+    public static final Target PERMISOS_LISTAS_ADMINISTRAR_TAREAS = Target.the("Campos Permisos Administrar Tareas").located(By.id("AssociateMenuOptionsListRoles0"));
     public static final Target SELECCIONAR_ADMINISTRAR_TAREAS = Target.the("Selecionamos un elemento de la lista").located(By.cssSelector("[class='mat-option mat-option-multiple ng-star-inserted']"));
+    public static final Target PERMISOS_LISTAS_CAMPO_BUSCAR = Target.the("Campos Buscar Casos").located(By.id("AssociateMenuOptionsListRoles1"));
+    public static final Target SELECCIONAR_CASOS_BUSCAR = Target.the("Selecionamos elemento de lista de casos").locatedBy("/html/body/div[4]/div[4]/div/div/div/mat-option[5]/span");
 
-    public static final Target SELECCIONAR_USUARIO_REGISTRADO = Target.the("Campos Buscar Casos").located(By.cssSelector("[class='mat-option mat-option-multiple ng-star-inserted mat-selected mat-active']"));
-    public static final Target SELECCIONAR_CASOS_BUSCAR = Target.the("Selecionamos elemento de lista de casos").located(By.cssSelector("[class='mat-option mat-option-multiple ng-star-inserted mat-selected mat-active']"));
+
+    public static final Target PERMISOS_LISTAS_USUARIOS_REGISTRADOS = Target.the("Campos Permisos usuarios registrados").located(By.id("AssociateMenuOptionsListRoles2"));
+    public static final Target SELECCIONAR_USUARIOS_REGISTRADOS = Target.the("Selecionamos elemento de lista usuarios registrados").locatedBy("/html/body/div[4]/div[4]/div/div/div/mat-option/span");
+
+    public static final Target PERMISOS_LISTAS_CONTADOR_CASOS = Target.the("Campos Permisos contador de casos").located(By.id("AssociateMenuOptionsListRoles3"));
+    public static final Target SELECCIONAR_CONTADOR_CASOS = Target.the("Selecionamos elemento de lista contador de casos").locatedBy("/html/body/div[4]/div[4]/div/div/div/mat-option[1]/span");
+    public static final Target GUARDAR_ASOCIAR_MENU_ROL = Target.the("Boton guardar asociacion de casos").located(By.id("btnSaveAssociateMenuOptionsListRoles"));
+    public static final Target OPCION_SI_GUARDAR_ASOCIAR_MENU_ROL = Target.the("Boton guardar asociacion de casos").located(By.id("sweetalertConfirmButton"));
+
+
 
 
 
