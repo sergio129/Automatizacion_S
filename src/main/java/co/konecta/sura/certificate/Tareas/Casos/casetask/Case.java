@@ -1,6 +1,7 @@
 package co.konecta.sura.certificate.Tareas.Casos.casetask;
 
 import co.konecta.sura.certificate.Interfaces.Casos.cases.CasePage;
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -11,14 +12,12 @@ import org.openqa.selenium.Keys;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
-
+@AllArgsConstructor
 public class Case implements Task {
 
     private CaseModel datacase;
 
-    public Case(CaseModel datacase){
-        this.datacase = datacase;
-    }
+
     CharSequence charSequence = "v";
     @Override
     public <T extends Actor> void performAs(T actor) {

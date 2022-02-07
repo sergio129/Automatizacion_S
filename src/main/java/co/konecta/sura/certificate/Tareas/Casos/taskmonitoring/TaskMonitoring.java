@@ -2,6 +2,7 @@ package co.konecta.sura.certificate.Tareas.Casos.taskmonitoring;
 
 
 import co.konecta.sura.certificate.Interfaces.Casos.taskmonitoring.TaskMonitoringPage;
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -11,13 +12,9 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Casos.taskmonitoring.TaskMonitoringPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class TaskMonitoring implements Task {
     private TaskMonitoringModel taskMonitoringModel;
-
-    public TaskMonitoring(TaskMonitoringModel taskMonitoringModel){
-        this.taskMonitoringModel = taskMonitoringModel;
-    }
 
     public static TaskMonitoring whitData(TaskMonitoringModel taskMonitoringModel) {
         return instrumented(TaskMonitoring.class, taskMonitoringModel);

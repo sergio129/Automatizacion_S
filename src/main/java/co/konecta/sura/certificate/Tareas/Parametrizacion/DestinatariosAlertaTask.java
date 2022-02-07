@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -10,7 +11,7 @@ import org.openqa.selenium.Keys;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.DestinatariosAlertaPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-
+@AllArgsConstructor
 public class DestinatariosAlertaTask implements Task {
 
     public String nameAlert;
@@ -20,14 +21,6 @@ public class DestinatariosAlertaTask implements Task {
     public String municipalityAlert;
     public String emailAlert;
 
-    public DestinatariosAlertaTask(String nameAlert, String lineAlert, String serviceAlert, String departmentAlert, String municipalityAlert, String emailAlert) {
-        this.nameAlert = nameAlert;
-        this.lineAlert = lineAlert;
-        this.serviceAlert = serviceAlert;
-        this.departmentAlert = departmentAlert;
-        this.municipalityAlert = municipalityAlert;
-        this.emailAlert = emailAlert;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Casos.advancedsearch;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -9,7 +10,7 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Casos.advancedsearch.AdvancedSearchPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class AdvancedSearchTask implements Task {
 
     private final String numberCase;
@@ -29,26 +30,6 @@ public class AdvancedSearchTask implements Task {
     private final String specialService;
     private final String customerType;
     private final String supplier;
-
-    public AdvancedSearchTask(String numberCase, String licensePlate, String securityCode, String clickCase, String assignedTo, String department, String municipality, String line, String caseClosureStatus, String classCase, String caseStatus, String serviceStatus, String service, String typeService, String specialService, String customerType, String supplier) {
-        this.numberCase = numberCase;
-        this.licensePlate = licensePlate;
-        this.securityCode = securityCode;
-        this.clickCase = clickCase;
-        this.assignedTo = assignedTo;
-        this.department = department;
-        this.municipality = municipality;
-        this.line = line;
-        this.caseClosureStatus = caseClosureStatus;
-        this.classCase = classCase;
-        this.caseStatus = caseStatus;
-        this.serviceStatus = serviceStatus;
-        this.service = service;
-        this.typeService = typeService;
-        this.specialService = specialService;
-        this.customerType = customerType;
-        this.supplier = supplier;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

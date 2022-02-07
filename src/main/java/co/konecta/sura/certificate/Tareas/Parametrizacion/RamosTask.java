@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -8,16 +9,10 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.RamosPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class RamosTask implements Task {
 
     public String branch;
-
-    public RamosTask(String branch) {
-
-        this.branch = branch;
-    }
-
 
     @Override
     public <T extends Actor> void performAs(T actor) {

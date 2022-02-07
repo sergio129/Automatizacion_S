@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -8,7 +9,7 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.NotificacionesPushPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class NotificacionesPushTask implements Task {
     public String line;
     public String service;
@@ -18,18 +19,6 @@ public class NotificacionesPushTask implements Task {
     public String timetomoment2;
     public String appointmenttime1;
     public String appointmenttime2;
-
-    public NotificacionesPushTask(String line, String service, String servicestatus, String roles, String timetomoment1, String timetomoment2, String appointmenttime1, String appointmenttime2) {
-        this.line = line;
-        this.service = service;
-        this.servicestatus = servicestatus;
-        this.roles = roles;
-        this.timetomoment1 = timetomoment1;
-        this.timetomoment2 = timetomoment2;
-        this.appointmenttime1 = appointmenttime1;
-        this.appointmenttime2 = appointmenttime2;
-
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

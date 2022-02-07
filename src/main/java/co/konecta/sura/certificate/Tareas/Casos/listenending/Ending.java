@@ -1,6 +1,7 @@
 package co.konecta.sura.certificate.Tareas.Casos.listenending;
 
 import co.konecta.sura.certificate.Interfaces.Casos.listenending.EndingPage;
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -8,14 +9,9 @@ import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class Ending implements Task {
     private EndingModel endingModel;
-
-    public Ending(EndingModel endingModel ) {
-        this.endingModel = endingModel;
-    }
-
     public static Ending whitDataEnding (EndingModel endingMode) {
         return  instrumented(Ending.class, endingMode);
     }

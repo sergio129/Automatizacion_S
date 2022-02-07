@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Casos.suppliermonitoring;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -11,6 +12,7 @@ import static co.konecta.sura.certificate.Interfaces.Casos.suppliermonitoring.Su
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
+@AllArgsConstructor
 public class SupplierMonitoringTask implements Task {
 
     public String monitoringwith;
@@ -19,15 +21,6 @@ public class SupplierMonitoringTask implements Task {
     public String generatescomplaint;
     public String adviserobservation;
     public String supplierobservation;
-
-    public SupplierMonitoringTask(String monitoringwith, String timeofservice, String responsetomonitoring, String generatescomplaint, String adviserobservation, String supplierobservation) {
-        this.monitoringwith = monitoringwith;
-        this.timeofservice = timeofservice;
-        this.responsetomonitoring = responsetomonitoring;
-        this.generatescomplaint = generatescomplaint;
-        this.adviserobservation = adviserobservation;
-        this.supplierobservation = supplierobservation;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

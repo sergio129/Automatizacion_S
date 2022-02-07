@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -8,15 +9,10 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.CallReasonsParameterizationPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class ServiceRequestTask implements Task {
     public String name;
     public String line;
-
-    public ServiceRequestTask(String name, String line) {
-        this.name = name;
-        this.line = line;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

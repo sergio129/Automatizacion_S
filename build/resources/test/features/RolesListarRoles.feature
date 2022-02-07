@@ -59,5 +59,5 @@ Feature: Creacion, Edicion, Asociacion y Eliminar lista de Roles
     And Asociamos Menu Rol
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
-      | usuario      | contrasena     | BuscarRol              | mensaje                         |
-      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion | Registro guardado correctamente |
+      | usuario      | contrasena     | BuscarRol              | mensaje                           |
+      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion | Registros guardados correctamente |

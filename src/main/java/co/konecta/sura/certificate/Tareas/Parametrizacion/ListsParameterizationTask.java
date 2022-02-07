@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -9,6 +10,7 @@ import org.openqa.selenium.Keys;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.ListasPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+@AllArgsConstructor
 public class ListsParameterizationTask implements Task {
 
     public String rolesLists;
@@ -16,14 +18,6 @@ public class ListsParameterizationTask implements Task {
     public String lists;
     public String optionsLists1;
     public String optionsLists2;
-
-    public ListsParameterizationTask(String rolesLists, String modulesLists, String lists, String optionsLists1, String optionsLists2) {
-        this.rolesLists = rolesLists;
-        this.modulesLists = modulesLists;
-        this.lists = lists;
-        this.optionsLists1 = optionsLists1;
-        this.optionsLists2 = optionsLists2;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
@@ -40,12 +34,12 @@ public class ListsParameterizationTask implements Task {
                 Click.on(INPUT_OPTIONS_LISTS),
                 Enter.theValue(optionsLists2).into(INPUT_SEARCH_OPTIONS).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE)
 
-                );
+        );
 
     }
 
-    public static ListsParameterizationTask withInformationListParameterization (String rolesLists, String modulesLists, String lists, String optionsLists1,String optionsLists2){
-        return instrumented(ListsParameterizationTask.class, rolesLists, modulesLists,lists, optionsLists1, optionsLists2);
+    public static ListsParameterizationTask withInformationListParameterization(String rolesLists, String modulesLists, String lists, String optionsLists1, String optionsLists2) {
+        return instrumented(ListsParameterizationTask.class, rolesLists, modulesLists, lists, optionsLists1, optionsLists2);
     }
 
 }

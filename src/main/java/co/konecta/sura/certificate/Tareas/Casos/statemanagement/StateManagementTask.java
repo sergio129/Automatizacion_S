@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Casos.statemanagement;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -12,13 +13,11 @@ import static co.konecta.sura.certificate.Interfaces.Casos.statemanagement.State
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
+@AllArgsConstructor
 public class StateManagementTask implements Task {
 
     public String stateName;
 
-    public StateManagementTask(String stateName) {
-        this.stateName = stateName;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
@@ -29,7 +28,7 @@ public class StateManagementTask implements Task {
         );
     }
 
-    public static StateManagementTask withInformationStateManagement (String stateName){
-        return instrumented(StateManagementTask.class,stateName );
+    public static StateManagementTask withInformationStateManagement(String stateName) {
+        return instrumented(StateManagementTask.class, stateName);
     }
 }

@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Casos.suppliermanagement;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -10,6 +11,7 @@ import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.*;
 import static co.konecta.sura.certificate.Interfaces.Casos.suppliermanagement.SupplierManagementPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+@AllArgsConstructor
 public class SupplierManagementTask implements Task {
 
     public String supplierName;
@@ -20,17 +22,6 @@ public class SupplierManagementTask implements Task {
     public String centralPhone1;
     public String centralPhone2;
     public String observations;
-
-    public SupplierManagementTask(String supplierName, String supplierResponse, String timeMonitoringSite, String timeMonitoringDestination, String technicalCellPhone, String centralPhone1, String centralPhone2, String observations) {
-        this.supplierName = supplierName;
-        this.supplierResponse = supplierResponse;
-        this.timeMonitoringSite = timeMonitoringSite;
-        this.timeMonitoringDestination = timeMonitoringDestination;
-        this.technicalCellPhone = technicalCellPhone;
-        this.centralPhone1 = centralPhone1;
-        this.centralPhone2 = centralPhone2;
-        this.observations = observations;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
@@ -51,8 +42,8 @@ public class SupplierManagementTask implements Task {
         );
     }
 
-        public static SupplierManagementTask withInformationSupplier(String supplierName,String supplierResponse, String timeMonitoringSite, String timeMonitoringDestination, String technicalCellPhone, String centralPhone1, String centralPhone2, String observations){
-            return instrumented(SupplierManagementTask.class, supplierName,supplierResponse,timeMonitoringSite,timeMonitoringDestination,technicalCellPhone,centralPhone1,centralPhone2,observations);
-        }
+    public static SupplierManagementTask withInformationSupplier(String supplierName, String supplierResponse, String timeMonitoringSite, String timeMonitoringDestination, String technicalCellPhone, String centralPhone1, String centralPhone2, String observations) {
+        return instrumented(SupplierManagementTask.class, supplierName, supplierResponse, timeMonitoringSite, timeMonitoringDestination, technicalCellPhone, centralPhone1, centralPhone2, observations);
+    }
 
 }

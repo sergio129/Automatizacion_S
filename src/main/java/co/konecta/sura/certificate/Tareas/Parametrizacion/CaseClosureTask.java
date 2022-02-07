@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -10,18 +11,12 @@ import org.openqa.selenium.Keys;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.CaseClosurePage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+@AllArgsConstructor
 public class CaseClosureTask implements Task {
 
     public String lineClosure;
     public String serviceClosure;
     public String fieldClosure;
-
-    public CaseClosureTask(String lineClosure, String serviceClosure, String fieldClosure) {
-        this.lineClosure = lineClosure;
-        this.serviceClosure = serviceClosure;
-        this.fieldClosure = fieldClosure;
-    }
-
 
     @Override
     public <T extends Actor> void performAs(T actor) {

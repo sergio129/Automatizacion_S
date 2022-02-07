@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -8,17 +9,11 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.PrefijosPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class PrefijosTask implements Task {
     String linea;
     String servicio;
     String prefijos;
-
-    public PrefijosTask(String linea, String servicio, String prefijos) {
-        this.linea = linea;
-        this.servicio = servicio;
-        this.prefijos = prefijos;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -9,7 +10,7 @@ import org.openqa.selenium.Keys;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.SemaforosPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-
+@AllArgsConstructor
 public class SemaforosTask implements Task {
 
     String roleTrafficLight;
@@ -29,24 +30,6 @@ public class SemaforosTask implements Task {
     String from6TrafficLight;
     String until6TrafficLight;
 
-    public SemaforosTask(String roleTrafficLight, String serviceStatusTraffic, String lineTrafficLight, String serviceTrafficLight, String from1TrafficLight, String until1TrafficLight, String from2TrafficLight, String until2TrafficLight, String from3TrafficLight, String until3TrafficLight, String from4TrafficLight, String until4TrafficLight, String from5TrafficLight, String until5TrafficLight, String from6TrafficLight, String until6TrafficLight) {
-        this.roleTrafficLight = roleTrafficLight;
-        this.serviceStatusTraffic = serviceStatusTraffic;
-        this.lineTrafficLight = lineTrafficLight;
-        this.serviceTrafficLight = serviceTrafficLight;
-        this.from1TrafficLight = from1TrafficLight;
-        this.until1TrafficLight = until1TrafficLight;
-        this.from2TrafficLight = from2TrafficLight;
-        this.until2TrafficLight = until2TrafficLight;
-        this.from3TrafficLight = from3TrafficLight;
-        this.until3TrafficLight = until3TrafficLight;
-        this.from4TrafficLight = from4TrafficLight;
-        this.until4TrafficLight = until4TrafficLight;
-        this.from5TrafficLight = from5TrafficLight;
-        this.until5TrafficLight = until5TrafficLight;
-        this.from6TrafficLight = from6TrafficLight;
-        this.until6TrafficLight = until6TrafficLight;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

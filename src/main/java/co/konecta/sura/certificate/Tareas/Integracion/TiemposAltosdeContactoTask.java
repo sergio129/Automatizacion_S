@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Integracion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -11,21 +12,13 @@ import static co.konecta.sura.certificate.Interfaces.Integracion.TiemposAltosDeC
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
+@AllArgsConstructor
 public class TiemposAltosdeContactoTask implements Task {
     String line;
     String management;
     String servicio;
     String municipio;
     String familia;
-
-
-    public TiemposAltosdeContactoTask(String line, String servicio, String municipio, String familia, String management) {
-        this.line = line;
-        this.servicio = servicio;
-        this.municipio = municipio;
-        this.familia = familia;
-        this.management = management;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

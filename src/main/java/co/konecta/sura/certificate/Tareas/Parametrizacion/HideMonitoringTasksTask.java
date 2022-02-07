@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -8,18 +9,12 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.HideMonitoringTasksPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class HideMonitoringTasksTask implements Task {
 
     String lineTask;
     String serviceTask;
     String taskType;
-
-    public HideMonitoringTasksTask(String lineTask, String serviceTask, String taskType) {
-        this.lineTask = lineTask;
-        this.serviceTask = serviceTask;
-        this.taskType = taskType;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

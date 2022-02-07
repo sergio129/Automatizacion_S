@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -8,17 +9,11 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.IndicativosdeMarcacionPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class IndicativosdeMarcacionTask implements Task {
     String department;
     String municipality;
     String indicative;
-
-    public IndicativosdeMarcacionTask(String department, String municipality, String indicative) {
-        this.department = department;
-        this.municipality = municipality;
-        this.indicative = indicative;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

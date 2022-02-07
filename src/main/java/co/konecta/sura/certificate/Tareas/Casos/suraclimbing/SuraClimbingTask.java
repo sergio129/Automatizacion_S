@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Casos.suraclimbing;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -10,7 +11,7 @@ import org.openqa.selenium.Keys;
 import static co.konecta.sura.certificate.Interfaces.Casos.suraclimbing.SuraClimbingPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
-
+@AllArgsConstructor
 public class SuraClimbingTask implements Task {
 
     public String managementType;
@@ -18,15 +19,6 @@ public class SuraClimbingTask implements Task {
     public String responseType;
     public String generatesComplaint;
     public String observations;
-
-    public SuraClimbingTask(String managementType, String managementPerson, String responseType, String generatesComplaint, String observations) {
-        this.managementType = managementType;
-        this.managementPerson = managementPerson;
-        this.responseType = responseType;
-        this.generatesComplaint = generatesComplaint;
-        this.observations = observations;
-    }
-
     @Override
     public <T extends Actor> void performAs(T actor) {
 

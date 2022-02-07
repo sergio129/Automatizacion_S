@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -9,16 +10,11 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.TiemposdeAlertaPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class TiemposDeAlertaTask implements Task {
     String serviceAlertTime;
     String time;
 
-    public TiemposDeAlertaTask(String serviceAlertTime, String time) {
-        this.serviceAlertTime = serviceAlertTime;
-
-        this.time = time;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

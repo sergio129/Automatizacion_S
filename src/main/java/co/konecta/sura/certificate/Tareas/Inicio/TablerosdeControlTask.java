@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Inicio;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -9,7 +10,7 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Inicio.ControlBoardsPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class TablerosdeControlTask implements Task {
 
     public String boardName;
@@ -19,14 +20,6 @@ public class TablerosdeControlTask implements Task {
     public String fieldsShow4;
     public String fieldsShow5;
 
-    public TablerosdeControlTask(String boardName, String fieldsShow1, String fieldsShow2, String fieldsShow3, String fieldsShow4, String fieldsShow5) {
-        this.boardName = boardName;
-        this.fieldsShow1 = fieldsShow1;
-        this.fieldsShow2 = fieldsShow2;
-        this.fieldsShow3 = fieldsShow3;
-        this.fieldsShow4 = fieldsShow4;
-        this.fieldsShow5 = fieldsShow5;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {

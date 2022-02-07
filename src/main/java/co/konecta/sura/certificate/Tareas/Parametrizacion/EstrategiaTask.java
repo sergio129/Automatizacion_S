@@ -1,5 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -10,13 +11,10 @@ import org.openqa.selenium.Keys;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.EstrategiaPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+@AllArgsConstructor
 public class EstrategiaTask implements Task {
 
     public String contingencyDescription;
-
-    public EstrategiaTask(String contingencyDescription) {
-        this.contingencyDescription = contingencyDescription;
-    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
@@ -31,7 +29,7 @@ public class EstrategiaTask implements Task {
 
     }
 
-    public static EstrategiaTask withInformationStrategy(String contingencyDescription){
+    public static EstrategiaTask withInformationStrategy(String contingencyDescription) {
         return instrumented(EstrategiaTask.class, contingencyDescription);
     }
 

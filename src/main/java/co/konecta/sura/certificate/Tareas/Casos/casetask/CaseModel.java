@@ -2,18 +2,18 @@ package co.konecta.sura.certificate.Tareas.Casos.casetask;
 
 public class CaseModel {
 
-    private  String numberCase;
-    private  String applicantName;
-    private  String phone1;
-    private  String licensePlate;
-    private  String serviceAddress;
-    private  String serviceLocation;
-    private  String department;
-    private  String municipality;
-    private  String clickCase;
-    private  String line;
-    private  String service;
-    private  String addressDetail;
+    private String numberCase;
+    private String applicantName;
+    private String phone1;
+    private String licensePlate;
+    private String serviceAddress;
+    private String serviceLocation;
+    private String department;
+    private String municipality;
+    private String clickCase;
+    private String line;
+    private String service;
+    private String addressDetail;
 
     public String getNumberCase() {
         return numberCase;

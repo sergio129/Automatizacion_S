@@ -1,6 +1,7 @@
 package co.konecta.sura.certificate.Tareas.Casos.Novedades;
 
 import co.konecta.sura.certificate.Interfaces.Casos.Novedades.NovedadesPage;
+import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -9,11 +10,11 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Casos.Novedades.NovedadesPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
+@AllArgsConstructor
 public class Novedades implements Task {
     private NoveltyModel noveltyModel;
 
-    public Novedades(NoveltyModel noveltyModel){this.noveltyModel = noveltyModel;}
+
 
     public static Novedades whitDataNovelty (NoveltyModel noveltyModel){
         return instrumented(Novedades.class, noveltyModel);
