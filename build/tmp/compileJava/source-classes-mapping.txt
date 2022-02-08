@@ -178,9 +178,9 @@ co/konecta/sura/certificate/Tareas/pendientes/AdvancedSearchTask.java
  co.konecta.sura.certificate.Tareas.pendientes.AdvancedSearchTask
 co/konecta/sura/certificate/Tareas/pendientes/DocumentationCNMTask.java
  co.konecta.sura.certificate.Tareas.pendientes.DocumentationCNMTask
-co/konecta/sura/certificate/Tareas/pendientes/LoginTask.java
- co.konecta.sura.certificate.Tareas.pendientes.LoginTask
-co/konecta/sura/certificate/Tareas/Parametrizacion/TablerosdeControlTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.TablerosdeControlTask
 co/konecta/sura/certificate/Tareas/Parametrizacion/TiemposDeAlertaTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.TiemposDeAlertaTask
+co/konecta/sura/certificate/Tareas/Parametrizacion/TablerosdeControlTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.TablerosdeControlTask
+co/konecta/sura/certificate/Tareas/pendientes/LoginTask.java
+ co.konecta.sura.certificate.Tareas.pendientes.LoginTask
