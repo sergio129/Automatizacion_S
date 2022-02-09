@@ -2,9 +2,10 @@ Feature: Crear, Editar, Eliminar, Desloquear, Conexion Remota
 
   el usuario puede hacer las siguientes accion Crear, Editar, Eliminar, Desloquear, Conexion Remota
 
+
   Background:
     Given Hacer toda la gestion de usuarios
-
+    @TestCreacionUsuario
   Scenario Outline: Creacion Exitosa de usuario
     Examples:
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
