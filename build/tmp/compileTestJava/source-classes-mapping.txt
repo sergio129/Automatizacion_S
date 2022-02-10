@@ -1,7 +1,3 @@
-co/konecta/sura/certificate/runners/PrincipalRunner.java
- co.konecta.sura.certificate.runners.PrincipalRunner
-co/konecta/sura/certificate/runners/LoginRunner.java
- co.konecta.sura.certificate.runners.LoginRunner
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/DestinatariosAlertaStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.DestinatariosAlertaStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/NotificacionesPushStepsDefinitions.java
@@ -38,6 +34,8 @@ co/konecta/sura/certificate/stepsdefinitions/Casos/DocumentationCNMStepsDefiniti
  co.konecta.sura.certificate.stepsdefinitions.Casos.DocumentationCNMStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/listas/ListasAsociarListaStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.listas.ListasAsociarListaStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/AsignacionStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Integracion/TiemposAltosdeContactoStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Integracion.TiemposAltosdeContactoStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/pendientes/AdvancedSearchStepsDefinitions.java
@@ -52,6 +50,8 @@ co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/TiemposdeAlertaStep
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.TiemposdeAlertaStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/SubModuloGestionSaludStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.SubModuloGestionSaludStepsDefinitions
+co/konecta/sura/certificate/runners/LoginRunner.java
+ co.konecta.sura.certificate.runners.LoginRunner
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/IndicativosdeMarcacionStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.IndicativosdeMarcacionStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/PrefijosStepsDefinitions.java
@@ -72,6 +72,8 @@ co/konecta/sura/certificate/stepsdefinitions/Casos/SuraClimbingStepsDefinitions.
  co.konecta.sura.certificate.stepsdefinitions.Casos.SuraClimbingStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/TablerosdecontrolStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.TablerosdecontrolStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/GestionUsuarios/GestionUsuariosListarUsuariosStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.GestionUsuarios.GestionUsuariosListarUsuariosStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/listas/ListasAdministrarStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.listas.ListasAdministrarStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/FullFlowCaseStepsDefinitions.java
@@ -80,5 +82,5 @@ co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/EstrategiasStepsDef
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.EstrategiasStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Roles/RolesListarRolesStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Roles.RolesListarRolesStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/AsignacionStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions
+co/konecta/sura/certificate/runners/PrincipalRunner.java
+ co.konecta.sura.certificate.runners.PrincipalRunner

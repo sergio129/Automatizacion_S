@@ -12,9 +12,9 @@ Feature: Codigos de Salida Parametrizacion
     And Selecionamos el boton creacion codigos de salida
     And Escribimos la informacion de codigos de salida<line> y <exitcode>
     And Selecionamos el boton guardar codigo de salida
-    Then Se visualiza mensaje de la modal parametrizacion codigos de salida <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | line             | exitcode | modalmessage                    |
+      | usuario      | contrasena     | line             | exitcode | modalmensaje                    |
       | sergio.anaya | Colombia_2026* | Emergencia salud | 5486669  | Registro guardado correctamente |
 
   @TestEdicionCodigoSalida
@@ -25,9 +25,9 @@ Feature: Codigos de Salida Parametrizacion
     And Selecionamos boton de editar codigos de salida
     And Escribimos la informacion de codigos de salida<line> y <exitcode>
     And Selecionamos el boton guardar codigo de salida
-    Then Se visualiza mensaje de la modal parametrizacion codigos de salida <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | line    | exitcode | modalmessage                    |
+      | usuario      | contrasena     | line    | exitcode | modalmensaje                    |
       | sergio.anaya | Colombia_2026* | Hogares | 5486669  | Registro guardado correctamente |
 
   @TestEliminarCodigoSalida
@@ -36,9 +36,9 @@ Feature: Codigos de Salida Parametrizacion
     And Entramos a parametrizacion codigos de salida
     And Selecionamos el boton buscar codigos de salida <line>
     And Selecionamos boton de eliminar codigos de salida
-    Then Se visualiza mensaje de la modal parametrizacion codigos de salida <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | line             | modalmessage                     |  |
+      | usuario      | contrasena     | line             | modalmensaje                     |  |
       | sergio.anaya | Colombia_2026* | Emergencia salud | Registro eliminado correctamente |  |
 
 
@@ -48,8 +48,8 @@ Feature: Codigos de Salida Parametrizacion
     And Entramos a parametrizacion codigos de salida
     And Selecionamos el boton creacion codigos de salida
     And Selecionamos el boton guardar codigo de salida
-    Then Se visualiza mensaje de la modal parametrizacion codigos de salida <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | modalmessage                      |
+      | usuario      | contrasena     | modalmensaje                      |
       | sergio.anaya | Colombia_2026* | Todos los campos son obligatorios |
 
