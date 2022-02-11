@@ -5,10 +5,12 @@ import co.konecta.sura.certificate.Tareas.GestionUsuarios.ListarUsuariosTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -58,13 +60,29 @@ public class GestionUsuariosListarUsuariosStepsDefinitions {
     }
 
     @And("^Buscamos en Lista de usuarios por Identificador:\"([^\"]*)\"$")
-    public void buscamosEnListaDeUsuariosPorNombreIdentificadorRol(String Identificador ) throws Throwable {
+    public void buscamosEnListaDeUsuariosPorNombreIdentificadorRol(String Identificador) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         actor.has(
                 Click.on(CAMPO_IDENTIFICADOR_USUARIO_INICIO),
                 Enter.theValue(Identificador).into(BUSCAR_IDENTIFICADOR_USUARIO_INICIO).thenHit(Keys.ENTER),
                 Click.on(BOTON_BUSCAR_USUARIO_INICIO)
         );
-     Thread.sleep(3000);
+        Thread.sleep(3000);
     }
+
+    @And("^visualizamos Informacion y Hacemos conexion remota$")
+    public void visualizamosInformacionYHacemosConexionRemota() throws InterruptedException {
+        actor.has(Click.on(BOTON_VISUALIZAR_USUARIO),
+                Click.on(BOTON_CONEXION_REMOTA_USUARIO)
+        );
+        Thread.sleep(3000);
+    }
+
+    @Then("^Se visualiza ventana nueva ventana de conexion remota(.*)$")
+    public void seVisualizaVentanaNuevaVentanaDeConexionRemotaModalmensaje(String mensaje) throws InterruptedException {
+        actor.attemptsTo(
+                Ensure.that(BUTTON_INITIAL_TAB).text().isEqualTo(mensaje));
+        Thread.sleep(3000);
+    }
+
 }
