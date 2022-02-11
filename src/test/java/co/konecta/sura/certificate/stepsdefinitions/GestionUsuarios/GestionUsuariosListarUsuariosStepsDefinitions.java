@@ -85,4 +85,13 @@ public class GestionUsuariosListarUsuariosStepsDefinitions {
         Thread.sleep(3000);
     }
 
+    @And("^Selecionamos el boton Guardar Listar Usuarios$")
+    public void selecionamosElBotonGuardarListarUsuarios() {
+        actor.has(Click.on(BOTON_GUARDAR_USUARIO));
+    }
+
+    @And("^visualizamos Informacion y Hacemos el deslogueo$")
+    public void visualizamosInformacionYHacemosElDeslogueo() {
+        actor.has(Click.on(BOTON_DESLOGUEAR_USUARIO), Click.on(OPCION_SI_DESLOGUEAR_USUARIO));
+    }
 }

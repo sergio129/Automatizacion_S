@@ -11,6 +11,7 @@ Feature: Crear, Editar, Eliminar, Desloquear, Conexion Remota
     And Entramos a gestion de usuarios listar usuarios
     And Selecionamos el Boton Crear Listar Usuarios
     And Escribimos informacion de Listar Usuarios<NombreUsuario>,<Identificador>,<Correo>,<Rol>,<Asignacion>
+    And Selecionamos el boton Guardar Listar Usuarios
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | usuario      | contrasena     | NombreUsuario  | Identificador | Correo                    | Rol         | Asignacion       | modalmensaje                                        |
@@ -25,6 +26,7 @@ Feature: Crear, Editar, Eliminar, Desloquear, Conexion Remota
     And Buscamos en Lista de usuarios por Identificador:"sergio.anaya"
     And Selecionamos el Boton Editar Listar Usuarios
     And Escribimos informacion de Listar Usuarios<NombreUsuario>,<Identificador>,<Correo>,<Rol>,<Asignacion>
+    And Selecionamos el boton Guardar Listar Usuarios
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | usuario      | contrasena     | NombreUsuario            | Identificador | Correo                        | Rol           | Asignacion   | modalmensaje                    |
@@ -36,6 +38,16 @@ Feature: Crear, Editar, Eliminar, Desloquear, Conexion Remota
     And Entramos a gestion de usuarios listar usuarios
     And Buscamos en Lista de usuarios por Identificador:"prueba.backloga"
     And visualizamos Informacion y Hacemos conexion remota
+    Then Se visualiza ventana nueva ventana de conexion remota<modalmensaje>
+    Examples:
+      | usuario      | contrasena     | modalmensaje |
+      | Sergio.anaya | Colombia_2026* | menu         |
+  @TestDeslogueoUsuario
+  Scenario Outline: Conexion remota Exitosa de usuario
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    And Entramos a gestion de usuarios listar usuarios
+    And Buscamos en Lista de usuarios por Identificador:"sergio.anaya"
+    And visualizamos Informacion y Hacemos el deslogueo
     Then Se visualiza ventana nueva ventana de conexion remota<modalmensaje>
     Examples:
       | usuario      | contrasena     | modalmensaje |

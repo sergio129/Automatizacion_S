@@ -25,8 +25,7 @@ public class ListarUsuariosTask implements Task {
                 Enter.theValue(Rol).into(BUSCAR_ROL).thenHit(Keys.ENTER),
                 Enter.theValue(Asignacion).into(CAMPO_ASIGNACION_USUARIO),
                 Click.on(CAMPO_URL_EXTERNA),
-                Click.on(SELECCIONAR_URL_EXTERNA),
-                Click.on(BOTON_GUARDAR_USUARIO));
+                Click.on(SELECCIONAR_URL_EXTERNA));
     }
 
     public static ListarUsuariosTask EscribirInformacionListarUsuarios(String Nombre, String Identificador, String Correo, String Rol, String Asignacion) {

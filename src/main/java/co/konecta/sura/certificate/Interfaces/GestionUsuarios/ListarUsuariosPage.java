@@ -25,6 +25,8 @@ public class ListarUsuariosPage {
     public static final Target BOTON_ELIMINAR_USUARIO = Target.the("BOTON PARA ELIMINAR USUARIO").located(By.id("btnDeletedListUsers"));
     public static final Target OPCION_SI_ELIMINAR_USUARIO = Target.the("OPCION SI ELIMINAR USUARIO").located(By.id("sweetalertConfirmButton"));
     public static final Target BOTON_DESLOGUEAR_USUARIO = Target.the("BOTON PARA DESLOGUEAR USUARIO").located(By.id("btnLogOutUserListUsers"));
+    public static final Target OPCION_SI_DESLOGUEAR_USUARIO = Target.the("OPCION SI PARA DESLOGUEAR USUARIO").located(By.id("sweetalertConfirmButton"));
+
     //BUSQUEDA
     //public static final Target CAMPO_NOMBRE_USUARIO_INICIO = Target.the("SELECCIONAR CAMPO NOMBRE USUARIO INICIO").located(By.id("selectNameUserListUsers"));
     //public static final Target BUSCAR_NOMBRE_USUARIO_INICIO = Target.the("BUSCAMOS NOMBRE DE USUARIO AL INICIO").located(By.id("inputNameUserListUsers"));
