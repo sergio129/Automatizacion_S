@@ -16,7 +16,7 @@ Feature: SubModulo Gestion Salud
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | usuario      | contrasena     | NumeroCaso       | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | TipoEmergencia            | ServicioPrestado | NombreAcompanante | Parentesco | Telefono    | PrestadorServicio | Observaciones          | modalmensaje                         |
-      | sergio.anaya | Colombia_2026* | 111154896845896 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | Si              | Emergencia por enfermedad | Hola Doctor      | Pruebas automa    | Novio(a)   | 31036666544 | Santa Rita        | pruebas Automatizacion | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2026* | 202202080000002 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | Si              | Emergencia por enfermedad | Hola Doctor      | Pruebas automa    | Novio(a)   | 31036666544 | Santa Rita        | pruebas Automatizacion | Registro guardado correctamente |
 
 
   @TestEdicionEmergenciaSi

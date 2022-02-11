@@ -4,7 +4,7 @@
   <system-out><![CDATA[
 1 Scenarios (1 passed)
 6 Steps (6 passed)
-0m24,808s
+0m24,122s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
