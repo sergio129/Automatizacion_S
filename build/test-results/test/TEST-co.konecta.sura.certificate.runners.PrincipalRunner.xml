@@ -2,67 +2,9 @@
 <testsuite name="co.konecta.sura.certificate.runners.PrincipalRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="ANKCRM38M" time="0.0">
   <properties/>
   <system-out><![CDATA[
-Failed scenarios:
-src/test/resources/features/ParametrizacionCierreExpediente.feature:16 # Creacion Exitosa de Prefijos
-
-1 Scenarios (1 failed)
-7 Steps (1 failed, 1 skipped, 1 undefined, 4 passed)
-0m18,995s
-
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=92.0.4515.131)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ANKCRM38M', ip: '172.20.5.24', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\SERGIO~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61717}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 17f7ae1357030a3a8f091bb00339be0a
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.clear(WebElementFacadeImpl.java:1257)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:808)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1.CGLIB$performAs$0(<generated>)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1$$FastClassByCGLIB$$da8429ac.invoke(<generated>)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1.performAs(<generated>)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
-	at net.serenitybdd.screenplay.Actor.has(Actor.java:140)
-	at co.konecta.sura.certificate.Tareas.Parametrizacion.CierreExpedientesTask.performAs(CierreExpedientesTask.java:20)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
-	at net.serenitybdd.screenplay.Actor.performWithoutReporting(Actor.java:197)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:168)
-	at net.serenitybdd.screenplay.Actor.has(Actor.java:140)
-	at co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.CierreDeExpedientesStepsDefinitions.escribimosLaInformacionDeParametrizacionCierreDeExpedienteLineaServicioCampo(CierreDeExpedientesStepsDefinitions.java:50)
-	at ?.Escribimos la informacion de parametrizacion Cierre de ExpedienteEmergencia Salud,Emergencia Salud,Celosias(src/test/resources/features/ParametrizacionCierreExpediente.feature:11)
-
-
-You can implement missing steps with the snippets below:
-
-@When("^Seleccionamos el boton guardar Parametrizacion Cierre de Expediente$")
-public void seleccionamosElBotonGuardarParametrizacionCierreDeExpediente() throws Exception {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
+1 Scenarios (1 passed)
+8 Steps (8 passed)
+0m37,029s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -126,19 +68,17 @@ public void seleccionamosElBotonGuardarParametrizacionCierreDeExpediente() throw
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: Creacion Exitosa de Prefijos
--------------------------------------------------------------------(creacion--edicion-y-eliminacion-de-parametrizacion-cierre-de-expediente.;creacion-exitosa-de-prefijos)
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+TEST STARTED: Edicion Exitosa de Prefijos
+-------------------------------------------------------------------(creacion--edicion-y-eliminacion-de-parametrizacion-cierre-de-expediente.;edicion-exitosa-de-prefijos)
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST FAILED WITH ERROR: Creacion Exitosa de Prefijos
----------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Usuario enters 'Emergencia Salud' into BUSCAMOS EL SERVICIO DE PARAMETRIZACION CIERRE EXPEDIENTE
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - element not interactable
+TEST PASSED: Edicion Exitosa de Prefijos
+----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>
