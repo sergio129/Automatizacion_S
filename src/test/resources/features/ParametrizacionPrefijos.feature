@@ -11,7 +11,7 @@ Feature: Parametrizacion Prefijos
     And Selecionamos el boton creacion prefijos
     And Escribimos la informacion de prefijos linea<linea>, servicio<servicio>, prefijos<prefijos>
     And Selecionamos el boton guardar prefijos
-    Then Se visualiza mensaje de la modal parametrizacion prefijos <modalmensaje>
+    Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | usuario      | contrasena     | linea | servicio | prefijos | modalmensaje                    |
       | sergio.anaya | Colombia_2026* | Autos | Grua     | 908      | Registro guardado correctamente |
@@ -24,7 +24,7 @@ Feature: Parametrizacion Prefijos
     And Selecionamos el boton editar prefijos
     And Escribimos la informacion de prefijos linea<linea>, servicio<servicio>, prefijos<prefijos>
     And Selecionamos el boton guardar prefijos
-    Then Se visualiza mensaje de la modal parametrizacion prefijos <modalmensaje>
+    Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | usuario      | contrasena     | linea | servicio | prefijos | modalmensaje                    |
       | sergio.anaya | Colombia_2026* | Autos | Grua     | 908      | Registro guardado correctamente |
@@ -35,7 +35,7 @@ Feature: Parametrizacion Prefijos
     And Entramos a parametrizacion prefijos
     And Se filtra por linea<linea>, Servicio<servicio>, prefijos<prefijos> y Buscamos
     And Selecionamos el boton eliminar prefijos
-    Then Se visualiza mensaje de la modal parametrizacion prefijos <modalmensaje>
+    Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | usuario      | contrasena     | linea | servicio | prefijos | modalmensaje                     |
       | sergio.anaya | Colombia_2026* | Hogar | Plomero  | 908      | Registro eliminado correctamente |
@@ -46,7 +46,7 @@ Feature: Parametrizacion Prefijos
     And Entramos a parametrizacion prefijos
     And Selecionamos el boton creacion prefijos
     And Selecionamos el boton guardar prefijos
-    Then Se visualiza mensaje de la modal parametrizacion prefijos <modalmensaje>
+    Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | usuario      | contrasena     | modalmensaje                      |
       | sergio.anaya | Colombia_2026* | Todos los campos son obligatorios |

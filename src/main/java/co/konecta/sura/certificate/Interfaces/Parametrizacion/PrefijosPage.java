@@ -7,7 +7,7 @@ public class PrefijosPage {
     public static final Target BOTON_CREAR_PREFIJOS = Target.the("selecionamos el boton crear prefijos parametrizacion").located(By.id("btnAddPrefixParameterization"));
     public static final Target SELECCION_CAMPO_LINEA = Target.the("selecionamos el campo linea").located(By.id("selectCreateLinePrefixParameterization"));
     public static final Target BUSCAMOS_LINEA = Target.the("Buscamos la linea").located(By.id("inputCreateLinePrefixParameterization"));
-    public static final Target SELECIONAMOS_LINEA = Target.the("Damos click en la linea encontrada").located(By.cssSelector("[class='mat-option ng-star-inserted mat-active']"));
+    public static final Target SELECIONAMOS_LINEA = Target.the("Damos click en la linea encontrada").locatedBy("/html/body/div[4]/div[4]/div/div/div/mat-option[2]");
     public static final Target SELECCION_CAMPO_SERVICIO = Target.the("Selecionamos el campo Servicio").located(By.id("selectCreateServicePrefixParameterization"));
     public static final Target BUSCAMOS_SERVICIO = Target.the("Buscamos el servicio").located(By.id("inputCreateServicePrefixParameterization"));
     public static final Target SELECCIONAR_SERVICIO = Target.the("selecionamos el servicio").locatedBy("/html/body/div[2]/div[4]/div/div/div/mat-option[2]");
