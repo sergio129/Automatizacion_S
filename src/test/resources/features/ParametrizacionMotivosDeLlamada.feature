@@ -1,4 +1,4 @@
-Feature: Call reasons parameterization
+Feature: Parametrizacion Motivos de llamada
   As a user
   I need to create, edit and delete call reasons parameterization
 

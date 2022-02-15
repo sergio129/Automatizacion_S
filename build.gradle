@@ -2,13 +2,14 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenLocal()
-    jcenter()
+
+    mavenCentral()
 }
 
 buildscript {
     repositories {
         mavenLocal()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath("net.serenity-bdd:serenity-gradle-plugin:2.2.8")

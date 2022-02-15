@@ -43,7 +43,7 @@ Feature: Crear, Editar, Eliminar, Desloquear, Conexion Remota
       | usuario      | contrasena     | modalmensaje |
       | Sergio.anaya | Colombia_2026* | menu         |
   @TestDeslogueoUsuario
-  Scenario Outline: Conexion remota Exitosa de usuario
+  Scenario Outline: Deslogueo Exitoso de usuario
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a gestion de usuarios listar usuarios
     And Buscamos en Lista de usuarios por Identificador:"sergio.anaya"
