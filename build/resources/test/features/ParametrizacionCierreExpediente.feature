@@ -27,3 +27,25 @@ Feature: Creacion, Edicion y eliminacion de parametrizacion cierre de expediente
     Examples:
       | usuario      | contrasena     | linea  | servicio     | Campo                | modalmensaje                           |
       | Sergio.anaya | Colombia_2026* | Viajes | Certificados | ¿Concluido servicio? | Parametrización agregada correctamente |
+
+  @TestEliminarParametrizacionCierreExpediente
+  Scenario Outline: Edicion Exitosa de Prefijos
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    And Entramos Parametrizacion Cierre de Expediente
+    And Buscamos Parametrizacion Cierre de expediente por Linea:"Emergencia Salud", Servicio:"Emergencia Salud"
+    And Seleccionamos el Boton Eliminar Parametrizacion Cierre de Expediente
+    Then Se visualiza mensaje de la modal<modalmensaje>
+    Examples:
+      | usuario      | contrasena     | modalmensaje                                |
+      | Sergio.anaya | Colombia_2026* | Se elimino correctamente la parametrización |
+
+  @TestValidarCamposParametrizacionCierreExpediente
+  Scenario Outline: Edicion Exitosa de Prefijos
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    And Entramos Parametrizacion Cierre de Expediente
+    And Seleccionamos el boton crear Parametrizacion Cierre de Expediente
+    And Seleccionamos el boton guardar Parametrizacion Cierre de Expediente
+    Then Se visualiza mensaje de la modal<modalmensaje>
+    Examples:
+      | usuario      | contrasena     | modalmensaje                      |
+      | Sergio.anaya | Colombia_2026* | Todos los campos son obligatorios |

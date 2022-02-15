@@ -82,7 +82,7 @@ co/konecta/sura/certificate/stepsdefinitions/Casos/FullFlowCaseStepsDefinitions.
  co.konecta.sura.certificate.stepsdefinitions.Casos.FullFlowCaseStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/CaseStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.CaseStepsDefinitions
-co/konecta/sura/certificate/runners/PrincipalRunner.java
- co.konecta.sura.certificate.runners.PrincipalRunner
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/CierreDeExpedientesStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.CierreDeExpedientesStepsDefinitions
+co/konecta/sura/certificate/runners/PrincipalRunner.java
+ co.konecta.sura.certificate.runners.PrincipalRunner
