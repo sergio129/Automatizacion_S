@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.Interfaces.Parametrizacion.CallReasonsParameterizationPage.*;
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 @AllArgsConstructor
 public class ServiceRequestTask implements Task {

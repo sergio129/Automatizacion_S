@@ -3,7 +3,7 @@ package co.konecta.sura.certificate.stepsdefinitions.Casos;
 import co.konecta.sura.certificate.Tareas.Casos.taskmonitoring.TaskMonitoring;
 import co.konecta.sura.certificate.Tareas.Casos.taskmonitoring.TaskMonitoringModel;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
-import co.konecta.sura.certificate.Interfaces.Casos.taskmonitoring.TaskMonitoringPage;
+import co.konecta.sura.certificate.Interfaces.Casos.TareasDeMonitoreo.TaskMonitoringPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
-import static co.konecta.sura.certificate.Interfaces.Casos.taskmonitoring.TaskMonitoringPage.INPUT_STATE;
+import static co.konecta.sura.certificate.Interfaces.Casos.TareasDeMonitoreo.TaskMonitoringPage.INPUT_STATE;
 
 public class TaskMonitoringStepsDefinitions {
 

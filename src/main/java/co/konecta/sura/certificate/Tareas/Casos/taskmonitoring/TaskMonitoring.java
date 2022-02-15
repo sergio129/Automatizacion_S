@@ -1,7 +1,7 @@
 package co.konecta.sura.certificate.Tareas.Casos.taskmonitoring;
 
 
-import co.konecta.sura.certificate.Interfaces.Casos.taskmonitoring.TaskMonitoringPage;
+import co.konecta.sura.certificate.Interfaces.Casos.TareasDeMonitoreo.TaskMonitoringPage;
 import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -10,7 +10,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.Interfaces.Casos.taskmonitoring.TaskMonitoringPage.*;
+import static co.konecta.sura.certificate.Interfaces.Casos.TareasDeMonitoreo.TaskMonitoringPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 @AllArgsConstructor
 public class TaskMonitoring implements Task {

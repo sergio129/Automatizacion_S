@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.Interfaces.Parametrizacion.CallReasonsParameterizationPage.*;
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 @AllArgsConstructor
 public class GeneralInformationTask implements Task {

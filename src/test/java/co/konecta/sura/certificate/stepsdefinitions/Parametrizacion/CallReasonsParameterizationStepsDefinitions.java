@@ -4,7 +4,7 @@ import co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.Follow
 import co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.GeneralInformationTask;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.ServiceRequestTask;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
-import co.konecta.sura.certificate.Interfaces.Parametrizacion.CallReasonsParameterizationPage;
+import co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -47,7 +47,7 @@ public class CallReasonsParameterizationStepsDefinitions {
 
     @And("^I select button create call reasons parameterization$")
     public void ISelectButtonCreateCallReasonsParameterization() {
-        actor.attemptsTo(Click.on(CallReasonsParameterizationPage.BUTTON_CREATE_CALL_REASONS));
+        actor.attemptsTo(Click.on(MotivosDeLlamadaPage.BUTTON_CREATE_CALL_REASONS));
     }
 
     @And("^I write information in call reasons Service Request parameterization and (.*) and (.*)$")
@@ -68,12 +68,12 @@ public class CallReasonsParameterizationStepsDefinitions {
     @And("^I Select check catastrophic event$")
     public void ISelectCheckCatastrophicEvent() throws InterruptedException {
         Thread.sleep(300);
-        actor.attemptsTo(Click.on(CallReasonsParameterizationPage.CHECK_CATASTROPHIC_EVENT));
+        actor.attemptsTo(Click.on(MotivosDeLlamadaPage.CHECK_CATASTROPHIC_EVENT));
     }
 
     @And("^I Select button save call reasons parameterization$")
     public void ISelectButtonSaveCallReasonsParameterization() {
-        actor.attemptsTo(Click.on(CallReasonsParameterizationPage.BUTTON_SAVE_CALL_REASONS));
+        actor.attemptsTo(Click.on(MotivosDeLlamadaPage.BUTTON_SAVE_CALL_REASONS));
     }
 
     @Then("^I view the modal save call reasons parameterization (.*)$")

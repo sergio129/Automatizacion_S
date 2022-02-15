@@ -44,6 +44,9 @@ public class HomePage extends PageObject {
     public static final Target GESTION_USUARIOS = Target.the("opcion para entrar a gestion de usuarios ").located(By.id("moUserManagement"));
     public static final Target GESTION_USUARIOS_LISTAR_USUARIOS = Target.the("opcion para entrar a a la opcion de listar usuarios del modulo de gestion de usuarios ").located(By.id("moUserList"));
 
+    public static final Target OPCION_CIERRE_EXPEDIENTE = Target.the("opcion para entrar  la parametrizacion de cierre de expediente ").located(By.id("moCloseCasesParameterization"));
+
+
 
 
 
