@@ -1,6 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.CierreExpedientesTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -41,11 +42,12 @@ public class CierreDeExpedientesStepsDefinitions {
     @And("^Seleccionamos el boton crear Parametrizacion Cierre de Expediente$")
     public void seleccionamosElBotonCrearParametrizacionCierreDeExpediente() throws InterruptedException {
         actor.has(Click.on(BOTON_CREAR_CIERRE_EXPEDIENTE));
-        Thread.sleep(3000);
+        Thread.sleep(1000);
     }
 
     @And("^Escribimos la informacion de parametrizacion Cierre de Expediente(.*),(.*),(.*)$")
     public void escribimosLaInformacionDeParametrizacionCierreDeExpedienteLineaServicioCampo(String linea, String servicio, String Campo) {
+        actor.has(CierreExpedientesTask.EscribirInformacionCierreExpediente(linea,servicio,Campo));
 
     }
 }

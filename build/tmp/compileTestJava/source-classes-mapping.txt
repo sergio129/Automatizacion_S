@@ -50,8 +50,8 @@ co/konecta/sura/certificate/stepsdefinitions/pendientes/AdvancedSearchStepsDefin
  co.konecta.sura.certificate.stepsdefinitions.pendientes.AdvancedSearchStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/StateManagementStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.StateManagementStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Casos/CaseStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Casos.CaseStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/EstrategiasStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.EstrategiasStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/AsignacionStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/TaskMonitoringStepsDefinitions.java
@@ -80,9 +80,9 @@ co/konecta/sura/certificate/stepsdefinitions/listas/ListasAdministrarStepsDefini
  co.konecta.sura.certificate.stepsdefinitions.listas.ListasAdministrarStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/FullFlowCaseStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.FullFlowCaseStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/EstrategiasStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.EstrategiasStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/CierreDeExpedientesStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.CierreDeExpedientesStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Casos/CaseStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Casos.CaseStepsDefinitions
 co/konecta/sura/certificate/runners/PrincipalRunner.java
  co.konecta.sura.certificate.runners.PrincipalRunner
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/CierreDeExpedientesStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.CierreDeExpedientesStepsDefinitions
