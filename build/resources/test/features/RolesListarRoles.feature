@@ -10,7 +10,7 @@ Feature: Creacion, Edicion, Asociacion y Eliminar lista de Roles
     And Entramos a Roles Lista roles
     And Damos Clic en Crear Lista Roles
     And Escribimos la informacion SubModulo Cierre de Expediente<NombreRol>,<HabilidadRol>,<EasyCase>
-    #And Guardamos informacion SubModulo Cierre Expediente
+    And Guardamos informacion SubModulo Cierre Expediente
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
       | usuario      | contrasena     | NombreRol              | HabilidadRol | EasyCase      | mensaje                         |
@@ -23,7 +23,7 @@ Feature: Creacion, Edicion, Asociacion y Eliminar lista de Roles
     And Buscamos Lista Rol<BuscarRol>
     And Editamos Lista de Rol
     And Escribimos la informacion SubModulo Cierre de Expediente<NombreRol>,<HabilidadRol>,<EasyCase>
-    #And Guardamos informacion SubModulo Cierre Expediente
+    And Guardamos informacion SubModulo Cierre Expediente
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
       | usuario      | contrasena     | BuscarRol              | NombreRol               | HabilidadRol | EasyCase  | mensaje                         |
