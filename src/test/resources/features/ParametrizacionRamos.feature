@@ -1,7 +1,6 @@
 Feature: Parametrizacion de Ramos
 
-  As a user
-  I need to create bouquets parameterization
+  El usuario puede crear Ramos
 
   Background:
     Given I create bouquets parameterization
@@ -12,7 +11,7 @@ Feature: Parametrizacion de Ramos
     And I enter bouquets parameterization
     And I select button create bouquets parameterization
     And I write information in bouquets parameterization and save <bouquets>
-    Then I view the modal save  bouquets parameterization <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | user         | password       | bouquets                 | modalmessage                       |  |
       | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion11 | Registros guardados correctamente. |  |

@@ -1,21 +1,18 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
-import co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.AsignacionPage.*;
 
 public class AsignacionStepsDefinitions {
@@ -82,12 +79,6 @@ public class AsignacionStepsDefinitions {
         Thread.sleep(1000);
     }
 
-    @Then("^I view the modal save assignment parameterization with (.*)$")
-    public void iViewTheModalSaveAssignmentParameterizationWithe(String message) throws InterruptedException {
-        Thread.sleep(2000);
-        actor.attemptsTo(
 
-                Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
-    }
 
 }

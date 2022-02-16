@@ -1,19 +1,16 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
-import co.konecta.sura.certificate.Tareas.Parametrizacion.TiemposDeAlertaTask;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.TiemposDeAlertaTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.TiemposdeAlertaPage.*;
 
 
@@ -63,11 +60,6 @@ public class TiemposdeAlertaStepsDefinitions {
         actor.attemptsTo(TiemposDeAlertaTask.withInformationAlertTime(serviceAlertTime, time));
     }
 
-    @Then("^I view the modal save alert time parameterization with (.*)$")
-    public void iViewTheModalSaveAlertTimeParameterizationWith(String message) throws InterruptedException {
-        Thread.sleep(2000);
-        actor.attemptsTo(
-                Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
-    }
+
 
 }

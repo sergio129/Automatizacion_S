@@ -12,7 +12,7 @@ Feature: Parametrizacion Motivos de llamada
     And I select button create call reasons parameterization
     And I write information in call reasons parameterization and <name> and <line>
     And I Select button save call reasons parameterization
-    Then I view the modal save call reasons parameterization <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | name                    | line  | modalmessage                                                                                  |
@@ -27,7 +27,7 @@ Feature: Parametrizacion Motivos de llamada
     And I Select check catastrophic event
     And I write information in call reasons Service Request parameterization and <name> and <line>
     And I Select button save call reasons parameterization
-    Then I view the modal save call reasons parameterization <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | name                                        | line  | modalmessage                                                                                  |
@@ -42,7 +42,7 @@ Feature: Parametrizacion Motivos de llamada
     And I Select check catastrophic event
     And I write information in call reasons Follow up To a Service parameterization and <name> and <line> and <option>
     And I Select button save call reasons parameterization
-    Then I view the modal save call reasons parameterization <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | name                                        | line  | option | modalmessage                                                                                  |
@@ -56,7 +56,7 @@ Feature: Parametrizacion Motivos de llamada
     And I select button create call reasons parameterization
     And I write information in call reasons Follow up To a Service parameterization and <name> and <line> and <option>
     And I Select button save call reasons parameterization
-    Then I view the modal save call reasons parameterization <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | name                                        | line  | option | modalmessage                                                                                  |
@@ -70,7 +70,7 @@ Feature: Parametrizacion Motivos de llamada
     And I select button create call reasons parameterization
     And I write information in call reasons general information parameterization and <name> and <line> and <finalmanagement>
     And I Select button save call reasons parameterization
-    Then I view the modal save call reasons parameterization <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | name                                        | line  | finalmanagement          | modalmessage                    |

@@ -11,7 +11,7 @@ Feature: Assignment parameterization
     And I entering assignment parameterization
     And I select button create assignment
     And I type information in the assignment with the role <roleassignment> and the user <userassignment> and the line <lineassignment> and the service <serviceassignment> and the department <departmentassignment>
-    Then I view the modal save assignment parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | roleassignment | userassignment    | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
@@ -24,7 +24,7 @@ Feature: Assignment parameterization
     And I entering assignment parameterization
     And I select button edition assignment
     And I type information in the assignment with the role <roleassignment> and the user <userassignment> and the line <lineassignment> and the service <serviceassignment> and the department <departmentassignment>
-    Then I view the modal save assignment parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | roleassignment | userassignment      | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
@@ -37,7 +37,7 @@ Feature: Assignment parameterization
     And I entering assignment parameterization
     And I type search in the assignment parameterization with the user <userassignment>
     And I select button delete assignment
-    Then I view the modal save assignment parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | userassignment    | modalmessage                     |
@@ -50,7 +50,7 @@ Feature: Assignment parameterization
     And I entering assignment parameterization
     And I select button create assignment
     And I no type information assignment
-    Then I view the modal save assignment parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | modalmessage                      |

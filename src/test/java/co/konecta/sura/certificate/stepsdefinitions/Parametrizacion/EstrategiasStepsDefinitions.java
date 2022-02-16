@@ -5,18 +5,15 @@ import co.konecta.sura.certificate.Tareas.Parametrizacion.EstrategiaTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
-import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.EstrategiaPage.*;
 
 
@@ -148,13 +145,6 @@ public class EstrategiasStepsDefinitions {
     @And("^I save button strategy parameterization$")
     public void ISaveButtonStrategyParameterization(){
         actor.attemptsTo(Click.on(BUTTON_SAVE_STRATEGY));
-    }
-
-    @Then("^I view the modal save strategy parameterization with (.*)$")
-    public void iViewTheModalSaveStrategyParameterizationWith(String message) throws InterruptedException {
-        Thread.sleep(2000);
-        actor.attemptsTo(
-                Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
     }
 
 }

@@ -13,7 +13,7 @@ Feature: Lists parameterization
     And I select button create lists parameterization
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
     And Selecionamos el boton guardar lista
-    Then I view the modal save lists parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | roles            | modules            | lists           | options1        | options2      | modalmessage                      |
@@ -28,7 +28,7 @@ Feature: Lists parameterization
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
     And Selecionamos boton crear opcion parametrizacion listas
     And I create new list option with option name <optionname> and id easycase <ideasycase>
-    Then I view the modal save lists parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | roles            | modules            | lists           | options1        | options2      | optionname    | ideasycase | modalmessage                      |
@@ -42,7 +42,7 @@ Feature: Lists parameterization
     And I select button edition lists parameterization
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
     And Selecionamos el boton guardar lista
-    Then I view the modal save lists parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | roles            | modules            | lists              | options1        | options2      | modalmessage                      |
@@ -54,7 +54,7 @@ Feature: Lists parameterization
     When I entering in the application with user <user> and password <password>
     And I entering lists parameterization
     And I no type information lists parameterization
-    Then I view the modal save lists parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | user         | password       | modalmessage                    |
       | sergio.anaya | Colombia_2026* | Todos los campos son requeridos |

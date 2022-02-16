@@ -1,21 +1,18 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
-import co.konecta.sura.certificate.Tareas.Casos.documentationcnm.DocumentationCNMTask;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Casos.documentationcnm.DocumentationCNMTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.Interfaces.Casos.documentationcnm.DocumentationCNMPage.*;
-import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 public class DocumentationCNMStepsDefinitions {
 
     @Managed(driver = "chrome")
@@ -62,10 +59,6 @@ public class DocumentationCNMStepsDefinitions {
         Thread.sleep(1000);
     }
 
-    @Then("^I view the modal save documentation CNM with (.*)$")
-    public void iViewTheModalSaveDocumentationCNMWith(String messageModal) {
-        actor.attemptsTo(
-                Ensure.that(MODAL_VALIDATION).text().isEqualTo(messageModal));
-    }
+
 
 }

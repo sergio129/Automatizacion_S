@@ -12,7 +12,7 @@ Feature: Push notifications
     And I entering push notifications
     And I select button create push notifications
     And I write information in the push notifications of the following fields <line>and<service>and<servicestatus>and<roles>and<Timetomoment1>and<Timetomoment2>and<appointmenttime1>and<appointmenttime2>
-    Then I view the modal save push notification with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | user         | password       | line  | service          | servicestatus | roles            | Timetomoment1 | Timetomoment2 | appointmenttime1 | appointmenttime2 | modalmessage                     |
       | sergio.anaya | Colombia_2026* | Autos | Abogado En Sitio | Aceptado      | Emergencia salud | 105           | 4             | 55               | 5                | Registro guardado correctamente. |
@@ -26,7 +26,7 @@ Feature: Push notifications
     And I select button search for push notifications
     And I select button Edit push notifications
     And I write information in the push notifications of the following fields <line>and<service>and<servicestatus>and<roles>and<Timetomoment1>and<Timetomoment2>and<appointmenttime1>and<appointmenttime2>
-    Then I view the modal save push notification with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | user         | password       | linefilter | line  | service          | servicestatus | roles            | Timetomoment1 | Timetomoment2 | appointmenttime1 | appointmenttime2 | modalmessage                     |
       | sergio.anaya | Colombia_2026* | Autos      | Autos | Abogado En Sitio | Aceptado      | Emergencia salud | 105           | 4             | 55               | 5                | Registro guardado correctamente. |
@@ -38,7 +38,7 @@ Feature: Push notifications
     And I select filter push notifications <line>and<service>and<servicestatus>and<roles>
     And I select button search for push notifications
     And I select button delete push notifications
-    Then I view the modal save push notification with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | user         | password       | line  | service          | servicestatus | roles            | modalmessage                           |
       | sergio.anaya | Colombia_2026* | Autos | Abogado En Sitio | Aceptado      | Emergencia salud | Parametrización elimada correctamente. |
@@ -50,7 +50,7 @@ Feature: Push notifications
     And I entering push notifications
     And I select button create push notifications
     And I select button save push notifications
-    Then I view the modal save push notification with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | user         | password       | modalmessage                              |
       | sergio.anaya | Colombia_2025* | Debe llenar todos los campos obligatorios |

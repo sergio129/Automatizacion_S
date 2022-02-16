@@ -1,22 +1,19 @@
 package co.konecta.sura.certificate.stepsdefinitions.Inicio;
 
-import co.konecta.sura.certificate.Tareas.Inicio.TablerosdeControlTask;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Inicio.TablerosdeControlTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
-import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.Interfaces.Inicio.ControlBoardsPage.*;
 
 public class TablerosdeControlStepsDefinitions {
@@ -190,13 +187,6 @@ public class TablerosdeControlStepsDefinitions {
         actor.attemptsTo(Click.on(INPUT_BOARD_TYPE),
                 Hit.the(Keys.ENTER).into(INPUT_BOARD_TYPE),
                 Click.on(BUTTON_SAVE_CONTROL_BOARDS));
-    }
-
-    @Then("^I view the modal save control boards with (.*)$")
-    public void iViewTheModalSaveControlBoardsWith(String message) throws InterruptedException {
-        Thread.sleep(2000);
-        actor.attemptsTo(
-                Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
     }
 
 }
