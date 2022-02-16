@@ -36,8 +36,8 @@ co/konecta/sura/certificate/Tareas/Casos/casetask/Case.java
  co.konecta.sura.certificate.Tareas.Casos.casetask.Case
 co/konecta/sura/certificate/Tareas/Casos/Novedades/Novedades.java
  co.konecta.sura.certificate.Tareas.Casos.Novedades.Novedades
-co/konecta/sura/certificate/Tareas/Casos/suppliermanagement/SupplierManagementTask.java
- co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask
+co/konecta/sura/certificate/Tareas/Casos/documentationcnm/DocumentationCNMTask.java
+ co.konecta.sura.certificate.Tareas.Casos.documentationcnm.DocumentationCNMTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/RamosPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.RamosPage
 co/konecta/sura/certificate/Tareas/Casos/taskmonitoring/TaskMonitoring.java
@@ -150,8 +150,8 @@ co/konecta/sura/certificate/Interfaces/pendientes/AdvancedSearchPage.java
  co.konecta.sura.certificate.Interfaces.pendientes.AdvancedSearchPage
 co/konecta/sura/certificate/Tareas/Parametrizacion/TiemposDeAlertaTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.TiemposDeAlertaTask
-co/konecta/sura/certificate/Interfaces/Casos/suppliermanagement/SupplierManagementPage.java
- co.konecta.sura.certificate.Interfaces.Casos.suppliermanagement.SupplierManagementPage
+co/konecta/sura/certificate/Interfaces/Casos/documentationcnm/DocumentationCNMPage.java
+ co.konecta.sura.certificate.Interfaces.Casos.documentationcnm.DocumentationCNMPage
 co/konecta/sura/certificate/Tareas/Parametrizacion/SemaforosTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.SemaforosTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/TiemposdeAlertaPage.java
@@ -188,7 +188,7 @@ co/konecta/sura/certificate/Tareas/Parametrizacion/CierreExpedientesTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.CierreExpedientesTask
 co/konecta/sura/certificate/Tareas/GestionUsuarios/ListarUsuariosTask.java
  co.konecta.sura.certificate.Tareas.GestionUsuarios.ListarUsuariosTask
-co/konecta/sura/certificate/Interfaces/Casos/documentationcnm/DocumentationCNMPage.java
- co.konecta.sura.certificate.Interfaces.Casos.documentationcnm.DocumentationCNMPage
-co/konecta/sura/certificate/Tareas/Casos/documentationcnm/DocumentationCNMTask.java
- co.konecta.sura.certificate.Tareas.Casos.documentationcnm.DocumentationCNMTask
+co/konecta/sura/certificate/Tareas/Casos/suppliermanagement/SupplierManagementTask.java
+ co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask
+co/konecta/sura/certificate/Interfaces/Casos/suppliermanagement/SupplierManagementPage.java
+ co.konecta.sura.certificate.Interfaces.Casos.suppliermanagement.SupplierManagementPage

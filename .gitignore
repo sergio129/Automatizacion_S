@@ -1,2 +1,7 @@
 .idea
 target
+src/test/resources/webdriver/windows/chromedriver.exe
+chromedriver.exe
+src/test/java/co/konecta/sura/certificate/runners/PrincipalRunner.java
+.gradle
+*.iml
