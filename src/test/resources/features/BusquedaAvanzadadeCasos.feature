@@ -13,8 +13,8 @@ Feature: Page advanced search case
     Then I view the case found
 
     Examples:
-      | user         | password       | numberCase       | licensePlate | securityCode | clickCase | assignedTo        | department | municipality | line  | caseClosureStatus | class                    | caseStatus              | serviceStatus | service          | typeService | specialService | customerType | supplier                      |
-      | Sergio.anaya | Colombia_2025* | 2021060944354508 | SFG74R       | 4354508      | No        | Sergio Luis Anaya | Putumayo   | San pedro    | Autos | Concluido         | Coordinacion tradicional | Pendiente por finalizar | Finalizado    | Emergencia Salud |             | Noo            | Intermedio   | 24 H CAR SERVICE SAS MEDELLIN |
+      | user            | password      | numberCase       | licensePlate | securityCode | clickCase | assignedTo | department | municipality | line | caseClosureStatus | class | caseStatus | serviceStatus | service | typeService | specialService | customerType | supplier |
+      | yoarlys.carillo | Colombia2020* | 1111111111111111 |              |              |           |            |            |              |      |                   |       |            |               |         |             |                |              |          |
 
   @TestAdvancedSearchOptional
   Scenario Outline: Successful advanced search case optional

@@ -16,8 +16,8 @@ Feature: Ending
     Then I view the modal save ending with <message>
 
     Examples:
-      | user         | password       | numbercase      | endingwith | typeresponse | observationending            | message                         |
-      | sergio.anaya | Colombia_2025* | 202106104435443 | Proveedor  | SMS          | prueba creacion finalizacion | Registro guardado correctamente |
+      | user            | password      | numbercase       | endingwith | typeresponse      | observationending            | message                         |
+      | yoarlys.carillo | Colombia2020* | 1111111111111111 | Proveedor  | Llamada más tarde | prueba creacion finalizacion | Registro guardado correctamente |
 
   @TestEndingEdition
   Scenario Outline: Successful ending edition
@@ -30,8 +30,8 @@ Feature: Ending
     Then I view the modal save ending with <message>
 
     Examples:
-      | user         | password       | numbercase      | endingwith | typeresponse      | observationending           | message                         |
-      | Sergio.Anaya | Colombia_2025* | 202106104435443 | proveedor  | Llamada más tarde | prueba edicion finalizacion | Registro guardado correctamente |
+      | user            | password      | numbercase       | endingwith | typeresponse | observationending           | message                         |
+      | yoarlys.carillo | Colombia2020* | 1111111111111111 | proveedor  | No contesta  | prueba edicion finalizacion | Registro guardado correctamente |
 
   @TestEndingRequiredFields
   Scenario Outline: Ending submodule required fields
@@ -41,8 +41,8 @@ Feature: Ending
     Then I view the modal save ending with <message>
 
     Examples:
-      | user         | password       | numbercase      | message                           |
-      | sergio.anaya | Colombia_2025* | 202106104435443 | Todos los campos son obligatorios |
+      | user            | password      | numbercase      | message                           |
+      | yoarlys.carillo | Colombia2020* | 202106104435443 | Todos los campos son obligatorios |
 
 
 

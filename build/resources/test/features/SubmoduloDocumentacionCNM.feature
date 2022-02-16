@@ -13,8 +13,8 @@ Feature: Page submodule documentation CNM
     Then I view the modal save documentation CNM with <modalmessage>
 
     Examples:
-      | user         | password       | numberCase      | managementpersondocumentation | generatescomplaintdocumentation | observationdocumentation                       | modalmessage                    |
-      | Sergio.Anaya | Colombia_2025* | 202104062454881 | Administrativo Aya            | No                              | pruebas automaticas creacion documentacion CNM | Registro guardado correctamente |
+      | user            | password      | numberCase       | managementpersondocumentation | generatescomplaintdocumentation | observationdocumentation                       | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | 1111111111111111 | Administrativo Aya            | Si                              | pruebas automaticas creacion documentacion CNM | Registro guardado correctamente |
 
   @TestDocumentationCNMCompleteWithComplaint
   Scenario Outline: Successful documentation CNM submodule with filed complaint
@@ -24,8 +24,8 @@ Feature: Page submodule documentation CNM
     Then I view the modal save documentation CNM with <modalmessage>
 
     Examples:
-      | user         | password       | numberCase      | managementpersondocumentation | generatescomplaintdocumentation | observationdocumentation                       | filedcomplaint | modalmessage                    |
-      | Sergio.Anaya | Colombia_2025* | 202104062454881 | Administrativo Aya            | Si                              | pruebas automaticas creacion documentacion CNM | 15242411       | Registro guardado correctamente |
+      | user            | password      | numberCase       | managementpersondocumentation | generatescomplaintdocumentation | observationdocumentation                       | filedcomplaint | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | 1111111111111111 | Administrativo Aya            | Si                              | pruebas automaticas creacion documentacion CNM | 15242411       | Registro guardado correctamente |
 
   @TestDocumentationCNMRequiredFields
   Scenario Outline: Documentation CNM submodule required fields
@@ -35,5 +35,5 @@ Feature: Page submodule documentation CNM
     Then I view the modal save documentation CNM with <modalmessage>
 
     Examples:
-      | user         | password       | numberCase      | modalmessage                      |
-      | Sergio.Anaya | Colombia_2025* | 202104062454881 | Todos los campos son obligatorios |
+      | user            | password      | numberCase      | modalmessage                      |
+      | yoarlys.carillo | Colombia2020* | 202104062454881 | Todos los campos son obligatorios |

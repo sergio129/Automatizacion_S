@@ -21,7 +21,7 @@ public class AdvancedSearchPage {
     public static final Target INPUT_SEARCH_DEPARTMENT = Target.the("This the input search department").located(By.id("inputDepartmentFilterSearch"));
     public static final Target INPUT_MUNICIPALITY = Target.the("This the input municipality").located(By.id("municipalityCtrlSearch"));
     public static final Target INPUT_SEARCH_MUNICIPALITY = Target.the("This the input search municipality").located(By.id("inputMunicipalityFilterSearch"));
-    public static final Target INPUT_LINE = Target.the("This the input line").located(By.id("lineCtrl"));
+    public static final Target INPUT_LINE = Target.the("This the input line").located(By.id("lineCtrlSearch"));
     public static final Target INPUT_SEARCH_LINE = Target.the("This the input search line").located(By.id("inputLineFilterSearch"));
     public static final Target INPUT_STATUS_CLOSING_CASE = Target.the("This the input status closing case").located(By.id("statusClosingCaseCtrlSearch"));
     public static final Target INPUT_SEARCH_STATUS_CLOSING_CASE = Target.the("This the input search status closing case").located(By.id("inputStatClosCaseFilSearch"));
