@@ -87,20 +87,19 @@
 <span class="code">
 <pre>
 Failed scenarios:
-src/test/resources/features/SubModuloTareasDeMonitoreo.feature:40 # Successful task monitoring edition
+src/test/resources/features/SubModuloGestionProvedores.feature:17 # Successful supplier management submodule
 
 1 Scenarios (1 failed)
-7 Steps (1 failed, 5 skipped, 1 passed)
-1m0,156s
+5 Steps (1 failed, 1 skipped, 3 passed)
+0m46,784s
 
-net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: chrome not reachable
-  (Session info: chrome=92.0.4515.131)
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;mat-select _ngcontent-oyx-c50=&quot;&quot; class=&quot;mat-select ng-tns-c26-99 ng-star-inserted mat-select-required mat-select-empty ng-untouched ng-pristine ng-invalid&quot; id=&quot;replyProvider&quot; placeholder=&quot;Respuesta proveedor&quot; required=&quot;&quot; role=&quot;listbox&quot; tabindex=&quot;0&quot; aria-label=&quot;Respuesta proveedor&quot; aria-required=&quot;true&quot; aria-disabled=&quot;false&quot; aria-invalid=&quot;false&quot; aria-multiselectable=&quot;false&quot;&gt;...&lt;/mat-select&gt; is not clickable at point (1180, 271). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=96.0.4664.45)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ANKCRM38M', ip: '172.20.5.24', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_301'
+System info: host: 'ANMEUCCI07M', ip: '172.20.5.16', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_311'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\SERGIO~1.ANA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51664}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1401f1ae9b5f39c13fc5dd2f32d6c28e
-*** Element info: {Using=xpath, value=/html/body/app-root/app-blank/mat-sidenav-container/mat-sidenav-content/app-login/div/mat-card/mat-card-content/form/div/p/label[1]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\YOARLY~1.CAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58040}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0776342b07399c99e4955bf1840737b6
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -111,19 +110,9 @@ Session ID: 1401f1ae9b5f39c13fc5dd2f32d6c28e
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:217)
-	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
-	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1142)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:950)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1225)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1227)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d.CGLIB$performAs$0(&lt;generated&gt;)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d$$FastClassByCGLIB$$eb009f51.invoke(&lt;generated&gt;)
@@ -138,9 +127,9 @@ Session ID: 1401f1ae9b5f39c13fc5dd2f32d6c28e
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
-	at co.konecta.sura.certificate.Tareas.Casos.login.LoginTask.performAs(LoginTask.java:21)
-	at co.konecta.sura.certificate.Tareas.Casos.login.LoginTask$$EnhancerByCGLIB$$d10050df.CGLIB$performAs$0(&lt;generated&gt;)
-	at co.konecta.sura.certificate.Tareas.Casos.login.LoginTask$$EnhancerByCGLIB$$d10050df$$FastClassByCGLIB$$9aa5a09f.invoke(&lt;generated&gt;)
+	at co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask.performAs(SupplierManagementTask.java:29)
+	at co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask$$EnhancerByCGLIB$$d6d28a8d.CGLIB$performAs$0(&lt;generated&gt;)
+	at co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask$$EnhancerByCGLIB$$d6d28a8d$$FastClassByCGLIB$$b63be0a0.invoke(&lt;generated&gt;)
 	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
 	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
@@ -148,12 +137,12 @@ Session ID: 1401f1ae9b5f39c13fc5dd2f32d6c28e
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
-	at co.konecta.sura.certificate.Tareas.Casos.login.LoginTask$$EnhancerByCGLIB$$d10050df.performAs(&lt;generated&gt;)
+	at co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask$$EnhancerByCGLIB$$d6d28a8d.performAs(&lt;generated&gt;)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
-	at co.konecta.sura.certificate.stepsdefinitions.Casos.LoginStepsDefinitions.IngresamosUsuarioContrasena(LoginStepsDefinitions.java:44)
-	at ?.Ingresamos a la aplicacion con usuarioSergio.anaya y contraseñaColombia_2026*(src/test/resources/features/SubModuloTareasDeMonitoreo.feature:27)
+	at co.konecta.sura.certificate.stepsdefinitions.Casos.SupplierManagementStepsDefinitions.iTypeInformationInTheFieldsSupplierNameAndSupplierResponseAndTimeMonitoringSiteAndTimeMonitoringDestinationAndTechnicalCellphoneAndCentralPhoneAndCentralPhoneAndObservations(SupplierManagementStepsDefinitions.java:44)
+	at ?.I type information in the fields supplier name 34 SERVICE SAS MEDELLIN and supplier response Toma servicio and time monitoring site 15 and time monitoring destination 21 and technical cellphone 3125847853 and central phone 1 3122557485 and central phone 2 321485578 and observations pruebas automaticas proveedor(src/test/resources/features/SubModuloGestionProvedores.feature:12)
 
 </pre>
 </span>
@@ -211,6 +200,7 @@ Session ID: 1401f1ae9b5f39c13fc5dd2f32d6c28e
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Novelty
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Page sub-module sura climbing
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Page create case
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Case closure parameterization
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Page create information of cases
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Page login
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -221,8 +211,8 @@ Session ID: 1401f1ae9b5f39c13fc5dd2f32d6c28e
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: Successful task monitoring edition
--------------------------------------------------------------------(monitoring;successful-task-monitoring-edition)
+TEST STARTED: Successful supplier management submodule
+-------------------------------------------------------------------(page-submodule-supplier-management;successful-supplier-management-submodule)
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
@@ -231,10 +221,10 @@ TEST STARTED: Successful task monitoring edition
  (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
           \_\                                                            
 
-TEST FAILED WITH ERROR: Successful task monitoring edition
+TEST FAILED WITH ERROR: Successful supplier management submodule
 ---------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Usuario clicks on This the input survey
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - The following error occurred: chrome not reachable
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Usuario clicks on This the input supplier response
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - element click intercepted: Element &lt;mat-select _ngcontent-oyx-c50=&quot;&quot; class=&quot;mat-select ng-tns-c26-99 ng-star-inserted mat-select-required mat-select-empty ng-untouched ng-pristine ng-invalid&quot; id=&quot;replyProvider&quot; placeholder=&quot;Respuesta proveedor&quot; required=&quot;&quot; role=&quot;listbox&quot; tabindex=&quot;0&quot; aria-label=&quot;Respuesta proveedor&quot; aria-required=&quot;true&quot; aria-disabled=&quot;false&quot; aria-invalid=&quot;false&quot; aria-multiselectable=&quot;false&quot;&gt;...&lt;/mat-select&gt; is not clickable at point (1180, 271). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;
 </pre>
 </span>
 </div>
@@ -246,7 +236,7 @@ TEST FAILED WITH ERROR: Successful task monitoring edition
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.7</a> at 16/02/2022 01:15:10 PM</p>
+<a href="http://www.gradle.org">Gradle 6.7</a> at 16/02/2022 01:49:13 PM</p>
 </div>
 </div>
 </body>
