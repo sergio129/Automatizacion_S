@@ -1,10 +1,10 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.FollowupToaServiceTask;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.GeneralInformationTask;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.ServiceRequestTask;
-import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
-import co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -12,6 +12,7 @@ import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
