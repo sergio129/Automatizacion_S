@@ -41,8 +41,7 @@ public class CallReasonsParameterizationStepsDefinitions {
         actor.attemptsTo(
                 Click.on(BUTTON_INITIAL_TAB),
                 Click.on(OPTION_MENU_PARAMETERIZATION),
-               // Click.on(HomePage.SCROLL_PARAMETERIZATION),
-                Click.on(HomePage.OPTION_CALL_REASONS_PARAMETERIZATION));
+                MoveMouse.to(HomePage.OPTION_CALL_REASONS_PARAMETERIZATION).andThen(actions -> actions.click()));
     }
 
     @And("^I select button create call reasons parameterization$")

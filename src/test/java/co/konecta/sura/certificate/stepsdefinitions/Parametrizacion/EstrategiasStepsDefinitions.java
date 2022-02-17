@@ -10,6 +10,7 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
+import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -42,10 +43,7 @@ public class EstrategiasStepsDefinitions {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
-       actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
-        Thread.sleep(2000);
-        //MoveMouse.to(HomePage.OPTION_STRATEGY_PARAMETERIZATION).andThen(actions -> actions.click());
-       actor.attemptsTo(Click.on(HomePage.OPTION_STRATEGY_PARAMETERIZATION));
+        actor.has(MoveMouse.to(HomePage.OPTION_STRATEGY_PARAMETERIZATION).andThen(actions -> actions.click()));
         Thread.sleep(3000);
 
     }

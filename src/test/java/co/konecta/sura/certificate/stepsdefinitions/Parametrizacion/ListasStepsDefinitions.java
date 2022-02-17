@@ -10,6 +10,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
@@ -37,10 +38,7 @@ public class ListasStepsDefinitions {
         actor.attemptsTo(Click.on(ListasPage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(ListasPage.BUTTON_PARAMETRIZACION));
         Thread.sleep(3000);
-        actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
-
-
-        actor.attemptsTo(Click.on(ListasPage.OPTION_LIST_PARAMETERIZATION));
+        actor.has(MoveMouse.to(ListasPage.OPTION_LIST_PARAMETERIZATION).andThen(actions -> actions.click()));
     }
 
     @And("^I select button create lists parameterization$")
