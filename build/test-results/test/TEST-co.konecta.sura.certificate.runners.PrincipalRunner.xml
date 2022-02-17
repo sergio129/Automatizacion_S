@@ -7,7 +7,7 @@ src/test/resources/features/ParametrizacionAsignacion.feature:18 # Successful as
 
 1 Scenarios (1 failed)
 6 Steps (1 failed, 1 skipped, 4 passed)
-0m36,776s
+0m38,428s
 
 net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1145)
@@ -43,7 +43,7 @@ net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expect
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
 	at co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions.iTypeInformationInTheAssignmentWithTheRoleAndTheUserAndTheLineAndTheServiceAndTheDepartment(AsignacionStepsDefinitions.java:60)
 	at ?.I type information in the assignment with the role Admin Backlog and the user yoarlys carrillo and the line Autos and the service Grua and the department Antioquia(src/test/resources/features/ParametrizacionAsignacion.feature:13)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: /html/body/div[2]/div[4]/div/div/div/mat-option[2]/mat-pseudo-checkbox to be enabled (tried for 5 second(s) with 100 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: /html/body/div[3]/div[4]/div/div/div/mat-option[2]/span to be enabled (tried for 5 second(s) with 100 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1142)
@@ -140,15 +140,15 @@ Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: wait
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[4]/div/div/div/mat-option[2]/mat-pseudo-checkbox"}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div[4]/div/div/div/mat-option[2]/span"}
   (Session info: chrome=96.0.4664.45)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ANMEUCCI07M', ip: '172.20.5.16', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_311'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\YOARLY~1.CAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3337699d361b19a9be3e7ae671c463a6
-*** Element info: {Using=xpath, value=/html/body/div[2]/div[4]/div/div/div/mat-option[2]/mat-pseudo-checkbox}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\YOARLY~1.CAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61178}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 97325a5f3b000d2f005177005cc434d8
+*** Element info: {Using=xpath, value=/html/body/div[3]/div[4]/div/div/div/mat-option[2]/span}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -244,7 +244,7 @@ TEST STARTED: Successful assignment parameterization
 
 TEST FAILED: Successful assignment parameterization
 --------------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Usuario clicks on This the input line assignment parameterization
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Usuario clicks on This the button Select assignment parameterization
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected enabled element was not enabled
 ]]></system-err>
 </testsuite>
