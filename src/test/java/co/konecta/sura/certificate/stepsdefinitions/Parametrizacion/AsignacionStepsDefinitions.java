@@ -9,6 +9,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -36,9 +37,7 @@ public class AsignacionStepsDefinitions {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.OPTION_ASSIGNMENT_PARAMETERIZATION));
-
+       actor.has(MoveMouse.to(HomePage.OPTION_ASSIGNMENT_PARAMETERIZATION).andThen(actions -> actions.click()));
 
     }
 
