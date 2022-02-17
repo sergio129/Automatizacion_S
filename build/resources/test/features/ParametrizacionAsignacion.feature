@@ -14,8 +14,8 @@ Feature: Assignment parameterization
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | roleassignment | userassignment    | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
-      | sergio.anaya | Colombia_2026* | Admin Backlog  | Sergio Luis Anaya | Autos          | Grua              | Antioquia            | Registro guardado correctamente |
+      | user            | password      | roleassignment | userassignment   | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | Admin Backlog  | yoarlys carrillo | Autos          | Grua              | Antioquia            | Registro guardado correctamente |
 
 
   @TestAssignmentParameterizationEdition
@@ -27,8 +27,8 @@ Feature: Assignment parameterization
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | roleassignment | userassignment      | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
-      | Sergio.anaya | Colombia_2026* | Admin Backlog  | Yaira Manuela Admin | Autos          | Audiencia         | Atlantico            | Registro guardado correctamente |
+      | user            | password      | roleassignment | userassignment      | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | Admin Backlog  | Yaira Manuela Admin | Autos          | Audiencia         | Atlantico            | Registro guardado correctamente |
 
 
   @TestAssignmentParameterizationDelete

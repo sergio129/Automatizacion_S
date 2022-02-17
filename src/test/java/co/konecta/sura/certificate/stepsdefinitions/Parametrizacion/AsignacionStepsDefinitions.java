@@ -35,9 +35,12 @@ public class AsignacionStepsDefinitions {
     @And("^I entering assignment parameterization$")
     public void iEnteringAssignmentParameterization() throws InterruptedException {
         Thread.sleep(5000);
-        actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
-        actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
-       actor.has(MoveMouse.to(HomePage.OPTION_ASSIGNMENT_PARAMETERIZATION).andThen(actions -> actions.click()));
+        actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB),
+        Click.on(HomePage.OPTION_MENU_PARAMETERIZATION),
+        MoveMouse.to(HomePage.OPTION_ASSIGNMENT_PARAMETERIZATION).andThen(actions -> actions.click())
+        );
+
+
 
     }
 

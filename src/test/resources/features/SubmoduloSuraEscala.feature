@@ -13,8 +13,8 @@ Feature: Page sub-module sura climbing
     Then I view the modal save sura climbing with <modalmessage>
 
     Examples:
-      | user         | password       | numberCase      | managementtype        | managementperson       | responsetype | generatescomplaint | observations                          | modalmessage                    |
-      | Sergio.Anaya | Colombia_2024* | 202106104435443 | Guardianes de la vida | Sebastian Ossa Taborda | Adulto mayor | No                 | pruebas automaticas escalamiento sura | Registro guardado correctamente |
+      | user            | password      | numberCase      | managementtype        | managementperson       | responsetype | generatescomplaint | observations                          | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | A00000000000012 | Guardianes de la vida | Sebastian Ossa Taborda | Adulto mayor | No                 | pruebas automaticas escalamiento sura | Registro guardado correctamente |
 
 
   @TestSuraClimbingEdition
@@ -25,8 +25,8 @@ Feature: Page sub-module sura climbing
     Then I view the modal save sura climbing with <modalmessage>
 
     Examples:
-      |  user         | password    |numberCase        |managementtype                 |managementperson           |responsetype           |generatescomplaint       | observations                                   |modalmessage                          |
-      |yaira.acevedo  | YMAe8807**  |202106104435443   |Mi águila                      | CNM                       |Lesiones o muerte      |No                       | pruebas automaticas escalamiento sura edicion  |Registro guardado correctamente       |
+      | user            | password      | numberCase      | managementtype | managementperson | responsetype      | generatescomplaint | observations                                  | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | A00000000000012  | Mi águila      | CNM              | Lesiones o muerte | No                 | pruebas automaticas escalamiento sura edicion | Registro guardado correctamente |
 
 
   @TestSuraClimbingCompleteWithComplaint
@@ -37,8 +37,8 @@ Feature: Page sub-module sura climbing
     Then I view the modal save sura climbing with <modalmessage>
 
     Examples:
-      |  user         | password    |numberCase         |managementtype                 |managementperson           |responsetype      |generatescomplaint   |observations                                        |   filedcomplaint       |      modalmessage                    |
-      |yaira.acevedo  | YMAe8807**  |2021050100000009   |Guardianes de la vida          | Sebastian Ossa Taborda    |Adulto mayor      |Si                   |pruebas automaticas escalamiento sura con queja     |24242411                |Registro guardado correctamente       |
+      | user            | password      | numberCase       | managementtype        | managementperson       | responsetype | generatescomplaint | observations                                    | filedcomplaint | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | A00000000000012| Guardianes de la vida | Sebastian Ossa Taborda | Adulto mayor | Si                 | pruebas automaticas escalamiento sura con queja | 24242411       | Registro guardado correctamente |
 
 
   @TestSuraClimbingEditionComplaint
@@ -49,8 +49,8 @@ Feature: Page sub-module sura climbing
     Then I view the modal save sura climbing with <modalmessage>
 
     Examples:
-      |  user         | password    |numberCase         |managementtype                 |managementperson           |responsetype          |generatescomplaint   |observations                                              |   filedcomplaint       |      modalmessage                    |
-      |yaira.acevedo  | YMAe8807**  |2021050100000009   |Mi águila                      | CNM                       |Lesiones o muerte     |Si                   |pruebas automaticas escalamiento sura con queja edicion   | 123456                 |Registro guardado correctamente       |
+      | user            | password      | numberCase       | managementtype | managementperson | responsetype      | generatescomplaint | observations                                            | filedcomplaint | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | A00000000000012 | Mi águila      | CNM              | Lesiones o muerte | Si                 | pruebas automaticas escalamiento sura con queja edicion | 123456         | Registro guardado correctamente |
 
 
   @TestSuraClimbingRequiredFields
@@ -61,5 +61,5 @@ Feature: Page sub-module sura climbing
     Then I view the modal save sura climbing with <modalmessage>
 
     Examples:
-      |  user         | password    |numberCase         | modalmessage                                    |
-      |yaira.acevedo  | YMAe8807**  |202105030008697    | Todos los campos son obligatorios               |
+      | user            | password      | numberCase      | modalmessage                      |
+      | yoarlys.carillo | Colombia2020* | 202105030008697 | Todos los campos son obligatorios |
