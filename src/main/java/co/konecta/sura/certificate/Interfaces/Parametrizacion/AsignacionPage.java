@@ -9,7 +9,7 @@ public class AsignacionPage {
     public static final Target INPUT_SEARCH_ROLE_ASSIGNMENT = Target.the("This the input search role assignment parameterization").located(By.id("inputCreateRolWizzardSearch"));
     public static final Target INPUT_USER_ASSIGNMENT = Target.the("This the input user assignment parameterization").located(By.id("selectCreateUsersWizzard"));
     public static final Target INPUT_SEARCH_USER_ASSIGNMENT = Target.the("This the input search user assignment parameterization").located(By.id("inputCreateUsersWizzardSearch"));
-    public static final Target INPUT_LINE_ASSIGNMENT = Target.the("This the input line assignment parameterization").locatedBy("selectCreateLinesWizzard");
+    public static final Target INPUT_LINE_ASSIGNMENT = Target.the("This the input line assignment parameterization").located(By.id("selectCreateLinesWizzard"));
     public static final Target INPUT_SEARCH_LINE_ASSIGNMENT = Target.the("This the input search line assignment parameterization").located(By.id("inputCreateLinesWizzardSearch"));
     public static final Target INPUT_SERVICE_ASSIGNMENT = Target.the("This the input service assignment parameterization").located(By.id("selectCreateServiceActivatedWizzard"));
     public static final Target INPUT_SEARCH_SERVICE_ASSIGNMENT = Target.the("This the input search service assignment parameterization").located(By.id("inputCreateServiceActivatedWizzardSearch"));
