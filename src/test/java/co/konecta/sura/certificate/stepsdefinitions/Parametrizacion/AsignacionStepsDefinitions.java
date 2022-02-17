@@ -82,5 +82,13 @@ public class AsignacionStepsDefinitions {
     }
 
 
-
+    @And("^Buscamos por usuario Parametrizacion Asignacion \"([^\"]*)\"$")
+    public void buscamosPorUsuarioParametrizacionAsignacion(String arg0) throws Throwable {
+        Thread.sleep(2000);
+        actor.attemptsTo(
+                Click.on((INPUT_USER_ASSIGNMENT_INICIO)),
+                Enter.theValue(arg0).into(INPUT_SEARCH_ROLE_ASSIGNMENT_INICIO).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Click.on(BUTTON_SEARCH));
+        // Write code here that turns the phrase above into concrete actions
+    }
 }
