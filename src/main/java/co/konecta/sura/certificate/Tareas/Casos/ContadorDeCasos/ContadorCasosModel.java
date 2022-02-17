@@ -12,11 +12,4 @@ public class ContadorCasosModel {
         this.date1 = date1;
     }
 
-    public String getServicio() {
-        return servicio;
-    }
-
-    public void seServicio(String servicio) {
-        this.servicio = servicio;
-    }
 }

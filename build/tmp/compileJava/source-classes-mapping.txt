@@ -18,8 +18,8 @@ co/konecta/sura/certificate/Tareas/Casos/SubModuloGestionSalud/GestionSaludEmerg
  co.konecta.sura.certificate.Tareas.Casos.SubModuloGestionSalud.GestionSaludEmergenciaSi
 co/konecta/sura/certificate/Interfaces/Casos/advancedsearch/AdvancedSearchPage.java
  co.konecta.sura.certificate.Interfaces.Casos.advancedsearch.AdvancedSearchPage
-co/konecta/sura/certificate/Tareas/Casos/ContadorDeCasos/ContadorCasosModel.java
- co.konecta.sura.certificate.Tareas.Casos.ContadorDeCasos.ContadorCasosModel
+co/konecta/sura/certificate/questions/TheModal.java
+ co.konecta.sura.certificate.questions.TheModal
 co/konecta/sura/certificate/Interfaces/Parametrizacion/MotivosDeLlamadaPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage
 co/konecta/sura/certificate/Tareas/Casos/SubModuloGestionSalud/GestionSaludEmergenciaNoDificultadSi.java
@@ -66,8 +66,8 @@ co/konecta/sura/certificate/Tareas/Casos/listenending/Ending.java
  co.konecta.sura.certificate.Tareas.Casos.listenending.Ending
 co/konecta/sura/certificate/Tareas/Casos/suppliermonitoring/SupplierMonitoringTask.java
  co.konecta.sura.certificate.Tareas.Casos.suppliermonitoring.SupplierMonitoringTask
-co/konecta/sura/certificate/Tareas/Casos/ContadorDeCasos/ContadorDeCasosTask.java
- co.konecta.sura.certificate.Tareas.Casos.ContadorDeCasos.ContadorDeCasosTask
+co/konecta/sura/certificate/Tareas/Casos/login/LoginTask.java
+ co.konecta.sura.certificate.Tareas.Casos.login.LoginTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/RamosPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.RamosPage
 co/konecta/sura/certificate/Tareas/Casos/casetask/CaseModel.java
@@ -186,11 +186,11 @@ co/konecta/sura/certificate/Tareas/pendientes/LoginTask.java
  co.konecta.sura.certificate.Tareas.pendientes.LoginTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/CierreDeExpedientePage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.CierreDeExpedientePage
-co/konecta/sura/certificate/Tareas/Casos/login/LoginTask.java
- co.konecta.sura.certificate.Tareas.Casos.login.LoginTask
 co/konecta/sura/certificate/Interfaces/Inicio/HomePage.java
  co.konecta.sura.certificate.Interfaces.Inicio.HomePage
 co/konecta/sura/certificate/Tareas/Casos/suppliermanagement/SupplierManagementTask.java
  co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask
-co/konecta/sura/certificate/questions/TheModal.java
- co.konecta.sura.certificate.questions.TheModal
+co/konecta/sura/certificate/Tareas/Casos/ContadorDeCasos/ContadorCasosModel.java
+ co.konecta.sura.certificate.Tareas.Casos.ContadorDeCasos.ContadorCasosModel
+co/konecta/sura/certificate/Tareas/Casos/ContadorDeCasos/ContadorDeCasosTask.java
+ co.konecta.sura.certificate.Tareas.Casos.ContadorDeCasos.ContadorDeCasosTask

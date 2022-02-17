@@ -3,11 +3,6 @@ package co.konecta.sura.certificate.Tareas.Casos.ContadorDeCasos;
 import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
-import org.openqa.selenium.Keys;
-
-import static co.konecta.sura.certificate.Interfaces.Casos.ContadorCasos.ContadorDeCasosPage.*;
 
 @AllArgsConstructor
 public class ContadorDeCasosTask implements Task {
@@ -16,10 +11,7 @@ public class ContadorDeCasosTask implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.has(Click.on(FECHA_INICIO_CONTADOR_CASOS),
-                Enter.keyValues(contadorCasosModel.getDate1()).into(FECHA_INICIO_CONTADOR_CASOS).thenHit(Keys.ENTER)
 
-        );
 
 
     }

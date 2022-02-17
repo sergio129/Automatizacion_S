@@ -2,7 +2,6 @@ package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import co.konecta.sura.certificate.Tareas.Casos.ContadorDeCasos.ContadorCasosModel;
-import co.konecta.sura.certificate.Tareas.Casos.ContadorDeCasos.ContadorDeCasosTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -52,8 +51,10 @@ Thread.sleep(3000);
     @And("^Filtramos por fecha inicio contador de casos (.*)$")
     public void filtramosPorFechaInicioContadorDeCasosFI(String FI) throws InterruptedException {
         this.Contados_Casos.setDate1(FI);
-        actor.has(ContadorDeCasosTask.EscribirFechas(Contados_Casos));
-Thread.sleep(5000);
+        actor.has(Click.on(FECHA_INICIO_CONTADOR_CASOS));
+        actor.has(Enter.keyValues(Contados_Casos.getDate1()).into(FECHA_INICIO_CONTADOR_CASOS).thenHit(Keys.TAB).thenHit(Keys.ENTER).thenHit(Keys.ENTER));
+        //actor.has(ContadorDeCasosTask.EscribirFechas(Contados_Casos));
+        Thread.sleep(5000);
         /*actor.has(Click.on(FECHA_INICIO_CONTADOR_CASOS));
         String date_dd_MM_yyyy[] = (FI.split(" ")[0]).split("/");
 
