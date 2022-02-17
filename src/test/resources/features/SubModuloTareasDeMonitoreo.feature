@@ -19,8 +19,8 @@ Feature: Monitoring
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | usuario      | contrasena     | numberCase       | name   | type                                | date       | expiredhour | userMonitoring    | modalmessage                    |
-      | Sergio.anaya | Colombia_2026* | B202201064435401 | Prueba | Monitoreo finalizacion del servicio | 2021-05-31 | 09:19am     | Sergio Luis Anaya | Registro guardado correctamente |
+      | usuario      | contrasena     | numberCase      | name   | type                                | date       | expiredhour | userMonitoring    | modalmessage                    |
+      | Sergio.anaya | Colombia_2026* | A00000000000012 | Prueba | Monitoreo finalizacion del servicio | 2021-05-31 | 09:19am     | Sergio Luis Anaya | Registro guardado correctamente |
 
   @TestTaskMonitoringEdition
   Scenario Outline: Successful task monitoring edition
