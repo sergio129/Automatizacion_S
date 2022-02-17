@@ -3,32 +3,16 @@
   <properties/>
   <system-out><![CDATA[
 Failed scenarios:
-src/test/resources/features/SubModuloGestionProvedores.feature:17 # Successful supplier management submodule
+src/test/resources/features/ParametrizacionAsignacion.feature:18 # Successful assignment parameterization
 
 1 Scenarios (1 failed)
-5 Steps (1 failed, 1 skipped, 3 passed)
-0m46,784s
+6 Steps (1 failed, 1 skipped, 4 passed)
+0m36,776s
 
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <mat-select _ngcontent-oyx-c50="" class="mat-select ng-tns-c26-99 ng-star-inserted mat-select-required mat-select-empty ng-untouched ng-pristine ng-invalid" id="replyProvider" placeholder="Respuesta proveedor" required="" role="listbox" tabindex="0" aria-label="Respuesta proveedor" aria-required="true" aria-disabled="false" aria-invalid="false" aria-multiselectable="false">...</mat-select> is not clickable at point (1180, 271). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing"></div>
-  (Session info: chrome=96.0.4664.45)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ANMEUCCI07M', ip: '172.20.5.16', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_311'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\YOARLY~1.CAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58040}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0776342b07399c99e4955bf1840737b6
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1227)
+net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1145)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:950)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1225)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d.CGLIB$performAs$0(<generated>)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d$$FastClassByCGLIB$$eb009f51.invoke(<generated>)
@@ -43,9 +27,9 @@ Session ID: 0776342b07399c99e4955bf1840737b6
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
-	at co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask.performAs(SupplierManagementTask.java:29)
-	at co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask$$EnhancerByCGLIB$$d6d28a8d.CGLIB$performAs$0(<generated>)
-	at co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask$$EnhancerByCGLIB$$d6d28a8d$$FastClassByCGLIB$$b63be0a0.invoke(<generated>)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask.performAs(AsignacionTask.java:25)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask$$EnhancerByCGLIB$$b7589e59.CGLIB$performAs$0(<generated>)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask$$EnhancerByCGLIB$$b7589e59$$FastClassByCGLIB$$2eb46aef.invoke(<generated>)
 	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
 	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
@@ -53,12 +37,139 @@ Session ID: 0776342b07399c99e4955bf1840737b6
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
-	at co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask$$EnhancerByCGLIB$$d6d28a8d.performAs(<generated>)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask$$EnhancerByCGLIB$$b7589e59.performAs(<generated>)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
-	at co.konecta.sura.certificate.stepsdefinitions.Casos.SupplierManagementStepsDefinitions.iTypeInformationInTheFieldsSupplierNameAndSupplierResponseAndTimeMonitoringSiteAndTimeMonitoringDestinationAndTechnicalCellphoneAndCentralPhoneAndCentralPhoneAndObservations(SupplierManagementStepsDefinitions.java:44)
-	at ?.I type information in the fields supplier name 34 SERVICE SAS MEDELLIN and supplier response Toma servicio and time monitoring site 15 and time monitoring destination 21 and technical cellphone 3125847853 and central phone 1 3122557485 and central phone 2 321485578 and observations pruebas automaticas proveedor(src/test/resources/features/SubModuloGestionProvedores.feature:12)
+	at co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions.iTypeInformationInTheAssignmentWithTheRoleAndTheUserAndTheLineAndTheServiceAndTheDepartment(AsignacionStepsDefinitions.java:60)
+	at ?.I type information in the assignment with the role Admin Backlog and the user yoarlys carrillo and the line Autos and the service Grua and the department Antioquia(src/test/resources/features/ParametrizacionAsignacion.feature:13)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: /html/body/div[2]/div[4]/div/div/div/mat-option[2]/mat-pseudo-checkbox to be enabled (tried for 5 second(s) with 100 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1142)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:950)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1225)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d.CGLIB$performAs$0(<generated>)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d$$FastClassByCGLIB$$eb009f51.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask.performAs(AsignacionTask.java:25)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask$$EnhancerByCGLIB$$b7589e59.CGLIB$performAs$0(<generated>)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask$$EnhancerByCGLIB$$b7589e59$$FastClassByCGLIB$$2eb46aef.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask$$EnhancerByCGLIB$$b7589e59.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
+	at co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions.iTypeInformationInTheAssignmentWithTheRoleAndTheUserAndTheLineAndTheServiceAndTheDepartment(AsignacionStepsDefinitions.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[4]/div/div/div/mat-option[2]/mat-pseudo-checkbox"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANMEUCCI07M', ip: '172.20.5.16', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\YOARLY~1.CAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3337699d361b19a9be3e7ae671c463a6
+*** Element info: {Using=xpath, value=/html/body/div[2]/div[4]/div/div/div/mat-option[2]/mat-pseudo-checkbox}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:217)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 94 more
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -111,7 +222,6 @@ Session ID: 0776342b07399c99e4955bf1840737b6
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Novelty
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Page sub-module sura climbing
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Page create case
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Case closure parameterization
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Page create information of cases
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Page login
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -122,8 +232,8 @@ Session ID: 0776342b07399c99e4955bf1840737b6
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: Successful supplier management submodule
--------------------------------------------------------------------(page-submodule-supplier-management;successful-supplier-management-submodule)
+TEST STARTED: Successful assignment parameterization
+-------------------------------------------------------------------(assignment-parameterization;successful-assignment-parameterization)
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
@@ -132,9 +242,9 @@ TEST STARTED: Successful supplier management submodule
  (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
           \_\                                                            
 
-TEST FAILED WITH ERROR: Successful supplier management submodule
----------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Usuario clicks on This the input supplier response
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - element click intercepted: Element <mat-select _ngcontent-oyx-c50="" class="mat-select ng-tns-c26-99 ng-star-inserted mat-select-required mat-select-empty ng-untouched ng-pristine ng-invalid" id="replyProvider" placeholder="Respuesta proveedor" required="" role="listbox" tabindex="0" aria-label="Respuesta proveedor" aria-required="true" aria-disabled="false" aria-invalid="false" aria-multiselectable="false">...</mat-select> is not clickable at point (1180, 271). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing"></div>
+TEST FAILED: Successful assignment parameterization
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Usuario clicks on This the input line assignment parameterization
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected enabled element was not enabled
 ]]></system-err>
 </testsuite>

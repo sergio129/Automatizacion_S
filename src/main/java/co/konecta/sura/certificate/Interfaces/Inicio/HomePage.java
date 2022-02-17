@@ -17,7 +17,7 @@ public class HomePage extends PageObject {
     public static final Target OPTION_CONTROL_BOARDS_PARAMETERIZATION = Target.the("This the button control boards parameterization").located(By.id("moControlPanelParameterization"));
     public static final Target OPTION_ALERT_PARAMETERIZATION = Target.the("This the button alert parameterization").located(By.id("moAlertRecipients"));
     public static final Target OPTION_CASE_CLOSURE_PARAMETERIZATION = Target.the("This the button case closure parameterization").located(By.id("moCloseCasesParameterization"));
-    public static final Target OPTION_STRATEGY_PARAMETERIZATION = Target.the("This the button strategy parameterization").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]/div[1]/app-sidebar/mat-nav-list/mat-list-item[6]/div/mat-nav-list/mat-list-item[15]/div/a");
+    public static final Target OPTION_STRATEGY_PARAMETERIZATION = Target.the("This the button strategy parameterization").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]/div[3]/div");
     public static final Target OPTION_ASSIGNMENT_PARAMETERIZATION = Target.the("This the button assignment parameterization").located(By.id("moWizzardParameterization"));
     public static final Target OPTION_ALERT_TIME_PARAMETERIZATION = Target.the("This the button alert time parameterization").located(By.id("moAlertTimes"));
     public static final Target OPTION_HIDE_MONITORING_TASKS_PARAMETERIZATION = Target.the("This the button hide monitoring tasks parameterization").located(By.id("moHideMonitoringTask"));
@@ -26,7 +26,7 @@ public class HomePage extends PageObject {
     public static final Target MODAL_VALIDATION = Target.the("This the toast validation").located(By.id("toast-container"));
     public static final Target OPTION_BOUQUETS_PARAMETERIZATION = Target.the("This the option bouquets parameterization").located(By.id("moBranch"));
     public static final Target STATUS_CASE_VALIDATION = Target.the("This the input status case validation").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav-content/div/app-show-cases/mat-accordion/mat-expansion-panel[1]/div/div/div/div[5]/h6");
-    public static final Target SCROLL_PARAMETERIZATION = Target.the("This controls the Scrooll").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]/div[3]");
+   public static final Target SCROLL_PARAMETERIZATION = Target.the("This controls the Scrooll").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]");
     public static final Target OPTION_DIALING_CODES_PARAMETERIZATION = Target.the("This the Dialing codes parameterization").located(By.id("moListIndicative"));
     public static final Target OPTION_EXIT_CODES_PARAMETERIZATION = Target.the("This the exit codes parameterization").located(By.id("moListExitCode"));
     public static final Target SCROLL2_PARAMETERIZATION = Target.the("This controls 2 the Scrooll").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]/div[3]");

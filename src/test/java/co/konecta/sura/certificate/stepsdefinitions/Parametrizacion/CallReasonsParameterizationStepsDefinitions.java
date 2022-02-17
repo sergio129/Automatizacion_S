@@ -41,7 +41,7 @@ public class CallReasonsParameterizationStepsDefinitions {
         actor.attemptsTo(
                 Click.on(BUTTON_INITIAL_TAB),
                 Click.on(OPTION_MENU_PARAMETERIZATION),
-                Click.on(HomePage.SCROLL_PARAMETERIZATION),
+               // Click.on(HomePage.SCROLL_PARAMETERIZATION),
                 Click.on(HomePage.OPTION_CALL_REASONS_PARAMETERIZATION));
     }
 

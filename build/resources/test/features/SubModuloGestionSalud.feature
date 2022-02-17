@@ -15,8 +15,8 @@ Feature: SubModulo Gestion Salud
     And Selecionamos el boton guardar Emergencia salud
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | NumeroCaso       | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | TipoEmergencia            | ServicioPrestado | NombreAcompanante | Parentesco | Telefono    | PrestadorServicio | Observaciones          | modalmensaje                         |
-      | sergio.anaya | Colombia_2026* | 202202080000002 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | Si              | Emergencia por enfermedad | Hola Doctor      | Pruebas automa    | Novio(a)   | 31036666544 | Santa Rita        | pruebas Automatizacion | Registro guardado correctamente |
+      | usuario         | contrasena    | NumeroCaso      | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | TipoEmergencia            | ServicioPrestado | NombreAcompanante | Parentesco | Telefono    | PrestadorServicio | Observaciones          | modalmensaje                    |
+      | yoarlys.carillo | Colombia2020* | A00000000000010 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | Si              | Emergencia por enfermedad | Hola Doctor      | Pruebas automa    | Novio(a)   | 31036666544 | Santa Rita        | pruebas Automatizacion | Registro guardado correctamente |
 
 
   @TestEdicionEmergenciaSi
@@ -29,8 +29,8 @@ Feature: SubModulo Gestion Salud
     And Selecionamos el boton guardar Emergencia salud
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
-      | usuario      | contrasena     | NumeroCaso      | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | TipoEmergencia            | ServicioPrestado | NombreAcompanante | Parentesco | Telefono    | PrestadorServicio | Observaciones          | mensaje                         |
-      | sergio.anaya | Colombia_2026* | 202201260012683 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | Si              | Emergencia por enfermedad | Hola Doctor      | Pruebas automa    | Novio(a)   | 31036666544 | Santa Rita        | pruebas Automatizacion | Registro guardado correctamente |
+      | usuario         | contrasena    | NumeroCaso      | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | TipoEmergencia            | ServicioPrestado | NombreAcompanante | Parentesco | Telefono    | PrestadorServicio | Observaciones          | mensaje                         |
+      | yoarlys.carillo | Colombia2020* | A00000000000010 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | Si              | Emergencia por enfermedad | Hola Doctor      | Pruebas automa    | Novio(a)   | 31036666544 | Santa Rita        | pruebas Automatizacion | Registro guardado correctamente |
 
 
   @TestEmergenciaNoDificultaNo
@@ -43,8 +43,8 @@ Feature: SubModulo Gestion Salud
     And Selecionamos el boton guardar Emergencia salud
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
-      | usuario      | contrasena     | NumeroCaso      | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | AtencionSalud | Observaciones          | mensaje                         |
-      | sergio.anaya | Colombia_2026* | 202201260012677 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | No              | No            | pruebas Automatizacion | Registro guardado correctamente |
+      | usuario         | contrasena    | NumeroCaso      | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | AtencionSalud | Observaciones          | mensaje                         |
+      | yoarlys.carillo | Colombia2020* | A00000000000012 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | No              | No            | pruebas Automatizacion | Registro guardado correctamente |
 
 
   @TestEdicionEmergenciaNoDificultaNo
@@ -57,8 +57,8 @@ Feature: SubModulo Gestion Salud
     And Selecionamos el boton guardar Emergencia salud
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
-      | usuario      | contrasena     | NumeroCaso      | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | AtencionSalud | Observaciones          | mensaje                         |
-      | sergio.anaya | Colombia_2026* | 202201260012683 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | No              | No            | pruebas Automatizacion | Registro guardado correctamente |
+      | usuario         | contrasena    | NumeroCaso      | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | AtencionSalud | Observaciones          | mensaje                         |
+      | yoarlys.carillo | Colombia2020* | A00000000000012 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | No              | No            | pruebas Automatizacion | Registro guardado correctamente |
 
   @TestEmergenciaNoDificultadSi
   Scenario Outline: Registro Exitoso de emergencia dificultad si
@@ -70,8 +70,8 @@ Feature: SubModulo Gestion Salud
     And Selecionamos el boton guardar Emergencia salud
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
-      | usuario      | contrasena     | NumeroCaso       | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | AtencionSalud | Atencion         | Observaciones          | mensaje                         |
-      | sergio.anaya | Colombia_2026* | Z000000000000011 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | No              | si            | Vacunación Covid | pruebas Automatizacion | Registro guardado correctamente |
+      | usuario         | contrasena    | NumeroCaso       | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | AtencionSalud | Atencion         | Observaciones          | mensaje                         |
+      | yoarlys.carillo | Colombia2020* | A00000000000012| Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | No              | si            | Vacunación Covid | pruebas Automatizacion | Registro guardado correctamente |
 
   @TestEdicionEmergenciaNoDificultadSi
   Scenario Outline: Edicion Exitoso de emergencia dificultad si
@@ -83,8 +83,8 @@ Feature: SubModulo Gestion Salud
     And Selecionamos el boton guardar Emergencia salud
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
-      | usuario      | contrasena     | NumeroCaso       | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | AtencionSalud | Atencion         | Observaciones          | mensaje                         |
-      | sergio.anaya | Colombia_2026* | Z000000000000011 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | No              | si            | Vacunación Covid | pruebas Automatizacion | Registro guardado correctamente |
+      | usuario         | contrasena    | NumeroCaso       | CanalIngreso            | TipoDocumento        | NumeroDocumento | TieneEmergencia | AtencionSalud | Atencion         | Observaciones          | mensaje                         |
+      | yoarlys.carillo | Colombia2020* | A00000000000012 | Ingreso #888 Emergencia | Cédula de Ciudadanía | 88888888        | No              | si            | Vacunación Covid | pruebas Automatizacion | Registro guardado correctamente |
 
 
   @ValidarCampos
@@ -95,5 +95,5 @@ Feature: SubModulo Gestion Salud
     And Selecionamos el boton guardar Emergencia salud
     Then Se visualiza mensaje de la modal<mensaje>
     Examples:
-      | usuario      | contrasena     | NumeroCaso       | mensaje                          |
-      | sergio.anaya | Colombia_2026* | Z000000000000010 | Verifica los campos obligatorios |
+      | usuario         | contrasena    | NumeroCaso       | mensaje                          |
+      | yoarlys.carillo | Colombia2020* | Z000000000000010 | Verifica los campos obligatorios |
