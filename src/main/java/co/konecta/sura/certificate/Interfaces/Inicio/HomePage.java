@@ -40,7 +40,7 @@ public class HomePage extends PageObject {
     public static final Target OPCION_ASOCIAR_LISTAS = Target.the("opcion para entrar al menu de asociar listas ").located(By.id("moListRelations"));
     public static final Target OPCION_SERVICIOS_DUPLICADOS = Target.the("opcion para entrar al menu de servicios duplicados ").located(By.id("moServiceDuplicate"));
 
-    public static final Target GESTION_SERVICIOS_DUPLICADOS = Target.the("opcion para entrar al menu de servicios duplicados ").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav-content/div/app-list-service-duplicate/mat-card/mat-card-content/div/mat-table/mat-row[1]/mat-cell[8]/button/span/mat-icon");
+    public static final Target GESTION_SERVICIOS_DUPLICADOS = Target.the("opcion para entrar al menu de servicios duplicados ").located(By.cssSelector("[mattooltip='Guardar Gestión']"));
     public static final Target GESTION_USUARIOS = Target.the("opcion para entrar a gestion de usuarios ").located(By.id("moUserManagement"));
     public static final Target GESTION_USUARIOS_LISTAR_USUARIOS = Target.the("opcion para entrar a a la opcion de listar usuarios del modulo de gestion de usuarios ").located(By.id("moUserList"));
 
