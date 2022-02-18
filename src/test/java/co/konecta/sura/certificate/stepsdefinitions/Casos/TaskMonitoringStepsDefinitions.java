@@ -30,7 +30,7 @@ public class TaskMonitoringStepsDefinitions {
     private TaskMonitoringModel taskMonitoringModel = new TaskMonitoringModel();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         actor.can(BrowseTheWeb.with(getBrowser));
     }
 
@@ -50,19 +50,21 @@ public class TaskMonitoringStepsDefinitions {
                 Click.on(INPUT_STATE),
                 Hit.the(Keys.ARROW_DOWN).into(INPUT_STATE),
                 Hit.the(Keys.ENTER).into(INPUT_STATE)
+
         );
     }
 
     @And("^I type information in the field name (.*)$")
     public void iTypeInformationInTheFieldName(String name) throws Exception {
-         this.taskMonitoringModel.setName(name);
-            actor.attemptsTo(Enter.theValue( taskMonitoringModel.getName()).into(TaskMonitoringPage.INPUT_NAME));
+        this.taskMonitoringModel.setName(name);
+        actor.attemptsTo(Enter.theValue(taskMonitoringModel.getName()).into(TaskMonitoringPage.INPUT_NAME));
 
     }
 
     @And("^I type information in the field state (.*)$")
     public void iEnterEditInformationInTheFieldState(String state) throws Exception {
         this.taskMonitoringModel.setState(state);
+
     }
 
     @And("^I type information in the field type (.*)$")
@@ -90,8 +92,7 @@ public class TaskMonitoringStepsDefinitions {
     public void noSetInformationTaskMonitoring() throws InterruptedException {
         actor.attemptsTo(Click.on(TaskMonitoringPage.BUTTON_CREATE_MONITORING));
         Thread.sleep(1000);
-        actor.attemptsTo(Click.on(TaskMonitoringPage.BUTTON_SAVE_MONITORING));
-        Thread.sleep(1000);
+
     }
 
     @Then("^I view the modal save task monitoring (.*)")
@@ -102,4 +103,9 @@ public class TaskMonitoringStepsDefinitions {
     }
 
 
+    @And("^Selecionamos el Boton Guardar Tarea de Monitoreo$")
+    public void selecionamosElBotonGuardarTareaDeMonitoreo() throws InterruptedException {
+        actor.attemptsTo(Click.on(TaskMonitoringPage.BUTTON_SAVE_MONITORING));
+        Thread.sleep(1000);
+    }
 }

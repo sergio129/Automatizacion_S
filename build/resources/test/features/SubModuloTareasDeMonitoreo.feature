@@ -7,7 +7,7 @@ Feature: Monitoring
 
   @TestTaskMonitoringComplete
   Scenario Outline: Successful task monitoring creation
-    When I entering in the application with user <user> and password <password>
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And I entering the advanced search and type case number <numberCase>
     And I select button create monitoring task
     And I type information in the field name <name>
@@ -15,35 +15,37 @@ Feature: Monitoring
     And I type information in the field date <date>
     And I type information in the field expired hour <expiredhour>
     And I type information in the field user <userMonitoring>
-    Then I view the modal save task monitoring <modalmessage>
+    And Selecionamos el Boton Guardar Tarea de Monitoreo
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | numberCase      | name   | type                                | date       | expiredhour | userMonitoring | modalmessage                    |
-      | Sergio.anaya | Colombia_2025* | 202121312837234 | Prueba | Monitoreo finalizacion del servicio | 2021-05-31 | 09:19am     | Yesenia        | Registro guardado correctamente |
+      | usuario         | contrasena    | numberCase      | name   | type                                | date       | expiredhour | userMonitoring    | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | A00000000000007 | Prueba | Monitoreo finalizacion del servicio | 2021-05-31 | 09:19am     | Sergio Luis Anaya | Registro guardado correctamente |
 
   @TestTaskMonitoringEdition
   Scenario Outline: Successful task monitoring edition
-    When I entering in the application with user <user> and password <password>
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And I entering the advanced search and type case number <numberCase>
     And I select button edition monitoring task
     And I type information in the field state <state>
-    And I type information in the field type <type>
-    And I type information in the field date <date>
-    And I type information in the field expired hour <expiredhour>
-    And I type information in the field user <userMonitoring>
-    Then I view the modal save task monitoring <modalmessage>
+    #And I type information in the field type <type>
+    #And I type information in the field date <date>
+    #And I type information in the field expired hour <expiredhour>
+    #And I type information in the field user <userMonitoring>
+    And Selecionamos el Boton Guardar Tarea de Monitoreo
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      |  user            | password    |numberCase          |state     | type                               | date        | expiredhour | userMonitoring      | modalmessage                         |
-      |yaira.acevedo     | YMAe8807**  |202121312837234     | Vencida  |Monitoreo finalizacion del servicio | 2021-05-31  | 05:19am     | Yaira Manuela       | Registro guardado correctamente |
+      | usuario         | contrasena    | numberCase      | state   | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | A00000000000007 | Cerrada | Registro guardado correctamente |
 
-  @TestTaskMonitoringRequiredFields
+  @TestValidacionCamposTareasDeMonitoreo
   Scenario Outline: Task monitoring submodule required fields
-    When I entering in the application with user <user> and password <password>
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And I entering the advanced search and type case number <numberCase>
     And I no type information task monitoring
-    Then I view the modal save task monitoring <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user             | password    |   numberCase         |modalmessage                           |
-      |yaira.acevedo     | YMAe8807**  |202106010009071       |Todos los campos son obligatorios |
+      | usuario      | contrasena     | numberCase       | modalmessage                      |
+      | Sergio.anaya | Colombia_2026* | B202201064435401 | Todos los campos son obligatorios |

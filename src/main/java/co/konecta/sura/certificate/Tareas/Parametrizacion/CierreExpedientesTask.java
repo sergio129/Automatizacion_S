@@ -23,9 +23,10 @@ public class CierreExpedientesTask implements Task {
                 Click.on(SELECCIONAR_LINEA),
                 Hit.the(Keys.ESCAPE).into(BUSCAR_LINEA),
                 Click.on(CAMPO_SERVICIO),
-                Enter.theValue(servicio).into(BUSCAR_SERVICIO));
+                Enter.theValue(servicio).into(BUSCAR_SERVICIO).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE));
                 Thread.sleep(2000);
-                actor.has(Click.on(SELECCIONAR_SERVICIO),
+               actor.has(
+                       //Click.on(SELECCIONAR_SERVICIO),
                 Click.on(CAMPO_CAMPO),
                 Enter.theValue(campo).into(BUSCAR_CAMPO).thenHit(Keys.ENTER)
         );

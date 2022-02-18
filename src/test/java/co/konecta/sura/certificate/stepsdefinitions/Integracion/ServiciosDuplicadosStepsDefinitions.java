@@ -4,9 +4,11 @@ import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
@@ -30,13 +32,23 @@ public class ServiciosDuplicadosStepsDefinitions {
 
 
     @And("^Entramos a Integracion Servicios Duplicados y Gestionamos$")
-    public void entramosAIntegracionServiciosDuplicadosYGestionamos() {
+    public void entramosAIntegracionServiciosDuplicadosYGestionamos() throws InterruptedException {
         actor.attemptsTo(
                 Click.on(BUTTON_INITIAL_TAB),
                 Click.on(OPTION_INTEGRATION),
-                Click.on(OPCION_SERVICIOS_DUPLICADOS),
-                Click.on(GESTION_SERVICIOS_DUPLICADOS)
+                Click.on(OPCION_SERVICIOS_DUPLICADOS));
+        Thread.sleep(3000);
+        actor.has(Click.on(GESTION_SERVICIOS_DUPLICADOS)
 
         );
     }
-}
+
+    @Then("^Se visualiza la ventana nuevamente para gestionar otro servicio(.*)$")
+    public void seVisualizaLaVentanaNuevamenteParaGestionarOtroServicioModalmensaje(String modalmensaje) throws InterruptedException {
+            actor.attemptsTo(
+                    Ensure.that(BUTTON_INITIAL_TAB).text().isEqualTo(modalmensaje));
+            Thread.sleep(3000);
+        }
+
+    }
+

@@ -1,24 +1,21 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
-import co.konecta.sura.certificate.Tareas.Parametrizacion.NotificacionesPushTask;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import co.konecta.sura.certificate.Interfaces.Parametrizacion.ListasPage;
 import co.konecta.sura.certificate.Interfaces.Parametrizacion.NotificacionesPushPage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.NotificacionesPushTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.ensure.Ensure;
+import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-
-import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.*;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.NotificacionesPushPage.*;
 
 public class NotificacionesPushStepsDefinitions {
@@ -43,8 +40,7 @@ public class NotificacionesPushStepsDefinitions {
         actor.attemptsTo(Click.on(ListasPage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(ListasPage.BUTTON_PARAMETRIZACION));
         Thread.sleep(3000);
-        actor.attemptsTo(Click.on(co.konecta.sura.certificate.Interfaces.Inicio.HomePage.SCROLL_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(NotificacionesPushPage.OPTION_PUSH_NOTIFICATIONS));
+        actor.has(MoveMouse.to(NotificacionesPushPage.OPTION_PUSH_NOTIFICATIONS).andThen(actions -> actions.click()));
         Thread.sleep(3000);
 
     }
@@ -54,6 +50,7 @@ public class NotificacionesPushStepsDefinitions {
     public void ISelectButtonCreatePushNotifications() throws InterruptedException {
         actor.attemptsTo(Click.on(BUTTON_CREATE_PUSH_NOTIFICATIONS));
     }
+
     @And("^I select button save push notifications$")
     public void ISelectButtonSavePushNotifications() throws InterruptedException {
         actor.attemptsTo(Click.on(BUTTON_SAVE_PUSH_NOTIFICATIONS));
@@ -79,6 +76,7 @@ public class NotificacionesPushStepsDefinitions {
         );
 
     }
+
     @And("^I select button search for push notifications$")
     public void ISelectButtonSearchForPushNotifications() throws InterruptedException {
         actor.attemptsTo(Click.on(BUTTON_SEARCH_PUSH_NOTIFICATIONS));
@@ -90,6 +88,7 @@ public class NotificacionesPushStepsDefinitions {
         actor.attemptsTo(Click.on(BUTTON_EDIT_PUSH_NOTIFICATIONS));
         Thread.sleep(3000);
     }
+
     @And("^I select button delete push notifications$")
     public void ISelectButtonDeletePushNotifications() throws InterruptedException {
         actor.attemptsTo(
@@ -99,15 +98,6 @@ public class NotificacionesPushStepsDefinitions {
         );
 
         Thread.sleep(3000);
-    }
-
-    @Then("^I view the modal save push notification with (.*)$")
-    public void iViewTheModalPushNotificationsWith(String message) throws InterruptedException {
-        Thread.sleep(2000);
-        actor.attemptsTo(
-                Ensure.that(MODAL_VALIDATION).text().contains(message));
-
-
     }
 
 

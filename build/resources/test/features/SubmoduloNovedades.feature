@@ -6,7 +6,7 @@ Feature: Novelty
     Given I create or edition a novelty for a case
 
   @TestNoveltyComplete
-  Scenario Outline: Successful novelty creation
+  Scenario Outline: Creacion de novedades
     When I entering in the application with user <user> and password <password>
     And I entering the advanced search and type case number <numberCase>
     And I select button create novelty
@@ -17,8 +17,8 @@ Feature: Novelty
     Then I view the modal save novelty with <message>
 
     Examples:
-      | user         | password       | numberCase      | whoreportsnewsmanagements | causenoveltynewsmanagement | complaintnewsmanagement | observationnewsmanagement     | message                         |
-      | Sergio.Anaya | Colombia_2025* | 202106104435443 | Acompañamiento Emocional  | Abogado Virtual            | No                      | observacion novedades pruebas | Registro guardado correctamente |
+      | user            | password      | numberCase      | whoreportsnewsmanagements | causenoveltynewsmanagement     | complaintnewsmanagement | observationnewsmanagement     | message                         |
+      | yoarlys.carillo | Colombia2020* | A00000000000009 | Abogado virtual           | Cambio abogado virtual a sitio | No                      | observacion novedades pruebas | Registro guardado correctamente |
 
   @TestNoveltyEdition
   Scenario Outline: Successful novelty edition
@@ -32,8 +32,8 @@ Feature: Novelty
     Then I view the modal save novelty with <message>
 
     Examples:
-      | user         | password       | numberCase      | whoreportsnewsmanagements | causenoveltynewsmanagement | complaintnewsmanagement | observationnewsmanagement     | message                         |
-      | Sergio.Anaya | Colombia_2025* | 202106104435443 | Cliente                   | Acepte                     | No                      | observacion novedades edicion | Registro guardado correctamente |
+      | user            | password      | numberCase      | whoreportsnewsmanagements | causenoveltynewsmanagement | complaintnewsmanagement | observationnewsmanagement     | message                         |
+      | yoarlys.carillo | Colombia2020* | A00000000000009 | Cliente                   | Acompañamiento asegurado   | No                      | observacion novedades edicion | Registro guardado correctamente |
 
   @TestNoveltyRequiredFields
   Scenario Outline: Novelty submodule required fields
@@ -43,5 +43,5 @@ Feature: Novelty
     Then I view the modal save novelty with <message>
 
     Examples:
-      | user         | password       | numbercase      | message                           |
-      | Sergio.Anaya | Colombia_2025* | 202121312837234 | Todos los campos son obligatorios |
+      | user            | password      | numbercase      | message                           |
+      | yoarlys.carillo | Colombia2020* | 202121312837234 | Todos los campos son obligatorios |

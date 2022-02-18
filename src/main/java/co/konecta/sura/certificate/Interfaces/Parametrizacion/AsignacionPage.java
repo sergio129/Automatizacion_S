@@ -23,7 +23,7 @@ public class AsignacionPage {
     public static final Target OPTION_YES_ASSIGNMENT = Target.the("This the button yes assignment parameterization").locatedBy("/html/body/div[5]/div/div[3]/button[1]");
     public static final Target BUTTON_SAVE_ASSIGNMENT = Target.the("This the button save assignment parameterization").located(By.id("btnSaveWizzard"));
     public static final Target BUTTON_CANCEL_ASSIGNMENT = Target.the("This the button cancel assignment parameterization").located(By.id(""));
-    public static final Target BUTTON_SELECT = Target.the("This the button Select assignment parameterization").located(By.xpath("/html/body/div[3]/div[4]/div/div/div/mat-option[2]/span"));
+    public static final Target BUTTON_SELECT = Target.the("This the button Select assignment parameterization").located(By.cssSelector("[class='mat-option-pseudo-checkbox mat-pseudo-checkbox ng-star-inserted']"));
     public static final Target INPUT_USER_ASSIGNMENT_INICIO = Target.the("This is the parameterization of the user input assignment at startup").located(By.id("selectUsersdWizzard"));
     public static final Target INPUT_SEARCH_ROLE_ASSIGNMENT_INICIO = Target.the("This the input search user assignment parameterization").located(By.id("inputUsersdWizzardSearch"));
     public static final Target BUTTON_SEARCH = Target.the("This the button SEARCH assignment parameterization").located(By.id("btnSearchWizzard"));

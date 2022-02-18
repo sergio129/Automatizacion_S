@@ -11,8 +11,8 @@ Feature: El usuario puede Crear asociacion de listas, Editar y Eliminar
     And Escribimos informacion Listas a asociar<ListaPadre>,<OptListaPadre>,<ListaHija>,<OptListaHija>Guardamos
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | ListaPadre          | OptListaPadre  | ListaHija           | OptListaHija   | modalmensaje                    |
-      | Sergio.anaya | Colombia_2026* | PruebaAutomatizada7 | OpcionnuevaQA2 | PruebaAutomatizada7 | OpcionnuevaQA1 | Registro guardado correctamente |
+      | usuario         | contrasena    | ListaPadre          | OptListaPadre  | ListaHija           | OptListaHija   | modalmensaje                    |
+      | yoarlys.carillo | Colombia2020* | PruebaAutomatizada7 | OpcionnuevaQA2 | PruebaAutomatizada7 | OpcionnuevaQA1 | Registro guardado correctamente |
 
   @TestEditarAsociacionListas
   Scenario Outline: Edicion Exitosa de asociacion de listas

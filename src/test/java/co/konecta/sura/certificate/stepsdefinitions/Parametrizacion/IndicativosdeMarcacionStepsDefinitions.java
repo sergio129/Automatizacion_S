@@ -1,22 +1,19 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
-import co.konecta.sura.certificate.Tareas.Parametrizacion.IndicativosdeMarcacionTask;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.IndicativosdeMarcacionTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.Interfaces.HomePage.BUTTON_INITIAL_TAB;
-import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.IndicativosdeMarcacionPage.*;
 
 public class IndicativosdeMarcacionStepsDefinitions {
@@ -89,13 +86,5 @@ public class IndicativosdeMarcacionStepsDefinitions {
         );
         Thread.sleep(500);
     }
-
-    @Then("^I view the modal save dialing codes parameterization (.*)$")
-    public void IViewTheModalSaveBouquetsParameterization(String message) throws InterruptedException {
-        Thread.sleep(2000);
-        actor.attemptsTo(
-                Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
-    }
-
 
 }

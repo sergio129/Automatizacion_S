@@ -11,7 +11,7 @@ Feature: Parametrizacion Estrategias
     And I entering strategy parameterization
     And I type information in the contingency strategy with the name contingency search <namecontingencysearch> and the description <description>
     And I save button strategy parameterization
-    Then I view the modal save strategy parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | description | namecontingencysearch | modalmessage                    |
@@ -25,7 +25,7 @@ Feature: Parametrizacion Estrategias
     And I entering search strategy parameterization <namecontingencysearch>
     And I type information in the coordination strategy with the description <description> and the time assignment <timeassignment> and the first expiration <firstexpiration> and the second expiration <secondexpiration>
     And I save button strategy parameterization
-    Then I view the modal save strategy parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | namecontingencysearch                 | description                                                              | timeassignment | firstexpiration | secondexpiration | modalmessage                    |
@@ -39,7 +39,7 @@ Feature: Parametrizacion Estrategias
     And I entering search strategy parameterization <namecontingencysearch>
     And I type information in the monitoring strategy with the description <description> and the preventive time <preventivetime> and the time monitoring site <timemonitoringsite> and the time monitoring completion <timemonitoringcompletion>
     And I save button strategy parameterization
-    Then I view the modal save strategy parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | namecontingencysearch                      | description                                                                | preventivetime | timemonitoringsite | timemonitoringcompletion | modalmessage                    |

@@ -13,7 +13,7 @@ Feature: Control boards parameterization
     And I select button create control boards parameterization
     And I type information in the case board parameterization with the board name <boardname> and fields show <fieldsshow>
     And I type filters in the case board parameterization with the case status <casestatus> and status service <statusservice> and department request <departmentrequest> and service <service> and special service <specialservice>
-    Then I view the modal save control boards with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | boardname             | fieldsshow | casestatus | statusservice | departmentrequest | service          | specialservice | modalmessage                    |
@@ -27,7 +27,7 @@ Feature: Control boards parameterization
     And I select button create control boards parameterization
     And I type information in the monitoring task board parameterization with the board name <boardname> and fields show <fieldsshow>
     And I type filters in the monitoring task board parameterization with the supplier <supplier> and monitoring type <monitoringtype> and assigned user <assigneduser>
-    Then I view the modal save control boards with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | boardname              | fieldsshow | supplier                      | monitoringtype     | assigneduser        | modalmessage                    |
@@ -41,7 +41,7 @@ Feature: Control boards parameterization
     And I select button create control boards parameterization
     And I type information in the closure case board parameterization with the board name <boardname> and fields show <fieldsshow>
     And I type filters in the closure case board parameterization with the service <service> and supplier <supplier> and special service <specialservice> and assigned user <assigneduser>
-    Then I view the modal save control boards with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | boardname                            | fieldsshow | service              | supplier                          | specialservice | assigneduser         | modalmessage                    |
@@ -55,7 +55,7 @@ Feature: Control boards parameterization
     And I select button edition control boards parameterization
     And I type information in the case board parameterization with the board name <boardname> and fields show <fieldsshow>
     And I type filters in the case board parameterization with the case status <casestatus> and status service <statusservice> and department request <departmentrequest> and service <service> and special service <specialservice>
-    Then I view the modal save control boards with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | boardname             | fieldsshow | casestatus | statusservice | departmentrequest | service          | specialservice | modalmessage                    |
@@ -69,7 +69,7 @@ Feature: Control boards parameterization
     And I select button edition control boards parameterization
     And I type information in the monitoring task board parameterization with the board name <boardname> and fields show <fieldsshow>
     And I type filters in the monitoring task board parameterization with the supplier <supplier> and monitoring type <monitoringtype> and assigned user <assigneduser>
-    Then I view the modal save control boards with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | boardname              | fieldsshow | supplier                      | monitoringtype     | assigneduser        | modalmessage                    |
@@ -83,7 +83,7 @@ Feature: Control boards parameterization
     And I select button edition control boards parameterization
     And I type information in the closure case board parameterization with the board name <boardname> and fields show <fieldsshow>
     And I type filters in the closure case board parameterization with the service <service> and supplier <supplier> and special service <specialservice> and assigned user <assigneduser>
-    Then I view the modal save control boards with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | boardname                            | fieldsshow | service              | supplier                          | specialservice | assigneduser         | modalmessage                    |
@@ -95,7 +95,7 @@ Feature: Control boards parameterization
     When I entering in the application with user <user> and password <password>
     And I entering control boards parameterization
     And I select button delete control boards parameterization
-    Then I view the modal save control boards with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | modalmessage                     |
@@ -108,7 +108,7 @@ Feature: Control boards parameterization
     And I entering control boards parameterization
     And I select button create control boards parameterization
     And I no type information control boards parameterization
-    Then I view the modal save control boards parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | modalmessage                      |

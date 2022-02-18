@@ -11,7 +11,7 @@ Feature: Parametrizacion Indicativos de Marcacion
     And I enter dialing codes parameterization
     And I select button create dialing codes parameterization
     And I Write information in dialing codes parameterization<department> and <municipality> and <indicative>
-    Then I view the modal save dialing codes parameterization <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | user         | password       | department | municipality  | indicative | modalmessage                    |
       | sergio.anaya | Colombia_2026* | Vichada    | Santa Barbara | +65        | Registro guardado correctamente |
@@ -23,7 +23,7 @@ Feature: Parametrizacion Indicativos de Marcacion
     And I select button search dialing codes parameterization<department> and <municipality>
     And I select button edit dialing codes parameterization
     And I Write information in dialing codes parameterization<department> and <municipality> and <indicative>
-    Then I view the modal save dialing codes parameterization <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | user         | password       | department | municipality  | indicative | modalmessage                    |
       | sergio.anaya | Colombia_2026* | Vichada    | Santa Barbara | +78        | Registro guardado correctamente |
@@ -34,7 +34,7 @@ Feature: Parametrizacion Indicativos de Marcacion
     And I enter dialing codes parameterization
     And I select button search dialing codes parameterization<department> and <municipality>
     And I select button delete dialing codes parameterization
-    Then I view the modal save dialing codes parameterization <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | user         | password       | department | municipality  | modalmessage                     |  |
       | sergio.anaya | Colombia_2026* | Vichada    | Santa Barbara | Registro eliminado correctamente |  |
@@ -44,7 +44,7 @@ Feature: Parametrizacion Indicativos de Marcacion
     When I entering in the application with user <user> and password <password>
     And I enter dialing codes parameterization
     And I select button create dialing codes parameterization
-    Then I view the modal save dialing codes parameterization <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | user         | password       | modalmessage                         |  |  |  |
       | sergio.anaya | Colombia_2026* | Los campos marcados son obligatorios |  |  |  |

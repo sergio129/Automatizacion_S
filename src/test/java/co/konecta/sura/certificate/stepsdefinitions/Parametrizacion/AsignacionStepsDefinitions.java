@@ -1,21 +1,19 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
-import co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.AsignacionTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.ensure.Ensure;
+import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.AsignacionPage.*;
 
 public class AsignacionStepsDefinitions {
@@ -37,10 +35,11 @@ public class AsignacionStepsDefinitions {
     @And("^I entering assignment parameterization$")
     public void iEnteringAssignmentParameterization() throws InterruptedException {
         Thread.sleep(5000);
-        actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
-        actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.OPTION_ASSIGNMENT_PARAMETERIZATION));
+        actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB),
+        Click.on(HomePage.OPTION_MENU_PARAMETERIZATION),
+        MoveMouse.to(HomePage.OPTION_ASSIGNMENT_PARAMETERIZATION).andThen(actions -> actions.click())
+        );
+
 
 
     }
@@ -82,12 +81,14 @@ public class AsignacionStepsDefinitions {
         Thread.sleep(1000);
     }
 
-    @Then("^I view the modal save assignment parameterization with (.*)$")
-    public void iViewTheModalSaveAssignmentParameterizationWithe(String message) throws InterruptedException {
+
+    @And("^Buscamos por usuario Parametrizacion Asignacion \"([^\"]*)\"$")
+    public void buscamosPorUsuarioParametrizacionAsignacion(String arg0) throws Throwable {
         Thread.sleep(2000);
         actor.attemptsTo(
-
-                Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
+                Click.on((INPUT_USER_ASSIGNMENT_INICIO)),
+                Enter.theValue(arg0).into(INPUT_SEARCH_ROLE_ASSIGNMENT_INICIO).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Click.on(BUTTON_SEARCH));
+        // Write code here that turns the phrase above into concrete actions
     }
-
 }

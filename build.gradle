@@ -31,6 +31,7 @@ tasks.withType(JavaCompile) {
 sourceCompatibility = 1.8
 
 dependencies {
+    implementation 'org.projectlombok:lombok:1.18.20'
     testImplementation 'net.serenity-bdd:serenity-core:1.9.9'
     testImplementation 'net.serenity-bdd:serenity-junit:1.9.9'
     testImplementation 'net.serenity-bdd:serenity-cucumber:1.9.5'

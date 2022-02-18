@@ -11,7 +11,7 @@ Feature: Alert time parameterization
     And I entering alert time parameterization
     And I select button create alert time
     And I type information in the alert time with the service <servicealert> and the time <time>
-    Then I view the modal save alert time parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | servicealert | time | modalmessage                    |
@@ -24,7 +24,7 @@ Feature: Alert time parameterization
     And I entering alert time parameterization
     And I select button edition alert time
     And I type information in the alert time with the service <servicealert> and the time <time>
-    Then I view the modal save alert time parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | servicealert | time | modalmessage                    |
@@ -36,7 +36,7 @@ Feature: Alert time parameterization
     When I entering in the application with user <user> and password <password>
     And I entering alert time parameterization
     And I select button delete alert time
-    Then I view the modal save alert time parameterization with <modalmessage>
+    Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
       | user         | password       | modalmessage                     |

@@ -10,6 +10,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
@@ -37,8 +38,8 @@ public class DestinatariosAlertaStepsDefinitions {
     public void iEnteringAlertRecipientsParameterization() {
         actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.OPTION_ALERT_PARAMETERIZATION));
+        actor.has(MoveMouse.to(HomePage.OPTION_ALERT_PARAMETERIZATION).andThen(actions -> actions.click()));
+
     }
     @And("^I select button search alert recipients(.*)$")
     public void iSearchButtonCreateAlertRecipients(String nameAlert) {
