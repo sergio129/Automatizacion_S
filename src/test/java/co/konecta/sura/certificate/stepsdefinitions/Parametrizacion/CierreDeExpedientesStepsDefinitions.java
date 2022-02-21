@@ -1,16 +1,15 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.CierreExpedientesTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
-import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Hit;
-import net.serenitybdd.screenplay.actions.MoveMouse;
+import net.serenitybdd.screenplay.actions.*;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -86,5 +85,11 @@ public class CierreDeExpedientesStepsDefinitions {
     @And("^Seleccionamos el Boton Eliminar Parametrizacion Cierre de Expediente$")
     public void seleccionamosElBotonEliminarParametrizacionCierreDeExpediente() {
         actor.has(Click.on(BOTON_ELIMINAR_CIERRE_EXPEDIENTE), Click.on(OPCION_SI_ELIMINAR_CIERRE_EXPEDIENTE));
+    }
+
+    @When("^Ingresamos a la aplicacion con usuario(.*) y contraseña(.*)$")
+    public void ingresamosALaAplicacionConUsuarioUsuarioYContraseñaContrasena(String user, String password) {
+        actor.wasAbleTo(Open.browserOn(homePage));
+        actor.attemptsTo(LoginTask.whitCredentials(user,password));
     }
 }

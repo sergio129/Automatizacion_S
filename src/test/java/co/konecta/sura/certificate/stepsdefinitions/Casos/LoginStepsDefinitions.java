@@ -25,8 +25,9 @@ public class LoginStepsDefinitions {
     private final HomePage homePage = new HomePage();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         actor.can(BrowseTheWeb.with(getBrowser));
+
     }
 
     @Given("^I entering in the application$")
@@ -34,12 +35,6 @@ public class LoginStepsDefinitions {
 
     @When("^I entering in the application with user (.*) and password (.*)$")
     public void iEnteringInTheApplicationWith(String user, String password) {
-        actor.wasAbleTo(Open.browserOn(homePage));
-        actor.attemptsTo(LoginTask.whitCredentials(user,password));
-    }
-
-    @When("^Ingresamos a la aplicacion con usuario(.*) y contraseña(.*)$")
-    public void IngresamosUsuarioContrasena(String user, String password) {
         actor.wasAbleTo(Open.browserOn(homePage));
         actor.attemptsTo(LoginTask.whitCredentials(user,password));
     }

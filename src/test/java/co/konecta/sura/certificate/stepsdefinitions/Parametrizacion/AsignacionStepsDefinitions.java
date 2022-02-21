@@ -24,7 +24,7 @@ public class AsignacionStepsDefinitions {
     private final HomePage homePage = new HomePage();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         actor.can(BrowseTheWeb.with(driver));
     }
 
@@ -36,10 +36,9 @@ public class AsignacionStepsDefinitions {
     public void iEnteringAssignmentParameterization() throws InterruptedException {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB),
-        Click.on(HomePage.OPTION_MENU_PARAMETERIZATION),
-        MoveMouse.to(HomePage.OPTION_ASSIGNMENT_PARAMETERIZATION).andThen(actions -> actions.click())
+                Click.on(HomePage.OPTION_MENU_PARAMETERIZATION),
+                MoveMouse.to(HomePage.OPTION_ASSIGNMENT_PARAMETERIZATION).andThen(actions -> actions.click())
         );
-
 
 
     }
@@ -52,13 +51,17 @@ public class AsignacionStepsDefinitions {
 
 
     @And("^I select button edition assignment$")
-    public void iSelectButtonEditionAssignment() {actor.attemptsTo(Click.on(BUTTON_EDIT_ASSIGNMENT));
-   }
+    public void iSelectButtonEditionAssignment() throws InterruptedException {
+        Thread.sleep(1000);
+        actor.attemptsTo(
+                  Click.on(BUTTON_EDIT_ASSIGNMENT));
+    }
 
     @And("^I type information in the assignment with the role (.*) and the user (.*) and the line (.*) and the service (.*) and the department (.*)$")
     public void iTypeInformationInTheAssignmentWithTheRoleAndTheUserAndTheLineAndTheServiceAndTheDepartment(String roleAssignment, String userAssignment, String lineAssignment, String serviceAssignment, String departmentAssignment) {
         actor.attemptsTo(AsignacionTask.withInformationAssignment(roleAssignment, userAssignment, lineAssignment, serviceAssignment, departmentAssignment));
     }
+
     @And("^I type search in the assignment parameterization with the user (.*)$")
     public void iDeleteTrafficLightParameterization(String User) throws InterruptedException {
         Thread.sleep(2000);
@@ -80,7 +83,6 @@ public class AsignacionStepsDefinitions {
         actor.attemptsTo(Click.on(BUTTON_SAVE_ASSIGNMENT));
         Thread.sleep(1000);
     }
-
 
 
 }

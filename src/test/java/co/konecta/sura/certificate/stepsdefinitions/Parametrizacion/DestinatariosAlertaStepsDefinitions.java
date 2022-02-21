@@ -55,8 +55,8 @@ public class DestinatariosAlertaStepsDefinitions {
     }
 
     @And("^I select button edition alert recipients$")
-    public void iSelectButtonEditionAlertRecipients() {
-
+    public void iSelectButtonEditionAlertRecipients() throws InterruptedException{
+        Thread.sleep(1000);
         actor.attemptsTo(Click.on(BUTTON_EDIT_ALERT_PARAMETERIZATION));
     }
 

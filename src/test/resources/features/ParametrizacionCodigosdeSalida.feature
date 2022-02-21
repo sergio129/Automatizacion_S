@@ -14,8 +14,8 @@ Feature: Codigos de Salida Parametrizacion
     And Selecionamos el boton guardar codigo de salida
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | line             | exitcode | modalmensaje                    |
-      | sergio.anaya | Colombia_2026* | Emergencia salud | 5486669  | Registro guardado correctamente |
+      | usuario         | contrasena    | line             | exitcode | modalmensaje                    |
+      | yoarlys.carillo | Colombia2020* | Emergencia salud | 5486669  | Registro guardado correctamente |
 
   @TestEdicionCodigoSalida
   Scenario Outline: Edicion Parametrizacion Codigos de salida
@@ -27,8 +27,8 @@ Feature: Codigos de Salida Parametrizacion
     And Selecionamos el boton guardar codigo de salida
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | line    | exitcode | modalmensaje                    |
-      | sergio.anaya | Colombia_2026* | Hogares | 5486669  | Registro guardado correctamente |
+      | usuario         | contrasena    | line    | exitcode | modalmensaje                    |
+      | yoarlys.carillo | Colombia2020* | Hogares | 5486669  | Registro guardado correctamente |
 
   @TestEliminarCodigoSalida
   Scenario Outline: Eliminacion Parametrizacion Codigos de salida
@@ -38,8 +38,8 @@ Feature: Codigos de Salida Parametrizacion
     And Selecionamos boton de eliminar codigos de salida
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | line             | modalmensaje                     |  |
-      | sergio.anaya | Colombia_2026* | Emergencia salud | Registro eliminado correctamente |  |
+      | usuario         | contrasena    | line             | modalmensaje                     |  |
+      | yoarlys.carillo | Colombia2020* | Emergencia salud | Registro eliminado correctamente |  |
 
 
   @TestvalidaciondeCampos
@@ -50,6 +50,6 @@ Feature: Codigos de Salida Parametrizacion
     And Selecionamos el boton guardar codigo de salida
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | modalmensaje                      |
-      | sergio.anaya | Colombia_2026* | Todos los campos son obligatorios |
+      | usuario         | contrasena    | modalmensaje                      |
+      | yoarlys.carillo | Colombia2020* | Todos los campos son obligatorios |
 
