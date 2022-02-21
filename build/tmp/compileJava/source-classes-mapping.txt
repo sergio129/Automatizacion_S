@@ -188,3 +188,7 @@ co/konecta/sura/certificate/Tareas/Casos/suppliermanagement/SupplierManagementTa
  co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask
 co/konecta/sura/certificate/questions/TheModal.java
  co.konecta.sura.certificate.questions.TheModal
+co/konecta/sura/certificate/Tareas/Casos/ReprogramacionDeCitas/ReprogramacionDeCitasTask.java
+ co.konecta.sura.certificate.Tareas.Casos.ReprogramacionDeCitas.ReprogramacionDeCitasTask
+co/konecta/sura/certificate/Interfaces/Casos/ReprogramacionDeCitas/ReprogramacionDeCitasPage.java
+ co.konecta.sura.certificate.Interfaces.Casos.ReprogramacionDeCitas.ReprogramacionDeCitasPage

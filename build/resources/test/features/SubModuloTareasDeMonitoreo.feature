@@ -20,7 +20,7 @@ Feature: Monitoring
 
     Examples:
       | usuario         | contrasena    | numberCase      | name   | type                                | date       | expiredhour | userMonitoring    | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | A00000000000007 | Prueba | Monitoreo finalizacion del servicio | 2021-05-31 | 09:19am     | Sergio Luis Anaya | Registro guardado correctamente |
+      | yoarlys.carillo | Colombia2020* | A00000000000007 | Prueba | Monitoreo finalizacion del servicio | 2022-02-31 | 09:19am     | Sergio Luis Anaya | Registro guardado correctamente |
 
   @TestTaskMonitoringEdition
   Scenario Outline: Successful task monitoring edition
