@@ -6,7 +6,7 @@ import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
 
-@DefaultUrl("https://easylabs.grupokonecta.local:5443/frontend/login")
+@DefaultUrl("https://172.23.1.252:5443/frontend/login")
 public class HomePage extends PageObject {
 
     public static final Target BUTTON_INITIAL_TAB = Target.the("This the input inicial tab").located(By.id("globalMenu"));
