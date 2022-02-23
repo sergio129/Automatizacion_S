@@ -2,9 +2,9 @@ package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage;
-import co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.FollowupToaServiceTask;
-import co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.GeneralInformationTask;
-import co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask.ServiceRequestTask;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.InformacionGeneralTask;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SeguimientoDeServicioTask;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SolicitudDeServicioTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -21,7 +21,7 @@ import static co.konecta.sura.certificate.Interfaces.HomePage.BUTTON_INITIAL_TAB
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.OPTION_MENU_PARAMETERIZATION;
 
-public class CallReasonsParameterizationStepsDefinitions {
+public class MotivosDeLlamadaStepsDefinitions {
     @Managed(driver = "chrome")
     WebDriver driver;
     private final Actor actor = Actor.named("Usuario");
@@ -50,22 +50,18 @@ public class CallReasonsParameterizationStepsDefinitions {
         actor.attemptsTo(Click.on(MotivosDeLlamadaPage.BUTTON_CREATE_CALL_REASONS));
     }
 
-    @And("^I write information in call reasons Service Request parameterization and (.*) and (.*)$")
-    public void IWriteInformationInCallReasonsParameterizationServiceRequest(String name, String line) {
-        actor.attemptsTo(ServiceRequestTask.writeInformationServiceRequest(name, line));
+    @And("^Escribimos la informacion de motivos de llamada con solicitud de servicio(.*),Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),Validacion\"([^\"]*)\"$")
+    public void IWriteInformationInCallReasonsParameterizationServiceRequest(String name, String Tipo, String Estado, String line, String Validacion) {
+        actor.attemptsTo(SolicitudDeServicioTask.writeInformationServiceRequest(name,Tipo,Estado, line, Validacion));
 
     }
 
-    @And("^I write information in call reasons Follow up To a Service parameterization and (.*) and (.*) and (.*)$")
-    public void IWriteInformationInCallReasonsParameterizationFollowupToaService(String name, String line, String option) {
-        actor.attemptsTo(FollowupToaServiceTask.writeInformationFollowupToaService(name, line, option));
-    }
     @And("^I write information in call reasons general information parameterization and (.*) and (.*) and (.*)$")
     public void IWriteInformationCallReasonsGeneralInformationParameterization(String name, String line, String finalmanagement) {
-        actor.attemptsTo(GeneralInformationTask.whiteGeneralInformation(name, line, finalmanagement));
+        actor.attemptsTo(InformacionGeneralTask.whiteGeneralInformation(name, line, finalmanagement));
     }
 
-    @And("^I Select check catastrophic event$")
+    @And("^Con Evento Catastrofico$")
     public void ISelectCheckCatastrophicEvent() throws InterruptedException {
         Thread.sleep(300);
         actor.attemptsTo(Click.on(MotivosDeLlamadaPage.CHECK_CATASTROPHIC_EVENT));
@@ -83,4 +79,8 @@ public class CallReasonsParameterizationStepsDefinitions {
                 Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
     }
 
+    @And("^Escribimos la informacion de motivos de llamada Seguimiento de Servicio Nombre:(.*),Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),opcion(.*)$")
+    public void escribimosLaInformacionDeMotivosDeLlamadaSeguimientoDeServicioNombreNameTipoEstadoLineaLineOpcionOption(String name, String tipo, String estado, String line,String option) throws Throwable {
+        actor.attemptsTo(SeguimientoDeServicioTask.writeInformationFollowupToaService(name, tipo,estado,line, option));
+    }
 }
