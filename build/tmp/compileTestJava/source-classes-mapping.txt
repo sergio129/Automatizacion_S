@@ -88,3 +88,5 @@ co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/OfertamientoStepsDe
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.OfertamientoStepsDefinitions
 co/konecta/sura/certificate/runners/PrincipalRunner.java
  co.konecta.sura.certificate.runners.PrincipalRunner
+co/konecta/sura/certificate/stepsdefinitions/Casos/UsuariosRegistradosStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Casos.UsuariosRegistradosStepsDefinitions

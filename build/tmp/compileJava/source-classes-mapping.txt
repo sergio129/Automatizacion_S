@@ -196,3 +196,5 @@ co/konecta/sura/certificate/Tareas/Parametrizacion/OfertamientoTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.OfertamientoTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/OfertamientoPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.OfertamientoPage
+co/konecta/sura/certificate/Interfaces/Casos/UsuariosRegistrados/UsuariosRegistradosPage.java
+ co.konecta.sura.certificate.Interfaces.Casos.UsuariosRegistrados.UsuariosRegistradosPage
