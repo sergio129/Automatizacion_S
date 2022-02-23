@@ -10,9 +10,9 @@ Feature: SubModulo Reprogramacion de Citas
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Buscamos por numero de expediente <NumeroCaso>
     And Entramos a la reprogramacion de citas desde el sudmodulo de Tareas de monitoreo
-    And Escribimos la informacion de la Reprogramacion de Citas<Motivo>,<Solicitante>,<NuevaCitaDiaMesActual>,<Hora>,<Observacion>
+    And Escribimos la informacion de la Reprogramacion de Citas<Motivo>,<Solicitante>,<NuevaCita>,<Hora>,<Observacion>
     And Click Boton Guardar Reprogramacion de Citas
     #Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
-      | usuario      | contrasena     | NumeroCaso      | Motivo                   | Solicitante | NuevaCitaDiaMesActual | Hora    | Observacion | modalmessage |
-      | Sergio.Anaya | Colombia_2026* | A00000000000012 | Técnico incumple la cita | Proveedor   | 26                    | 09:19am | Prueba      |              |
+      | usuario      | contrasena     | NumeroCaso      | Motivo                   | Solicitante | NuevaCita  | Hora    | Observacion | modalmessage |
+      | Sergio.Anaya | Colombia_2026* | A00000000000012 | Técnico incumple la cita | Proveedor   | 2022-02-25 | 09:19am | Prueba      |              |
