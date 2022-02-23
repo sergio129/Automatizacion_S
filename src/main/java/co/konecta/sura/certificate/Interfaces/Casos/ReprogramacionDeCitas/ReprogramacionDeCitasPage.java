@@ -18,7 +18,7 @@ public class ReprogramacionDeCitasPage {
     public static final Target CAMPO_HORA_REPROGRAMACION_CITAS = Target.the("CAMPO HORA CITA DE REPROGRAMACION DE CITAS").located(By.id("appointmentTime"));
     public static final Target CAMPO_OBSERVACIONES_REPROGRAMACION_CITAS = Target.the("CAMPO OBSERVACIONES CITA DE REPROGRAMACION DE CITAS").located(By.id("observations"));
     public static final Target BOTON_GUARDAR_REPROGRAMACION_CITAS = Target.the("BOTON PARA GUARDAR DE REPROGRAMACION DE CITAS").located(By.xpath("/html/body/div[3]/div[2]/div/mat-dialog-container/app-create-edit-reschedule/form/div[2]/button[1]/span"));
-    public static final Target SELECCIONAR_FECHA_REPROGRAMACION_CITAS = Target.the("SELECCIONAMOS FECHA GUARDAR DE REPROGRAMACION DE CITAS").located(By.cssSelector("[class='mat-calendar-body-cell mat-calendar-body-active ng-star-inserted']"));
+    public static final Target SELECCIONAR_FECHA_REPROGRAMACION_CITAS = Target.the("SELECCIONAMOS FECHA GUARDAR DE REPROGRAMACION DE CITAS").locatedBy(" //div/mat-month-view/table/tbody/tr/td/div[contains(text(),'{0}')]");
 
 
 
