@@ -21,7 +21,7 @@ public class ReprogramacionDeCitasTask implements Task {
                 Enter.theValue(Solicitante).into(BUSCAR_SOLICITANTE_REPROGRAMACION_CITAS).thenHit(Keys.ENTER),
                 Click.on(NUEVA_CITA_REPROGRAMACION_CITAS),
                 //Enter.keyValues(NuevaCita).into(NUEVA_CITA_REPROGRAMACION_CITAS).thenHit(Keys.ENTER).thenHit(Keys.ENTER),
-                Click.on(SELECCIONAR_FECHA_REPROGRAMACION_CITAS),
+                Click.on(SELECCIONAR_FECHA_REPROGRAMACION_CITAS.of(String.valueOf(NuevaCita))),
                 Enter.theValue(Hora).into(CAMPO_HORA_REPROGRAMACION_CITAS),
                 Enter.theValue(Observacion).into(CAMPO_OBSERVACIONES_REPROGRAMACION_CITAS)
         );
