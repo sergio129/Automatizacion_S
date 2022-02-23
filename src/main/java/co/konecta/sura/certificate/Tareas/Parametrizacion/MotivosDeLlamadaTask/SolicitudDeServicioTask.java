@@ -1,4 +1,4 @@
-package co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask;
+package co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask;
 
 import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
