@@ -1,7 +1,6 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
-import co.konecta.sura.certificate.Tareas.Casos.ContadorDeCasos.ContadorCasosModel;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -9,6 +8,8 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Hit;
+import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +22,7 @@ public class ContadorDeCasosStepsDefinitions {
     WebDriver driver;
     private final Actor actor = Actor.named("Usuario");
     private final HomePage homePage = new HomePage();
-    private ContadorCasosModel Contados_Casos = new ContadorCasosModel();
+
 
     @Before
     public void setUp() {
@@ -49,34 +50,44 @@ Thread.sleep(3000);
     }
 
     @And("^Filtramos por fecha inicio contador de casos (.*)$")
-    public void filtramosPorFechaInicioContadorDeCasosFI(String FI) throws InterruptedException {
-        this.Contados_Casos.setDate1(FI);
-        actor.has(Click.on(FECHA_INICIO_CONTADOR_CASOS));
-        actor.has(Enter.keyValues(Contados_Casos.getDate1()).into(FECHA_INICIO_CONTADOR_CASOS).thenHit(Keys.TAB).thenHit(Keys.ENTER).thenHit(Keys.ENTER));
-        //actor.has(ContadorDeCasosTask.EscribirFechas(Contados_Casos));
+    public void filtramosPorFechaInicioContadorDeCasosFI(String FechaInicio) throws InterruptedException {
+            actor.has(Click.on(FECHA_INICIO_CONTADOR_CASOS),
+                    Click.on(SELECCIONAR_FECHA_INICIO.of(String.valueOf(FechaInicio)))
+                //    Hit.the(Keys.TAB).into(CAMPO_ESTADO_SERVICIO),
+                  //  Hit.the(Keys.TAB).into(FECHA_INICIO_CONTADOR_CASOS)
+            );
+    }
+
+    @And("^Filtramos por Fecha Fin contador de casos (.*)$")
+    public void filtramosPorFechaFinContadorDeCasosFechaFin(String FechaFin) {
+        actor.has(
+                Click.on(FECHA_FIN_CONTADOR_CASOS),
+                Click.on(SELECCIONAR_FECHA_FIN.of(String.valueOf(FechaFin)))
+        );
+    }
+
+    @And("^Filtramos por Reporte contador de casos (.*)$")
+    public void filtramosPorReporteContadorDeCasosReporte(String Reporte) throws InterruptedException {
+        actor.has(Click.on(REPORTE_CONTADOR_CASOS),
+                Click.on(SELECCIONAR_REPORTE_CONTADOR_CASOS.of(String.valueOf(Reporte))),
+                Click.on(BOTON_BUSCAR_CONTADOR_CASOS));
         Thread.sleep(5000);
-        /*actor.has(Click.on(FECHA_INICIO_CONTADOR_CASOS));
-        String date_dd_MM_yyyy[] = (FI.split(" ")[0]).split("/");
+    }
 
-        int yearDiff = Integer.parseInt(date_dd_MM_yyyy[2])- Calendar.getInstance().get(Calendar.YEAR);
-       // actor.has(Click.on(ANO_FECHA_INICIO_CONTADOR_CASOS));
-        if(yearDiff!=0){
-            //Si se tiene que mover a el proximo año
-            if(yearDiff>0){
-                for(int i=0;i< yearDiff;i++){
-                    System.out.println("Year Diff->"+i);
-                    actor.has(Click.on(NEXT_FECHA_INICIO_CONTADOR_CASOS));
-                }
-            }
-            //Si tienes que moverte al año anterior
-            else if(yearDiff<0){
-                for(int i=0;i< (yearDiff*(-1));i++){
-                    System.out.println("Year Diff->"+i);
-                    actor.has(Click.on(PREVIA_FECHA_INICIO_CONTADOR_CASOS));
-                }
-            }
-        }
-        Thread.sleep(1000);*/
+    @And("^Semuestra la cantidad de casos(.*)$")
+    public void semuestraLaCantidadDeCasosMensaje(String mensaje) throws InterruptedException {
+        actor.has(
+                Ensure.that(VENTA_MODAL).text().isEqualTo(mensaje)
+        );
+Thread.sleep(3000);
+    }
 
+    @And("^Seleccionamos Check de todos los estados$")
+    public void seleccionamosCheckDeTodosLosEstados() {
+
+        actor.has(
+                Click.on(CAMPO_ESTADO_SERVICIO),
+                Click.on(CHECK_CONTADOR_CASOS),
+                Hit.the(Keys.ESCAPE).into(CAMPO_ESTADO_SERVICIO));
     }
 }
