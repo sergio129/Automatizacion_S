@@ -9,6 +9,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +24,7 @@ public class AsignacionStepsDefinitions {
     private final HomePage homePage = new HomePage();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         actor.can(BrowseTheWeb.with(driver));
     }
 
@@ -34,10 +35,10 @@ public class AsignacionStepsDefinitions {
     @And("^I entering assignment parameterization$")
     public void iEnteringAssignmentParameterization() throws InterruptedException {
         Thread.sleep(5000);
-        actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
-        actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.SCROLL_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(HomePage.OPTION_ASSIGNMENT_PARAMETERIZATION));
+        actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB),
+        Click.on(HomePage.OPTION_MENU_PARAMETERIZATION),
+        MoveMouse.to(HomePage.OPTION_ASSIGNMENT_PARAMETERIZATION).andThen(actions -> actions.click())
+        );
 
 
     }
@@ -50,8 +51,11 @@ public class AsignacionStepsDefinitions {
 
 
     @And("^I select button edition assignment$")
-    public void iSelectButtonEditionAssignment() {actor.attemptsTo(Click.on(BUTTON_EDIT_ASSIGNMENT));
-   }
+    public void iSelectButtonEditionAssignment() throws InterruptedException {
+        Thread.sleep(1000);
+        actor.attemptsTo(
+                  Click.on(BUTTON_EDIT_ASSIGNMENT));
+    }
 
     @And("^I type information in the assignment with the role (.*) and the user (.*) and the line (.*) and the service (.*) and the department (.*)$")
     public void iTypeInformationInTheAssignmentWithTheRoleAndTheUserAndTheLineAndTheServiceAndTheDepartment(String roleAssignment, String userAssignment, String lineAssignment, String serviceAssignment, String departmentAssignment) {
@@ -80,5 +84,13 @@ public class AsignacionStepsDefinitions {
     }
 
 
-
+    @And("^Buscamos por usuario Parametrizacion Asignacion \"([^\"]*)\"$")
+    public void buscamosPorUsuarioParametrizacionAsignacion(String arg0) throws Throwable {
+        Thread.sleep(2000);
+        actor.attemptsTo(
+                Click.on((INPUT_USER_ASSIGNMENT_INICIO)),
+                Enter.theValue(arg0).into(INPUT_SEARCH_ROLE_ASSIGNMENT_INICIO).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Click.on(BUTTON_SEARCH));
+        // Write code here that turns the phrase above into concrete actions
+    }
 }

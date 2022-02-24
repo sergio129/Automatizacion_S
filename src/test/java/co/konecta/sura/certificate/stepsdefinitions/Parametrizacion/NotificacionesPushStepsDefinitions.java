@@ -11,6 +11,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -39,8 +40,7 @@ public class NotificacionesPushStepsDefinitions {
         actor.attemptsTo(Click.on(ListasPage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(ListasPage.BUTTON_PARAMETRIZACION));
         Thread.sleep(3000);
-        actor.attemptsTo(Click.on(co.konecta.sura.certificate.Interfaces.Inicio.HomePage.SCROLL_PARAMETERIZATION));
-        actor.attemptsTo(Click.on(NotificacionesPushPage.OPTION_PUSH_NOTIFICATIONS));
+        actor.has(MoveMouse.to(NotificacionesPushPage.OPTION_PUSH_NOTIFICATIONS).andThen(actions -> actions.click()));
         Thread.sleep(3000);
 
     }

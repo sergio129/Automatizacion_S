@@ -1,4 +1,4 @@
-package co.konecta.sura.certificate.Tareas.Parametrizacion.CallReasonsTask;
+package co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask;
 
 import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
@@ -11,7 +11,7 @@ import org.openqa.selenium.Keys;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 @AllArgsConstructor
-public class GeneralInformationTask implements Task {
+public class InformacionGeneralTask implements Task {
     public String name;
     public String line;
     public String finalmanagement;
@@ -42,7 +42,7 @@ public class GeneralInformationTask implements Task {
 
     }
 
-    public static GeneralInformationTask whiteGeneralInformation(String name, String line, String finalmanagement) {
-        return instrumented(GeneralInformationTask.class, name, line, finalmanagement);
+    public static InformacionGeneralTask whiteGeneralInformation(String name, String line, String finalmanagement) {
+        return instrumented(InformacionGeneralTask.class, name, line, finalmanagement);
     }
 }

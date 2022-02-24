@@ -1,4 +1,4 @@
-Feature: Page submodule documentation CNM
+Feature: SubModulo Documentacion CNM
   As a user
   I need to create documentation CNM
 
@@ -6,15 +6,14 @@ Feature: Page submodule documentation CNM
     Given I create a documentation CNM for a case
 
   @TestDocumentationCNMComplete
-  Scenario Outline: Successful documentation CNM submodule
+  Scenario Outline: Creacion Exitosa de Registro Documentacion CNM
     When I entering in the application with user <user> and password <password>
     And I entering the advanced search and type case number <numberCase>
     And I type information in the fields management person <managementpersondocumentation> and generates complaint <generatescomplaintdocumentation> and observation <observationdocumentation>
     Then Se visualiza mensaje de la modal<modalmessage>
-
     Examples:
-      | user            | password      | numberCase       | managementpersondocumentation | generatescomplaintdocumentation | observationdocumentation                       | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | 1111111111111111 | Administrativo Aya            | Si                              | pruebas automaticas creacion documentacion CNM | Registro guardado correctamente |
+      | user         | password       | numberCase      | managementpersondocumentation | generatescomplaintdocumentation | observationdocumentation                       | modalmessage                    |
+      | Sergio.anaya | Colombia_2026* | 202121344537266 | Administrativo Aya            | Si                              | pruebas automaticas creacion documentacion CNM | Registro guardado correctamente |
 
   @TestDocumentationCNMCompleteWithComplaint
   Scenario Outline: Successful documentation CNM submodule with filed complaint
@@ -24,8 +23,8 @@ Feature: Page submodule documentation CNM
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user            | password      | numberCase       | managementpersondocumentation | generatescomplaintdocumentation | observationdocumentation                       | filedcomplaint | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | 1111111111111111 | Administrativo Aya            | Si                              | pruebas automaticas creacion documentacion CNM | 15242411       | Registro guardado correctamente |
+      | user         | password       | numberCase      | managementpersondocumentation | generatescomplaintdocumentation | observationdocumentation                       | filedcomplaint | modalmessage                    |
+      | Sergio.anaya | Colombia_2026* | 202121344537266 | Administrativo Aya            | Si                              | pruebas automaticas creacion documentacion CNM | 15242411       | Registro guardado correctamente |
 
   @TestDocumentationCNMRequiredFields
   Scenario Outline: Documentation CNM submodule required fields

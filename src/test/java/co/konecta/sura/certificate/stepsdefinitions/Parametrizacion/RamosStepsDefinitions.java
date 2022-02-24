@@ -9,6 +9,7 @@ import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
@@ -37,8 +38,7 @@ public class RamosStepsDefinitions {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(BUTTON_INITIAL_TAB),
                 Click.on(OPTION_MENU_PARAMETERIZATION),
-                Click.on(HomePage.SCROLL_PARAMETERIZATION),
-                Click.on(HomePage.OPTION_BOUQUETS_PARAMETERIZATION));
+                MoveMouse.to(HomePage.OPTION_BOUQUETS_PARAMETERIZATION).andThen(actions -> actions.click()));
     }
 
     @And("^I select button create bouquets parameterization$")

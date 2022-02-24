@@ -14,21 +14,22 @@ Feature: Assignment parameterization
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | roleassignment | userassignment    | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
-      | sergio.anaya | Colombia_2026* | Admin Backlog  | Sergio Luis Anaya | Autos          | Grua              | Antioquia            | Registro guardado correctamente |
+      | user            | password      | roleassignment | userassignment   | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | Admin Backlog  | yoarlys carrillo | Hogares        | Hospedaje Viajero | Antioquia            | Registro guardado correctamente |
 
 
   @TestAssignmentParameterizationEdition
   Scenario Outline: Assignment parameterization successful edition
     When I entering in the application with user <user> and password <password>
     And I entering assignment parameterization
+    And Buscamos por usuario Parametrizacion Asignacion "yoarlys carrillo"
     And I select button edition assignment
     And I type information in the assignment with the role <roleassignment> and the user <userassignment> and the line <lineassignment> and the service <serviceassignment> and the department <departmentassignment>
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | roleassignment | userassignment      | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
-      | Sergio.anaya | Colombia_2026* | Admin Backlog  | Yaira Manuela Admin | Autos          | Audiencia         | Atlantico            | Registro guardado correctamente |
+      | user            | password      | roleassignment | userassignment    | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | Admin Backlog  | Sergio Luis Anaya | Hogares        | Vigilante Sp      | Bogota               | Registro guardado correctamente |
 
 
   @TestAssignmentParameterizationDelete
@@ -40,8 +41,8 @@ Feature: Assignment parameterization
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | userassignment    | modalmessage                     |
-      | sergio.anaya | Colombia_2026* | Sergio Luis Anaya | Registro eliminado correctamente |
+      | user            | password      | userassignment   | modalmessage                     |
+      | yoarlys.carillo | Colombia2020* | Yoarlys Carrillo | Registro eliminado correctamente |
 
 
   @TestAssignmentRequiredFields
@@ -53,5 +54,5 @@ Feature: Assignment parameterization
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | modalmessage                      |
-      | Sergio.anaya | Colombia_2026* | Todos los campos son obligatorios |
+      | user            | password      | modalmessage                      |
+      | yoarlys.carillo | Colombia2020* | Todos los campos son obligatorios |
