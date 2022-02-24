@@ -36,7 +36,7 @@ public class MotivosDeLlamadaStepsDefinitions {
     public void ICreateEditAndDeleteCallReasonsParameterization() {
     }
 
-    @And("^I enter call reasons parameterization$")
+    @And("^Entramos a Parametrizacion Motivos de Llamada$")
     public void IEnterCallReasonsParameterization() throws InterruptedException {
         Thread.sleep(5000);
         actor.attemptsTo(
@@ -45,7 +45,7 @@ public class MotivosDeLlamadaStepsDefinitions {
                 MoveMouse.to(HomePage.OPTION_CALL_REASONS_PARAMETERIZATION).andThen(actions -> actions.click()));
     }
 
-    @And("^I select button create call reasons parameterization$")
+    @And("^Seleccionamos el Boton crear Parametrizacion Motivos de Llamada$")
     public void ISelectButtonCreateCallReasonsParameterization() {
         actor.attemptsTo(Click.on(MotivosDeLlamadaPage.BUTTON_CREATE_CALL_REASONS));
     }
@@ -67,7 +67,7 @@ public class MotivosDeLlamadaStepsDefinitions {
         actor.attemptsTo(Click.on(MotivosDeLlamadaPage.CHECK_CATASTROPHIC_EVENT));
     }
 
-    @And("^I Select button save call reasons parameterization$")
+    @And("^Seleccionamos el boton Guardar Parametrizacion Motivos de llamada$")
     public void ISelectButtonSaveCallReasonsParameterization() {
         actor.attemptsTo(Click.on(MotivosDeLlamadaPage.BUTTON_SAVE_CALL_REASONS));
     }
