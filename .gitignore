@@ -7,3 +7,4 @@ src/test/java/co/konecta/sura/certificate/runners/PrincipalRunner.java
 .gradle
 *.iml
 build
+*.exe
