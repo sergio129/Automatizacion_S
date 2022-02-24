@@ -14,5 +14,5 @@ build/classes/java/test/co/konecta/sura/certificate/runners/PrincipalRunner.clas
 *.iml
 build
 build/classes
- build/test-results
-  build/tmp
+build/test-results
+build/tmp
