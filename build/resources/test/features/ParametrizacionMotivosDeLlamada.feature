@@ -82,5 +82,5 @@ Feature: Parametrizacion Motivos de llamada
     And Seleccionamos el boton Eliminar de Parametrizacion Motivos de Llamada
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
-      | usuario      | contrasena     | Nombre                                      | Tipo                  | modalmessage |
-      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico3 | Solicitud de servicio |              |
+      | usuario      | contrasena     | Nombre                                      | Tipo                  | modalmessage                     |
+      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico3 | Solicitud de servicio | Registro eliminado correctamente |
