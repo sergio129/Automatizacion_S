@@ -17,3 +17,8 @@ build/classes
 build/test-results
 build/tmp
 *.exe
+*.bin
+*.lock
+*.html
+*.txt
+.*idx
