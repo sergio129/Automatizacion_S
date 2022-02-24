@@ -29,6 +29,16 @@ public class MotivosDeLlamadaPage {
     public static final Target CAMPO_ESTADO_MOTIVOS_LLAMADA = Target.the("CAMPO ESTADO MOTIVOS DE LLAMADA").located(By.id("selectCreateStateCallReasons"));
     public static final Target SELECIONAMOS_CAMPO_ESTADO_MOTIVOS_LLAMADA = Target.the("SELECIONAMOS UN ESTADO DE MOTIVOS DE LLAMADA").locatedBy("//mat-option/span[contains(text(),'{0}')]");
 
+    public static final Target CAMPO_NOMBRE_MOTIVOS_LLAMADA_INICIO = Target.the("CAMPO NOMBRE INICIO DE MOTIVOS DE LLAMADA").located(By.id("inputNameCallReasons"));
+    public static final Target CAMPO_TIPO_MOTIVOS_LLAMADA_INICIO = Target.the("CAMPO TIPO INICIO DE MOTIVOS DE LLAMADA").located(By.id("selectTypeCallReasons"));
+    public static final Target SELECCIONAR_TIPO_MOTIVOS_LLAMADA_INICIO = Target.the("SELECCIONAR TIPO INICIO DE MOTIVOS DE LLAMADA").locatedBy("//mat-option/span[contains(text(),' {0} ')]");
+    public static final Target BOTON_BUSCAR_MOTIVOS_LLAMADA_INICIO = Target.the("BOTON PARA BUSCAR MOTIVOS DE LLAMADA").located(By.id("btnSearchCallReasons"));
+    public static final Target BOTON_ELIMINAR_MOTIVOS_LLAMADA_INICIO = Target.the("BOTON PARA ELIMINAR MOTIVOS DE LLAMADA").located(By.id("btnDeletedCallReasons"));
+    public static final Target OPCION_SI_ELIMINAR_MOTIVOS_LLAMADA_INICIO = Target.the("OPCION SI ELIMINAR MOTIVOS DE LLAMADA").located(By.id("sweetalertConfirmButton"));
+
+
+
+
 
 
 

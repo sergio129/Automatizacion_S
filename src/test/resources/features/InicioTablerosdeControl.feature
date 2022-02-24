@@ -16,7 +16,7 @@ Feature: Control boards parameterization
 
     Examples:
       | user         | password       | boardname                     | fieldsshow1 | fieldsshow2       | fieldsshow3 | fieldsshow4  | fieldsshow5 | casestatus | statusservice | departmentrequest | service          | specialservice | assigneduser        | modalmessage                    |
-      | Sergio.anaya | Colombia_2025* | Tablero Casos Automatizacion2 | Expediente  | Estado expediente | Asignado a  | Departamento | Proveedor   | Pendiente  | Programado    | Antioquia         | Abogado En Sitio | Noo            | Yaira Manuela Admin | Registro guardado correctamente |
+      | Sergio.anaya | Colombia_2026* | Tablero Casos Automatizacion2 | Expediente  | Estado expediente | Asignado a  | Departamento | Proveedor   | Pendiente  | Programado    | Antioquia         | Abogado En Sitio | Noo            | Yaira Manuela Admin | Registro guardado correctamente |
 
 
   @TestControlBoardsTaskMonitoring
