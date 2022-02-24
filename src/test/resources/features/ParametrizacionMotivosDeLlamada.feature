@@ -84,3 +84,14 @@ Feature: Parametrizacion Motivos de llamada
     Examples:
       | usuario      | contrasena     | Nombre                                      | Tipo                  | modalmessage                     |
       | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico3 | Solicitud de servicio | Registro eliminado correctamente |
+
+  @TestValidacionCamposMotivosDeLlamada
+  Scenario Outline: Eliminacion Exitosa de motivos de llamada
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    And Entramos a Parametrizacion Motivos de Llamada
+    And Seleccionamos el Boton crear Parametrizacion Motivos de Llamada
+    And Seleccionamos el boton Guardar Parametrizacion Motivos de llamada
+    Then Se visualiza mensaje de la modal<modalmessage>
+    Examples:
+      | usuario      | contrasena     | modalmessage                              |
+      | Sergio.anaya | Colombia_2026* | Por favor validar los campos obligatorios |
