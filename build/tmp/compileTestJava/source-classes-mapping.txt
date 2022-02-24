@@ -86,7 +86,7 @@ co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/EstrategiasStepsDef
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.EstrategiasStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/OfertamientoStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.OfertamientoStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/MotivosDeLlamadaStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.MotivosDeLlamadaStepsDefinitions
 co/konecta/sura/certificate/runners/PrincipalRunner.java
  co.konecta.sura.certificate.runners.PrincipalRunner
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/MotivosDeLlamadaStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.MotivosDeLlamadaStepsDefinitions

@@ -73,3 +73,14 @@ Feature: Parametrizacion Motivos de llamada
       | usuario      | contrasena     | name                                        | line  | finalmanagement          | modalmessage                    |
       | Sergio.anaya | Colombia_2025* | Pruebas Automatizacion Evento Catastrofico3 | Hogar | Transferencia de llamada | Registro guardado correctamente |
       | Sergio.anaya | Colombia_2025* | Pruebas Automatizacion Evento Catastrofico3 | Hogar | Transferencia de llamada | Registro guardado correctamente |
+
+  @TestEliminarMotivosDeLLamada
+  Scenario Outline: Eliminacion Exitosa de motivos de llamada
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    And Entramos a Parametrizacion Motivos de Llamada
+    And Buscamos parametrizacion motivos de llamada por<Nombre>,<Tipo>
+    And Seleccionamos el boton Eliminar de Parametrizacion Motivos de Llamada
+    Then Se visualiza mensaje de la modal<modalmessage>
+    Examples:
+      | usuario      | contrasena     | Nombre                                      | Tipo                  | modalmessage                     |
+      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico3 | Solicitud de servicio | Registro eliminado correctamente |

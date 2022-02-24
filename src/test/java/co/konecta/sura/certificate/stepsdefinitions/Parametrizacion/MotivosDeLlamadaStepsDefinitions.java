@@ -12,14 +12,18 @@ import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Hit;
 import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.Interfaces.HomePage.BUTTON_INITIAL_TAB;
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.OPTION_MENU_PARAMETERIZATION;
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage.*;
 
 public class MotivosDeLlamadaStepsDefinitions {
     @Managed(driver = "chrome")
@@ -82,5 +86,22 @@ public class MotivosDeLlamadaStepsDefinitions {
     @And("^Escribimos la informacion de motivos de llamada Seguimiento de Servicio Nombre:(.*),Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),opcion(.*)$")
     public void escribimosLaInformacionDeMotivosDeLlamadaSeguimientoDeServicioNombreNameTipoEstadoLineaLineOpcionOption(String name, String tipo, String estado, String line,String option) throws Throwable {
         actor.attemptsTo(SeguimientoDeServicioTask.writeInformationFollowupToaService(name, tipo,estado,line, option));
+    }
+
+    @And("^Buscamos parametrizacion motivos de llamada por(.*),(.*)$")
+    public void buscamosParametrizacionMotivosDeLlamadaPorNombreTipo(String Nombre, String Tipo) throws InterruptedException {
+        actor.has(
+                Enter.theValue(Nombre).into(CAMPO_NOMBRE_MOTIVOS_LLAMADA_INICIO),
+                Click.on(CAMPO_TIPO_MOTIVOS_LLAMADA_INICIO),
+                Click.on(SELECCIONAR_TIPO_MOTIVOS_LLAMADA_INICIO.of(String.valueOf(Tipo))),
+                Hit.the(Keys.ESCAPE).into(CAMPO_TIPO_MOTIVOS_LLAMADA_INICIO),
+                Click.on(BOTON_BUSCAR_MOTIVOS_LLAMADA_INICIO)
+        );
+        Thread.sleep(2000);
+    }
+
+    @And("^Seleccionamos el boton Eliminar de Parametrizacion Motivos de Llamada$")
+    public void seleccionamosElBotonEliminarDeParametrizacionMotivosDeLlamada() {
+        actor.has(Click.on(BOTON_ELIMINAR_MOTIVOS_LLAMADA_INICIO),Click.on(OPCION_SI_ELIMINAR_MOTIVOS_LLAMADA_INICIO));
     }
 }
