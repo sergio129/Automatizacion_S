@@ -13,8 +13,8 @@ Feature: Page submodule supplier management
     Then I view the modal save supplier with <modalmessage>
 
     Examples:
-      | user            | password      | numberCase       | suppliername                  | supplierresponse | timemonitoringsite | timemonitoringdestination | technicalcellphone | centralphone1 | centralphone2 | observations                  | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | 4444444444444444 | 24 H CAR SERVICE SAS MEDELLIN | Toma servicio    | 15                 | 21                        | 3125847853         | 3122557485    | 321485578     | pruebas automaticas proveedor | Registro guardado correctamente |
+      | user         | password       | numberCase      | suppliername                  | supplierresponse | timemonitoringsite | timemonitoringdestination | technicalcellphone | centralphone1 | centralphone2 | observations                  | modalmessage                    |
+      | Sergio.anaya | Colombia_2026* | 202121344537266 | 24 H CAR SERVICE SAS MEDELLIN | Toma servicio    | 15                 | 21                        | 3125847853         | 3122557485    | 321485578     | pruebas automaticas proveedor | Registro guardado correctamente |
 
 
   @TestSupplierManagementEdition

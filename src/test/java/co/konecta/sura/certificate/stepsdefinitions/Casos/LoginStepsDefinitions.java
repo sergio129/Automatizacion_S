@@ -1,8 +1,8 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
-import co.konecta.sura.certificate.questions.TheModal;
-import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
+import co.konecta.sura.certificate.questions.TheModal;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -17,15 +17,20 @@ import org.openqa.selenium.WebDriver;
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
+
 public class LoginStepsDefinitions {
+
+
 
     @Managed(driver = "chrome")
     private WebDriver getBrowser;
     private final Actor actor = Actor.named("Usuario");
     private final HomePage homePage = new HomePage();
+    //public DesiredCapabilities handlSSLErr;
 
     @Before
-    public void setUp() {
+    public void setUp(){
+
         actor.can(BrowseTheWeb.with(getBrowser));
 
     }
@@ -35,6 +40,12 @@ public class LoginStepsDefinitions {
 
     @When("^I entering in the application with user (.*) and password (.*)$")
     public void iEnteringInTheApplicationWith(String user, String password) {
+        actor.wasAbleTo(Open.browserOn(homePage));
+        actor.attemptsTo(LoginTask.whitCredentials(user,password));
+    }
+
+    @When("^Ingresamos a la aplicacion con usuario(.*) y contraseña(.*)$")
+    public void IngresamosUsuarioContrasena(String user, String password) {
         actor.wasAbleTo(Open.browserOn(homePage));
         actor.attemptsTo(LoginTask.whitCredentials(user,password));
     }

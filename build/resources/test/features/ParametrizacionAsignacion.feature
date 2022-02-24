@@ -22,14 +22,14 @@ Feature: Assignment parameterization
   Scenario Outline: Assignment parameterization successful edition
     When I entering in the application with user <user> and password <password>
     And I entering assignment parameterization
-    And I type search in the assignment parameterization with the user <userassignment>
+    And Buscamos por usuario Parametrizacion Asignacion "yoarlys carrillo"
     And I select button edition assignment
-    And I type information in the assignment with the role <roleassignment> and the user <userassignmentedit> and the line <lineassignment> and the service <serviceassignment> and the department <departmentassignment>
+    And I type information in the assignment with the role <roleassignment> and the user <userassignment> and the line <lineassignment> and the service <serviceassignment> and the department <departmentassignment>
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user            | password      | roleassignment | userassignment   | userassignmentedit | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | Admin Backlog  | Yoarlys Carrillo | Andres Maldonado   | Autos          | Audiencia         | Atlantico            | Registro guardado correctamente |
+      | user            | password      | roleassignment | userassignment    | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | Admin Backlog  | Sergio Luis Anaya | Hogares        | Vigilante Sp      | Bogota               | Registro guardado correctamente |
 
 
   @TestAssignmentParameterizationDelete

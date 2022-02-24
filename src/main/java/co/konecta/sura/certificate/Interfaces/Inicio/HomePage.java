@@ -26,7 +26,7 @@ public class HomePage extends PageObject {
     public static final Target MODAL_VALIDATION = Target.the("This the toast validation").located(By.id("toast-container"));
     public static final Target OPTION_BOUQUETS_PARAMETERIZATION = Target.the("This the option bouquets parameterization").located(By.id("moBranch"));
     public static final Target STATUS_CASE_VALIDATION = Target.the("This the input status case validation").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav-content/div/app-show-cases/mat-accordion/mat-expansion-panel[1]/div/div/div/div[5]/h6");
-   public static final Target SCROLL_PARAMETERIZATION = Target.the("This controls the Scrooll").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]");
+    public static final Target SCROLL_PARAMETERIZATION = Target.the("This controls the Scrooll").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]");
     public static final Target OPTION_DIALING_CODES_PARAMETERIZATION = Target.the("This the Dialing codes parameterization").located(By.id("moListIndicative"));
     public static final Target OPTION_EXIT_CODES_PARAMETERIZATION = Target.the("This the exit codes parameterization").located(By.id("moListExitCode"));
     public static final Target SCROLL2_PARAMETERIZATION = Target.the("This controls 2 the Scrooll").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]/div[3]");
@@ -40,19 +40,11 @@ public class HomePage extends PageObject {
     public static final Target OPCION_ASOCIAR_LISTAS = Target.the("opcion para entrar al menu de asociar listas ").located(By.id("moListRelations"));
     public static final Target OPCION_SERVICIOS_DUPLICADOS = Target.the("opcion para entrar al menu de servicios duplicados ").located(By.id("moServiceDuplicate"));
 
-    public static final Target GESTION_SERVICIOS_DUPLICADOS = Target.the("opcion para entrar al menu de servicios duplicados ").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav-content/div/app-list-service-duplicate/mat-card/mat-card-content/div/mat-table/mat-row[1]/mat-cell[8]/button/span/mat-icon");
+    public static final Target GESTION_SERVICIOS_DUPLICADOS = Target.the("opcion para entrar al menu de servicios duplicados ").located(By.cssSelector("[mattooltip='Guardar Gestión']"));
     public static final Target GESTION_USUARIOS = Target.the("opcion para entrar a gestion de usuarios ").located(By.id("moUserManagement"));
     public static final Target GESTION_USUARIOS_LISTAR_USUARIOS = Target.the("opcion para entrar a a la opcion de listar usuarios del modulo de gestion de usuarios ").located(By.id("moUserList"));
 
     public static final Target OPCION_CIERRE_EXPEDIENTE = Target.the("opcion para entrar  la parametrizacion de cierre de expediente ").located(By.id("moCloseCasesParameterization"));
-
-
-
-
-
-
-
-
 
 
 }
