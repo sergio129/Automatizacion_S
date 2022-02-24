@@ -16,4 +16,4 @@ build
 build/classes
 build/test-results
 build/tmp
-.gradle/checksums
+*.exe
