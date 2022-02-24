@@ -61,5 +61,5 @@ Feature: Page submodule supplier management
     Then I view the modal save supplier with <modalmessage>
 
     Examples:
-      | user            | password      | numberCase      | modalmessage                      |
-      | yoarlys.carillo | Colombia2020* | 202104190008528 | Todos los campos son obligatorios |
+      | user          | password  | numberCase      | modalmessage                      |
+      | yaira.acevedo | YMAe8807* | 202104190008528 | Todos los campos son obligatorios |
