@@ -16,8 +16,8 @@ Feature: Control boards parameterization
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | boardname             | fieldsshow | casestatus | statusservice | departmentrequest | service          | specialservice | modalmessage                    |
-      | sergio.anaya | Colombia_2026* | Tablero pruebas casos | fieldsshow | Pendiente  | Programado    | Antioquia         | Abogado En Sitio | Noo            | Registro guardado correctamente |
+      | user            | password      | boardname             | fieldsshow | casestatus | statusservice | departmentrequest | service          | specialservice | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | Tablero pruebas casos | fieldsshow | Pendiente  | Programado    | Antioquia         | Abogado En Sitio | Noo            | Registro guardado correctamente |
 
 
   @TestControlBoardsTaskMonitoringParameterization
