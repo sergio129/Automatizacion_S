@@ -102,8 +102,8 @@ co/konecta/sura/certificate/Tareas/Parametrizacion/NotificacionesPushTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.NotificacionesPushTask
 co/konecta/sura/certificate/Interfaces/Casos/suraclimbing/SuraClimbingPage.java
  co.konecta.sura.certificate.Interfaces.Casos.suraclimbing.SuraClimbingPage
-co/konecta/sura/certificate/Interfaces/Inicio/ControlBoardsPage.java
- co.konecta.sura.certificate.Interfaces.Inicio.ControlBoardsPage
+co/konecta/sura/certificate/Tareas/Parametrizacion/MotivosDeLlamadaTask/SolicitudDeServicioTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SolicitudDeServicioTask
 co/konecta/sura/certificate/Tareas/Casos/advancedsearch/AdvancedSearchTask.java
  co.konecta.sura.certificate.Tareas.Casos.advancedsearch.AdvancedSearchTask
 co/konecta/sura/certificate/Tareas/Casos/SubModuloGestionSalud/GestionSaludEmergenciaSi.java
@@ -172,8 +172,8 @@ co/konecta/sura/certificate/Tareas/pendientes/SuraClimbingTask.java
  co.konecta.sura.certificate.Tareas.pendientes.SuraClimbingTask
 co/konecta/sura/certificate/utils/SaraPage.java
  co.konecta.sura.certificate.utils.SaraPage
-co/konecta/sura/certificate/Tareas/Inicio/TablerosdeControlTask.java
- co.konecta.sura.certificate.Tareas.Inicio.TablerosdeControlTask
+co/konecta/sura/certificate/Tareas/Parametrizacion/MotivosDeLlamadaTask/SeguimientoDeServicioTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SeguimientoDeServicioTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/EstrategiaPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.EstrategiaPage
 co/konecta/sura/certificate/Tareas/Parametrizacion/TablerosdeControlTask.java
@@ -194,7 +194,7 @@ co/konecta/sura/certificate/Interfaces/Parametrizacion/MotivosDeLlamadaPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage
 co/konecta/sura/certificate/Tareas/Parametrizacion/MotivosDeLlamadaTask/InformacionGeneralTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.InformacionGeneralTask
-co/konecta/sura/certificate/Tareas/Parametrizacion/MotivosDeLlamadaTask/SeguimientoDeServicioTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SeguimientoDeServicioTask
-co/konecta/sura/certificate/Tareas/Parametrizacion/MotivosDeLlamadaTask/SolicitudDeServicioTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SolicitudDeServicioTask
+co/konecta/sura/certificate/Interfaces/Inicio/ControlBoardsPage.java
+ co.konecta.sura.certificate.Interfaces.Inicio.ControlBoardsPage
+co/konecta/sura/certificate/Tareas/Inicio/TablerosdeControlTask.java
+ co.konecta.sura.certificate.Tareas.Inicio.TablerosdeControlTask

@@ -19,6 +19,7 @@ public class TablerosdeControlTask implements Task {
     public String fieldsShow3;
     public String fieldsShow4;
     public String fieldsShow5;
+    public String MisExpedientes;
 
 
     @Override
@@ -39,8 +40,8 @@ public class TablerosdeControlTask implements Task {
         );
     }
 
-    public static TablerosdeControlTask withInformationControlBoards (String boardName, String fieldsShow1, String fieldsShow2, String fieldsShow3, String fieldsShow4, String fieldsShow5){
-        return instrumented(TablerosdeControlTask.class, boardName, fieldsShow1, fieldsShow2, fieldsShow3, fieldsShow4, fieldsShow5);
+    public static TablerosdeControlTask withInformationControlBoards (String boardName, String fieldsShow1, String fieldsShow2, String fieldsShow3, String fieldsShow4, String fieldsShow5, String misExpedientes){
+        return instrumented(TablerosdeControlTask.class, boardName, fieldsShow1, fieldsShow2, fieldsShow3, fieldsShow4, fieldsShow5, misExpedientes);
     }
 
 }

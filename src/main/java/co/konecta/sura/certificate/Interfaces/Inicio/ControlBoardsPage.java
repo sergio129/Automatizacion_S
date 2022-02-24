@@ -7,6 +7,7 @@ public class ControlBoardsPage {
 
     public static final Target INPUT_BOARD_NAME = Target.the("This the input board name").located(By.id("inputBoardName"));
     public static final Target INPUT_BOARD_TYPE = Target.the("This the input board type").located(By.id("typeBoardFilter"));
+    public static final Target SELECCIONAR_INPUT_BOARD_TYPE = Target.the("SELECCIONAMOS EL TIPO DE TABLERO").locatedBy("//mat-option/span[contains(text(),' {0} ')]");
     public static final Target INPUT_FIELDS_SHOW = Target.the("This the input fields to show").located(By.id("pcp_fieldsCtrl"));
     public static final Target INPUT_SEARCH_FIELDS_SHOW = Target.the("This the input search fields to show").located(By.id("inputFieldsCtrlFilterSearch"));
     public static final Target INPUT_ROL_BOARDS = Target.the("This the input rol boards").located(By.id(""));
