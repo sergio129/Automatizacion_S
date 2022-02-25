@@ -14,7 +14,7 @@ Feature: Contador de Casos
     And Semuestra la cantidad de casos<mensaje>
     Examples:
       | usuario      | contrasena     | Estado_Servicio | FechaInicio          | FechaFin              | Reporte                   | mensaje         |
-      | Sergio.anaya | Colombia_2026* | Abierto         | 1 de febrero de 2022 | 24 de febrero de 2022 | Expedientes por proveedor | Estado servicio |
+      | Sergio.anaya | Colombia_2026* | Abierto         | 5 de febrero de 2022 | 23 de febrero de 2022 | Expedientes por proveedor | Estado servicio |
 
 
   @TestBusquedaDeCasosTodosLosEstados

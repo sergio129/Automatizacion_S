@@ -198,3 +198,5 @@ co/konecta/sura/certificate/Interfaces/Inicio/ControlBoardsPage.java
  co.konecta.sura.certificate.Interfaces.Inicio.ControlBoardsPage
 co/konecta/sura/certificate/Tareas/Inicio/TablerosdeControlTask.java
  co.konecta.sura.certificate.Tareas.Inicio.TablerosdeControlTask
+co/konecta/sura/certificate/Interfaces/Casos/ContadorCasos/ContadorDeCasosPage.java
+ co.konecta.sura.certificate.Interfaces.Casos.ContadorCasos.ContadorDeCasosPage

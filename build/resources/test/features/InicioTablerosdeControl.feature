@@ -26,7 +26,6 @@ Feature: Control boards parameterization
     And I select button create control boards
     And  Seleccionamos El tipo de Tablero de control "Tareas de monitoreo"
     And I type information in the case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>,<misexpedientes>
-    #And I type information in the monitoring task board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>
     And I type filters in the monitoring task board with the supplier <supplier> and monitoring type <monitoringtype> and assigned user <assigneduser>
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
@@ -40,7 +39,6 @@ Feature: Control boards parameterization
     And I select button create control boards
     And  Seleccionamos El tipo de Tablero de control "Cierre de expediente"
     And I type information in the case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>,<misexpedientes>
-    #And I type information in the closure case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>
     And I type filters in the closure case board with the service <service> and supplier <supplier> and special service <specialservice> and assigned user <assigneduser>
     Then Se visualiza mensaje de la modal<modalmessage>
 
@@ -53,8 +51,8 @@ Feature: Control boards parameterization
   Scenario Outline: Control boards cases successful edition
     When I entering in the application with user <user> and password <password>
     And I select button edition control boards
+    And  Seleccionamos El tipo de Tablero de control "Casos"
     And I type information in the case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>,<misexpedientes>
-    #And I type edition information in the case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>
     And I type filters in the case board with the case status <casestatus> and status service <statusservice> and department request <departmentrequest> and service <service> and special service <specialservice> and assigned user <assigneduser>
     Then Se visualiza mensaje de la modal<modalmessage>
 
@@ -67,8 +65,8 @@ Feature: Control boards parameterization
   Scenario Outline: Control boards task monitoring successful edition
     When I entering in the application with user <user> and password <password>
     And I select button edition control boards
+    And  Seleccionamos El tipo de Tablero de control "Tareas de monitoreo"
     And I type information in the case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>,<misexpedientes>
-   # And I type edition information in the monitoring task board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>
     And I type filters in the monitoring task board with the supplier <supplier> and monitoring type <monitoringtype> and assigned user <assigneduser>
     Then Se visualiza mensaje de la modal<modalmessage>
 
@@ -81,8 +79,8 @@ Feature: Control boards parameterization
   Scenario Outline: Control boards closure case successful edition
     When I entering in the application with user <user> and password <password>
     And I select button edition control boards
+    And  Seleccionamos El tipo de Tablero de control "Cierre de expediente"
     And I type information in the case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>,<misexpedientes>
-   # And I type edition information in the closure case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>
     And I type filters in the closure case board with the service <service> and supplier <supplier> and special service <specialservice> and assigned user <assigneduser>
     Then Se visualiza mensaje de la modal<modalmessage>
 
