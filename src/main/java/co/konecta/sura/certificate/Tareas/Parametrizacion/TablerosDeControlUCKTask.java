@@ -21,7 +21,7 @@ public class TablerosDeControlUCKTask implements Task {
                 Click.on(SELECCIONAR_REGISTRO_UCK.of(String.valueOf(motivo))),
                 Click.on(CAMPO_ASEGURADO_UCK),
                 Click.on(SELECCIONAR_REGISTRO_UCK.of(String.valueOf(asegurado))),
-                Hit.the(Keys.ESCAPE).into(CAMPO_MOTIVO_UCK),
+                Hit.the(Keys.ESCAPE).into(ESCAPE_UCK),
                 Click.on(CAMPO_HABILITAR_UCK),
                 Click.on(SELECCIONAR_REGISTRO_UCK.of(String.valueOf(habilitar))),
                 Enter.theValue(observacion).into(CAMPO_OBSERVACIONES_UCK),
