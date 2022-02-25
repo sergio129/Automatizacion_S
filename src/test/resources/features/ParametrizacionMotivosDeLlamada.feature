@@ -63,16 +63,18 @@ Feature: Parametrizacion Motivos de llamada
   @TestCallCreateGeneralInformationNotCatastrophicEvent
   Scenario Outline: Successful call reasons Service Request Not Catastrophic Event
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
-    And Entramos a Parametrizacion Motivos de Llamada
-    And Seleccionamos el Boton crear Parametrizacion Motivos de Llamada
-    And I write information in call reasons general information parameterization and <name> and <line> and <finalmanagement>
-    And Seleccionamos el boton Guardar Parametrizacion Motivos de llamada
+    And I enter call reasons parameterization
+    And I select button create call reasons parameterization
+    And I write information in call reasons general information parameterization and <name> Tipo:"Información general",Estado:"Habilitado",Linea:<line>,Gestionfinal:"Información de servicio",servicio:"Conductor Elegido"
+    And I Select button save call reasons parameterization
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | usuario      | contrasena     | name                                        | line  | finalmanagement          | modalmessage                    |
-      | Sergio.anaya | Colombia_2025* | Pruebas Automatizacion Evento Catastrofico3 | Hogar | Transferencia de llamada | Registro guardado correctamente |
-      | Sergio.anaya | Colombia_2025* | Pruebas Automatizacion Evento Catastrofico3 | Hogar | Transferencia de llamada | Registro guardado correctamente |
+      | usuario         | contrasena    | name                                        | line  | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | Pruebas Automatizacion Evento Catastrofico3 | Autos | Registro guardado correctamente |
+      |                 |               |                                             |       |                                 |  |
+      |                 |               |                                             |       |                                 |  |
+      |                 |               |                                             |       |                                 |  |
 
   @TestEliminarMotivosDeLLamada
   Scenario Outline: Eliminacion Exitosa de motivos de llamada

@@ -20,15 +20,19 @@ public class MotivosDeLlamadaPage {
     public static final Target BUTTON_SAVE_CALL_REASONS = Target.the("This the button save call reasons").located(By.id("btnSaveFormCallReasons"));
     public static final Target CHECK_CATASTROPHIC_EVENT= Target.the("This the button check box catastrophic event call reasons").located(By.id("mat-checkbox-5"));
     public static final Target OPTION_DESCRIPTION= Target.the("This the option description call reasons").located(By.id("inputCreateOptionCallReasons"));
-    public static final Target BUTTON_ADD_CALL_REASONS = Target.the("This the button add call reasons").located(By.id("btnAddOptionCallReasons"));
+    public static final Target BUTTON_ADD_CALL_REASONS = Target.the("This the button add call reasons").located(By.id("btnAddFormOtherCallReasons"));
     public static final Target INPUT_SELECT_FINAL_MANAGE_CALL_REASONS = Target.the("This the input select type call reasons").located(By.id("mat-select-value-9"));
-    public static final Target OPTION_FINAL_MANAGE_CALL_REASONS = Target.the("This the option select  final manage type call reasons").located(By.id("inputCreateFinalManagementCallReasonsSearch"));
+    public static final Target OPTION_FINAL_MANAGE_CALL_REASONS = Target.the("This the option select  final manage type call reasons").located(By.id("selectCreateFinalManagementCallReasons"));
 
-    public static final Target SELECT_FINAL_MANAGE_CALL_REASONS = Target.the("This the select  final manage type call reasons").located(By.id("selectCreateFinalManagementCallReasons-panel"));
+    public static final Target SELECT_FINAL_MANAGE_CALL_REASONS = Target.the("This the select  final manage type call reasons").located(By.id("selectCreateFinalManagementCallReasons"));
 
     public static final Target CAMPO_ESTADO_MOTIVOS_LLAMADA = Target.the("CAMPO ESTADO MOTIVOS DE LLAMADA").located(By.id("selectCreateStateCallReasons"));
     public static final Target SELECIONAMOS_CAMPO_ESTADO_MOTIVOS_LLAMADA = Target.the("SELECIONAMOS UN ESTADO DE MOTIVOS DE LLAMADA").locatedBy("//mat-option/span[contains(text(),'{0}')]");
 
+    public static final Target SELECCIONAR_GESTION_FINAL= Target.the("ingresamos gestion final").located(By.id("selectCreateFinalManagementCallReasons"));
+    public static final Target INPUT_GESTION_FINAL= Target.the("ingresamos gestion final").locatedBy("//*[@id='inputCreateFinalManagementCallReasonsSearch']/span[contains(text(),'{0}')]");//*[@id="inputCreateFinalManagementCallReasonsSearch"]/span
+    public static final Target SELECCIONAR_SERVICIO= Target.the("ingresamos servicio").located(By.id("selectCreateDifferentServiceCallReasons"));
+    public static final Target INPUT_SERVICIO= Target.the("ingresamos gestion final").locatedBy("//*[@id='inputCreateDifferentServiceCallReasonsSearch']/span[contains(text(),'{0}')]");
     public static final Target CAMPO_NOMBRE_MOTIVOS_LLAMADA_INICIO = Target.the("CAMPO NOMBRE INICIO DE MOTIVOS DE LLAMADA").located(By.id("inputNameCallReasons"));
     public static final Target CAMPO_TIPO_MOTIVOS_LLAMADA_INICIO = Target.the("CAMPO TIPO INICIO DE MOTIVOS DE LLAMADA").located(By.id("selectTypeCallReasons"));
     public static final Target SELECCIONAR_TIPO_MOTIVOS_LLAMADA_INICIO = Target.the("SELECCIONAR TIPO INICIO DE MOTIVOS DE LLAMADA").locatedBy("//mat-option/span[contains(text(),' {0} ')]");
