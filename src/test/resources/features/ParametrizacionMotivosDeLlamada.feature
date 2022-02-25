@@ -70,7 +70,7 @@ Feature: Parametrizacion Motivos de llamada
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | usuario         | contrasena    | name                                        | line  | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | Pruebas Automatizacion Evento Catastrofico3 | Autos | Registro guardado correctamente |
+      | yoarlys.carillo | Colombia2020* | Pruebas Automatizacion Evento Catastrofico4 | Autos | Registro guardado correctamente |
 
   @TestEliminarMotivosDeLLamada
   Scenario Outline: Eliminacion Exitosa de motivos de llamada
@@ -80,5 +80,5 @@ Feature: Parametrizacion Motivos de llamada
     And Seleccionamos el boton Eliminar de Parametrizacion Motivos de Llamada
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
-      | usuario      | contrasena     | Nombre                                      | Tipo                  | modalmessage                     |
-      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico3 | Solicitud de servicio | Registro eliminado correctamente |
+      | usuario      | contrasena     | Nombre                                      | Tipo                | modalmessage                     |
+      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico4 | Información general | Registro eliminado correctamente |
