@@ -34,6 +34,7 @@ public class HomePage extends PageObject {
     public static final Target OPTION_HIGH_CONTACT_TIMES_INTEGRATION = Target.the("This the high contact times").located(By.id("moHighTimeManagement"));
     public static final Target OPTION_CALL_REASONS_PARAMETERIZATION = Target.the("This the option call reasons parameterization").located(By.id("moCallReason"));
     public static final Target PARAMETRIZACION_PREFIJOS = Target.the("selecionamos la opcion prefijos del menu de parametrizacion").located(By.id("moListPrefix"));
+    public static final Target PARAMETRIZACION_TABLEROS_CONTROL_UCK = Target.the("selecionamos la opcion TABLEROS DE CONTROL UCK del menu de parametrizacion").located(By.id("moControlPanelUCK"));
 
     public static final Target ROLES = Target.the("Menu Roles").located(By.id("moRoles"));
     public static final Target OPCION_LISTAR_ROLES = Target.the("Opcion listar roles").located(By.id("moRolesList"));
