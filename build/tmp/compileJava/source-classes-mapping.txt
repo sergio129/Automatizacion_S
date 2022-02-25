@@ -202,3 +202,5 @@ co/konecta/sura/certificate/questions/TheModal.java
  co.konecta.sura.certificate.questions.TheModal
 co/konecta/sura/certificate/Interfaces/Parametrizacion/TablerosDeControlUCKPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.TablerosDeControlUCKPage
+co/konecta/sura/certificate/Tareas/Parametrizacion/TablerosDeControlUCKTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.TablerosDeControlUCKTask
