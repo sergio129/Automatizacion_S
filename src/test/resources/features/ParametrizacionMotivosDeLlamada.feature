@@ -122,3 +122,18 @@ Feature: Parametrizacion Motivos de llamada
     Examples:
       | usuario      | contrasena     | Nombre                   | Tipo                      | name                     | line             | modalmessage                    |
       | Sergio.anaya | Colombia_2027* | Pruebas Automatizacion 4 | Seguimiento a un servicio | Pruebas Automatizacion 5 | Emergencia Salud | Registro guardado correctamente |
+
+
+  @TestEdicionMotivosDeLlamadaSeguimientoServicioConEvento
+  Scenario Outline: Edicion de motivo de llamada Seguimiento de Servicio con Evento
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    And Entramos a Parametrizacion Motivos de Llamada
+    And Buscamos parametrizacion motivos de llamada por<Nombre>,<Tipo>
+    And Seleccionamos el Boton de Editar Motivos de llamada
+    And Con Evento Catastrofico
+    And Escribimos la informacion de motivos de llamada Seguimiento de Servicio Nombre:<name>,Tipo:"Seguimiento a un servicio",Estado:"Habilitado",Linea:<line>,opcion<option>
+    And Seleccionamos el boton Guardar Parametrizacion Motivos de llamada
+    Then Se visualiza mensaje de la modal<modalmessage>
+    Examples:
+      | usuario      | contrasena     | Nombre                   | Tipo                  | name                     | line  | option | modalmessage                    |
+      | Sergio.anaya | Colombia_2027* | Pruebas Automatizacion 5 | Solicitud de servicio | Pruebas Automatizacion 5 | Hogar | 55     | Registro guardado correctamente |

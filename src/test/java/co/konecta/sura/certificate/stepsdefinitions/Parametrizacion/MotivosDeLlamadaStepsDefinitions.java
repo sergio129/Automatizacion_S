@@ -56,10 +56,9 @@ public class MotivosDeLlamadaStepsDefinitions {
 
     @And("^Escribimos la informacion de motivos de llamada con solicitud de servicio(.*),Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),Validacion\"([^\"]*)\"$")
     public void IWriteInformationInCallReasonsParameterizationServiceRequest(String name, String Tipo, String Estado, String line, String Validacion) {
-        actor.attemptsTo(SolicitudDeServicioTask.writeInformationServiceRequest(name,Tipo,Estado, line, Validacion));
+        actor.attemptsTo(SolicitudDeServicioTask.writeInformationServiceRequest(name, Tipo, Estado, line, Validacion));
 
     }
-
 
     @And("^Con Evento Catastrofico$")
     public void ISelectCheckCatastrophicEvent() throws InterruptedException {
@@ -75,18 +74,18 @@ public class MotivosDeLlamadaStepsDefinitions {
     @Then("^I view the modal save call reasons parameterization (.*)$")
     public void IViewTheModalSaveCallReasonsParameterization(String message) throws InterruptedException {
         Thread.sleep(2000);
-         actor.attemptsTo(
+        actor.attemptsTo(
                 Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
     }
 
     @And("^Escribimos la informacion de motivos de llamada Seguimiento de Servicio Nombre:(.*),Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),opcion(.*)$")
-    public void escribimosLaInformacionDeMotivosDeLlamadaSeguimientoDeServicioNombreNameTipoEstadoLineaLineOpcionOption(String name, String tipo, String estado, String line,String option) throws Throwable {
-        actor.attemptsTo(SeguimientoDeServicioTask.writeInformationFollowupToaService(name, tipo,estado,line, option));
+    public void escribimosLaInformacionDeMotivosDeLlamadaSeguimientoDeServicioNombreNameTipoEstadoLineaLineOpcionOption(String name, String tipo, String estado, String line, String option) throws Throwable {
+        actor.attemptsTo(SeguimientoDeServicioTask.writeInformationFollowupToaService(name, tipo, estado, line, option));
     }
 
     @And("^I write information in call reasons general information parameterization and (.*) Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),Gestionfinal:\"([^\"]*)\",servicio:\"([^\"]*)\"$")
-    public void iWriteInformationInCallReasonsGeneralInformationParameterizationAndNameTipoEstadoLineaLineGestionfinalServicio(String name, String Tipo, String Estado, String line,String Gestionfinal, String servicio) throws Throwable {
-        actor.attemptsTo(InformacionGeneralTask.whiteGeneralInformation(name,Tipo,Estado,line,Gestionfinal,servicio));
+    public void iWriteInformationInCallReasonsGeneralInformationParameterizationAndNameTipoEstadoLineaLineGestionfinalServicio(String name, String Tipo, String Estado, String line, String Gestionfinal, String servicio) throws Throwable {
+        actor.attemptsTo(InformacionGeneralTask.whiteGeneralInformation(name, Tipo, Estado, line, Gestionfinal, servicio));
     }
 
     @And("^Buscamos parametrizacion motivos de llamada por(.*),(.*)$")
@@ -103,7 +102,7 @@ public class MotivosDeLlamadaStepsDefinitions {
 
     @And("^Seleccionamos el boton Eliminar de Parametrizacion Motivos de Llamada$")
     public void seleccionamosElBotonEliminarDeParametrizacionMotivosDeLlamada() {
-        actor.has(Click.on(BOTON_ELIMINAR_MOTIVOS_LLAMADA_INICIO),Click.on(OPCION_SI_ELIMINAR_MOTIVOS_LLAMADA_INICIO));
+        actor.has(Click.on(BOTON_ELIMINAR_MOTIVOS_LLAMADA_INICIO), Click.on(OPCION_SI_ELIMINAR_MOTIVOS_LLAMADA_INICIO));
     }
 
     @And("^Seleccionamos el Boton de Editar Motivos de llamada$")
