@@ -5,6 +5,7 @@ import co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPa
 import co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.InformacionGeneralTask;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SeguimientoDeServicioTask;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SolicitudDeServicioTask;
+import cucumber.api.PendingException;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -60,10 +61,6 @@ public class MotivosDeLlamadaStepsDefinitions {
 
     }
 
-    @And("^I write information in call reasons general information parameterization and (.*) and (.*) and (.*)$")
-    public void IWriteInformationCallReasonsGeneralInformationParameterization(String name, String line, String finalmanagement) {
-        actor.attemptsTo(InformacionGeneralTask.whiteGeneralInformation(name, line, finalmanagement));
-    }
 
     @And("^Con Evento Catastrofico$")
     public void ISelectCheckCatastrophicEvent() throws InterruptedException {
@@ -86,6 +83,11 @@ public class MotivosDeLlamadaStepsDefinitions {
     @And("^Escribimos la informacion de motivos de llamada Seguimiento de Servicio Nombre:(.*),Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),opcion(.*)$")
     public void escribimosLaInformacionDeMotivosDeLlamadaSeguimientoDeServicioNombreNameTipoEstadoLineaLineOpcionOption(String name, String tipo, String estado, String line,String option) throws Throwable {
         actor.attemptsTo(SeguimientoDeServicioTask.writeInformationFollowupToaService(name, tipo,estado,line, option));
+    }
+
+    @And("^I write information in call reasons general information parameterization and (.*) Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),Gestionfinal:\"([^\"]*)\",servicio:\"([^\"]*)\"$")
+    public void iWriteInformationInCallReasonsGeneralInformationParameterizationAndNameTipoEstadoLineaLineGestionfinalServicio(String name, String Tipo, String Estado, String line,String Gestionfinal, String servicio) throws Throwable {
+        actor.attemptsTo(InformacionGeneralTask.whiteGeneralInformation(name,Tipo,Estado,line,Gestionfinal,servicio));
     }
 
     @And("^Buscamos parametrizacion motivos de llamada por(.*),(.*)$")

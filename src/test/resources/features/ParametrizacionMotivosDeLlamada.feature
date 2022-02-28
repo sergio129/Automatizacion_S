@@ -59,20 +59,18 @@ Feature: Parametrizacion Motivos de llamada
       | usuario      | contrasena     | name                                        | line  | option | modalmessage                                                                                  |
       | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico9 | Hogar | 55     | Registro guardado correctamente                                                               |
       | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico9 | Hogar | 55     | No se puede guardar, Ya se encuentra parametrizado un servicio de llamada con el mismo nombre |
-#########################################################################Tarea Yoarlys###############################
+
   @TestCallCreateGeneralInformationNotCatastrophicEvent
   Scenario Outline: Successful call reasons Service Request Not Catastrophic Event
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a Parametrizacion Motivos de Llamada
     And Seleccionamos el Boton crear Parametrizacion Motivos de Llamada
-    And I write information in call reasons general information parameterization and <name> and <line> and <finalmanagement>
+    And I write information in call reasons general information parameterization and <name> Tipo:"Información general",Estado:"Habilitado",Linea:<line>,Gestionfinal:"Información de servicio",servicio:"Conductor Elegido"
     And Seleccionamos el boton Guardar Parametrizacion Motivos de llamada
     Then Se visualiza mensaje de la modal<modalmessage>
-
     Examples:
-      | usuario      | contrasena     | name                                        | line  | finalmanagement          | modalmessage                    |
-      | Sergio.anaya | Colombia_2025* | Pruebas Automatizacion Evento Catastrofico3 | Hogar | Transferencia de llamada | Registro guardado correctamente |
-      | Sergio.anaya | Colombia_2025* | Pruebas Automatizacion Evento Catastrofico3 | Hogar | Transferencia de llamada | Registro guardado correctamente |
+      | usuario         | contrasena    | name                                        | line  | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | Pruebas Automatizacion Evento Catastrofico4 | Autos | Registro guardado correctamente |
 
   @TestEliminarMotivosDeLLamada
   Scenario Outline: Eliminacion Exitosa de motivos de llamada
