@@ -39,7 +39,7 @@ public class MotivosDeLlamadaPage {
     public static final Target BOTON_BUSCAR_MOTIVOS_LLAMADA_INICIO = Target.the("BOTON PARA BUSCAR MOTIVOS DE LLAMADA").located(By.id("btnSearchCallReasons"));
     public static final Target BOTON_ELIMINAR_MOTIVOS_LLAMADA_INICIO = Target.the("BOTON PARA ELIMINAR MOTIVOS DE LLAMADA").located(By.id("btnDeletedCallReasons"));
     public static final Target OPCION_SI_ELIMINAR_MOTIVOS_LLAMADA_INICIO = Target.the("OPCION SI ELIMINAR MOTIVOS DE LLAMADA").located(By.id("sweetalertConfirmButton"));
-
+    public static final Target BOTON_EDITAR_MOTIVOS_LLAMADA_INICIO = Target.the("BOTON PARA EDITAR MOTIVOS DE LLAMADA").located(By.id("btnEditCallReasons"));
 
 
 

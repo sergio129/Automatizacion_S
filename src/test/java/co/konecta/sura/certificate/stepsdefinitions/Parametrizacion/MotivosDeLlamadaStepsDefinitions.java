@@ -5,7 +5,6 @@ import co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPa
 import co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.InformacionGeneralTask;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SeguimientoDeServicioTask;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SolicitudDeServicioTask;
-import cucumber.api.PendingException;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -43,7 +42,7 @@ public class MotivosDeLlamadaStepsDefinitions {
 
     @And("^Entramos a Parametrizacion Motivos de Llamada$")
     public void IEnterCallReasonsParameterization() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         actor.attemptsTo(
                 Click.on(BUTTON_INITIAL_TAB),
                 Click.on(OPTION_MENU_PARAMETERIZATION),
@@ -105,5 +104,10 @@ public class MotivosDeLlamadaStepsDefinitions {
     @And("^Seleccionamos el boton Eliminar de Parametrizacion Motivos de Llamada$")
     public void seleccionamosElBotonEliminarDeParametrizacionMotivosDeLlamada() {
         actor.has(Click.on(BOTON_ELIMINAR_MOTIVOS_LLAMADA_INICIO),Click.on(OPCION_SI_ELIMINAR_MOTIVOS_LLAMADA_INICIO));
+    }
+
+    @And("^Seleccionamos el Boton de Editar Motivos de llamada$")
+    public void seleccionamosElBotonDeEditarMotivosDeLlamada() {
+        actor.has(Click.on(BOTON_EDITAR_MOTIVOS_LLAMADA_INICIO));
     }
 }
