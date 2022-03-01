@@ -74,5 +74,10 @@ public class AlertasUCKStepsDefinitions {
       actor.has(Enter.theValue(arg0).into(CAMPO_NOMBRE_ALERTA_PARAMETRIZACION_ALERTAS_UCK));
       Thread.sleep(2000);
     }
+
+    @And("^Selecionamos el Boton de Eliminar Parametrizacion Alerta UCK$")
+    public void selecionamosElBotonDeEliminarParametrizacionAlertaUCK() {
+        actor.has(Click.on(BOTON_ELIMINAR_PARAMETRIZACION_ALERTAS_UCK),Click.on(CONFIRMAR_SI_ELIMINAR_PARAMETRIZACION_ALERTAS_UCK));
+    }
 }
 
