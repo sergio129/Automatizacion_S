@@ -46,6 +46,8 @@ public class MotivosDeLlamadaPage {
 
 
 
+    public static final Target SELECCIONAR_DESTINO=Target.the("seleccionamos el destino").located(By.id("selectCreateTransferDestinationCallReasons"));
+    public static final Target INPUT_DESTINO= Target.the("ingresamos destino").locatedBy("//*[@id='inputCreateTransferDestinationCallReasonsSearch']/span[contains(text(),'{0}')]");//inputCreateTransferDestinationCallReasonsSearch
 
 
 
