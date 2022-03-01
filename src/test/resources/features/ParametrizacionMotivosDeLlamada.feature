@@ -99,13 +99,12 @@ Feature: Parametrizacion Motivos de llamada
   @CreacionMotivosDeLlamdaInformacióngeneralConEvento
   Scenario Outline: Creacion de motivo de llamada Información general con Evento
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
-    And I enter call reasons parameterization
-    And I select button create call reasons parameterization
+    And Entramos a Parametrizacion Motivos de Llamada
+    And Seleccionamos el Boton crear Parametrizacion Motivos de Llamada
     And Con Evento Catastrofico
     And I write information in call reasons general information parameterization and <name> Tipo:"Información general",Estado:"Habilitado",Linea:<line>,Gestionfinal:"Transferencia de llamada",Destino:"ARL Sura"
-    And I Select button save call reasons parameterization
+    And Seleccionamos el boton Guardar Parametrizacion Motivos de llamada
     Then Se visualiza mensaje de la modal<modalmessage>
-
     Examples:
       | usuario         | contrasena    | name                                        | line  | modalmessage                    |
       | yoarlys.carillo | Colombia2020* | Pruebas Automatizacion Evento Catastrofico3 | Autos | Registro guardado correctamente |
