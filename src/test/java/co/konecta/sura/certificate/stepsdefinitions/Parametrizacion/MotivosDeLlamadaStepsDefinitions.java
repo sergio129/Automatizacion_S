@@ -5,6 +5,7 @@ import co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPa
 import co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.InformacionGeneralTask;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SeguimientoDeServicioTask;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SolicitudDeServicioTask;
+import cucumber.api.PendingException;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -14,6 +15,7 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
+import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
@@ -23,6 +25,8 @@ import org.openqa.selenium.WebDriver;
 import static co.konecta.sura.certificate.Interfaces.HomePage.BUTTON_INITIAL_TAB;
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.OPTION_MENU_PARAMETERIZATION;
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage.*;
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage.BUTTON_ADD_CALL_REASONS;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage.*;
 
 public class MotivosDeLlamadaStepsDefinitions {
@@ -60,6 +64,7 @@ public class MotivosDeLlamadaStepsDefinitions {
 
     }
 
+
     @And("^Con Evento Catastrofico$")
     public void ISelectCheckCatastrophicEvent() throws InterruptedException {
         Thread.sleep(300);
@@ -84,8 +89,8 @@ public class MotivosDeLlamadaStepsDefinitions {
     }
 
     @And("^I write information in call reasons general information parameterization and (.*) Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),Gestionfinal:\"([^\"]*)\",servicio:\"([^\"]*)\"$")
-    public void iWriteInformationInCallReasonsGeneralInformationParameterizationAndNameTipoEstadoLineaLineGestionfinalServicio(String name, String Tipo, String Estado, String line, String Gestionfinal, String servicio) throws Throwable {
-        actor.attemptsTo(InformacionGeneralTask.whiteGeneralInformation(name, Tipo, Estado, line, Gestionfinal, servicio));
+    public void iWriteInformationInCallReasonsGeneralInformationParameterizationAndNameTipoEstadoLineaLineGestionfinalServicio(String name, String Tipo, String Estado, String line,String Gestionfinal, String servicio) throws Throwable {
+        actor.attemptsTo(InformacionGeneralTask.whiteGeneralInformation(name,Tipo,Estado,line,Gestionfinal,servicio));
     }
 
     @And("^Buscamos parametrizacion motivos de llamada por(.*),(.*)$")
@@ -108,5 +113,25 @@ public class MotivosDeLlamadaStepsDefinitions {
     @And("^Seleccionamos el Boton de Editar Motivos de llamada$")
     public void seleccionamosElBotonDeEditarMotivosDeLlamada() {
         actor.has(Click.on(BOTON_EDITAR_MOTIVOS_LLAMADA_INICIO));
+    }
+
+    @And("^I write information in call reasons general information parameterization and (.*) Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),Gestionfinal:\"([^\"]*)\",Destino:\"([^\"]*)\"$")
+    public void iWriteInformationInCallReasonsGeneralInformationParameterizationAndNameTipoEstadoLineaLineGestionfinalDestino(String name, String Tipo, String Estado, String line,String Gestionfinal, String Destino) throws Throwable {
+        actor.attemptsTo(
+                Enter.theValue(name).into(INPUT_NAME_CALL_REASONS),
+                Click.on(INPUT_SELECT_TYPE_CALL_REASONS),
+                Click.on(SELECT_SERVICE_REQUEST_CALL_REASONS.of(String.valueOf(Tipo))),
+                Click.on(CAMPO_ESTADO_MOTIVOS_LLAMADA),
+                Click.on(SELECIONAMOS_CAMPO_ESTADO_MOTIVOS_LLAMADA.of(String.valueOf(Estado))),
+                Click.on(INPUT_LINE_CALL_REASONS),
+                Enter.theValue(line).into(INPUT_SEARCH_LINE_CALL_REASONS).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Click.on(SELECCIONAR_GESTION_FINAL),
+                Click.on(INPUT_GESTION_FINAL.of(String.valueOf(Gestionfinal))),
+                Click.on(SELECCIONAR_DESTINO),
+                Click.on(INPUT_DESTINO.of(String.valueOf(Destino))),
+                Click.on(BUTTON_ADD_CALL_REASONS)
+        );
+
+
     }
 }

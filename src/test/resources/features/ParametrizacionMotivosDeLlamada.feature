@@ -60,7 +60,7 @@ Feature: Parametrizacion Motivos de llamada
       | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico9 | Hogar | 55     | Registro guardado correctamente                                                               |
       | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico9 | Hogar | 55     | No se puede guardar, Ya se encuentra parametrizado un servicio de llamada con el mismo nombre |
 
-  @TestCallCreateGeneralInformationNotCatastrophicEvent
+  @CreacionMotivosDeLlamdaInformacióngeneralSinEvento
   Scenario Outline: Successful call reasons Service Request Not Catastrophic Event
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a Parametrizacion Motivos de Llamada
@@ -68,6 +68,7 @@ Feature: Parametrizacion Motivos de llamada
     And I write information in call reasons general information parameterization and <name> Tipo:"Información general",Estado:"Habilitado",Linea:<line>,Gestionfinal:"Información de servicio",servicio:"Conductor Elegido"
     And Seleccionamos el boton Guardar Parametrizacion Motivos de llamada
     Then Se visualiza mensaje de la modal<modalmessage>
+
     Examples:
       | usuario         | contrasena    | name                                        | line  | modalmessage                    |
       | yoarlys.carillo | Colombia2020* | Pruebas Automatizacion Evento Catastrofico4 | Autos | Registro guardado correctamente |
@@ -94,6 +95,19 @@ Feature: Parametrizacion Motivos de llamada
       | usuario      | contrasena     | modalmessage                              |
       | Sergio.anaya | Colombia_2026* | Por favor validar los campos obligatorios |
 
+
+  @CreacionMotivosDeLlamdaInformacióngeneralConEvento
+  Scenario Outline: Creacion de motivo de llamada Información general con Evento
+    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    And Entramos a Parametrizacion Motivos de Llamada
+    And Seleccionamos el Boton crear Parametrizacion Motivos de Llamada
+    And Con Evento Catastrofico
+    And I write information in call reasons general information parameterization and <name> Tipo:"Información general",Estado:"Habilitado",Linea:<line>,Gestionfinal:"Transferencia de llamada",Destino:"ARL Sura"
+    And Seleccionamos el boton Guardar Parametrizacion Motivos de llamada
+    Then Se visualiza mensaje de la modal<modalmessage>
+    Examples:
+      | usuario         | contrasena    | name                                        | line  | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | Pruebas Automatizacion Evento Catastrofico3 | Autos | Registro guardado correctamente |
 
   @TestEdicionMotivoDeLlamadaSolicitudDeServicio
   Scenario Outline: Edicion  Exitosa de motivos de llamada con solicitud de servicio, sin Evento Catastrofico
