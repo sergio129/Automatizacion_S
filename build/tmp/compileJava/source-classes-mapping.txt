@@ -192,9 +192,9 @@ co/konecta/sura/certificate/Tareas/Casos/SubModuloGestionSalud/GestionSaludEmege
  co.konecta.sura.certificate.Tareas.Casos.SubModuloGestionSalud.GestionSaludEmegenciaNoDificultadNo
 co/konecta/sura/certificate/Interfaces/Parametrizacion/MotivosDeLlamadaPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage
-co/konecta/sura/certificate/Tareas/Parametrizacion/MotivosDeLlamadaTask/SolicitudDeServicioTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SolicitudDeServicioTask
-co/konecta/sura/certificate/Tareas/Parametrizacion/MotivosDeLlamadaTask/SeguimientoDeServicioTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SeguimientoDeServicioTask
 co/konecta/sura/certificate/Tareas/Parametrizacion/MotivosDeLlamadaTask/InformacionGeneralTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.InformacionGeneralTask
+co/konecta/sura/certificate/Tareas/Parametrizacion/MotivosDeLlamadaTask/SeguimientoDeServicioTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SeguimientoDeServicioTask
+co/konecta/sura/certificate/Tareas/Parametrizacion/MotivosDeLlamadaTask/SolicitudDeServicioTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SolicitudDeServicioTask

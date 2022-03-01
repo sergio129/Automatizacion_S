@@ -13,14 +13,18 @@ import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.Interfaces.HomePage.BUTTON_INITIAL_TAB;
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.OPTION_MENU_PARAMETERIZATION;
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage.*;
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.MotivosDeLlamadaPage.BUTTON_ADD_CALL_REASONS;
 
 public class MotivosDeLlamadaStepsDefinitions {
     @Managed(driver = "chrome")
@@ -84,5 +88,25 @@ public class MotivosDeLlamadaStepsDefinitions {
     @And("^I write information in call reasons general information parameterization and (.*) Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),Gestionfinal:\"([^\"]*)\",servicio:\"([^\"]*)\"$")
     public void iWriteInformationInCallReasonsGeneralInformationParameterizationAndNameTipoEstadoLineaLineGestionfinalServicio(String name, String Tipo, String Estado, String line,String Gestionfinal, String servicio) throws Throwable {
         actor.attemptsTo(InformacionGeneralTask.whiteGeneralInformation(name,Tipo,Estado,line,Gestionfinal,servicio));
+    }
+
+    @And("^I write information in call reasons general information parameterization and (.*) Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),Gestionfinal:\"([^\"]*)\",Destino:\"([^\"]*)\"$")
+    public void iWriteInformationInCallReasonsGeneralInformationParameterizationAndNameTipoEstadoLineaLineGestionfinalDestino(String name, String Tipo, String Estado, String line,String Gestionfinal, String Destino) throws Throwable {
+        actor.attemptsTo(
+                Enter.theValue(name).into(INPUT_NAME_CALL_REASONS),
+                Click.on(INPUT_SELECT_TYPE_CALL_REASONS),
+                Click.on(SELECT_SERVICE_REQUEST_CALL_REASONS.of(String.valueOf(Tipo))),
+                Click.on(CAMPO_ESTADO_MOTIVOS_LLAMADA),
+                Click.on(SELECIONAMOS_CAMPO_ESTADO_MOTIVOS_LLAMADA.of(String.valueOf(Estado))),
+                Click.on(INPUT_LINE_CALL_REASONS),
+                Enter.theValue(line).into(INPUT_SEARCH_LINE_CALL_REASONS).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Click.on(SELECCIONAR_GESTION_FINAL),
+                Click.on(INPUT_GESTION_FINAL.of(String.valueOf(Gestionfinal))),
+                Click.on(SELECCIONAR_DESTINO),
+                Click.on(INPUT_DESTINO.of(String.valueOf(Destino))),
+                Click.on(BUTTON_ADD_CALL_REASONS)
+        );
+
+
     }
 }

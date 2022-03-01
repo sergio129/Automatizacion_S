@@ -33,7 +33,8 @@ public class MotivosDeLlamadaPage {
     public static final Target INPUT_GESTION_FINAL= Target.the("ingresamos gestion final").locatedBy("//*[@id='inputCreateFinalManagementCallReasonsSearch']/span[contains(text(),'{0}')]");//*[@id="inputCreateFinalManagementCallReasonsSearch"]/span
     public static final Target SELECCIONAR_SERVICIO= Target.the("ingresamos servicio").located(By.id("selectCreateDifferentServiceCallReasons"));
     public static final Target INPUT_SERVICIO= Target.the("ingresamos gestion final").locatedBy("//*[@id='inputCreateDifferentServiceCallReasonsSearch']/span[contains(text(),'{0}')]");
-
+    public static final Target SELECCIONAR_DESTINO=Target.the("seleccionamos el destino").located(By.id("selectCreateTransferDestinationCallReasons"));
+    public static final Target INPUT_DESTINO= Target.the("ingresamos destino").locatedBy("//*[@id='inputCreateTransferDestinationCallReasonsSearch']/span[contains(text(),'{0}')]");//inputCreateTransferDestinationCallReasonsSearch
 
 
 
