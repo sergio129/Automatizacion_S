@@ -12,8 +12,8 @@ Feature: Creacion, Edicion y eliminacion de parametrizacion cierre de expediente
     And Seleccionamos el boton guardar Parametrizacion Cierre de Expediente
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | linea            | servicio         | Campo    | modalmensaje                           |
-      | Sergio.anaya | Colombia_2026* | Emergencia Salud | Emergencia Salud | Celosias | Parametrización agregada correctamente |
+      | usuario         | contrasena    | linea | servicio         | Campo    | modalmensaje                           |
+      | yoarlys.carillo | Colombia2020* | ARL   | Emergencia Salud | Celosias | Parametrización agregada correctamente |
 
   @TestEdicionParametrizacionCierreExpediente
   Scenario Outline: Edicion Exitosa de Prefijos
@@ -25,19 +25,19 @@ Feature: Creacion, Edicion y eliminacion de parametrizacion cierre de expediente
     And Seleccionamos el boton guardar Parametrizacion Cierre de Expediente
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | linea  | servicio     | Campo                | modalmensaje                           |
-      | Sergio.anaya | Colombia_2026* | Viajes | Certificados | ¿Concluido servicio? | Parametrización agregada correctamente |
+      | usuario         | contrasena    | linea  | servicio     | Campo                | modalmensaje                           |
+      | yoarlys.carillo | Colombia2020* | Viajes | Certificados | ¿Concluido servicio? | Parametrización agregada correctamente |
 
   @TestEliminarParametrizacionCierreExpediente
   Scenario Outline: Edicion Exitosa de Prefijos
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos Parametrizacion Cierre de Expediente
-    And Buscamos Parametrizacion Cierre de expediente por Linea:"Emergencia Salud", Servicio:"Emergencia Salud"
+    And Buscamos Parametrizacion Cierre de expediente por Linea:"Hogares", Servicio:"Abogado En Sitio"
     And Seleccionamos el Boton Eliminar Parametrizacion Cierre de Expediente
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | modalmensaje                                |
-      | Sergio.anaya | Colombia_2026* | Se elimino correctamente la parametrización |
+      | usuario         | contrasena    | modalmensaje                                |
+      | yoarlys.carillo | Colombia2020* | Se elimino correctamente la parametrización |
 
   @TestValidarCamposParametrizacionCierreExpediente
   Scenario Outline: Edicion Exitosa de Prefijos
@@ -47,5 +47,5 @@ Feature: Creacion, Edicion y eliminacion de parametrizacion cierre de expediente
     And Seleccionamos el boton guardar Parametrizacion Cierre de Expediente
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | modalmensaje                      |
-      | Sergio.anaya | Colombia_2026* | Todos los campos son obligatorios |
+      | usuario         | contrasena    | modalmensaje                      |
+      | yoarlys.carillo | Colombia2020* | Todos los campos son obligatorios |

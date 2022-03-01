@@ -15,6 +15,7 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+import static co.konecta.sura.certificate.Interfaces.HomePage.BUTTON_INITIAL_TAB;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.EstrategiaPage.*;
 
 
@@ -41,10 +42,11 @@ public class EstrategiasStepsDefinitions {
     @And("^I entering strategy parameterization$")
     public void iEnteringStrategyParameterization() throws InterruptedException {
         Thread.sleep(5000);
-        actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
-        actor.attemptsTo(Click.on(HomePage.OPTION_MENU_PARAMETERIZATION));
-        actor.has(MoveMouse.to(HomePage.OPTION_STRATEGY_PARAMETERIZATION).andThen(actions -> actions.click()));
-        Thread.sleep(3000);
+        actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB),
+                Click.on(HomePage.OPTION_MENU_PARAMETERIZATION),
+                MoveMouse.to(HomePage.OPTION_STRATEGY_PARAMETERIZATION).andThen(actions -> actions.click())
+        );
+
 
     }
 
@@ -60,16 +62,7 @@ public class EstrategiasStepsDefinitions {
                 EstrategiaTask.withInformationStrategy(contingencyDescription));
 
     }
-    @And("^I entering search strategy parameterization (.*)$")
-    public void IEnteringSearchStrategyParameterization(String nameContingencySearch) throws InterruptedException {
-        actor.attemptsTo(
-                Enter.theValue(nameContingencySearch).into(INPUT_SEARCH_STRATEGY_NAME),
-                Click.on(BUTTON_SEARCH_STRATEGY));
-        Thread.sleep(3000);
-        actor.attemptsTo(
-                Click.on(BUTTON_EDIT_CONTINGENCY_STRATEGY));
 
-    }
 
     @And("^I type information in the coordination strategy with the description (.*) and the time assignment (.*) and the first expiration (.*) and the second expiration (.*)$")
     public void iTypeInformationInTheCoordinationStrategyWithTheDescriptionAndTheTimeAssignmentAndTheFirstExpirationAndTheSecondExpiration(String contingencyDescription, String timeAssignment, String firstExpiration, String secondExpiration) {

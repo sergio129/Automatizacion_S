@@ -14,8 +14,8 @@ Feature: Parametrizacion Estrategias
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | description | namecontingencysearch | modalmessage                    |
-      | sergio.anaya | Colombia_2026* | Prueba      | Contingencia          | Registro guardado correctamente |
+      | user            | password      | description | namecontingencysearch | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | Prueba      | Contingencia          | Registro guardado correctamente |
 
 
   @TestCoordinationStrategyParameterizationEdition
@@ -28,8 +28,8 @@ Feature: Parametrizacion Estrategias
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | namecontingencysearch                 | description                                                              | timeassignment | firstexpiration | secondexpiration | modalmessage                    |
-      | Sergio.anaya | Colombia_2026* | Estrategia de coordinación automática | {"status":"true","pqr_time":"2","one_end_date":"11","two_end_date":"20"} | 2              | 11              | 20               | Registro guardado correctamente |
+      | user            | password      | namecontingencysearch                 | description                                                              | timeassignment | firstexpiration | secondexpiration | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | Estrategia de coordinación automática | {"status":"true","pqr_time":"2","one_end_date":"11","two_end_date":"20"} | 2              | 11              | 20               | Registro guardado correctamente |
 
 
   @TestMonitoringStrategyParameterizationEdition

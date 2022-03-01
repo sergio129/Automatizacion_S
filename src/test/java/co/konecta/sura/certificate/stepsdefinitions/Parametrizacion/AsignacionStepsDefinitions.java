@@ -24,7 +24,7 @@ public class AsignacionStepsDefinitions {
     private final HomePage homePage = new HomePage();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         actor.can(BrowseTheWeb.with(driver));
     }
 
@@ -41,7 +41,6 @@ public class AsignacionStepsDefinitions {
         );
 
 
-
     }
 
     @And("^I select button create assignment$")
@@ -52,8 +51,11 @@ public class AsignacionStepsDefinitions {
 
 
     @And("^I select button edition assignment$")
-    public void iSelectButtonEditionAssignment() {actor.attemptsTo(Click.on(BUTTON_EDIT_ASSIGNMENT));
-   }
+    public void iSelectButtonEditionAssignment() throws InterruptedException {
+        Thread.sleep(1000);
+        actor.attemptsTo(
+                  Click.on(BUTTON_EDIT_ASSIGNMENT));
+    }
 
     @And("^I type information in the assignment with the role (.*) and the user (.*) and the line (.*) and the service (.*) and the department (.*)$")
     public void iTypeInformationInTheAssignmentWithTheRoleAndTheUserAndTheLineAndTheServiceAndTheDepartment(String roleAssignment, String userAssignment, String lineAssignment, String serviceAssignment, String departmentAssignment) {

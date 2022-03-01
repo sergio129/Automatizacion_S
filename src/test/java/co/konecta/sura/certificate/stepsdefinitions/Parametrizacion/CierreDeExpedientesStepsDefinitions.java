@@ -87,4 +87,5 @@ public class CierreDeExpedientesStepsDefinitions {
     public void seleccionamosElBotonEliminarParametrizacionCierreDeExpediente() {
         actor.has(Click.on(BOTON_ELIMINAR_CIERRE_EXPEDIENTE), Click.on(OPCION_SI_ELIMINAR_CIERRE_EXPEDIENTE));
     }
+
 }

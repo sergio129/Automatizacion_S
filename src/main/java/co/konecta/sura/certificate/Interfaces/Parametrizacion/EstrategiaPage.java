@@ -21,8 +21,8 @@ public class EstrategiaPage {
     public static final Target INPUT_NOTIFICATION_MESSAGE_STATUS = Target.the("This the input notification message status").located(By.id(""));
     public static final Target INPUT_NOTIFICATION_MESSAGE = Target.the("This the input notification message").located(By.id(""));
     public static final Target INPUT_NOTIFICATION_TIME = Target.the("This the input notification time").located(By.id(""));
-   public static final Target INPUT_SEARCH_STRATEGY_NAME = Target.the("This the input search strategy name").located(By.id("nameStrategy"));
-    public static final Target BUTTON_SEARCH_STRATEGY = Target.the("This the button search strategy").located(By.id("btnStrategySearch"));
+   public static final Target INPUT_SEARCH_STRATEGY_NAME = Target.the("This the input search strategy name").located(By.id("moStrategy"));
+    public static final Target BUTTON_SEARCH_STRATEGY = Target.the("This the button search strategy").located(By.id("moStrategy"));
     public static final Target BUTTON_EDIT_CONTINGENCY_STRATEGY = Target.the("This the button edit contingency strategy").located(By.id("btnEditStrategy"));
     public static final Target BUTTON_EDIT_COORDINATION_STRATEGY = Target.the("This the button edit coordination strategy").located(By.id("btnEditStrategy"));
     public static final Target BUTTON_EDIT_MONITORING_STRATEGY = Target.the("This the button edit monitoring strategy").located(By.id(""));

@@ -14,6 +14,7 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+import static co.konecta.sura.certificate.Interfaces.Inicio.ControlBoardsPage.*;
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.TablerosdeControlPage.*;
 
 public class TablerosdecontrolStepsDefinitions {
@@ -155,5 +156,12 @@ public class TablerosdecontrolStepsDefinitions {
     }
 
 
+    @And("^Seleccionamos El tipo de Tablero de control \"([^\"]*)\"$")
+    public void seleccionamosElTipoDeTableroDeControl(String arg0) throws Throwable {
 
+        actor.attemptsTo(Click.on(INPUT_BOARD_TYPE),
+                Click.on(SELECCIONAR_INPUT_BOARD_TYPE.of(String.valueOf(arg0))));
+        Thread.sleep(2000);
+
+    }
 }
