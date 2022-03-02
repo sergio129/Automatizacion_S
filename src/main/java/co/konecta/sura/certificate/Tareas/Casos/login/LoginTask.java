@@ -25,7 +25,7 @@ public class LoginTask implements Task {
                 Enter.theValue(username).into(USER),
                 Enter.theValue(password).into(PASSWORD).thenHit(Keys.ENTER)
         );
-        Thread.sleep(10000);
+        Thread.sleep(5000);
     }
 
     public static LoginTask whitCredentials(String username, String password) {

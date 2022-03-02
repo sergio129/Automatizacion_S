@@ -28,8 +28,8 @@ Feature: Parametrizacion de Alertas UCK
     And Selecionamos el boton guardar Alerta UCK
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
-      | usuario      | contrasena     | Nombre                 | Linea | Servicio         | Guardianes | FlujoE        | EstadoS   | TMonitoreo                          | Cordinacion | EstadoExp | Proveedor        | TareasM | modalmessage                    |
-      | Sergio.anaya | Colombia_2027* | Pruebas Automatizacion | Hogar | Abogado en sitio | Guardianes | Influenciador | Cancelado | Monitoreo finalizacion del servicio | Si          | Pendiente | PROVEEDOR PRUEBA | Cerrada | Registro guardado correctamente |
+      | usuario      | contrasena     | Nombre                 | Linea | Servicio         | Guardianes | FlujoE        | EstadoS    | TMonitoreo                          | Cordinacion | EstadoExp | Proveedor        | TareasM | modalmessage                    |
+      | Sergio.anaya | Colombia_2027* | Pruebas Automatizacion | Hogar | Abogado en sitio | Guardianes | Influenciador | Programado | Monitoreo finalizacion del servicio | Si          | Pendiente | PROVEEDOR PRUEBA | Cerrada | Registro guardado correctamente |
 
   @TestEliminarParametrizacionAlertasUCK
   Scenario Outline: Eliminar Exitosa de parametrizacion alertas UCK

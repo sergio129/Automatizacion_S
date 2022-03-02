@@ -48,5 +48,9 @@ public class HomePage extends PageObject {
     public static final Target OPCION_CIERRE_EXPEDIENTE = Target.the("opcion para entrar  la parametrizacion de cierre de expediente ").located(By.id("moCloseCasesParameterization"));
     public static final Target OPCIONES_PARAMETRIZACION_ALERTAS_UCK = Target.the("OPCION PARAMETRIZACION ALERTAS UCK").located(By.id("moAlertUCKParametrization"));
 
+    public static final Target REPORTES = Target.the("REPORTES").located(By.id("moReports"));
+    public static final Target GENERAR_REPORTES = Target.the("GENERAR_REPORTES").located(By.id("moReportsGenerate"));
+
+
 
 }

@@ -13,8 +13,8 @@ Feature: Contador de Casos
     And Filtramos por Reporte contador de casos <Reporte>
     And Semuestra la cantidad de casos<mensaje>
     Examples:
-      | usuario      | contrasena     | Estado_Servicio | FechaInicio          | FechaFin              | Reporte                   | mensaje         |
-      | Sergio.anaya | Colombia_2026* | Abierto         | 5 de febrero de 2022 | 23 de febrero de 2022 | Expedientes por proveedor | Estado servicio |
+      | usuario      | contrasena     | Estado_Servicio | FechaInicio        | FechaFin           | Reporte                   | mensaje         |
+      | Sergio.anaya | Colombia_2027* | Abierto         | 1 de marzo de 2022 | 2 de marzo de 2022 | Expedientes por proveedor | Estado servicio |
 
 
   @TestBusquedaDeCasosTodosLosEstados
