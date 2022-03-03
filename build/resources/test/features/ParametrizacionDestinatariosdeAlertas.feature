@@ -15,7 +15,7 @@ Feature: Alert recipients parameterization
 
     Examples:
       | user            | password      | namealert   | linealert | servicealert      | departmentalert | municipalityalert | emailalert                        | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | Pruebas QA1 | Hogares   | Hospedaje Viajero | Antioquia       | Belen             | yoarlys.carrillo@grupokonecta.com | Registro guardado correctamente |
+      | yoarlys.carillo | Colombia2021* | Pruebas QA1 | Hogares   | Hospedaje Viajero | Antioquia       | Belen             | yoarlys.carrillo@grupokonecta.com | Registro guardado correctamente |
 
 
   @TestAlertParameterizationEdition

@@ -1,7 +1,7 @@
 co/konecta/sura/certificate/Interfaces/Parametrizacion/NotificacionesPushPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.NotificacionesPushPage
-co/konecta/sura/certificate/Tareas/Parametrizacion/DestinatariosAlertaTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.DestinatariosAlertaTask
+co/konecta/sura/certificate/Tareas/Parametrizacion/RamosTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.RamosTask
 co/konecta/sura/certificate/Tareas/Parametrizacion/IndicativosdeMarcacionTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.IndicativosdeMarcacionTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/CodigosdeSalidaPage.java
@@ -112,8 +112,8 @@ co/konecta/sura/certificate/Tareas/Parametrizacion/TablerosDeControlUCKTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.TablerosDeControlUCKTask
 co/konecta/sura/certificate/Tareas/Casos/SubModuloGestionSalud/GestionSaludEmergenciaNoDificultadSi.java
  co.konecta.sura.certificate.Tareas.Casos.SubModuloGestionSalud.GestionSaludEmergenciaNoDificultadSi
-co/konecta/sura/certificate/Interfaces/Parametrizacion/DestinatariosAlertaPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.DestinatariosAlertaPage
+co/konecta/sura/certificate/Interfaces/Parametrizacion/RamosPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.RamosPage
 co/konecta/sura/certificate/Tareas/Casos/Novedades/NoveltyModel.java
  co.konecta.sura.certificate.Tareas.Casos.Novedades.NoveltyModel
 co/konecta/sura/certificate/Interfaces/Casos/documentationcnm/DocumentationCNMPage.java
@@ -212,7 +212,7 @@ co/konecta/sura/certificate/Tareas/Inicio/AlertaedicionTask.java
  co.konecta.sura.certificate.Tareas.Inicio.AlertaedicionTask
 co/konecta/sura/certificate/Tareas/Inicio/AlertasUckTask.java
  co.konecta.sura.certificate.Tareas.Inicio.AlertasUckTask
-co/konecta/sura/certificate/Interfaces/Parametrizacion/RamosPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.RamosPage
-co/konecta/sura/certificate/Tareas/Parametrizacion/RamosTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.RamosTask
+co/konecta/sura/certificate/Tareas/Parametrizacion/DestinatariosAlertaTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.DestinatariosAlertaTask
+co/konecta/sura/certificate/Interfaces/Parametrizacion/DestinatariosAlertaPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.DestinatariosAlertaPage

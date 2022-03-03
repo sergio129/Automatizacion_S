@@ -1,5 +1,5 @@
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/DestinatariosAlertaStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.DestinatariosAlertaStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/RamosStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.RamosStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/NotificacionesPushStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.NotificacionesPushStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/SupplierManagementStepsDefinitions.java
@@ -96,7 +96,7 @@ co/konecta/sura/certificate/stepsdefinitions/Casos/SuraClimbingStepsDefinitions.
  co.konecta.sura.certificate.stepsdefinitions.Casos.SuraClimbingStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/AsignacionStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/DestinatariosAlertaStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.DestinatariosAlertaStepsDefinitions
 co/konecta/sura/certificate/runners/PrincipalRunner.java
  co.konecta.sura.certificate.runners.PrincipalRunner
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/RamosStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.RamosStepsDefinitions
