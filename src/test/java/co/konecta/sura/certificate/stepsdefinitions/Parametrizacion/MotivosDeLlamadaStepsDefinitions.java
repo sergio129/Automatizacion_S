@@ -64,7 +64,6 @@ public class MotivosDeLlamadaStepsDefinitions {
 
     }
 
-
     @And("^Con Evento Catastrofico$")
     public void ISelectCheckCatastrophicEvent() throws InterruptedException {
         Thread.sleep(300);
@@ -89,8 +88,8 @@ public class MotivosDeLlamadaStepsDefinitions {
     }
 
     @And("^I write information in call reasons general information parameterization and (.*) Tipo:\"([^\"]*)\",Estado:\"([^\"]*)\",Linea:(.*),Gestionfinal:\"([^\"]*)\",servicio:\"([^\"]*)\"$")
-    public void iWriteInformationInCallReasonsGeneralInformationParameterizationAndNameTipoEstadoLineaLineGestionfinalServicio(String name, String Tipo, String Estado, String line,String Gestionfinal, String servicio) throws Throwable {
-        actor.attemptsTo(InformacionGeneralTask.whiteGeneralInformation(name,Tipo,Estado,line,Gestionfinal,servicio));
+    public void iWriteInformationInCallReasonsGeneralInformationParameterizationAndNameTipoEstadoLineaLineGestionfinalServicio(String name, String Tipo, String Estado, String line, String Gestionfinal, String servicio) throws Throwable {
+        actor.attemptsTo(InformacionGeneralTask.whiteGeneralInformation(name, Tipo, Estado, line, Gestionfinal, servicio));
     }
 
     @And("^Buscamos parametrizacion motivos de llamada por(.*),(.*)$")
