@@ -23,12 +23,12 @@ Feature: Assignment parameterization
     And I entering assignment parameterization
     And Buscamos por usuario Parametrizacion Asignacion "yoarlys carrillo"
     And I select button edition assignment
-    And I type information in the assignment with the role <roleassignment> and the user <userassignment> and the line <lineassignment> and the service <serviceassignment> and the department <departmentassignment>
+    And I type information in the assignment with the role <roleassignment> and the user <userassignment> and the line <lineassignment> and the service <serviceassignment> and the department <departmentassignment>,<cordinacion>
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user            | password      | roleassignment | userassignment    | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | Admin Backlog  | Sergio Luis Anaya | Hogares        | Vigilante Sp      | Bogota               | Registro guardado correctamente |
+      | user            | password      | roleassignment | userassignment    | lineassignment | serviceassignment | departmentassignment | cordinacion | modalmessage                    |
+      | yoarlys.carillo | Colombia2020* | Admin Backlog  | Sergio Luis Anaya | Hogares        | Vigilante Sp      | Bogota               | Si          | Registro guardado correctamente |
 
 
   @TestAssignmentParameterizationDelete

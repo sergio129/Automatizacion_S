@@ -46,19 +46,16 @@ public class RamosStepsDefinitions {
         actor.attemptsTo(Click.on(BUTTON_CREATE_BOUQUETS));
     }
 
-    @And("^I write information in bouquets parameterization and save(.*)$")
-    public void WriteInformationInBouquetsParameterization(String branch) {
-        actor.attemptsTo(RamosTask.whthBouquetsTaskParameterization(branch));
+    @And("^I write information in bouquets parameterization and save(.*),(.*)$")
+    public void WriteInformationInBouquetsParameterization(String linea, String branch) {
+        actor.attemptsTo(RamosTask.whthBouquetsTaskParameterization(linea, branch));
 
     }
 
-
-    @Then("^I view the modal save  bouquets parameterization (.*)$")
-    public void IViewTheModalSaveBouquetsParameterization(String message) throws InterruptedException {
+    @Then("^Mostramos el mensaje de la modal de ramos(.*)$")
+    public void mostramosElMensajeDeLaModalDeRamos(String message ) throws InterruptedException {
         Thread.sleep(2000);
         actor.attemptsTo(
                 Ensure.that(MODAL_VALIDATION).text().contains(message));
     }
-
-
 }

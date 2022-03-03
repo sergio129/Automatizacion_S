@@ -9,26 +9,27 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Parametrizacion.RamosPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+
 @AllArgsConstructor
 public class RamosTask implements Task {
 
-    public String branch;
+    String linea;
+    String branch;
+
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(INPUT_LINE_BOUQUETS),
-
-                Click.on(INPUT_SEARCH_LINE_BOUQUETS));
-        actor.attemptsTo(
+                Click.on(INPUT_SEARCH_LINE_BOUQUETS.of(String.valueOf(linea))),
                 Enter.theValue(branch).into(WHITE_BRANCH_BOUQUETS).thenHit(Keys.ENTER),
                 Click.on(BUTTON_SAVE_BOUQUETS)
         );
 
     }
 
-    public static RamosTask whthBouquetsTaskParameterization(String branch) {
-        return instrumented(RamosTask.class, branch);
+    public static RamosTask whthBouquetsTaskParameterization(String linea, String branch) {
+        return instrumented(RamosTask.class, linea, branch);
     }
 
 }
