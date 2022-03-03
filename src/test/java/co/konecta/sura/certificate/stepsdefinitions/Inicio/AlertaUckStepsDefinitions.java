@@ -53,12 +53,12 @@ public class AlertaUckStepsDefinitions {
         Thread.sleep(3000);
     }
 
-    @Entonces("^Se visualize pantalla de registro de busqueda$")
+/*    @Entonces("^Se visualize pantalla de registro de busqueda$")
     public void seVisualizePantallaDeRegistroDeBusquedaMensaje() throws InterruptedException {
         Thread.sleep(2000);
         actor.attemptsTo(
                 Ensure.that(PANTALLA_REGISTRO).isEnabled());
-    }
+    }*/
 
     @Y("^clic en el boton editar$")
     public void clicEnElBotonEditar() throws InterruptedException {
