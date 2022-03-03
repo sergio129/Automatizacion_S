@@ -20,7 +20,7 @@ public class IndicativosdeMarcacionTask implements Task {
         actor.attemptsTo(
                 Click.on(INPUT_DEPARTMENT_DEALING),
                 Enter.theValue(department).into(INPUT_SEARCH_DEPARTMENT_DEALING),
-                Click.on(BUTTON_SELECT_DEALING));
+                Click.on(BUTTON_SELECT_DEALING.of(String.valueOf(department))));
         actor.attemptsTo(Click.on(INPUT_MUNICIPALITY_DEALING),
                 Enter.theValue(municipality).into(INPUT_SEARCH_MUNICIPALITY_DEALING).thenHit(Keys.ENTER),
                 Enter.theValue(indicative).into(WHITE_INDICATIVE_DEALING),

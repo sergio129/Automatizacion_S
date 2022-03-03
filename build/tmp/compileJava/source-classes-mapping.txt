@@ -2,8 +2,8 @@ co/konecta/sura/certificate/Interfaces/Parametrizacion/NotificacionesPushPage.ja
  co.konecta.sura.certificate.Interfaces.Parametrizacion.NotificacionesPushPage
 co/konecta/sura/certificate/Tareas/Parametrizacion/RamosTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.RamosTask
-co/konecta/sura/certificate/Tareas/Parametrizacion/IndicativosdeMarcacionTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.IndicativosdeMarcacionTask
+co/konecta/sura/certificate/Interfaces/Parametrizacion/DestinatariosAlertaPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.DestinatariosAlertaPage
 co/konecta/sura/certificate/Interfaces/Parametrizacion/CodigosdeSalidaPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.CodigosdeSalidaPage
 co/konecta/sura/certificate/Tareas/pendientes/AdvancedSearchTask.java
@@ -66,8 +66,8 @@ co/konecta/sura/certificate/Interfaces/pendientes/SupplierMonitoringPage.java
  co.konecta.sura.certificate.Interfaces.pendientes.SupplierMonitoringPage
 co/konecta/sura/certificate/Tareas/Integracion/TiemposAltosdeContactoTask.java
  co.konecta.sura.certificate.Tareas.Integracion.TiemposAltosdeContactoTask
-co/konecta/sura/certificate/Interfaces/Parametrizacion/IndicativosdeMarcacionPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.IndicativosdeMarcacionPage
+co/konecta/sura/certificate/Tareas/Parametrizacion/DestinatariosAlertaTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.DestinatariosAlertaTask
 co/konecta/sura/certificate/Interfaces/Casos/UsuariosRegistrados/UsuariosRegistradosPage.java
  co.konecta.sura.certificate.Interfaces.Casos.UsuariosRegistrados.UsuariosRegistradosPage
 co/konecta/sura/certificate/Tareas/pendientes/StateManagementTask.java
@@ -212,7 +212,7 @@ co/konecta/sura/certificate/Tareas/Inicio/AlertaedicionTask.java
  co.konecta.sura.certificate.Tareas.Inicio.AlertaedicionTask
 co/konecta/sura/certificate/Tareas/Inicio/AlertasUckTask.java
  co.konecta.sura.certificate.Tareas.Inicio.AlertasUckTask
-co/konecta/sura/certificate/Tareas/Parametrizacion/DestinatariosAlertaTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.DestinatariosAlertaTask
-co/konecta/sura/certificate/Interfaces/Parametrizacion/DestinatariosAlertaPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.DestinatariosAlertaPage
+co/konecta/sura/certificate/Tareas/Parametrizacion/IndicativosdeMarcacionTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.IndicativosdeMarcacionTask
+co/konecta/sura/certificate/Interfaces/Parametrizacion/IndicativosdeMarcacionPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.IndicativosdeMarcacionPage

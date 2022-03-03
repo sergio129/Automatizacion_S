@@ -84,8 +84,8 @@ co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/CierreDeExpedientes
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.CierreDeExpedientesStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/ContadorDeCasosStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.ContadorDeCasosStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/IndicativosdeMarcacionStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.IndicativosdeMarcacionStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/DestinatariosAlertaStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.DestinatariosAlertaStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/NoveltyStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.NoveltyStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/TablerosdecontrolStepsDefinitions.java
@@ -96,7 +96,7 @@ co/konecta/sura/certificate/stepsdefinitions/Casos/SuraClimbingStepsDefinitions.
  co.konecta.sura.certificate.stepsdefinitions.Casos.SuraClimbingStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/AsignacionStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/DestinatariosAlertaStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.DestinatariosAlertaStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/IndicativosdeMarcacionStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.IndicativosdeMarcacionStepsDefinitions
 co/konecta/sura/certificate/runners/PrincipalRunner.java
  co.konecta.sura.certificate.runners.PrincipalRunner

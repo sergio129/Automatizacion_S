@@ -58,7 +58,7 @@ public class IndicativosdeMarcacionStepsDefinitions {
         actor.attemptsTo(
                 Click.on(INPUT_DEPARTMENT_DEALING_HOME),
                 Enter.theValue(department).into(INPUT_SEARCH_DEPARTMENT_DEALING_HOME),
-                Click.on(BUTTON_SELECT_DEPARTMENT_DEALING_HOME));
+                Click.on(BUTTON_SELECT_DEPARTMENT_DEALING_HOME.of(String.valueOf(department))));
         Thread.sleep(3000);
         actor.attemptsTo(
                 Click.on(INPUT_MUNICIPALITY_DEALING_HOME),
