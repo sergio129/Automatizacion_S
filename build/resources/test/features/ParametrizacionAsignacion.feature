@@ -10,12 +10,11 @@ Feature: Assignment parameterization
     When I entering in the application with user <user> and password <password>
     And I entering assignment parameterization
     And I select button create assignment
-    And I type information in the assignment with the role <roleassignment> and the user <userassignment> and the line <lineassignment> and the service <serviceassignment> and the department <departmentassignment>
+    And I type information in the assignment with the role <roleassignment> and the user <userassignment> and the line <lineassignment> and the service <serviceassignment> and the department <departmentassignment>,<cordinacion>
     Then Se visualiza mensaje de la modal<modalmessage>
-
     Examples:
-      | user            | password      | roleassignment | userassignment   | lineassignment | serviceassignment | departmentassignment | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | Admin Backlog  | yoarlys carrillo | Hogares        | Hospedaje Viajero | Antioquia            | Registro guardado correctamente |
+      | user         | password       | roleassignment | userassignment   | lineassignment | serviceassignment | departmentassignment | cordinacion | modalmessage                    |
+      | Sergio.anaya | Colombia_2027* | Admin Backlog  | yoarlys carrillo | Hogares        | Hospedaje Viajero | Antioquia            | No          | Registro guardado correctamente |
 
 
   @TestAssignmentParameterizationEdition

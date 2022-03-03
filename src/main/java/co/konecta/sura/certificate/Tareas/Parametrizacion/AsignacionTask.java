@@ -18,6 +18,7 @@ public class AsignacionTask implements Task {
     String lineAssignment;
     String serviceAssignment;
     String departmentAssignment;
+    String cordinacion;
 
     @Override
     public <T extends Actor> void performAs(T actor) {
@@ -29,9 +30,8 @@ public class AsignacionTask implements Task {
                 Enter.theValue(userAssignment).into(INPUT_SEARCH_USER_ASSIGNMENT).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(INPUT_LINE_ASSIGNMENT),
                 Enter.theValue(lineAssignment).into(INPUT_SEARCH_LINE_ASSIGNMENT),
-               // Ensure.that(BUTTON_SELECT).isDisplayed(),
-               Click.on(BUTTON_SELECT),//Se Usa para Mapear la posicion del Elemento.
-               Hit.the(Keys.ESCAPE).into(INPUT_SEARCH_LINE_ASSIGNMENT));
+               Click.on(BUTTON_SELECT.of(String.valueOf(lineAssignment))),
+               Hit.the(Keys.ESCAPE).into(INPUT_LINE_ASSIGNMENT));
         actor.attemptsTo(
                 Click.on(INPUT_SERVICE_ASSIGNMENT),
                 Enter.theValue(serviceAssignment).into(INPUT_SEARCH_SERVICE_ASSIGNMENT).thenHit(Keys.ENTER).thenHit(Keys.TAB),
@@ -39,13 +39,13 @@ public class AsignacionTask implements Task {
                 Enter.theValue(departmentAssignment).into(INPUT_SEARCH_DEPARTMENT_ASSIGNMENT).thenHit(Keys.ENTER).thenHit(Keys.TAB),
                 Click.on(INPUT_COORDINATION_MANAGER),
                // Hit.the(Keys.ENTER).into(INPUT_COORDINATION_MANAGER),
-                Click.on(LIST_COORDINATION_MANAGER),
+                Click.on(LIST_COORDINATION_MANAGER.of(String.valueOf(cordinacion))),
                 Click.on(BUTTON_SAVE_ASSIGNMENT)
         );
     }
 
-    public static AsignacionTask withInformationAssignment(String roleAssignment, String userAssignment, String lineAssignment, String serviceAssignment, String departmentAssignment){
-        return instrumented(AsignacionTask.class, roleAssignment, userAssignment, lineAssignment, serviceAssignment, departmentAssignment);
+    public static AsignacionTask withInformationAssignment(String roleAssignment, String userAssignment, String lineAssignment,String serviceAssignment, String departmentAssignment, String cordinacion){
+        return instrumented(AsignacionTask.class, roleAssignment, userAssignment, lineAssignment, serviceAssignment, departmentAssignment, cordinacion);
     }
 
 }

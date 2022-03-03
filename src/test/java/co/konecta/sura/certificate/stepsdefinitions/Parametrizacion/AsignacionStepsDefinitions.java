@@ -57,9 +57,9 @@ public class AsignacionStepsDefinitions {
                   Click.on(BUTTON_EDIT_ASSIGNMENT));
     }
 
-    @And("^I type information in the assignment with the role (.*) and the user (.*) and the line (.*) and the service (.*) and the department (.*)$")
-    public void iTypeInformationInTheAssignmentWithTheRoleAndTheUserAndTheLineAndTheServiceAndTheDepartment(String roleAssignment, String userAssignment, String lineAssignment, String serviceAssignment, String departmentAssignment) {
-        actor.attemptsTo(AsignacionTask.withInformationAssignment(roleAssignment, userAssignment, lineAssignment, serviceAssignment, departmentAssignment));
+    @And("^I type information in the assignment with the role (.*) and the user (.*) and the line (.*) and the service (.*) and the department (.*),(.*)$")
+    public void iTypeInformationInTheAssignmentWithTheRoleAndTheUserAndTheLineAndTheServiceAndTheDepartment(String roleAssignment, String userAssignment, String lineAssignment, String serviceAssignment, String departmentAssignment, String cordinacion) {
+        actor.attemptsTo(AsignacionTask.withInformationAssignment(roleAssignment, userAssignment, lineAssignment, serviceAssignment, departmentAssignment, cordinacion));
     }
     @And("^I type search in the assignment parameterization with the user (.*)$")
     public void iDeleteTrafficLightParameterization(String User) throws InterruptedException {
