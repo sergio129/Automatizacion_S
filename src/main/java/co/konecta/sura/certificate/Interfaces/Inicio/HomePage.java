@@ -51,6 +51,8 @@ public class HomePage extends PageObject {
     public static final Target REPORTES = Target.the("REPORTES").located(By.id("moReports"));
     public static final Target GENERAR_REPORTES = Target.the("GENERAR_REPORTES").located(By.id("moReportsGenerate"));
 
+    public static final Target GESTION = Target.the("OPCION GESTION").located(By.id("moManagement"));
+
 
 
 }
