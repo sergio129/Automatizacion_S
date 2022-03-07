@@ -14,6 +14,9 @@ public class GestionPage {
     public static final Target SELECCIONAR_SERVICIO_ESPECIAL = Target.the("SELECCIONAR SERVICIO ESPECIAL").locatedBy("//mat-option/span[contains(text(),'{0}')]");
     public static final Target CAMPO_DEPARTAMENTO_SOLICITA = Target.the("CAMPO DEPARTAMENTO SOLICITA").located(By.cssSelector("[placeholder='Departamento solicita'][aria-disabled='false']"));
     public static final Target CAMPO_MUNICIPIO_SOLICITA = Target.the("CAMPO MUNICIPIO SOLICITA").located(By.cssSelector("[placeholder='Municipio solicita'][aria-disabled='false']"));
+    public static final Target CAMPO_LINEA = Target.the("CAMPO LINEA").located(By.cssSelector("[placeholder='Línea'][aria-disabled='false']"));
+    public static final Target CAMPO_SERVICIO = Target.the("CAMPO SERVICIO").located(By.cssSelector("[placeholder='Servicio'][aria-disabled='false']"));
+
 
 
 }

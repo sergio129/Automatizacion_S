@@ -76,10 +76,10 @@ public class GestionTask implements Task {
             actor.has(Click.on(INPUT_CLICK_CASE),
                     Enter.theValue(GCord).into(INPUT_CLICK_CASE_FILTER).thenHit(Keys.ENTER));
         }
-        if (INPUT_LINE.resolveFor(actor).isEnabled()) {
+        if (CAMPO_LINEA.resolveFor(actor).isVisible()) {
             actor.has(Click.on(INPUT_LINE), Enter.theValue(linea).into(INPUT_LINE_FILTER).thenHit(Keys.ENTER));
         }
-        if (INPUT_SERVICE.resolveFor(actor).isEnabled()) {
+        if (CAMPO_SERVICIO.resolveFor(actor).isVisible()) {
             actor.has(Click.on(INPUT_SERVICE), Enter.theValue(Servicio).into(INPUT_SERVICE_FILTER).thenHit(Keys.ENTER));
         }
         actor.has(Click.on(BUTTON_SAVE_CASE));
