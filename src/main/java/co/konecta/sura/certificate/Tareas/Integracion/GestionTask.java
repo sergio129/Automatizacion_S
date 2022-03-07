@@ -33,7 +33,7 @@ public class GestionTask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.has(Click.on(BOTON_EDITAR_EXPEDIENTE));
-        actor.has(Open.url("https://easylabs.grupokonecta.local:5443/frontend/cases/create?tabIntegration=2"));
+        actor.has(Open.url("https://easylabs.grupokonecta.local:5443/frontend/cases/create?tabIntegration=1"));
         Thread.sleep(5000);
         actor.has(
                 Click.on(FECHA_CITA),
@@ -47,11 +47,11 @@ public class GestionTask implements Task {
         if (INPUT_PHONE1.resolveFor(actor).isEnabled()) {
             actor.has(Enter.theValue(Tlf).into(INPUT_PHONE1));
         }
-        if (!CAMPO_DEPARTAMENTO_SOLICITA.resolveFor(actor).isVisible()) {
+        if (CAMPO_DEPARTAMENTO_SOLICITA.resolveFor(actor).isVisible()) {
             actor.has(Click.on(INPUT_DEPARTMENT),
                     Enter.theValue(DpSl).into(INPUT_DEPARTMENT_FILTER).thenHit(Keys.ENTER));
         }
-        if (!CAMPO_MUNICIPIO_SOLICITA.resolveFor(actor).isVisible()) {
+        if (CAMPO_MUNICIPIO_SOLICITA.resolveFor(actor).isVisible()) {
             actor.has(
                     Click.on(INPUT_MUNICIPALITY),
                     Enter.theValue(MpSl).into(INPUT_MUNICIPALITY_FILTER).thenHit(Keys.ENTER));
