@@ -216,3 +216,7 @@ co/konecta/sura/certificate/Tareas/Casos/suppliermanagement/SupplierManagementTa
  co.konecta.sura.certificate.Tareas.Casos.suppliermanagement.SupplierManagementTask
 co/konecta/sura/certificate/questions/TheModal.java
  co.konecta.sura.certificate.questions.TheModal
+co/konecta/sura/certificate/Interfaces/Integracion/GestionPage.java
+ co.konecta.sura.certificate.Interfaces.Integracion.GestionPage
+co/konecta/sura/certificate/Tareas/Integracion/GestionTask.java
+ co.konecta.sura.certificate.Tareas.Integracion.GestionTask

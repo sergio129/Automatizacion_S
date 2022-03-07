@@ -40,8 +40,8 @@ co/konecta/sura/certificate/stepsdefinitions/Integracion/ServiciosDuplicadosStep
  co.konecta.sura.certificate.stepsdefinitions.Integracion.ServiciosDuplicadosStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/LoginStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.LoginStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Integracion/GestionStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Integracion.GestionStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/AsignacionStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/HideMonitoringTasksStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.HideMonitoringTasksStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/DocumentationCNMStepsDefinitions.java
@@ -100,5 +100,5 @@ co/konecta/sura/certificate/stepsdefinitions/Casos/UsuariosRegistradosStepsDefin
  co.konecta.sura.certificate.stepsdefinitions.Casos.UsuariosRegistradosStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Roles/RolesListarRolesStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Roles.RolesListarRolesStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/AsignacionStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Integracion/GestionStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Integracion.GestionStepsDefinitions
