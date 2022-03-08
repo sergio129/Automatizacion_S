@@ -1,5 +1,5 @@
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/RamosStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.RamosStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/DestinatariosAlertaStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.DestinatariosAlertaStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/NotificacionesPushStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.NotificacionesPushStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/SupplierManagementStepsDefinitions.java
@@ -16,14 +16,16 @@ co/konecta/sura/certificate/stepsdefinitions/Casos/DocumentationCNMStepsDefiniti
  co.konecta.sura.certificate.stepsdefinitions.Casos.DocumentationCNMStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/TablerosDeControlUCKStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.TablerosDeControlUCKStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/GestionUsuarios/GestionUsuariosListarUsuariosStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.GestionUsuarios.GestionUsuariosListarUsuariosStepsDefinitions
+co/konecta/sura/certificate/runners/PrincipalRunner.java
+ co.konecta.sura.certificate.runners.PrincipalRunner
 co/konecta/sura/certificate/stepsdefinitions/Reportes/GenerarReporteStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Reportes.GenerarReporteStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/TaskMonitoringStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.TaskMonitoringStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/TiemposdeAlertaStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.TiemposdeAlertaStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/listas/ListasAdministrarStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.listas.ListasAdministrarStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/SubModuloGestionSaludStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.SubModuloGestionSaludStepsDefinitions
 co/konecta/sura/certificate/runners/LoginRunner.java
@@ -44,8 +46,8 @@ co/konecta/sura/certificate/stepsdefinitions/Casos/UsuariosRegistradosStepsDefin
  co.konecta.sura.certificate.stepsdefinitions.Casos.UsuariosRegistradosStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Roles/RolesListarRolesStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Roles.RolesListarRolesStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/listas/ListasAdministrarStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.listas.ListasAdministrarStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/AsignacionStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/AlertasUCKStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AlertasUCKStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/MotivosDeLlamadaStepsDefinitions.java
@@ -84,19 +86,19 @@ co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/CierreDeExpedientes
  co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.CierreDeExpedientesStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/ContadorDeCasosStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.ContadorDeCasosStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/DestinatariosAlertaStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.DestinatariosAlertaStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/IndicativosdeMarcacionStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.IndicativosdeMarcacionStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/NoveltyStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.NoveltyStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/TablerosdecontrolStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.TablerosdecontrolStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/RamosStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.RamosStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/pendientes/SupplierManagementStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.pendientes.SupplierManagementStepsDefinitions
 co/konecta/sura/certificate/stepsdefinitions/Casos/SuraClimbingStepsDefinitions.java
  co.konecta.sura.certificate.stepsdefinitions.Casos.SuraClimbingStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/AsignacionStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.AsignacionStepsDefinitions
-co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/IndicativosdeMarcacionStepsDefinitions.java
- co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.IndicativosdeMarcacionStepsDefinitions
-co/konecta/sura/certificate/runners/PrincipalRunner.java
- co.konecta.sura.certificate.runners.PrincipalRunner
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/TablerosdecontrolStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.TablerosdecontrolStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/GestionUsuarios/GestionUsuariosListarUsuariosStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.GestionUsuarios.GestionUsuariosListarUsuariosStepsDefinitions
+co/konecta/sura/certificate/stepsdefinitions/Casos/SubModuloCierreExpedienteStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Casos.SubModuloCierreExpedienteStepsDefinitions
