@@ -1,16 +1,19 @@
-Feature: SubModulo Gestion Salud
+Feature: SubModulo agenda
   El Usuario
-  Puede registrar y editar informacion el en sudmodulo de gestion salud
+  Puede registrar y editar informacion el en sudmodulo de Agenda
 
   Background:
-    Given Regristro de informacion Sub modulo Gestion Salud
+    Given Regristro de informacion Sub modulo Agenda
 
-  @TestEmergenciaSi
-  Scenario Outline: Registro Exitoso Gestion Salud tipo de emergencia si
+  @Testllamada
+  Scenario Outline: Registro Exitoso modulo de agenda
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Buscamos por numero de expediente <NumeroCaso>
-    And Click en el submodulo agenda
-    And Escribimos en el campo <tipocontacto> clic en agregar
-    And Escribimos la informacion en los campos <numeroallamar>,<departamento>,<municipio>
-    And Selecionamos el boton llamar
-    Then Se visualiza mensaje de la modal<modalmensaje>
+    And Escribimos en el modulo agenda el <tipocontacto>
+    And clic en agregar modulo agenda
+    And Escribimos en el modulo agenda campos a llamar <numeroallamar>,<departamento>,<municipio>
+    Then Selecionamos el boton llamar
+
+    Examples:
+      | usuario         | contrasena    | NumeroCaso      | tipocontacto | numeroallamar | departamento | municipio |
+      | yoarlys.carillo | Colombia2020* | 202121344537266 | asegurado    | 311233        | Antioquia    | Medellin  |

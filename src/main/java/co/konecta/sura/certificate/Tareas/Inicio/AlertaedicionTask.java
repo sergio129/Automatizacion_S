@@ -26,7 +26,7 @@ public class AlertaedicionTask implements Task {
                 Click.on(CAMPO_OBSERVACION),
                 Enter.theValue(observacion).into(CAMPO_OBSERVACION),
                 Click.on(CAMPO_VALIDACIONES),
-                Enter.theValue(validaciones).into(BUSCAR_ALERTA_UCK).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
+                Enter.theValue(validaciones).into(BUSCAR_ALERTA_UCK).thenHit(Keys.ESCAPE),
                 Click.on(CAMPO_MOTIVO),
                 Enter.theValue(motivo).into(BUSCAR_ALERTA_UCK).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(CAMPO_TIPO_GESTION),
