@@ -151,6 +151,10 @@ public class CaseStepsDefinitions {
                 Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
 
     }
+    @And("^Escribimos el numero de caso en (.*) y lo pegamos$")
+    public void escribimosElNumeroDeCasoEnObservacionesYLoPegamos(String Ex) {
+        this.caseModel.setNumberCaso(Ex);
+    }
 
 }
 

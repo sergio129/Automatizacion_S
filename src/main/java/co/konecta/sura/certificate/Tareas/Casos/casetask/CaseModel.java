@@ -14,6 +14,7 @@ public class CaseModel {
     private String line;
     private String service;
     private String addressDetail;
+    private String NumberCaso;
 
     public String getNumberCase() {
         return numberCase;
@@ -110,4 +111,13 @@ public class CaseModel {
     public void setAddressDetail(String addressDetail) {
         this.addressDetail = addressDetail;
     }
+
+    public String getNumberCaso() {
+        return NumberCaso;
+    }
+
+    public void setNumberCaso(String NumberCaso) {
+        this.NumberCaso = NumberCaso;
+    }
+
 }

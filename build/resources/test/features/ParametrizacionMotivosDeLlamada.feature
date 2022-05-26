@@ -5,7 +5,7 @@ Feature: Parametrizacion Motivos de llamada
   Background:
     Given I create, edit and delete call reasons parameterization
 
-  @TestCreacionMotivoDeLlamadaSolicitudDeServicio
+  @EJ1
   Scenario Outline: Creacion Exitosa de motivos de llamada con solicitud de servicio, sin Evento Catastrofico
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a Parametrizacion Motivos de Llamada
@@ -33,7 +33,7 @@ Feature: Parametrizacion Motivos de llamada
       | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico3 | Hogar | Registro guardado correctamente                                                               |
       | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico3 | Hogar | No se puede guardar, Ya se encuentra parametrizado un servicio de llamada con el mismo nombre |
 
-  @TestCreacionMotivosDeLlamdaSeguimientoServicioConEvento
+  @EJ1
   Scenario Outline: Creacion de motivo de llamada Seguimiento de Servicio con Evento
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a Parametrizacion Motivos de Llamada
@@ -44,8 +44,8 @@ Feature: Parametrizacion Motivos de llamada
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | usuario      | contrasena     | name                                        | line  | option | modalmessage                                                                                  |
-      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico3 | Hogar | 55     | Registro guardado correctamente                                                               |
-      | Sergio.anaya | Colombia_2026* | Pruebas Automatizacion Evento Catastrofico3 | Hogar | 55     | No se puede guardar, Ya se encuentra parametrizado un servicio de llamada con el mismo nombre |
+      | Sergio.anaya | Colombia_2027* | Pruebas Automatizacion Evento Catastrofico3 | Hogar | 55     | Registro guardado correctamente                                                               |
+      | Sergio.anaya | Colombia_2027* | Pruebas Automatizacion Evento Catastrofico3 | Hogar | 55     | No se puede guardar, Ya se encuentra parametrizado un servicio de llamada con el mismo nombre |
 
   @TestCreacionMotivosDeLlamdaSeguimientoServicioSinEvento
   Scenario Outline: Creacion de motivo de llamada Seguimiento de Servicio sin Evento Catastrofrico

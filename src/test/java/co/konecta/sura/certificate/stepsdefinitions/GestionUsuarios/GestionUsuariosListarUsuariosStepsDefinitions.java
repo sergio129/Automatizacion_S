@@ -38,7 +38,6 @@ public class GestionUsuariosListarUsuariosStepsDefinitions {
     public void entramosAGestionDeUsuariosListarUsuarios() {
         actor.has(
                 Click.on(BUTTON_INITIAL_TAB),
-                Click.on(OPTION_INTEGRATION),
                 Click.on(GESTION_USUARIOS),
                 Click.on(GESTION_USUARIOS_LISTAR_USUARIOS));
     }

@@ -19,10 +19,15 @@ public class Case implements Task {
         this.datacase = datacase;
     }
 
+    CharSequence selecionar = "a";
+    CharSequence Copiar = "c";
     CharSequence charSequence = "v";
     @Override
     public <T extends Actor> void performAs(T actor) {
             actor.attemptsTo(
+                    Enter.theValue(datacase.getNumberCaso()).into(CasePage.RESPONSABLE),
+                    SendKeys.of(Keys.CONTROL + "A").into(CasePage.RESPONSABLE),
+                    SendKeys.of(Keys.CONTROL + "C").into(CasePage.RESPONSABLE),
                     SendKeys.of(Keys.CONTROL + "V").into( CasePage.INPUT_NUMBER_CASE),
                     Enter.theValue(datacase.getApplicantName()).into(CasePage.INPUT_APPLICANT_NAME),
                     Enter.theValue(datacase.getPhone1()).into(CasePage.INPUT_PHONE1),

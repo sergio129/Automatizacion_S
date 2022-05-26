@@ -25,6 +25,7 @@ public class CasePage {
     public static final Target INPUT_LINE_FILTER = Target.the("This the input filter line").located(By.id("inputLineFilter"));
     public static final Target MESSAGE = Target.the("The message alert").located(By.id("toast-container"));
     public static final Target BUTTON_SAVE_CASE = Target.the("This the button save case").located(By.id("saveCase"));
+    public static final Target RESPONSABLE = Target.the("The message alert").located(By.id("responsible"));
 
     }
 
