@@ -31,7 +31,7 @@ public class PrefijosPage {
     public static final Target BOTON_BUSCAR_PREFIJOS = Target.the("selecionamos el boton buscar prefijos parametrizacion").located(By.id("btnSearchPrefixParameterization"));
     public static final Target BOTON_EDITAR_PREFIJOS = Target.the("selecionamos el boton editar prefijos parametrizacion").located(By.id("btnEditPrefixParameterization"));
     public static final Target BOTON_ELIMINAR_PREFIJOS = Target.the("selecionamos el boton eliminar prefijos parametrizacion").located(By.id("btnDeletedPrefixParameterization"));
-    public static final Target OPCION_SI_ELIMINAR_PREFIJOS = Target.the("selecionamos la opcion si para eliminar prefijos parametrizacion").locatedBy("/html/body/div[5]/div/div[3]/button[1]");
+    public static final Target OPCION_SI_ELIMINAR_PREFIJOS = Target.the("selecionamos la opcion si para eliminar prefijos parametrizacion").located(By.id("sweetalertConfirmButton"));
 
 
 

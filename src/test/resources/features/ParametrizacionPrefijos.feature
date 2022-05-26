@@ -26,8 +26,8 @@ Feature: Parametrizacion Prefijos
     And Selecionamos el boton guardar prefijos
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | linea | servicio | prefijos | modalmensaje                    |
-      | sergio.anaya | Colombia_2026* | Autos | Grua     | 908      | Registro guardado correctamente |
+      | usuario      | contrasena    | linea | servicio | prefijos | modalmensaje                    |
+      | sergio.anaya | Colombia_2021 | Autos | Grua     | 908      | Registro guardado correctamente |
 
   @TestEliminarPrefijos
   Scenario Outline: Eliminacion Exitosa de Prefijos
@@ -37,8 +37,8 @@ Feature: Parametrizacion Prefijos
     And Selecionamos el boton eliminar prefijos
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | linea | servicio | prefijos | modalmensaje                     |
-      | sergio.anaya | Colombia_2026* | Hogar | Plomero  | 908      | Registro eliminado correctamente |
+      | usuario      | contrasena    | linea | servicio | prefijos | modalmensaje                     |
+      | sergio.anaya | Colombia_2021 | Hogar | Plomero  | 908      | Registro eliminado correctamente |
 
   @TestValidacionDeCampos
   Scenario Outline: Validacion de Campos Parametrizacion prefijos
