@@ -14,8 +14,8 @@ Feature: Push notifications
     And I write information in the push notifications of the following fields <line>and<service>and<servicestatus>and<roles>and<Timetomoment1>and<Timetomoment2>and<appointmenttime1>and<appointmenttime2>
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
-      | user         | password       | line  | service          | servicestatus | roles            | Timetomoment1 | Timetomoment2 | appointmenttime1 | appointmenttime2 | modalmessage                     |
-      | sergio.anaya | Colombia_2026* | Autos | Abogado En Sitio | Aceptado      | Emergencia salud | 105           | 4             | 55               | 5                | Registro guardado correctamente. |
+      | user         | password      | line  | service          | servicestatus | roles            | Timetomoment1 | Timetomoment2 | appointmenttime1 | appointmenttime2 | modalmessage                           |
+      | sergio.anaya | Colombia_2021 | Autos | Abogado En Sitio | Aceptado      | Emergencia salud | 105           | 4             | 55               | 5                | EXITO:Registro guardado correctamente. |
 
 
   @TestEditarNotificacionPush
