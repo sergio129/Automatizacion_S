@@ -9,6 +9,7 @@ Feature: Page create case
   Scenario Outline: Successful case creation
     When I entering the case creation page with user <user> and password <password>
     And I select creation case button
+    And Escribimos el numero de caso en L202121344537270 y lo pegamos
     And I type information in the field number case <numberCase>
     And I type information in the field applicant name <applicantName>
     And I type information in the field phone1 <phone1>

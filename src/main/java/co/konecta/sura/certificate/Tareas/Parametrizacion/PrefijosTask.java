@@ -20,7 +20,7 @@ public class PrefijosTask implements Task {
         actor.attemptsTo(
                 Click.on(SELECCION_CAMPO_LINEA),
                 Enter.theValue(linea).into(BUSCAMOS_LINEA),
-                Click.on(SELECIONAMOS_LINEA),
+                Click.on(SELECIONAMOS_LINEA.of(String.valueOf(linea))),
                 Click.on(SELECCION_CAMPO_SERVICIO),
                 Enter.theValue(servicio).into(BUSCAMOS_SERVICIO).thenHit(Keys.ENTER),
                 //Click.on(SELECCIONAR_SERVICIO),

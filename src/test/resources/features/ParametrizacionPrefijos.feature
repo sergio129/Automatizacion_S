@@ -13,8 +13,8 @@ Feature: Parametrizacion Prefijos
     And Selecionamos el boton guardar prefijos
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | usuario      | contrasena     | linea | servicio | prefijos | modalmensaje                    |
-      | sergio.anaya | Colombia_2026* | Autos | Grua     | 908      | Registro guardado correctamente |
+      | usuario      | contrasena    | linea | servicio | prefijos | modalmensaje                    |
+      | sergio.anaya | Colombia_2021 | Autos | Grua     | 908      | Registro guardado correctamente |
 
   @TestEditarPrefijos
   Scenario Outline: Edicion Exitosa de Prefijos
