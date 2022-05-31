@@ -5,10 +5,11 @@ Feature: Page create information of cases
   Background:
     Given I perform case creation full flow of different service
 
-  @TestCreateFlowCompleteCars
+  @TestCrearCasosintegracionModulos
   Scenario Outline: Successful create flow complete cars
     When I entering the case creation page with user <user> and password <password>
     And I select creation case button
+    And Escribimos el numero de caso en L202121344537282 y lo pegamos
     And I type information in the field number case <numberCase>
     And I type information in the field applicant name <applicantName>
     And I type information in the field phone1 <phone1>
@@ -30,17 +31,16 @@ Feature: Page create information of cases
     And I type information in the field cause novelty <causenoveltynewsmanagement>
     And I type information in the field complaint news <complaintnewsmanagement>
     And I type information in the field novelty observation <observationnewsmanagement>
-    And I type information in the fields management person <managementpersondocumentation> and generates complaint <generatescomplaintdocumentation> and observation <observationdocumentation>
+    And I type information in the fields management person <managementpersondocumentation> and generates complaint <generatescomplaintdocumentation> and Radicado <Radi>, observation <observationdocumentation>
     And I select button create ending
     And I type information in the field ending with <endingwith>
     And I type information in the type responses <typeresponse>
     And I type information in the field observation ending <observationending>
     And I type information in the field status name <statusname4>
     Then I view the information status is <statusname4>
-
     Examples:
-      | user         | password       | numberCase       | applicantName     | phone1     | licensePlate | serviceAddress   | serviceLocation               | department | municipality | clickCase | line  | service              | addressdetail                | statusname1 | suppliername        | supplierresponse | timemonitoringsite | timemonitoringdestination | technicalcellphone | centralphone1 | centralphone2 | observations                  | statusname2                  | name   | type                                | date       | expiredhour | userMonitoring | monitoringwith | timeofservice        | responsetomonitoring | generatescomplaint | adviserobservation        | supplierobservation                          | statusname3 | managementtype        | managementperson       | responsetype | generatescomplaint | observations                          | whoreportsnewsmanagements | causenoveltynewsmanagement | complaintnewsmanagement | observationnewsmanagement            | managementpersondocumentation | generatescomplaintdocumentation | observationdocumentation                       | endingwith | typeresponse | observationending                  | statusname4 |
-      | Sergio.anaya | Colombia_2027* | A202201064435479 | solicitante autos | 3122554788 | SBV95F       | Calle 34e #43-54 | Avenida colombia prueba autos | Cordoba    | Monteria     | No        | Autos | Abogado En Sitio Arl | Cerca a supermercado pruebas | Programado  | PROVEEDOR DE PRUEBA | Toma servicio    | 200                | 500                       | 3122554385         | 3221454746    | 3214576585    | pruebas proveedor automaticas | Aceptado y en desplazamiento | Prueba | Monitoreo finalizacion del servicio | 2021-05-31 | 09:19am     | Yaira Manuela  | Asegurado      | Monitoreo preventivo | Acepte               | No                 | pruebas automaticas autos | pruebas automaticas monitoreo flujo completo | En sitio    | Guardianes de la vida | Sebastian Ossa Taborda | Adulto mayor | No                 | pruebas automaticas escalamiento sura | Acompañamiento emocional  | Abogado Virtual            | No                      | observacion flujo completo novedades | Administrativo Aya            | No                              | pruebas automaticas creacion documentacion CNM | Proveedor  | SMS          | prueba finalizacion autos completa | Concluido   |
+      | user         | password      | numberCase       | applicantName     | phone1     | licensePlate | serviceAddress   | serviceLocation               | department | municipality | clickCase | line  | service              | addressdetail                | statusname1 | suppliername   | supplierresponse | timemonitoringsite | timemonitoringdestination | technicalcellphone | centralphone1 | centralphone2 | observations                  | statusname2                  | name   | type                                | date       | expiredhour | userMonitoring | monitoringwith | timeofservice        | responsetomonitoring | generatescomplaint | adviserobservation        | supplierobservation                          | statusname3 | managementtype        | managementperson       | responsetype | generatescomplaint | observations                          | whoreportsnewsmanagements | causenoveltynewsmanagement  | complaintnewsmanagement | observationnewsmanagement            | managementpersondocumentation | generatescomplaintdocumentation | Radi      | observationdocumentation                       | endingwith | typeresponse | observationending                  | statusname4 |
+      | Sergio.anaya | Colombia_2021 | L202121344537278 | solicitante autos | 3122554788 | SBV95F       | Calle 34e #43-54 | Avenida colombia prueba autos | Cordoba    | Monteria     | No        | Autos | Abogado En Sitio Arl | Cerca a supermercado pruebas | Programado  | RECURSO PROPIO | Toma servicio    | 200                | 500                       | 3122554385         | 3221454746    | 3214576585    | pruebas proveedor automaticas | Aceptado y en desplazamiento | Prueba | Monitoreo finalizacion del servicio | 2021-05-31 | 09:19am     | Yaira Manuela  | Asegurado      | Monitoreo preventivo | Acepte               | No                 | pruebas automaticas autos | pruebas automaticas monitoreo flujo completo | En sitio    | Guardianes de la vida | Sebastian Ossa Taborda | Adulto mayor | No                 | pruebas automaticas escalamiento sura | Bot Ofertamiento          | Ofertamiento manual exitoso | No                      | observacion flujo completo novedades | Administrativo Aya            | si                              | R85544777 | pruebas automaticas creacion documentacion CNM | Proveedor  | No contesta  | prueba finalizacion autos completa | Concluido   |
 
 
   @TestCreateFlowCompleteHomes

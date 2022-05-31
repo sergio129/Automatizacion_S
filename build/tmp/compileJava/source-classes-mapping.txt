@@ -32,8 +32,8 @@ co/konecta/sura/certificate/Interfaces/Casos/suppliermonitoring/SupplierMonitori
  co.konecta.sura.certificate.Interfaces.Casos.suppliermonitoring.SupplierMonitoringPage
 co/konecta/sura/certificate/Interfaces/Parametrizacion/OfertamientoPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.OfertamientoPage
-co/konecta/sura/certificate/Tareas/Casos/documentationcnm/DocumentationCNMTask.java
- co.konecta.sura.certificate.Tareas.Casos.documentationcnm.DocumentationCNMTask
+co/konecta/sura/certificate/Interfaces/Integracion/TableroControlOfertamientoPage.java
+ co.konecta.sura.certificate.Interfaces.Integracion.TableroControlOfertamientoPage
 co/konecta/sura/certificate/Tareas/listas/ListasAdministrarTask.java
  co.konecta.sura.certificate.Tareas.listas.ListasAdministrarTask
 co/konecta/sura/certificate/Tareas/Casos/login/LoginTask.java
@@ -236,5 +236,5 @@ co/konecta/sura/certificate/Tareas/Parametrizacion/PrefijosTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/PrefijosPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.PrefijosPage
-co/konecta/sura/certificate/Interfaces/Integracion/TableroControlOfertamientoPage.java
- co.konecta.sura.certificate.Interfaces.Integracion.TableroControlOfertamientoPage
+co/konecta/sura/certificate/Tareas/Casos/documentationcnm/DocumentationCNMTask.java
+ co.konecta.sura.certificate.Tareas.Casos.documentationcnm.DocumentationCNMTask

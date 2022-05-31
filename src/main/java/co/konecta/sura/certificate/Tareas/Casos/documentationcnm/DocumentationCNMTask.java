@@ -12,21 +12,27 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 @AllArgsConstructor
 public class DocumentationCNMTask implements Task {
-    public String managementPerson;
-    public String generatesComplaint;
-    public String observation;
+    private String managementPerson;
+    private String generatesComplaint;
+    private String Radicado;
+    private String observation;
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(INPUT_MANAGEMENT_PERSON_DOCUMENTATION),
                 Enter.theValue(managementPerson).into(INPUT_SEARCH_MANAGEMENT_PERSON_DOCUMENTATION).thenHit(Keys.ENTER),
                 Click.on(INPUT_GENERATES_COMPLAINT_DOCUMENTATION),
-                Enter.theValue(generatesComplaint).into(INPUT_SEARCH_GENERATES_COMPLAINT_DOCUMENTATION).thenHit(Keys.ENTER),
+                Enter.theValue(generatesComplaint).into(INPUT_SEARCH_GENERATES_COMPLAINT_DOCUMENTATION).thenHit(Keys.ENTER));
+
+        if (INPUT_FILED_COMPLAINT_DOCUMENTATION.resolveFor(actor).isVisible()) {
+            actor.has(Enter.theValue(Radicado).into(INPUT_FILED_COMPLAINT_DOCUMENTATION));
+        }
+        actor.has(
                 Enter.theValue(observation).into(INPUT_OBSERVATION_DOCUMENTATION));
     }
 
-    public static DocumentationCNMTask withInformationDocumentationCNM(String managementPerson, String generatesComplaint, String observation) {
-        return instrumented(DocumentationCNMTask.class, managementPerson, generatesComplaint, observation
+    public static DocumentationCNMTask withInformationDocumentationCNM(String managementPerson, String generatesComplaint, String Radicado, String observation) {
+        return instrumented(DocumentationCNMTask.class, managementPerson, generatesComplaint, Radicado, observation
         );
     }
 }

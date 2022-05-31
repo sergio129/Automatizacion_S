@@ -12,4 +12,4 @@ Feature: Gestion de Tablero de Bot de Ofertamiento
     Then Se muestra el mensaje que fue ofertado exitosamente<mensaje>
     Examples:
       | Exp              | mensaje              |
-      | A202205110013038 | Tipo de ofertamiento |
+      | A202205110013040 | Tipo de ofertamiento |
