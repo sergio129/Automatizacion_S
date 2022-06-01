@@ -22,3 +22,9 @@ build/tmp
 *.html
 *.txt
 .*idx
+.exe
+.bin
+.lock
+.html
+.txt
+.idx
