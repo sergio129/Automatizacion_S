@@ -5,17 +5,17 @@ import org.openqa.selenium.By;
 
 public class HideMonitoringTasksPage {
 
-    public static final Target INPUT_LINE_HIDE_TASK = Target.the("This the input line hide monitoring task parameterization").located(By.id("mat-select-value-9"));
+    public static final Target INPUT_LINE_HIDE_TASK = Target.the("This the input line hide monitoring task parameterization").located(By.id("selectCreateLineHide"));
     public static final Target INPUT_SEARCH_LINE_HIDE_TASK = Target.the("This the input search line hide monitoring task parameterization").located(By.id("inputCreateLineHideSearch"));
-    public static final Target INPUT_SERVICE_HIDE_TASK = Target.the("This the input service hide monitoring task parameterization").located(By.id("mat-select-value-11"));
+    public static final Target INPUT_SERVICE_HIDE_TASK = Target.the("This the input service hide monitoring task parameterization").located(By.id("selectCreateServiceHide"));
     public static final Target INPUT_SEARCH_SERVICE_HIDE_TASK = Target.the("This the input search service hide monitoring task parameterization").located(By.id("inputCreateServiceHideSearch"));
-    public static final Target INPUT_TYPE_HIDE_TASK = Target.the("This the input type hide monitoring task parameterization").located(By.id("mat-select-value-13"));
+    public static final Target INPUT_TYPE_HIDE_TASK = Target.the("This the input type hide monitoring task parameterization").located(By.id("selectCreateTaskTypeHide"));
     public static final Target INPUT_SEARCH_TYPE_HIDE_TASK = Target.the("This the input search type hide monitoring task parameterization").located(By.id("inputCreateTaskTypeHideSearch"));
-    public static final Target INPUT_FILTER_LINE_HIDE_TASK = Target.the("This the input filter line hide monitoring task parameterization").located(By.id("mat-select-value-1"));
+    public static final Target INPUT_FILTER_LINE_HIDE_TASK = Target.the("This the input filter line hide monitoring task parameterization").located(By.id("selectLineHide"));
     public static final Target INPUT_SEARCH_FILTER_LINE_HIDE_TASK = Target.the("This the input search filter line hide monitoring task parameterization").located(By.id("inputLineHideSearch"));
-    public static final Target INPUT_FILTER_SERVICE_HIDE_TASK = Target.the("This the input service hide monitoring task parameterization").located(By.id("mat-select-value-3"));
+    public static final Target INPUT_FILTER_SERVICE_HIDE_TASK = Target.the("This the input service hide monitoring task parameterization").located(By.id("selectServiceHide"));
     public static final Target INPUT_SEARCH_FILTER_SERVICE_HIDE_TASK = Target.the("This the input search service hide monitoring task parameterization").located(By.id("inputServiceHideSearch"));
-    public static final Target INPUT_FILTER_TYPE_HIDE_TASK = Target.the("This the input type hide monitoring task parameterization").located(By.id("mat-select-value-5"));
+    public static final Target INPUT_FILTER_TYPE_HIDE_TASK = Target.the("This the input type hide monitoring task parameterization").located(By.id("selectTaskTypeHide"));
     public static final Target INPUT_SEARCH_FILTER_TYPE_HIDE_TASK = Target.the("This the input search type hide monitoring task parameterization").located(By.id("inputTaskTypeHideSearch"));
     public static final Target CHECKBOX_YES_HIDE_TASK = Target.the("This the checkbox yes hide monitoring task parameterization").located(By.id("radioButtonCreateHideSI"));
     public static final Target CHECKBOX_NO_HIDE_TASK = Target.the("This the checkbox no hide monitoring task parameterization").located(By.id(""));
