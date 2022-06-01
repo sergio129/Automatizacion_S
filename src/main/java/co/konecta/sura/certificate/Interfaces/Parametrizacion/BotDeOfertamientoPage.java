@@ -3,6 +3,7 @@ package co.konecta.sura.certificate.Interfaces.Parametrizacion;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
+
 public class BotDeOfertamientoPage {
     public static final Target OPCION_BOT_MONITOREO = Target.the("OPCION DE BOT MONITOREO").located(By.id("moMonitoringBot"));
     public static final Target BOTON_AGREGAR_PARAMETRIZACION_BOT_MONITOREO = Target.the("BOTON PARA AGREGAR NUEVA PARAMETRIZACION BOT MONITOREO").located(By.id("btnAddMonitoringBotParametrization"));
@@ -11,7 +12,7 @@ public class BotDeOfertamientoPage {
     public static final Target SELECCIONAR_GESTOR_DE_SERVICIO = Target.the("SELECCIONAMOS EL GESTOR DE SERVICIO DE PARAMETRIZACION BOT MONITOREO").locatedBy("//mat-option/span[contains(text(),'{0}')]");
     public static final Target CAMPO_LINEA = Target.the("CAMPO LINEA DE PARAMETRIZACION BOT MONITOREO").located(By.id("selectLineMonitoringBotParametrization"));
     public static final Target BUSCAR_LINEA = Target.the("BUSCAR LINEA DE PARAMETRIZACION BOT MONITOREO").located(By.id("inputCreateLineMonitoringBotParametrization"));
-    public static final Target SELECCIONAR_LINEA = Target.the("SELECCIONAR LINEA DE PARAMETRIZACION BOT MONITOREO").located(By.id("//mat-option/span[contains(text(),'{0}')]"));
+    public static final Target SELECCIONAR_LINEA = Target.the("SELECCIONAR LINEA DE PARAMETRIZACION BOT MONITOREO").locatedBy("//mat-option/span[contains(text(),'{0}')]");
     public static final Target CAMPO_TIPO_SERVICIO = Target.the("CAMPO TIPO SERVICIO DE PARAMETRIZACION BOT MONITOREO").located(By.id("selectServiceMonitoringBotParametrization"));
     public static final Target BUSCAR_TIPO_SERVICIO = Target.the("BUSCAR TIPO SERVICIO DE PARAMETRIZACION BOT MONITOREO").located(By.id("inputCreateServiceMonitoringBotParametrization"));
     public static final Target CAMPO_TIPO_TAREA = Target.the("CAMPO TIPO TAREA DE PARAMETRIZACION BOT MONITOREO").located(By.id("selectTaskTypeMonitoringBotParametrization"));

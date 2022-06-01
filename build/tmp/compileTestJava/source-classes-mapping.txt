@@ -108,3 +108,5 @@ co/konecta/sura/certificate/stepsdefinitions/GestionUsuarios/GestionUsuariosList
  co.konecta.sura.certificate.stepsdefinitions.GestionUsuarios.GestionUsuariosListarUsuariosStepsDefinitions
 co/konecta/sura/certificate/runners/PrincipalRunner.java
  co.konecta.sura.certificate.runners.PrincipalRunner
+co/konecta/sura/certificate/stepsdefinitions/Parametrizacion/ParametrizacionesStepsDefinitions.java
+ co.konecta.sura.certificate.stepsdefinitions.Parametrizacion.ParametrizacionesStepsDefinitions

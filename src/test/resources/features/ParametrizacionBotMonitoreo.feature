@@ -12,5 +12,5 @@ Feature: Gestion de Tablero de Bot de Ofertamiento
     And Selecionamos el Boton Guardar Parametrizacion bot de monitoreo
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | Nombre                 | GestionServicio | Linea | TipoServicio | TipoTarea          | Departamento | Municipio | ServicioEspecial | modalmensaje                     |
-      | Pruebas automatizacion | Si              | Autoa | Grua Motos   | Monitoreo en Sitio | Cordoba      | Lorica    | No               | Registro guardado correctamente. |
+      | Nombre                 | GestionServicio | Linea | TipoServicio | TipoTarea          | Departamento | Municipio   | ServicioEspecial | modalmensaje                     |
+      | Pruebas automatizacion | Si              | Autos | Grua Motos   | Monitoreo en Sitio | Bogota D.C.  | Bogota D.C. | No               | Registro guardado correctamente. |

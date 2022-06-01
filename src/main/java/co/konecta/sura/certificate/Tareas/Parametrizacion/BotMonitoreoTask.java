@@ -1,6 +1,5 @@
 package co.konecta.sura.certificate.Tareas.Parametrizacion;
 
-import co.konecta.sura.certificate.Interfaces.Parametrizacion.BotDeOfertamientoPage;
 import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -9,34 +8,36 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
 import org.openqa.selenium.Keys;
 
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.BotDeOfertamientoPage.*;
+
 @AllArgsConstructor
 public class BotMonitoreoTask implements Task {
     private String Nombre,GestionServicio,Linea,TipoServicio,TipoTarea,Departamento,Municipio,ServicioEspecial;
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.has(
-                Enter.theValue(Nombre).into(BotDeOfertamientoPage.CAMPO_NOMBRE),
-                Click.on(BotDeOfertamientoPage.CAMPO_GESTOR_DE_SERVICIO),
-                Click.on(BotDeOfertamientoPage.SELECCIONAR_GESTOR_DE_SERVICIO.of(String.valueOf(GestionServicio))),
-                Click.on(BotDeOfertamientoPage.CAMPO_LINEA),
-                Enter.theValue(Linea).into(BotDeOfertamientoPage.BUSCAR_LINEA),
-                Click.on(BotDeOfertamientoPage.SELECCIONAR_LINEA.of(String.valueOf(Linea))),
-                Hit.the(Keys.ESCAPE).into(BotDeOfertamientoPage.CAMPO_LINEA),
-                Click.on(BotDeOfertamientoPage.CAMPO_TIPO_SERVICIO),
-                Enter.theValue(TipoServicio).into(BotDeOfertamientoPage.BUSCAR_TIPO_SERVICIO),
-                Hit.the(Keys.ESCAPE).into(BotDeOfertamientoPage.CAMPO_TIPO_SERVICIO),
-                Click.on(BotDeOfertamientoPage.CAMPO_TIPO_TAREA),
-                Enter.theValue(TipoTarea).into(BotDeOfertamientoPage.BUSCAR_TIPO_TAREA),
-                Hit.the(Keys.ESCAPE).into(BotDeOfertamientoPage.CAMPO_TIPO_TAREA),
-                Click.on(BotDeOfertamientoPage.CAMPO_DEPARTAMENTO),
-                Enter.theValue(Departamento).into(BotDeOfertamientoPage.BUSCAR_DEPARTAMENTO),
-                Hit.the(Keys.ESCAPE).into(BotDeOfertamientoPage.CAMPO_DEPARTAMENTO),
-                Click.on(BotDeOfertamientoPage.CAMPO_MUNICIPIO),
-                Enter.theValue(Municipio).into(BotDeOfertamientoPage.BUSCAR_MUNICIPIO),
-                Hit.the(Keys.ESCAPE).into(BotDeOfertamientoPage.CAMPO_MUNICIPIO),
-                Click.on(BotDeOfertamientoPage.CAMPO_SERVICIO_ESPECIAL),
-                Enter.theValue(ServicioEspecial).into(BotDeOfertamientoPage.BUSCAR_SERVICIO_ESPECIAL),
-                Hit.the(Keys.ESCAPE).into(BotDeOfertamientoPage.CAMPO_MUNICIPIO)
+                Enter.theValue(Nombre).into(CAMPO_NOMBRE),
+                Click.on(CAMPO_GESTOR_DE_SERVICIO),
+                Click.on(SELECCIONAR_GESTOR_DE_SERVICIO.of(String.valueOf(GestionServicio))),
+                Click.on(CAMPO_LINEA),
+                Enter.theValue(Linea).into(BUSCAR_LINEA),
+                Click.on(SELECCIONAR_LINEA.of(String.valueOf(Linea))),
+                Hit.the(Keys.ESCAPE).into(CAMPO_LINEA),
+                Click.on(CAMPO_TIPO_SERVICIO),
+                Enter.theValue(TipoServicio).into(BUSCAR_TIPO_SERVICIO),
+                Hit.the(Keys.ESCAPE).into(CAMPO_TIPO_SERVICIO),
+                Click.on(CAMPO_TIPO_TAREA),
+                Enter.theValue(TipoTarea).into(BUSCAR_TIPO_TAREA),
+                Hit.the(Keys.ESCAPE).into(CAMPO_TIPO_TAREA),
+                Click.on(CAMPO_DEPARTAMENTO),
+                Enter.theValue(Departamento).into(BUSCAR_DEPARTAMENTO),
+                Hit.the(Keys.ESCAPE).into(CAMPO_DEPARTAMENTO),
+                Click.on(CAMPO_MUNICIPIO),
+                Enter.theValue(Municipio).into(BUSCAR_MUNICIPIO),
+                Hit.the(Keys.ESCAPE).into(CAMPO_MUNICIPIO),
+                Click.on(CAMPO_SERVICIO_ESPECIAL),
+                Enter.theValue(ServicioEspecial).into(BUSCAR_SERVICIO_ESPECIAL),
+                Hit.the(Keys.ESCAPE).into(CAMPO_MUNICIPIO)
         );
     }
     public static BotMonitoreoTask EscribirDatosBotMonitoreo(String Nombre,String GestionServicio,String Linea,String TipoServicio,String TipoTarea,String Departamento,String Municipio,String ServicioEspecial){

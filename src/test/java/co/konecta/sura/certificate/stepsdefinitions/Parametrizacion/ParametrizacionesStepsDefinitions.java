@@ -2,6 +2,7 @@ package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import co.konecta.sura.certificate.Interfaces.Parametrizacion.BotDeOfertamientoPage;
+import co.konecta.sura.certificate.Tareas.Parametrizacion.BotMonitoreoTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -37,4 +38,14 @@ public class ParametrizacionesStepsDefinitions {
         Thread.sleep(3000);
     }
 
+    @And("^Selecionamos el boton Crear Parametrizacion Bot Monitoreo$")
+    public void selecionamosElBotonCrearParametrizacionBotMonitoreo() throws InterruptedException {
+        actor.has(Click.on(BotDeOfertamientoPage.BOTON_AGREGAR_PARAMETRIZACION_BOT_MONITOREO));
+        Thread.sleep(3000);
+    }
+
+    @And("^Escribimos datos Parametrizacion Bot de monitoreo: (.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*)$")
+    public void escribimosDatosParametrizacionBotDeMonitoreoNombreGestionServicioLineaTipoServicioTipoTareaDepartamentoMunicipioServicioEspecial(String Nombre,String GestionServicio,String Linea,String TipoServicio,String TipoTarea,String Departamento,String Municipio,String ServicioEspecial) {
+        actor.has(BotMonitoreoTask.EscribirDatosBotMonitoreo(Nombre,GestionServicio,Linea,TipoServicio,TipoTarea,Departamento,Municipio,ServicioEspecial));
+    }
 }
