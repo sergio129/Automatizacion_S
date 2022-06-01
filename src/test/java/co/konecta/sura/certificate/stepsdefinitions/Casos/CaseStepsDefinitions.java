@@ -1,10 +1,11 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
+import co.konecta.sura.certificate.Interfaces.Casos.advancedsearch.AdvancedSearchPage;
+import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import co.konecta.sura.certificate.Tareas.Casos.casetask.Case;
 import co.konecta.sura.certificate.Tareas.Casos.casetask.CaseModel;
 import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
-import co.konecta.sura.certificate.Interfaces.Casos.advancedsearch.AdvancedSearchPage;
-import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import com.github.javafaker.Faker;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -152,8 +153,10 @@ public class CaseStepsDefinitions {
 
     }
     @And("^Escribimos el numero de caso en (.*) y lo pegamos$")
-    public void escribimosElNumeroDeCasoEnObservacionesYLoPegamos(String Ex) {
-        this.caseModel.setNumberCaso(Ex);
+    public void escribimosElNumeroDeCasoEnObservacionesYLoPegamos(String NumeroCaso) {
+        Faker faker = new Faker();
+        NumeroCaso = faker.random().hex(15);
+        this.caseModel.setNumberCaso(NumeroCaso);
     }
 
 }
