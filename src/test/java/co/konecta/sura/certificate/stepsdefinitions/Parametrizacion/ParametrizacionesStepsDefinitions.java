@@ -48,4 +48,9 @@ public class ParametrizacionesStepsDefinitions {
     public void escribimosDatosParametrizacionBotDeMonitoreoNombreGestionServicioLineaTipoServicioTipoTareaDepartamentoMunicipioServicioEspecial(String Nombre,String GestionServicio,String Linea,String TipoServicio,String TipoTarea,String Departamento,String Municipio,String ServicioEspecial) {
         actor.has(BotMonitoreoTask.EscribirDatosBotMonitoreo(Nombre,GestionServicio,Linea,TipoServicio,TipoTarea,Departamento,Municipio,ServicioEspecial));
     }
+
+    @And("^Selecionamos el Boton Guardar Parametrizacion bot de monitoreo$")
+    public void selecionamosElBotonGuardarParametrizacionBotDeMonitoreo() {
+        actor.has(Click.on(BotDeOfertamientoPage.BOTON_GUARDAR));
+    }
 }
