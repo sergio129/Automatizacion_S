@@ -16,8 +16,8 @@ Feature: Control boards parameterization
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | boardname                     | fieldsshow1 | fieldsshow2       | fieldsshow3 | fieldsshow4  | fieldsshow5 | misexpedientes | casestatus | statusservice | departmentrequest | service          | specialservice | assigneduser        | modalmessage                    |
-      | Sergio.anaya | Colombia_2026* | Tablero Casos Automatizacion2 | Expediente  | Estado expediente | Asignado a  | Departamento | Proveedor   | no             | Pendiente  | Programado    | Antioquia         | Abogado En Sitio | Noo            | Yaira Manuela Admin | Registro guardado correctamente |
+      | user         | password      | boardname                     | fieldsshow1 | fieldsshow2       | fieldsshow3 | fieldsshow4  | fieldsshow5 | misexpedientes | casestatus | statusservice | departmentrequest | service          | specialservice | assigneduser        | modalmessage                    |
+      | Sergio.anaya | Colombia_2021 | Tablero Casos Automatizacion3 | Expediente  | Estado expediente | Asignado a  | Departamento | Proveedor   | no             | Pendiente  | Programado    | Antioquia         | Abogado En Sitio | Noo            | Yaira Manuela Admin | Registro guardado correctamente |
 
 
   @TestCreacionTableroTareasDeMonitoreo

@@ -1,0 +1,16 @@
+Feature: Gestion de Tablero de Bot de Ofertamiento
+
+  Background:
+    Given Modulo Parametrizaciones
+
+  @TestParamatrizacionBotMonitoreo
+  Scenario Template:Creacion Exitosa de Parametrizacion Bot de Monitoreo
+    When Ingresamos a la aplicacion con usuario Sergio.anaya y contraseñaColombia_2021
+    And Entramos a Parametrizacion Bot de monitoreo
+    And Selecionamos el boton Crear Parametrizacion Bot Monitoreo
+    And Escribimos datos Parametrizacion Bot de monitoreo: <Nombre>,<GestionServicio>,<Linea>,<TipoServicio>,<TipoTarea>,<Departamento>,<Municipio>,<ServicioEspecial>
+    And Selecionamos el Boton Guardar Parametrizacion bot de monitoreo
+    Then Se visualiza mensaje de la modal<modalmensaje>
+    Examples:
+      | Nombre                 | GestionServicio | Linea | TipoServicio | TipoTarea          | Departamento | Municipio | ServicioEspecial | modalmensaje                     |
+      | Pruebas automatizacion | Si              | Autoa | Grua Motos   | Monitoreo en Sitio | Cordoba      | Lorica    | No               | Registro guardado correctamente. |
