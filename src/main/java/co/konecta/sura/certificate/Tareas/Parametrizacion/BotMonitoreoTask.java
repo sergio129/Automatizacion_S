@@ -20,7 +20,7 @@ public class BotMonitoreoTask implements Task {
                 Click.on(BotDeOfertamientoPage.SELECCIONAR_GESTOR_DE_SERVICIO.of(String.valueOf(GestionServicio))),
                 Click.on(BotDeOfertamientoPage.CAMPO_LINEA),
                 Enter.theValue(Linea).into(BotDeOfertamientoPage.BUSCAR_LINEA),
-                Click.on(BotDeOfertamientoPage.CAMPO_LINEA.of(String.valueOf(Linea))),
+                Click.on(BotDeOfertamientoPage.SELECCIONAR_LINEA.of(String.valueOf(Linea))),
                 Hit.the(Keys.ESCAPE).into(BotDeOfertamientoPage.CAMPO_LINEA),
                 Click.on(BotDeOfertamientoPage.CAMPO_TIPO_SERVICIO),
                 Enter.theValue(TipoServicio).into(BotDeOfertamientoPage.BUSCAR_TIPO_SERVICIO),
@@ -38,5 +38,8 @@ public class BotMonitoreoTask implements Task {
                 Enter.theValue(ServicioEspecial).into(BotDeOfertamientoPage.BUSCAR_SERVICIO_ESPECIAL),
                 Hit.the(Keys.ESCAPE).into(BotDeOfertamientoPage.CAMPO_MUNICIPIO)
         );
+    }
+    public static BotMonitoreoTask EscribirDatosBotMonitoreo(String Nombre,String GestionServicio,String Linea,String TipoServicio,String TipoTarea,String Departamento,String Municipio,String ServicioEspecial){
+        return new BotMonitoreoTask(Nombre,GestionServicio,Linea,TipoServicio,TipoTarea,Departamento,Municipio,ServicioEspecial);
     }
 }
