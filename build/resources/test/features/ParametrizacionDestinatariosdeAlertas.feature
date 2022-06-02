@@ -14,8 +14,8 @@ Feature: Alert recipients parameterization
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user            | password      | namealert   | linealert | servicealert      | departmentalert | municipalityalert | emailalert                        | modalmessage                    |
-      | yoarlys.carillo | Colombia2021* | Pruebas QA1 | Hogares   | Hospedaje Viajero | Antioquia       | Belen             | yoarlys.carrillo@grupokonecta.com | Registro guardado correctamente |
+      | user         | password      | namealert   | linealert | servicealert      | departmentalert | municipalityalert | emailalert                        | modalmessage                    |
+      | sergio.anaya | Colombia_2021 | Pruebas QA1 | Hogares   | Hospedaje Viajero | Antioquia       | Belen             | yoarlys.carrillo@grupokonecta.com | Registro guardado correctamente |
 
 
   @TestAlertParameterizationEdition
@@ -40,7 +40,7 @@ Feature: Alert recipients parameterization
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | namealert       | modalmessage                     |
+      | user            | password      | namealert       | modalmessage                     |
       | yoarlys.carillo | Colombia2020* | Pruebas alertaa | Registro eliminado correctamente |
 
 
@@ -53,5 +53,5 @@ Feature: Alert recipients parameterization
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | modalmessage                         |
-      |yoarlys.carillo | Colombia2020* | Los campos marcados son obligatorios |
+      | user            | password      | modalmessage                         |
+      | yoarlys.carillo | Colombia2020* | Los campos marcados son obligatorios |

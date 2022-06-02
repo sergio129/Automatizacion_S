@@ -22,9 +22,9 @@ public class DestinatariosAlertaPage {
     public static final Target BUTTON_SEARCH_ALERT_PARAMETERIZATION = Target.the("This the button search alert parameterization").located(By.id("btnSearchAlertRecipients"));
     public static final Target CHECKBOX_DELETE_ALERT_PARAMETERIZATION = Target.the("This the checkbox delete alert parameterization").located(By.id("checkboxAllSelectAlertRecipients"));
     public static final Target OPTION_DELETE_ALERT_PARAMETERIZATION = Target.the("This the option delete alert parameterization").located(By.id("actionSelectedAlertRecipients"));
-    public static final Target OPTION_YES_ALERT_PARAMETERIZATION = Target.the("This the button yes alert parameterization").locatedBy("/html/body/div[5]/div/div[3]/button[1]");
+    public static final Target OPTION_YES_ALERT_PARAMETERIZATION = Target.the("This the button yes alert parameterization").located(By.id("sweetalertConfirmButton"));
     public static final Target BUTTON_SAVE_ALERT_PARAMETERIZATION = Target.the("This the button save alert parameterization").located(By.id("btnSaveFormAlertRecipients"));
     public static final Target BOTON_SELECCIONAR_LINEA_DESTINATARIO_ALERTA = Target.the("click para seleccionar la linea").locatedBy("//mat-option/span[contains(text(),'{0}')]");
-    public static final Target OPTION_SELECT_DEPARTMENT_PARAMETERIZATION = Target.the("This the select department parameterization").locatedBy("/html/body/div[4]/div[4]/div/div/div/mat-option[2]/span");
+    public static final Target OPTION_SELECT_DEPARTMENT_PARAMETERIZATION = Target.the("This the select department parameterization").locatedBy("//mat-option/span[contains(text(),'{0}')]");
 
 }

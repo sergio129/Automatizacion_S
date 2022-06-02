@@ -37,7 +37,7 @@ public class DestinatariosAlertaTask implements Task {
                 Enter.theValue(serviceAlert).into(INPUT_SEARCH_SERVICE_ALERT).thenHit(Keys.ENTER).thenHit(Keys.TAB),
                 Click.on(INPUT_DEPARTMENT_ALERT),
                 Enter.theValue(departmentAlert).into(INPUT_SEARCH_DEPARTMENT_ALERT),
-                Click.on(OPTION_SELECT_DEPARTMENT_PARAMETERIZATION),
+                Click.on(OPTION_SELECT_DEPARTMENT_PARAMETERIZATION.of(String.valueOf(departmentAlert))),
                 Hit.the(Keys.ESCAPE).into(INPUT_SEARCH_DEPARTMENT_ALERT),
                 Click.on(INPUT_MUNICIPALITY_ALERT),
                 Enter.theValue(municipalityAlert).into(INPUT_SEARCH_MUNICIPALITY_ALERT).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),

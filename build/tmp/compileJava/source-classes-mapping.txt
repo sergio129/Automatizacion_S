@@ -1,7 +1,7 @@
 co/konecta/sura/certificate/Interfaces/Parametrizacion/NotificacionesPushPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.NotificacionesPushPage
-co/konecta/sura/certificate/Tareas/Parametrizacion/DestinatariosAlertaTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.DestinatariosAlertaTask
+co/konecta/sura/certificate/Tareas/Parametrizacion/BotMonitoreoTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.BotMonitoreoTask
 co/konecta/sura/certificate/Tareas/Parametrizacion/IndicativosdeMarcacionTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.IndicativosdeMarcacionTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/CodigosdeSalidaPage.java
@@ -142,8 +142,8 @@ co/konecta/sura/certificate/Tareas/Casos/SubModuloGestionSalud/GestionSaludEmerg
  co.konecta.sura.certificate.Tareas.Casos.SubModuloGestionSalud.GestionSaludEmergenciaNoDificultadSi
 co/konecta/sura/certificate/Tareas/Parametrizacion/MotivosDeLlamadaTask/InformacionGeneralTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.InformacionGeneralTask
-co/konecta/sura/certificate/Interfaces/Parametrizacion/DestinatariosAlertaPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.DestinatariosAlertaPage
+co/konecta/sura/certificate/Interfaces/Parametrizacion/HideMonitoringTasksPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.HideMonitoringTasksPage
 co/konecta/sura/certificate/Tareas/Casos/Novedades/NoveltyModel.java
  co.konecta.sura.certificate.Tareas.Casos.Novedades.NoveltyModel
 co/konecta/sura/certificate/Interfaces/Casos/documentationcnm/DocumentationCNMPage.java
@@ -238,7 +238,7 @@ co/konecta/sura/certificate/Tareas/Parametrizacion/HideMonitoringTasksTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.HideMonitoringTasksTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/BotDeOfertamientoPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.BotDeOfertamientoPage
-co/konecta/sura/certificate/Interfaces/Parametrizacion/HideMonitoringTasksPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.HideMonitoringTasksPage
-co/konecta/sura/certificate/Tareas/Parametrizacion/BotMonitoreoTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.BotMonitoreoTask
+co/konecta/sura/certificate/Tareas/Parametrizacion/DestinatariosAlertaTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.DestinatariosAlertaTask
+co/konecta/sura/certificate/Interfaces/Parametrizacion/DestinatariosAlertaPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.DestinatariosAlertaPage
