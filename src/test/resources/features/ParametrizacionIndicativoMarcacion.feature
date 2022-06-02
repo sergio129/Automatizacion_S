@@ -5,7 +5,7 @@ Feature: Parametrizacion Indicativos de Marcacion
   Background:
     Given I create or edition of delete dialing codes parameterization
 
-  @TestCreacionIndicativosDeMarcacion
+  @TestCreacionIndicativosDeMarcacion @Test1
   Scenario Outline: Creacion Exitosa de indicativos de marcacion
     When I entering in the application with user <user> and password <password>
     And I enter dialing codes parameterization

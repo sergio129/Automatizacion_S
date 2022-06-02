@@ -5,7 +5,7 @@ Feature: Parametrizacion de Ramos
   Background:
     Given I create bouquets parameterization
 
-  @TestCreacionDeRamos
+  @TestCreacionDeRamos @Test1
   Scenario Outline: Creacion de Exitosa de Ramos
     When I entering in the application with user <user> and password <password>
     And I enter bouquets parameterization
@@ -13,6 +13,6 @@ Feature: Parametrizacion de Ramos
     And I write information in bouquets parameterization and save <linea>,<bouquets>
     Then Mostramos el mensaje de la modal de ramos<modalmessage>
     Examples:
-      | user         | password       | linea            | bouquets                 | modalmessage                       |  |
-      | Sergio.anaya | Colombia_2027* | Emergencia salud | Pruebas Automatizacion15 | Registros guardados correctamente. |  |
-      | Sergio.anaya | Colombia_2027* | Emergencia salud | Pruebas Automatizacion15 | El ramo ya existe.                 |  |
+      | user         | password      | linea            | bouquets    | modalmessage                       |  |
+      | Sergio.anaya | Colombia_2021 | Emergencia salud | Pruebas QA2 | Registros guardados correctamente. |  |
+      | Sergio.anaya | Colombia_2021 | Emergencia salud | Pruebas QA2 | El ramo ya existe.                 |  |

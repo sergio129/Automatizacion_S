@@ -5,7 +5,7 @@ Feature: Page create information of cases
   Background:
     Given I perform case creation full flow of different service
 
-  @TestCrearCasosintegracionModulos
+  @TestCrearCasosintegracionModulos @Test1
   Scenario Outline: Successful create flow complete cars
     When I entering the case creation page with user <user> and password <password>
     And I select creation case button
