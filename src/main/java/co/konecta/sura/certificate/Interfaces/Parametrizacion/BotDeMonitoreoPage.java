@@ -25,9 +25,10 @@ public class BotDeMonitoreoPage {
     public static final Target BUSCAR_SERVICIO_ESPECIAL = Target.the("BUSCAR SERVICIO ESPECIAL DE PARAMETRIZACION BOT MONITOREO").located(By.cssSelector("[placeholder='Buscar']"));
     public static final Target BOTON_GUARDAR = Target.the("BOTON GUARDAR PARAMETRIZACION BOT MONITOREO").located(By.id("btnSaveMonitoringBotParametrization"));
     public static final Target BUSCAR_NOMBRE = Target.the("CAMPO BUSCAR NOMBRE DE PARAMETRIZACION BOT MONITOREO").located(By.id("inputNameMonitoringBotParametrization"));
-    public static final Target BOTON_HABITAR_INHABILITAR_MODULO = Target.the("BOTON HABILITAR Y INHABILITAR MODULO PARAMETRIZACION BOT MONITOREO").located(By.id("btnModuleStatus-input"));
-    public static final Target BOTON_HABITAR_INHABILITAR_PARAMETRIZACION = Target.the("BOTON HABILITAR Y INHABILITAR UNA PARAMETRIZACION BOT MONITOREO").located(By.id("btnStatusMonitoringBotParametrization0-input"));
+    public static final Target BOTON_HABITAR_INHABILITAR_MODULO = Target.the("BOTON HABILITAR Y INHABILITAR MODULO PARAMETRIZACION BOT MONITOREO").located(By.id("btnModuleStatus"));
+    public static final Target BOTON_HABITAR_INHABILITAR_PARAMETRIZACION = Target.the("BOTON HABILITAR Y INHABILITAR UNA PARAMETRIZACION BOT MONITOREO").located(By.id("btnStatusMonitoringBotParametrization0"));
     public static final Target BOTON_EDITAR = Target.the("BOTON EDITAR PARAMETRIZACION BOT MONITOREO").located(By.id("btnEditMonitoringBotParametrization"));
+    public static final Target BOTON_CONFIRMACION_HABILITAR_INHABILITAR = Target.the("BOTON HABILITAR INHABILITAR PARAMETRIZACION BOT MONITOREO").located(By.id("disableButton"));
 
 
 }

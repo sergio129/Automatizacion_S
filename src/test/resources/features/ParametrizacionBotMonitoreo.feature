@@ -27,3 +27,24 @@ Feature: Gestion de Tablero de Bot de Ofertamiento
     Examples:
       | Nombre                 | GestionServicio | Linea | TipoServicio | TipoTarea          | Departamento | Municipio   | ServicioEspecial | modalmensaje                    |
       | Pruebas automatizacion | No              | Autos | Grua Motos   | Monitoreo en Sitio | Bogota D.C.  | Bogota D.C. | No               | Registro guardado correctamente |
+
+  @TestHabilitar/DeshabilitarModuloBotMonitoreo
+  Scenario Template:Habilitar/Inhabilitar módulo de Bot de Monitoreo
+    When Ingresamos a la aplicacion con usuario Sergio.anaya y contraseñaColombia_2021
+    And Entramos a Parametrizacion Bot de monitoreo
+    And Selecionamos el boton de Habilitar/Inhabilitar módulo
+    Then Se visualiza mensaje de la modal<modalmensaje>
+    Examples:
+      | modalmensaje                    |
+      | Registro guardado correctamente |
+
+  @TestHabilitar/DeshabilitarParamatrizacionBotMonitoreo
+  Scenario Template:Habilitar/Inhabilitar Parametrizacion Exitosa de Parametrizacion Bot de Monitoreo
+    When Ingresamos a la aplicacion con usuario Sergio.anaya y contraseñaColombia_2021
+    And Entramos a Parametrizacion Bot de monitoreo
+    And Buscamos por nombre de Parametrizacion:"Pruebas automatizacion"
+    And Selecionamos el boton de Habilitar/Inhabilitar Parametrizacion
+    Then Se visualiza mensaje de la modal<modalmensaje>
+    Examples:
+      | modalmensaje                                       |
+      | Parametrización habilitada/deshabilitada con éxito |
