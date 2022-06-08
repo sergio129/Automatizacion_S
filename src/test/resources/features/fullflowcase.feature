@@ -9,7 +9,7 @@ Feature: Page create information of cases
   Scenario Outline: Successful create flow complete cars
     When I entering the case creation page with user <user> and password <password>
     And I select creation case button
-    And Escribimos el numero de caso en L202121344537282 y lo pegamos
+    And Escribimos el numero de caso en LXXXXXXXXXXXXXXX y lo pegamos
     And I type information in the field number case <numberCase>
     And I type information in the field applicant name <applicantName>
     And I type information in the field phone1 <phone1>

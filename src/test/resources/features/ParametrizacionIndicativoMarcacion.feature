@@ -14,7 +14,7 @@ Feature: Parametrizacion Indicativos de Marcacion
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | user         | password      | department | municipality  | indicative | modalmessage                    |
-      | sergio.anaya | Colombia_2021 | Vichada    | Santa Barbara | +65        | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2021 | Vichada    | Santa Barbara | +70        | Registro guardado correctamente |
 
   @TestDialingCodesParameterizationEdit
   Scenario Outline: Successful Edit dialing codes parameterization

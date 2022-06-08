@@ -4,7 +4,7 @@ Feature: Parametrizacion Prefijos
   Background:
     Given Creo, Edito y elimino Prefijos
 
-  @TestCreacionPrefijos
+  @TestCreacionPrefijos @Test1
   Scenario Outline: Creacion Exitosa de Prefijos
     When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
     And Entramos a parametrizacion prefijos
@@ -14,7 +14,7 @@ Feature: Parametrizacion Prefijos
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | usuario      | contrasena    | linea | servicio | prefijos | modalmensaje                    |
-      | sergio.anaya | Colombia_2021 | Autos | Grua     | 908      | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2021 | Autos | Grua     | 888      | Registro guardado correctamente |
 
   @TestEditarPrefijos
   Scenario Outline: Edicion Exitosa de Prefijos

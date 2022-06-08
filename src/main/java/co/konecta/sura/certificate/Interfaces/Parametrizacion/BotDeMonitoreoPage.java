@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
 
-public class BotDeOfertamientoPage {
+public class BotDeMonitoreoPage {
     public static final Target OPCION_BOT_MONITOREO = Target.the("OPCION DE BOT MONITOREO").located(By.id("moMonitoringBot"));
     public static final Target BOTON_AGREGAR_PARAMETRIZACION_BOT_MONITOREO = Target.the("BOTON PARA AGREGAR NUEVA PARAMETRIZACION BOT MONITOREO").located(By.id("btnAddMonitoringBotParametrization"));
     public static final Target CAMPO_NOMBRE = Target.the("CAMPO NOMBRE DE PARAMETRIZACION BOT MONITOREO").located(By.id("createInputNameMonitoringBotParametrization"));

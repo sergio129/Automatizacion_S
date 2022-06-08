@@ -1,7 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
-import co.konecta.sura.certificate.Interfaces.Parametrizacion.BotDeOfertamientoPage;
+import co.konecta.sura.certificate.Interfaces.Parametrizacion.BotDeMonitoreoPage;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.BotMonitoreoTask;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -9,6 +9,7 @@ import cucumber.api.java.en.Given;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
@@ -33,14 +34,14 @@ public class ParametrizacionesStepsDefinitions {
         actor.has(
                 Click.on(BUTTON_INITIAL_TAB),
                 Click.on(HomePage.OPTION_MENU_PARAMETERIZATION),
-                Click.on(BotDeOfertamientoPage.OPCION_BOT_MONITOREO)
+                Click.on(BotDeMonitoreoPage.OPCION_BOT_MONITOREO)
         );
         Thread.sleep(3000);
     }
 
     @And("^Selecionamos el boton Crear Parametrizacion Bot Monitoreo$")
     public void selecionamosElBotonCrearParametrizacionBotMonitoreo() throws InterruptedException {
-        actor.has(Click.on(BotDeOfertamientoPage.BOTON_AGREGAR_PARAMETRIZACION_BOT_MONITOREO));
+        actor.has(Click.on(BotDeMonitoreoPage.BOTON_AGREGAR_PARAMETRIZACION_BOT_MONITOREO));
         Thread.sleep(3000);
     }
 
@@ -51,6 +52,17 @@ public class ParametrizacionesStepsDefinitions {
 
     @And("^Selecionamos el Boton Guardar Parametrizacion bot de monitoreo$")
     public void selecionamosElBotonGuardarParametrizacionBotDeMonitoreo() {
-        actor.has(Click.on(BotDeOfertamientoPage.BOTON_GUARDAR));
+        actor.has(Click.on(BotDeMonitoreoPage.BOTON_GUARDAR));
+    }
+
+    @And("^Buscamos por nombre de Parametrizacion:\"([^\"]*)\"$")
+    public void buscamosPorNombreDeParametrizacion(String arg0) throws Throwable {
+    actor.has(Enter.theValue(arg0).into(BotDeMonitoreoPage.BUSCAR_NOMBRE));
+    Thread.sleep(3000);
+    }
+
+    @And("^Seleccionamos el boton Editar Parametrizacion bot de monitoreo$")
+    public void seleccionamosElBotonEditarParametrizacionBotDeMonitoreo() {
+        actor.has(Click.on(BotDeMonitoreoPage.BOTON_EDITAR));
     }
 }

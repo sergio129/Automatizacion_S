@@ -5,7 +5,7 @@ Feature: Alert recipients parameterization
   Background:
     Given I create, edition or delete a alert recipients parameterization
 
-  @TestCreacionDestinarioAlerta @Test1
+  @TestCreacionDestinarioAlerta
   Scenario Outline: Creacion exitosa de destinatarios de Alerta
     When I entering in the application with user <user> and password <password>
     And I entering alert recipients parameterization
@@ -15,7 +15,7 @@ Feature: Alert recipients parameterization
 
     Examples:
       | user         | password      | namealert   | linealert | servicealert      | departmentalert | municipalityalert | emailalert                        | modalmessage                    |
-      | sergio.anaya | Colombia_2021 | Pruebas QA2 | Hogares   | Hospedaje Viajero | Antioquia       | Belen             | yoarlys.carrillo@grupokonecta.com | Registro guardado correctamente |
+      | sergio.anaya | Colombia_2021 | Pruebas QA3 | Hogares   | Hospedaje Viajero | Antioquia       | Belen             | yoarlys.carrillo@grupokonecta.com | Registro guardado correctamente |
 
 
   @TestAlertParameterizationEdition

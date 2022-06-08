@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.Interfaces.Parametrizacion.BotDeOfertamientoPage.*;
+import static co.konecta.sura.certificate.Interfaces.Parametrizacion.BotDeMonitoreoPage.*;
 
 @AllArgsConstructor
 public class BotMonitoreoTask implements Task {
