@@ -29,7 +29,7 @@ public class CambioEstadoExpedienteStepsDefinitions {
     private final HomePage homePage = new HomePage();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         actor.can(BrowseTheWeb.with(driver));
     }
 
@@ -40,16 +40,16 @@ public class CambioEstadoExpedienteStepsDefinitions {
 
     @And("^I entering the advanced search and type case number (.*)$")
     public void iEnteringTheAdvancedSearchAndTypeCaseNumber(String numberCase) throws InterruptedException {
-            Thread.sleep(5000);
-            actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
-            actor.attemptsTo(Click.on(HomePage.OPTION_MENU_CASE));
-            actor.attemptsTo(Click.on(HomePage.OPTION_SEARCH_CASE));
-            Thread.sleep(1000);
-            actor.attemptsTo(Click.on(AdvancedSearchPage.BUTTON_CLEAR_FILTERS));
-            actor.attemptsTo(Enter.theValue(numberCase).into(INPUT_CASE));
-            actor.attemptsTo(Click.on(BUTTON_SEARCH));
-            actor.attemptsTo(Click.on(BUTTON_CASE_DETAIL_VIEW));
-            Thread.sleep(7000);
+        Thread.sleep(5000);
+        actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
+        actor.attemptsTo(Click.on(HomePage.OPTION_MENU_CASE));
+        actor.attemptsTo(Click.on(HomePage.OPTION_SEARCH_CASE));
+        Thread.sleep(1000);
+        actor.attemptsTo(Click.on(AdvancedSearchPage.BUTTON_CLEAR_FILTERS));
+        actor.attemptsTo(Enter.theValue(numberCase).into(INPUT_CASE));
+        actor.attemptsTo(Click.on(BUTTON_SEARCH));
+        actor.attemptsTo(Click.on(BUTTON_CASE_DETAIL_VIEW));
+        Thread.sleep(7000);
     }
 
     @And("^Buscamos por numero de expediente (.*)$")
@@ -68,20 +68,20 @@ public class CambioEstadoExpedienteStepsDefinitions {
 
 
     @And("^I type information in the field status name (.*)$")
-    public void iTypeInformationInTheFieldStatusName(List<Map<String,String>> estado) throws InterruptedException {
-            Thread.sleep(5000);
-            actor.attemptsTo(Click.on(BUTTON_OPEN_MODAL),
-                            Click.on(BUTTON_ADD_STATUS));
-            Thread.sleep(2000);
-            actor.attemptsTo(StateManagementTask.withInformationStateManagement(estado));
-            actor.attemptsTo(Click.on(BUTTON_SAVE_STATUS));
-            Thread.sleep(3000);
+    public void iTypeInformationInTheFieldStatusName(List<Map<String, String>> estado) throws InterruptedException {
+        Thread.sleep(5000);
+        actor.attemptsTo(Click.on(BUTTON_OPEN_MODAL),
+                Click.on(BUTTON_ADD_STATUS));
+        Thread.sleep(2000);
+        actor.attemptsTo(StateManagementTask.withInformationStateManagement(estado));
+        actor.attemptsTo(Click.on(BUTTON_SAVE_STATUS));
+        Thread.sleep(3000);
 
     }
 
 
     @And("^Hacemos Cambio de Estado$")
-    public void HacemosCambioDeEstado(List<Map<String,String>> estado) throws InterruptedException {
+    public void HacemosCambioDeEstado(List<Map<String, String>> estado) throws InterruptedException {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(BUTTON_OPEN_MODAL),
                 Click.on(BUTTON_ADD_STATUS));

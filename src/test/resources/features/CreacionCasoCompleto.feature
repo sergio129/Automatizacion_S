@@ -16,6 +16,16 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
     And Hacemos Cambio de Estado
       | CambioEstado |
       | Abierto      |
+    And Hacemos Gestion de proveedor
+      | Proveedor      | RespuestaProveedor | TiempoMonitoreoSitio | TiempoMonitoreoDestino | CelularTecnico | TelfonoCentral | TelfonoCentral1 | Observaciones |
+      | RECURSO PROPIO | Toma Servicio      | 20                   | 50                     | 3103642145     | 3103642145     | 3103642145      | Pruebas QA    |
+    And Hacemos Cambio de Estado
+      | CambioEstado |
+      | Programado   |
+    And Hacemos Cambio de Estado
+      | CambioEstado                 |
+      | Aceptado y en desplazamiento |
+
     Examples:
     Then Se visualiza mensaje de la modal<modalmensaje>
       | modalmensaje                    |

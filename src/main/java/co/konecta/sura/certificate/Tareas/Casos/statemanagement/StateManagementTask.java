@@ -21,17 +21,18 @@ public class StateManagementTask implements Task {
 
 
     private static final String ESTADO_EXPEDEINTE = "CambioEstado";
-    List<Map<String,String>> estado;
+    List<Map<String, String>> estado;
+
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(
+       actor.attemptsTo(
                 Click.on(INPUT_STATUS_NAME),
                 WaitUntil.the(INPUT_SEARCH_ADD_STATUS, isVisible()).forNoMoreThan(50).milliseconds(),
                 Enter.theValue(estado.get(0).get(ESTADO_EXPEDEINTE)).into(INPUT_SEARCH_ADD_STATUS).thenHit(Keys.ARROW_DOWN).thenHit(Keys.ENTER)
         );
     }
 
-    public static StateManagementTask withInformationStateManagement(List<Map<String,String>> estado) {
+    public static StateManagementTask withInformationStateManagement(List<Map<String, String>> estado) {
         return instrumented(StateManagementTask.class, estado);
     }
 }
