@@ -6,11 +6,11 @@ import co.konecta.sura.certificate.Tareas.Casos.casetask.Case;
 import co.konecta.sura.certificate.Tareas.Casos.casetask.CaseModel;
 import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
 import com.github.javafaker.Faker;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
@@ -46,7 +46,7 @@ public class CaseStepsDefinitions {
     @When("^I entering the case creation page with user (.*) and password (.*)$")
     public void iAmEnteringTheCasePageWith(String user, String password) throws InterruptedException {
         actor.wasAbleTo(Open.browserOn(homePage));
-        actor.attemptsTo(LoginTask.whitCredentials(user, password));
+       // actor.attemptsTo(LoginTask.whitCredentials(user, password));
         actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
         actor.attemptsTo(Click.on(HomePage.OPTION_MENU_CASE));
         actor.attemptsTo(Click.on(HomePage.OPTION_SEARCH_CASE));

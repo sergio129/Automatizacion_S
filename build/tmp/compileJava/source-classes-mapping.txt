@@ -24,8 +24,8 @@ co/konecta/sura/certificate/Interfaces/pendientes/LoginPage.java
  co.konecta.sura.certificate.Interfaces.pendientes.LoginPage
 co/konecta/sura/certificate/Tareas/pendientes/SupplierMonitoringTask.java
  co.konecta.sura.certificate.Tareas.pendientes.SupplierMonitoringTask
-co/konecta/sura/certificate/Tareas/Casos/login/LoginTask.java
- co.konecta.sura.certificate.Tareas.Casos.login.LoginTask
+co/konecta/sura/certificate/Interfaces/Parametrizacion/BotDeMonitoreoPage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.BotDeMonitoreoPage
 co/konecta/sura/certificate/Interfaces/pendientes/StateManagementPage.java
  co.konecta.sura.certificate.Interfaces.pendientes.StateManagementPage
 co/konecta/sura/certificate/Interfaces/Casos/cases/CasePage.java
@@ -86,8 +86,8 @@ co/konecta/sura/certificate/Interfaces/SubAgenda/AgendaPage.java
  co.konecta.sura.certificate.Interfaces.SubAgenda.AgendaPage
 co/konecta/sura/certificate/Interfaces/pendientes/SupplierMonitoringPage.java
  co.konecta.sura.certificate.Interfaces.pendientes.SupplierMonitoringPage
-co/konecta/sura/certificate/Interfaces/Parametrizacion/CierreDeExpedientePage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.CierreDeExpedientePage
+co/konecta/sura/certificate/Tareas/Parametrizacion/BotMonitoreoTask.java
+ co.konecta.sura.certificate.Tareas.Parametrizacion.BotMonitoreoTask
 co/konecta/sura/certificate/Tareas/Parametrizacion/MotivosDeLlamadaTask/SolicitudDeServicioTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.MotivosDeLlamadaTask.SolicitudDeServicioTask
 co/konecta/sura/certificate/Tareas/Integracion/TiemposAltosdeContactoTask.java
@@ -238,7 +238,7 @@ co/konecta/sura/certificate/Tareas/Parametrizacion/TablerosDeControlUCKTask.java
  co.konecta.sura.certificate.Tareas.Parametrizacion.TablerosDeControlUCKTask
 co/konecta/sura/certificate/Tareas/GestionUsuarios/ListarUsuariosTask.java
  co.konecta.sura.certificate.Tareas.GestionUsuarios.ListarUsuariosTask
-co/konecta/sura/certificate/Interfaces/Parametrizacion/BotDeMonitoreoPage.java
- co.konecta.sura.certificate.Interfaces.Parametrizacion.BotDeMonitoreoPage
-co/konecta/sura/certificate/Tareas/Parametrizacion/BotMonitoreoTask.java
- co.konecta.sura.certificate.Tareas.Parametrizacion.BotMonitoreoTask
+co/konecta/sura/certificate/Interfaces/Parametrizacion/CierreDeExpedientePage.java
+ co.konecta.sura.certificate.Interfaces.Parametrizacion.CierreDeExpedientePage
+co/konecta/sura/certificate/Tareas/Casos/login/LoginTask.java
+ co.konecta.sura.certificate.Tareas.Casos.login.LoginTask
