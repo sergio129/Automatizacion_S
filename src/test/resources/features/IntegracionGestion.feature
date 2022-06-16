@@ -7,7 +7,7 @@ Feature: Integracion Gestion de Expedientes
 
   Scenario Template:Gestion de Servicios Duplicados
     When Ingresamos a la aplicacion
-      | usuario    | contrasena    |
+      | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2021 |
     And Ingresamos a Integracion Gestion
     And Escribimos la informacion de Integracion Gestion<FCita>,<Hora>,<Nomb>,<Tlf>,<DpSl>,<MpSl>,<Placa>,<DServ>,<UbServ>,<DllDirecc>,<ServEsp>,<GCord>,<linea>,<Servicio>

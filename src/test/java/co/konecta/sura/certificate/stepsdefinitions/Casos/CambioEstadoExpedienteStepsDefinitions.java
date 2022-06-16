@@ -15,10 +15,13 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
+import java.util.List;
+import java.util.Map;
+
 import static co.konecta.sura.certificate.Interfaces.Casos.advancedsearch.AdvancedSearchPage.*;
 import static co.konecta.sura.certificate.Interfaces.Casos.statemanagement.StateManagementPage.*;
 
-public class StateManagementStepsDefinitions {
+public class CambioEstadoExpedienteStepsDefinitions {
 
     @Managed(driver = "chrome")
     WebDriver driver;
@@ -65,25 +68,25 @@ public class StateManagementStepsDefinitions {
 
 
     @And("^I type information in the field status name (.*)$")
-    public void iTypeInformationInTheFieldStatusName(String stateName) throws InterruptedException {
+    public void iTypeInformationInTheFieldStatusName(List<Map<String,String>> estado) throws InterruptedException {
             Thread.sleep(5000);
             actor.attemptsTo(Click.on(BUTTON_OPEN_MODAL),
                             Click.on(BUTTON_ADD_STATUS));
             Thread.sleep(2000);
-            actor.attemptsTo(StateManagementTask.withInformationStateManagement(stateName));
+            actor.attemptsTo(StateManagementTask.withInformationStateManagement(estado));
             actor.attemptsTo(Click.on(BUTTON_SAVE_STATUS));
             Thread.sleep(3000);
 
     }
 
 
-    @And("^Hacemos Cambio de Estado (.*)$")
-    public void HacemosCambioDeEstado(String stateName) throws InterruptedException {
+    @And("^Hacemos Cambio de Estado$")
+    public void HacemosCambioDeEstado(List<Map<String,String>> estado) throws InterruptedException {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(BUTTON_OPEN_MODAL),
                 Click.on(BUTTON_ADD_STATUS));
         Thread.sleep(2000);
-        actor.attemptsTo(StateManagementTask.withInformationStateManagement(stateName));
+        actor.attemptsTo(StateManagementTask.withInformationStateManagement(estado));
         actor.attemptsTo(Click.on(BUTTON_SAVE_STATUS));
         Thread.sleep(3000);
 
