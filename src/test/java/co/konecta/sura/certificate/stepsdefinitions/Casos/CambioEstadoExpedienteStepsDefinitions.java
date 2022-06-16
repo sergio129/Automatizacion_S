@@ -83,11 +83,7 @@ public class CambioEstadoExpedienteStepsDefinitions {
     @And("^Hacemos Cambio de Estado$")
     public void HacemosCambioDeEstado(List<Map<String, String>> estado) throws InterruptedException {
         Thread.sleep(5000);
-        actor.attemptsTo(Click.on(BUTTON_OPEN_MODAL),
-                Click.on(BUTTON_ADD_STATUS));
-        Thread.sleep(2000);
         actor.attemptsTo(StateManagementTask.withInformationStateManagement(estado));
-        actor.attemptsTo(Click.on(BUTTON_SAVE_STATUS));
         Thread.sleep(3000);
 
     }
