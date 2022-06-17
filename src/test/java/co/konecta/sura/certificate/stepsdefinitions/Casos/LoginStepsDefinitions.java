@@ -2,6 +2,7 @@ package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
+import co.konecta.sura.certificate.Tareas.Casos.login.Login_Task;
 import co.konecta.sura.certificate.questions.TheModal;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
@@ -43,22 +44,22 @@ public class LoginStepsDefinitions {
     public void iAmEntryInTheApplication() {}
 
     @When("^I entering in the application with user (.*) and password (.*)$")
-    public void iEnteringInTheApplicationWith(List<Map<String,String>> informacion) {
+    public void iEnteringInTheApplicationWith(String username, String password) {
         actor.wasAbleTo(Open.browserOn(homePage));
-        actor.attemptsTo(LoginTask.whitCredentials(informacion));
+        actor.attemptsTo(LoginTask.whitCredentials(username, password));
     }
 
     @When("^Ingresamos a la aplicacion con usuario(.*) y contraseña(.*)$")
-    public void IngresamosUsuarioContrasena(List<Map<String,String>> informacion) {
+    public void IngresamosUsuarioContrasena(String username, String password) {
         actor.wasAbleTo(Open.browserOn(homePage));
 
-        actor.attemptsTo(LoginTask.whitCredentials(informacion));
+        actor.attemptsTo(LoginTask.whitCredentials(username, password));
     }
 
     @When("^Ingresamos a la aplicacion$")
     public void Ingresamosalaaplicacion(List<Map<String,String>> informacion) {
         actor.wasAbleTo(Open.browserOn(homePage));
-        actor.attemptsTo(LoginTask.whitCredentials(informacion));
+        actor.attemptsTo(Login_Task.whitCredentials(informacion));
     }
 
     @Then("^I view the message (.*)$")

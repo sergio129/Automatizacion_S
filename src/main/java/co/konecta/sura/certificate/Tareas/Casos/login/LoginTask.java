@@ -16,25 +16,27 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 @AllArgsConstructor
 public class LoginTask implements Task {
-    private static final String USERNAME="usuario";
-    private static final String PASSWORD_USER="contrasena";
-
-    private final List<Map<String,String>> informacion;
-    public static LoginTask whitCredentials(List<Map<String,String>> informacion) {
-        return instrumented(LoginTask.class, informacion);
+    public LoginTask(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
+
+    private final String username;
+    private final String password;
+
+    public static LoginTask whitCredentials(String username, String password) {
+        return instrumented(LoginTask.class, username, password);
+    }
+
+
     public <T extends Actor> void performAs(T actor) {
-      actor.attemptsTo(
+        actor.attemptsTo(
                 Click.on(SURVEY),
-                Enter.theValue(informacion.get(0).get(USERNAME)).into(USER),
-                Enter.theValue(informacion.get(0).get(PASSWORD_USER)).into(PASSWORD).thenHit(Keys.ENTER));
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+                Enter.theValue(username).into(USER),
+                Enter.theValue(password).into(PASSWORD).thenHit(Keys.ENTER)
+
+        );
+
     }
-
-
 }
 

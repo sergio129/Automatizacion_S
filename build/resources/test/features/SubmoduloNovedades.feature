@@ -3,7 +3,7 @@ Feature: Novelty
   I need to create or edition a novelty
 
   Background:
-    Given I create or edition a novelty for a case
+    Given Creacion y Edicion Modulo novedades
 
   @TestNoveltyComplete
   Scenario Outline: Creacion de novedades
