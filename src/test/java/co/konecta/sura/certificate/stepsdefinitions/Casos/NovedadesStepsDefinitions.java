@@ -1,6 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
 import co.konecta.sura.certificate.Tareas.Casos.Novedades.Novedades;
+import co.konecta.sura.certificate.Tareas.Casos.Novedades.NovedadesTask;
 import co.konecta.sura.certificate.Tareas.Casos.Novedades.NoveltyModel;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import co.konecta.sura.certificate.Interfaces.Casos.Novedades.NovedadesPage;
@@ -15,23 +16,26 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
+import java.util.List;
+import java.util.Map;
+
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 
-public class NoveltyStepsDefinitions {
+public class NovedadesStepsDefinitions {
 
     @Managed(driver = "chrome")
     private WebDriver getBrowser;
     private final Actor actor = Actor.named("Usuario");
     private final HomePage homePage = new HomePage();
-    private NoveltyModel novelModel= new NoveltyModel();
+    private NoveltyModel novelModel = new NoveltyModel();
 
 
     @Before
-    public void setUp(){
+    public void setUp() {
         actor.can(BrowseTheWeb.with(getBrowser));
     }
 
-    @Given("^I create or edition a novelty for a case$")
+    @Given("^Creacion y Edicion Modulo novedades$")
     public void iCreateANoveltyForACase() {
     }
 
@@ -83,6 +87,16 @@ public class NoveltyStepsDefinitions {
                 Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
     }
 
+    @And("Hacemos Gestion de Novedades")
+    public void hacemosGestionDeNovedades(List<Map<String, String>> InformacionNovedades) {
+        actor.attemptsTo(NovedadesTask.EscribirInformacionNovedades(InformacionNovedades));
+    }
+
+    @And("Seleccionamos el boton Crear novedad")
+    public void seleccionamosElBotonCrearNovedad() throws InterruptedException {
+        Thread.sleep(1000);
+        actor.attemptsTo(Click.on(NovedadesPage.BUTTON_CREATE_MANAGEMENTS));
+    }
 }
 
 

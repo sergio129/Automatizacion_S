@@ -25,6 +25,10 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
     And Hacemos Cambio de Estado
       | CambioEstado                 |
       | Aceptado y en desplazamiento |
+    And Seleccionamos el boton Crear novedad
+    And Hacemos Gestion de Novedades
+      | ReportaNovedad  | CausaNovedad                   | GenerarQueja | Radicado | Observaciones |
+      | Abogado virtual | Cambio abogado virtual a sitio | No           | A7445544 | Pruebas QA    |
 
     Examples:
     Then Se visualiza mensaje de la modal<modalmensaje>

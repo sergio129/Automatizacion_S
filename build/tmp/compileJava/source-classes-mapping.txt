@@ -244,3 +244,5 @@ co/konecta/sura/certificate/Interfaces/Parametrizacion/CierreDeExpedientePage.ja
  co.konecta.sura.certificate.Interfaces.Parametrizacion.CierreDeExpedientePage
 co/konecta/sura/certificate/Tareas/Casos/login/LoginTask.java
  co.konecta.sura.certificate.Tareas.Casos.login.LoginTask
+co/konecta/sura/certificate/Tareas/Casos/Novedades/NovedadesTask.java
+ co.konecta.sura.certificate.Tareas.Casos.Novedades.NovedadesTask
