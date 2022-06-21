@@ -1,13 +1,14 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
 import co.konecta.sura.certificate.Tareas.Casos.Novedades.Novedades;
+import co.konecta.sura.certificate.Tareas.Casos.Novedades.NovedadesTask;
 import co.konecta.sura.certificate.Tareas.Casos.Novedades.NoveltyModel;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import co.konecta.sura.certificate.Interfaces.Casos.Novedades.NovedadesPage;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
@@ -15,23 +16,26 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
+import java.util.List;
+import java.util.Map;
+
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 
-public class NoveltyStepsDefinitions {
+public class NovedadesStepsDefinitions {
 
     @Managed(driver = "chrome")
     private WebDriver getBrowser;
     private final Actor actor = Actor.named("Usuario");
     private final HomePage homePage = new HomePage();
-    private NoveltyModel novelModel= new NoveltyModel();
+    private NoveltyModel novelModel = new NoveltyModel();
 
 
     @Before
-    public void setUp(){
+    public void setUp() {
         actor.can(BrowseTheWeb.with(getBrowser));
     }
 
-    @Given("^I create or edition a novelty for a case$")
+    @Given("^Creacion y Edicion Modulo novedades$")
     public void iCreateANoveltyForACase() {
     }
 
@@ -52,22 +56,6 @@ public class NoveltyStepsDefinitions {
         this.novelModel.setWhoreports(whoreports);
     }
 
-    @And("^I type information in the field cause novelty (.*)$")
-    public void iTypeInformationInTheFieldCauseNovelty(String causenovelty) throws Exception {
-        this.novelModel.setCausenovelty(causenovelty);
-    }
-
-    @And("^I type information in the field complaint news (.*)$")
-    public void iTypeInformationInTheFieldComplaintNews(String complaintnews) throws Exception {
-        this.novelModel.setComplaintnews(complaintnews);
-    }
-
-    @And("^I type information in the field novelty observation (.*)$")
-    public void iTypeInformationInTheFieldNoveltyObservation(String observationnovelty) throws Exception {
-        this.novelModel.setObservationnovelty(observationnovelty);
-        actor.attemptsTo(Novedades.whitDataNovelty(novelModel));
-    }
-
     @And("^I no type information novelty$")
     public void iNoTypeInformationNovelty() throws InterruptedException {
         actor.attemptsTo(Click.on(NovedadesPage.BUTTON_CREATE_MANAGEMENTS));
@@ -83,6 +71,16 @@ public class NoveltyStepsDefinitions {
                 Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
     }
 
+    @And("Hacemos Gestion de Novedades")
+    public void hacemosGestionDeNovedades(List<Map<String, String>> InformacionNovedades) {
+        actor.attemptsTo(NovedadesTask.EscribirInformacionNovedades(InformacionNovedades));
+    }
+
+    @And("Seleccionamos el boton Crear novedad")
+    public void seleccionamosElBotonCrearNovedad() throws InterruptedException {
+        Thread.sleep(1000);
+        actor.attemptsTo(Click.on(NovedadesPage.BUTTON_CREATE_MANAGEMENTS));
+    }
 }
 
 

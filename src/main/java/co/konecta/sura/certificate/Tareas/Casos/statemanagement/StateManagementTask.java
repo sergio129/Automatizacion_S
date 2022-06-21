@@ -8,27 +8,34 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
 
-import static co.konecta.sura.certificate.Interfaces.Casos.statemanagement.StateManagementPage.INPUT_SEARCH_ADD_STATUS;
-import static co.konecta.sura.certificate.Interfaces.Casos.statemanagement.StateManagementPage.INPUT_STATUS_NAME;
+import java.util.List;
+import java.util.Map;
+
+import static co.konecta.sura.certificate.Interfaces.Casos.statemanagement.StateManagementPage.*;
+import static co.konecta.sura.certificate.Interfaces.Casos.statemanagement.StateManagementPage.BUTTON_ADD_STATUS;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 @AllArgsConstructor
 public class StateManagementTask implements Task {
 
-    public String stateName;
 
+    private static final String ESTADO_EXPEDEINTE = "CambioEstado";
+    List<Map<String, String>> estado;
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(
+       actor.attemptsTo(
+               Click.on(BUTTON_OPEN_MODAL),
+               Click.on(BUTTON_ADD_STATUS),
                 Click.on(INPUT_STATUS_NAME),
                 WaitUntil.the(INPUT_SEARCH_ADD_STATUS, isVisible()).forNoMoreThan(50).milliseconds(),
-                Enter.theValue(stateName).into(INPUT_SEARCH_ADD_STATUS).thenHit(Keys.ARROW_DOWN).thenHit(Keys.ENTER)
+                Enter.theValue(estado.get(0).get(ESTADO_EXPEDEINTE)).into(INPUT_SEARCH_ADD_STATUS).thenHit(Keys.ARROW_DOWN).thenHit(Keys.ENTER),
+               Click.on(BUTTON_SAVE_STATUS)
         );
     }
 
-    public static StateManagementTask withInformationStateManagement(String stateName) {
-        return instrumented(StateManagementTask.class, stateName);
+    public static StateManagementTask withInformationStateManagement(List<Map<String, String>> estado) {
+        return instrumented(StateManagementTask.class, estado);
     }
 }
