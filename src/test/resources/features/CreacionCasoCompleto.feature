@@ -44,6 +44,11 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
     And Escribimos informacion de Finalizacion
       | Finazalicion | TipoRespuesta | Observaciones |
       | Asegurado    | SMS           | Pruebas QA    |
+    #Gestionamos el modulo de Escalamientos Sura
+    And Seleccionamos el boton Crear Escalamientos Sura
+    And Escribimos la informacion de Escalamientos Sura
+      | TipoGestion           | PersonaGestion | TipoRespuesta   | GeneraQueja | Radicado | Obervaciones |
+      | Guardianes de la vida | Integracion    | No especificado | Si          | R555445  | Pruebas QA   |
     Examples:
     Then Se visualiza mensaje de la modal<modalmensaje>
       | modalmensaje                    |

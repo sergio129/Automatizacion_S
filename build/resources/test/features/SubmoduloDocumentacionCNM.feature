@@ -9,7 +9,7 @@ Feature: SubModulo Documentacion CNM
   Scenario Outline: Creacion Exitosa de Registro Documentacion CNM
     When I entering in the application with user <user> and password <password>
     And I entering the advanced search and type case number <numberCase>
-    And Escribimos los datos de Documentacion CMN
+    And Escribimos los datos de Documentacion CNM
       | PersonaGestion     | GeneraQueja | Radicajo | Observaciones |
       | Administrativo Aya | Si          | R5554454 | Pruebas QA    |
     Then Se visualiza mensaje de la modal<modalmessage>
@@ -21,7 +21,7 @@ Feature: SubModulo Documentacion CNM
   Scenario Outline: Successful documentation CNM submodule with filed complaint
     When I entering in the application with user <user> and password <password>
     And I entering the advanced search and type case number <numberCase>
-    And Escribimos los datos de Documentacion CMN
+    And Escribimos los datos de Documentacion CNM
       | PersonaGestion     | GeneraQueja | Radicajo | Observaciones |
       | Administrativo Aya | Si          | R5554454 | Pruebas QA    |
     Then Se visualiza mensaje de la modal<modalmessage>

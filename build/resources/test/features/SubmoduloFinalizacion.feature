@@ -9,7 +9,7 @@ Feature: Ending
   Scenario Outline: Successful ending creation
     When I entering in the application with user <user> and password <password>
     And I entering the advanced search and type case number <numbercase>
-    And I select button create ending
+    And Seleccionamos el Boton Crear Finalizacion
     And Escribimos informacion de Finalizacion
       | Finazalicion | TipoRespuesta | Observaciones |
       | Asegurado    | SMS           | Pruebas QA    |
@@ -37,9 +37,8 @@ Feature: Ending
     And I entering the advanced search and type case number <numbercase>
     And I no type information ending
     Then Se visualiza mensaje de la modal<modalmessage>
-
     Examples:
-      | user            | password      | numbercase      | modalmessage                           |
+      | user            | password      | numbercase      | modalmessage                      |
       | yoarlys.carillo | Colombia2020* | 202106104435443 | Todos los campos son obligatorios |
 
 

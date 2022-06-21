@@ -2,12 +2,10 @@ package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
 import co.konecta.sura.certificate.Interfaces.Casos.listenending.EndingPage;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
-import co.konecta.sura.certificate.Tareas.Casos.listenending.Ending;
-import co.konecta.sura.certificate.Tareas.Casos.listenending.EndingModel;
+import co.konecta.sura.certificate.Tareas.Casos.Finalizacion.FinalizacionTask;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
@@ -56,7 +54,7 @@ public class SubmoduloFinalizacionStepsDefinitions {
 
     @And("Escribimos informacion de Finalizacion")
     public void escribimosInformacionDeFinalizacion(List<Map<String, String>> Finalizacion) {
-        actor.attemptsTo(Ending.whitDataEnding(Finalizacion));
+        actor.attemptsTo(FinalizacionTask.whitDataEnding(Finalizacion));
     }
 
     @And("Seleccionamos el Boton Crear Finalizacion")

@@ -1,4 +1,4 @@
-package co.konecta.sura.certificate.Tareas.Casos.listenending;
+package co.konecta.sura.certificate.Tareas.Casos.Finalizacion;
 
 import co.konecta.sura.certificate.Interfaces.Casos.listenending.EndingPage;
 import lombok.AllArgsConstructor;
@@ -14,15 +14,15 @@ import java.util.Map;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 @AllArgsConstructor
-public class Ending implements Task {
+public class FinalizacionTask implements Task {
     private EndingModel endingModel;
     private static final String FINALIZACION_CON = "Finazalicion";
     private static final String TIPO_DE_RESPUESTA = "TipoRespuesta";
     private static final String OBSERVACIONES = "Observaciones";
     List<Map<String, String>> Finalizacion;
 
-    public static Ending whitDataEnding(List<Map<String, String>> Finalizacion) {
-        return instrumented(Ending.class, Finalizacion);
+    public static FinalizacionTask whitDataEnding(List<Map<String, String>> Finalizacion) {
+        return instrumented(FinalizacionTask.class, Finalizacion);
     }
 
     @Override

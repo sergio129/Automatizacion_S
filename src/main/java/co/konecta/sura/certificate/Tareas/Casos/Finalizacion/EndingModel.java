@@ -1,4 +1,4 @@
-package co.konecta.sura.certificate.Tareas.Casos.listenending;
+package co.konecta.sura.certificate.Tareas.Casos.Finalizacion;
 
 public class EndingModel {
 
