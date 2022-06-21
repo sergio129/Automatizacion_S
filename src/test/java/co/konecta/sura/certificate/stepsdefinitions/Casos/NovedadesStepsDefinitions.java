@@ -78,7 +78,7 @@ public class NovedadesStepsDefinitions {
 
     @And("Seleccionamos el boton Crear novedad")
     public void seleccionamosElBotonCrearNovedad() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(3000);
         actor.attemptsTo(Click.on(NovedadesPage.BUTTON_CREATE_MANAGEMENTS));
     }
 }

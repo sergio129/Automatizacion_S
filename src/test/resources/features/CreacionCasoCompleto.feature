@@ -52,11 +52,11 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
        #Gestionamos el cambio de estado
     And Hacemos Cambio de Estado
       | CambioEstado |
-      | Finalizado   |
+      | Concluido    |
         #Gestionamos el cambio de estado
     And Hacemos Cambio de Estado
       | CambioEstado |
-      | Concluido    |
+      | Finalizado   |
     Examples:
     Then Se visualiza mensaje de la modal<modalmensaje>
       | modalmensaje                    |

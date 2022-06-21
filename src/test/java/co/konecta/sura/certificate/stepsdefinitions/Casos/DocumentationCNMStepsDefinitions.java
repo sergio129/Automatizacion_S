@@ -66,12 +66,12 @@ public class DocumentationCNMStepsDefinitions {
 
     @And("Escribimos los datos de Documentacion CNM")
     public void escribimosLosDatosDeDocumentacionCMN(List<Map<String, String>> InformacionCNM) throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         actor.attemptsTo(Click.on(BUTTON_CREATE_DOCUMENTATION));
         Thread.sleep(2000);
         actor.attemptsTo(DocumentationCNMTask.withInformationDocumentationCNM(InformacionCNM));
         actor.attemptsTo(Click.on(BUTTON_SAVE_DOCUMENTATION));
-        Thread.sleep(1000);
+        Thread.sleep(3000);
 
     }
 

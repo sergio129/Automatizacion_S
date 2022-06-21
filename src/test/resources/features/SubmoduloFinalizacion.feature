@@ -11,12 +11,12 @@ Feature: Ending
     And I entering the advanced search and type case number <numbercase>
     And Seleccionamos el Boton Crear Finalizacion
     And Escribimos informacion de Finalizacion
-      | Finazalicion | TipoRespuesta | Observaciones |
+      | Finalizacion | TipoRespuesta | Observaciones |
       | Asegurado    | SMS           | Pruebas QA    |
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
-      | user            | password      | numbercase       | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | 1111111111111111 | Registro guardado correctamente |
+      | user         | password      | numbercase      | modalmessage                    |
+      | sergio.anaya | Colombia_2022 | C05CD3DA5C94742 | Registro guardado correctamente |
 
   @TestEndingEdition
   Scenario Outline: Successful ending edition
@@ -24,12 +24,12 @@ Feature: Ending
     And I entering the advanced search and type case number <numbercase>
     And I select button edition ending
     And Escribimos informacion de Finalizacion
-      | Finazalicion | TipoRespuesta | Observaciones |
+      | Finalizacion | TipoRespuesta | Observaciones |
       | Asegurado    | SMS           | Pruebas QA    |
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
-      | user            | password      | numbercase       | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | 1111111111111111 | Registro guardado correctamente |
+      | user         | password      | numbercase      | modalmessage                    |
+      | sergio.anaya | Colombia_2022 | C05CD3DA5C94742 | Registro guardado correctamente |
 
   @TestEndingRequiredFields
   Scenario Outline: Ending submodule required fields

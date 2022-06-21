@@ -14,7 +14,6 @@ Feature: Page sub-module sura climbing
       | TipoGestion           | PersonaGestion | TipoRespuesta   | GeneraQueja | Radicado | Obervaciones |
       | Guardianes de la vida | Integracion    | No especificado | Si          | R555445  | Pruebas QA   |
     Then I view the modal save sura climbing with <modalmessage>
-
     Examples:
       | user         | password      | numberCase      | modalmessage                    |
       | sergio.anaya | Colombia_2022 | C05CD3DA5C94742 | Registro guardado correctamente |
@@ -29,7 +28,6 @@ Feature: Page sub-module sura climbing
       | TipoGestion           | PersonaGestion | TipoRespuesta   | GeranaQuedja | Radicado | Obervaciones |
       | Guardianes de la vida | Integracion    | No especificado | Si           | R555445  | Pruebas QA   |
     Then I view the modal save sura climbing with <modalmessage>
-
     Examples:
       | user            | password      | numberCase      | modalmessage                    |
       | yoarlys.carillo | Colombia2020* | C05CD3DA5C94742 | Registro guardado correctamente |
@@ -41,7 +39,6 @@ Feature: Page sub-module sura climbing
     And I entering the advanced search and type case number <numberCase>
     And I no type information sura climbing
     Then I view the modal save sura climbing with <modalmessage>
-
     Examples:
       | user            | password      | numberCase      | modalmessage                      |
       | yoarlys.carillo | Colombia2020* | 202105030008697 | Todos los campos son obligatorios |
