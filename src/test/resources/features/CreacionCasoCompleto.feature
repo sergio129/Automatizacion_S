@@ -29,6 +29,9 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
     And Hacemos Gestion de Novedades
       | ReportaNovedad  | CausaNovedad                   | GenerarQueja | Radicado | Observaciones |
       | Abogado virtual | Cambio abogado virtual a sitio | No           | A7445544 | Pruebas QA    |
+    And Escribimos los datos de Documentacion CMN
+      | PersonaGestion     | GeneraQueja | Radicajo | Observaciones |
+      | Administrativo Aya | Si          | R5554454 | Pruebas QA    |
 
     Examples:
     Then Se visualiza mensaje de la modal<modalmensaje>

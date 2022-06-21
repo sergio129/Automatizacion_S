@@ -1,25 +1,17 @@
 package co.konecta.sura.certificate.Tareas.Casos.login;
 
 import lombok.AllArgsConstructor;
-import lombok.SneakyThrows;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
-import java.util.List;
-import java.util.Map;
-
 import static co.konecta.sura.certificate.Interfaces.Casos.login.LoginPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 @AllArgsConstructor
 public class LoginTask implements Task {
-    public LoginTask(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
 
     private final String username;
     private final String password;

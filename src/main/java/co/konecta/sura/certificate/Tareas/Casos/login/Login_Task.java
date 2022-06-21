@@ -31,7 +31,7 @@ public class Login_Task implements Task {
         }
     }
 
-    public static LoginTask whitCredentials(List<Map<String,String>> informacion) {
-        return instrumented(LoginTask.class, informacion);
+    public static Login_Task whitCredentials(List<Map<String, String>> informacion) {
+        return instrumented(Login_Task.class, informacion);
     }
 }

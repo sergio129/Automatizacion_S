@@ -152,7 +152,10 @@ Feature: Page create information of cases
     And I type information in the field service <service>
     And I type information in the field address detail <addressdetail>
     And I type information in the field status name <statusname1>
-    And I type information in the fields supplier name <suppliername> and supplier response <supplierresponse> and time monitoring site <timemonitoringsite> and time monitoring destination <timemonitoringdestination> and technical cellphone <technicalcellphone> and central phone 1 <centralphone1> and central phone 2 <centralphone2> and observations <observations>
+    And Hacemos Gestion de proveedor
+      | Proveedor      | RespuestaProveedor | TiempoMonitoreoSitio | TiempoMonitoreoDestino | CelularTecnico | TelfonoCentral | TelfonoCentral1 | Observaciones |
+      | RECURSO PROPIO | Toma Servicio      | 20                   | 50                     | 3103642145     | 3103642145     | 3103642145      | Pruebas QA    |
+    #And I type information in the fields supplier name <suppliername> and supplier response <supplierresponse> and time monitoring site <timemonitoringsite> and time monitoring destination <timemonitoringdestination> and technical cellphone <technicalcellphone> and central phone 1 <centralphone1> and central phone 2 <centralphone2> and observations <observations>
     And I type information in the field status name <statusname2>
     And I select button create monitoring task
     And I type information in the field name <name>
@@ -165,10 +168,13 @@ Feature: Page create information of cases
     And I type information in the fields management type <managementtype> and management person <managementperson> and response type <responsetype> and generates complaint <generatescomplaint> and observations <observations>
     And I select button create novelty
     And I type information in the field who reports <whoreportsnewsmanagements>
-    And I type information in the field cause novelty <causenoveltynewsmanagement>
-    And I type information in the field complaint news <complaintnewsmanagement>
-    And I type information in the field novelty observation <observationnewsmanagement>
-    And I type information in the fields management person <managementpersondocumentation> and generates complaint <generatescomplaintdocumentation> and observation <observationdocumentation>
+    And Hacemos Gestion de Novedades
+      | ReportaNovedad  | CausaNovedad                   | GenerarQueja | Radicado | Observaciones |
+      | Abogado virtual | Cambio abogado virtual a sitio | Si           | A7445544 | Pruebas QA    |
+   # And I type information in the field cause novelty <causenoveltynewsmanagement>
+   # And I type information in the field complaint news <complaintnewsmanagement>
+   # And I type information in the field novelty observation <observationnewsmanagement>
+ #   And I type information in the fields management person <managementpersondocumentation> and generates complaint <generatescomplaintdocumentation> and observation <observationdocumentation>
     And I select button create ending
     And I type information in the field ending with <endingwith>
     And I type information in the type responses <typeresponse>
