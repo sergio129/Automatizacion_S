@@ -14,17 +14,20 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
+import java.util.List;
+import java.util.Map;
+
 public class SubmoduloFinalizacionStepsDefinitions {
 
     @Managed(driver = "chrome")
     private WebDriver getBrowser;
     private final Actor actor = Actor.named("Usuario");
     private final HomePage homePage = new HomePage();
-    private EndingModel endingModel= new EndingModel();
+    ;
 
 
     @Before
-    public void setUp(){
+    public void setUp() {
         actor.can(BrowseTheWeb.with(getBrowser));
     }
 
@@ -32,10 +35,6 @@ public class SubmoduloFinalizacionStepsDefinitions {
     public void iCreateAEndingForACase() {
     }
 
-    @And("^I select button create ending$")
-    public void iSelectButtonCreateEnding() {
-        actor.attemptsTo(Click.on(EndingPage.BUTTON_CREATE_ENDING));
-    }
 
     @And("^I select button edition ending$")
     public void iSelectButtonEditionEnding() throws InterruptedException {
@@ -46,26 +45,6 @@ public class SubmoduloFinalizacionStepsDefinitions {
     }
 
 
-    @And("^I type information in the field ending with (.*)$")
-    public void iTypeInformationInTheFieldEndingWith(String ending) throws Exception {
-        Thread.sleep(1000);
-        this.endingModel.setEndingwith(ending);
-    }
-
-    @And("^I type information in the type responses (.*)$")
-    public void iTypeInformationInTheTypeResponses(String typeResponse) throws Exception {
-        Thread.sleep(1000);
-        this.endingModel.setTyperesponse(typeResponse);
-
-    }
-
-    @And("^I type information in the field observation ending (.*)$")
-    public void iTypeInformationInTheFieldObservationEnding(String observationEnding) throws Exception {
-        this.endingModel.setObservationending(observationEnding);
-        actor.attemptsTo(Ending.whitDataEnding(endingModel));
-
-    }
-
     @And("^I no type information ending$")
     public void iNoTypeInformationEnding() throws InterruptedException {
         actor.attemptsTo(Click.on(EndingPage.BUTTON_CREATE_ENDING));
@@ -75,5 +54,13 @@ public class SubmoduloFinalizacionStepsDefinitions {
     }
 
 
+    @And("Escribimos informacion de Finalizacion")
+    public void escribimosInformacionDeFinalizacion(List<Map<String, String>> Finalizacion) {
+        actor.attemptsTo(Ending.whitDataEnding(Finalizacion));
+    }
 
+    @And("Seleccionamos el Boton Crear Finalizacion")
+    public void seleccionamosElBotonCrearFinalizacion() {
+        actor.attemptsTo(Click.on(EndingPage.BUTTON_CREATE_ENDING));
+    }
 }

@@ -36,8 +36,8 @@ co/konecta/sura/certificate/Interfaces/Casos/suppliermonitoring/SupplierMonitori
  co.konecta.sura.certificate.Interfaces.Casos.suppliermonitoring.SupplierMonitoringPage
 co/konecta/sura/certificate/Interfaces/Parametrizacion/OfertamientoPage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.OfertamientoPage
-co/konecta/sura/certificate/Tareas/Casos/login/Login_Task.java
- co.konecta.sura.certificate.Tareas.Casos.login.Login_Task
+co/konecta/sura/certificate/Tareas/Casos/documentationcnm/DocumentationCNMTask.java
+ co.konecta.sura.certificate.Tareas.Casos.documentationcnm.DocumentationCNMTask
 co/konecta/sura/certificate/Tareas/listas/ListasAdministrarTask.java
  co.konecta.sura.certificate.Tareas.listas.ListasAdministrarTask
 co/konecta/sura/certificate/Tareas/Casos/casetask/Case.java
@@ -166,8 +166,8 @@ co/konecta/sura/certificate/Interfaces/pendientes/SupplierManagementPage.java
  co.konecta.sura.certificate.Interfaces.pendientes.SupplierManagementPage
 co/konecta/sura/certificate/Tareas/listas/ListaAdministrarEdicionTask.java
  co.konecta.sura.certificate.Tareas.listas.ListaAdministrarEdicionTask
-co/konecta/sura/certificate/Tareas/Casos/listenending/Ending.java
- co.konecta.sura.certificate.Tareas.Casos.listenending.Ending
+co/konecta/sura/certificate/Tareas/Casos/login/Login_Task.java
+ co.konecta.sura.certificate.Tareas.Casos.login.Login_Task
 co/konecta/sura/certificate/Tareas/Casos/suppliermonitoring/SupplierMonitoringTask.java
  co.konecta.sura.certificate.Tareas.Casos.suppliermonitoring.SupplierMonitoringTask
 co/konecta/sura/certificate/Tareas/Casos/casetask/CaseModel.java
@@ -246,5 +246,5 @@ co/konecta/sura/certificate/Tareas/GestionUsuarios/ListarUsuariosTask.java
  co.konecta.sura.certificate.Tareas.GestionUsuarios.ListarUsuariosTask
 co/konecta/sura/certificate/Interfaces/Parametrizacion/CierreDeExpedientePage.java
  co.konecta.sura.certificate.Interfaces.Parametrizacion.CierreDeExpedientePage
-co/konecta/sura/certificate/Tareas/Casos/documentationcnm/DocumentationCNMTask.java
- co.konecta.sura.certificate.Tareas.Casos.documentationcnm.DocumentationCNMTask
+co/konecta/sura/certificate/Tareas/Casos/listenending/Ending.java
+ co.konecta.sura.certificate.Tareas.Casos.listenending.Ending
