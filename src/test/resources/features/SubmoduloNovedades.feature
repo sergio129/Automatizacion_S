@@ -31,7 +31,6 @@ Feature: Novelty
       | ReportaNovedad  | CausaNovedad                   | GenerarQueja | Radicado | Observaciones |
       | Abogado virtual | Cambio abogado virtual a sitio | Si           | A7445544 | Pruebas QA    |
     Then I view the modal save novelty with <message>
-
     Examples:
       | numberCase      | message                         |  |  |  |
       | A02206140800006 | Registro guardado correctamente |  |  |  |
@@ -44,7 +43,6 @@ Feature: Novelty
     And I entering the advanced search and type case number <numbercase>
     And I no type information novelty
     Then I view the modal save novelty with <message>
-
     Examples:
       |  |  | numbercase      | message                           |
       |  |  | A02206140800006 | Todos los campos son obligatorios |

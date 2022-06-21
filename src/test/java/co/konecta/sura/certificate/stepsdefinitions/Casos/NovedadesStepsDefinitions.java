@@ -56,22 +56,6 @@ public class NovedadesStepsDefinitions {
         this.novelModel.setWhoreports(whoreports);
     }
 
-    @And("^I type information in the field cause novelty (.*)$")
-    public void iTypeInformationInTheFieldCauseNovelty(String causenovelty) throws Exception {
-        this.novelModel.setCausenovelty(causenovelty);
-    }
-
-    @And("^I type information in the field complaint news (.*)$")
-    public void iTypeInformationInTheFieldComplaintNews(String complaintnews) throws Exception {
-        this.novelModel.setComplaintnews(complaintnews);
-    }
-
-    @And("^I type information in the field novelty observation (.*)$")
-    public void iTypeInformationInTheFieldNoveltyObservation(String observationnovelty) throws Exception {
-        this.novelModel.setObservationnovelty(observationnovelty);
-        actor.attemptsTo(Novedades.whitDataNovelty(novelModel));
-    }
-
     @And("^I no type information novelty$")
     public void iNoTypeInformationNovelty() throws InterruptedException {
         actor.attemptsTo(Click.on(NovedadesPage.BUTTON_CREATE_MANAGEMENTS));
