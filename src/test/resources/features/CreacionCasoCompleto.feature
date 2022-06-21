@@ -49,6 +49,14 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
     And Escribimos la informacion de Escalamientos Sura
       | TipoGestion           | PersonaGestion | TipoRespuesta   | GeneraQueja | Radicado | Obervaciones |
       | Guardianes de la vida | Integracion    | No especificado | Si          | R555445  | Pruebas QA   |
+       #Gestionamos el cambio de estado
+    And Hacemos Cambio de Estado
+      | CambioEstado |
+      | Finalizado   |
+        #Gestionamos el cambio de estado
+    And Hacemos Cambio de Estado
+      | CambioEstado |
+      | Concluido    |
     Examples:
     Then Se visualiza mensaje de la modal<modalmensaje>
       | modalmensaje                    |
