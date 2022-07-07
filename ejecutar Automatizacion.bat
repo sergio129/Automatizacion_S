@@ -1,0 +1,1 @@
+gradlew clean :test --tests "co.konecta.sura.certificate.runners.PrincipalRunner"    

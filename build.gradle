@@ -1,5 +1,4 @@
 version '1.0-SNAPSHOT'
-
 repositories {
     mavenLocal()
 
@@ -23,10 +22,12 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'net.serenity-bdd.aggregator'
+apply plugin: 'application'
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
+mainClassName = ':test --tests "co.konecta.sura.certificate.runners.PrincipalRunner"'
 
 sourceCompatibility = 1.8
 
