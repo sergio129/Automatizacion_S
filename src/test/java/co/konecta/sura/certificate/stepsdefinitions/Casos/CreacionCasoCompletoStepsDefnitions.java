@@ -20,7 +20,6 @@ public class CreacionCasoCompletoStepsDefnitions {
     @Managed(driver = "chrome")
     private WebDriver getBrowser;
     private final Actor actor = Actor.named("Usuario");
-    private final HomePage homePage = new HomePage();
 
     @Before
     public void setUp() {
