@@ -1,21 +1,16 @@
 Feature: Tablero Citas Reprogramadas
 
   Background:
-    Given Tablero Citas Reprogramadas
+    Given Modulo Integracion
 
   @TestCambioEstadoTableroCitasReprogramadas
   Scenario Outline:Cambio de estado exitoso desde tablero citas reprogramadas
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And Ingresamos a integracion Citas Reprogramadas
-    And Buscamos por filtros, Estado del servicio, linea y departamento de citas reprogramadas
-      | EstadoServicio               | Linea | Departamento |
-      | Aceptado y en desplazamiento | Autos | Bogota D.C.  |
-    And Seleccionamos el Servicio
-    And Gestionamos la opcion de actualizacion masiva de citas reprogramadas
-      | Usuario | estado   |
-      | Katerin | En Sitio |
+    And Entramos a el Modulo de Integracion
+    And Entramos a Citas Reprogramadas, Buscamos por filtros, Estado del servicio: "Aceptado y en desplazamiento", linea: "Autos" y Departamento: "Bogota D.C."
+    And Gestionamos la opcion de actualizacion masiva de citas reprogramadas, Usuario: "Katerin", Estado: "En sitio"
     Examples:
     Then Se visualiza mensaje de la modal<modalmensaje>
       | modalmensaje                    |
