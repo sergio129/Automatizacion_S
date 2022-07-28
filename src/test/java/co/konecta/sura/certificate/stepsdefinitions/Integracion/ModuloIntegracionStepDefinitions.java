@@ -14,12 +14,9 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import java.util.List;
-import java.util.Map;
 
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.*;
 

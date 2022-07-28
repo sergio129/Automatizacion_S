@@ -1,16 +1,12 @@
 package co.konecta.sura.certificate.Tareas.Integracion;
 
 import co.konecta.sura.certificate.Interfaces.Integracion.TableroCitasReprogramadosPage;
-import com.openhtmltopdf.css.style.derived.StringValue;
 import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Hit;
 import org.openqa.selenium.Keys;
-
-import java.util.List;
-import java.util.Map;
 
 
 @AllArgsConstructor
