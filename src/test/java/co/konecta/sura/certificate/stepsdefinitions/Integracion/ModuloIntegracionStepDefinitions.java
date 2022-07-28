@@ -78,7 +78,6 @@ public class ModuloIntegracionStepDefinitions {
     @And("Gestionamos la opcion de actualizacion masiva de citas reprogramadas, Usuario: {string}, Estado: {string}")
     public void gestionamosLaOpcionDeActualizacionMasivaDeCitasReprogramadas(String arg0, String arg1) {
         actor.has(
-                Click.on(TableroCitasReprogramadosPage.ACCIONES_CASOS_SELECCIONADOS),
                 Click.on(TableroCitasReprogramadosPage.OPCION_ACTUALIZACION_MASIVA),
                 Click.on(TableroCitasReprogramadosPage.CAMPO_USUARIO),
                 Enter.theValue(arg0).into(TableroCitasReprogramadosPage.CAMPO_BUSCAR_USUARIO).thenHit(Keys.ENTER),
@@ -87,5 +86,12 @@ public class ModuloIntegracionStepDefinitions {
                 Click.on(TableroCitasReprogramadosPage.CAMPO_GUARDAR)
         );
 
+    }
+
+    @And("Gestionamos la Eliminacion de registro de Tablero Citas Reprogramadas")
+    public void gestionamosLaEliminacionDeRegistroDeTableroCitasRprogramadas() {
+        actor.has(
+                Click.on(TableroCitasReprogramadosPage.OPCION_ELIMINAR),Click.on(TableroCitasReprogramadosPage.CONFIRMAR_ELIMINAR)
+        );
     }
 }

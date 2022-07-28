@@ -30,7 +30,8 @@ public class TableroCitasReprogramadasTask implements Task {
                 Click.on(TableroCitasReprogramadosPage.SELECIONAR_OPCION.of(String.valueOf(Departamento))),
                 Hit.the(Keys.ESCAPE).into(TableroCitasReprogramadosPage.CAMPO_DEPARTAMENTO),
                 Click.on(TableroCitasReprogramadosPage.BOTON_BUSCAR),
-                Click.on(TableroCitasReprogramadosPage.SELECCIONAR_SERVICIO)
+                Click.on(TableroCitasReprogramadosPage.SELECCIONAR_SERVICIO),
+                Click.on(TableroCitasReprogramadosPage.ACCIONES_CASOS_SELECCIONADOS)
         );
     }
 
