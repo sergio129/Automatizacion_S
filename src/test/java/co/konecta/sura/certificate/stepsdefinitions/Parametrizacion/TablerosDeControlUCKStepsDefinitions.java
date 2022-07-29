@@ -20,7 +20,6 @@ public class TablerosDeControlUCKStepsDefinitions {
     @Managed(driver = "chrome")
     WebDriver driver;
     private final Actor actor = Actor.named("Usuario");
-    private final HomePage homePage = new HomePage();
 
     @Before
     public void setUp() {

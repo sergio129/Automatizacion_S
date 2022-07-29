@@ -9,12 +9,12 @@ Feature: Tablero Citas Reprogramadas
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
     And Entramos a el Modulo de Integracion
-    And Entramos a Citas Reprogramadas, Buscamos por filtros, Estado del servicio: "Aceptado y en desplazamiento", linea: "Autos" y Departamento: "Bogota D.C."
+    And Entramos a Citas Reprogramadas, Buscamos por filtros, Estado del servicio: "Aceptado y en desplazamiento", linea: "Hogares" y Departamento: "Bogota D.C."
     And Gestionamos la opcion de actualizacion masiva de citas reprogramadas, Usuario: "Katerin", Estado: "En sitio"
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | modalmensaje                    |
-      | Registro guardado correctamente |
+      | Los casos han sido actualizados |
 
 
   @TestEliminarRegistroTableroCitasReprogramadas

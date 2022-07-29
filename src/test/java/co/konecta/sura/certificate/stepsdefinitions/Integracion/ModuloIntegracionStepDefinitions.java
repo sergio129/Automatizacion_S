@@ -66,21 +66,22 @@ public class ModuloIntegracionStepDefinitions {
 
 
     @And("Entramos a Citas Reprogramadas, Buscamos por filtros, Estado del servicio: {string}, linea: {string} y Departamento: {string}")
-    public void entramosACitasReprogramadasBuscamosPorFiltrosEstadoDelServicioLineaYDepartamento(String arg0, String arg1, String arg2) throws InterruptedException {
+    public void entramosACitasReprogramadasBuscamosPorFiltrosEstadoDelServicioLineaYDepartamento(String EstadoServicio, String Linea, String Departamento) throws InterruptedException {
         actor.has(MoveMouse.to(TableroCitasReprogramadosPage.OPCION_CITAS_REPROGRAMADAS).andThen(actions -> actions.click()));
-        Thread.sleep(5000);
-        actor.has(TableroCitasReprogramadasTask.FiltrarCampos(arg0, arg1, arg2));
+        Thread.sleep(3000);
+        actor.has(TableroCitasReprogramadasTask.FiltrarCampos(EstadoServicio, Linea, Departamento));
     }
 
     @And("Gestionamos la opcion de actualizacion masiva de citas reprogramadas, Usuario: {string}, Estado: {string}")
-    public void gestionamosLaOpcionDeActualizacionMasivaDeCitasReprogramadas(String arg0, String arg1) {
+    public void gestionamosLaOpcionDeActualizacionMasivaDeCitasReprogramadas(String usuario, String Estado) {
         actor.has(
                 Click.on(TableroCitasReprogramadosPage.OPCION_ACTUALIZACION_MASIVA),
                 Click.on(TableroCitasReprogramadosPage.CAMPO_USUARIO),
-                Enter.theValue(arg0).into(TableroCitasReprogramadosPage.CAMPO_BUSCAR_USUARIO).thenHit(Keys.ENTER),
+                Enter.theValue(usuario).into(TableroCitasReprogramadosPage.CAMPO_BUSCAR_USUARIO).thenHit(Keys.ENTER),
                 Click.on(TableroCitasReprogramadosPage.CAMPO_ESTADO),
-                Click.on(TableroCitasReprogramadosPage.SELECIONAR_OPCION.of(String.valueOf(arg1))),
-                Click.on(TableroCitasReprogramadosPage.CAMPO_GUARDAR)
+                Click.on(TableroCitasReprogramadosPage.SELECIONAR_OPCION.of(String.valueOf(Estado))),
+                Click.on(TableroCitasReprogramadosPage.CAMPO_GUARDAR),
+                Click.on(TableroCitasReprogramadosPage.CONFIRMAR_SI)
         );
 
     }
@@ -88,7 +89,7 @@ public class ModuloIntegracionStepDefinitions {
     @And("Gestionamos la Eliminacion de registro de Tablero Citas Reprogramadas")
     public void gestionamosLaEliminacionDeRegistroDeTableroCitasRprogramadas() {
         actor.has(
-                Click.on(TableroCitasReprogramadosPage.OPCION_ELIMINAR),Click.on(TableroCitasReprogramadosPage.CONFIRMAR_ELIMINAR)
+                Click.on(TableroCitasReprogramadosPage.OPCION_ELIMINAR),Click.on(TableroCitasReprogramadosPage.CONFIRMAR_SI)
         );
     }
 }

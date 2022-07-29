@@ -19,7 +19,7 @@ public class TableroCitasReprogramadosPage {
     public static final Target CAMPO_ESTADO = Target.the("CAMPO CAMBIO DE ESTADO").located(By.id("selectStatusMassUpdateRA"));
     public static final Target CAMPO_GUARDAR = Target.the("CAMPO BUSCAR USUARIO").located(By.id("btnSaveFormMassUpdateRA"));
     public static final Target OPCION_ELIMINAR = Target.the("OPCION ELIMINAR").located(By.id("deleteCasesRescheduledAppointment"));
-    public static final Target CONFIRMAR_ELIMINAR = Target.the("CONFIRMAR_ELIMINAR").located(By.id("sweetalertConfirmButton"));
+    public static final Target CONFIRMAR_SI = Target.the("CONFIRMAR SI").located(By.id("sweetalertConfirmButton"));
 
 
 

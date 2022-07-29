@@ -22,7 +22,7 @@ public class AlertasUCKStepsDefinitions {
     @Managed(driver = "chrome")
     WebDriver driver;
     private final Actor actor = Actor.named("Usuario");
-    private final HomePage homePage = new HomePage();
+
 
     @Before
     public void setUp() {
@@ -32,6 +32,7 @@ public class AlertasUCKStepsDefinitions {
     @Given("Creacion, Edicion y Eliminar Alerta UCK")
     public void CreacionEdicionEliminarAlertaUCK() {
     }
+
 
     @And("^Entramos a Parametrizacion Alertas UCK$")
     public void entramosAParametrizacionAlertasUCK() {
