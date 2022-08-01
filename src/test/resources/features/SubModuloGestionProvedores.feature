@@ -1,4 +1,4 @@
-Feature: Page submodule supplier management
+Feature: Submodulo Gestion de proveedores
   As a user
   I need to create or edition supplier management
 
@@ -6,17 +6,18 @@ Feature: Page submodule supplier management
     Given I create or edition a provider for a case
 
   @TestSupplierManagementComplete
-  Scenario Outline: Successful supplier management submodule
+  Scenario Outline: Gestion Exitosa de proveedor
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering the advanced search and type case number <numberCase>
-    And I type information in the fields supplier name <suppliername> and supplier response <supplierresponse> and time monitoring site <timemonitoringsite> and time monitoring destination <timemonitoringdestination> and technical cellphone <technicalcellphone> and central phone 1 <centralphone1> and central phone 2 <centralphone2> and observations <observations>
+    And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
+    And Hacemos Gestion de proveedor
+      | Proveedor      | RespuestaProveedor | TiempoMonitoreoSitio | TiempoMonitoreoDestino | CelularTecnico | TelfonoCentral | TelfonoCentral1 | Observaciones |
+      | RECURSO PROPIO | Toma Servicio      | 20                   | 50                     | 3103642145     | 3103642145     | 3103642145      | Pruebas QA    |
     Then I view the modal save supplier with <modalmessage>
-
     Examples:
-      | numberCase      | suppliername                  | supplierresponse | timemonitoringsite | timemonitoringdestination | technicalcellphone | centralphone1 | centralphone2 | observations                  | modalmessage                    |
-      | 202121344537266 | 24 H CAR SERVICE SAS MEDELLIN | Toma servicio    | 15                 | 21                        | 3125847853         | 3122557485    | 321485578     | pruebas automaticas proveedor | Registro guardado correctamente |
+      | modalmessage                    |
+      | Registro guardado correctamente |
 
 
   @TestSupplierManagementEdition
@@ -24,13 +25,13 @@ Feature: Page submodule supplier management
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering the advanced search and type case number <numberCase>
+    And Hacemos Busqueda del caso: "A00000000000008"
     And I type information edition in the fields supplier name <suppliername> and supplier response <supplierresponse> and time monitoring site <timemonitoringsite> and time monitoring destination <timemonitoringdestination> and technical cellphone <technicalcellphone> and central phone 1 <centralphone1> and central phone 2 <centralphone2> and observations <observations>
     Then I view the modal save supplier with <modalmessage>
 
     Examples:
-      | numberCase       | suppliername                      | supplierresponse | timemonitoringsite | timemonitoringdestination | technicalcellphone | centralphone1 | centralphone2 | observations                          | modalmessage                    |
-      | 3333333333333333 | 1A ELEGIDOS Y SOLUCIONES SAS CALI | Toma servicio    | 18                 | 30                        | 3112554785         | 3214785598    | 320447859     | pruebas automaticas proveedor edicion | Registro guardado correctamente |
+      | suppliername                      | supplierresponse | timemonitoringsite | timemonitoringdestination | technicalcellphone | centralphone1 | centralphone2 | observations                          | modalmessage                    |
+      | 1A ELEGIDOS Y SOLUCIONES SAS CALI | Toma servicio    | 18                 | 30                        | 3112554785         | 3214785598    | 320447859     | pruebas automaticas proveedor edicion | Registro guardado correctamente |
 
 
   @TestSupplierManagementNoTakeService
@@ -38,13 +39,13 @@ Feature: Page submodule supplier management
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering the advanced search and type case number <numberCase>
+    And Hacemos Busqueda del caso: "A00000000000008"
     And I type information not service in the fields supplier name <suppliername> and supplier response <supplierresponse> and observations <observations>
     Then I view the modal save supplier with <modalmessage>
 
     Examples:
-      | numberCase      | suppliername           | supplierresponse        | observations                                   | modalmessage                    |
-      | A00000000000007 | ABACOL ASISTE SAS CALI | Pendiente por gestionar | pruebas automaticas proveedor no toma servicio | Registro guardado correctamente |
+      | suppliername           | supplierresponse        | observations                                   | modalmessage                    |
+      | ABACOL ASISTE SAS CALI | Pendiente por gestionar | pruebas automaticas proveedor no toma servicio | Registro guardado correctamente |
 
 
   @TestSupplierManagementCaseAppointment
@@ -52,13 +53,13 @@ Feature: Page submodule supplier management
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering the advanced search and type case number <numberCase>
+    And Hacemos Busqueda del caso: "A00000000000008"
     And I type information case appointment in the fields supplier name <suppliername> and supplier response <supplierresponse> and time monitoring destination <timemonitoringdestination> and technical cellphone <technicalcellphone> and central phone 1 <centralphone1> and central phone 2 <centralphone2> and observations <observations>
     Then I view the modal save supplier with <modalmessage>
 
     Examples:
-      | numberCase      | suppliername                      | supplierresponse | timemonitoringdestination | technicalcellphone | centralphone1 | centralphone2 | observations                            | modalmessage                    |
-      | A00000000000008 | 1A ELEGIDOS Y SOLUCIONES SAS CALI | Toma Servicio    | 30                        | 31248758965        | 3214859665    | 3204478596    | pruebas automaticas proveedor caso cita | Registro guardado correctamente |
+      | suppliername                      | supplierresponse | timemonitoringdestination | technicalcellphone | centralphone1 | centralphone2 | observations                            | modalmessage                    |
+      | 1A ELEGIDOS Y SOLUCIONES SAS CALI | Toma Servicio    | 30                        | 31248758965        | 3214859665    | 3204478596    | pruebas automaticas proveedor caso cita | Registro guardado correctamente |
 
 
   @TestSupplierManagementRequiredFields
@@ -66,7 +67,7 @@ Feature: Page submodule supplier management
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering the advanced search and type case number <numberCase>
+    And Hacemos Busqueda del caso: "A00000000000008"
     And I no type information supplier
     Then I view the modal save supplier with <modalmessage>
 

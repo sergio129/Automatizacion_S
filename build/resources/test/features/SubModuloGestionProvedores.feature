@@ -6,17 +6,19 @@ Feature: Page submodule supplier management
     Given I create or edition a provider for a case
 
   @TestSupplierManagementComplete
-  Scenario Outline: Successful supplier management submodule
+  Scenario Outline: Gestion Exitosa de proveedor
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering the advanced search and type case number <numberCase>
-    And I type information in the fields supplier name <suppliername> and supplier response <supplierresponse> and time monitoring site <timemonitoringsite> and time monitoring destination <timemonitoringdestination> and technical cellphone <technicalcellphone> and central phone 1 <centralphone1> and central phone 2 <centralphone2> and observations <observations>
+    And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
+    And Hacemos Gestion de proveedor
+      | Proveedor      | RespuestaProveedor | TiempoMonitoreoSitio | TiempoMonitoreoDestino | CelularTecnico | TelfonoCentral | TelfonoCentral1 | Observaciones |
+      | RECURSO PROPIO | Toma Servicio      | 20                   | 50                     | 3103642145     | 3103642145     | 3103642145      | Pruebas QA    |
+    #And I type information in the fields supplier name <suppliername> and supplier response <supplierresponse> and time monitoring site <timemonitoringsite> and time monitoring destination <timemonitoringdestination> and technical cellphone <technicalcellphone> and central phone 1 <centralphone1> and central phone 2 <centralphone2> and observations <observations>
     Then I view the modal save supplier with <modalmessage>
-
     Examples:
-      | numberCase      | suppliername                  | supplierresponse | timemonitoringsite | timemonitoringdestination | technicalcellphone | centralphone1 | centralphone2 | observations                  | modalmessage                    |
-      | 202121344537266 | 24 H CAR SERVICE SAS MEDELLIN | Toma servicio    | 15                 | 21                        | 3125847853         | 3122557485    | 321485578     | pruebas automaticas proveedor | Registro guardado correctamente |
+      | modalmessage                    |
+      | Registro guardado correctamente |
 
 
   @TestSupplierManagementEdition
@@ -24,7 +26,7 @@ Feature: Page submodule supplier management
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering the advanced search and type case number <numberCase>
+    And Hacemos Busqueda del caso: "A00000000000008"
     And I type information edition in the fields supplier name <suppliername> and supplier response <supplierresponse> and time monitoring site <timemonitoringsite> and time monitoring destination <timemonitoringdestination> and technical cellphone <technicalcellphone> and central phone 1 <centralphone1> and central phone 2 <centralphone2> and observations <observations>
     Then I view the modal save supplier with <modalmessage>
 
@@ -38,7 +40,7 @@ Feature: Page submodule supplier management
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering the advanced search and type case number <numberCase>
+    And Hacemos Busqueda del caso: "A00000000000008"
     And I type information not service in the fields supplier name <suppliername> and supplier response <supplierresponse> and observations <observations>
     Then I view the modal save supplier with <modalmessage>
 
@@ -52,7 +54,7 @@ Feature: Page submodule supplier management
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering the advanced search and type case number <numberCase>
+    And Hacemos Busqueda del caso: "A00000000000008"
     And I type information case appointment in the fields supplier name <suppliername> and supplier response <supplierresponse> and time monitoring destination <timemonitoringdestination> and technical cellphone <technicalcellphone> and central phone 1 <centralphone1> and central phone 2 <centralphone2> and observations <observations>
     Then I view the modal save supplier with <modalmessage>
 
