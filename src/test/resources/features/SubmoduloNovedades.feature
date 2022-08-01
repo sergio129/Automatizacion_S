@@ -10,7 +10,7 @@ Feature: Novelty
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2021 |
-    And I entering the advanced search and type case number <numberCase>
+    And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I select button create novelty
     And Hacemos Gestion de Novedades
       | ReportaNovedad  | CausaNovedad                   | GenerarQueja | Radicado | Observaciones |
@@ -25,7 +25,7 @@ Feature: Novelty
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering the advanced search and type case number <numberCase>
+    And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I select button edition novelty
     And Hacemos Gestion de Novedades
       | ReportaNovedad  | CausaNovedad                   | GenerarQueja | Radicado | Observaciones |
@@ -40,7 +40,7 @@ Feature: Novelty
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2021 |
-    And I entering the advanced search and type case number <numbercase>
+    And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I no type information novelty
     Then I view the modal save novelty with <message>
     Examples:
