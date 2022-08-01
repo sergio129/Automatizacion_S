@@ -23,7 +23,6 @@ public class GestionUsuariosListarUsuariosStepsDefinitions {
     @Managed(driver = "chrome")
     WebDriver driver;
     public final Actor actor = Actor.named("Usuario");
-    private final HomePage homePage = new HomePage();
 
     @Before
     public void setUp() {

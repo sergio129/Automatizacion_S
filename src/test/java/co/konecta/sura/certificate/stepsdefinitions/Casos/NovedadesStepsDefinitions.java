@@ -26,7 +26,7 @@ public class NovedadesStepsDefinitions {
     @Managed(driver = "chrome")
     private WebDriver getBrowser;
     private final Actor actor = Actor.named("Usuario");
-    private final HomePage homePage = new HomePage();
+
     private NoveltyModel novelModel = new NoveltyModel();
 
 

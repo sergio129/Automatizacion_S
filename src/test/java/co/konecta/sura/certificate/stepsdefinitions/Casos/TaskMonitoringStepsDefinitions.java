@@ -26,7 +26,7 @@ public class TaskMonitoringStepsDefinitions {
     @Managed(driver = "chrome")
     private WebDriver getBrowser;
     private final Actor actor = Actor.named("Usuario");
-    private final HomePage homePage = new HomePage();
+
     private TaskMonitoringModel taskMonitoringModel = new TaskMonitoringModel();
 
     @Before

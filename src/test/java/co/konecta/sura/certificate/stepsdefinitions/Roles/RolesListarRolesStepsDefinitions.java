@@ -23,8 +23,7 @@ public class RolesListarRolesStepsDefinitions {
     @Managed(driver = "chrome")
     WebDriver driver;
     private final Actor actor = Actor.named("Usuario");
-    private final HomePage homePage = new HomePage();
-    public Select ListasRoles;
+
 
     @Before
     public void setUp() {

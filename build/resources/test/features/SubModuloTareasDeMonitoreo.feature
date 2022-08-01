@@ -7,7 +7,9 @@ Feature: Monitoring
 
   @TestTaskMonitoringComplete
   Scenario Outline: Successful task monitoring creation
-    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And I entering the advanced search and type case number <numberCase>
     And I select button create monitoring task
     And I type information in the field name <name>
@@ -19,12 +21,14 @@ Feature: Monitoring
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | usuario         | contrasena    | numberCase      | name   | type                                | date       | expiredhour | userMonitoring    | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | A00000000000007 | Prueba | Monitoreo finalizacion del servicio | 2022-02-31 | 09:19am     | Sergio Luis Anaya | Registro guardado correctamente |
+      | numberCase      | name   | type                                | date       | expiredhour | userMonitoring    | modalmessage                    |
+      | A00000000000007 | Prueba | Monitoreo finalizacion del servicio | 2022-02-31 | 09:19am     | Sergio Luis Anaya | Registro guardado correctamente |
 
   @TestTaskMonitoringEdition
   Scenario Outline: Successful task monitoring edition
-    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And I entering the advanced search and type case number <numberCase>
     And I select button edition monitoring task
     And I type information in the field state <state>
@@ -36,16 +40,18 @@ Feature: Monitoring
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | usuario         | contrasena    | numberCase      | state   | modalmessage                    |
-      | yoarlys.carillo | Colombia2020* | A00000000000007 | Cerrada | Registro guardado correctamente |
+      | numberCase      | state   | modalmessage                    |
+      | A00000000000007 | Cerrada | Registro guardado correctamente |
 
   @TestValidacionCamposTareasDeMonitoreo
   Scenario Outline: Task monitoring submodule required fields
-    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And I entering the advanced search and type case number <numberCase>
     And I no type information task monitoring
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | usuario      | contrasena     | numberCase       | modalmessage                      |
-      | Sergio.anaya | Colombia_2026* | B202201064435401 | Todos los campos son obligatorios |
+      | numberCase       | modalmessage                      |
+      | B202201064435401 | Todos los campos son obligatorios |

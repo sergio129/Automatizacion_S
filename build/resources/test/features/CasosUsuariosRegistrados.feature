@@ -5,19 +5,20 @@ Feature: Modulo de Casos Usuarios Registrados
 
   @TestUsuariosRegistrados
   Scenario Outline:Creacion Exitosa de parametrizacion Ofertamiento
-    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And entramos el modulo de Casos Usuarios Registrados
     And Listamos Usuarios Registrados por<Rol>
    # Then Se visualiza ventana usuarios registrados<modalmensaje>
     Examples:
-      | usuario      | contrasena     | Rol           |  |
-      | Sergio.Anaya | Colombia_2026* | Admin Backlog |  |
+     | Rol           |
+     | Admin Backlog |
 
   @TestUsuariosRegistradosTodosLosRoles
-  Scenario Outline:Creacion Exitosa de parametrizacion Ofertamiento
-    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+  Scenario:Creacion Exitosa de parametrizacion Ofertamiento
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And entramos el modulo de Casos Usuarios Registrados
     And Listamos Usuarios Registrados Todos los Roles
-    Examples:
-      | usuario      | contrasena     |
-      | Sergio.Anaya | Colombia_2026* |

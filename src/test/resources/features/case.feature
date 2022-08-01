@@ -10,25 +10,17 @@ Feature: Page create case
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I select creation case button
+    And Seleccionamos el boton de Crear Caso
     And Escribimos el numero de caso en L202121344537270 y lo pegamos
-    And I type information in the field number case <numberCase>
-    And I type information in the field applicant name <applicantName>
-    And I type information in the field phone1 <phone1>
-    And I type information in the field license plate <licensePlate>
-    And I type information in the field serviceaddress <serviceAddress>
-    And I type information in the field location <serviceLocation>
-    And I type information in the field department <department>
-    And I type information in the field municipality <municipality>
-    And I type information in the field click case <clickCase>
-    And I type information in the field line <line>
-    And I type information in the field service <service>
-    And I type information in the field address detail <addressdetail>
+    And Escribmos la informacion de la creacion de expediente
+      | NombreSol   | Telefono1   | Placa  | DireccionServicio | UbicacionServicio | DetalleDireccion | Departamento | Municicpio | GestorCordi | Linea | Servicio |
+      | Juan Felipe | 31035048745 | DTA54R | Calle 92144       | Produccion        | Pruebas QA       | Cordoba      | Lorica     | Si          | Autos | Grua     |
+    #Gestionamos el cambio de estado
     Then I view the modal save case with <message>
 
     Examples:
-      | numberCase      | applicantName          | phone1  | licensePlate | serviceAddress | serviceLocation | department | municipality | clickCase | line  | service | message                         | addressdetail |
-      | 202121344537266 | Pruebas Automatizacion | 1312314 | GTRE34E      | pruebas        | pruebas         | Antioquia  | Medellin     | No        | Autos | Grua    | Registro guardado correctamente | xxx           |
+     | message                         |
+     | Registro guardado correctamente |
 
   @TestCaseEdition
   Scenario Outline: Successful case edition

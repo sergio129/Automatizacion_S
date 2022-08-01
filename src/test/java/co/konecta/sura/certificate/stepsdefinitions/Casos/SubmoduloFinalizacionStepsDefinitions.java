@@ -21,8 +21,6 @@ public class SubmoduloFinalizacionStepsDefinitions {
     @Managed(driver = "chrome")
     private WebDriver getBrowser;
     private final Actor actor = Actor.named("Usuario");
-    private final HomePage homePage = new HomePage();
-    ;
 
 
     @Before

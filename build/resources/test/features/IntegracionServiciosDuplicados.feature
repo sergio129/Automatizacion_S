@@ -5,9 +5,11 @@ Feature: Gestion de servicios duplicados
 
   @TestGestionServiciosDuplicados
   Scenario Template:Gestion de Servicios Duplicados
-    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And Entramos a Integracion Servicios Duplicados y Gestionamos
     Then Se visualiza la ventana nuevamente para gestionar otro servicio<modalmensaje>
     Examples:
-      | usuario      | contrasena     | modalmensaje |
-      | Sergio.anaya | Colombia_2026* | menu         |
+     | modalmensaje |
+     | menu         |

@@ -62,6 +62,8 @@ public class CaseStepsDefinitions {
     @And("^I select button case edition with case (.*)$")
     public void iSelectButtonCaseEdit(String numberCase) throws InterruptedException {
         actor.attemptsTo(
+                Click.on(HomePage.BUTTON_INITIAL_TAB),
+                Click.on(HomePage.OPTION_MENU_CASE),
                 Click.on(AdvancedSearchPage.BUTTON_CLEAR_FILTERS),
                 Enter.theValue(numberCase).into(INPUT_CASE),
                 Click.on(AdvancedSearchPage.BUTTON_SEARCH),

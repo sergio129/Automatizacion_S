@@ -31,7 +31,7 @@ public class LoginStepsDefinitions {
     private WebDriver getBrowser;
     private final Actor actor = Actor.named("Usuario");
     private final HomePage homePage = new HomePage();
-    //public DesiredCapabilities handlSSLErr;
+
 
     @Before
     public void setUp(){
