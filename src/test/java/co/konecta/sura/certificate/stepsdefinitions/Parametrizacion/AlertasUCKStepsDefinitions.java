@@ -65,7 +65,7 @@ public class AlertasUCKStepsDefinitions {
         actor.has(Click.on(BOTON_GUARDAR_PARAMETRIZACION_ALERTAS_UCK));
     }
 
-    @And("^Selecionamos el boton Editar Parametrizacion Alerta UCK$")
+    @And("^Seleccionamos el boton Editar Parametrizacion Alerta UCK$")
     public void selecionamosElBotonEditarParametrizacionAlertaUCK() {
         actor.has(Click.on(BOTON_EDITAR_PARAMETRIZACION_ALERTAS_UCK));
     }

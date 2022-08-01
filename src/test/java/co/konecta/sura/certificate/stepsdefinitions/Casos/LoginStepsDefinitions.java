@@ -43,19 +43,6 @@ public class LoginStepsDefinitions {
     @Given("^I entering in the application$")
     public void iAmEntryInTheApplication() {}
 
-    @When("^I entering in the application with user (.*) and password (.*)$")
-    public void iEnteringInTheApplicationWith(String username, String password) {
-        actor.wasAbleTo(Open.browserOn(homePage));
-        actor.attemptsTo(LoginTask.whitCredentials(username, password));
-    }
-
-    @When("^Ingresamos a la aplicacion con usuario(.*) y contraseña(.*)$")
-    public void IngresamosUsuarioContrasena(String username, String password) {
-        actor.wasAbleTo(Open.browserOn(homePage));
-
-        actor.attemptsTo(LoginTask.whitCredentials(username, password));
-    }
-
     @When("^Ingresamos a la aplicacion$")
     public void Ingresamosalaaplicacion(List<Map<String,String>> informacion) {
         actor.wasAbleTo(Open.browserOn(homePage));

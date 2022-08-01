@@ -7,10 +7,12 @@ Feature: Tiempos altos de Contacto
 
   @TestGestionTiemposAltosdeContacto
   Scenario Outline: Gestion de expedientes con tiempos altos de contacto
-    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And Entro a integracion tiempos altos de contacto
     And Hacemos un filtro por <linea>y<servicio>y<municipio>y<familia> y buscamos<gestion>
     Then Veo mensaje de gestion exitosa de tiempos altos de contacto<mensajemodal>
     Examples:
-      | usuario      | contrasena     | linea   | servicio          | municipio | familia      | gestion     | mensajemodal                    |
-      | Sergio.anaya | Colombia_2026* | Renting | Paso De Corriente | Caucasia  | Carro-Taller | Sin novedad | Registro guardado correctamente |
+      | linea   | servicio          | municipio | familia      | gestion     | mensajemodal                    |
+      | Renting | Paso De Corriente | Caucasia  | Carro-Taller | Sin novedad | Registro guardado correctamente |

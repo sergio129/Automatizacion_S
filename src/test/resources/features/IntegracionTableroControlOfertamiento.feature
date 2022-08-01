@@ -5,7 +5,9 @@ Feature: Gestion de Tablero de Bot de Ofertamiento
 
   @TestReofertmaientoManual
   Scenario Template:Gestion de Tablero de control Ofertamiento
-    When Ingresamos a la aplicacion con usuario Sergio.anaya y contraseñaColombia_2021
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And Entramos a el Modulo de Integracion
     And Ingresamos al SubModulo Tableros de control Ofertamiento y buscamos por Expediente:<Exp>
     And Gestionamos y hacemos el Reofertamiento

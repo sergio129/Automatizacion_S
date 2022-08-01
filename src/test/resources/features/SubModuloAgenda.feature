@@ -7,7 +7,9 @@ Feature: SubModulo agenda
 
   @Testllamada
   Scenario Outline: Registro Exitoso modulo de agenda
-    When Ingresamos a la aplicacion con usuario<usuario> y contraseña<contrasena>
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And Buscamos por numero de expediente <NumeroCaso>
     And Escribimos en el modulo agenda el <tipocontacto>
     And clic en agregar modulo agenda
@@ -15,5 +17,5 @@ Feature: SubModulo agenda
     Then Selecionamos el boton llamar
 
     Examples:
-      | usuario         | contrasena    | NumeroCaso      | tipocontacto | numeroallamar | departamento | municipio |
-      | yoarlys.carillo | Colombia2020* | 202121344537266 | asegurado    | 311233        | Antioquia    | Medellin  |
+     | NumeroCaso      | tipocontacto | numeroallamar | departamento | municipio |
+      | 202121344537266 | asegurado    | 311233        | Antioquia    | Medellin  |

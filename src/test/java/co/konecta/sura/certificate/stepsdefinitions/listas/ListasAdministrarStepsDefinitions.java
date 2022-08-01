@@ -42,7 +42,7 @@ public class ListasAdministrarStepsDefinitions {
         Thread.sleep(3000);
     }
 
-    @And("^Selecionamos el boton crear listas administrar$")
+    @And("^Seleccionamos el boton crear listas administrar$")
     public void SelecionamosBotonCrearListasAdministrar() throws InterruptedException {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(BOTON_CREAR_LISTAS));
@@ -53,7 +53,7 @@ public class ListasAdministrarStepsDefinitions {
         actor.attemptsTo(ListasAdministrarTask.EscribimosInformacionListasAdministrar(nombrelista, nombreopcion, idcase));
     }
 
-    @And("^Selecionamos el boton guardar listas administrar$")
+    @And("^Seleccionamos el boton guardar listas administrar$")
     public void SelecionamosBotonGuardarListasAdministrar() throws InterruptedException {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(BOTON_GUARDAR_LISTAS));
@@ -86,7 +86,7 @@ public class ListasAdministrarStepsDefinitions {
         );
     }
 
-    @And("^Selecionamos el check activar/desactivar$")
+    @And("^Seleccionamos el check activar/desactivar$")
     public void selecionamosElCheckActivarDesactivar() {
         actor.attemptsTo(Click.on(BOTON_ACTIVAR_DESACTIVAR_OPCION));
     }

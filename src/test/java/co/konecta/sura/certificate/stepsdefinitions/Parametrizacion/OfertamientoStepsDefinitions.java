@@ -29,7 +29,7 @@ public class OfertamientoStepsDefinitions {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("Creacion, Edicion y Activar/Desactivar Parametrizacion")
+    @Given("Creacion, Edicion y Activar-Desactivar Parametrizacion")
     public void CreacionEdicionActivarDesactivarParametrizacion() {
     }
 
@@ -42,7 +42,7 @@ public class OfertamientoStepsDefinitions {
         Thread.sleep(3000);
     }
 
-    @And("^Selecionamos el boton crear parametrizacion de Ofertamiento$")
+    @And("^Seleccionamos el boton crear parametrizacion de Ofertamiento$")
     public void selecionamosElBotonCrearParametrizacionDeOfertamiento() {
         actor.has(
                 Click.on(BOTON_CREACION_DE_OFERTAMIENTO)
@@ -54,12 +54,12 @@ public class OfertamientoStepsDefinitions {
         actor.has(OfertamientoTask.EscribirInformacionOfertamiento(Nombre, Coordinacion, Ofertamiento, Tiempo, Linea, Servicio, Departamento, Municipio));
     }
 
-    @And("^Selecionamos el Boton de guardar Parametrizacion de Ofertamiento$")
+    @And("^Seleccionamos el Boton de guardar Parametrizacion de Ofertamiento$")
     public void selecionamosElBotonDeGuardarParametrizacionDeOfertamiento() {
         actor.has(Click.on(BOTON_GUARDAR_OFERTAMIENTO));
     }
 
-    @And("^Selecionamos el boton Editar parametrizacion de Ofertamiento$")
+    @And("^Seleccionamos el boton Editar parametrizacion de Ofertamiento$")
     public void selecionamosElBotonEditarParametrizacionDeOfertamiento() {
         actor.has(Click.on(BOTON_EDITAR_OFERTAMIENTO));
     }
@@ -73,7 +73,7 @@ public class OfertamientoStepsDefinitions {
         Thread.sleep(3000);
     }
 
-    @And("^Selecionamos el boton de Activar/Desactivar Parametrizacion Ofertamiento$")
+    @And("^Seleccionamos el boton de Activar/Desactivar Parametrizacion Ofertamiento$")
     public void selecionamosElBotonDeActivarDesactivarParametrizacionOfertamiento() {
         actor.has(Click.on(BOTON_ACTIVAR_OFERTAMIENTO));
     }

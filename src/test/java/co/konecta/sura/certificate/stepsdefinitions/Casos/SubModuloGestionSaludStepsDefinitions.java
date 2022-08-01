@@ -77,7 +77,7 @@ public class SubModuloGestionSaludStepsDefinitions {
 
     }
 
-    @And("^Selecionamos el boton guardar Emergencia salud$")
+    @And("^Seleccionamos el boton guardar Emergencia salud$")
     public void SelecionamosBotonGuardarEmergenciaSalud() {
         actor.attemptsTo(Click.on(BOTON_GUARDAR_EMERGENCIA_SALUD));
     }

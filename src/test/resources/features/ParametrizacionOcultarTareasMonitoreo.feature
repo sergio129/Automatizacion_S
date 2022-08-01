@@ -7,49 +7,57 @@ Feature: Hide monitoring tasks parameterization
 
   @TestHideMonitoringTasksParameterization
   Scenario Outline: Successful hide monitoring tasks parameterization
-    When I entering in the application with user <user> and password <password>
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And I entering hide monitoring tasks parameterization
     And I select button create hide monitoring tasks
     And I type information in the hide monitoring tasks with the line <linetasks> and the service <servicetasks> and the task type <tasktype>
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password      | linetasks | servicetasks     | tasktype             | modalmessage                    |
-      | sergio.anaya | Colombia_2021 | Autos     | Abogado en sitio | Monitoreo preventivo | Registro guardado correctamente |
+      | linetasks | servicetasks     | tasktype             | modalmessage                    |
+      | Autos     | Abogado en sitio | Monitoreo preventivo | Registro guardado correctamente |
 
   @TestHideMonitoringTasksParameterizationEdition
   Scenario Outline: Hide monitoring tasks parameterization successful edition
-    When I entering in the application with user <user> and password <password>
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And I entering hide monitoring tasks parameterization
     And I type filters with the line <linesearch> and the service <servicesearch> and the task type <tasktypesearch>  and select button search hide monitoring task parameterization and select button edition hide monitoring tasks
     And I type information in the hide monitoring tasks with the line <linetasks> and the service <servicetasks> and the task type <tasktype>
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | linesearch       | servicesearch | tasktypesearch     | linetasks | servicetasks | tasktype           | modalmessage                    |
-      | sergio.anaya | Colombia_2024* | Emergencia salud | Cerrajero     | Elertas especiales | Renting   | Grua         | Monitoreo en Sitio | Registro guardado correctamente |
+      | linesearch       | servicesearch | tasktypesearch     | linetasks | servicetasks | tasktype           | modalmessage                    |
+      | Emergencia salud | Cerrajero     | Elertas especiales | Renting   | Grua         | Monitoreo en Sitio | Registro guardado correctamente |
 
 
   @TestHideMonitoringTasksParameterizationDelete
   Scenario Outline: Hide monitoring tasks parameterization successful delete
-    When I entering in the application with user <user> and password <password>
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And I entering hide monitoring tasks parameterization
     And I select button delete hide monitoring tasks
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | modalmessage                     |
-      | sergio.anaya | Colombia_2024* | Registro eliminado correctamente |
+      | modalmessage                     |
+      | Registro eliminado correctamente |
 
 
   @TestHideMonitoringTasksRequiredFields
   Scenario Outline: Hide monitoring tasks parameterization required fields
-    When I entering in the application with user <user> and password <password>
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
     And I entering hide monitoring tasks parameterization
     And I select button create hide monitoring tasks
     And I no type information hide monitoring tasks
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | user         | password       | modalmessage                      |
-      | sergio.anaya | Colombia_2024* | Todos los campos son obligatorios |
+      | modalmessage                      |
+      | Todos los campos son obligatorios |

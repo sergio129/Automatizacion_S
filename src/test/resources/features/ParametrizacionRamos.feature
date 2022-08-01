@@ -7,12 +7,15 @@ Feature: Parametrizacion de Ramos
 
   @TestCreacionDeRamos @Test1
   Scenario Outline: Creacion de Exitosa de Ramos
-    When I entering in the application with user <user> and password <password>
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2022 |
+      | Sergio.anaya | Colombia_2022 |
     And I enter bouquets parameterization
     And I select button create bouquets parameterization
     And I write information in bouquets parameterization and save <linea>,<bouquets>
     Then Mostramos el mensaje de la modal de ramos<modalmessage>
     Examples:
-      | user         | password      | linea            | bouquets    | modalmessage                       |  |
-      | Sergio.anaya | Colombia_2021 | Emergencia salud | Pruebas QA8 | Registros guardados correctamente. |  |
-      | Sergio.anaya | Colombia_2021 | Emergencia salud | Pruebas QA8 | El ramo ya existe.                 |  |
+      | linea            | bouquets    | modalmessage                       |
+      | Emergencia salud | Pruebas QA8 | Registros guardados correctamente. |
+      | Emergencia salud | Pruebas QA8 | El ramo ya existe.                 |

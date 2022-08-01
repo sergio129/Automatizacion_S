@@ -45,7 +45,7 @@ public class PrefijosStepsDefinitions {
         );
     }
 
-    @And("^Selecionamos el boton creacion prefijos$")
+    @And("^Seleccionamos el boton creacion prefijos$")
     public void SelecionamosBotonCreacionPrefijos() {
         actor.attemptsTo(
                 Click.on(BOTON_CREAR_PREFIJOS)
@@ -58,7 +58,7 @@ public class PrefijosStepsDefinitions {
 
     }
 
-    @And("^Selecionamos el boton guardar prefijos$")
+    @And("^Seleccionamos el boton guardar prefijos$")
     public void SelecionamosBotonGuardarPrefijos() {
         actor.attemptsTo(Click.on(BOTON_GUARDAR_PREFIJOS));
     }
@@ -79,12 +79,12 @@ public class PrefijosStepsDefinitions {
         Thread.sleep(500);
 
     }
-    @And("^Selecionamos el boton editar prefijos$")
+    @And("^Seleccionamos el boton editar prefijos$")
     public void SelecionamosBotonEditarPrefijos(){
         actor.attemptsTo(Click.on(BOTON_EDITAR_PREFIJOS));
     }
 
-    @And("^Selecionamos el boton eliminar prefijos$")
+    @And("^Seleccionamos el boton eliminar prefijos$")
     public void SelecionamosBotonEliminarPrefijos(){
         actor.attemptsTo(Click.on(BOTON_ELIMINAR_PREFIJOS),
                 Click.on(OPCION_SI_ELIMINAR_PREFIJOS));
