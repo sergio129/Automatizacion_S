@@ -40,7 +40,7 @@ public class AlertasUCKStepsDefinitions {
                 MoveMouse.to(HomePage.OPCIONES_PARAMETRIZACION_ALERTAS_UCK).andThen(actions -> actions.click()));
     }
 
-    @And("^Selecionamos el boton crear Alerta UCK$")
+    @And("^Seleccionamos el boton crear Alerta UCK$")
     public void selecionamosElBotonCrearAlertaUCK() {
         actor.has(Click.on(BOTON_CREACION_PARAMETRIZACION_ALERTAS_UCK));
     }
@@ -60,7 +60,7 @@ public class AlertasUCKStepsDefinitions {
         // Write code here that turns the phrase above into concrete actions
     }
 
-    @And("^Selecionamos el boton guardar Alerta UCK$")
+    @And("^Seleccionamos el boton guardar Alerta UCK$")
     public void selecionamosElBotonGuardarAlertaUCK() {
         actor.has(Click.on(BOTON_GUARDAR_PARAMETRIZACION_ALERTAS_UCK));
     }
@@ -76,7 +76,7 @@ public class AlertasUCKStepsDefinitions {
       Thread.sleep(2000);
     }
 
-    @And("^Selecionamos el Boton de Eliminar Parametrizacion Alerta UCK$")
+    @And("^Seleccionamos el Boton de Eliminar Parametrizacion Alerta UCK$")
     public void selecionamosElBotonDeEliminarParametrizacionAlertaUCK() {
         actor.has(Click.on(BOTON_ELIMINAR_PARAMETRIZACION_ALERTAS_UCK),Click.on(CONFIRMAR_SI_ELIMINAR_PARAMETRIZACION_ALERTAS_UCK));
     }
