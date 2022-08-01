@@ -38,7 +38,7 @@ Feature: Gestion de Tablero de Bot de Ofertamiento
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
     And Entramos a Parametrizacion Bot de monitoreo
-    And Selecionamos el boton de Habilitar/Inhabilitar módulo
+    And Seleccionamos el boton de Habilitar/Inhabilitar módulo
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | modalmensaje                    |
@@ -51,7 +51,7 @@ Feature: Gestion de Tablero de Bot de Ofertamiento
       | Sergio.anaya | Colombia_2022 |
     And Entramos a Parametrizacion Bot de monitoreo
     And Buscamos por nombre de Parametrizacion:"Pruebas automatizacion"
-    And Selecionamos el boton de Habilitar/Inhabilitar Parametrizacion
+    And Seleccionamos el boton de Habilitar/Inhabilitar Parametrizacion
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | modalmensaje                                       |

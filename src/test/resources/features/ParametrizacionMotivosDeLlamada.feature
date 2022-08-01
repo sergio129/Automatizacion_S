@@ -18,9 +18,9 @@ Feature: Parametrizacion Motivos de llamada
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | name                     | line  | modalmessage                                                                                  |  |
-      | Pruebas Automatizacion10 | Hogar | Registro guardado correctamente                                                               |  |
-      | Pruebas Automatizacion10 | Hogar | No se puede guardar, Ya se encuentra parametrizado un servicio de llamada con el mismo nombre |  |
+      | name                     | line  | modalmessage                                                                                  |
+      | Pruebas Automatizacion10 | Hogar | Registro guardado correctamente                                                               |
+      | Pruebas Automatizacion10 | Hogar | No se puede guardar, Ya se encuentra parametrizado un servicio de llamada con el mismo nombre |
 
   @TestCreacionMotivoDeLlamadaSolicitudDeServicioConEventoCatastrofico
   Scenario Outline: Creacion Exitosa de motivos de llamada con solicitud de servicio, Con Evento Catastrofico

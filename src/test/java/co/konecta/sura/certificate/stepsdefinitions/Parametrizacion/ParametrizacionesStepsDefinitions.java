@@ -67,12 +67,12 @@ public class ParametrizacionesStepsDefinitions {
         actor.has(Click.on(BotDeMonitoreoPage.BOTON_EDITAR));
     }
 
-    @And("^Selecionamos el boton de Habilitar/Inhabilitar módulo$")
+    @And("^Seleccionamos el boton de Habilitar/Inhabilitar módulo$")
     public void selecionamosElBotonDeHabilitarInhabilitarMódulo() {
         actor.has(Click.on(BotDeMonitoreoPage.BOTON_HABITAR_INHABILITAR_MODULO),Click.on(BotDeMonitoreoPage.BOTON_CONFIRMACION_HABILITAR_INHABILITAR));
     }
 
-    @And("^Selecionamos el boton de Habilitar/Inhabilitar Parametrizacion$")
+    @And("^Seleccionamos el boton de Habilitar/Inhabilitar Parametrizacion$")
     public void selecionamosElBotonDeHabilitarInhabilitarParametrizacion() {
         actor.has(Click.on(BotDeMonitoreoPage.BOTON_HABITAR_INHABILITAR_PARAMETRIZACION));
     }

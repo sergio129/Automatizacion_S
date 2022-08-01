@@ -1,4 +1,4 @@
-Feature: Alert time parameterization
+Feature: Parametrizacion tiempos de alertas
   As a user
   I need to create, edition or delete a alert time parameterization
 
@@ -10,8 +10,8 @@ Feature: Alert time parameterization
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering alert time parameterization
-    And I select button create alert time
+    And Entramos el el modulo de parametrizacion tiempos de alertas
+    And Seleccionamos el boton creacion tiempos de alertas
     And I type information in the alert time with the service <servicealert> and the time <time>
     Then Se visualiza mensaje de la modal<modalmessage>
 
@@ -25,8 +25,8 @@ Feature: Alert time parameterization
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering alert time parameterization
-    And I select button edition alert time
+    And Entramos el el modulo de parametrizacion tiempos de alertas
+    And Seleccionamos el boton editar tiempos de alertas
     And I type information in the alert time with the service <servicealert> and the time <time>
     Then Se visualiza mensaje de la modal<modalmessage>
 
@@ -40,10 +40,9 @@ Feature: Alert time parameterization
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And I entering alert time parameterization
-    And I select button delete alert time
+    And Entramos el el modulo de parametrizacion tiempos de alertas
+    And Seleccionamos el boton eliminar tiempos de alertas
     Then Se visualiza mensaje de la modal<modalmessage>
-
     Examples:
       | modalmessage                     |
       | Registro eliminado correctamente |

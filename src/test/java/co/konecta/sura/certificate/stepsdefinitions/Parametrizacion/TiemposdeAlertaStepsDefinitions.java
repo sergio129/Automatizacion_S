@@ -31,7 +31,7 @@ public class TiemposdeAlertaStepsDefinitions {
     public void iCreateEditionOrDeleteAlertTimeParameterization() {
     }
 
-    @And("^I entering alert time parameterization$")
+    @And("^Entramos el el modulo de parametrizacion tiempos de alertas$")
     public void iEnteringAlertTimeParameterization() throws InterruptedException {
         Thread.sleep(5000);
         actor.attemptsTo(Click.on(HomePage.BUTTON_INITIAL_TAB));
@@ -40,17 +40,17 @@ public class TiemposdeAlertaStepsDefinitions {
         );
     }
 
-    @And("^I select button create alert time$")
+    @And("^Seleccionamos el boton creacion tiempos de alertas$")
     public void iSelectButtonCreateAlertTime() {
         actor.attemptsTo(Click.on(BUTTON_CREATE_ALERT_TIME));
     }
 
-    @And("^I select button edition alert time$")
+    @And("^Seleccionamos el boton editar tiempos de alertas$")
     public void iSelectButtonEditionAlertTime() {
         actor.attemptsTo(Click.on(BUTTON_EDIT_ALERT_TIME));
     }
 
-    @And("^I select button delete alert time$")
+    @And("^Seleccionamos el boton eliminar tiempos de alertas$")
     public void iSelectButtonDeleteAlertTime() {
         actor.attemptsTo(Click.on(BUTTON_DELETE_ALERT_TIME),
                 Click.on(OPTION_YES_ALERT_TIME));
