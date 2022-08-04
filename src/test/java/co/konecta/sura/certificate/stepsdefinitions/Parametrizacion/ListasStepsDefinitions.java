@@ -42,7 +42,7 @@ public class ListasStepsDefinitions {
         actor.has(MoveMouse.to(ListasPage.OPTION_LIST_PARAMETERIZATION).andThen(actions -> actions.click()));
     }
 
-    @And("^I select button create lists parameterization$")
+    @And("^Seleccionamos el Boton Crear Parametrizacion de Listas$")
     public void iSelectButtonCreateListsParameterization() {
         actor.attemptsTo(Click.on(BUTTON_CREATE_LISTS));
     }
@@ -58,7 +58,7 @@ public class ListasStepsDefinitions {
 
         );
     }
-    @And("^Selecionamos boton crear opcion parametrizacion listas$")
+    @And("^Seleccionamos boton crear opcion parametrizacion listas$")
     public void SelecionamosBotonParametrizacionListas(){
         actor.attemptsTo(
                 Click.on(BUTTON_CREATE_OPTION_LISTS));
@@ -82,7 +82,7 @@ public class ListasStepsDefinitions {
         actor.attemptsTo(Click.on(BUTTON_SAVE_LISTS));
         Thread.sleep(1000);
     }
-    @And("^Selecionamos el boton guardar lista$")
+    @And("^Seleccionamos el boton guardar lista$")
     public void SelecionamosBotonGuardarLista() throws InterruptedException {
         actor.attemptsTo(Click.on(BUTTON_SAVE_LISTS));
         Thread.sleep(1000);

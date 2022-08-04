@@ -12,9 +12,9 @@ Feature: Lists parameterization
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
     And I entering lists parameterization
-    And I select button create lists parameterization
+    And Seleccionamos el Boton Crear Parametrizacion de Listas
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
-    And Selecionamos el boton guardar lista
+    And Seleccionamos el boton guardar lista
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
@@ -28,9 +28,9 @@ Feature: Lists parameterization
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
     And I entering lists parameterization
-    And I select button create lists parameterization
+    And Seleccionamos el Boton Crear Parametrizacion de Listas
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
-    And Selecionamos boton crear opcion parametrizacion listas
+    And Seleccionamos boton crear opcion parametrizacion listas
     And I create new list option with option name <optionname> and id easycase <ideasycase>
     Then Se visualiza mensaje de la modal<modalmessage>
 
@@ -47,7 +47,7 @@ Feature: Lists parameterization
     And I entering lists parameterization
     And I select button edition lists parameterization
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
-    And Selecionamos el boton guardar lista
+    And Seleccionamos el boton guardar lista
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
