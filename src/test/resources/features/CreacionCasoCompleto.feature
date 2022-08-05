@@ -18,6 +18,19 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
     And Hacemos Cambio de Estado
       | CambioEstado |
       | Abierto      |
+    #Gestionamos el sub modulo gestion salud
+    And Click en crear registro emergencia salud
+    And Escribimos datos comunes emergencia Salud:
+      | CanalIngreso            | TipoDocumento        | NumeroDocumento |
+      | Ingreso #888 Emergencia | Cédula de Ciudadanía | 7777777         |
+    And Tiene una Emergencia?:"Si"
+    And Preguntamos si tiene Dificultad en la atencion en salud
+      | DificultadSalud | TipoDificultad                  |
+      | Si              | Soporte App y/o Pagina sura.com |
+    And Escribimos los datos de tiene emergencia Si
+      | TipoEmergencia           | ServicioPrestado      | NombreAcompanante | Parentesco | Telefono    | PrestadorServicio |
+      | Emergencia por accidente | Atención Domiciliaria | Jesus Doria       | Novio(a)   | 31025487451 | Forja             |
+    And Escribimos las observaciones: "Pruebas QA" y guardamos
     #Gestionamos el proveedor
     And Hacemos Gestion de proveedor
       | Proveedor      | RespuestaProveedor | TiempoMonitoreoSitio | TiempoMonitoreoDestino | CelularTecnico | TelfonoCentral | TelfonoCentral1 | Observaciones |
