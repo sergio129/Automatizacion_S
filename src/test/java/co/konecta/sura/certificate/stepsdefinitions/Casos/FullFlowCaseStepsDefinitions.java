@@ -1,9 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
-import co.konecta.sura.certificate.Tareas.Casos.taskmonitoring.TaskMonitoringModel;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import io.cucumber.java.Before;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import net.serenitybdd.screenplay.Actor;

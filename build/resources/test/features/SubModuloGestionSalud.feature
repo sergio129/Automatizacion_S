@@ -1,6 +1,6 @@
 Feature: SubModulo Gestion Salud
   El Usuario
-  Puede registrar y editar informacion el en sudmodulo de gestion salud
+  Puede registrar y editar informacion el en submodulo de gestion salud
 
   Background:
     Given Regristro de informacion Sub modulo Gestion Salud

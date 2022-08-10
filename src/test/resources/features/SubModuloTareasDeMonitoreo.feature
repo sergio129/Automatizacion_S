@@ -1,4 +1,4 @@
-Feature: Monitoring
+Feature: Tareas de Monitoreo
   As a user
   I need to create or edition a task monitoring
 
@@ -11,18 +11,13 @@ Feature: Monitoring
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
-    And I select button create monitoring task
-    And I type information in the field name <name>
-    And I type information in the field type <type>
-    And I type information in the field date <date>
-    And I type information in the field expired hour <expiredhour>
-    And I type information in the field user <userMonitoring>
-    And Selecionamos el Boton Guardar Tarea de Monitoreo
+    And Seleccionamos el boton crear tarea de monitoreo
+    And Escribimos los datos de la tare de monitoreo<Nombre>,<TipoTarea>,<FechaVencimiento>,<HoraVencimiento>,<Usuario>
+    And Seleccionamos el Boton Guardar Tarea de Monitoreo
     Then Se visualiza mensaje de la modal<modalmessage>
-
     Examples:
-      | name   | type                                | date       | expiredhour | userMonitoring    | modalmessage                    |
-      | Prueba | Monitoreo finalizacion del servicio | 2022-02-31 | 09:19am     | Sergio Luis Anaya | Registro guardado correctamente |
+      | Nombre | TipoTarea                           | FechaVencimiento | HoraVencimiento | Usuario           | modalmessage                    |
+      | Prueba | Monitoreo finalizacion del servicio | 2022-02-31       | 09:19am          | Sergio Luis Anaya | Registro guardado correctamente |
 
   @TestTaskMonitoringEdition
   Scenario Outline: Successful task monitoring edition

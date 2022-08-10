@@ -7,7 +7,10 @@ public class TaskMonitoringPage {
 
     public static final Target INPUT_STATE = Target.the("This the input name").located(By.id("stateMonitoringTask"));
     public static final Target INPUT_NAME = Target.the("This the input name").located(By.id("nameMonitoringTask"));
-    public static final Target INPUT_TYPE = Target.the("This the input type").located(By.id("typeMonitoringTask"));
+    public static final Target INPUT_TYPE = Target.the("This the input type").located(By.cssSelector("[placeholder='Tipo monitoreo *']"));
+    public static final Target SELECCIONAR_TAREA = Target.the("This the input type").locatedBy("//div//span[contains(text(),'{0}')]");
+
+
     public static final Target INPUT_DATE = Target.the("This the input date").located(By.id("expiredTimeMonitoringTask"));
     public static final Target INPUT_DAY = Target.the("This the input date").locatedBy("/html/body/div[2]/div[4]/div/mat-datepicker-content/mat-calendar/mat-calendar-header/div/div/button[1]");
     public static final Target INPUT_HOUR = Target.the("This the input date").located(By.id("expiredHourMonitoringTask"));

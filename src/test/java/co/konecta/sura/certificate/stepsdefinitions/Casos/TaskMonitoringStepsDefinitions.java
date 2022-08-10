@@ -1,9 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
-import co.konecta.sura.certificate.Tareas.Casos.taskmonitoring.TaskMonitoring;
-import co.konecta.sura.certificate.Tareas.Casos.taskmonitoring.TaskMonitoringModel;
-import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import co.konecta.sura.certificate.Interfaces.Casos.TareasDeMonitoreo.TaskMonitoringPage;
+import co.konecta.sura.certificate.Tareas.Casos.taskmonitoring.TaskMonitoring;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -11,7 +9,6 @@ import io.cucumber.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
@@ -27,8 +24,6 @@ public class TaskMonitoringStepsDefinitions {
     private WebDriver getBrowser;
     private final Actor actor = Actor.named("Usuario");
 
-    private TaskMonitoringModel taskMonitoringModel = new TaskMonitoringModel();
-
     @Before
     public void setUp() {
         actor.can(BrowseTheWeb.with(getBrowser));
@@ -38,7 +33,7 @@ public class TaskMonitoringStepsDefinitions {
     public void iCreateATaskMonitoringForACase() {
     }
 
-    @And("^I select button create monitoring task$")
+    @And("^Seleccionamos el boton crear tarea de monitoreo$")
     public void iCreateMonitoringTask() {
         actor.attemptsTo(Click.on(TaskMonitoringPage.BUTTON_CREATE_MONITORING));
     }
@@ -54,39 +49,6 @@ public class TaskMonitoringStepsDefinitions {
         );
     }
 
-    @And("^I type information in the field name (.*)$")
-    public void iTypeInformationInTheFieldName(String name) throws Exception {
-        this.taskMonitoringModel.setName(name);
-        actor.attemptsTo(Enter.theValue(taskMonitoringModel.getName()).into(TaskMonitoringPage.INPUT_NAME));
-
-    }
-
-    @And("^I type information in the field state (.*)$")
-    public void iEnterEditInformationInTheFieldState(String state) throws Exception {
-        this.taskMonitoringModel.setState(state);
-
-    }
-
-    @And("^I type information in the field type (.*)$")
-    public void iTypeInformationInTheFieldType(String type) throws Exception {
-        this.taskMonitoringModel.setType(type);
-    }
-
-    @And("^I type information in the field date (.*)$")
-    public void iTypeInformationInTheFieldDate(String date) throws Exception {
-        this.taskMonitoringModel.setDate(date);
-    }
-
-    @And("^I type information in the field expired hour (.*)$")
-    public void iTypeInformationInTheFieldExpiredHour(String hour) throws Exception {
-        this.taskMonitoringModel.setHour(hour);
-    }
-
-    @And("^I type information in the field user (.*)$")
-    public void iTypeInformationInTheFieldUser(String user) throws Exception {
-        this.taskMonitoringModel.setUser(user);
-        actor.attemptsTo(TaskMonitoring.whitData(taskMonitoringModel));
-    }
 
     @And("^I no type information task monitoring$")
     public void noSetInformationTaskMonitoring() throws InterruptedException {
@@ -103,9 +65,14 @@ public class TaskMonitoringStepsDefinitions {
     }
 
 
-    @And("^Selecionamos el Boton Guardar Tarea de Monitoreo$")
-    public void selecionamosElBotonGuardarTareaDeMonitoreo() throws InterruptedException {
+    @And("^Seleccionamos el Boton Guardar Tarea de Monitoreo$")
+    public void seleccionamosElBotonGuardarTareaDeMonitoreo() throws InterruptedException {
         actor.attemptsTo(Click.on(TaskMonitoringPage.BUTTON_SAVE_MONITORING));
         Thread.sleep(1000);
+    }
+
+    @And("^Escribimos los datos de la tare de monitoreo(.*),(.*),(.*),(.*),(.*)$")
+    public void escribimosLosDatosDeLaTareDeMonitoreoNombreTipoTareaFechaVencimientoHoraVencimientoUsuario(String Nombre, String TipoTarea, String FechaVencimiento, String HoraVencimiento, String Usuario) {
+        actor.attemptsTo(TaskMonitoring.whitData(Nombre, TipoTarea, FechaVencimiento, HoraVencimiento, Usuario));
     }
 }
