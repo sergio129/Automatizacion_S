@@ -24,7 +24,7 @@ Feature: Creacion, Edicion y eliminacion de parametrizacion cierre de expediente
       | Sergio.anaya | Colombia_2022 |
     And Entramos Parametrizacion Cierre de Expediente
     And Buscamos Parametrizacion Cierre de expediente por Linea:"Emergencia Salud", Servicio:"Emergencia Salud"
-    And Selecionamos el boton Editar Parametrizacion Cierre de Expediente
+    And Seleccionamos el boton Editar Parametrizacion Cierre de Expediente
     And Escribimos la informacion de parametrizacion Cierre de Expediente<linea>,<servicio>,<Campo>
     And Seleccionamos el boton guardar Parametrizacion Cierre de Expediente
     Then Se visualiza mensaje de la modal<modalmensaje>

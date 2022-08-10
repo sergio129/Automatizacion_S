@@ -40,8 +40,8 @@ public class ParametrizacionesStepsDefinitions {
         Thread.sleep(3000);
     }
 
-    @And("^Selecionamos el boton Crear Parametrizacion Bot Monitoreo$")
-    public void selecionamosElBotonCrearParametrizacionBotMonitoreo() throws InterruptedException {
+    @And("^Seleccionamos el boton Crear Parametrizacion Bot Monitoreo$")
+    public void seleccionamosElBotonCrearParametrizacionBotMonitoreo() throws InterruptedException {
         actor.has(Click.on(BotDeMonitoreoPage.BOTON_AGREGAR_PARAMETRIZACION_BOT_MONITOREO));
         Thread.sleep(3000);
     }
@@ -51,8 +51,8 @@ public class ParametrizacionesStepsDefinitions {
         actor.has(BotMonitoreoTask.EscribirDatosBotMonitoreo(Nombre,GestionServicio,Linea,TipoServicio,TipoTarea,Departamento,Municipio,ServicioEspecial));
     }
 
-    @And("^Selecionamos el Boton Guardar Parametrizacion bot de monitoreo$")
-    public void selecionamosElBotonGuardarParametrizacionBotDeMonitoreo() {
+    @And("^Seleccionamos el Boton Guardar Parametrizacion bot de monitoreo$")
+    public void seleccionamosElBotonGuardarParametrizacionBotDeMonitoreo() {
         actor.has(Click.on(BotDeMonitoreoPage.BOTON_GUARDAR));
     }
 
@@ -68,12 +68,12 @@ public class ParametrizacionesStepsDefinitions {
     }
 
     @And("^Seleccionamos el boton de Habilitar/Inhabilitar módulo$")
-    public void selecionamosElBotonDeHabilitarInhabilitarMódulo() {
+    public void seleccionamosElBotonDeHabilitarInhabilitarMódulo() {
         actor.has(Click.on(BotDeMonitoreoPage.BOTON_HABITAR_INHABILITAR_MODULO),Click.on(BotDeMonitoreoPage.BOTON_CONFIRMACION_HABILITAR_INHABILITAR));
     }
 
     @And("^Seleccionamos el boton de Habilitar/Inhabilitar Parametrizacion$")
-    public void selecionamosElBotonDeHabilitarInhabilitarParametrizacion() {
+    public void seleccionamosElBotonDeHabilitarInhabilitarParametrizacion() {
         actor.has(Click.on(BotDeMonitoreoPage.BOTON_HABITAR_INHABILITAR_PARAMETRIZACION));
     }
 }

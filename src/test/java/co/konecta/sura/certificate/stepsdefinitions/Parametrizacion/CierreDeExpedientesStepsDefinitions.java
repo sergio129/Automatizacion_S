@@ -79,7 +79,7 @@ public class CierreDeExpedientesStepsDefinitions {
 
     }
 
-    @And("^Selecionamos el boton Editar Parametrizacion Cierre de Expediente$")
+    @And("^Seleccionamos el boton Editar Parametrizacion Cierre de Expediente$")
     public void selecionamosElBotonEditarParametrizacionCierreDeExpediente() {
         actor.has(Click.on(BOTON_EDITAR_CIERRE_EXPEDIENTE));
     }

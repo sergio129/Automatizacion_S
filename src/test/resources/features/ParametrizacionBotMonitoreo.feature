@@ -9,9 +9,9 @@ Feature: Gestion de Tablero de Bot de Ofertamiento
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
     And Entramos a Parametrizacion Bot de monitoreo
-    And Selecionamos el boton Crear Parametrizacion Bot Monitoreo
+    And Seleccionamos el boton Crear Parametrizacion Bot Monitoreo
     And Escribimos datos Parametrizacion Bot de monitoreo: <Nombre>,<GestionServicio>,<Linea>,<TipoServicio>,<TipoTarea>,<Departamento>,<Municipio>,<ServicioEspecial>
-    And Selecionamos el Boton Guardar Parametrizacion bot de monitoreo
+    And Seleccionamos el Boton Guardar Parametrizacion bot de monitoreo
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | Nombre                 | GestionServicio | Linea | TipoServicio | TipoTarea          | Departamento | Municipio   | ServicioEspecial | modalmensaje                    |
@@ -26,7 +26,7 @@ Feature: Gestion de Tablero de Bot de Ofertamiento
     And Buscamos por nombre de Parametrizacion:"Pruebas QA"
     And Seleccionamos el boton Editar Parametrizacion bot de monitoreo
     And Escribimos datos Parametrizacion Bot de monitoreo: <Nombre>,<GestionServicio>,<Linea>,<TipoServicio>,<TipoTarea>,<Departamento>,<Municipio>,<ServicioEspecial>
-    And Selecionamos el Boton Guardar Parametrizacion bot de monitoreo
+    And Seleccionamos el Boton Guardar Parametrizacion bot de monitoreo
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | Nombre                 | GestionServicio | Linea | TipoServicio | TipoTarea          | Departamento | Municipio   | ServicioEspecial | modalmensaje                    |

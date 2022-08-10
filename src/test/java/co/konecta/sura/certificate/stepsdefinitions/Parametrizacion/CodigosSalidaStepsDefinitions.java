@@ -44,7 +44,7 @@ public class CodigosSalidaStepsDefinitions {
                 Click.on(HomePage.OPTION_MENU_PARAMETERIZATION),
                 MoveMouse.to(HomePage.OPTION_EXIT_CODES_PARAMETERIZATION).andThen(actions -> actions.click()));
     }
-    @And("^Selecionamos el boton creacion codigos de salida$")
+    @And("^Seleccionamos el boton creacion codigos de salida$")
     public void ISelectButtonCreateExitCodeParameterization(){
         actor.attemptsTo(
                 Click.on(BUTTON_CREATE_EXIT_CODE)
@@ -56,7 +56,7 @@ public class CodigosSalidaStepsDefinitions {
                 CodigosdeSalidaTask.withInformationExitCode(line,code)
         );
     }
-    @And("^Selecionamos el boton buscar codigos de salida (.*)$")
+    @And("^Seleccionamos el boton buscar codigos de salida (.*)$")
     public void ISelectButtonSearchExitCodeParameterization(String line) throws InterruptedException {
         actor.attemptsTo(
                 Click.on(INPUT_LINE_EXIT_CODE_HOME));
@@ -66,7 +66,7 @@ public class CodigosSalidaStepsDefinitions {
                 Click.on(BUTTON_SEARCH_EXIT_CODE_HOME)
         );
     }
-    @And("^Selecionamos boton de editar codigos de salida$")
+    @And("^Seleccionamos boton de editar codigos de salida$")
     public void ISelectButtonEditExitCodeParameterization() throws InterruptedException {
         Thread.sleep(3000);
         actor.attemptsTo(
@@ -74,7 +74,7 @@ public class CodigosSalidaStepsDefinitions {
 
     }
 
-    @And("^Selecionamos boton de eliminar codigos de salida$")
+    @And("^Seleccionamos boton de eliminar codigos de salida$")
     public void SelecionamosBotonEliminarCodigosSalida() throws InterruptedException {
         Thread.sleep(3000);
         actor.attemptsTo(
@@ -84,7 +84,7 @@ public class CodigosSalidaStepsDefinitions {
         );
     }
 
-    @And("^Selecionamos el boton guardar codigo de salida$")
+    @And("^Seleccionamos el boton guardar codigo de salida$")
     public void SelecionamosElBotonGuardar(){
         actor.attemptsTo(
                 Click.on(BUTTON_SAVE_EXIT_CODE)
