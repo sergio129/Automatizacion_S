@@ -29,7 +29,6 @@ Feature: Tareas de Monitoreo
     And Hacemos el cambio de estado de la tarea: "Cerrada"
     And Seleccionamos el Boton Guardar Tarea de Monitoreo
     Then Se visualiza mensaje de la modal<modalmessage>
-
     Examples:
       | modalmessage                    |
       | Registro guardado correctamente |

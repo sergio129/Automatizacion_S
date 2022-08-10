@@ -15,6 +15,7 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+import static co.konecta.sura.certificate.Interfaces.Casos.TareasDeMonitoreo.TaskMonitoringPage.SELECCIONAR_TAREA;
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
 import static co.konecta.sura.certificate.Interfaces.Casos.TareasDeMonitoreo.TaskMonitoringPage.INPUT_STATE;
 
@@ -41,12 +42,8 @@ public class TaskMonitoringStepsDefinitions {
     @And("^I select button edition monitoring task$")
     public void iSelectButtonEditionMonitoringTask() {
         actor.attemptsTo(Click.on(TaskMonitoringPage.MODULE_EXPANSION_MONITORING));
-        actor.attemptsTo(Click.on(TaskMonitoringPage.BUTTON_EDIT_MONITORING),
-                Click.on(INPUT_STATE),
-                Hit.the(Keys.ARROW_DOWN).into(INPUT_STATE),
-                Hit.the(Keys.ENTER).into(INPUT_STATE)
+        actor.attemptsTo(Click.on(TaskMonitoringPage.BUTTON_EDIT_MONITORING));
 
-        );
     }
 
 
@@ -74,5 +71,14 @@ public class TaskMonitoringStepsDefinitions {
     @And("^Escribimos los datos de la tare de monitoreo(.*),(.*),(.*),(.*),(.*)$")
     public void escribimosLosDatosDeLaTareDeMonitoreoNombreTipoTareaFechaVencimientoHoraVencimientoUsuario(String Nombre, String TipoTarea, String FechaVencimiento, String HoraVencimiento, String Usuario) {
         actor.attemptsTo(TaskMonitoring.whitData(Nombre, TipoTarea, FechaVencimiento, HoraVencimiento, Usuario));
+    }
+
+    @And("Hacemos el cambio de estado de la tarea: {string}")
+    public void hacemosElCambioDeEstadoDeLaTarea(String Estado) throws InterruptedException {
+        Thread.sleep(3000);
+        actor.attemptsTo(
+                Click.on(INPUT_STATE),
+                Click.on(SELECCIONAR_TAREA.of(String.valueOf(Estado)))
+        );
     }
 }

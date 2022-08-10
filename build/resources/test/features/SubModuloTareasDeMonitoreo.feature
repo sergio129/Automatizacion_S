@@ -1,4 +1,4 @@
-Feature: Monitoring
+Feature: Tareas de Monitoreo
   As a user
   I need to create or edition a task monitoring
 
@@ -17,7 +17,7 @@ Feature: Monitoring
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
       | Nombre | TipoTarea                           | FechaVencimiento | HoraVencimiento | Usuario           | modalmessage                    |
-      | Prueba | Monitoreo finalizacion del servicio | 2022-02-31       | 09:19am          | Sergio Luis Anaya | Registro guardado correctamente |
+      | Prueba | Monitoreo finalizacion del servicio | 2022-02-31       | 09:19am         | Sergio Luis Anaya | Registro guardado correctamente |
 
   @TestTaskMonitoringEdition
   Scenario Outline: Successful task monitoring edition
@@ -26,17 +26,12 @@ Feature: Monitoring
       | Sergio.anaya | Colombia_2022 |
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I select button edition monitoring task
-    And I type information in the field state <state>
-    #And I type information in the field type <type>
-    #And I type information in the field date <date>
-    #And I type information in the field expired hour <expiredhour>
-    #And I type information in the field user <userMonitoring>
-    And Selecionamos el Boton Guardar Tarea de Monitoreo
+    And Hacemos el cambio de estado de la tarea: "Cerrada"
+    And Seleccionamos el Boton Guardar Tarea de Monitoreo
     Then Se visualiza mensaje de la modal<modalmessage>
-
     Examples:
-      | state   | modalmessage                    |
-      | Cerrada | Registro guardado correctamente |
+      | modalmessage                    |
+      | Registro guardado correctamente |
 
   @TestValidacionCamposTareasDeMonitoreo
   Scenario Outline: Task monitoring submodule required fields
