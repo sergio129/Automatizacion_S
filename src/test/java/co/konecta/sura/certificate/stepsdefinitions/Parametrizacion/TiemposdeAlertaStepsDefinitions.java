@@ -56,11 +56,10 @@ public class TiemposdeAlertaStepsDefinitions {
                 Click.on(OPTION_YES_ALERT_TIME));
     }
 
-    @And("^I type information in the alert time with the service (.*) and the time (.*)$")
-    public void iTypeInformationInTheAlertTimeWithTheServiceAndTheTime(String serviceAlertTime, String time) {
-        actor.attemptsTo(TiemposDeAlertaTask.withInformationAlertTime(serviceAlertTime, time));
+
+    @And("^Escribimos la informacion de parametrizacion tiempos alerta, (.*), (.*), (.*)$")
+    public void escribimosLaInformacionDeParametrizacionTiemposAlertaLineaServicioTiempo(String Linea, String Servicio, String Tiempo) {
+        actor.attemptsTo(TiemposDeAlertaTask.withInformationAlertTime(Linea, Servicio,Tiempo));
+
     }
-
-
-
 }

@@ -12,12 +12,11 @@ Feature: Parametrizacion tiempos de alertas
       | Sergio.anaya | Colombia_2022 |
     And Entramos el el modulo de parametrizacion tiempos de alertas
     And Seleccionamos el boton creacion tiempos de alertas
-    And I type information in the alert time with the service <servicealert> and the time <time>
+    And Escribimos la informacion de parametrizacion tiempos alerta, <Linea>, <Servicio>, <Tiempo>
     Then Se visualiza mensaje de la modal<modalmessage>
-
     Examples:
-      | servicealert | time | modalmessage                    |
-      | Policia      | 32   | Registro guardado correctamente |
+      | Linea | Servicio         | Tiempo | modalmessage                    |
+      | ARL   | Emergencia salud | 32     | Registro guardado correctamente |
 
 
   @TestEdicionTiemposDeAlerta
@@ -27,12 +26,12 @@ Feature: Parametrizacion tiempos de alertas
       | Sergio.anaya | Colombia_2022 |
     And Entramos el el modulo de parametrizacion tiempos de alertas
     And Seleccionamos el boton editar tiempos de alertas
-    And I type information in the alert time with the service <servicealert> and the time <time>
+    And Escribimos la informacion de parametrizacion tiempos alerta, <Linea>, <Servicio>, <Tiempo>
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | servicealert | time | modalmessage                    |
-      | Policia      | 25   | Registro guardado correctamente |
+      | Linea | Servicio | Tiempo | modalmessage                    |
+      | Autos | Policia  | 25     | Registro guardado correctamente |
 
 
   @TestAlertTimeParameterizationDelete

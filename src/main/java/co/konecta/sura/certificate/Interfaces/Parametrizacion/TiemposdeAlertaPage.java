@@ -17,6 +17,8 @@ public class TiemposdeAlertaPage {
     public static final Target OPTION_YES_ALERT_TIME = Target.the("This the button yes alert time parameterization").locatedBy("/html/body/div[5]/div/div[3]/button[1]");
     public static final Target OPTION_LINE = Target.the("This the button option line parameterization").located(By.id("inputCreateServiceLineTimeAlertSearch"));
 
+    public static final Target SELECCIONAR_CAMPO = Target.the("SELECCIONAMOS UN CAMPO PASADO POR PARAMETRO").locatedBy("//div//span[contains(text(),'{0}')]");
+
 
 
 
