@@ -37,7 +37,7 @@ public class SubModuloAgendaStepsDefinitions {
             Thread.sleep(2000);
         }
 
-        @And("^Selecionamos el boton llamar$")
+        @And("^Seleccionamos el boton llamar$")
         public void selecionamosElBotonLlamar ()throws InterruptedException {
             actor.attemptsTo(Click.on(ICONO_LLAMAR));
             Thread.sleep(2000);

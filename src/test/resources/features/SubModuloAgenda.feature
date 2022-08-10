@@ -10,12 +10,12 @@ Feature: SubModulo agenda
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And Buscamos por numero de expediente <NumeroCaso>
+    And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And Escribimos en el modulo agenda el <tipocontacto>
     And clic en agregar modulo agenda
     And Escribimos en el modulo agenda campos a llamar <numeroallamar>,<departamento>,<municipio>
-    Then Selecionamos el boton llamar
+    Then Seleccionamos el boton llamar
 
     Examples:
-     | NumeroCaso      | tipocontacto | numeroallamar | departamento | municipio |
-      | 202121344537266 | asegurado    | 311233        | Antioquia    | Medellin  |
+      | tipocontacto | numeroallamar | departamento | municipio |
+      | asegurado    | 311233        | Antioquia    | Medellin  |
