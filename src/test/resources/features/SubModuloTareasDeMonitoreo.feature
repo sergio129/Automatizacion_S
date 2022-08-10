@@ -26,12 +26,12 @@ Feature: Tareas de Monitoreo
       | Sergio.anaya | Colombia_2022 |
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I select button edition monitoring task
-    And I type information in the field state <state>
+    And
     #And I type information in the field type <type>
     #And I type information in the field date <date>
     #And I type information in the field expired hour <expiredhour>
     #And I type information in the field user <userMonitoring>
-    And Selecionamos el Boton Guardar Tarea de Monitoreo
+    And Seleccionamos el Boton Guardar Tarea de Monitoreo
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
