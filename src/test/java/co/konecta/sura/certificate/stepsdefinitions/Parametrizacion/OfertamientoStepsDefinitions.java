@@ -31,7 +31,7 @@ public class OfertamientoStepsDefinitions {
     }
     @And("^Entramos a Parametrizacion Ofertamiento$")
     public void entramosAParametrizacionOfertamiento() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         actor.attemptsTo(Click.on(BUTTON_INITIAL_TAB),
                 Click.on(OPTION_MENU_PARAMETERIZATION));
         actor.has(MoveMouse.to(OPCION_OFERTAMIENTO).andThen(actions -> actions.click()));

@@ -28,7 +28,7 @@ public class OfertamientoTask implements Task {
                 Click.on(SELECCIONAR_LINEA_OFERTAMIENTO.of(String.valueOf(Linea))),
                 Hit.the(Keys.ESCAPE).into(CAMPO_LINEA_OFERTAMIENTO),
                 Click.on(CAMPO_SERVICIO_OFERTAMIENTO),
-                Enter.theValue(Servicio).into(BUSCAR_SERVICIO_OFERTAMIENTO).thenHit(Keys.ENTER),
+                Enter.theValue(Servicio).into(BUSCAR_SERVICIO_OFERTAMIENTO).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE),
                 Click.on(CAMPO_DEPARTAMENTO_OFERTAMIENTO),
                 Enter.theValue(Departamento).into(BUSCAR_DEPARTAMENTO_OFERTAMIENTO),
                 Click.on(SELECCIONAR_DEPARTAMENTO_OFERTAMIENTO.of(String.valueOf(Departamento))),
