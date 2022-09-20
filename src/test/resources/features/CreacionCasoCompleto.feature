@@ -7,13 +7,13 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
   Scenario Outline:Creacion de Caso
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+      | Sergio.anaya | Colombia_2024 |
     And Seleccionamos el boton de Crear Caso
     #Gestionamos informacion del Expediente
     And Escribimos el numero de caso en L202121344537270 y lo pegamos
     And Escribmos la informacion de la creacion de expediente
       | NombreSol   | Telefono1   | Placa  | DireccionServicio | UbicacionServicio | DetalleDireccion | Departamento | Municicpio | GestorCordi | Linea | Servicio |
-      | Juan Felipe | 31035048745 | DTA54R | Calle 92144       | Produccion        | Pruebas QA       | Cordoba      | Lorica     | Si          | Autos | Grua     |
+      | Jesica Diaz | 31035048745 | DTA54R | Calle 92144       | Produccion        | Pruebas QA       | Cordoba      | Lorica     | Si          | Autos | Grua     |
     #Gestionamos el cambio de estado
     And Hacemos Cambio de Estado
       | CambioEstado |

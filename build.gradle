@@ -1,7 +1,6 @@
 version '1.0-SNAPSHOT'
 repositories {
     mavenLocal()
-
     mavenCentral()
 }
 
@@ -32,6 +31,7 @@ mainClassName = ':test --tests "co.konecta.sura.certificate.runners.PrincipalRun
 sourceCompatibility = 1.8
 
 dependencies {
+    implementation 'org.projectlombok:lombok:1.18.22'
     testImplementation 'org.projectlombok:lombok:1.18.24'
     testImplementation 'net.serenity-bdd:serenity-core:3.2.5'
     testImplementation 'net.serenity-bdd:serenity-junit:3.2.5'
@@ -42,8 +42,13 @@ dependencies {
     implementation 'net.serenity-bdd:serenity-emailer:2.1.0'
     testImplementation 'net.serenity-bdd:serenity-screenplay:3.2.5'
     testImplementation 'net.serenity-bdd:serenity-screenplay-webdriver:3.2.5'
-
+    implementation 'org.mongodb:mongo-java-driver:3.12.11'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
+    implementation 'org.mongodb:bson:4.7.1'
+    implementation 'org.apache.poi:poi:5.2.3'
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
+
+
 
 
     implementation 'net.serenity-bdd:serenity-ensure:3.2.5'
@@ -51,10 +56,11 @@ dependencies {
 
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.assertj:assertj-core:3.23.1'
-    testImplementation 'org.slf4j:slf4j-simple:1.7.36'
+    testImplementation 'org.slf4j:slf4j-simple:2.0.1'
 
     // https://mvnrepository.com/artifact/org.hamcrest/java-hamcrest
     testImplementation group: 'org.hamcrest', name: 'java-hamcrest', version: '2.0.0.0'
+    testImplementation 'org.projectlombok:lombok:1.18.22'
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
     testCompileOnly 'org.projectlombok:lombok:1.18.24'

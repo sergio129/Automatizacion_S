@@ -9,7 +9,7 @@ Feature: Page create case
   Scenario Outline: Successful case creation
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+      | Sergio.anaya | Colombia_2024 |
     And Seleccionamos el boton de Crear Caso
     And Escribimos el numero de caso en L202121344537270 y lo pegamos
     And Escribmos la informacion de la creacion de expediente

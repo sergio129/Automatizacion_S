@@ -9,11 +9,12 @@ Feature: Parametrizacion Indicativos de Marcacion
   Scenario Outline: Creacion Exitosa de indicativos de marcacion
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+      | Sergio.anaya | Colombia_2025 |
     And I enter dialing codes parameterization
     And I select button create dialing codes parameterization
     And I Write information in dialing codes parameterization<department> and <municipality> and <indicative>
     Then Se visualiza mensaje de la modal<modalmessage>
+    And hacemos conexion Base de datos
     Examples:
       | department | municipality  | indicative | modalmessage                    |
       | Vichada    | Santa Barbara | +70        | Registro guardado correctamente |

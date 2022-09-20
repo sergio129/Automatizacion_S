@@ -1,6 +1,7 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Tareas.BD.ConexionBD;
 import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
 import co.konecta.sura.certificate.Tareas.Casos.login.Login_Task;
 import co.konecta.sura.certificate.questions.TheModal;
@@ -37,11 +38,10 @@ public class LoginStepsDefinitions {
     public void setUp(){
 
         actor.can(BrowseTheWeb.with(getBrowser));
-
     }
 
-    @Given("^I entering in the application$")
-    public void iAmEntryInTheApplication() {}
+    @Given("^Ingreso a Sara$")
+    public void IngresoSara() {}
 
     @When("^Ingresamos a la aplicacion$")
     public void Ingresamosalaaplicacion(List<Map<String,String>> informacion) {
