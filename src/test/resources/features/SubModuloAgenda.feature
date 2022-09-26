@@ -10,7 +10,7 @@ Feature: SubModulo agenda
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
       | Sergio.anaya | Colombia_2022 |
-    And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
+    And Hacemos Busqueda del caso: "1E7F3790C0E22A1"
     And Escribimos en el modulo agenda el <tipocontacto>
     And clic en agregar modulo agenda
     And Escribimos en el modulo agenda campos a llamar <numeroallamar>,<departamento>,<municipio>

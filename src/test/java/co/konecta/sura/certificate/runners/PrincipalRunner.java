@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@TestCreacionIndicativosDeMarcacion",
+        tags = "@TestCaseComplete",
         monochrome = true
 )
 

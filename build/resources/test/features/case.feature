@@ -9,7 +9,7 @@ Feature: Page create case
   Scenario Outline: Successful case creation
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2024 |
+      | Sergio.anaya | Colombia_2025 |
     And Seleccionamos el boton de Crear Caso
     And Escribimos el numero de caso en L202121344537270 y lo pegamos
     And Escribmos la informacion de la creacion de expediente
@@ -17,7 +17,7 @@ Feature: Page create case
       | Juan Felipe | 31035048745 | DTA54R | Calle 92144       | Produccion        | Pruebas QA       | Cordoba      | Lorica     | Si          | Autos | Grua     |
     #Gestionamos el cambio de estado
     Then I view the modal save case with <message>
-
+    And hacemos conexion Base de datos
     Examples:
      | message                         |
      | Registro guardado correctamente |

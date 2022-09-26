@@ -10,26 +10,13 @@ import org.openqa.selenium.Keys;
 
 import static co.konecta.sura.certificate.Interfaces.Casos.advancedsearch.AdvancedSearchPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+
 @AllArgsConstructor
 public class AdvancedSearchTask implements Task {
 
-    private final String numberCase;
-    private final String licensePlate;
-    private final String securityCode;
-    private final String clickCase;
-    private final String assignedTo;
-    private final String department;
-    private final String municipality;
-    private final String line;
-    private final String caseClosureStatus;
-    private final String classCase;
-    private final String caseStatus;
-    private final String serviceStatus;
-    private final String service;
-    private final String typeService;
-    private final String specialService;
-    private final String customerType;
-    private final String supplier;
+    private final String numberCase, licensePlate, securityCode, clickCase, assignedTo, department, municipality;
+    private final String line,caseClosureStatus,classCase;
+    private final String caseStatus,serviceStatus,service,typeService, specialService,customerType,supplier;
 
     @Override
     public <T extends Actor> void performAs(T actor) {
@@ -70,8 +57,8 @@ public class AdvancedSearchTask implements Task {
 
     }
 
-    public static AdvancedSearchTask withInformationCaseSearch(String numberCase, String licensePlate, String securityCode, String clickCase, String assignedTo, String department, String municipality, String line, String caseClosureStatus, String classCase, String caseStatus, String serviceStatus, String service, String typeService, String specialService, String customerType, String supplier){
-        return instrumented(AdvancedSearchTask.class,numberCase,licensePlate,securityCode, clickCase , assignedTo, department, municipality, line, caseClosureStatus, classCase, caseStatus, serviceStatus, service, typeService, specialService, customerType, supplier
+    public static AdvancedSearchTask withInformationCaseSearch(String numberCase, String licensePlate, String securityCode, String clickCase, String assignedTo, String department, String municipality, String line, String caseClosureStatus, String classCase, String caseStatus, String serviceStatus, String service, String typeService, String specialService, String customerType, String supplier) {
+        return instrumented(AdvancedSearchTask.class, numberCase, licensePlate, securityCode, clickCase, assignedTo, department, municipality, line, caseClosureStatus, classCase, caseStatus, serviceStatus, service, typeService, specialService, customerType, supplier
         );
 
     }
