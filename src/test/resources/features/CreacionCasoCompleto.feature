@@ -7,7 +7,7 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
   Scenario Outline:Creacion de Caso
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+      | Sergio.anaya | Colombia_2025 |
     And Seleccionamos el boton de Crear Caso
     #Gestionamos informacion del Expediente
     And Escribimos el numero de caso en L202121344537270 y lo pegamos

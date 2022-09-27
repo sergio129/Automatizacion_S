@@ -159,9 +159,9 @@ public class CaseStepsDefinitions {
         Faker faker = new Faker();
         NumeroCaso = faker.random().hex(15);
         actor.attemptsTo(
-                Enter.theValue(NumeroCaso).into(CasePage.RESPONSABLE),
-                SendKeys.of(Keys.CONTROL + "A").into(CasePage.RESPONSABLE),
-                SendKeys.of(Keys.CONTROL + "C").into(CasePage.RESPONSABLE),
+                Enter.theValue(NumeroCaso).into(CasePage.INPUT_OBSERVATIONS_CASE),
+                SendKeys.of(Keys.CONTROL + "A").into(CasePage.INPUT_OBSERVATIONS_CASE),
+                SendKeys.of(Keys.CONTROL + "C").into(CasePage.INPUT_OBSERVATIONS_CASE),
                 SendKeys.of(Keys.CONTROL + "V").into(CasePage.INPUT_NUMBER_CASE));
         Thread.sleep(200);
     }

@@ -35,8 +35,8 @@ public class AlertaUckStepsDefinitions {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Dado("^que realizó una busqueda y edición en el modulo alerta UCK$")
-    public void queRealizóUnaBusquedaYEdiciónEnElModuloAlertaUCK() {
+    @Dado("^realizó una busqueda y edición en el modulo alerta UCK$")
+    public void RealizóUnaBusquedaYEdiciónEnElModuloAlertaUCK() {
     }
 
     @Y("^Ingresamos al modulo alertas UCK$")

@@ -15,8 +15,8 @@ Feature: Page advanced search case
     Then I view the case found
 
     Examples:
-     | numberCase       | licensePlate | securityCode | clickCase | assignedTo | department | municipality | line | caseClosureStatus | class | caseStatus | serviceStatus | service | typeService | specialService | customerType | supplier |
-     | 1111111111111111 |              |              |           |            |            |              |      |                   |       |            |               |         |             |                |              |          |
+      | numberCase       | licensePlate | securityCode | clickCase | assignedTo | department | municipality | line | caseClosureStatus | class | caseStatus | serviceStatus | service | typeService | specialService | customerType | supplier |
+      | 1111111111111111 |              |              |           |            |            |              |      |                   |       |            |               |         |             |                |              |          |
 
   @TestAdvancedSearchOptional
   Scenario Outline: Successful advanced search case optional
@@ -28,5 +28,5 @@ Feature: Page advanced search case
     Then I view the case found
 
     Examples:
-     | numberCase       | licensePlate | department | line  | service          |
-     | 2021060944354508 | SFG74R       | Putumayo   | Autos | Emergencia Salud |
+      | numberCase       | licensePlate | department | line  | service          |
+      | 2021060944354508 | SFG74R       | Putumayo   | Autos | Emergencia Salud |

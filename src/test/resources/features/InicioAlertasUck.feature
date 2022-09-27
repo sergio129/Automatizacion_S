@@ -3,7 +3,7 @@
 Característica: Busqueda y edicion alertas UCK ingresando los filtros de busqueda
 
   Antecedentes:
-    Dado que realizó una busqueda y edición en el modulo alerta UCK
+    Dado realizó una busqueda y edición en el modulo alerta UCK
 
   @TestBusquedaEdiciónUCK
 
