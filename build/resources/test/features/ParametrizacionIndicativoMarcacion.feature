@@ -29,8 +29,8 @@ Feature: Parametrizacion Indicativos de Marcacion
     And I Write information in dialing codes parameterization<department> and <municipality> and <indicative>
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
-      | user         | password       | department | municipality  | indicative | modalmessage                    |
-      | sergio.anaya | Colombia_2027* | Vichada    | Santa Barbara | +78        | Registro guardado correctamente |
+     | department | municipality  | indicative | modalmessage                    |
+     | Vichada    | Santa Barbara | +78        | Registro guardado correctamente |
 
   @TestDialingCodesParameterizationDelete
   Scenario Outline: Successful delete dialing codes parameterization

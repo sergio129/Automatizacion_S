@@ -44,8 +44,8 @@ Feature: Codigos de Salida Parametrizacion
     And Seleccionamos boton de eliminar codigos de salida
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
-      | line             | modalmensaje                     |  |
-      | Emergencia salud | Registro eliminado correctamente |  |
+      | line             | modalmensaje                     |
+      | Emergencia salud | Registro eliminado correctamente |
 
 
   @TestvalidaciondeCampos
