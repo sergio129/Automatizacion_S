@@ -1,0 +1,76 @@
+Feature: Creacion de expediente con interaccion con diferentes modulo
+
+  Background:
+    Given Creacion de caso interaccion modulos
+
+  @TestCreacionCaso
+  Scenario Outline:Creacion de Caso
+    When Ingresamos a la aplicacion
+      | usuario      | contrasena    |
+      | Sergio.anaya | Colombia_2025 |
+    And Seleccionamos el boton de Crear Caso
+    #Gestionamos informacion del Expediente
+    And Escribimos el numero de caso en L202121344537270 y lo pegamos
+    And Escribmos la informacion de la creacion de expediente
+      | NombreSol   | Telefono1   | Placa  | DireccionServicio | UbicacionServicio | DetalleDireccion | Departamento | Municicpio | GestorCordi | Linea | Servicio |
+      | Juan Felipe | 31035048745 | DTA54R | Calle 92144       | Produccion        | Pruebas QA       | Cordoba      | Lorica     | Si          | Autos | Grua     |
+    #Gestionamos el cambio de estado
+    And Hacemos Cambio de Estado
+      | CambioEstado |
+      | Abierto      |
+    #Gestionamos el sub modulo gestion salud
+    And Click en crear registro emergencia salud
+    And Escribimos datos comunes emergencia Salud:
+      | CanalIngreso            | TipoDocumento        | NumeroDocumento |
+      | Ingreso #888 Emergencia | Cédula de Ciudadanía | 7777777         |
+    And Tiene una Emergencia?:"Si"
+    And Preguntamos si tiene Dificultad en la atencion en salud
+      | DificultadSalud | TipoDificultad                  |
+      | Si              | Soporte App y/o Pagina sura.com |
+    And Escribimos los datos de tiene emergencia Si
+      | TipoEmergencia           | ServicioPrestado      | NombreAcompanante | Parentesco | Telefono    | PrestadorServicio |
+      | Emergencia por accidente | Atención Domiciliaria | Jesus Doria       | Novio(a)   | 31025487451 | Forja             |
+    And Escribimos las observaciones: "Pruebas QA" y guardamos
+    #Gestionamos el proveedor
+    And Hacemos Gestion de proveedor
+      | Proveedor      | RespuestaProveedor | TiempoMonitoreoSitio | TiempoMonitoreoDestino | CelularTecnico | TelfonoCentral | TelfonoCentral1 | Observaciones |
+      | RECURSO PROPIO | Toma Servicio      | 20                   | 50                     | 3103642145     | 3103642145     | 3103642145      | Pruebas QA    |
+     #Gestionamos el cambio de estado
+    And Hacemos Cambio de Estado
+      | CambioEstado |
+      | Programado   |
+     #Gestionamos el cambio de estado
+    And Hacemos Cambio de Estado
+      | CambioEstado                 |
+      | Aceptado y en desplazamiento |
+    #Gestionamos el modulo de novedades
+    And Seleccionamos el boton Crear novedad
+    And Hacemos Gestion de Novedades
+      | ReportaNovedad  | CausaNovedad                   | GenerarQueja | Radicado | Observaciones |
+      | Abogado virtual | Cambio abogado virtual a sitio | No           | A7445544 | Pruebas QA    |
+    #Gestionamos el modulo de Documentacion CNM
+    And Escribimos los datos de Documentacion CNM
+      | PersonaGestion     | GeneraQueja | Radicajo | Observaciones |
+      | Administrativo Aya | Si          | R5554454 | Pruebas QA    |
+    #Gestionamos el modulo de Finalizacion
+    And Seleccionamos el Boton Crear Finalizacion
+    And Escribimos informacion de Finalizacion
+      | Finazalicion | TipoRespuesta | Observaciones |
+      | Asegurado    | SMS           | Pruebas QA    |
+    #Gestionamos el modulo de Escalamientos Sura
+    And Seleccionamos el boton Crear Escalamientos Sura
+    And Escribimos la informacion de Escalamientos Sura
+      | TipoGestion           | PersonaGestion | TipoRespuesta   | GeneraQueja | Radicado | Obervaciones |
+      | Guardianes de la vida | Integracion    | No especificado | Si          | R555445  | Pruebas QA   |
+       #Gestionamos el cambio de estado
+    And Hacemos Cambio de Estado
+      | CambioEstado |
+      | Concluido    |
+        #Gestionamos el cambio de estado
+    And Hacemos Cambio de Estado
+      | CambioEstado |
+      | Finalizado   |
+    Examples:
+    Then Se visualiza mensaje de la modal<modalmensaje>
+      | modalmensaje                    |
+      | Registro guardado correctamente |
