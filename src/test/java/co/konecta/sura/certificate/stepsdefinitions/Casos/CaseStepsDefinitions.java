@@ -151,7 +151,6 @@ public class CaseStepsDefinitions {
         Thread.sleep(2000);
         actor.attemptsTo(
                 Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
-
     }
 
     @And("^Escribimos el numero de caso en (.*) y lo pegamos$")
@@ -165,7 +164,6 @@ public class CaseStepsDefinitions {
                 SendKeys.of(Keys.CONTROL + "V").into(CasePage.INPUT_NUMBER_CASE));
         Thread.sleep(200);
     }
-
 }
 
 
