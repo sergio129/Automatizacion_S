@@ -68,25 +68,7 @@ public class TablerosdecontrolStepsDefinitions {
 
     }
 
-    @And("^I type filters in the case board parameterization with the case status (.*) and status service (.*) and department request (.*) and service (.*) and special service (.*)$")
-    public void iTypeFiltersInTheFieldsCaseBoardParameterizationStatusAndStatusServiceAndDepartmentRequestAndLineLineAndServiceAndSpecialService(String caseStatus, String statusService, String departmentRequest, String service, String specialService) {
-        actor.attemptsTo(
-                Click.on(CAMPO_ESTADO_EXPEDIENTE),
-                Enter.theValue(caseStatus).into(INPUT_SEARCH_CASE_STATUS_FILTER_BOARDS_PARAMETERIZATION).thenHit(Keys.ENTER),
-                Click.on(CAMPO_ESTADO_SERVICIO),
-                Enter.theValue(statusService).into(INPUT_SEARCH_SERVICE_STATUS_FILTER_BOARDS_PARAMETERIZATION).thenHit(Keys.ENTER),
-                Click.on(CAMPO_DEPARTAMENTO_SOLICITA),
-                Enter.theValue(departmentRequest).into(INPUT_SEARCH_DEPARTMENT_REQUEST_FILTER_BOARDS_PARAMETERIZATION).thenHit(Keys.ENTER),
-                Click.on(CAMPO_LINEA),
-                Hit.the(Keys.ARROW_DOWN).into(CAMPO_LINEA),
-                Hit.the(Keys.ENTER).into(CAMPO_LINEA),
-                Click.on(CAMPO_SERVICIO),
-                Enter.theValue(service).into(INPUT_SEARCH_SERVICE_FILTER_BOARDS_PARAMETERIZATION).thenHit(Keys.ENTER),
-                Click.on(CAMPO_SERVICIOS_ESPECIALES),
-                Enter.theValue(specialService).into(INPUT_SEARCH_SPECIAL_SERVICE_FILTER_BOARDS_PARAMETERIZATION).thenHit(Keys.ENTER),
-                Click.on(BOTON_GUARDAR));
 
-    }
 
     @And("^I type information in the monitoring task board parameterization with the board name (.*) and fields show (.*)$")
     public void iTypeInformationInTheMonitoringTaskBoardParameterizationWithTheBoardNameAndFieldsShowAndOnlyMyCases(String boardName, String fieldsShow) {
