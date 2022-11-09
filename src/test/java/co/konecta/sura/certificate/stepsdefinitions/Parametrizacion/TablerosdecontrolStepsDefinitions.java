@@ -35,9 +35,6 @@ public class TablerosdecontrolStepsDefinitions {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("^I create, edition or delete a control boards parameterization$")
-    public void iCreateOrEditionAControlBoardsParameterization() {
-    }
 
     @And("^I entering control boards parameterization")
     public void iEnteringControlBoardsMenu() throws InterruptedException {
@@ -63,73 +60,9 @@ public class TablerosdecontrolStepsDefinitions {
                 Click.on(OPTION_YES_CONTROL_BOARDS_PARAMETERIZATION));
     }
 
-    @And("^I type information in the case board parameterization with the board name (.*) and fields show (.*)$")
-    public void iTypeInformationInTheCaseBoardParameterizationNameAndFieldsShowAndOnlyMyCases(String boardName, String fieldsShow) throws InterruptedException {
-
-    }
 
 
 
-    @And("^I type information in the monitoring task board parameterization with the board name (.*) and fields show (.*)$")
-    public void iTypeInformationInTheMonitoringTaskBoardParameterizationWithTheBoardNameAndFieldsShowAndOnlyMyCases(String boardName, String fieldsShow) {
-        actor.attemptsTo(Click.on(INPUT_BOARD_TYPE_PARAMETERIZATION),
-                Hit.the(Keys.ARROW_DOWN).into(INPUT_BOARD_TYPE_PARAMETERIZATION),
-                Hit.the(Keys.ENTER).into(INPUT_BOARD_TYPE_PARAMETERIZATION));
-        actor.attemptsTo(TablerosdeControlInfomacionBasicaTask.withInformationControlBoardsParameterization(boardName, fieldsShow));
-    }
-
-    @And("^I type filters in the monitoring task board parameterization with the supplier (.*) and monitoring type (.*) and assigned user (.*)$")
-    public void iTypeFiltersInTheMonitoringTaskBoardParameterizationWithTheClickCaseAndStatusTaskAndSupplierAndMonitoringTypeAndAssignedUser(String supplier, String typeMonitoring, String assignedUser) {
-        actor.attemptsTo(Click.on(CAMPO_LINEA),
-                Click.on(CAMPO_GESTION_COORDINACION),
-                Hit.the(Keys.ARROW_DOWN).into(CAMPO_GESTION_COORDINACION),
-                Hit.the(Keys.ENTER).into(CAMPO_GESTION_COORDINACION),
-                Click.on(CAMPO_LINEA),
-                Hit.the(Keys.ARROW_DOWN).into(CAMPO_LINEA),
-                Hit.the(Keys.ENTER).into(CAMPO_LINEA),
-                Click.on(CAMPO_ESTADO_DE_TAREAS),
-                Hit.the(Keys.ARROW_DOWN).into(CAMPO_ESTADO_DE_TAREAS),
-                Hit.the(Keys.ENTER).into(CAMPO_ESTADO_DE_TAREAS),
-                Click.on(CAMPO_TIPO_DE_MONITOREO),
-                Enter.theValue(supplier).into(INPUT_SEARCH_SUPPLIER_FILTER_BOARDS_PARAMETERIZATION).thenHit(Keys.ENTER),
-                Click.on(CAMPO_TIPO_DE_MONITOREO),
-                Enter.theValue(typeMonitoring).into(INPUT_SEARCH_MONITORING_TYPE_FILTER_BOARDS_PARAMETERIZATION).thenHit(Keys.ENTER),
-                Click.on(INPUT_ASSIGNED_USER_FILTER_BOARDS_PARAMETERIZATION),
-                Enter.theValue(assignedUser).into(INPUT_SEARCH_ASSIGNED_USER_FILTER_BOARDS_PARAMETERIZATION).thenHit(Keys.ENTER),
-                Click.on(BOTON_GUARDAR));
-    }
-
-    @And("^I type information in the closure case board parameterization with the board name (.*) and fields show (.*)$")
-    public void iTypeInformationInTheClosureCaseBoardParameterizationWithTheBoardNameAndFieldsShowAndOnlyMyCases(String boardName, String fieldsShow) {
-        actor.attemptsTo(Click.on(INPUT_BOARD_TYPE_PARAMETERIZATION),
-                Hit.the(Keys.ARROW_DOWN).into(INPUT_BOARD_TYPE_PARAMETERIZATION),
-                Hit.the(Keys.ARROW_DOWN).into(INPUT_BOARD_TYPE_PARAMETERIZATION),
-                Hit.the(Keys.ENTER).into(INPUT_BOARD_TYPE_PARAMETERIZATION));
-        actor.attemptsTo(TablerosdeControlInfomacionBasicaTask.withInformationControlBoardsParameterization(boardName, fieldsShow));
-
-    }
-
-    @And("^I type filters in the closure case board parameterization with the service (.*) and supplier (.*) and special service (.*) and assigned user (.*)$")
-    public void iTypeFiltersInTheClosureBoardParameterizationCaseWithTheServiceAndSupplierAndSpecialServiceAndAssignedUser(String service, String supplier, String specialService, String assignedUser) {
-        actor.attemptsTo(Click.on(CAMPO_LINEA),
-                Click.on(CAMPO_GESTION_COORDINACION),
-                Hit.the(Keys.ARROW_DOWN).into(CAMPO_GESTION_COORDINACION),
-                Hit.the(Keys.ENTER).into(CAMPO_GESTION_COORDINACION),
-                Click.on(CAMPO_LINEA),
-                Hit.the(Keys.ARROW_DOWN).into(CAMPO_LINEA),
-                Hit.the(Keys.ENTER).into(CAMPO_LINEA),
-                Click.on(CAMPO_SERVICIO),
-                Enter.theValue(service).into(INPUT_SEARCH_SERVICE_FILTER_BOARDS_PARAMETERIZATION).thenHit(Keys.ENTER),
-                Click.on(CAMPO_TIPO_DE_MONITOREO),
-                Enter.theValue(supplier).into(INPUT_SEARCH_SUPPLIER_FILTER_BOARDS_PARAMETERIZATION).thenHit(Keys.ENTER),
-                Click.on(CAMPO_SERVICIOS_ESPECIALES),
-                Enter.theValue(specialService).into(INPUT_SEARCH_SPECIAL_SERVICE_FILTER_BOARDS_PARAMETERIZATION).thenHit(Keys.ENTER),
-                Click.on(INPUT_CLOSURE_STATUS_FILTER_BOARDS_PARAMETERIZATION),
-                Hit.the(Keys.ENTER).into(INPUT_CLOSURE_STATUS_FILTER_BOARDS_PARAMETERIZATION),
-                Click.on(INPUT_ASSIGNED_USER_FILTER_BOARDS_PARAMETERIZATION),
-                Enter.theValue(assignedUser).into(INPUT_SEARCH_ASSIGNED_USER_FILTER_BOARDS_PARAMETERIZATION).thenHit(Keys.ENTER));
-
-    }
 
     @And("^I no type information control boards parameterization$")
     public void iNoTypeInformationControlBoardsParameterization() {

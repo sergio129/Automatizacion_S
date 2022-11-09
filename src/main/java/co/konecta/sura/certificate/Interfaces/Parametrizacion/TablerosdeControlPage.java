@@ -37,10 +37,12 @@ public class TablerosdeControlPage {
     public static final Target CAMPO_PROVEEDOR = Target.the("CAMPO PROVEEDOR").located(By.id("controlPanelProvider"));
     public static final Target INPUT_SEARCH_SUPPLIER_FILTER_BOARDS_PARAMETERIZATION = Target.the("This the input search supplier filter boards parameterization").located(By.id("inputControlPanelProviderSearch"));
     public static final Target CAMPO_TIPO_DE_MONITOREO = Target.the("CAMPO TIPO DE MONITOREO").located(By.id("monitoringTypeCtrl"));
+    public static final Target CAMPO_TIPO_SERVICIO = Target.the("CAMPO TIPO DE SERVICIO").located(By.id("controlPanelServiceTypeFilter"));
+
     public static final Target INPUT_SEARCH_MONITORING_TYPE_FILTER_BOARDS_PARAMETERIZATION = Target.the("This the input search monitoring type filter boards parameterization").located(By.id("inputMonitoringTypeCtrlSearch"));
     public static final Target INPUT_ASSIGNED_USER_FILTER_BOARDS_PARAMETERIZATION = Target.the("This the input assigned user filter boards parameterization").located(By.id("controlPanelAssignedCtrl"));
     public static final Target INPUT_SEARCH_ASSIGNED_USER_FILTER_BOARDS_PARAMETERIZATION = Target.the("This the input search assigned user filter boards parameterization").located(By.id("inputControlPanelAssignedCtrlSearch"));
-    public static final Target INPUT_CLOSURE_STATUS_FILTER_BOARDS_PARAMETERIZATION = Target.the("This the input closure status filter boards parameterization").located(By.id("stateClosingCaseCtrlFilter"));
+    public static final Target CAMPO_ESTADO_CIERRE = Target.the("CAMPO ESTADO DE CIERRE TAREA").located(By.id("stateClosingCaseCtrlFilter"));
     public static final Target BUTTON_CREATE_CONTROL_BOARDS_PARAMETERIZATION = Target.the("Boton creacion Parametrizacion tablero de control").locatedBy("#createControlPanelParameterization");
     public static final Target BUTTON_EDIT_CONTROL_BOARDS_PARAMETERIZATION = Target.the("This the button edit control board parameterization").located(By.id("editControlPanelParameterization"));
     public static final Target BUTTON_DELETE_CONTROL_BOARDS_PARAMETERIZATION = Target.the("This the button delete control board parameterization").located(By.id("deleteControlPanelParameterization"));
