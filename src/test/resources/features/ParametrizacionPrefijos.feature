@@ -2,13 +2,13 @@ Feature: Parametrizacion Prefijos
   El usuario crea, edita y elimina prefijos
 
   Background:
-    Given Creo, Edito y elimino Prefijos
-
-  @TestCreacionPrefijos @Test1
-  Scenario Outline: Creacion Exitosa de Prefijos
-    When Ingresamos a la aplicacion
+    Given Ingresamos a la aplicacion
       | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+      | Sergio.anaya | Colombia_2026 |
+
+  @TestCreacionPrefijos
+  Scenario Outline: Creacion Exitosa de Prefijos
+    When Ingresamos a la aplicacion y gestionamos
     And Entramos a parametrizacion prefijos
     And Seleccionamos el boton creacion prefijos
     And Escribimos la informacion de prefijos linea<linea>, servicio<servicio>, prefijos<prefijos>
@@ -20,9 +20,7 @@ Feature: Parametrizacion Prefijos
 
   @TestEditarPrefijos
   Scenario Outline: Edicion Exitosa de Prefijos
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When  Ingresamos a la aplicacion y gestionamos
     And Entramos a parametrizacion prefijos
     And Se filtra por linea<linea>, Servicio<servicio>, prefijos<prefijos> y Buscamos
     And Seleccionamos el boton editar prefijos
@@ -35,9 +33,7 @@ Feature: Parametrizacion Prefijos
 
   @TestEliminarPrefijos
   Scenario Outline: Eliminacion Exitosa de Prefijos
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Ingresamos a la aplicacion y gestionamos
     And Entramos a parametrizacion prefijos
     And Se filtra por linea<linea>, Servicio<servicio>, prefijos<prefijos> y Buscamos
     And Seleccionamos el boton eliminar prefijos
@@ -48,9 +44,7 @@ Feature: Parametrizacion Prefijos
 
   @TestValidacionDeCampos
   Scenario Outline: Validacion de Campos Parametrizacion prefijos
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When  Ingresamos a la aplicacion y gestionamos
     And Entramos a parametrizacion prefijos
     And Seleccionamos el boton creacion prefijos
     And Seleccionamos el boton guardar prefijos

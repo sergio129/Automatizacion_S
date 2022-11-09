@@ -7,7 +7,7 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
   Scenario Outline:Creacion de Caso
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2025 |
+      | Sergio.anaya | Colombia_2026 |
     And Seleccionamos el boton de Crear Caso
     #Gestionamos informacion del Expediente
     And Escribimos el numero de caso en L202121344537270 y lo pegamos
@@ -23,7 +23,7 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
     And Escribimos datos comunes emergencia Salud:
       | CanalIngreso            | TipoDocumento        | NumeroDocumento |
       | Ingreso #888 Emergencia | Cédula de Ciudadanía | 7777777         |
-    And Tiene una Emergencia?:"Si"
+    And Tiene una Emergencia?:"No"
     And Preguntamos si tiene Dificultad en la atencion en salud
       | DificultadSalud | TipoDificultad                  |
       | Si              | Soporte App y/o Pagina sura.com |

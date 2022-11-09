@@ -10,7 +10,7 @@ Característica: Busqueda y edicion alertas UCK ingresando los filtros de busque
   Esquema del escenario: Busqueda  alertas UCK ingresando informacion en todos los filtros de busqueda
     Cuando Ingresamos a la aplicacion
       | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2025 |
+      | Sergio.anaya | Colombia_2026 |
     Y Ingresamos al modulo alertas UCK
     Y Escribimos la informacion en los campos de seleccion <nombrealerta>,<linea>,<servicio>,<estadoservicio>,<guardianes>,<flujosespeciales>,<tipomonitoreo>
     Y clic en el boton buscar
@@ -20,8 +20,8 @@ Característica: Busqueda y edicion alertas UCK ingresando los filtros de busque
       | edicion de campos prueba | Validacion Lider | Solicitud del proveedor | Guardianes de la vida |
     Entonces Se visualiza mensaje de la modal<modalmessage>
     Ejemplos:
-      | nombrealerta | linea             | servicio          | estadoservicio | guardianes | flujosespeciales | tipomonitoreo | modalmessage                    |
-      | Programados  | Conductor elegido | Conductor elegido | Abierto        | Guardianes | no               |               | Registro guardado correctamente |
+      | nombrealerta     | linea | servicio         | estadoservicio               | guardianes | flujosespeciales | tipomonitoreo | modalmessage                    |
+      | Tareas monitoreo | Autos | Abogado En Sitio | Aceptado y en desplazamiento | No         | no               | no            | Registro guardado correctamente |
 
 
   @TestBusquedaporlineayservicio

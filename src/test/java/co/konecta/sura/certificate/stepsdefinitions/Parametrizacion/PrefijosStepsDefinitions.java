@@ -25,15 +25,11 @@ public class PrefijosStepsDefinitions {
     WebDriver driver;
     private final Actor actor = Actor.named("Usuario");
 
-
     @Before
     public void setUp() {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("^Creo, Edito y elimino Prefijos$")
-    public void CreoEditoEliminoPrefijos() {
-    }
 
     @And("^Entramos a parametrizacion prefijos$")
     public void EntramosParametrizacionPrefijos() throws InterruptedException {

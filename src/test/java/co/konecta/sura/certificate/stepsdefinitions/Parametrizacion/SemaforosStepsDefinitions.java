@@ -30,10 +30,6 @@ public class SemaforosStepsDefinitions {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("^I create or edition a traffic light parameterization$")
-    public void iCreateOrEditionATrafficLightParameterization() {
-    }
-
 
     @And("^I entering traffic light parameterization$")
     public void iEnteringTrafficLightParameterization() throws InterruptedException {

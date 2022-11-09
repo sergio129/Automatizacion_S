@@ -7,7 +7,7 @@ Feature: Modulo de Casos Usuarios Registrados
   Scenario Outline:Creacion Exitosa de parametrizacion Ofertamiento
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+      | Sergio.anaya | Colombia_2026 |
     And entramos el modulo de Casos Usuarios Registrados
     And Listamos Usuarios Registrados por<Rol>
    # Then Se visualiza ventana usuarios registrados<modalmensaje>

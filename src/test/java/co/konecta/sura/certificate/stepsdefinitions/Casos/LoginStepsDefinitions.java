@@ -1,11 +1,9 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
-import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
 import co.konecta.sura.certificate.Tareas.Casos.login.Login_Task;
 import co.konecta.sura.certificate.questions.TheModal;
 import io.cucumber.java.Before;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -47,6 +45,7 @@ public class LoginStepsDefinitions {
     public void Ingresamosalaaplicacion(List<Map<String,String>> informacion) {
         actor.wasAbleTo(Open.browserOn(homePage));
         actor.attemptsTo(Login_Task.whitCredentials(informacion));
+
     }
 
     @Then("^I view the message (.*)$")
@@ -64,5 +63,9 @@ public class LoginStepsDefinitions {
         }
 
 
+    @When("Ingresamos a la aplicacion y gestionamos")
+    public void ingresamosALaAplicacionYGestionamos() {
+
+    }
 }
 

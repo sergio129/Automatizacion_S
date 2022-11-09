@@ -29,10 +29,6 @@ public class RamosStepsDefinitions {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("^I create bouquets parameterization$")
-    public void ICreateBouquetsParameterization() {
-    }
-
     @And("^I enter bouquets parameterization$")
     public void IEnterBouquetsParameterization() throws InterruptedException {
         Thread.sleep(5000);
