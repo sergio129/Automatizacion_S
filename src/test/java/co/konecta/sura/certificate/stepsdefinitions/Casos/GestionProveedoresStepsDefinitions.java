@@ -38,9 +38,6 @@ public class GestionProveedoresStepsDefinitions {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("^I create or edition a provider for a case$")
-    public void iCreateAProviderForACase() {
-    }
 
     @And("^I type information in the fields supplier name (.*) and supplier response (.*) and time monitoring site (.*) and time monitoring destination (.*) and technical cellphone (.*) and central phone (.*) and central phone (.*) and observations (.*)$")
     public void iTypeInformationInTheFieldsSupplierNameAndSupplierResponseAndTimeMonitoringSiteAndTimeMonitoringDestinationAndTechnicalCellphoneAndCentralPhoneAndCentralPhoneAndObservations(List<Map<String, String>> informacion) throws InterruptedException {

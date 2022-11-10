@@ -31,9 +31,6 @@ public class SubModuloGestionSaludStepsDefinitions {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("^Regristro de informacion Sub modulo Gestion Salud$")
-    public void RegristroInformacionSubModuloGestionSalud() {
-    }
 
     @And("^Click en crear registro emergencia salud$")
     public void ClickCrearRegistroEmergenciaSalud() throws InterruptedException {

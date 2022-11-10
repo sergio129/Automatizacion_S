@@ -9,7 +9,7 @@ Feature: Ending
   Scenario Outline: Successful ending creation
     When Ingresamos a la aplicacion
       | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+      | Sergio.anaya | Colombia_2026 |
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And Seleccionamos el Boton Crear Finalizacion
     And Escribimos informacion de Finalizacion
