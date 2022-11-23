@@ -3,10 +3,11 @@ Feature: Pruebas Login
   Background:
     Given Ingrear a Sara con nuevo login
 
-  @Testruebas
+  @TestPruebasLogin
   Scenario Outline: Login
     When Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
-    Then I view the message <message>
+  When Gestionamos en Sara
+    Then Se visualiza mensaje de la modal<mensaje>
 
     Examples:
-      | message |
+      | mensaje |

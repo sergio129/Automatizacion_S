@@ -19,4 +19,7 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+    public String toSrinString(){
+        return "Usuario"+getUsername()+"Contraseña: "+getPassword();
+    }
 }

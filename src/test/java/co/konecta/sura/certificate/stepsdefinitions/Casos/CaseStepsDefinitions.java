@@ -5,7 +5,6 @@ import co.konecta.sura.certificate.Interfaces.Casos.cases.CasePage;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import co.konecta.sura.certificate.Tareas.Casos.casetask.Case;
 import co.konecta.sura.certificate.Tareas.Casos.casetask.CaseModel;
-import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
 import com.github.javafaker.Faker;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;

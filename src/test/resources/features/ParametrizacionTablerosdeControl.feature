@@ -3,13 +3,11 @@ Feature: Parametrizacion Tableros de control
   I need to create, edition or delete a control boards parameterization
 
   Background:
-    Given Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2026 |
+  Given  Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCreacionExitosaParametrizacionTablerosDeControl
   Scenario Outline:Creacion Exitosa de Tableros de Control
-    When  Ingresamos a la aplicacion y gestionamos
+    When  Gestionamos en Sara
     And I entering control boards parameterization
     And I select button create control boards parameterization
     And Ingresamos la informacion Basica de tableros de control Nombre Tablero:"Nombre_Tablero", Tipo de Tablero: "Casos"
@@ -24,7 +22,7 @@ Feature: Parametrizacion Tableros de control
 
   @TestCreacionExitosaParametrizacionTablerosDeControlFiltros
   Scenario Outline:Creacion Exitosa de Tableros de Control con filtros
-    When  Ingresamos a la aplicacion y gestionamos
+    When  Gestionamos en Sara
     And I entering control boards parameterization
     And I select button create control boards parameterization
     And Ingresamos la informacion Basica de tableros de control Nombre Tablero:"Tablero Tareas de monitoreo", Tipo de Tablero: "Tareas de monitoreo"
@@ -44,7 +42,7 @@ Feature: Parametrizacion Tableros de control
 
   @TestControlBoardsParameterizationDelete
   Scenario Outline: Control boards closure case parameterization successful delete
-    When  Ingresamos a la aplicacion y gestionamos
+    When  Gestionamos en Sara
     And I entering control boards parameterization
     And I select button delete control boards parameterization
     Then Se visualiza mensaje de la modal<modalmessage>
@@ -56,7 +54,7 @@ Feature: Parametrizacion Tableros de control
 
   @TestControlBoardsParameterizationRequiredFields
   Scenario Outline: Control boards parameterization required fields
-    When  Ingresamos a la aplicacion y gestionamos
+    When  Gestionamos en Sara
     And I entering control boards parameterization
     And I select button create control boards parameterization
     And I no type information control boards parameterization

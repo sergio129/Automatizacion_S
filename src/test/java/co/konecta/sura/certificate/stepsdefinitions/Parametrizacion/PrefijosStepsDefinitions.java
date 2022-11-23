@@ -1,15 +1,9 @@
 package co.konecta.sura.certificate.stepsdefinitions.Parametrizacion;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
-import co.konecta.sura.certificate.Modelos.User;
-import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask2;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask;
-import co.konecta.sura.certificate.Utilidades.TestUserCreator;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;

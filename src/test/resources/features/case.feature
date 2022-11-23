@@ -3,11 +3,11 @@ Feature: Page create case
   I need to create or edition a case
 
   Background:
-    Given I create or edition a case
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCaseComplete
   Scenario Outline: Successful case creation
-  When Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
+  When Gestionamos en Sara
     And Seleccionamos el boton de Crear Caso
     And Escribimos el numero de caso en L202121344537270 y lo pegamos
     And Escribmos la informacion de la creacion de expediente
@@ -22,9 +22,7 @@ Feature: Page create case
 
   @TestCaseEdition
   Scenario Outline: Successful case edition
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I select button case edition with case <numberCase>
     And I type information in the field applicant name <applicantName>
     And I type information in the field phone1 <phone1>
@@ -46,9 +44,7 @@ Feature: Page create case
 
   @TestCaseRequiredFields
   Scenario Outline: Case submodule required fields
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I no type information in the case creation
     Then I view the modal save case with <message>
 

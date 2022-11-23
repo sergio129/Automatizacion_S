@@ -5,9 +5,7 @@ Feature: Contador de Casos
 
   @TestBusquedaDeCasos
   Scenario Outline: Buscar Casos Asiganados por estado
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2026 |
+    When Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
     And Entramos a Casos Buscar Casos
     And Filtramos por Estado del servicio contador de caso <Estado_Servicio>
     And Filtramos por fecha inicio contador de casos <FechaInicio>
@@ -21,9 +19,7 @@ Feature: Contador de Casos
 
   @TestBusquedaDeCasosTodosLosEstados
   Scenario Outline: Buscar Casos Asiganados por todos los estados
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
     And Entramos a Casos Buscar Casos
     And Seleccionamos Check de todos los estados
     And Filtramos por fecha inicio contador de casos <FechaInicio>

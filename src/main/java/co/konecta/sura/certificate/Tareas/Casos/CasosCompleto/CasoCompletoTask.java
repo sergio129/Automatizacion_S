@@ -1,14 +1,11 @@
 package co.konecta.sura.certificate.Tareas.Casos.CasosCompleto;
 
 import co.konecta.sura.certificate.Interfaces.Casos.cases.CasePage;
-import co.konecta.sura.certificate.Tareas.Casos.casetask.CaseModel;
-import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
 import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.SendKeys;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
 
