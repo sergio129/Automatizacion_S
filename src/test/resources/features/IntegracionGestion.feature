@@ -1,14 +1,12 @@
 Feature: Integracion Gestion de Expedientes
 
   Background:
-    Given Gestion, Edicion de expedientes: Integracion
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestEdicionExpedienteIntegracion
 
   Scenario Template:Gestion de Servicios Duplicados
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Ingresamos a Integracion Gestion
     And Escribimos la informacion de Integracion Gestion<FCita>,<Hora>,<Nomb>,<Tlf>,<DpSl>,<MpSl>,<Placa>,<DServ>,<UbServ>,<DllDirecc>,<ServEsp>,<GCord>,<linea>,<Servicio>
     Then Se visualiza mensaje de la modal<modalmensaje>

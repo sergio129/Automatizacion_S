@@ -1,11 +1,9 @@
 Feature: Parametrizacion Provedores
 
   Background:
-    Given subir Archivo
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestSubirArchivo
   Scenario: Creacion Exitosa de Prefijos
-    When Ingresamos a la aplicacion
-      | usuario       | contrasena     |
-      | arnulfo.gomez | Chinche102691* |
+    When Gestionamos en Sara
     Then Subimos el achivo

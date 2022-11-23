@@ -3,13 +3,11 @@ Feature: Ending
   I need to create or edition a ending
 
   Background:
-    Given I create or edition a ending for a case
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestEndingComplete
   Scenario Outline: Successful ending creation
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2026 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And Seleccionamos el Boton Crear Finalizacion
     And Escribimos informacion de Finalizacion
@@ -22,9 +20,7 @@ Feature: Ending
 
   @TestEndingEdition
   Scenario Outline: Successful ending edition
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I select button edition ending
     And Escribimos informacion de Finalizacion
@@ -37,9 +33,7 @@ Feature: Ending
 
   @TestEndingRequiredFields
   Scenario Outline: Ending submodule required fields
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I no type information ending
     Then Se visualiza mensaje de la modal<modalmessage>

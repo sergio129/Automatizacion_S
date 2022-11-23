@@ -1,13 +1,11 @@
 Feature: Gestion de Tablero de Bot de Ofertamiento
 
   Background:
-    Given Modulo Parametrizaciones
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestParamatrizacionBotMonitoreo
   Scenario Template:Creacion Exitosa de Parametrizacion Bot de Monitoreo
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Bot de monitoreo
     And Seleccionamos el boton Crear Parametrizacion Bot Monitoreo
     And Escribimos datos Parametrizacion Bot de monitoreo: <Nombre>,<GestionServicio>,<Linea>,<TipoServicio>,<TipoTarea>,<Departamento>,<Municipio>,<ServicioEspecial>
@@ -19,9 +17,7 @@ Feature: Gestion de Tablero de Bot de Ofertamiento
 
   @TestEditarParamatrizacionBotMonitoreo
   Scenario Template:Edicion Exitosa de Parametrizacion Bot de Monitoreo
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Bot de monitoreo
     And Buscamos por nombre de Parametrizacion:"Pruebas QA"
     And Seleccionamos el boton Editar Parametrizacion bot de monitoreo
@@ -34,9 +30,7 @@ Feature: Gestion de Tablero de Bot de Ofertamiento
 
   @TestHabilitar/DeshabilitarModuloBotMonitoreo
   Scenario Template:Habilitar/Inhabilitar módulo de Bot de Monitoreo
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Bot de monitoreo
     And Seleccionamos el boton de Habilitar/Inhabilitar módulo
     Then Se visualiza mensaje de la modal<modalmensaje>
@@ -46,9 +40,7 @@ Feature: Gestion de Tablero de Bot de Ofertamiento
 
   @TestHabilitar/DeshabilitarParamatrizacionBotMonitoreo
   Scenario Template:Habilitar/Inhabilitar Parametrizacion Exitosa de Parametrizacion Bot de Monitoreo
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Bot de monitoreo
     And Buscamos por nombre de Parametrizacion:"Pruebas automatizacion"
     And Seleccionamos el boton de Habilitar/Inhabilitar Parametrizacion

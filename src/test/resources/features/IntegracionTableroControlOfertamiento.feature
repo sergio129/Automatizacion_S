@@ -1,13 +1,11 @@
 Feature: Gestion de Tablero de Bot de Ofertamiento
 
   Background:
-    Given Modulo Integracion
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestReofertmaientoManual
   Scenario Template:Gestion de Tablero de control Ofertamiento
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a el Modulo de Integracion
     And Ingresamos al SubModulo Tableros de control Ofertamiento y buscamos por Expediente:<Exp>
     And Gestionamos y hacemos el Reofertamiento

@@ -2,13 +2,11 @@ Feature: Creacion, Edicion, Asociacion y Eliminar lista de Roles
 
 
   Background:
-    Given Creacion, Edicion, Asociacion y Eliminar lista de Roles
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCreacionListaRoles
   Scenario Outline: Creacion Exitosa de Rol
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Roles Lista roles
     And Damos Clic en Crear Lista Roles
     And Escribimos la informacion SubModulo Cierre de Expediente<NombreRol>,<HabilidadRol>,<EasyCase>
@@ -20,9 +18,7 @@ Feature: Creacion, Edicion, Asociacion y Eliminar lista de Roles
 
   @TestEdicionListaRoles
   Scenario Outline: Edicion Exitosa de Rol
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Roles Lista roles
     And Buscamos Lista Rol<BuscarRol>
     And Editamos Lista de Rol
@@ -35,9 +31,7 @@ Feature: Creacion, Edicion, Asociacion y Eliminar lista de Roles
 
   @TestEliminarListaRoles
   Scenario Outline: Edicion Exitosa de Rol
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Roles Lista roles
     And Buscamos Lista Rol<BuscarRol>
     And Eliminamos Lista de Rol
@@ -48,9 +42,7 @@ Feature: Creacion, Edicion, Asociacion y Eliminar lista de Roles
 
   @TestAsociarUsuarioRol
   Scenario Outline: Asociacion Exitosa de Usuario Rol
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Roles Lista roles
     And Buscamos Lista Rol<BuscarRol>
     And Asociamos Usuario Lista Rol<Asignado>
@@ -61,9 +53,7 @@ Feature: Creacion, Edicion, Asociacion y Eliminar lista de Roles
 
   @TestAsociarMenuRol
   Scenario Outline: Asociacion Exitosa de Usuario Rol
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Roles Lista roles
     And Buscamos Lista Rol<BuscarRol>
     And Asociamos Menu Rol

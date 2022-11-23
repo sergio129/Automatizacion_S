@@ -3,13 +3,10 @@ Feature: Control boards parameterization
   I need to create, edition or delete a control boards parameterization
 
   Background:
-    Given Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2026 |
-
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
   @TestCreacionTablerodeControl
   Scenario Outline: Creacion Exitosa de Tablero de control de Casos
-    When  Ingresamos a la aplicacion y gestionamos
+    When  Gestionamos en Sara
     And I select button create control boards
     And  Seleccionamos El tipo de Tablero de control "Casos"
     And I type information in the case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>,<misexpedientes>
@@ -23,7 +20,7 @@ Feature: Control boards parameterization
 
   @TestCreacionTableroTareasDeMonitoreo
   Scenario Outline: Creacion de Tablero de control de Tareas de monitoreo
-    When  Ingresamos a la aplicacion y gestionamos
+    When  Gestionamos en Sara
     And I select button create control boards
     And  Seleccionamos El tipo de Tablero de control "Tareas de monitoreo"
     And I type information in the case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>,<misexpedientes>
@@ -36,7 +33,7 @@ Feature: Control boards parameterization
 
   @TestControlBoardsClosureCase
   Scenario Outline: Successful control boards closure case
-    When  Ingresamos a la aplicacion y gestionamos
+    When  Gestionamos en Sara
     And I select button create control boards
     And  Seleccionamos El tipo de Tablero de control "Cierre de expediente"
     And I type information in the case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>,<misexpedientes>
@@ -50,7 +47,7 @@ Feature: Control boards parameterization
 
   @TestControlBoardsCasesEdition
   Scenario Outline: Control boards cases successful edition
-    When  Ingresamos a la aplicacion y gestionamos
+    When  Gestionamos en Sara
     And I select button edition control boards
     And  Seleccionamos El tipo de Tablero de control "Casos"
     And I type information in the case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>,<misexpedientes>
@@ -64,7 +61,7 @@ Feature: Control boards parameterization
 
   @TestControlBoardsTaskMonitoringEdition
   Scenario Outline: Control boards task monitoring successful edition
-    When  Ingresamos a la aplicacion y gestionamos
+    When  Gestionamos en Sara
     And I select button edition control boards
     And  Seleccionamos El tipo de Tablero de control "Tareas de monitoreo"
     And I type information in the case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>,<misexpedientes>
@@ -78,7 +75,7 @@ Feature: Control boards parameterization
 
   @TestControlBoardsClosureCaseEdition
   Scenario Outline: Control boards closure case successful edition
-    When  Ingresamos a la aplicacion y gestionamos
+    When  Gestionamos en Sara
     And I select button edition control boards
     And  Seleccionamos El tipo de Tablero de control "Cierre de expediente"
     And I type information in the case board with the board name <boardname> and fields show1 <fieldsshow1> and fields show2 <fieldsshow2> and fields show3 <fieldsshow3> and fields show4 <fieldsshow4> and fields show5 <fieldsshow5>,<misexpedientes>
@@ -92,7 +89,7 @@ Feature: Control boards parameterization
 
   @TestControlBoardsDelete
   Scenario Outline: Control boards closure case parameterization successful delete
-    When  Ingresamos a la aplicacion y gestionamos
+    When  Gestionamos en Sara
     And I select button delete control boards
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
@@ -101,7 +98,7 @@ Feature: Control boards parameterization
 
   @TestControlBoardsRequiredFields
   Scenario Outline: Control boards module required fields
-    When  Ingresamos a la aplicacion y gestionamos
+    When  Gestionamos en Sara
     And I select button create control boards
     And I no type information control boards
     Then Se visualiza mensaje de la modal<modalmessage>

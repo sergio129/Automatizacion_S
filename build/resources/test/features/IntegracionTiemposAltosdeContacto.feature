@@ -3,13 +3,11 @@ Feature: Tiempos altos de Contacto
   Necesito Gestionar los tiempos altos de contacto
 
   Background:
-    Given Gestion de tiempos altos de contacto
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestGestionTiemposAltosdeContacto
   Scenario Outline: Gestion de expedientes con tiempos altos de contacto
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entro a integracion tiempos altos de contacto
     And Hacemos un filtro por <linea>y<servicio>y<municipio>y<familia> y buscamos<gestion>
     Then Veo mensaje de gestion exitosa de tiempos altos de contacto<mensajemodal>

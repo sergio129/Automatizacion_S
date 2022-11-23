@@ -3,13 +3,11 @@ Feature: SubModulo Cierre expediente
   Puede registrar y editar informacion el en sudmodulo cierre expediente
 
   Background:
-    Given Regristro de informacion Sub modulo Cierre expediente
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @Testeditarcierre
   Scenario Outline: Edicion exitosa cierre expediente
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And Click en el modulo cierre de expediente
     And Escribimos en los campos <hora>,<maniobras>,<maniobrasjustificada>,<adicional>,<zonaroja>,<zonadestapada>,<adicionaljustificacion>,<asumecliente>,<convenio>
@@ -21,9 +19,7 @@ Feature: SubModulo Cierre expediente
 
   @TesteditarCierreCheckBanderazofallido
   Scenario Outline: Edicion exitosa cierre expediente foraneo fallido
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And Click en el modulo cierre de expediente
     And Seleccionamos el check banderazo fonaneo fallido
@@ -38,9 +34,7 @@ Feature: SubModulo Cierre expediente
 
   @TesteditarCierreCheckBanderazo
   Scenario Outline: Edicion exitosa cierre expediente foraneo fallido
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And Click en el modulo cierre de expediente
     And Seleccionamos el check banderazo fonaneo
@@ -54,9 +48,7 @@ Feature: SubModulo Cierre expediente
 
   @Testcrearcierre
   Scenario Outline: Edicion exitosa cierre expediente
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And Click en el modulo cierre de expediente
     And Clic en el icono crear

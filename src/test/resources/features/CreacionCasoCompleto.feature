@@ -1,11 +1,11 @@
 Feature: Creacion de expediente con interaccion con diferentes modulo
 
   Background:
-    Given Creacion de caso interaccion modulos
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCreacionCaso
   Scenario Outline:Creacion de Caso
-    When Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
+    When Gestionamos en Sara
     And Seleccionamos el boton de Crear Caso
     #Gestionamos informacion del Expediente
     And Escribimos el numero de caso en L202121344537270 y lo pegamos

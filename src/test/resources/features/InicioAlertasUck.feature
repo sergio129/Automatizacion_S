@@ -3,14 +3,12 @@
 Característica: Busqueda y edicion alertas UCK ingresando los filtros de busqueda
 
   Antecedentes:
-    Dado realizó una busqueda y edición en el modulo alerta UCK
+    Dado Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestBusquedaEdiciónUCK
 
   Esquema del escenario: Busqueda  alertas UCK ingresando informacion en todos los filtros de busqueda
-    Cuando Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2026 |
+    Cuando Gestionamos en Sara
     Y Ingresamos al modulo alertas UCK
     Y Escribimos la informacion en los campos de seleccion <nombrealerta>,<linea>,<servicio>,<estadoservicio>,<guardianes>,<flujosespeciales>,<tipomonitoreo>
     Y clic en el boton buscar
@@ -26,9 +24,7 @@ Característica: Busqueda y edicion alertas UCK ingresando los filtros de busque
 
   @TestBusquedaporlineayservicio
   Esquema del escenario: Busqueda informacion en los filtros linea y servicio
-    Cuando Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2025 |
+    Cuando Gestionamos en Sara
     Y Ingresamos al modulo alertas UCK
     Y filtramos por el campo <linea>,<servicio>
     Y clic en el boton buscar
@@ -43,9 +39,7 @@ Característica: Busqueda y edicion alertas UCK ingresando los filtros de busque
 
   @TestBusquedaporNombreAlerta
   Esquema del escenario: Busqueda filtro nombre de alerta
-    Cuando Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    Cuando Gestionamos en Sara
     Y Ingresamos al modulo alertas UCK
     Y filtramos por el campo seleccion nombre de alerta <nombrealerta>
     Y clic en el boton buscar
@@ -60,9 +54,7 @@ Característica: Busqueda y edicion alertas UCK ingresando los filtros de busque
 
   @TestBusquedaporEstadodelservicio
   Esquema del escenario: Busqueda informacion estado de servicio
-    Cuando Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    Cuando Gestionamos en Sara
     Y Ingresamos al modulo alertas UCK
     Y filtramos por el campo selccion estado servicio <estadoservicio>
     Y clic en el boton buscar

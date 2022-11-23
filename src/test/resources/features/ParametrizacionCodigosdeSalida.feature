@@ -3,13 +3,11 @@ Feature: Codigos de Salida Parametrizacion
   EL usuario crea, edita y elimina codigos de salida
 
   Background:
-    Given Creo, edito y elimino codigos de salida parametrizacion
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCreacionCodigoSalida
   Scenario Outline: Creacion Exitosa de Codigos de Salida
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a parametrizacion codigos de salida
     And Seleccionamos el boton creacion codigos de salida
     And Escribimos la informacion de codigos de salida<line> y <exitcode>
@@ -21,9 +19,7 @@ Feature: Codigos de Salida Parametrizacion
 
   @TestEdicionCodigoSalida
   Scenario Outline: Edicion Parametrizacion Codigos de salida
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a parametrizacion codigos de salida
     And Seleccionamos el boton buscar codigos de salida <line>
     And Seleccionamos boton de editar codigos de salida
@@ -36,9 +32,7 @@ Feature: Codigos de Salida Parametrizacion
 
   @TestEliminarCodigoSalida
   Scenario Outline: Eliminacion Parametrizacion Codigos de salida
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a parametrizacion codigos de salida
     And Seleccionamos el boton buscar codigos de salida <line>
     And Seleccionamos boton de eliminar codigos de salida
@@ -50,9 +44,7 @@ Feature: Codigos de Salida Parametrizacion
 
   @TestvalidaciondeCampos
   Scenario Outline: Validacion de campos de codigos de salida
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a parametrizacion codigos de salida
     And Seleccionamos el boton creacion codigos de salida
     And Seleccionamos el boton guardar codigo de salida

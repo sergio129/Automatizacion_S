@@ -1,13 +1,11 @@
 Feature: Parametrizacion de Bot de ofertamiento
 
   Background:
-    Given Creacion, Edicion y Activar-Desactivar Parametrizacion
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCreacionOfertamiento
   Scenario Outline:Creacion Exitosa de parametrizacion Ofertamiento
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Ofertamiento
     And Seleccionamos el boton crear parametrizacion de Ofertamiento
     And Digitamos la informacion de la parametrizacion de ofertamiento<Nombre>,<Coordinacion>,<Ofertamiento>,<Tiempo>,<Linea>,<Servicio>,<Departamento>,<Municipio>
@@ -19,9 +17,7 @@ Feature: Parametrizacion de Bot de ofertamiento
 
   @TestEdicionOfertamiento
   Scenario Outline:Edicion Exitosa de parametrizacion Ofertamiento
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Ofertamiento
     And Buscamos Parametrizacion de Ofertamiento por nombre: "PruebasAutomatizacion"
     And Seleccionamos el boton Editar parametrizacion de Ofertamiento
@@ -35,9 +31,7 @@ Feature: Parametrizacion de Bot de ofertamiento
 
   @TestActivarDesactivarOfertamiento
   Scenario Outline:Activar/desactivar parametrizacion Ofertamiento
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Ofertamiento
     And Buscamos Parametrizacion de Ofertamiento por nombre: "PruebasAutomatizacion"
     And Seleccionamos el boton de Activar/Desactivar Parametrizacion Ofertamiento

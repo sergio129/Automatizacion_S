@@ -1,13 +1,11 @@
 Feature: Generar Reportes
 
   Background:
-    Given Generar Reportes
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestGenerarTodosLosReportes
   Scenario Outline: Generar Reportes
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a el modulo de reportes
     And Filtramos por nombre de reporte<Name>, Fechas: <Fechainicio>,<FechaFin>
     Examples:
