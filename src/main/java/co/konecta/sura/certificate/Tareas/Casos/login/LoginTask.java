@@ -28,7 +28,7 @@ public class LoginTask implements Task {
         actor.attemptsTo(
                 Click.on(SURVEY),
                 Enter.theValue(user.getUsername()).into(USER),
-                Enter.theValue(user.getUsername()).into(PASSWORD).thenHit(Keys.ENTER), WaitUntil.the(BUTTON_INITIAL_TAB, isVisible()).forNoMoreThan(50000).milliseconds()
+                Enter.theValue(user.getPassword()).into(PASSWORD).thenHit(Keys.ENTER), WaitUntil.the(BUTTON_INITIAL_TAB, isVisible()).forNoMoreThan(50000).milliseconds()
 
         );
 
