@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "co.konecta.sura.certificate.stepsdefinitions",
         features = "src/test/resources/features/",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@TestDocumentacionCNM",
+        tags = "@TestCambioEstadoTableroCitasReprogramadas or @TestConexionRemotaUsuario or @TestContingencyStrategyParameterizationEdition",
         monochrome = true
 )
 
