@@ -7,9 +7,7 @@ Feature: Page create case
 
   @TestCaseComplete
   Scenario Outline: Successful case creation
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+  When Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
     And Seleccionamos el boton de Crear Caso
     And Escribimos el numero de caso en L202121344537270 y lo pegamos
     And Escribmos la informacion de la creacion de expediente

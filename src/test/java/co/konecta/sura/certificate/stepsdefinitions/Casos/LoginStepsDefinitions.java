@@ -1,8 +1,12 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
+import co.konecta.sura.certificate.Modelos.User;
+import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask2;
 import co.konecta.sura.certificate.Tareas.Casos.login.Login_Task;
+import co.konecta.sura.certificate.Utilidades.TestUserCreator;
 import co.konecta.sura.certificate.questions.TheModal;
+
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -24,7 +28,6 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 public class LoginStepsDefinitions {
 
 
-
     @Managed(driver = "chrome")
     private WebDriver getBrowser;
     private final Actor actor = Actor.named("Usuario");
@@ -32,17 +35,18 @@ public class LoginStepsDefinitions {
 
 
     @Before
-    public void setUp(){
+    public void setUp() {
 
         actor.can(BrowseTheWeb.with(getBrowser));
 
     }
 
     @Given("^I entering in the application$")
-    public void iAmEntryInTheApplication() {}
+    public void iAmEntryInTheApplication() {
+    }
 
     @When("^Ingresamos a la aplicacion$")
-    public void Ingresamosalaaplicacion(List<Map<String,String>> informacion) {
+    public void Ingresamosalaaplicacion(List<Map<String, String>> informacion) {
         actor.wasAbleTo(Open.browserOn(homePage));
         actor.attemptsTo(Login_Task.whitCredentials(informacion));
 
@@ -55,17 +59,20 @@ public class LoginStepsDefinitions {
                 )
         );
     }
-        @Then("^Se visualiza mensaje de la modal(.*)$")
-        public void SeVisualizaMensajeDeLaModal(String mensaje) throws Exception {
-            Thread.sleep(2000);
-            actor.attemptsTo(
-                    Ensure.that(MODAL_VALIDATION).text().isEqualTo(mensaje));
-        }
+
+    @Then("^Se visualiza mensaje de la modal(.*)$")
+    public void SeVisualizaMensajeDeLaModal(String mensaje) throws Exception {
+        Thread.sleep(2000);
+        actor.attemptsTo(
+                Ensure.that(MODAL_VALIDATION).text().isEqualTo(mensaje));
+    }
 
 
     @When("Ingresamos a la aplicacion y gestionamos")
     public void ingresamosALaAplicacionYGestionamos() {
 
     }
+
+
 }
 

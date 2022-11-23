@@ -138,4 +138,8 @@ public class TablerosdeControlStepsDefinitions {
                 Click.on(BUTTON_SAVE_CONTROL_BOARDS));
     }
 
+    @And("Seleccionamos el boton de crear Tableros de control")
+    public void seleccionamosElBotonDeCrearTablerosDeControl() {
+        actor.attemptsTo(Click.on(BUTTON_CREATE_CONTROL_BOARDS));
+    }
 }
