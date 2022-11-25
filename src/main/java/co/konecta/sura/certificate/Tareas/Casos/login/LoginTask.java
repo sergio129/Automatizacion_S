@@ -1,6 +1,6 @@
 package co.konecta.sura.certificate.Tareas.Casos.login;
 
-import co.konecta.sura.certificate.Modelos.User;
+import co.konecta.sura.certificate.Modelos.Login.User;
 import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;

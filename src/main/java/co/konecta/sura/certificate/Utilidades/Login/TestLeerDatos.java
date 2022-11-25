@@ -1,4 +1,4 @@
-package co.konecta.sura.certificate.Utilidades;
+package co.konecta.sura.certificate.Utilidades.Login;
 
 import java.util.ResourceBundle;
 

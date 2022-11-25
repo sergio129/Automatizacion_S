@@ -1,9 +1,9 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
-import co.konecta.sura.certificate.Modelos.User;
+import co.konecta.sura.certificate.Modelos.Login.User;
 import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
-import co.konecta.sura.certificate.Utilidades.TestUserCreator;
+import co.konecta.sura.certificate.Utilidades.Login.TestUserCreator;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -27,8 +27,8 @@ public class LoginStepsDefinitions {
     public void setUp() {
         actor.can(BrowseTheWeb.with(driver));
     }
-    @Given("Ingrear a Sara con nuevo login")
-    public void ingrearASaraConNuevoLogin() {
+    @Given("Ingrsear a Sara con nuevo login")
+    public void ingresarASaraConNuevoLogin() {
     }
 
     private final HomePage homePage = new HomePage();
@@ -37,6 +37,7 @@ public class LoginStepsDefinitions {
         actor.wasAbleTo(Open.browserOn(homePage));
         User user = TestUserCreator.getTipoUsuario(arg0);
         actor.attemptsTo(LoginTask.whitCredentials(user));
+
     }
     @Then("^Se visualiza mensaje de la modal(.*)$")
     public void SeVisualizaMensajeDeLaModal(String mensaje) throws Exception {

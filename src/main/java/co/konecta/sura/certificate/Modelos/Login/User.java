@@ -1,4 +1,4 @@
-package co.konecta.sura.certificate.Modelos;
+package co.konecta.sura.certificate.Modelos.Login;
 
 public class User {
     private String username;

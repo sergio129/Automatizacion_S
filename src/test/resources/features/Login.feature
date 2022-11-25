@@ -1,7 +1,7 @@
 Feature: Pruebas Login
 
   Background:
-    Given Ingrear a Sara con nuevo login
+    Given Ingresar a Sara con nuevo login
 
   @TestPruebasLogin
   Scenario Outline: Login
