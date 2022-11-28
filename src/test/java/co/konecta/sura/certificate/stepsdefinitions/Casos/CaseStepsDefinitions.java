@@ -155,7 +155,7 @@ public class CaseStepsDefinitions {
     @And("^Escribimos el numero de caso en (.*) y lo pegamos$")
     public void escribimosElNumeroDeCasoEnObservacionesYLoPegamos(String NumeroCaso) throws InterruptedException {
         Faker faker = new Faker();
-        NumeroCaso = faker.random().hex(15);
+        NumeroCaso = NumeroCaso + faker.random().hex(5);
         actor.attemptsTo(
                 Enter.theValue(NumeroCaso).into(CasePage.INPUT_OBSERVATIONS_CASE),
                 SendKeys.of(Keys.CONTROL + "A").into(CasePage.INPUT_OBSERVATIONS_CASE),

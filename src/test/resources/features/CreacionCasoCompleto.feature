@@ -8,7 +8,8 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
     When Gestionamos en Sara
     And Seleccionamos el boton de Crear Caso
     #Gestionamos informacion del Expediente
-    And Escribimos el numero de caso en L202121344537270 y lo pegamos
+    #Solo debe escribir los 10 primero numemero del expedientes los otros 5 se generan aleatoreamente
+    And Escribimos el numero de caso en 2022Prueba y lo pegamos
     And Escribmos la informacion de la creacion de expediente
       | NombreSol   | Telefono1   | Placa  | DireccionServicio | UbicacionServicio | DetalleDireccion | Departamento | Municicpio | GestorCordi | Linea | Servicio |
       | Juan Felipe | 31035048745 | DTA54R | Calle 92144       | Produccion        | Pruebas QA       | Cordoba      | Lorica     | Si          | Autos | Grua     |

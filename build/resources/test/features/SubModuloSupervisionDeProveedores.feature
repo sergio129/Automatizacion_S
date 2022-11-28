@@ -3,14 +3,12 @@ Feature: Page submodule supplier monitoring
   I need to create or edition a supplier monitoring
 
   Background:
-    Given Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2026 |
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
 
   @TestSupplierMonitoringComplete
   Scenario Outline: Successful supplier monitoring submodule
-    When  Ingresamos a la aplicacion y gestionamos
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I type information in the fields monitoring with <monitoringwith> and time of service <timeofservice> and response to monitoring <responsetomonitoring> and generates complaint <generatescomplaint> and adviser observation <adviserobservation> and supplier observation <supplierobservation>
     Then I view the modal save supplier monitoring with <modalmessage>
@@ -22,7 +20,7 @@ Feature: Page submodule supplier monitoring
 
   @TestSupplierMonitoringEdition
   Scenario Outline: Supplier monitoring submodule edition
-    When  Ingresamos a la aplicacion y gestionamos
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I type information edition in the fields monitoring with <monitoringwith> and time of service <timeofservice> and response to monitoring <responsetomonitoring> and generates complaint <generatescomplaint> and adviser observation <adviserobservation> and supplier observation <supplierobservation>
     Then I view the modal save supplier monitoring with <modalmessage>
@@ -34,7 +32,7 @@ Feature: Page submodule supplier monitoring
 
   @TestSupplierMonitoringCompleteWithComplaint
   Scenario Outline: Successful supplier monitoring submodule with filed complaint
-    When  Ingresamos a la aplicacion y gestionamos
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I type information complaint in the fields monitoring with <monitoringwith> and time of service <timeofservice> and response to monitoring <responsetomonitoring> and generates complaint <generatescomplaint> and adviser observation <adviserobservation> and supplier observation <supplierobservation> and filed complaint <filedcomplaint>
     Then I view the modal save supplier monitoring with <modalmessage>
@@ -46,7 +44,7 @@ Feature: Page submodule supplier monitoring
 
   @TestSupplierMonitoringCompleteEditionComplaint
   Scenario Outline: Successful supplier monitoring submodule edition with filed complaint
-    When  Ingresamos a la aplicacion y gestionamos
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I type information edition complaint in the fields monitoring with <monitoringwith> and time of service <timeofservice> and response to monitoring <responsetomonitoring> and generates complaint <generatescomplaint> and adviser observation <adviserobservation> and supplier observation <supplierobservation> and filed complaint <filedcomplaint>
     Then I view the modal save supplier monitoring with <modalmessage>
@@ -58,7 +56,7 @@ Feature: Page submodule supplier monitoring
 
   @TestSupplierMonitoringRequiredFields
   Scenario Outline: Supplier monitoring submodule required fields
-    When  Ingresamos a la aplicacion y gestionamos
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I no type information supplier monitoring
     Then I view the modal save supplier monitoring with <modalmessage>

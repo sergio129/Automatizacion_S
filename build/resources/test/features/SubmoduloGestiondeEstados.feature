@@ -4,17 +4,8 @@ Feature: Page submodule state management
 
   @TestStateManagement
   Scenario Outline: Successful state management
-    Given I performed case status changes
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
-      | Sergio.anaya | Colombia_2022 |
-      | Sergio.anaya | Colombia_2022 |
-      | Sergio.anaya | Colombia_2022 |
-      | Sergio.anaya | Colombia_2022 |
-      | Sergio.anaya | Colombia_2022 |
-      | Sergio.anaya | Colombia_2022 |
-      | Sergio.anaya | Colombia_2022 |
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I type information in the field status name <statusname>
     Then I view the modal save management status with <message>
@@ -32,9 +23,7 @@ Feature: Page submodule state management
   @TestCambioEstados
   Scenario Outline: Cambio de Estados Expediente: Aceptado y en desplazamiento
     Given I performed case status changes
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I type information in the field status name <statusname>
     Then I view the modal save management status with <message>
