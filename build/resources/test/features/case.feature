@@ -9,7 +9,9 @@ Feature: Page create case
   Scenario Outline: Successful case creation
   When Gestionamos en Sara
     And Seleccionamos el boton de Crear Caso
-    And Escribimos el numero de caso en 2022Prueba y lo pegamos
+    #Gestionamos informacion del Expediente
+    #Solo debe escribir los 10 primero numeros del expedientes los otros 5 se generan aleatoreamente
+    And Escribimos el numero de caso en 2022PRUEBA y lo pegamos
     And Escribmos la informacion de la creacion de expediente
       | NombreSol   | Telefono1   | Placa  | DireccionServicio | UbicacionServicio | DetalleDireccion | Departamento | Municicpio | GestorCordi | Linea | Servicio |
       | Juan Felipe | 31035048745 | DTA54R | Calle 92144       | Produccion        | Pruebas QA       | Cordoba      | Lorica     | Si          | Autos | Grua     |

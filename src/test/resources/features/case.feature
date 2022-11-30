@@ -10,7 +10,7 @@ Feature: Page create case
   When Gestionamos en Sara
     And Seleccionamos el boton de Crear Caso
     #Gestionamos informacion del Expediente
-    #Solo debe escribir los 10 primero numemero del expedientes los otros 5 se generan aleatoreamente
+    #Solo debe escribir los 10 primero numeros del expedientes los otros 5 se generan aleatoreamente
     And Escribimos el numero de caso en 2022PRUEBA y lo pegamos
     And Escribmos la informacion de la creacion de expediente
       | NombreSol   | Telefono1   | Placa  | DireccionServicio | UbicacionServicio | DetalleDireccion | Departamento | Municicpio | GestorCordi | Linea | Servicio |
