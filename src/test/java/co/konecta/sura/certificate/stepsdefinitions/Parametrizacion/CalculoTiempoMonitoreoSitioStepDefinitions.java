@@ -53,4 +53,9 @@ public class CalculoTiempoMonitoreoSitioStepDefinitions {
     public void seleccionamosElBotonCrearParametrizaciónCálculoDeTiempoDeMonitoreoEnSitio() {
         actor.attemptsTo(Click.on(BOTON_CREAR_CALCULO_MONITOREO_SITIO));
     }
+
+    @And("Buscamos una parametrizacion cálculo de tiempo de monitoreo en sitio: {string}")
+    public void buscamosUnaParametrizacionCálculoDeTiempoDeMonitoreoEnSitio(String arg0) {
+
+    }
 }
