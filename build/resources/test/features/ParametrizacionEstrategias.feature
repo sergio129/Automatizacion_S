@@ -3,13 +3,11 @@ Feature: Parametrizacion Estrategias
   I need to edition a strategy parameterization
 
   Background:
-    Given I edition a strategy parameterization
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestContingencyStrategyParameterizationEdition
   Scenario Outline: Contingency strategy parameterization successful edition
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering strategy parameterization
     And I type information in the contingency strategy with the name contingency search <namecontingencysearch> and the description <description>
     And I save button strategy parameterization
@@ -22,9 +20,7 @@ Feature: Parametrizacion Estrategias
 
   @TestCoordinationStrategyParameterizationEdition
   Scenario Outline: Coordination strategy parameterization successful edition
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering strategy parameterization
     And I entering search strategy parameterization <namecontingencysearch>
     And I type information in the coordination strategy with the description <description> and the time assignment <timeassignment> and the first expiration <firstexpiration> and the second expiration <secondexpiration>
@@ -38,9 +34,7 @@ Feature: Parametrizacion Estrategias
 
   @TestMonitoringStrategyParameterizationEdition
   Scenario Outline: Monitoring strategy parameterization successful edition
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering push notifications
     And I entering search strategy parameterization <namecontingencysearch>
     And I type information in the monitoring strategy with the description <description> and the preventive time <preventivetime> and the time monitoring site <timemonitoringsite> and the time monitoring completion <timemonitoringcompletion>

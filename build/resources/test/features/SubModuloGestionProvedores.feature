@@ -3,14 +3,12 @@ Feature: Submodulo Gestion de proveedores
   I need to create or edition supplier management
 
   Background:
-    Given I create or edition a provider for a case
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestSupplierManagementComplete
   Scenario Outline: Gestion Exitosa de proveedor
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
-    And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
+    When Gestionamos en Sara
+    And Hacemos Busqueda del caso: "B720EE583C6D530"
     And Hacemos Gestion de proveedor
       | Proveedor      | RespuestaProveedor | TiempoMonitoreoSitio | TiempoMonitoreoDestino | CelularTecnico | TelfonoCentral | TelfonoCentral1 | Observaciones |
       | RECURSO PROPIO | Toma Servicio      | 20                   | 50                     | 3103642145     | 3103642145     | 3103642145      | Pruebas QA    |
@@ -22,9 +20,7 @@ Feature: Submodulo Gestion de proveedores
 
   @TestSupplierManagementEdition
   Scenario Outline: Supplier management submodule successful edition
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "A00000000000008"
     And I type information edition in the fields supplier name <suppliername> and supplier response <supplierresponse> and time monitoring site <timemonitoringsite> and time monitoring destination <timemonitoringdestination> and technical cellphone <technicalcellphone> and central phone 1 <centralphone1> and central phone 2 <centralphone2> and observations <observations>
     Then I view the modal save supplier with <modalmessage>
@@ -36,9 +32,7 @@ Feature: Submodulo Gestion de proveedores
 
   @TestSupplierManagementNoTakeService
   Scenario Outline: Supplier management submodule does not take service
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "A00000000000008"
     And I type information not service in the fields supplier name <suppliername> and supplier response <supplierresponse> and observations <observations>
     Then I view the modal save supplier with <modalmessage>
@@ -50,9 +44,7 @@ Feature: Submodulo Gestion de proveedores
 
   @TestSupplierManagementCaseAppointment
   Scenario Outline: Expediente nuevo con asignacion de cita- nuevo proveedor toma de servicio
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "A00000000000008"
     And I type information case appointment in the fields supplier name <suppliername> and supplier response <supplierresponse> and time monitoring destination <timemonitoringdestination> and technical cellphone <technicalcellphone> and central phone 1 <centralphone1> and central phone 2 <centralphone2> and observations <observations>
     Then I view the modal save supplier with <modalmessage>
@@ -64,13 +56,11 @@ Feature: Submodulo Gestion de proveedores
 
   @TestSupplierManagementRequiredFields
   Scenario Outline: Supplier management submodule required fields
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "A00000000000008"
     And I no type information supplier
     Then I view the modal save supplier with <modalmessage>
 
     Examples:
-      | numberCase      | modalmessage                      |
-      | 202104190008528 | Todos los campos son obligatorios |
+      |  | modalmessage                      |
+      |  | Todos los campos son obligatorios |

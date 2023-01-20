@@ -5,7 +5,6 @@ import co.konecta.sura.certificate.Interfaces.Casos.cases.CasePage;
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import co.konecta.sura.certificate.Tareas.Casos.casetask.Case;
 import co.konecta.sura.certificate.Tareas.Casos.casetask.CaseModel;
-import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
 import com.github.javafaker.Faker;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
@@ -151,21 +150,19 @@ public class CaseStepsDefinitions {
         Thread.sleep(2000);
         actor.attemptsTo(
                 Ensure.that(MODAL_VALIDATION).text().isEqualTo(message));
-
     }
 
     @And("^Escribimos el numero de caso en (.*) y lo pegamos$")
     public void escribimosElNumeroDeCasoEnObservacionesYLoPegamos(String NumeroCaso) throws InterruptedException {
         Faker faker = new Faker();
-        NumeroCaso = faker.random().hex(15);
+        NumeroCaso = NumeroCaso + faker.random().hex(5);
         actor.attemptsTo(
-                Enter.theValue(NumeroCaso).into(CasePage.RESPONSABLE),
-                SendKeys.of(Keys.CONTROL + "A").into(CasePage.RESPONSABLE),
-                SendKeys.of(Keys.CONTROL + "C").into(CasePage.RESPONSABLE),
+                Enter.theValue(NumeroCaso).into(CasePage.INPUT_OBSERVATIONS_CASE),
+                SendKeys.of(Keys.CONTROL + "A").into(CasePage.INPUT_OBSERVATIONS_CASE),
+                SendKeys.of(Keys.CONTROL + "C").into(CasePage.INPUT_OBSERVATIONS_CASE),
                 SendKeys.of(Keys.CONTROL + "V").into(CasePage.INPUT_NUMBER_CASE));
         Thread.sleep(200);
     }
-
 }
 
 

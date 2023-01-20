@@ -26,9 +26,7 @@ public class SubModuloReprogramacionDeCitasStepsDefinitions {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("^Creacion de Reprogramacion de cita$")
-    public void creacionDeReprogramacionDeCita() {
-    }
+
 
     @And("^Entramos a la reprogramacion de citas desde el sudmodulo de Tareas de monitoreo$")
     public void entramosAlSubModuloReprogramacionDeCitas() throws InterruptedException {

@@ -1,16 +1,12 @@
 Feature: Parametrizacion de Ramos
 
-  El usuario puede crear Ramos
 
-  Background:
-    Given I create bouquets parameterization
+  Background:Creacion de Parametrizacion de Ramos
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCreacionDeRamos @Test1
   Scenario Outline: Creacion de Exitosa de Ramos
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I enter bouquets parameterization
     And I select button create bouquets parameterization
     And I write information in bouquets parameterization and save <linea>,<bouquets>

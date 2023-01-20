@@ -1,13 +1,11 @@
 Feature: Modulo de Casos Usuarios Registrados
 
   Background:
-    Given Listar Usuarios Registrados
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestUsuariosRegistrados
   Scenario Outline:Creacion Exitosa de parametrizacion Ofertamiento
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And entramos el modulo de Casos Usuarios Registrados
     And Listamos Usuarios Registrados por<Rol>
    # Then Se visualiza ventana usuarios registrados<modalmensaje>
@@ -17,8 +15,6 @@ Feature: Modulo de Casos Usuarios Registrados
 
   @TestUsuariosRegistradosTodosLosRoles
   Scenario:Creacion Exitosa de parametrizacion Ofertamiento
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And entramos el modulo de Casos Usuarios Registrados
     And Listamos Usuarios Registrados Todos los Roles

@@ -3,13 +3,11 @@ Feature: Assignment parameterization
   I need to create, edition or delete a assignment parameterization
 
   Background:
-    Given I create, edition or delete a assignment parameterization
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCreacionParametrizacionAsignacion
   Scenario Outline: Successful assignment parameterization
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering assignment parameterization
     And I select button create assignment
     And I type information in the assignment with the role <roleassignment> and the user <userassignment> and the line <lineassignment> and the service <serviceassignment> and the department <departmentassignment>,<cordinacion>
@@ -21,9 +19,7 @@ Feature: Assignment parameterization
 
   @TestAssignmentParameterizationEdition
   Scenario Outline: Assignment parameterization successful edition
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering assignment parameterization
     And Buscamos por usuario Parametrizacion Asignacion "yoarlys carrillo"
     And I select button edition assignment
@@ -37,9 +33,7 @@ Feature: Assignment parameterization
 
   @TestAssignmentParameterizationDelete
   Scenario Outline: Assignment parameterization successful delete
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering assignment parameterization
     And I type search in the assignment parameterization with the user <userassignment>
     And I select button delete assignment
@@ -52,9 +46,7 @@ Feature: Assignment parameterization
 
   @TestAssignmentRequiredFields
   Scenario Outline: Assignment parameterization required fields
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering assignment parameterization
     And I select button create assignment
     And I no type information assignment

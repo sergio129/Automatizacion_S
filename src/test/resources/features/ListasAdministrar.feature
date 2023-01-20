@@ -3,14 +3,12 @@ Feature: Listas Administrar
   el usuario Crea, Edita y Desactiva administrar listas
 
   Background:
-    Given Crear, Editar, Desactivar administar listas
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
 
   @TestCrearListasAdministrarSinOpcion
   Scenario Outline: Creacion Exitosa de listas sin opcion
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a listas administrar
     And Seleccionamos el boton crear listas administrar
     And Escribimos la informacion de listas administrar Nombre de lista<nombrelista>, nombre opcion<nombreopcion>, id case<idcase>
@@ -22,9 +20,7 @@ Feature: Listas Administrar
 
   @TestCrearListasAdministrarConOpcion
   Scenario Outline: Creacion Exitosa de listas con opcion
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a listas administrar
     And Seleccionamos el boton crear listas administrar
     And Escribimos la informacion de listas administrar Nombre de lista<nombrelista>, nombre opcion<nombreopcion>, id case<idcase>
@@ -37,9 +33,7 @@ Feature: Listas Administrar
 
   @TestCrearOpcionDeListaExistente
   Scenario Outline: Creacion exitosa de opcion desde lista existente
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a listas administrar
     And Buscamos<NombreLista> y creamos la opcion<OpcionNueva> y <idcase> lista administar
     Then Se visualiza mensaje de la modal<modalmensaje>
@@ -49,9 +43,7 @@ Feature: Listas Administrar
 
   @TestEdicionOpcionDeLista
   Scenario Outline: Edicion Exitosa de Opcion de Lista Existente
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a listas administrar
     And Buscamos<Lista> y <OpcionLista> Listas Administrar
     And Editamos <NombreOpcion>,<Posicion>,<idcase> Listas Administrar
@@ -62,9 +54,7 @@ Feature: Listas Administrar
 
   @TestActivar/desactivarOpcionDeLista
   Scenario Outline: Activar o desactivar opciones de lista
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a listas administrar
     And Buscamos<Lista> y <OpcionLista> Listas Administrar
     And Seleccionamos el check activar/desactivar
@@ -75,9 +65,7 @@ Feature: Listas Administrar
 
   @TestValidacionDeCamposCreacionListas
   Scenario Outline: Creacion Exitosa de listas sin opcion
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a listas administrar
     And Seleccionamos el boton crear listas administrar
     And Seleccionamos el boton guardar listas administrar

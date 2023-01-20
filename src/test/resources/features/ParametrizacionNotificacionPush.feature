@@ -4,13 +4,11 @@ Feature: Push notifications
   I need to create or edition a Push notifications
 
   Background:
-    Given I create or edition a push notifications
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCreacionNotificacionPush
   Scenario Outline: Creacion Exitosa de Notificaciones Push
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering push notifications
     And I select button create push notifications
     And I write information in the push notifications of the following fields <line>and<service>and<servicestatus>and<roles>and<Timetomoment1>and<Timetomoment2>and<appointmenttime1>and<appointmenttime2>
@@ -22,9 +20,7 @@ Feature: Push notifications
 
   @TestEditarNotificacionPush
   Scenario Outline: Edicion Exitosa de parametrizacion notificaciones push
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering push notifications
     And I select filter push notifications <linefilter>and<service>and<servicestatus>and<roles>
     And I select button search for push notifications
@@ -37,9 +33,7 @@ Feature: Push notifications
 
   @TestPushNotificationsDelete
   Scenario Outline: push notification Delete
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering push notifications
     And I select filter push notifications <line>and<service>and<servicestatus>and<roles>
     And I select button search for push notifications
@@ -52,9 +46,7 @@ Feature: Push notifications
 
   @TestPushNotificationsFields
   Scenario Outline: push notification Fields
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering push notifications
     And I select button create push notifications
     And I select button save push notifications

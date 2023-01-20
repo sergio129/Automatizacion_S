@@ -3,13 +3,11 @@ Feature: Novelty
   I need to create or edition a novelty
 
   Background:
-    Given Creacion y Edicion Modulo novedades
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestNoveltyComplete
   Scenario Outline: Creacion de novedades
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2021 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I select button create novelty
     And Hacemos Gestion de Novedades
@@ -22,9 +20,7 @@ Feature: Novelty
 
   @TestNoveltyEdition
   Scenario Outline: Successful novelty edition
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I select button edition novelty
     And Hacemos Gestion de Novedades
@@ -37,9 +33,7 @@ Feature: Novelty
 
   @TestNoveltyRequiredFields
   Scenario Outline: Novelty submodule required fields
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2021 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I no type information novelty
     Then I view the modal save novelty with <message>

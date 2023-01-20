@@ -30,9 +30,6 @@ public class TaskMonitoringStepsDefinitions {
         actor.can(BrowseTheWeb.with(getBrowser));
     }
 
-    @Given("^I create or edition a task monitoring for a case$")
-    public void iCreateATaskMonitoringForACase() {
-    }
 
     @And("^Seleccionamos el boton crear tarea de monitoreo$")
     public void iCreateMonitoringTask() {
@@ -64,6 +61,7 @@ public class TaskMonitoringStepsDefinitions {
 
     @And("^Seleccionamos el Boton Guardar Tarea de Monitoreo$")
     public void seleccionamosElBotonGuardarTareaDeMonitoreo() throws InterruptedException {
+        Thread.sleep(1000);
         actor.attemptsTo(Click.on(TaskMonitoringPage.BUTTON_SAVE_MONITORING));
         Thread.sleep(1000);
     }

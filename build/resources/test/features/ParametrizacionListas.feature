@@ -3,14 +3,12 @@ Feature: Lists parameterization
   I need to create or edition a lists parameterization
 
   Background:
-    Given I create or edition a lists parameterization
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
 
   @TestCreacionParametrizacionLista
   Scenario Outline: Creacion Parametrizacion de lista
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering lists parameterization
     And Seleccionamos el Boton Crear Parametrizacion de Listas
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
@@ -24,9 +22,7 @@ Feature: Lists parameterization
 
   @TestCreacionParametrizacionListaOpciones
   Scenario Outline: Successful lists parameterization with option
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering lists parameterization
     And Seleccionamos el Boton Crear Parametrizacion de Listas
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
@@ -41,9 +37,7 @@ Feature: Lists parameterization
 
   @TestEdicionParametrizacionListas
   Scenario Outline: Lists parameterization successful edition
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering lists parameterization
     And I select button edition lists parameterization
     And I type information in the lists parameterization with the roles <roles> and modules <modules> and lists <lists> and options1 <options1> and options2 <options2>
@@ -57,9 +51,7 @@ Feature: Lists parameterization
 
   @TestValidaciondeCamposParametrizacionListas
   Scenario Outline: Lists parameterization required fields
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering lists parameterization
     And I no type information lists parameterization
     Then Se visualiza mensaje de la modal<modalmessage>

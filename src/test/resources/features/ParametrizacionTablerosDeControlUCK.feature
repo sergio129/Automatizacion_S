@@ -1,13 +1,11 @@
 Feature: Parametrizacion Tableros de Control UCK
 
   Background:
-    Given Editar UCK
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestEdicionUCK
   Scenario Outline: Edicion Exitosa UCK
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a parametrizacion Tables de control uck
     And Hacemos una busqueda por fecha de tableros uck<fecha>
     And Escribimos la informacion de tableros uck<motivo>,<asegurado>,<habilitar>,<observacion>

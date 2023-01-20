@@ -1,13 +1,11 @@
 Feature: Creacion, Edicion y eliminacion de parametrizacion cierre de expediente.
 
   Background:
-    Given Gestion la Creacion, Edicion y eliminacion de parametrizacion cierre de expediente
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCreacionParametrizacionCierreExpediente
   Scenario Outline: Creacion Exitosa de Prefijos
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos Parametrizacion Cierre de Expediente
     And Seleccionamos el boton crear Parametrizacion Cierre de Expediente
     And Escribimos la informacion de parametrizacion Cierre de Expediente<linea>,<servicio>,<Campo>
@@ -19,9 +17,7 @@ Feature: Creacion, Edicion y eliminacion de parametrizacion cierre de expediente
 
   @TestEdicionParametrizacionCierreExpediente
   Scenario Outline: Edicion Exitosa de Prefijos
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos Parametrizacion Cierre de Expediente
     And Buscamos Parametrizacion Cierre de expediente por Linea:"Emergencia Salud", Servicio:"Emergencia Salud"
     And Seleccionamos el boton Editar Parametrizacion Cierre de Expediente
@@ -34,9 +30,7 @@ Feature: Creacion, Edicion y eliminacion de parametrizacion cierre de expediente
 
   @TestEliminarParametrizacionCierreExpediente
   Scenario Outline: Edicion Exitosa de Prefijos
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos Parametrizacion Cierre de Expediente
     And Buscamos Parametrizacion Cierre de expediente por Linea:"Hogares", Servicio:"Abogado En Sitio"
     And Seleccionamos el Boton Eliminar Parametrizacion Cierre de Expediente
@@ -47,9 +41,7 @@ Feature: Creacion, Edicion y eliminacion de parametrizacion cierre de expediente
 
   @TestValidarCamposParametrizacionCierreExpediente
   Scenario Outline: Edicion Exitosa de Prefijos
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos Parametrizacion Cierre de Expediente
     And Seleccionamos el boton crear Parametrizacion Cierre de Expediente
     And Seleccionamos el boton guardar Parametrizacion Cierre de Expediente

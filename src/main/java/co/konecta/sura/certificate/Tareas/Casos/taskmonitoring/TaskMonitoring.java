@@ -32,8 +32,7 @@ public class TaskMonitoring implements Task {
                 Enter.theValue(HoraVencimiento).into(INPUT_HOUR),
                 Click.on(TaskMonitoringPage.INPUT_USER),
                 Click.on(TaskMonitoringPage.INPUT_USER_FILTER ),
-                Enter.theValue(Usuario).into(TaskMonitoringPage.INPUT_USER_FILTER ).thenHit(Keys.ENTER),
-                Click.on(BUTTON_SAVE_TASK)
+                Enter.theValue(Usuario).into(TaskMonitoringPage.INPUT_USER_FILTER ).thenHit(Keys.ENTER)
         );
     }
 }

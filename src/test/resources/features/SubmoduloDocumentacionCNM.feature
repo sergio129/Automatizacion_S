@@ -3,13 +3,12 @@ Feature: SubModulo Documentacion CNM
   I need to create documentation CNM
 
   Background:
-    Given I create a documentation CNM for a case
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
+
 
   @TestDocumentacionCNM
   Scenario Outline: Creacion Exitosa de Registro Documentacion CNM
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And Escribimos los datos de Documentacion CNM
       | PersonaGestion     | GeneraQueja | Radicajo | Observaciones |
@@ -21,9 +20,7 @@ Feature: SubModulo Documentacion CNM
 
   @TestDocumentationCNMCompleteWithComplaint
   Scenario Outline: Successful documentation CNM submodule with filed complaint
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And Escribimos los datos de Documentacion CNM
       | PersonaGestion     | GeneraQueja | Radicajo | Observaciones |
@@ -35,9 +32,7 @@ Feature: SubModulo Documentacion CNM
 
   @TestDocumentationCNMRequiredFields
   Scenario Outline: Documentation CNM submodule required fields
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I no type information documentation CNM
     Then Se visualiza mensaje de la modal<modalmessage>

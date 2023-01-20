@@ -36,9 +36,6 @@ public class SuraClimbingStepsDefinitions {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("^I create or edition a sura climbing for a case$")
-    public void iCreateOrEditionASuraClimbingForACase() {
-    }
 
     @And("^Seleccionamos el boton Editar Escalamiento sura$")
     public void iTypeInformationEditionInTheFieldsManagementTypeAndManagementPersonAndResponseTypeAndGeneratesComplaintAndObservations() throws InterruptedException {

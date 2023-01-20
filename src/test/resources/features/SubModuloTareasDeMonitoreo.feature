@@ -3,13 +3,11 @@ Feature: Tareas de Monitoreo
   I need to create or edition a task monitoring
 
   Background:
-    Given I create or edition a task monitoring for a case
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestTaskMonitoringComplete
   Scenario Outline: Successful task monitoring creation
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And Seleccionamos el boton crear tarea de monitoreo
     And Escribimos los datos de la tare de monitoreo<Nombre>,<TipoTarea>,<FechaVencimiento>,<HoraVencimiento>,<Usuario>
@@ -21,9 +19,7 @@ Feature: Tareas de Monitoreo
 
   @TestTaskMonitoringEdition
   Scenario Outline: Successful task monitoring edition
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I select button edition monitoring task
     And Hacemos el cambio de estado de la tarea: "Cerrada"
@@ -35,9 +31,7 @@ Feature: Tareas de Monitoreo
 
   @TestValidacionCamposTareasDeMonitoreo
   Scenario Outline: Task monitoring submodule required fields
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And I no type information task monitoring
     Then Se visualiza mensaje de la modal<modalmessage>

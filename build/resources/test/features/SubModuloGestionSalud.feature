@@ -3,15 +3,13 @@ Feature: SubModulo Gestion Salud
   Puede registrar y editar informacion el en submodulo de gestion salud
 
   Background:
-    Given Regristro de informacion Sub modulo Gestion Salud
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
 
   @GestionSalud
   Scenario Outline: Registro Exitoso Gestion Salud
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
-    And Hacemos Busqueda del caso: "202208040013430"
+    When Gestionamos en Sara
+    And Hacemos Busqueda del caso: "CE4FF3AD43112DF"
     And Click en crear registro emergencia salud
     And Escribimos datos comunes emergencia Salud:
       | CanalIngreso            | TipoDocumento        | NumeroDocumento |
@@ -31,9 +29,7 @@ Feature: SubModulo Gestion Salud
 
   @GestionSaludEditar
   Scenario Outline: Edicion Exitosa Modulo Gestion Salud
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Hacemos Busqueda del caso: "202208040013430"
     And Click en editar registro emergencia salud
     And Escribimos datos comunes emergencia Salud:

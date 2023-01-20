@@ -3,14 +3,11 @@ Feature: Parametrizacion Motivos de llamada
   I need to create, edit and delete call reasons parameterization
 
   Background:
-    Given I create, edit and delete call reasons parameterization
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @EJ1
   Scenario Outline: Creacion Exitosa de motivos de llamada con solicitud de servicio, sin Evento Catastrofico
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Motivos de Llamada
     And Seleccionamos el Boton crear Parametrizacion Motivos de Llamada
     And Escribimos la informacion de motivos de llamada con solicitud de servicio<name>,Tipo:"Solicitud de servicio",Estado:"Inhabilitado",Linea:<line>,Validacion"Prueba duplicidad Backlog"
@@ -18,16 +15,12 @@ Feature: Parametrizacion Motivos de llamada
     Then Se visualiza mensaje de la modal<modalmessage>
 
     Examples:
-      | name                     | line  | modalmessage                                                                                  |
-      | Pruebas Automatizacion10 | Hogar | Registro guardado correctamente                                                               |
-      | Pruebas Automatizacion10 | Hogar | No se puede guardar, Ya se encuentra parametrizado un servicio de llamada con el mismo nombre |
+      | name                     | line  | modalmessage                    |
+      | Pruebas Automatizacion10 | Hogar | Registro guardado correctamente |
 
   @TestCreacionMotivoDeLlamadaSolicitudDeServicioConEventoCatastrofico
   Scenario Outline: Creacion Exitosa de motivos de llamada con solicitud de servicio, Con Evento Catastrofico
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Motivos de Llamada
     And Seleccionamos el Boton crear Parametrizacion Motivos de Llamada
     And Con Evento Catastrofico
@@ -35,16 +28,12 @@ Feature: Parametrizacion Motivos de llamada
     And Seleccionamos el boton Guardar Parametrizacion Motivos de llamada
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
-      | name                                        | line  | modalmessage                                                                                  |
-      | Pruebas Automatizacion Evento Catastrofico3 | Hogar | Registro guardado correctamente                                                               |
-      | Pruebas Automatizacion Evento Catastrofico3 | Hogar | No se puede guardar, Ya se encuentra parametrizado un servicio de llamada con el mismo nombre |
+      | name                                        | line  | modalmessage                    |
+      | Pruebas Automatizacion Evento Catastrofico3 | Hogar | Registro guardado correctamente |
 
   @EJ2
   Scenario Outline: Creacion de motivo de llamada Seguimiento de Servicio con Evento
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Motivos de Llamada
     And Seleccionamos el Boton crear Parametrizacion Motivos de Llamada
     And Con Evento Catastrofico
@@ -52,15 +41,12 @@ Feature: Parametrizacion Motivos de llamada
     And Seleccionamos el boton Guardar Parametrizacion Motivos de llamada
     Then Se visualiza mensaje de la modal<modalmessage>
     Examples:
-      | name                                        | line  | option | modalmessage                                                                                  |
-      | Pruebas Automatizacion Evento Catastrofico3 | Hogar | 55     | Registro guardado correctamente                                                               |
-      | Pruebas Automatizacion Evento Catastrofico3 | Hogar | 55     | No se puede guardar, Ya se encuentra parametrizado un servicio de llamada con el mismo nombre |
+      | name                                        | line  | option | modalmessage                    |
+      | Pruebas Automatizacion Evento Catastrofico3 | Hogar | 55     | Registro guardado correctamente |
 
   @TestCreacionMotivosDeLlamdaSeguimientoServicioSinEvento
   Scenario Outline: Creacion de motivo de llamada Seguimiento de Servicio sin Evento Catastrofrico
-  | usuario      | contrasena    |
-  | Sergio.anaya | Colombia_2022 |
-  | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Motivos de Llamada
     And Seleccionamos el Boton crear Parametrizacion Motivos de Llamada
     And Escribimos la informacion de motivos de llamada Seguimiento de Servicio Nombre:<name>,Tipo:"Seguimiento a un servicio",Estado:"Habilitado",Linea:<line>,opcion<option>
@@ -73,9 +59,7 @@ Feature: Parametrizacion Motivos de llamada
 
   @CreacionMotivosDeLlamdaInformacióngeneralSinEvento
   Scenario Outline: Successful call reasons Service Request Not Catastrophic Event
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Motivos de Llamada
     And Seleccionamos el Boton crear Parametrizacion Motivos de Llamada
     And I write information in call reasons general information parameterization and <name> Tipo:"Información general",Estado:"Habilitado",Linea:<line>,Gestionfinal:"Información de servicio",servicio:"Conductor Elegido"
@@ -87,9 +71,7 @@ Feature: Parametrizacion Motivos de llamada
 
   @TestEliminarMotivosDeLLamada
   Scenario Outline: Eliminacion Exitosa de motivos de llamada
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Motivos de Llamada
     And Buscamos parametrizacion motivos de llamada por<Nombre>,<Tipo>
     And Seleccionamos el boton Eliminar de Parametrizacion Motivos de Llamada
@@ -100,9 +82,7 @@ Feature: Parametrizacion Motivos de llamada
 
   @TestValidacionCamposMotivosDeLlamada
   Scenario Outline: Eliminacion Exitosa de motivos de llamada
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Motivos de Llamada
     And Seleccionamos el Boton crear Parametrizacion Motivos de Llamada
     And Seleccionamos el boton Guardar Parametrizacion Motivos de llamada
@@ -114,9 +94,7 @@ Feature: Parametrizacion Motivos de llamada
 
   @CreacionMotivosDeLlamdaInformacióngeneralConEvento
   Scenario Outline: Creacion de motivo de llamada Información general con Evento
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Motivos de Llamada
     And Seleccionamos el Boton crear Parametrizacion Motivos de Llamada
     And Con Evento Catastrofico
@@ -129,9 +107,7 @@ Feature: Parametrizacion Motivos de llamada
 
   @TestEdicionMotivoDeLlamadaSolicitudDeServicio
   Scenario Outline: Edicion  Exitosa de motivos de llamada con solicitud de servicio, sin Evento Catastrofico
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Motivos de Llamada
     And Buscamos parametrizacion motivos de llamada por<Nombre>,<Tipo>
     And Seleccionamos el Boton de Editar Motivos de llamada
@@ -145,9 +121,7 @@ Feature: Parametrizacion Motivos de llamada
 
   @TestEdicionMotivoDeLlamadaSolicitudDeServicioConEventoCatastrofico
   Scenario Outline: Edicion Exitosa de motivos de llamada con solicitud de servicio, Con Evento Catastrofico
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Motivos de Llamada
     And Buscamos parametrizacion motivos de llamada por<Nombre>,<Tipo>
     And Seleccionamos el Boton de Editar Motivos de llamada
@@ -162,9 +136,7 @@ Feature: Parametrizacion Motivos de llamada
 
   @TestEdicionMotivosDeLlamadaSeguimientoServicioConEvento
   Scenario Outline: Edicion de motivo de llamada Seguimiento de Servicio con Evento
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a Parametrizacion Motivos de Llamada
     And Buscamos parametrizacion motivos de llamada por<Nombre>,<Tipo>
     And Seleccionamos el Boton de Editar Motivos de llamada

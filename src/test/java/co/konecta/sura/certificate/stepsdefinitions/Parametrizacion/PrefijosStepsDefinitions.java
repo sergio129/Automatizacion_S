@@ -4,8 +4,6 @@ import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
 import co.konecta.sura.certificate.Tareas.Parametrizacion.PrefijosTask;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
@@ -25,15 +23,11 @@ public class PrefijosStepsDefinitions {
     WebDriver driver;
     private final Actor actor = Actor.named("Usuario");
 
-
     @Before
     public void setUp() {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("^Creo, Edito y elimino Prefijos$")
-    public void CreoEditoEliminoPrefijos() {
-    }
 
     @And("^Entramos a parametrizacion prefijos$")
     public void EntramosParametrizacionPrefijos() throws InterruptedException {
@@ -89,6 +83,5 @@ public class PrefijosStepsDefinitions {
         actor.attemptsTo(Click.on(BOTON_ELIMINAR_PREFIJOS),
                 Click.on(OPCION_SI_ELIMINAR_PREFIJOS));
     }
-
 
 }

@@ -35,9 +35,6 @@ public class NovedadesStepsDefinitions {
         actor.can(BrowseTheWeb.with(getBrowser));
     }
 
-    @Given("^Creacion y Edicion Modulo novedades$")
-    public void iCreateANoveltyForACase() {
-    }
 
     @And("^I select button create novelty$")
     public void iSelectButtonCreateNovelty() throws InterruptedException {

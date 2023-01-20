@@ -7,26 +7,24 @@ Feature: Page create case
 
   @TestCaseComplete
   Scenario Outline: Successful case creation
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2025 |
+  When Gestionamos en Sara
     And Seleccionamos el boton de Crear Caso
-    And Escribimos el numero de caso en L202121344537270 y lo pegamos
+    #Gestionamos informacion del Expediente
+    #Solo debe escribir los 10 primero numeros del expedientes los otros 5 se generan aleatoreamente
+    And Escribimos el numero de caso en 2022PRUEBA y lo pegamos
     And Escribmos la informacion de la creacion de expediente
       | NombreSol   | Telefono1   | Placa  | DireccionServicio | UbicacionServicio | DetalleDireccion | Departamento | Municicpio | GestorCordi | Linea | Servicio |
       | Juan Felipe | 31035048745 | DTA54R | Calle 92144       | Produccion        | Pruebas QA       | Cordoba      | Lorica     | Si          | Autos | Grua     |
     #Gestionamos el cambio de estado
     Then I view the modal save case with <message>
-    And hacemos conexion Base de datos
+
     Examples:
      | message                         |
      | Registro guardado correctamente |
 
   @TestCaseEdition
   Scenario Outline: Successful case edition
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I select button case edition with case <numberCase>
     And I type information in the field applicant name <applicantName>
     And I type information in the field phone1 <phone1>
@@ -48,9 +46,7 @@ Feature: Page create case
 
   @TestCaseRequiredFields
   Scenario Outline: Case submodule required fields
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I no type information in the case creation
     Then I view the modal save case with <message>
 

@@ -17,6 +17,10 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+
+import java.util.List;
+import java.util.Map;
+
 import static co.konecta.sura.certificate.Interfaces.Inicio.AlertaPage.*;
 
 public class AlertaUckStepsDefinitions {
@@ -31,8 +35,8 @@ public class AlertaUckStepsDefinitions {
         actor.can(BrowseTheWeb.with(driver));
     }
 
-    @Dado("^que realizó una busqueda y edición en el modulo alerta UCK$")
-    public void queRealizóUnaBusquedaYEdiciónEnElModuloAlertaUCK() {
+    @Dado("^realizó una busqueda y edición en el modulo alerta UCK$")
+    public void RealizóUnaBusquedaYEdiciónEnElModuloAlertaUCK() {
     }
 
     @Y("^Ingresamos al modulo alertas UCK$")
@@ -76,9 +80,9 @@ public class AlertaUckStepsDefinitions {
                         Click.on(CAMPO_SERVICIO),
                         Enter.theValue(servicio).into(BUSCAR_ALERTA_UCK).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE));
     }
-    @Y("^escribimos en los campos (.*) y validacion (.*) y motivo (.*) y tipo de gestion (.*)$")
-    public void escribimosEnLosCamposObservacionYValidacionValidacionesYMotivoMotivoYTipoDeGestionTipogestion(String observacion, String validaciones, String motivo, String tipogestion) {
-        actor.attemptsTo(AlertaedicionTask.withInformationEdicionAlerta(observacion,validaciones, motivo, tipogestion));
+    @Y("^Hacemos la gestion de la Alertas UCK$")
+    public void escribimosEnLosCamposObservacionYValidacionValidacionesYMotivoMotivoYTipoDeGestionTipogestion(List<Map<String, String>> GestionAlertaUCK) {
+        actor.attemptsTo(AlertaedicionTask.withInformationEdicionAlerta(GestionAlertaUCK));
     }
 
     @Entonces("^Se visualize en la pantalla registro guardado exitoso$")

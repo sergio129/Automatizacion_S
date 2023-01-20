@@ -1,19 +1,18 @@
 Feature: Creacion de expediente con interaccion con diferentes modulo
 
   Background:
-    Given Creacion de caso interaccion modulos
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCreacionCaso
   Scenario Outline:Creacion de Caso
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2024 |
+    When Gestionamos en Sara
     And Seleccionamos el boton de Crear Caso
     #Gestionamos informacion del Expediente
-    And Escribimos el numero de caso en L202121344537270 y lo pegamos
+    #Solo debe escribir los 10 primero numemero del expedientes los otros 5 se generan aleatoreamente
+    And Escribimos el numero de caso en 2022Prueba y lo pegamos
     And Escribmos la informacion de la creacion de expediente
       | NombreSol   | Telefono1   | Placa  | DireccionServicio | UbicacionServicio | DetalleDireccion | Departamento | Municicpio | GestorCordi | Linea | Servicio |
-      | Jesica Diaz | 31035048745 | DTA54R | Calle 92144       | Produccion        | Pruebas QA       | Cordoba      | Lorica     | Si          | Autos | Grua     |
+      | Juan Felipe | 31035048745 | DTA54R | Calle 92144       | Produccion        | Pruebas QA       | Cordoba      | Lorica     | Si          | Autos | Grua     |
     #Gestionamos el cambio de estado
     And Hacemos Cambio de Estado
       | CambioEstado |
@@ -23,7 +22,7 @@ Feature: Creacion de expediente con interaccion con diferentes modulo
     And Escribimos datos comunes emergencia Salud:
       | CanalIngreso            | TipoDocumento        | NumeroDocumento |
       | Ingreso #888 Emergencia | Cédula de Ciudadanía | 7777777         |
-    And Tiene una Emergencia?:"Si"
+    And Tiene una Emergencia?:"No"
     And Preguntamos si tiene Dificultad en la atencion en salud
       | DificultadSalud | TipoDificultad                  |
       | Si              | Soporte App y/o Pagina sura.com |

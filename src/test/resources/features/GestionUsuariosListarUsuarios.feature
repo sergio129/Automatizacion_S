@@ -3,13 +3,11 @@ Feature: Crear, Editar, Eliminar, Desloquear, Conexion Remota
   El usuario puede hacer las siguientes accion Crear, Editar, Eliminar, Desloquear, Conexion Remota
 
   Background:
-    Given Hacer toda la gestion de usuarios
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCreacionUsuario
   Scenario Outline: Creacion Exitosa de usuario
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a gestion de usuarios listar usuarios
     And Selecionamos el Boton Crear Listar Usuarios
     And Escribimos informacion de Listar Usuarios<NombreUsuario>,<Identificador>,<Correo>,<Rol>,<Asignacion>
@@ -23,9 +21,7 @@ Feature: Crear, Editar, Eliminar, Desloquear, Conexion Remota
 
   @TestEdicionUsuario
   Scenario Outline: Edicion Exitosa de usuario
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a gestion de usuarios listar usuarios
     And Buscamos en Lista de usuarios por Identificador:"sergio.anaya"
     And Selecionamos el Boton Editar Listar Usuarios
@@ -38,9 +34,7 @@ Feature: Crear, Editar, Eliminar, Desloquear, Conexion Remota
 
   @TestConexionRemotaUsuario
   Scenario Outline: Conexion remota Exitosa de usuario
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a gestion de usuarios listar usuarios
     And Buscamos en Lista de usuarios por Identificador:"prueba.backloga"
     And visualizamos Informacion y Hacemos conexion remota
@@ -50,9 +44,7 @@ Feature: Crear, Editar, Eliminar, Desloquear, Conexion Remota
      | menu         |
   @TestDeslogueoUsuario
   Scenario Outline: Deslogueo Exitoso de usuario
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And Entramos a gestion de usuarios listar usuarios
     And Buscamos en Lista de usuarios por Identificador:"sergio.anaya"
     And visualizamos Informacion y Hacemos el deslogueo

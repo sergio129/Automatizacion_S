@@ -3,13 +3,11 @@ Feature: Alert recipients parameterization
   I need to create, edition or delete a alert recipients parameterization
 
   Background:
-    Given I create, edition or delete a alert recipients parameterization
+    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
 
   @TestCreacionDestinarioAlerta
   Scenario Outline: Creacion exitosa de destinatarios de Alerta
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering alert recipients parameterization
     And I select button create alert recipients
     And I type information in the alert with the name <namealert> and the line <linealert> and the service <servicealert> and the department <departmentalert> and the municipality <municipalityalert> and the email <emailalert>
@@ -22,9 +20,7 @@ Feature: Alert recipients parameterization
 
   @TestAlertParameterizationEdition
   Scenario Outline: Alert recipients parameterization successful edition
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering alert recipients parameterization
     And I select button search alert recipients<namealert>
     And I select button edition alert recipients
@@ -38,9 +34,7 @@ Feature: Alert recipients parameterization
 
   @TestEliminarDestinatarioAlerta
   Scenario Outline: Alert recipients parameterization successful delete
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering alert recipients parameterization
     And I search name alert <namealert> and select button delete alert recipients
     Then Se visualiza mensaje de la modal<modalmessage>
@@ -52,9 +46,7 @@ Feature: Alert recipients parameterization
 
   @TestValidacionDeCamposDestinatariosAlerta
   Scenario Outline:Alert recipients parameterization required fields
-    When Ingresamos a la aplicacion
-      | usuario      | contrasena    |
-      | Sergio.anaya | Colombia_2022 |
+    When Gestionamos en Sara
     And I entering alert recipients parameterization
     And I select button create alert recipients
     And I no type information alert recipients

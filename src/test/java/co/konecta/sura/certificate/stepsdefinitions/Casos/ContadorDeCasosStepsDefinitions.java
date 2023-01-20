@@ -46,6 +46,7 @@ Thread.sleep(3000);
     public void filtramosPorEstadoDelServicioContadorDeCasoEstado_Servicio(String Estado_Servicio) {
         actor.has(Click.on(CAMPO_ESTADO_SERVICIO),
                 Enter.theValue(Estado_Servicio).into(BUSCAR_ESTADO_SERVICIO).thenHit(Keys.ENTER).thenHit(Keys.ESCAPE)
+
         );
     }
 

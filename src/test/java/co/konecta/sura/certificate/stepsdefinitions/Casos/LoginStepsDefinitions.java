@@ -1,10 +1,9 @@
 package co.konecta.sura.certificate.stepsdefinitions.Casos;
 
 import co.konecta.sura.certificate.Interfaces.Inicio.HomePage;
-import co.konecta.sura.certificate.Tareas.BD.ConexionBD;
+import co.konecta.sura.certificate.Modelos.Login.User;
 import co.konecta.sura.certificate.Tareas.Casos.login.LoginTask;
-import co.konecta.sura.certificate.Tareas.Casos.login.Login_Task;
-import co.konecta.sura.certificate.questions.TheModal;
+import co.konecta.sura.certificate.Utilidades.Login.TestUserCreator;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -17,52 +16,41 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
-import java.util.List;
-import java.util.Map;
-
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
-import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
-
 
 public class LoginStepsDefinitions {
-
-
-
     @Managed(driver = "chrome")
-    private WebDriver getBrowser;
+    WebDriver driver;
     private final Actor actor = Actor.named("Usuario");
-    private final HomePage homePage = new HomePage();
 
 
     @Before
-    public void setUp(){
-
-        actor.can(BrowseTheWeb.with(getBrowser));
+    public void setUp() {
+        actor.can(BrowseTheWeb.with(driver));
+    }
+    @Given("Ingrsear a Sara con nuevo login")
+    public void ingresarASaraConNuevoLogin() {
     }
 
-    @Given("^Ingreso a Sara$")
-    public void IngresoSara() {}
-
-    @When("^Ingresamos a la aplicacion$")
-    public void Ingresamosalaaplicacion(List<Map<String,String>> informacion) {
+    private final HomePage homePage = new HomePage();
+    @When("Ingresamos a la aplicacion con Usuario y contraseña {string}")
+    public void ingresamosALaAplicacionConUsuarioYContraseña(String arg0) {
         actor.wasAbleTo(Open.browserOn(homePage));
-        actor.attemptsTo(Login_Task.whitCredentials(informacion));
+        User user = TestUserCreator.getTipoUsuario(arg0);
+        actor.attemptsTo(LoginTask.whitCredentials(user));
+
+    }
+    @Then("^Se visualiza mensaje de la modal(.*)$")
+    public void SeVisualizaMensajeDeLaModal(String mensaje) throws Exception {
+        Thread.sleep(2000);
+        actor.attemptsTo(
+                Ensure.that(MODAL_VALIDATION).text().isEqualTo(mensaje));
     }
 
-    @Then("^I view the message (.*)$")
-    public void userViewInTheInput(String messageModal) {
-        actor.should(
-                seeThat(TheModal.isVisible(messageModal)
-                )
-        );
+
+    @When("Gestionamos en Sara")
+    public void gestionamosEnSara() {
+
     }
-        @Then("^Se visualiza mensaje de la modal(.*)$")
-        public void SeVisualizaMensajeDeLaModal(String mensaje) throws Exception {
-            Thread.sleep(2000);
-            actor.attemptsTo(
-                    Ensure.that(MODAL_VALIDATION).text().isEqualTo(mensaje));
-        }
-
-
 }
 

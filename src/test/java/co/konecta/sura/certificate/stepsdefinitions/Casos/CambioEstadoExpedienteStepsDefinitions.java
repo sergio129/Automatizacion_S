@@ -12,6 +12,7 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.ensure.Ensure;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
@@ -20,6 +21,8 @@ import java.util.Map;
 
 import static co.konecta.sura.certificate.Interfaces.Casos.advancedsearch.AdvancedSearchPage.*;
 import static co.konecta.sura.certificate.Interfaces.Casos.statemanagement.StateManagementPage.*;
+import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.BUTTON_INITIAL_TAB;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class CambioEstadoExpedienteStepsDefinitions {
 
@@ -42,9 +45,7 @@ public class CambioEstadoExpedienteStepsDefinitions {
         actor.attemptsTo(Click.on(BUTTON_OPEN_MODAL),
                 Click.on(BUTTON_ADD_STATUS));
         Thread.sleep(2000);
-        actor.attemptsTo(StateManagementTask.withInformationStateManagement(estado));
-        actor.attemptsTo(Click.on(BUTTON_SAVE_STATUS));
-        Thread.sleep(3000);
+        actor.attemptsTo(StateManagementTask.withInformationStateManagement(estado), WaitUntil.the(BUTTON_INITIAL_TAB, isVisible()).forNoMoreThan(50000).milliseconds());
 
     }
 
