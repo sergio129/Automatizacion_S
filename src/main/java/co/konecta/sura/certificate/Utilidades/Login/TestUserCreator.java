@@ -8,6 +8,8 @@ public class TestUserCreator {
         User user = new User();
         user.setUsername(TestLeerDatos.getTestLeerDatos("valido.user.name"));
         user.setPassword(TestLeerDatos.getTestLeerDatos("valido.user.password"));
+        user.setEstrellas(TestLeerDatos.getTestLeerDatos("valido.user.NumeroEstrellas"));
+        user.setJustificacion(TestLeerDatos.getTestLeerDatos("valido.user.Justificacion"));
         return user;
     }
 

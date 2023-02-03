@@ -3,7 +3,7 @@ Feature: Page create case
   I need to create or edition a case
 
   Background:
-    Given Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
+    Given I create or edition a case
 
   @TestCaseComplete
   Scenario Outline: Successful case creation
@@ -17,7 +17,7 @@ Feature: Page create case
       | Juan Felipe | 31035048745 | DTA54R | Calle 92144       | Produccion        | Pruebas QA       | Cordoba      | Lorica     | Si          | Autos | Grua     |
     #Gestionamos el cambio de estado
     Then I view the modal save case with <message>
-    And hacemos conexion Base de datos
+
     Examples:
      | message                         |
      | Registro guardado correctamente |

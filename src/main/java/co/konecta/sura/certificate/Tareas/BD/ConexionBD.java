@@ -98,7 +98,6 @@ public class ConexionBD implements Task {
                 System.out.println(Arrays.toString(fields));
                 line = br.readLine();
                 int contador = 1;
-
                 String Story = line;
                 switch (contador) {
                     case 1:

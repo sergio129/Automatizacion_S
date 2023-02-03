@@ -6,6 +6,8 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Hit;
+import net.serenitybdd.screenplay.actions.HitElement;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
 
@@ -25,11 +27,15 @@ public class LoginTask implements Task {
 
 
     public <T extends Actor> void performAs(T actor) {
+//        actor.attemptsTo(
+//                Click.on(ESTRELLAS.of(String.valueOf(user.getEstrellas()))));
+//        if (JUSTIFICACION.isVisibleFor(actor)) {
+//            Enter.theValue(user.getJustificacion()).into(JUSTIFICACION);
+//        }
         actor.attemptsTo(
                 Click.on(SURVEY),
                 Enter.theValue(user.getUsername()).into(USER),
                 Enter.theValue(user.getPassword()).into(PASSWORD).thenHit(Keys.ENTER), WaitUntil.the(BUTTON_INITIAL_TAB, isVisible()).forNoMoreThan(50000).milliseconds()
-
         );
 
     }

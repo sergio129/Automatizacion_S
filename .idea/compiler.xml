@@ -17,12 +17,6 @@
         </processorPath>
         <module name="AutomatizacionSura.main" />
       </profile>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="AutomatizacionSura" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="backlog-sura-asistencia-automatizacion_nuevo_patron" target="1.8" />
