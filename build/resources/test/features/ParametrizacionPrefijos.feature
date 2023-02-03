@@ -11,7 +11,7 @@ Feature: Parametrizacion Prefijos
     And Seleccionamos el boton creacion prefijos
     And Escribimos la informacion de prefijos linea<linea>, servicio<servicio>, prefijos<prefijos>
     And Seleccionamos el boton guardar prefijos
-    And hacemos conexion Base de datos
+      #And hacemos conexion Base de datos
     Then Se visualiza mensaje de la modal<modalmensaje>
     Examples:
       | linea | servicio | prefijos | modalmensaje                    |

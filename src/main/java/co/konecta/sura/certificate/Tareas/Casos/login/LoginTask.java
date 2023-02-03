@@ -18,7 +18,6 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisi
 
 @AllArgsConstructor
 public class LoginTask implements Task {
-
     User user = new User();
 
     public static LoginTask whitCredentials(User user) {
@@ -27,13 +26,12 @@ public class LoginTask implements Task {
 
 
     public <T extends Actor> void performAs(T actor) {
-//        actor.attemptsTo(
-//                Click.on(ESTRELLAS.of(String.valueOf(user.getEstrellas()))));
-//        if (JUSTIFICACION.isVisibleFor(actor)) {
-//            Enter.theValue(user.getJustificacion()).into(JUSTIFICACION);
-//        }
         actor.attemptsTo(
-                Click.on(SURVEY),
+                Click.on(ESTRELLAS.of(String.valueOf("idRadioSurvey" + user.getEstrellas()))));
+        if (JUSTIFICACION.resolveFor(actor).isVisible()) {
+            actor.has(Enter.theValue(user.getJustificacion()).into(JUSTIFICACION));
+        }
+        actor.attemptsTo(
                 Enter.theValue(user.getUsername()).into(USER),
                 Enter.theValue(user.getPassword()).into(PASSWORD).thenHit(Keys.ENTER), WaitUntil.the(BUTTON_INITIAL_TAB, isVisible()).forNoMoreThan(50000).milliseconds()
         );
