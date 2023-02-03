@@ -13,7 +13,9 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.ensure.Ensure;
+import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.Managed;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import static co.konecta.sura.certificate.Interfaces.Inicio.HomePage.MODAL_VALIDATION;
@@ -27,9 +29,6 @@ public class LoginStepsDefinitions {
     @Before
     public void setUp() {
         actor.can(BrowseTheWeb.with(driver));
-    }
-    @Given("Ingrsear a Sara con nuevo login")
-    public void ingresarASaraConNuevoLogin() {
     }
 
     private final HomePage homePage = new HomePage();
@@ -51,6 +50,18 @@ public class LoginStepsDefinitions {
     @When("Gestionamos en Sara")
     public void gestionamosEnSara() {
 
+    }
+
+    @Given("Ingresar a Sara con nuevo login")
+    public void ingresarASaraConNuevoLogin() {
+    }
+
+    public static final Target MENUSARA = Target.the("This the toast validation").locatedBy("/html/body/app-root/app-full-layout/div/mat-toolbar/div[2]/div/div[2]");
+    @Then("^Se visualiza nombre de usuario logueado(.*)$")
+    public void seVisualizaNombreDeUsuarioLogueadoUser(String User) throws InterruptedException {
+        Thread.sleep(2000);
+        actor.attemptsTo(
+                Ensure.that(MENUSARA).text().isEqualTo(User));
     }
 }
 

@@ -24,6 +24,7 @@ public class HomePage extends PageObject {
     public static final Target OPTION_TRAFFIC_LIGHT_PARAMETERIZATION = Target.the("This the button traffic light parameterization").located(By.id("moTrafficLightParameterization"));
     public static final Target MODULE_EXPANSION_GENERAL = Target.the("This the expansion module general").located(By.id("moduleGeneral"));
     public static final Target MODAL_VALIDATION = Target.the("This the toast validation").located(By.id("toast-container"));
+
     public static final Target OPTION_BOUQUETS_PARAMETERIZATION = Target.the("This the option bouquets parameterization").located(By.id("moBranch"));
     public static final Target STATUS_CASE_VALIDATION = Target.the("This the input status case validation").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav-content/div/app-show-cases/mat-accordion/mat-expansion-panel[1]/div/div/div/div[5]/h6");
     public static final Target SCROLL_PARAMETERIZATION = Target.the("This controls the Scrooll").locatedBy("/html/body/app-root/app-full-layout/div/mat-sidenav-container/mat-sidenav[1]");
