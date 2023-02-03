@@ -1,13 +1,11 @@
 Feature: Pruebas Login
 
-  Background:
-    Given Ingresar a Sara con nuevo login
 
   @TestPruebasLogin
   Scenario Outline: Login
+    Given Ingresar a Sara con nuevo login
     When Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
-  When Gestionamos en Sara
-    Then Se visualiza mensaje de la modal<mensaje>
-
+    Then Se visualiza nombre de usuario logueado<user>
     Examples:
-      | mensaje |
+      | user                           |
+      | User: Sergio Luis Anaya Romero |
