@@ -7,5 +7,5 @@ Feature: Pruebas Login
     When Ingresamos a la aplicacion con Usuario y contraseña "Usuario Valido"
     Then Se visualiza nombre de usuario logueado<user>
     Examples:
-      | user                           |
-      | User: Sergio Luis Anaya Romero |
+      | user |
+      |      |
